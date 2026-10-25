@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "profile": "frozen-head-training-data-262144-v1",
+  "closure_complete": true,
+  "scope": "Only the completed feature bank consumed by heads.run. Does not include raw preprocessing, GPT training, Python packages, or prove a training run.",
+  "entries": [
+    {
+      "id": "bank-manifest",
+      "source_root_alias": "HEAD_BANK",
+      "relative_path": "bank.json",
+      "role": "dependency",
+      "required": true,
+      "expected_bytes": 73780,
+      "sha256": "7eb271a5c5c44f33c2b22dfe26ce120bbd7016aeeba67b6fef817ad3e183ff5a"
+    },
+    {
+      "id": "encoded",
+      "source_root_alias": "HEAD_BANK",
+      "relative_path": "encoded.npy",
+      "role": "dependency",
+      "required": true,
+      "expected_bytes": 268435584,
+      "sha256": "56d9e09ad503ecd72a565f6f5c6aa5c7ace6053d1e13e4deaf7baade7a9c9672"
+    },
+    {
+      "id": "candidate_ids",
+      "source_root_alias": "HEAD_BANK",
+      "relative_path": "candidate_ids.npy",
+      "role": "dependency",
+      "required": true,
+      "expected_bytes": 33554560,
+      "sha256": "29ed029d37f53a9bdec70c2ba18eced40144914d48032a4edd5e4dd67020d2f0"
+    },
+    {
+      "id": "base_logits",
+      "source_root_alias": "HEAD_BANK",
+      "relative_path": "base_logits.npy",
+      "role": "dependency",
+      "required": true,
+      "expected_bytes": 33554560,
+      "sha256": "6e0fff6ca16e363e55b1457bedf20ff3bb8a6285d702dc9399aa717d28dbf013"
+    },
+    {
+      "id": "raw_features",
+      "source_root_alias": "HEAD_BANK",
+      "relative_path": "raw_features.npy",
+      "role": "dependency",
+      "required": true,
+      "expected_bytes": 35836133504,
+      "sha256": "2be65bac590f1e8b4f96fe012f3ec429ad956663b3f599d0836118032a031697"
+    },
+    {
+      "id": "source_values",
+      "source_root_alias": "HEAD_BANK",
+      "relative_path": "source_values.npy",
+      "role": "dependency",
+      "required": true,
+      "expected_bytes": 67108992,
+      "sha256": "acf0a57a547955e99b398697eccc24bcd82e0bb58092f99ec5b6482d614ba90a"
+    },
+    {
+      "id": "row_indices",
+      "source_root_alias": "HEAD_BANK",
+      "relative_path": "row_indices.npy",
+      "role": "dependency",
+      "required": true,
+      "expected_bytes": 2097280,
+      "sha256": "119ed2d7dccf3e67847d37b324eee26cf791677ab0b2601c748e8151c5237727"
+    },
+    {
+      "id": "user_ids",
+      "source_root_alias": "HEAD_BANK",
+      "relative_path": "user_ids.npy",
+      "role": "dependency",
+      "required": true,
+      "expected_bytes": 2097280,
+      "sha256": "8b315fa3957524e25bd1f82985f03adf3fc1fa8680d22e27775c41b916ee0e71"
+    },
+    {
+      "id": "target_ids",
+      "source_root_alias": "HEAD_BANK",
+      "relative_path": "target_ids.npy",
+      "role": "dependency",
+      "required": true,
+      "expected_bytes": 1048704,
+      "sha256": "6bf033f4e02b59d866ec58ef6a8cb2b17a1281597d7f35e4d157fbc6b23154fd"
+    },
+    {
+      "id": "dates",
+      "source_root_alias": "HEAD_BANK",
+      "relative_path": "dates.npy",
+      "role": "dependency",
+      "required": true,
+      "expected_bytes": 1048704,
+      "sha256": "0fe40959e7b594541f5fe8ad122a99f6fec3d66f1a356d7702b64468dbfdb4cd"
+    },
+    {
+      "id": "item_table",
+      "source_root_alias": "HEAD_BANK",
+      "relative_path": "item_table.npy",
+      "role": "dependency",
+      "required": true,
+      "expected_bytes": 15788160,
+      "sha256": "13abf44751ec3a57faf15f30ab02110301714993acd75702350d5ca6a1a358f3"
+    }
+  ]
+}

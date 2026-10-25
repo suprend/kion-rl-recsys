@@ -1,0 +1,3673 @@
+{
+  "schema_version": 1,
+  "direct_profile_sha256": "81dd552e17148a97d99d85a848f57078c8402f84a7c7755bf77b2872624f7bdf",
+  "documents": [
+    {
+      "id": "base",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1/manifest.json",
+      "sha256": "738e74698104b295ea1d5d1b8a986f75503978c241685bae26bd77c8f1bca0be",
+      "contract": "kion-all-local-pack-v1",
+      "keys": [
+        "batch_transfer_dtype",
+        "cache_dtype",
+        "candidate_schema_hash",
+        "contract",
+        "feature_columns",
+        "inputs",
+        "outputs",
+        "provenance",
+        "rounding",
+        "row_keys_sha256",
+        "rowkeys_algorithm",
+        "schema_hash",
+        "state",
+        "timings_seconds",
+        "total_seconds",
+        "training_rows",
+        "validation_origin",
+        "validation_rows"
+      ],
+      "signature_exclude": null,
+      "limit": 33554432
+    },
+    {
+      "id": "text-title",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title/461db169cffd322f5b34b97df622235ad8a23d0a53181354935f527de2f377a7/manifest.json",
+      "sha256": "8fcacfb987e7e3db985fffb829e897921a02f470080f266263467759dcb11bc2",
+      "contract": "kion-text-embeddings-v1",
+      "keys": [
+        "code_sha256",
+        "contract",
+        "coverage",
+        "empty_counts",
+        "encoder",
+        "field",
+        "normalized_text_sha256",
+        "ordered_item_ids",
+        "outputs",
+        "preprocessing",
+        "raw_catalog_rows",
+        "raw_text_sha256",
+        "signature",
+        "source_pins",
+        "state",
+        "vocab_size",
+        "vocabulary_sha256"
+      ],
+      "signature_exclude": [
+        "signature",
+        "state",
+        "coverage",
+        "outputs"
+      ],
+      "limit": 16777216
+    },
+    {
+      "id": "text-title_orig",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title_orig/5abbefdb6f93b4a0db0ece9c41419eca4814bbf48c5bfab5c5edc39edf9a3ac3/manifest.json",
+      "sha256": "97da3620689128b3ebbf69295ee003b77cec421dca7e2df7c628dc6923d030a1",
+      "contract": "kion-text-embeddings-v1",
+      "keys": [
+        "code_sha256",
+        "contract",
+        "coverage",
+        "empty_counts",
+        "encoder",
+        "field",
+        "normalized_text_sha256",
+        "ordered_item_ids",
+        "outputs",
+        "preprocessing",
+        "raw_catalog_rows",
+        "raw_text_sha256",
+        "signature",
+        "source_pins",
+        "state",
+        "vocab_size",
+        "vocabulary_sha256"
+      ],
+      "signature_exclude": [
+        "signature",
+        "state",
+        "coverage",
+        "outputs"
+      ],
+      "limit": 16777216
+    },
+    {
+      "id": "text-description",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/description/120c9d59be0f2ff60f0752b1ab30c3c9569c71a5f2a1c240fb00d8ca2e733e92/manifest.json",
+      "sha256": "3ed03a3656888c5306ebef2a5c71c4a720ab4d269b0ac8aea89d4f89d4cc92b5",
+      "contract": "kion-text-embeddings-v1",
+      "keys": [
+        "code_sha256",
+        "contract",
+        "coverage",
+        "empty_counts",
+        "encoder",
+        "field",
+        "normalized_text_sha256",
+        "ordered_item_ids",
+        "outputs",
+        "preprocessing",
+        "raw_catalog_rows",
+        "raw_text_sha256",
+        "signature",
+        "source_pins",
+        "state",
+        "vocab_size",
+        "vocabulary_sha256"
+      ],
+      "signature_exclude": [
+        "signature",
+        "state",
+        "coverage",
+        "outputs"
+      ],
+      "limit": 16777216
+    },
+    {
+      "id": "related",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1/manifest.json",
+      "sha256": "e3b0b00ef89207c9776f8bd42f8f901580e8aae482fac88e32c1e0621d3ba0b6",
+      "contract": "kion-related-interest-v1",
+      "keys": [
+        "arrays",
+        "columns",
+        "contract",
+        "entities",
+        "fit_cutoff",
+        "item_entities",
+        "mapping",
+        "parameters",
+        "portfolios",
+        "provenance",
+        "release_scope",
+        "releases",
+        "role",
+        "state",
+        "state_sha256",
+        "temporal_mode",
+        "vocab_size",
+        "works"
+      ],
+      "signature_exclude": null,
+      "limit": 16777216
+    },
+    {
+      "id": "events",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/manifest.json",
+      "sha256": "382b410d564bb73eba268b5e2e49d092c25d2af4d1df677020ce46f546dc0cbf",
+      "contract": "kion-completion-event-store-v1",
+      "keys": [
+        "actual_measurement",
+        "alpha",
+        "arrays",
+        "beta",
+        "bytes_per_event",
+        "c0",
+        "catalog",
+        "clock",
+        "contract",
+        "coverage",
+        "diagnostic_only",
+        "effective_metadata_sha256",
+        "event_clock",
+        "events_count",
+        "final_validation",
+        "fit_cutoff",
+        "flag_bits",
+        "group_policy",
+        "mapping_sha256",
+        "metadata_availability",
+        "metadata_path",
+        "metadata_sha256",
+        "normalization",
+        "outcome_availability",
+        "parser_sha256",
+        "prepared_pins",
+        "query_arrays",
+        "query_coverage_receipt",
+        "query_join",
+        "row_keys_sha256",
+        "scope",
+        "signature",
+        "source_pins",
+        "state",
+        "type_policy"
+      ],
+      "signature_exclude": [
+        "signature"
+      ],
+      "limit": 16777216
+    },
+    {
+      "id": "users",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/normalized-r2/manifest.json",
+      "sha256": "38789398d818200941bb5b30b9ac7736f432f51d1a216f4c14026e3bee4af0c6",
+      "contract": "kion-user-diagnostics-v1",
+      "keys": [
+        "age_rating_out_of_schema_catalog_total",
+        "age_rating_out_of_schema_list_truncated",
+        "age_rating_out_of_schema_values",
+        "clock",
+        "columns",
+        "contract",
+        "coverage",
+        "diagnostic_only",
+        "dtype",
+        "evaluated_values",
+        "event_store",
+        "event_store_signature",
+        "families",
+        "fit_cutoff",
+        "frozen_base_fields_rewritten",
+        "full_wide_values_materialized",
+        "mapping_sha256",
+        "metadata_availability",
+        "metadata_path",
+        "metadata_sha256",
+        "model_input_columns_added",
+        "null_mask_dtype",
+        "null_policy",
+        "nullable_columns",
+        "outcome_availability",
+        "prepared_pins",
+        "query_coverage_receipt",
+        "rating_parser",
+        "rating_review_status",
+        "row_keys_sha256",
+        "schema_errors",
+        "signature",
+        "source_completeness",
+        "source_pins",
+        "source_start",
+        "split_counts",
+        "state",
+        "storage",
+        "test_npz_opened",
+        "threshold_facts",
+        "threshold_signature"
+      ],
+      "signature_exclude": [
+        "signature"
+      ],
+      "limit": 16777216
+    },
+    {
+      "id": "threshold",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/source-outcome-bits-r2/manifest.json",
+      "sha256": "dd920e4f593c49f71198a62e0d36a78d534e7b64e2bbaf6ec60b2c7f3b81120a",
+      "contract": "kion-exact-outcome-threshold-facts-v1",
+      "keys": [
+        "arrays",
+        "contract",
+        "elapsed_seconds",
+        "event_store",
+        "events_count",
+        "fit_cutoff",
+        "join",
+        "parser",
+        "peak_rss_bytes",
+        "raw_source_rows_scanned",
+        "raw_text",
+        "signature",
+        "source_pins",
+        "source_sha256_after",
+        "source_sha256_before",
+        "state",
+        "thresholds"
+      ],
+      "signature_exclude": [
+        "signature"
+      ],
+      "limit": 16777216
+    },
+    {
+      "id": "audience",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1/manifest.json",
+      "sha256": "28e740c937f95b6a332b591a5d933cba1387f364fef8884191a63de037b8169e",
+      "contract": "kion-audience-exact-loo-v1",
+      "keys": [
+        "arrays",
+        "base_array_bytes",
+        "categories",
+        "columns",
+        "contract",
+        "genres",
+        "groups",
+        "measurements",
+        "parameters",
+        "provenance",
+        "schema_sha256",
+        "source_pins",
+        "state",
+        "storage_contract",
+        "total_disk_bytes_without_manifest",
+        "vocab_size"
+      ],
+      "signature_exclude": null,
+      "limit": 16777216
+    },
+    {
+      "id": "assessment",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6/assessment.json",
+      "sha256": "5efcbbd23babe925844a8040298c6bdece131bd8d3a9f7fafad666b09e7747d9",
+      "contract": "kion-complete-scoped-assessment-v1",
+      "keys": [
+        "active_families",
+        "additional_ready_components",
+        "base_manifest",
+        "blockers",
+        "components",
+        "contract",
+        "full_package_admitted",
+        "metadata",
+        "original_all81_observation",
+        "provider_source",
+        "runtime_metadata",
+        "scope_decision",
+        "scope_id",
+        "status"
+      ],
+      "signature_exclude": null,
+      "limit": 16777216,
+      "derived_from": {
+        "document": "provider",
+        "selector": [
+          "assembly",
+          "assessment_sha256"
+        ],
+        "consumer_sha256": "7cbe284dfbd9d133bd98e2d363a9ee8b8d8530ffe7b977cbe13c6146d0f4fe5e"
+      }
+    }
+  ],
+  "entries": [
+    {
+      "document": "base",
+      "selector": [
+        "outputs",
+        "item_features.npy",
+        "sha256"
+      ],
+      "path_selector": [
+        "outputs",
+        "item_features.npy",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1/item_features.npy",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1/item_features.npy",
+      "sha256": "f733e176909dc79112428c7bd4f16ea8e616943d144a1663236480f152820dbb"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "outputs",
+        "user_lookup_ids.npy",
+        "sha256"
+      ],
+      "path_selector": [
+        "outputs",
+        "user_lookup_ids.npy",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1/user_lookup_ids.npy",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1/user_lookup_ids.npy",
+      "sha256": "eff13b0e49434c82de56871688fb3100dd845dc25058578776eb44d245cbaab8"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "outputs",
+        "user_lookup_codes.npy",
+        "sha256"
+      ],
+      "path_selector": [
+        "outputs",
+        "user_lookup_codes.npy",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1/user_lookup_codes.npy",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1/user_lookup_codes.npy",
+      "sha256": "8a89e2508bd0de87c21a3a47cd6a3d68cb2f6c5fe4da9bdefd188ee0dc21da73"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "outputs",
+        "train_user_features.npy",
+        "sha256"
+      ],
+      "path_selector": [
+        "outputs",
+        "train_user_features.npy",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1/train_user_features.npy",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1/train_user_features.npy",
+      "sha256": "d4e36fbb4bd45e17485581b377c6b2e19ead69622ad3d65f4a276a7776559cb2"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "outputs",
+        "val_user_features.npy",
+        "sha256"
+      ],
+      "path_selector": [
+        "outputs",
+        "val_user_features.npy",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1/val_user_features.npy",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1/val_user_features.npy",
+      "sha256": "0f0a606a2d534c6f1e36dee944203cfeebda24f1e706a4fea619fcb0deba044a"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "inputs",
+        "metadata.json",
+        "sha256"
+      ],
+      "path_selector": [
+        "inputs",
+        "metadata.json",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "sha256": "f02acaa9a5e5532e79b060279ba8a5027f268f202132e85ebab97cd4912fbd11"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "inputs",
+        "train.npz",
+        "sha256"
+      ],
+      "path_selector": [
+        "inputs",
+        "train.npz",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/train.npz",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-full-context64/train.npz",
+      "sha256": "bed53339345246fbd3cbad6d72017ed82451634431e48c6e9fd67a66581be4f8"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "inputs",
+        "val.npz",
+        "sha256"
+      ],
+      "path_selector": [
+        "inputs",
+        "val.npz",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/val.npz",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-full-context64/val.npz",
+      "sha256": "4c8839b69a4abeff5e4eea3ffeea1d83715deea8775f4547f8f85c0e055bad99"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/data/raw/kion/full/users.csv",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/data/raw/kion/full/users.csv",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/users.csv",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/users.csv",
+      "sha256": "37b2945240628a3f215e1fb5f79b4cff386d8988b21fa61e5b135aef4541182c"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/data/raw/kion/full/interactions.csv",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/data/raw/kion/full/interactions.csv",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/interactions.csv",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/interactions.csv",
+      "sha256": "201dc9114eb309da9df6f5f227ada23a371d668edf64a32090fb613a75162ecf"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "sha256": "f02acaa9a5e5532e79b060279ba8a5027f268f202132e85ebab97cd4912fbd11"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/data/processed/kion-basic-bundle-v1/features.npz",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/data/processed/kion-basic-bundle-v1/features.npz",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-basic-bundle-v1/features.npz",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-basic-bundle-v1/features.npz",
+      "sha256": "8b0972d95e1e66eda10d9a01090fbe86ca226a4b408cd760ff53523c9d96e513"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/data/processed/kion-basic-bundle-v1/manifest.json",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/data/processed/kion-basic-bundle-v1/manifest.json",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-basic-bundle-v1/manifest.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-basic-bundle-v1/manifest.json",
+      "sha256": "95f4386dec36c1f4d285e87bc42b4e3753ef8c641a6440d53995cc9385a62daf"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_local_pack.py",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_local_pack.py",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_local_pack.py",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_local_pack.py",
+      "sha256": "87412446a72033aae98897250cc0178084dd76b5818aee38a24fbb81a8e02aaf"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_local_features.py",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_local_features.py",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_local_features.py",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_local_features.py",
+      "sha256": "e5f992093b53839d425ccd436dba0404862ad912b795a390d60ff6c9a2576de1"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_static.py",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_static.py",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_static.py",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_static.py",
+      "sha256": "5a52ef6ab610b0f3d091bd6566982bd0894f1d0c1ad891986dd27d3f8703e181"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_people.py",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_people.py",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_people.py",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_people.py",
+      "sha256": "25c9b1f9ac9188f096f22085d63a5de694e55a757c9857da963854bb808e791b"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_history.py",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_history.py",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_history.py",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_history.py",
+      "sha256": "ecdd0cd0e853d20578a7855acc8987c72c430925d1a30f7e26fee250000659dd"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_dynamic.py",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_dynamic.py",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_dynamic.py",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_dynamic.py",
+      "sha256": "7f53e94ddd5940514de8a132711ff5d782885983af9f0c62ae4c4515261bdd7a"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_semantics.py",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_semantics.py",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_semantics.py",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_semantics.py",
+      "sha256": "74a59bad3bf89c5eb92624452ffac8e4775c18592823411a611d09d50fe3d7ff"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_basic_bundle_features.py",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_basic_bundle_features.py",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_basic_bundle_features.py",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_basic_bundle_features.py",
+      "sha256": "25c5a80a2fba9de5ee76c67ac4bd6cd7bd437cf807cd42855baeba3b50f73ef8"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_sex_features.py",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_sex_features.py",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_sex_features.py",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_sex_features.py",
+      "sha256": "e524c68af1ad327c3e83959aa4503be17aabdc700beaa24793831d09a152a905"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "users",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "users",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/users.csv",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/users.csv",
+      "sha256": "37b2945240628a3f215e1fb5f79b4cff386d8988b21fa61e5b135aef4541182c"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "items",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "items",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "metadata",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "metadata",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "sha256": "f02acaa9a5e5532e79b060279ba8a5027f268f202132e85ebab97cd4912fbd11"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "basic",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "basic",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-basic-bundle-v1/features.npz",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-basic-bundle-v1/features.npz",
+      "sha256": "8b0972d95e1e66eda10d9a01090fbe86ca226a4b408cd760ff53523c9d96e513"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "basic_manifest",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "basic_manifest",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-basic-bundle-v1/manifest.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-basic-bundle-v1/manifest.json",
+      "sha256": "95f4386dec36c1f4d285e87bc42b4e3753ef8c641a6440d53995cc9385a62daf"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "series",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "series",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/configs/datasets/kion-series-v1.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/configs/datasets/kion-series-v1.json",
+      "sha256": "18b672eda2fd8d711e2642fd933740abf0f28bfaf4031e27b46a5ee77ba647d6"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "builder",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "builder",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_static.py",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_static.py",
+      "sha256": "5a52ef6ab610b0f3d091bd6566982bd0894f1d0c1ad891986dd27d3f8703e181"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "basic_helper",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "basic_helper",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_basic_bundle_features.py",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_basic_bundle_features.py",
+      "sha256": "25c5a80a2fba9de5ee76c67ac4bd6cd7bd437cf807cd42855baeba3b50f73ef8"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "local_helper",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "local_helper",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_local_features.py",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_local_features.py",
+      "sha256": "e5f992093b53839d425ccd436dba0404862ad912b795a390d60ff6c9a2576de1"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "sex_helper",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "components",
+        "static",
+        "inputs",
+        "sex_helper",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_sex_features.py",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_sex_features.py",
+      "sha256": "e524c68af1ad327c3e83959aa4503be17aabdc700beaa24793831d09a152a905"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "components",
+        "semantics",
+        "inputs",
+        "items",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "components",
+        "semantics",
+        "inputs",
+        "items",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "components",
+        "semantics",
+        "inputs",
+        "builder",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "components",
+        "semantics",
+        "inputs",
+        "builder",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_semantics.py",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_semantics.py",
+      "sha256": "74a59bad3bf89c5eb92624452ffac8e4775c18592823411a611d09d50fe3d7ff"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "components",
+        "history",
+        "source_pins",
+        "interactions",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "components",
+        "history",
+        "source_pins",
+        "interactions",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/interactions.csv",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/interactions.csv",
+      "sha256": "201dc9114eb309da9df6f5f227ada23a371d668edf64a32090fb613a75162ecf"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "components",
+        "history",
+        "source_pins",
+        "items",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "components",
+        "history",
+        "source_pins",
+        "items",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e"
+    },
+    {
+      "document": "base",
+      "selector": [
+        "provenance",
+        "components",
+        "history",
+        "source_pins",
+        "history_builder",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "components",
+        "history",
+        "source_pins",
+        "history_builder",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_history.py",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-r1/scripts/kion_pack_history.py",
+      "sha256": "ecdd0cd0e853d20578a7855acc8987c72c430925d1a30f7e26fee250000659dd"
+    },
+    {
+      "document": "text-title",
+      "selector": [
+        "outputs",
+        "embeddings.npy",
+        "sha256"
+      ],
+      "path_selector": null,
+      "implicit_name": "embeddings.npy",
+      "original_path": "embeddings.npy",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title/461db169cffd322f5b34b97df622235ad8a23d0a53181354935f527de2f377a7",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title/461db169cffd322f5b34b97df622235ad8a23d0a53181354935f527de2f377a7/embeddings.npy",
+      "sha256": "f2822341dd9cca5b70938cdf7cabefb2304e45f6f849870ced4a453341282f39"
+    },
+    {
+      "document": "text-title",
+      "selector": [
+        "outputs",
+        "missing.npy",
+        "sha256"
+      ],
+      "path_selector": null,
+      "implicit_name": "missing.npy",
+      "original_path": "missing.npy",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title/461db169cffd322f5b34b97df622235ad8a23d0a53181354935f527de2f377a7",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title/461db169cffd322f5b34b97df622235ad8a23d0a53181354935f527de2f377a7/missing.npy",
+      "sha256": "d4963b073c817a43d4e6f7066a031c825143907973f286f8cdd04033a15d8387"
+    },
+    {
+      "document": "text-title",
+      "selector": [
+        "outputs",
+        "token_lengths.npy",
+        "sha256"
+      ],
+      "path_selector": null,
+      "implicit_name": "token_lengths.npy",
+      "original_path": "token_lengths.npy",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title/461db169cffd322f5b34b97df622235ad8a23d0a53181354935f527de2f377a7",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title/461db169cffd322f5b34b97df622235ad8a23d0a53181354935f527de2f377a7/token_lengths.npy",
+      "sha256": "ca83ad23e884b4a02a30187f8cdeebc55a6f9c42e5a5da344bce4c01dfeed401"
+    },
+    {
+      "document": "text-title",
+      "selector": [
+        "outputs",
+        "truncated.npy",
+        "sha256"
+      ],
+      "path_selector": null,
+      "implicit_name": "truncated.npy",
+      "original_path": "truncated.npy",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title/461db169cffd322f5b34b97df622235ad8a23d0a53181354935f527de2f377a7",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title/461db169cffd322f5b34b97df622235ad8a23d0a53181354935f527de2f377a7/truncated.npy",
+      "sha256": "a113d7a71c3927d3792e4ee067dc8ac0f8826850001d2f4b06c808b8a99453b4"
+    },
+    {
+      "document": "text-title",
+      "selector": [
+        "source_pins",
+        "items",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "items",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title/461db169cffd322f5b34b97df622235ad8a23d0a53181354935f527de2f377a7",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e"
+    },
+    {
+      "document": "text-title",
+      "selector": [
+        "source_pins",
+        "metadata",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "metadata",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title/461db169cffd322f5b34b97df622235ad8a23d0a53181354935f527de2f377a7",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "sha256": "f02acaa9a5e5532e79b060279ba8a5027f268f202132e85ebab97cd4912fbd11"
+    },
+    {
+      "document": "text-title_orig",
+      "selector": [
+        "outputs",
+        "embeddings.npy",
+        "sha256"
+      ],
+      "path_selector": null,
+      "implicit_name": "embeddings.npy",
+      "original_path": "embeddings.npy",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title_orig/5abbefdb6f93b4a0db0ece9c41419eca4814bbf48c5bfab5c5edc39edf9a3ac3",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title_orig/5abbefdb6f93b4a0db0ece9c41419eca4814bbf48c5bfab5c5edc39edf9a3ac3/embeddings.npy",
+      "sha256": "95709d412b5d7322e94bea8e6f29552a29dbf251940d946cab9d64c4a87e06e2"
+    },
+    {
+      "document": "text-title_orig",
+      "selector": [
+        "outputs",
+        "missing.npy",
+        "sha256"
+      ],
+      "path_selector": null,
+      "implicit_name": "missing.npy",
+      "original_path": "missing.npy",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title_orig/5abbefdb6f93b4a0db0ece9c41419eca4814bbf48c5bfab5c5edc39edf9a3ac3",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title_orig/5abbefdb6f93b4a0db0ece9c41419eca4814bbf48c5bfab5c5edc39edf9a3ac3/missing.npy",
+      "sha256": "adec202011b9518073ad0133f4de7c20329d3994ec02fc96fd26583111c81d59"
+    },
+    {
+      "document": "text-title_orig",
+      "selector": [
+        "outputs",
+        "token_lengths.npy",
+        "sha256"
+      ],
+      "path_selector": null,
+      "implicit_name": "token_lengths.npy",
+      "original_path": "token_lengths.npy",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title_orig/5abbefdb6f93b4a0db0ece9c41419eca4814bbf48c5bfab5c5edc39edf9a3ac3",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title_orig/5abbefdb6f93b4a0db0ece9c41419eca4814bbf48c5bfab5c5edc39edf9a3ac3/token_lengths.npy",
+      "sha256": "b72c012dd50a40fbd12e0929728ff3fe8d4ac4ce0bb3bb65a412c070ca00dab2"
+    },
+    {
+      "document": "text-title_orig",
+      "selector": [
+        "outputs",
+        "truncated.npy",
+        "sha256"
+      ],
+      "path_selector": null,
+      "implicit_name": "truncated.npy",
+      "original_path": "truncated.npy",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title_orig/5abbefdb6f93b4a0db0ece9c41419eca4814bbf48c5bfab5c5edc39edf9a3ac3",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title_orig/5abbefdb6f93b4a0db0ece9c41419eca4814bbf48c5bfab5c5edc39edf9a3ac3/truncated.npy",
+      "sha256": "a113d7a71c3927d3792e4ee067dc8ac0f8826850001d2f4b06c808b8a99453b4"
+    },
+    {
+      "document": "text-title_orig",
+      "selector": [
+        "source_pins",
+        "items",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "items",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title_orig/5abbefdb6f93b4a0db0ece9c41419eca4814bbf48c5bfab5c5edc39edf9a3ac3",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e"
+    },
+    {
+      "document": "text-title_orig",
+      "selector": [
+        "source_pins",
+        "metadata",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "metadata",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/title_orig/5abbefdb6f93b4a0db0ece9c41419eca4814bbf48c5bfab5c5edc39edf9a3ac3",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "sha256": "f02acaa9a5e5532e79b060279ba8a5027f268f202132e85ebab97cd4912fbd11"
+    },
+    {
+      "document": "text-description",
+      "selector": [
+        "outputs",
+        "embeddings.npy",
+        "sha256"
+      ],
+      "path_selector": null,
+      "implicit_name": "embeddings.npy",
+      "original_path": "embeddings.npy",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/description/120c9d59be0f2ff60f0752b1ab30c3c9569c71a5f2a1c240fb00d8ca2e733e92",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/description/120c9d59be0f2ff60f0752b1ab30c3c9569c71a5f2a1c240fb00d8ca2e733e92/embeddings.npy",
+      "sha256": "bc6428ac9b9ef7707f4374aa0efa9d1b8dea8d5b61767f4bb79cc8f4e5f29804"
+    },
+    {
+      "document": "text-description",
+      "selector": [
+        "outputs",
+        "missing.npy",
+        "sha256"
+      ],
+      "path_selector": null,
+      "implicit_name": "missing.npy",
+      "original_path": "missing.npy",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/description/120c9d59be0f2ff60f0752b1ab30c3c9569c71a5f2a1c240fb00d8ca2e733e92",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/description/120c9d59be0f2ff60f0752b1ab30c3c9569c71a5f2a1c240fb00d8ca2e733e92/missing.npy",
+      "sha256": "ab86e70478c95cf30bff27aba27d6c3c2cacbc8215b2075e8ea385525e76a595"
+    },
+    {
+      "document": "text-description",
+      "selector": [
+        "outputs",
+        "token_lengths.npy",
+        "sha256"
+      ],
+      "path_selector": null,
+      "implicit_name": "token_lengths.npy",
+      "original_path": "token_lengths.npy",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/description/120c9d59be0f2ff60f0752b1ab30c3c9569c71a5f2a1c240fb00d8ca2e733e92",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/description/120c9d59be0f2ff60f0752b1ab30c3c9569c71a5f2a1c240fb00d8ca2e733e92/token_lengths.npy",
+      "sha256": "2e8c99f7fe218c0c8b46e8ae5bd4fb3593d129bc3a054e7a6adc33107ea4af84"
+    },
+    {
+      "document": "text-description",
+      "selector": [
+        "outputs",
+        "truncated.npy",
+        "sha256"
+      ],
+      "path_selector": null,
+      "implicit_name": "truncated.npy",
+      "original_path": "truncated.npy",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/description/120c9d59be0f2ff60f0752b1ab30c3c9569c71a5f2a1c240fb00d8ca2e733e92",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/description/120c9d59be0f2ff60f0752b1ab30c3c9569c71a5f2a1c240fb00d8ca2e733e92/truncated.npy",
+      "sha256": "5ec15236ca4e28bfe4cc76c56d1dc52a279d177f162166be1c9890631c1fee50"
+    },
+    {
+      "document": "text-description",
+      "selector": [
+        "source_pins",
+        "items",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "items",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/description/120c9d59be0f2ff60f0752b1ab30c3c9569c71a5f2a1c240fb00d8ca2e733e92",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e"
+    },
+    {
+      "document": "text-description",
+      "selector": [
+        "source_pins",
+        "metadata",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "metadata",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-e5-all-fields-20261020-r2/description/120c9d59be0f2ff60f0752b1ab30c3c9569c71a5f2a1c240fb00d8ca2e733e92",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "sha256": "f02acaa9a5e5532e79b060279ba8a5027f268f202132e85ebab97cd4912fbd11"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "arrays",
+        "users",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "users",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "users.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1/users.npy",
+      "sha256": "9b092d673e21b98e10bb014f1004f8f2bd807b0a7ed7888d8f3697a883466e6f"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "arrays",
+        "tokens",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "tokens",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "tokens.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1/tokens.npy",
+      "sha256": "66847083b2120689448d6b0bebd91e50826b0b67327b22b56127e73fdbbdfdd8"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "arrays",
+        "days",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "days",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "days.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1/days.npy",
+      "sha256": "bd780a973ee5e73a2fc014bab59d514b4fa700ac46f4b0c8ba8483ccc3cc6c23"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "arrays",
+        "token_work",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "token_work",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "token_work.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1/token_work.npy",
+      "sha256": "32edcf8d8cd4544c04997d52bd801900d1e46b493b28dbde60ef8480bd17962c"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "items",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "items",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "builder",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "builder",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r4/scripts/kion_related_features.py",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r4/scripts/kion_related_features.py",
+      "sha256": "f5ab385dafaa208172988f8af471011994bd136fd9f878523b0c77475ca7b8ee"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "series_annotation",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "series_annotation",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/configs/datasets/kion-series-v1.json",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/configs/datasets/kion-series-v1.json",
+      "sha256": "18b672eda2fd8d711e2642fd933740abf0f28bfaf4031e27b46a5ee77ba647d6"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "reviewed_annotations",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "reviewed_annotations",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/franchise-semantics/accepted-annotations.json",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/franchise-semantics/accepted-annotations.json",
+      "sha256": "2007794ec1c888511860d3553d85490056ecfbf1e5f89a994866048802fcc4b7"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "graph",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "graph",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/franchise-semantics/graph-r2/accepted-graph.json",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/franchise-semantics/graph-r2/accepted-graph.json",
+      "sha256": "3a6f87903316ebf8af6dc130c3c520dd86626e7c9c4d9c3b08b2b041fbf24b01"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "release_records",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "release_records",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/related-interest/release-records-r3.json",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/related-interest/release-records-r3.json",
+      "sha256": "8203b462e3c266d80d5cd806c55284fd3f75257e333eff1647262935cd2a4686"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "metadata",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "metadata",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "sha256": "f02acaa9a5e5532e79b060279ba8a5027f268f202132e85ebab97cd4912fbd11"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "audience_manifest",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "audience_manifest",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1/manifest.json",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1/manifest.json",
+      "sha256": "28e740c937f95b6a332b591a5d933cba1387f364fef8884191a63de037b8169e"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "shared_work_map",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "shared_work_map",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/people-dynamics/graph-work-map-r1.json",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/people-dynamics/graph-work-map-r1.json",
+      "sha256": "b5a2d4f486be1363e5fb5106da04ee113460071d340b52cd193a8f25a630b70a"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "shared_work_map_review",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "shared_work_map_review",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/people-dynamics/full-index-r2/independent-map-review.json",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/people-dynamics/full-index-r2/independent-map-review.json",
+      "sha256": "d2acfd1ee81be9bff67907a120549e1ae6b6acbe7dfbb5f9ab8a63d6125208b8"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "graph_review",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "graph_review",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/franchise-semantics/graph-r2/independent-graph-integration-recheck.json",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/franchise-semantics/graph-r2/independent-graph-integration-recheck.json",
+      "sha256": "76d8b9c6cb522edebcf6a846e0227a5eb45cc869c5b714984642a44389d00b90"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "release_export",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "release_export",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/external-facts/release-records-current-r2.json",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/external-facts/release-records-current-r2.json",
+      "sha256": "14375801f902b425a11b0367d52d885ffa7c2f249469165b2f15e344ff6de651"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "explicit_franchise_aliases_source",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "explicit_franchise_aliases_source",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/franchise-semantics/graph-r2/inventory.json",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/franchise-semantics/graph-r2/inventory.json",
+      "sha256": "f7833e2b5d7220c39ae489870b649d4a63f8051c3b745e027df106dfe49491ec"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "source_pins",
+        "run_revision",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "source_pins",
+        "run_revision",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/related-interest/run_revision_r3.py",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/related-interest/run_revision_r3.py",
+      "sha256": "dd7245538ccc1900e6599fb53a10126d4f8d82ab9f3c3967241e4dfcb789b2fb"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "audience_source_pins",
+        "interactions",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "audience_source_pins",
+        "interactions",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/interactions.csv",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/interactions.csv",
+      "sha256": "201dc9114eb309da9df6f5f227ada23a371d668edf64a32090fb613a75162ecf"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "audience_source_pins",
+        "items",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "audience_source_pins",
+        "items",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "audience_source_pins",
+        "users",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "audience_source_pins",
+        "users",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/users.csv",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/users.csv",
+      "sha256": "37b2945240628a3f215e1fb5f79b4cff386d8988b21fa61e5b135aef4541182c"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "audience_source_pins",
+        "metadata",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "audience_source_pins",
+        "metadata",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "sha256": "f02acaa9a5e5532e79b060279ba8a5027f268f202132e85ebab97cd4912fbd11"
+    },
+    {
+      "document": "related",
+      "selector": [
+        "provenance",
+        "audience_source_pins",
+        "builder",
+        "sha256"
+      ],
+      "path_selector": [
+        "provenance",
+        "audience_source_pins",
+        "builder",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/scripts/kion_audience_features.py",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/related-index-source-binding-r1",
+      "logical": "D:/tlab-recsys-2026/scripts/kion_audience_features.py",
+      "sha256": "98da6c6b939ff3dbe5c8464a826a775437d43fd5b6257efafab33caff34ec739"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "arrays",
+        "raw_row_index",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "raw_row_index",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "raw_row_index.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/raw_row_index.npy",
+      "sha256": "d84592452065850afd661738c33017eeb8eae5539b221975cf13eaabad44f713"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "arrays",
+        "user_id",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "user_id",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "user_id.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/user_id.npy",
+      "sha256": "26d00139e72b998092ccf9bc6cf24a1bcb1e38a807fce38976609ad73fefc8a7"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "arrays",
+        "raw_item_id",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "raw_item_id",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "raw_item_id.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/raw_item_id.npy",
+      "sha256": "4a9d48573819c0d39d6d63b31daa2a3075367cec6cc705fb7bd6b610bc12e844"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "arrays",
+        "date",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "date",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "date.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/date.npy",
+      "sha256": "2b236ebb5a4d3b5057a4f763c25f412d1cc0902a5610a9d2972a4f364af78c9f"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "arrays",
+        "token",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "token",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "token.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/token.npy",
+      "sha256": "23078cdedb0c6aea4da9356d4b0572fdaf14db7eb56fb0e2834b11e40677cf21"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "arrays",
+        "outcome",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "outcome",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "outcome.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/outcome.npy",
+      "sha256": "23ec8cf0ff52e738b8e2e05806e187fa5c2dc16551b1d98304dec3beb2bbf461"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "arrays",
+        "parser_status",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "parser_status",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "parser_status.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/parser_status.npy",
+      "sha256": "3ef1c73e64b56d1872f9fe704344e92902658379e440111a2d996d968edd1ff2"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "arrays",
+        "baseline",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "baseline",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "baseline.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/baseline.npy",
+      "sha256": "45c9499efcb67cefd8713dba1c5459bb5b79c559ed96425725ef0fb1b3483ed4"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "arrays",
+        "residual",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "residual",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "residual.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/residual.npy",
+      "sha256": "ac6d876d5c1e34aa196664f507d72ba90c7576817f6df66d5bcdb3d046495baa"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "arrays",
+        "n_item",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "n_item",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "n_item.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/n_item.npy",
+      "sha256": "bc8a0d83b97766e1024c15e046fca53791bd73a29fb3655b88934a95ea18ebdf"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "arrays",
+        "n_type",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "n_type",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "n_type.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/n_type.npy",
+      "sha256": "ade1e3569d57e07f742f9ef0b5fb11ce9c3628ad65d58b1429239c0b1aad46f0"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "arrays",
+        "n_global",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "n_global",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "n_global.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/n_global.npy",
+      "sha256": "c8118126fd2cf4b9572c6158e338d4c0452d4f8d286fcb4e473b5ee679de141f"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "arrays",
+        "fallback_level",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "fallback_level",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "fallback_level.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/fallback_level.npy",
+      "sha256": "6d6aba886f1fb300fa59962c66b9b857e10eb074bfa2b5497d84b4ac53db4067"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "arrays",
+        "flags",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "flags",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "flags.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/flags.npy",
+      "sha256": "e0fc5bcb77f2a4be1c27edef913a97f055b4e3790963dea90f2362d9f7b1c2da"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "query_arrays",
+        "train",
+        "user_id",
+        "sha256"
+      ],
+      "path_selector": [
+        "query_arrays",
+        "train",
+        "user_id",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "query.train.user_id.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/query.train.user_id.npy",
+      "sha256": "8a3894029e63e95552f389e9902be73b695e3c14d9c96556341b9e51e1e1c667"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "query_arrays",
+        "train",
+        "origin",
+        "sha256"
+      ],
+      "path_selector": [
+        "query_arrays",
+        "train",
+        "origin",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "query.train.origin.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/query.train.origin.npy",
+      "sha256": "23659ae9799bb99d3cc0ba08d62c7b83eb1fa1f4976ac5dfe60558ed3bad34ed"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "query_arrays",
+        "train",
+        "length",
+        "sha256"
+      ],
+      "path_selector": [
+        "query_arrays",
+        "train",
+        "length",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "query.train.length.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/query.train.length.npy",
+      "sha256": "a972411730ade8a6cedc89e96ea782068d62c7de32af454c46358fac9d3c0021"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "query_arrays",
+        "val",
+        "user_id",
+        "sha256"
+      ],
+      "path_selector": [
+        "query_arrays",
+        "val",
+        "user_id",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "query.val.user_id.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/query.val.user_id.npy",
+      "sha256": "8415e18a53f1e18c6368e4a9f1afbf35473cdfdd1b8244dbdccd92821477c94b"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "query_arrays",
+        "val",
+        "origin",
+        "sha256"
+      ],
+      "path_selector": [
+        "query_arrays",
+        "val",
+        "origin",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "query.val.origin.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/query.val.origin.npy",
+      "sha256": "840a28b336c8708c6917e932d1c703916125806dbd6c15d155cdf3c61725279a"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "query_arrays",
+        "val",
+        "length",
+        "sha256"
+      ],
+      "path_selector": [
+        "query_arrays",
+        "val",
+        "length",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "query.val.length.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/query.val.length.npy",
+      "sha256": "22972730d38245bbfa1c6cd01c71c42f0ba5940cf46facc4595aa68c54d05d45"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "source_pins",
+        "interactions",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "interactions",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/interactions.csv",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/interactions.csv",
+      "sha256": "201dc9114eb309da9df6f5f227ada23a371d668edf64a32090fb613a75162ecf"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "source_pins",
+        "items",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "items",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "source_pins",
+        "history_builder",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "history_builder",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/scripts/kion_pack_history.py",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/scripts/kion_pack_history.py",
+      "sha256": "ecdd0cd0e853d20578a7855acc8987c72c430925d1a30f7e26fee250000659dd"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "source_pins",
+        "event_store_builder",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "event_store_builder",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/scripts/kion_completion_event_store.py",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/scripts/kion_completion_event_store.py",
+      "sha256": "8dd79dff657f4feaa2ef5d430278ec24fc2dc7c11aa713f3bc65b4f755a20ef5"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "source_pins",
+        "completion_diagnostics",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "completion_diagnostics",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/scripts/kion_completion_diagnostics.py",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/scripts/kion_completion_diagnostics.py",
+      "sha256": "862e647f96f10ed0e2a1e8b5c78c80245fb48c9029937706e68e1a2d1962d552"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "prepared_pins",
+        "train.npz",
+        "sha256"
+      ],
+      "path_selector": [
+        "prepared_pins",
+        "train.npz",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/train.npz",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-full-context64/train.npz",
+      "sha256": "bed53339345246fbd3cbad6d72017ed82451634431e48c6e9fd67a66581be4f8"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "prepared_pins",
+        "val.npz",
+        "sha256"
+      ],
+      "path_selector": [
+        "prepared_pins",
+        "val.npz",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/val.npz",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-full-context64/val.npz",
+      "sha256": "4c8839b69a4abeff5e4eea3ffeea1d83715deea8775f4547f8f85c0e055bad99"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "metadata_sha256"
+      ],
+      "path_selector": [
+        "metadata_path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "sha256": "f02acaa9a5e5532e79b060279ba8a5027f268f202132e85ebab97cd4912fbd11"
+    },
+    {
+      "document": "events",
+      "selector": [
+        "catalog",
+        "sha256"
+      ],
+      "path_selector": [
+        "catalog",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "catalog.npz",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/catalog.npz",
+      "sha256": "4324fba1c3f1d6f5b439452c3b5f50de64eaedccbd1d9b47835094fd8613782a"
+    },
+    {
+      "document": "users",
+      "selector": [
+        "source_pins",
+        "interactions",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "interactions",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/interactions.csv",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/normalized-r2",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/interactions.csv",
+      "sha256": "201dc9114eb309da9df6f5f227ada23a371d668edf64a32090fb613a75162ecf"
+    },
+    {
+      "document": "users",
+      "selector": [
+        "source_pins",
+        "items",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "items",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/normalized-r2",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e"
+    },
+    {
+      "document": "users",
+      "selector": [
+        "source_pins",
+        "history_builder",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "history_builder",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/scripts/kion_pack_history.py",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/normalized-r2",
+      "logical": "D:/tlab-recsys-2026/scripts/kion_pack_history.py",
+      "sha256": "ecdd0cd0e853d20578a7855acc8987c72c430925d1a30f7e26fee250000659dd"
+    },
+    {
+      "document": "users",
+      "selector": [
+        "source_pins",
+        "event_store_builder",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "event_store_builder",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/scripts/kion_completion_event_store.py",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/normalized-r2",
+      "logical": "D:/tlab-recsys-2026/scripts/kion_completion_event_store.py",
+      "sha256": "8dd79dff657f4feaa2ef5d430278ec24fc2dc7c11aa713f3bc65b4f755a20ef5"
+    },
+    {
+      "document": "users",
+      "selector": [
+        "source_pins",
+        "completion_diagnostics",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "completion_diagnostics",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/scripts/kion_completion_diagnostics.py",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/normalized-r2",
+      "logical": "D:/tlab-recsys-2026/scripts/kion_completion_diagnostics.py",
+      "sha256": "862e647f96f10ed0e2a1e8b5c78c80245fb48c9029937706e68e1a2d1962d552"
+    },
+    {
+      "document": "users",
+      "selector": [
+        "source_pins",
+        "user_diagnostics",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "user_diagnostics",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/scripts/kion_user_diagnostics.py",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/normalized-r2",
+      "logical": "D:/tlab-recsys-2026/scripts/kion_user_diagnostics.py",
+      "sha256": "8b39da0a9515d986ef82649b37066d2778b5e45a7bdf6d6e8183f8041ef4e8da"
+    },
+    {
+      "document": "users",
+      "selector": [
+        "prepared_pins",
+        "train.npz",
+        "sha256"
+      ],
+      "path_selector": [
+        "prepared_pins",
+        "train.npz",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/train.npz",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/normalized-r2",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-full-context64/train.npz",
+      "sha256": "bed53339345246fbd3cbad6d72017ed82451634431e48c6e9fd67a66581be4f8"
+    },
+    {
+      "document": "users",
+      "selector": [
+        "prepared_pins",
+        "val.npz",
+        "sha256"
+      ],
+      "path_selector": [
+        "prepared_pins",
+        "val.npz",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/val.npz",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/normalized-r2",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-full-context64/val.npz",
+      "sha256": "4c8839b69a4abeff5e4eea3ffeea1d83715deea8775f4547f8f85c0e055bad99"
+    },
+    {
+      "document": "users",
+      "selector": [
+        "metadata_sha256"
+      ],
+      "path_selector": [
+        "metadata_path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/normalized-r2",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "sha256": "f02acaa9a5e5532e79b060279ba8a5027f268f202132e85ebab97cd4912fbd11"
+    },
+    {
+      "document": "users",
+      "selector": [
+        "event_store",
+        "sha256"
+      ],
+      "path_selector": [
+        "event_store",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/manifest.json",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/normalized-r2",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/manifest.json",
+      "sha256": "382b410d564bb73eba268b5e2e49d092c25d2af4d1df677020ce46f546dc0cbf"
+    },
+    {
+      "document": "users",
+      "selector": [
+        "threshold_facts",
+        "sha256"
+      ],
+      "path_selector": [
+        "threshold_facts",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/source-outcome-bits-r2/manifest.json",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/normalized-r2",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/source-outcome-bits-r2/manifest.json",
+      "sha256": "dd920e4f593c49f71198a62e0d36a78d534e7b64e2bbaf6ec60b2c7f3b81120a"
+    },
+    {
+      "document": "threshold",
+      "selector": [
+        "arrays",
+        "threshold_bits",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "threshold_bits",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/source-outcome-bits-r2/threshold_bits.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/source-outcome-bits-r2",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/source-outcome-bits-r2/threshold_bits.npy",
+      "sha256": "86b10d5fc74381731c0edfd5cea7c61a7c3470e87245aecdc04a3b9ec5cbe06b"
+    },
+    {
+      "document": "threshold",
+      "selector": [
+        "arrays",
+        "source_csv_data_row",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "source_csv_data_row",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/source-outcome-bits-r2/source_csv_data_row.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/source-outcome-bits-r2",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/source-outcome-bits-r2/source_csv_data_row.npy",
+      "sha256": "6b92c259d7973479caf25ed5c6e64a052b4f22d18febd799f2f02e3e90f76931"
+    },
+    {
+      "document": "threshold",
+      "selector": [
+        "source_pins",
+        "interactions",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "interactions",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/interactions.csv",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/source-outcome-bits-r2",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/interactions.csv",
+      "sha256": "201dc9114eb309da9df6f5f227ada23a371d668edf64a32090fb613a75162ecf"
+    },
+    {
+      "document": "threshold",
+      "selector": [
+        "source_pins",
+        "builder",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "builder",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/scripts/kion_user_diagnostics.py",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/source-outcome-bits-r2",
+      "logical": "D:/tlab-recsys-2026/scripts/kion_user_diagnostics.py",
+      "sha256": "8b39da0a9515d986ef82649b37066d2778b5e45a7bdf6d6e8183f8041ef4e8da"
+    },
+    {
+      "document": "threshold",
+      "selector": [
+        "source_pins",
+        "parser",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "parser",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/scripts/kion_pack_history.py",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/source-outcome-bits-r2",
+      "logical": "D:/tlab-recsys-2026/scripts/kion_pack_history.py",
+      "sha256": "ecdd0cd0e853d20578a7855acc8987c72c430925d1a30f7e26fee250000659dd"
+    },
+    {
+      "document": "threshold",
+      "selector": [
+        "event_store",
+        "sha256"
+      ],
+      "path_selector": [
+        "event_store",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/manifest.json",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/user-diagnostics/source-outcome-bits-r2",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/manifest.json",
+      "sha256": "382b410d564bb73eba268b5e2e49d092c25d2af4d1df677020ce46f546dc0cbf"
+    },
+    {
+      "document": "audience",
+      "selector": [
+        "arrays",
+        "users",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "users",
+        "file"
+      ],
+      "implicit_name": null,
+      "original_path": "users.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1/users.npy",
+      "sha256": "3d075e2a505356beb154ec3048a1d03b3fdda6cf7f48c125c441bf815245c3c0"
+    },
+    {
+      "document": "audience",
+      "selector": [
+        "arrays",
+        "raw_items",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "raw_items",
+        "file"
+      ],
+      "implicit_name": null,
+      "original_path": "raw_items.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1/raw_items.npy",
+      "sha256": "9b05528c2441632f0bd95d1e61889f2d841a824d53480fb6408eb57c5e2f1ffc"
+    },
+    {
+      "document": "audience",
+      "selector": [
+        "arrays",
+        "tokens",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "tokens",
+        "file"
+      ],
+      "implicit_name": null,
+      "original_path": "tokens.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1/tokens.npy",
+      "sha256": "ae78bc2abf6f1f848a21a900b632f134fb30e3a0ce8a8664022f76c0a5f6616b"
+    },
+    {
+      "document": "audience",
+      "selector": [
+        "arrays",
+        "days",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "days",
+        "file"
+      ],
+      "implicit_name": null,
+      "original_path": "days.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1/days.npy",
+      "sha256": "d9cc480bcc1522ee731dfa41aa681c1ad58cd6ae83859fc5bf34d8f16bf4289f"
+    },
+    {
+      "document": "audience",
+      "selector": [
+        "arrays",
+        "unique_users",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "unique_users",
+        "file"
+      ],
+      "implicit_name": null,
+      "original_path": "unique_users.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1/unique_users.npy",
+      "sha256": "c14c859005e76bb37f27a326fd3f44cc85a636bae40b51c3851278246b5d58a2"
+    },
+    {
+      "document": "audience",
+      "selector": [
+        "arrays",
+        "row_user",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "row_user",
+        "file"
+      ],
+      "implicit_name": null,
+      "original_path": "row_user.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1/row_user.npy",
+      "sha256": "d934c5549cad45c1321aee65cab11eaeee6fc9850163a0ca4271f60bac82108f"
+    },
+    {
+      "document": "audience",
+      "selector": [
+        "arrays",
+        "user_offsets",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "user_offsets",
+        "file"
+      ],
+      "implicit_name": null,
+      "original_path": "user_offsets.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1/user_offsets.npy",
+      "sha256": "b4846b00d2265ab5680b99e598b89305594cede3e4b80516f701fabd1ef6fc8d"
+    },
+    {
+      "document": "audience",
+      "selector": [
+        "arrays",
+        "demographic_ids",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "demographic_ids",
+        "file"
+      ],
+      "implicit_name": null,
+      "original_path": "demographic_ids.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1/demographic_ids.npy",
+      "sha256": "eff13b0e49434c82de56871688fb3100dd845dc25058578776eb44d245cbaab8"
+    },
+    {
+      "document": "audience",
+      "selector": [
+        "arrays",
+        "demographic_codes",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "demographic_codes",
+        "file"
+      ],
+      "implicit_name": null,
+      "original_path": "demographic_codes.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1/demographic_codes.npy",
+      "sha256": "14bb59271b35396683d9c6725430699486803df57331e8cdcd07c54d90effcec"
+    },
+    {
+      "document": "audience",
+      "selector": [
+        "arrays",
+        "genre_vectors",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "genre_vectors",
+        "file"
+      ],
+      "implicit_name": null,
+      "original_path": "genre_vectors.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1/genre_vectors.npy",
+      "sha256": "93a354a049e05fcd4ed1ca45a295e3e3b18f0ff6f13c61d460de5559d6d6b387"
+    },
+    {
+      "document": "audience",
+      "selector": [
+        "arrays",
+        "genre_empty",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "genre_empty",
+        "file"
+      ],
+      "implicit_name": null,
+      "original_path": "genre_empty.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1/genre_empty.npy",
+      "sha256": "df6f74f8175b4ae039b54d6dd533a7cdecbf71f2807bf3432bb9c3ece0863f51"
+    },
+    {
+      "document": "audience",
+      "selector": [
+        "arrays",
+        "genre_missing",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "genre_missing",
+        "file"
+      ],
+      "implicit_name": null,
+      "original_path": "genre_missing.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1/genre_missing.npy",
+      "sha256": "d4963b073c817a43d4e6f7066a031c825143907973f286f8cdd04033a15d8387"
+    },
+    {
+      "document": "audience",
+      "selector": [
+        "arrays",
+        "genre_known",
+        "sha256"
+      ],
+      "path_selector": [
+        "arrays",
+        "genre_known",
+        "file"
+      ],
+      "implicit_name": null,
+      "original_path": "genre_known.npy",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1/genre_known.npy",
+      "sha256": "8b6876f179ee75df40871b421f434b4f179936cb148ec69a87c06333aa962ef0"
+    },
+    {
+      "document": "audience",
+      "selector": [
+        "source_pins",
+        "interactions",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "interactions",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/interactions.csv",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/interactions.csv",
+      "sha256": "201dc9114eb309da9df6f5f227ada23a371d668edf64a32090fb613a75162ecf"
+    },
+    {
+      "document": "audience",
+      "selector": [
+        "source_pins",
+        "items",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "items",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e"
+    },
+    {
+      "document": "audience",
+      "selector": [
+        "source_pins",
+        "users",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "users",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/raw/kion/full/users.csv",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1",
+      "logical": "D:/tlab-recsys-2026/data/raw/kion/full/users.csv",
+      "sha256": "37b2945240628a3f215e1fb5f79b4cff386d8988b21fa61e5b135aef4541182c"
+    },
+    {
+      "document": "audience",
+      "selector": [
+        "source_pins",
+        "metadata",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "metadata",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1",
+      "logical": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "sha256": "f02acaa9a5e5532e79b060279ba8a5027f268f202132e85ebab97cd4912fbd11"
+    },
+    {
+      "document": "audience",
+      "selector": [
+        "source_pins",
+        "builder",
+        "sha256"
+      ],
+      "path_selector": [
+        "source_pins",
+        "builder",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/scripts/kion_audience_features.py",
+      "base": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/audience/full-index-r1",
+      "logical": "D:/tlab-recsys-2026/scripts/kion_audience_features.py",
+      "sha256": "98da6c6b939ff3dbe5c8464a826a775437d43fd5b6257efafab33caff34ec739"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "completion_diagnostics",
+        "evidence",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "completion_diagnostics",
+        "evidence",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/completion_diagnostics.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/completion_diagnostics.json",
+      "sha256": "ff38751d082232b0584936252a8643a43149038f6fee1e6b7f2648bb02748098"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "completion_diagnostics",
+        "review",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "completion_diagnostics",
+        "review",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/completion_diagnostics-review-r2.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/completion_diagnostics-review-r2.json",
+      "sha256": "96afa7dd0130cc17ae9b725f6db046a155f41582327262451893314e81a101e3"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "geography_time",
+        "evidence",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "geography_time",
+        "evidence",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/geography_time.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/geography_time.json",
+      "sha256": "2927b7854374d11a02ec5c613ff089c77edfb91533fe9f3f9c24098c61bdd11a"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "geography_time",
+        "review",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "geography_time",
+        "review",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/geography_time-review-r1.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/geography_time-review-r1.json",
+      "sha256": "35afa91b01c045442048ebc234575b4109da6863a8ce68c2dc7eb9da9cbf19a2"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "local_base",
+        "evidence",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "local_base",
+        "evidence",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/local_base.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/local_base.json",
+      "sha256": "99e95f30a603aa600df4018f36f52c67781b24745cf5728f2baadc9650c7e4e9"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "local_base",
+        "review",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "local_base",
+        "review",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/local_base-review-r1.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/local_base-review-r1.json",
+      "sha256": "dfaa2142744cb01d920f0baba197dc6bc0134c411d75d61f8a2781c4710ff060"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "local_dynamic",
+        "evidence",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "local_dynamic",
+        "evidence",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/local_dynamic.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/local_dynamic.json",
+      "sha256": "918a4b0efb96b578b6ef478e362c5aaea2690a288dd5f3a7ab906ccc33890589"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "local_dynamic",
+        "review",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "local_dynamic",
+        "review",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/local_dynamic-review-r2.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/local_dynamic-review-r2.json",
+      "sha256": "0c5d7701e829f4b75cfcd63906db00851ff16a5e9c185af058b26da486d92793"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "narrative_relations",
+        "evidence",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "narrative_relations",
+        "evidence",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/narrative_relations.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/narrative_relations.json",
+      "sha256": "7d3a46cd2fa761a9e33ec423ada0acd7b1b284e866c2211a1cb03f978ff1863a"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "narrative_relations",
+        "review",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "narrative_relations",
+        "review",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/narrative_relations-review-r1.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/narrative_relations-review-r1.json",
+      "sha256": "c623014b2c023f0af7ae24e4d4e326daa6d18ba379333beb9ea304eb1bf26139"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "people_embeddings",
+        "evidence",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "people_embeddings",
+        "evidence",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/people_embeddings.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/people_embeddings.json",
+      "sha256": "e9df7ebed3940d9ad1bf22cb87ed4baf413f846da83d8a2f35baa8c75b341fd5"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "people_embeddings",
+        "review",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "people_embeddings",
+        "review",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/people_embeddings-review-r1.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/people_embeddings-review-r1.json",
+      "sha256": "8c9a905e3ba6d6db488a17e5910750e1d7f4c0b6b02f23a72b5ef5dd8ba2e94e"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "personal_candidates",
+        "evidence",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "personal_candidates",
+        "evidence",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/personal_candidates.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/personal_candidates.json",
+      "sha256": "f6393cebd81264b6c3e2ce05318d5ef0bbe47ab66f8dcfbc9629134730f7388e"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "personal_candidates",
+        "review",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "personal_candidates",
+        "review",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/personal_candidates-review-r2.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/personal_candidates-review-r2.json",
+      "sha256": "9dad69fee71672d4a4b1569e5cfc9a5b18639d948b6c4f92ebe663ffe76d7c29"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "professions",
+        "evidence",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "professions",
+        "evidence",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/professions.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/professions.json",
+      "sha256": "58e70219059a7a13c54eddebba3fd4bf5c4cb095a2e4e0394eed0736498097c9"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "professions",
+        "review",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "professions",
+        "review",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/professions-review-r1.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/professions-review-r1.json",
+      "sha256": "41b428296640f77a728911d75427f2e6bb417d2692ff6e716e7967df4bf4edcb"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "related_interest",
+        "evidence",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "related_interest",
+        "evidence",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/related_interest.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/related_interest.json",
+      "sha256": "820fc625beb356be407263643c47d520a80ef4de46c95e434e053289db4ed961"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "related_interest",
+        "review",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "related_interest",
+        "review",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/related_interest-review-r1.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/related_interest-review-r1.json",
+      "sha256": "5e9f5d2a7a24d861cb42d48bfd23b44f0fb8d86560121b171de16f9af374b09b"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "semantic_extensions",
+        "evidence",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "semantic_extensions",
+        "evidence",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/semantic_extensions.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/semantic_extensions.json",
+      "sha256": "d1a71a532fb1733aab62b26d3f44821f76a1f564147397c94b1febcda879b7ac"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "semantic_extensions",
+        "review",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "semantic_extensions",
+        "review",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/semantic_extensions-review-r1.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/semantic_extensions-review-r1.json",
+      "sha256": "29c33590f8119e8fa2712d3452c43a90d859b69ae4db7d55a79d250349c7c546"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "sports_settings",
+        "evidence",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "sports_settings",
+        "evidence",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/sports_settings.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/sports_settings.json",
+      "sha256": "00c6fa15c92f0d493b31cceed4ac10a7358fd7faf2d44a1221340cb943a776d0"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "sports_settings",
+        "review",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "sports_settings",
+        "review",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/sports_settings-review-r1.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/sports_settings-review-r1.json",
+      "sha256": "cebf2d067d8a385e86fecdd211bf3e19e1d100c4a34a5fab46bb650847d99fe0"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "story_format",
+        "evidence",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "story_format",
+        "evidence",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/story_format.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/story_format.json",
+      "sha256": "903ba52c5feceb9aab6481a960dd2fc3ae41736d75f38e0880807e5c713f1b04"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "story_format",
+        "review",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "story_format",
+        "review",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/story_format-review-r1.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/story_format-review-r1.json",
+      "sha256": "e507f87e323aba0fbdb5c2ceed14259b05e21c8b7957f5057a9f41d6082ccb0f"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "text3fields",
+        "evidence",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "text3fields",
+        "evidence",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/text3fields.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/evidence/text3fields.json",
+      "sha256": "a68798e5b3cfd8891217d93219b110c93e3ec67d5fdfe9c47a9b1854a054d42a"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "text3fields",
+        "review",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "text3fields",
+        "review",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/text3fields-review-r2.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r1/reviews/text3fields-review-r2.json",
+      "sha256": "f79dfa934da89ff9c567012c0cb4d22ba3591153c95339f3f07c9efe1acc4ec9"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "user_diagnostics",
+        "evidence",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "user_diagnostics",
+        "evidence",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r2/evidence/user_diagnostics.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r2/evidence/user_diagnostics.json",
+      "sha256": "6bbc4c56eb253331ec7a0d32508c00d06b057059b557df2108d5e879222f195d"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "user_diagnostics",
+        "review",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "user_diagnostics",
+        "review",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r2/reviews/user_diagnostics-review-r1.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r2/reviews/user_diagnostics-review-r1.json",
+      "sha256": "589b318a49147c51a2301340e7564de8c2ae69508919b66274439da3e64de4ff"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "franchise_progress",
+        "evidence",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "franchise_progress",
+        "evidence",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r2/evidence/franchise_progress.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r2/evidence/franchise_progress.json",
+      "sha256": "167a914ffffc40f04c9ae6ed94c73a558e323cf2a1af4ccf15b3e9439970e04e"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "franchise_progress",
+        "review",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "franchise_progress",
+        "review",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r2/reviews/franchise_progress-review-r1.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/acceptance-mapping-r2/reviews/franchise_progress-review-r1.json",
+      "sha256": "f7ee827ed49bcc12ec6e540015a45070629bac81591b5434e4d9861526f1540c"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "external_interest",
+        "evidence",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "external_interest",
+        "evidence",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/ratings-pageviews/phase4-dated-population-r1/sft-declaration.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/ratings-pageviews/phase4-dated-population-r1/sft-declaration.json",
+      "sha256": "7bd7176ad9d4fe67e9f9520b7970587bfc9d8f290ccd90cb51cf5dea829986d5"
+    },
+    {
+      "document": "assessment",
+      "selector": [
+        "components",
+        "external_interest",
+        "review",
+        "sha256"
+      ],
+      "path_selector": [
+        "components",
+        "external_interest",
+        "review",
+        "path"
+      ],
+      "implicit_name": null,
+      "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/ratings-pageviews/phase4-independent-review-r1.json",
+      "base": "D:/tlab-recsys-2026/data/processed/kion-ready-sft-20261020-r1/native-r6",
+      "logical": "D:/tlab-recsys-2026/artifacts/task2-kion/all-agreed-20261020/ratings-pageviews/phase4-independent-review-r1.json",
+      "sha256": "238ad8931639c63b9b90d4a21b5a1ad12d2efe0fa0118a36c0fa24e227e66b34"
+    }
+  ],
+  "unexpanded": [
+    "Active scoped-loader consumed-file coverage is audited in GPT-TRANSITIVE.md; metadata inventory does not certify payload bytes, numerical behavior or producer reconstruction.",
+    "Opaque acceptance evidence/reviews, narrative/franchise provenance and dated-bank provenance files are consumed as exact pins rather than recursively parsed by this loader. Their producer dependencies remain outside this consumption inventory.",
+    "Base basic-bundle/embedded provenance and audience index arrays include conservative producer provenance beyond the active scoped load path; no generic recursive expansion is performed.",
+    "Rebuilding text caches requires E5 model files; full SQLite query-store route, exact recovery admission, graph/32768 and bank262k have separate input contracts."
+  ]
+}

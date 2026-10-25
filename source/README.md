@@ -7,7 +7,7 @@ The [manifest](manifest.json) lists 284 copied files, 6,989,216 bytes, with thei
 - [fullstudy/code-manifest.json](fullstudy/code-manifest.json) and [fullstudy/dependencies.json](fullstudy/dependencies.json) retain the approved historical metadata. The 261 files are unpacked under `fullstudy/code/`; no old ZIP needs to be opened.
 - [matched-kl/selection-final-r1.json](matched-kl/selection-final-r1.json) retains the approved follow-up selection. Only its 20 Python sources are copied here; its other entries describe historical evidence and are not an inventory of this new source tree.
 - [static-audit.json](static-audit.json) records the bounded source/path/import checks and the follow-up request-source closure. It distinguishes preserved code from unresolved execution dependencies.
-- [SOURCE_CLOSURE.md](../research/SOURCE_CLOSURE.md) maps the scientific stages to their sources and explains relocation gaps. The [reproduction guide](../reproduction/README.md) describes the new reader-facing adapter and its instructions.
+- [SOURCE_CLOSURE.md](../research/SOURCE_CLOSURE.md) maps the scientific stages to their sources and explains relocation gaps. The current [reproduction instructions](../REPRODUCING.md) define file availability and replay status for this clone. The [reproduction overview](../reproduction/README.md) separates the supported checks from the historical raw-to-training recipe; old archive receipts do not replace the current instructions.
 
 From any working directory, Python 3.12+ can verify the preserved bytes and parse/compile the 257 Python sources without executing them:
 

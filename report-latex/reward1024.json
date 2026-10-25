@@ -1,0 +1,466 @@
+{
+  "schema": "kion-rm1024-scalar-summary-v1",
+  "artifact_kind": "derived scalar summaries, not model or bootstrap replay",
+  "source_analysis_sha256": "a14435dfc46e7a9604e64e93e528954f82dc8550b8ae7317a6f3cdde1ee1bd0d",
+  "source_reward_manifest_sha256": "fbdbb304ae92f688313686d88d615752212d8564ad5a2895c60a3386810e1796",
+  "selection_sha256": "3ad1d5922e60ebcf3d97945b1d6a9c1ba3b2b1020e34e1114ae8b386374cdcab",
+  "source_availability": "Original analysis and model arrays are external audit inputs; no local machine paths are required to read this summary.",
+  "rows": 1024,
+  "unique_users": 1018,
+  "candidates_per_state": 1024,
+  "known_targets": 998,
+  "covered_targets": 844,
+  "scope": "Separate 1024-request RM cohort selected from existing 16384 reused-development requests; not the 65536-request next-item evaluation. Fixed calibrated RM predictions, not observed utility.",
+  "fixed_seeds": [
+    20261024,
+    20261025,
+    20261026
+  ],
+  "aggregation": "Equal arithmetic mean of three fixed model estimates per family on every common user-bootstrap draw; not an ensemble, not seed resampling.",
+  "bootstrap": {
+    "draws": 2000,
+    "seed": 20261024,
+    "unit": "user cluster; all selected states for user travel together",
+    "shared_draws": true,
+    "conditional_ratio": "resampled numerator total / resampled supported mass total",
+    "family_mean": "equal mean of three fixed seed metric estimates on each common draw"
+  },
+  "definitions": {
+    "completion_centered": "E_p[S*(r-b_C)]; b_C=sum(p_C*S*r)/sum(p_C*S); unsupported advantage0",
+    "residual_centered": "same centering with separate u=where(S,r-prior,0)",
+    "probabilities": "temperature1 softmax over all1024 candidates including unsupported",
+    "supported_conditional_reward": "joint supported reward numerator / joint probability denominator",
+    "ranking": "raw-ID ascending tie-break; unknown and offpool remain zero in all-row denominator",
+    "interpretation": "reused development states; fixed RM calibrated predictions, not observed utility; CIs conditional on frozen seeds and models"
+  },
+  "support_definition": "positive frozen RM-fit item count; not causal overlap",
+  "support": {
+    "support_count": 1017457,
+    "support_fraction": 0.9703226089477539,
+    "fallback_count": 31119,
+    "fallback_fraction": 0.029677391052246094,
+    "states_without_support": 0
+  },
+  "models": {
+    "C": {
+      "completion_centered": {
+        "estimate": -3.3841083825177434e-18,
+        "ci95": [
+          -6.548752979643485e-18,
+          -2.1636622813755162e-19
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "supported_conditional_reward": {
+        "estimate": 0.4206452261941722,
+        "ci95": [
+          0.414518091837015,
+          0.4268560498159812
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "support_mass": {
+        "estimate": 0.9702983486906179,
+        "ci95": [
+          0.9694533112176962,
+          0.9711410212649426
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "residual_centered": {
+        "estimate": 4.2072391187917115e-19,
+        "ci95": [
+          -4.0511208341695414e-19,
+          1.210407397740963e-18
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "map10": {
+        "estimate": 0.08519383990575398,
+        "ci95": [
+          0.07200229654649558,
+          0.09930291430514791
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "ndcg10": {
+        "estimate": 0.11031236740288049,
+        "ci95": [
+          0.09564206665652437,
+          0.1264299725959064
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "recall10": {
+        "estimate": 0.1923828125,
+        "ci95": [
+          0.16877637521989255,
+          0.2175609756097561
+        ],
+        "valid_bootstrap_draws": 2000
+      }
+    },
+    "completion-fixed3-mean": {
+      "completion_centered": {
+        "estimate": 0.029112566113831537,
+        "ci95": [
+          0.028590438964090168,
+          0.029631053319479267
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "supported_conditional_reward": {
+        "estimate": 0.45058087707673855,
+        "ci95": [
+          0.4444212500694234,
+          0.4567103190027823
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "support_mass": {
+        "estimate": 0.9735578764794252,
+        "ci95": [
+          0.9727782851268659,
+          0.9743073985639785
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "residual_centered": {
+        "estimate": 0.00352994304425838,
+        "ci95": [
+          0.003258317001267389,
+          0.0037942211268373054
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "map10": {
+        "estimate": 0.07747757523148154,
+        "ci95": [
+          0.06534348179651266,
+          0.0906340690773629
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "ndcg10": {
+        "estimate": 0.10392728080416382,
+        "ci95": [
+          0.0900403376615633,
+          0.11863110557019743
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "recall10": {
+        "estimate": 0.1904296875,
+        "ci95": [
+          0.16682520325203254,
+          0.214637583256299
+        ],
+        "valid_bootstrap_draws": 2000
+      }
+    },
+    "residual-fixed3-mean": {
+      "completion_centered": {
+        "estimate": 0.009736444639202715,
+        "ci95": [
+          0.00935645642924541,
+          0.010147580367554676
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "supported_conditional_reward": {
+        "estimate": 0.4306348206235559,
+        "ci95": [
+          0.42445879694065786,
+          0.4367397583273899
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "support_mass": {
+        "estimate": 0.9747266310032789,
+        "ci95": [
+          0.9739958402673057,
+          0.9754433064339864
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "residual_centered": {
+        "estimate": 0.009033176275756186,
+        "ci95": [
+          0.008771170321944854,
+          0.009294605773154411
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "map10": {
+        "estimate": 0.08522122499173283,
+        "ci95": [
+          0.07178753198610689,
+          0.09963984207123662
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "ndcg10": {
+        "estimate": 0.11068430742476176,
+        "ci95": [
+          0.0952391739099461,
+          0.1262737904971823
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "recall10": {
+        "estimate": 0.19303385416666666,
+        "ci95": [
+          0.16959355273477655,
+          0.21734892787524362
+        ],
+        "valid_bootstrap_draws": 2000
+      }
+    }
+  },
+  "paired_differences": {
+    "completion-fixed3-mean minus C": {
+      "completion_centered": {
+        "estimate": 0.02911256611383154,
+        "ci95": [
+          0.02859043896409017,
+          0.02963105331947927
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "supported_conditional_reward": {
+        "estimate": 0.029935650882566334,
+        "ci95": [
+          0.0294069089355386,
+          0.03046864302261328
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "support_mass": {
+        "estimate": 0.003259527788807226,
+        "ci95": [
+          0.0031620938757693368,
+          0.0033540032253789208
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "residual_centered": {
+        "estimate": 0.0035299430442583797,
+        "ci95": [
+          0.003258317001267389,
+          0.0037942211268373045
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "map10": {
+        "estimate": -0.007716264674272444,
+        "ci95": [
+          -0.012637272043196115,
+          -0.0031827550810135624
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "ndcg10": {
+        "estimate": -0.006385086598716672,
+        "ci95": [
+          -0.010992735239321214,
+          -0.0018993414299244542
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "recall10": {
+        "estimate": -0.001953125,
+        "ci95": [
+          -0.011707317073170687,
+          0.00684931506849315
+        ],
+        "valid_bootstrap_draws": 2000
+      }
+    },
+    "residual-fixed3-mean minus C": {
+      "completion_centered": {
+        "estimate": 0.009736444639202719,
+        "ci95": [
+          0.009356456429245411,
+          0.010147580367554677
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "supported_conditional_reward": {
+        "estimate": 0.009989594429383686,
+        "ci95": [
+          0.009589608547164508,
+          0.010421791351127972
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "support_mass": {
+        "estimate": 0.004428282312661014,
+        "ci95": [
+          0.004262476300744109,
+          0.0045747158886989495
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "residual_centered": {
+        "estimate": 0.009033176275756186,
+        "ci95": [
+          0.008771170321944853,
+          0.00929460577315441
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "map10": {
+        "estimate": 2.7385085978853807e-05,
+        "ci95": [
+          -0.002933415136844196,
+          0.0028671562910851617
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "ndcg10": {
+        "estimate": 0.00037194002188127573,
+        "ci95": [
+          -0.002676881295808389,
+          0.0034085215954474182
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "recall10": {
+        "estimate": 0.0006510416666666574,
+        "ci95": [
+          -0.006197455456566591,
+          0.007797461132506088
+        ],
+        "valid_bootstrap_draws": 2000
+      }
+    },
+    "residual-fixed3-mean minus completion-fixed3-mean": {
+      "completion_centered": {
+        "estimate": -0.019376121474628822,
+        "ci95": [
+          -0.020068312213961007,
+          -0.01870637352416196
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "supported_conditional_reward": {
+        "estimate": -0.019946056453182648,
+        "ci95": [
+          -0.02065408002700366,
+          -0.01925302077116228
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "support_mass": {
+        "estimate": 0.0011687545238537878,
+        "ci95": [
+          0.0010519149287808115,
+          0.00127471716170382
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "residual_centered": {
+        "estimate": 0.005503233231497805,
+        "ci95": [
+          0.0052665917742127635,
+          0.0057466065765378865
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "map10": {
+        "estimate": 0.007743649760251298,
+        "ci95": [
+          0.0026310437267824545,
+          0.013237843460654024
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "ndcg10": {
+        "estimate": 0.006757026620597947,
+        "ci95": [
+          0.0017151344834833511,
+          0.011997890477903476
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "recall10": {
+        "estimate": 0.0026041666666666574,
+        "ci95": [
+          -0.0074944811411890265,
+          0.013372472276581893
+        ],
+        "valid_bootstrap_draws": 2000
+      }
+    }
+  },
+  "historical_control": {
+    "name": "original-residual-beta0.5",
+    "scope": "Separate original model; excluded from matched-seed family means. Original completion beta0.5 aliases completion seed20261024 and is not an extra seed.",
+    "metrics": {
+      "completion_centered": {
+        "estimate": 0.004597455895014324,
+        "ci95": [
+          0.004422837398573983,
+          0.004784936390596655
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "supported_conditional_reward": {
+        "estimate": 0.4253737330473086,
+        "ci95": [
+          0.41923587783854466,
+          0.43148601197593867
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "support_mass": {
+        "estimate": 0.9726075422283249,
+        "ci95": [
+          0.9718292803624654,
+          0.9733867849840571
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "residual_centered": {
+        "estimate": 0.004176582510141715,
+        "ci95": [
+          0.0040519614943003174,
+          0.004297792700342369
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "map10": {
+        "estimate": 0.08476911272321432,
+        "ci95": [
+          0.07134448887747111,
+          0.09937035694429208
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "ndcg10": {
+        "estimate": 0.1095957444678609,
+        "ci95": [
+          0.09469063135757297,
+          0.12523861656133406
+        ],
+        "valid_bootstrap_draws": 2000
+      },
+      "recall10": {
+        "estimate": 0.1904296875,
+        "ci95": [
+          0.16715535397233883,
+          0.21499102138181594
+        ],
+        "valid_bootstrap_draws": 2000
+      }
+    }
+  },
+  "limitations": [
+    "User-cluster intervals condition on frozen seeds and models; they do not measure training variance or RM estimation error.",
+    "Reused development evidence, not an independent test or causal effect; no multiple-comparison correction.",
+    "Pair support fraction differs from policy-weighted support_mass. Unsupported actions remain in softmax with zero centered advantage.",
+    "RM1024 ranking summaries are cohort-specific and must not replace 65536-request ranking results."
+  ],
+  "training_updates": 0,
+  "new_rm_fits": 0
+}

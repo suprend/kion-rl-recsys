@@ -1,0 +1,466 @@
+{
+  "rows": 16384,
+  "users": 15346,
+  "scope": "Expanded reused development sample; fixed models; no new training or RM scoring.",
+  "metrics_map10": {
+    "C": 0.09506433880518353,
+    "completion-20261024": 0.09227425711495536,
+    "residual-20261024": 0.09396120101686509,
+    "completion-20261025": 0.0922122773670015,
+    "residual-20261025": 0.09416082473028273,
+    "completion-20261026": 0.09230148073226686,
+    "residual-20261026": 0.09384332081628224,
+    "A": 0.08289787655784969,
+    "B": 0.08506089467850943,
+    "GPT": 0.07221427796378968,
+    "RRF": 0.0787109132796999,
+    "completion": 0.09226267173807456,
+    "residual": 0.0939884488544767
+  },
+  "coverage": {
+    "rows": 16384,
+    "known_targets": 15918,
+    "unknown_target_misses": 466,
+    "candidate_coverage_count": 13406,
+    "candidate_coverage": 0.8182373046875,
+    "offpool_known_misses": 2512,
+    "map10": 0.09506433880518353,
+    "recall10": 0.208251953125,
+    "ndcg10": 0.12162920476247076
+  },
+  "contrasts": [
+    {
+      "model": "completion-20261024",
+      "reference": "C",
+      "metric": "MAP@10",
+      "difference": -0.0027900816902281748,
+      "ci95": [
+        -0.0040200409886717685,
+        -0.0015995152274545393
+      ]
+    },
+    {
+      "model": "completion-20261024",
+      "reference": "C",
+      "metric": "NDCG@10",
+      "difference": -0.003035394343781782,
+      "ci95": [
+        -0.004302744319064766,
+        -0.0018356262646443758
+      ]
+    },
+    {
+      "model": "completion-20261024",
+      "reference": "C",
+      "metric": "Recall@10",
+      "difference": -0.00390625,
+      "ci95": [
+        -0.006419099384786711,
+        -0.0012855832912287265
+      ]
+    },
+    {
+      "model": "residual-20261024",
+      "reference": "C",
+      "metric": "MAP@10",
+      "difference": -0.0011031377883184523,
+      "ci95": [
+        -0.0021628575356521123,
+        -8.286961940691956e-05
+      ]
+    },
+    {
+      "model": "residual-20261024",
+      "reference": "C",
+      "metric": "NDCG@10",
+      "difference": -0.001212221001184612,
+      "ci95": [
+        -0.0022162670477087784,
+        -0.0002448415621539741
+      ]
+    },
+    {
+      "model": "residual-20261024",
+      "reference": "C",
+      "metric": "Recall@10",
+      "difference": -0.00177001953125,
+      "ci95": [
+        -0.003789314156233201,
+        0.00018249729717488477
+      ]
+    },
+    {
+      "model": "completion-20261025",
+      "reference": "C",
+      "metric": "MAP@10",
+      "difference": -0.0028520614381820435,
+      "ci95": [
+        -0.004090820291885095,
+        -0.001640569329687076
+      ]
+    },
+    {
+      "model": "completion-20261025",
+      "reference": "C",
+      "metric": "NDCG@10",
+      "difference": -0.0031392202391159365,
+      "ci95": [
+        -0.00441598190112507,
+        -0.0019313854722878944
+      ]
+    },
+    {
+      "model": "completion-20261025",
+      "reference": "C",
+      "metric": "Recall@10",
+      "difference": -0.004150390625,
+      "ci95": [
+        -0.006689604218874115,
+        -0.001642071523469938
+      ]
+    },
+    {
+      "model": "residual-20261025",
+      "reference": "C",
+      "metric": "MAP@10",
+      "difference": -0.0009035140749007939,
+      "ci95": [
+        -0.0019318834340589632,
+        9.734553731613265e-05
+      ]
+    },
+    {
+      "model": "residual-20261025",
+      "reference": "C",
+      "metric": "NDCG@10",
+      "difference": -0.000998733962329453,
+      "ci95": [
+        -0.0019574150666295856,
+        -4.2291477466341264e-05
+      ]
+    },
+    {
+      "model": "residual-20261025",
+      "reference": "C",
+      "metric": "Recall@10",
+      "difference": -0.00146484375,
+      "ci95": [
+        -0.003416175670827499,
+        0.0004891826366057743
+      ]
+    },
+    {
+      "model": "completion-20261026",
+      "reference": "C",
+      "metric": "MAP@10",
+      "difference": -0.0027628580729166666,
+      "ci95": [
+        -0.004005164849055325,
+        -0.00155491608901123
+      ]
+    },
+    {
+      "model": "completion-20261026",
+      "reference": "C",
+      "metric": "NDCG@10",
+      "difference": -0.0030305400574792956,
+      "ci95": [
+        -0.004309924875705626,
+        -0.0018418470253980888
+      ]
+    },
+    {
+      "model": "completion-20261026",
+      "reference": "C",
+      "metric": "Recall@10",
+      "difference": -0.00396728515625,
+      "ci95": [
+        -0.006517188282873738,
+        -0.0014007568240727046
+      ]
+    },
+    {
+      "model": "residual-20261026",
+      "reference": "C",
+      "metric": "MAP@10",
+      "difference": -0.0012210179889012899,
+      "ci95": [
+        -0.002255895120689633,
+        -0.00020778476894634708
+      ]
+    },
+    {
+      "model": "residual-20261026",
+      "reference": "C",
+      "metric": "NDCG@10",
+      "difference": -0.0013416803334848463,
+      "ci95": [
+        -0.0023514022146338596,
+        -0.00039691174303693033
+      ]
+    },
+    {
+      "model": "residual-20261026",
+      "reference": "C",
+      "metric": "Recall@10",
+      "difference": -0.001953125,
+      "ci95": [
+        -0.003921540475001197,
+        0.0
+      ]
+    },
+    {
+      "model": "A",
+      "reference": "C",
+      "metric": "MAP@10",
+      "difference": -0.01216646224733383,
+      "ci95": [
+        -0.013857039782298264,
+        -0.01050889479458098
+      ]
+    },
+    {
+      "model": "A",
+      "reference": "C",
+      "metric": "NDCG@10",
+      "difference": -0.014049838277458135,
+      "ci95": [
+        -0.015821754042729046,
+        -0.012355092086408868
+      ]
+    },
+    {
+      "model": "A",
+      "reference": "C",
+      "metric": "Recall@10",
+      "difference": -0.01983642578125,
+      "ci95": [
+        -0.02327858227514289,
+        -0.01644416302631364
+      ]
+    },
+    {
+      "model": "B",
+      "reference": "C",
+      "metric": "MAP@10",
+      "difference": -0.010003444126674107,
+      "ci95": [
+        -0.011502675389044958,
+        -0.00857233077631259
+      ]
+    },
+    {
+      "model": "B",
+      "reference": "C",
+      "metric": "NDCG@10",
+      "difference": -0.011956308426622524,
+      "ci95": [
+        -0.013426486263498195,
+        -0.010503233427913828
+      ]
+    },
+    {
+      "model": "B",
+      "reference": "C",
+      "metric": "Recall@10",
+      "difference": -0.0179443359375,
+      "ci95": [
+        -0.020802102240662104,
+        -0.015070147892111436
+      ]
+    },
+    {
+      "model": "GPT",
+      "reference": "C",
+      "metric": "MAP@10",
+      "difference": -0.02285006084139385,
+      "ci95": [
+        -0.025161301445857737,
+        -0.020568678821058964
+      ]
+    },
+    {
+      "model": "GPT",
+      "reference": "C",
+      "metric": "NDCG@10",
+      "difference": -0.029407826953865124,
+      "ci95": [
+        -0.03188752974491742,
+        -0.026808039531293112
+      ]
+    },
+    {
+      "model": "GPT",
+      "reference": "C",
+      "metric": "Recall@10",
+      "difference": -0.0511474609375,
+      "ci95": [
+        -0.055569194930779824,
+        -0.046468936752658015
+      ]
+    },
+    {
+      "model": "RRF",
+      "reference": "C",
+      "metric": "MAP@10",
+      "difference": -0.016353425525483634,
+      "ci95": [
+        -0.018571738625880282,
+        -0.014194274413971647
+      ]
+    },
+    {
+      "model": "RRF",
+      "reference": "C",
+      "metric": "NDCG@10",
+      "difference": -0.021842149780427336,
+      "ci95": [
+        -0.02419684964674868,
+        -0.019603882608374156
+      ]
+    },
+    {
+      "model": "RRF",
+      "reference": "C",
+      "metric": "Recall@10",
+      "difference": -0.04010009765625,
+      "ci95": [
+        -0.04453835776723449,
+        -0.03551601678017419
+      ]
+    },
+    {
+      "model": "completion-equal-seed-mean",
+      "reference": "C",
+      "metric": "MAP@10",
+      "difference": -0.0028016670671089615,
+      "ci95": [
+        -0.004031128938198254,
+        -0.0015952229719640438
+      ]
+    },
+    {
+      "model": "completion-equal-seed-mean",
+      "reference": "C",
+      "metric": "NDCG@10",
+      "difference": -0.0030683848801256715,
+      "ci95": [
+        -0.004333968677375854,
+        -0.0018860046852492035
+      ]
+    },
+    {
+      "model": "completion-equal-seed-mean",
+      "reference": "C",
+      "metric": "Recall@10",
+      "difference": -0.004007975260416667,
+      "ci95": [
+        -0.006519460217641774,
+        -0.0014422273698530006
+      ]
+    },
+    {
+      "model": "residual-equal-seed-mean",
+      "reference": "C",
+      "metric": "MAP@10",
+      "difference": -0.0010758899507068449,
+      "ci95": [
+        -0.002110111538293182,
+        -7.801869635913e-05
+      ]
+    },
+    {
+      "model": "residual-equal-seed-mean",
+      "reference": "C",
+      "metric": "NDCG@10",
+      "difference": -0.0011842117656663035,
+      "ci95": [
+        -0.002157713799050261,
+        -0.000227800625086367
+      ]
+    },
+    {
+      "model": "residual-equal-seed-mean",
+      "reference": "C",
+      "metric": "Recall@10",
+      "difference": -0.001729329427083334,
+      "ci95": [
+        -0.0036570035510032056,
+        0.000182815356489945
+      ]
+    },
+    {
+      "model": "residual-equal-seed-mean",
+      "reference": "completion-equal-seed-mean",
+      "metric": "MAP@10",
+      "difference": 0.0017257771164021162,
+      "ci95": [
+        0.0002862733820651299,
+        0.003096095843998536
+      ]
+    },
+    {
+      "model": "residual-equal-seed-mean",
+      "reference": "completion-equal-seed-mean",
+      "metric": "NDCG@10",
+      "difference": 0.0018841731144593676,
+      "ci95": [
+        0.00047869012751050415,
+        0.0032353497269345896
+      ]
+    },
+    {
+      "model": "residual-equal-seed-mean",
+      "reference": "completion-equal-seed-mean",
+      "metric": "Recall@10",
+      "difference": 0.002278645833333333,
+      "ci95": [
+        -0.00044696120494652926,
+        0.005263714231402705
+      ]
+    }
+  ],
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261024,
+    "unit": "user_id",
+    "paired": true,
+    "batch_size": 32,
+    "estimator": "resample unique user clusters with replacement; mean over all rows in sampled clusters",
+    "interval": "percentile 2.5/97.5; no multiple-comparison adjustment",
+    "shared_draws": true,
+    "seeds_are_not_observations": true
+  },
+  "audit": {
+    "state": "passed",
+    "rows": 16384,
+    "arms": [
+      "C",
+      "completion-20261024",
+      "residual-20261024",
+      "completion-20261025",
+      "residual-20261025",
+      "completion-20261026",
+      "residual-20261026",
+      "A",
+      "B",
+      "GPT",
+      "RRF"
+    ],
+    "unique_users": 15346,
+    "exact_old_score_parity": true,
+    "exact_top10": true,
+    "full_rank_permutations_and_alignment_verified": true,
+    "ranks_manifest_sha256": "fd7e1c50005caa2f596cb5c6c657d9ce4255e56996c3b7ccad3721fca81d6fcb",
+    "metrics_reconciled": true,
+    "analysis_means_and_quantiles_reconciled": true,
+    "bootstrap_draws_independently_regenerated": false,
+    "evaluation_sha256": "90d3004ec5de9181274e708da077f6d1ccfe42ab240246398187a438f89e3650",
+    "checker_sha256": "c9f4b193a9a9b7129e58757676feb0ede83145d00be0c56208a060ad313d4f6e"
+  },
+  "source_hashes": {
+    "full/evaluation.json": "90d3004ec5de9181274e708da077f6d1ccfe42ab240246398187a438f89e3650",
+    "analysis.json": "b0ddc066732be4b7e2525283d7aa968d5b7b1f0fb4985ff662e41f60b2e1ea4c",
+    "audit-results.json": "b114a4fc32e527fbdf92564c48deb48b90cde6b1fdbcc7f4ae54d1c240e10d93"
+  }
+}

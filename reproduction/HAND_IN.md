@@ -1,54 +1,57 @@
-# Карта комплекта для передачи
+# Передача и проверка комплекта
 
-Комплект подготовлен для локальной проверки. Факт загрузки, публикации или отправки решения не заявляется.
+Основные команды: [REPRODUCING.md](../REPRODUCING.md). Текущие материалы подготовлены локально; публикация, отправка и доступ адресата этой подготовкой не подтверждаются.
 
-| Путь от корня распаковки | Для чего нужен |
+## Обязательный комплект
+
+Передавайте текущий архив репозитория целиком вместе с его SHA256 или фиксированный коммит репозитория с доступом адресата. Один PDF и ссылка на изменяемую ветку не закрепляют исполнимый комплект.
+
+| Материал внутри комплекта | Назначение |
 |---|---|
-| `reports/REPORT.pdf` | PDF-версия отчёта; включение определяется финальным manifest |
-| `reports/REPORT.md` | Единый актуальный отчёт по полному исследованию и matched-KL/seed продолжению |
-| `reports/LIMITATIONS.md` | Сводка методологических границ и доступности воспроизведения |
-| `reports/figures/` | Рисунки в PNG/SVG |
-| `reports/render_report.py` | Переносимый checker и optional PDF builder |
-| `evidence/fullstudy/` | Компактные результаты полного исследования и historical execution receipts |
-| `evidence/matched-kl/` | Компактные результаты matched-KL/seed продолжения |
-| `source/fullstudy/` | Точный исторический snapshot: 261 текстовый файл, manifests, dependency inventory и recipes |
-| `source/matched-kl/` | Дополнительный код matched-KL/seed продолжения |
-| `source/manifest.json` | Общий source allowlist с hashes/размерами |
-| `PACKAGE_MANIFEST.json` | Финальный точный allowlist содержимого архива и hashes |
-| `delivery/package.py`, `delivery/PACKAGING.md` | Проверка ZIP и безопасная распаковка в новый каталог |
-| `reproduction/kion_replay/`, `reproduction/runtime-manifest.json` | Portable verify/infer/reward CLI и точные source pins |
-| `reproduction/inputs/manifest.json` | GPT + три heads, реальные model-input histories/features и per-file hashes |
-| `reproduction/inputs-rm-r1/manifest.json` | RM weights/features/references для четырёх contexts × 1024 candidates |
-| `evidence/reproduction/INDEX.json` | Actual export/extraction/inference proof, с раздельным статусом каждого этапа |
-| `reproduction/README.md` | Порядок проверки и границы A/B/C |
-| `reproduction/external-provenance/INDEX.json` | Compact external metadata exports и список исключённых feature prerequisites; для bounded inference не нужны |
-| `reproduction/INPUTS.md` | Доступность входов, provenance и excluded raw/model inputs |
-| `reproduction/ENVIRONMENTS.md` | Разделённые actor/RM/figures среды и precision contract |
-| `research/SOURCE_CLOSURE.md` | Закрытие local source dependencies и historical runtime assumptions |
+| `REPORT.pdf`, `REPORT.md`, `report-latex/` | Основной отчёт, текстовая версия и исходник LaTeX |
+| `README.md`, `REPRODUCING.md`, `reproduction/*.md` | Навигация, команды, входы и окружения |
+| `reproduction/saved_metrics64k.py`, `reproduction/saved-metrics64k/` | Текущие 65536 запросов: метрики и парный bootstrap по пользователям |
+| `reproduction/saved_metrics.py`, `reproduction/saved-metrics/` | Исторические 4096 запросов, только точечные оценки метрик |
+| `source/`, `evidence/`, `reports/`, `research/` | Снимки исходников, происхождение результатов, техническое приложение и исторические результаты |
+| `verify_repository.py`, `projection.json`, `tools/package_submission.py` | Проверка состава, сборка и проверка текущего архива |
+| `reproduction/kion_replay/`, описатели кода и входов | Проверка сохранённых actor/RM; файлы входов отдельно |
 
-Начни с актуального отчёта, затем stdlib source verification из [README](README.md). Frozen GPT + три heads прошли CUDA FP16 exact replay из новой проверочной распаковки; [summary](../evidence/reproduction/actor-replay-summary.json) фиксирует нулевые q/base/score errors и точные top10. Отдельный [RM replay](../evidence/reproduction/rm-replay-summary.json) также принят: actual CBM prediction для 4096 candidate pairs, error 0 / exact float32/support, без fits/updates. Численная приёмка относится к новым минимальным проверочным распаковкам на исходной машине; финальные проверки hand-in ZIP и PDF фиксируются отдельно. Для numerical replay нужны именно export manifest и соответствующая модельная среда; имена файлов без hashes не заменяют входной контракт. Финальный archive manifest определяет реально включённый состав; этот документ не обещает отсутствующие внешние файлы.
+Для текущих метрик и интервалов достаточно этого комплекта, Python 3.12+ и NumPy 2.5.4. Исходные данные KION, GPU и веса не требуются. Ранговый пересчёт не повторяет вычисление предсказаний, сортировку полных оценок моделей или обучение.
 
-Практическая граница: полный raw KION, все feature stores и исходные training checkpoints не входят в компактное решение. Ограниченный fixture проверяет frozen inference на выбранных exported model inputs; воспроизводимость raw-to-feature pipeline и новое обучение оцениваются отдельно. Negative или uncertain RL outcomes являются результатом исследования, а не незавершённым заданием.
+## Создать и проверить текущий архив
 
-Перед передачей получатель может повторить source/fixture verifier, численный replay в новом output directory и сверить receipts с archive manifest. Проверки не требуют внутренних инструментов Codex, PAS, доступов к машине автора или запуска ночной кампании. Для самого чтения достаточно распакованного комплекта.
-
-## Проверить или пересобрать PDF
-
-Готовый PDF читается без Python. Пересборка не нужна для просмотра Markdown и numerical replay. Проверка документа использует standard library:
+Из корня репозитория:
 
 ```text
-python -B reports/render_report.py --source reports/REPORT.md --check
+python -B tools/package_submission.py create --repo . --output ../kion-source.zip
+python -B tools/package_submission.py verify --archive ../kion-source.zip
 ```
 
-Для собственной сборки нужны ReportLab 4.4.9 и DejaVu Sans regular/bold. Финальный отчёт содержит математические Unicode glyphs, которые Arial на проверенной машине покрывает не полностью. DejaVu из Matplotlib прошёл полный font/table preflight; шрифты встраиваются в PDF. TTF в комплект не входят: их можно взять из установленной figures environment.
+Родительский каталог должен существовать, выходной ZIP должен отсутствовать. В корне ZIP находится `SUBMISSION-MANIFEST.json`, рядом: каталог `kion-rl-recsys/` с репозиторием. Проверка сверяет состав и SHA256 файлов без распаковки. Старый `delivery/package.py` используется только для прежнего ZIP с моделями.
 
-После создания figures environment из [ENVIRONMENTS.md](ENVIRONMENTS.md) в PowerShell:
+## Необязательное дополнение: проверка моделей
 
-```powershell
-$FigurePython = './.venv-figures/Scripts/python.exe'
-& $FigurePython -m pip install reportlab==4.4.9
-$DejaVuDir = & $FigurePython -B -c "import matplotlib; from pathlib import Path; print(Path(matplotlib.get_data_path()) / 'fonts' / 'ttf')"
-& $FigurePython -B reports/render_report.py --source reports/REPORT.md --output reports/REPORT-rebuilt.pdf --font (Join-Path $DejaVuDir 'DejaVuSans.ttf') --font-bold (Join-Path $DejaVuDir 'DejaVuSans-Bold.ttf')
+Для проверки моделей передавайте также неизменный `kion-task2-final-20261025.zip`: **62719299 байт**, SHA256 `1b03322432d8e0d612abfb507bdd6b9dd4edd53e0f31ac3c9826408718e0577e`. Публичного URL нет; владелец предоставляет этот файл отдельно. Его безопасная распаковка и точные команды приведены в [REPRODUCING.md](../REPRODUCING.md).
+
+Из старого ZIP используются только `reproduction/inputs/` и `reproduction/inputs-rm-r1/`. Код запуска и основной отчёт берутся из текущего комплекта. Старый `PACKAGE_MANIFEST.json` описывает старый ZIP, текущий `projection.json`: текущий клон.
+
+Практическое размещение после получения:
+
+```text
+handoff/
+  kion-rl-recsys/          распакованный архив репозитория
+  kion-old-full/           отдельно распакованный старый ZIP, если нужен
+  kion-env-metrics/        NumPy для текущих метрик и интервалов
+  kion-env-actor/          необязательная actor-среда
+  kion-env-rm/             необязательная RM-среда
+  kion-table64k.json       новый результат пересчёта
+  kion-bootstrap64k.json   новый результат bootstrap
 ```
 
-Это команды установки/сборки для получателя; автоматически они не выполняются. На Linux/macOS используй `.venv-figures/bin/python`: команда `-c` выше выводит тот же portable font directory, затем передай полные пути к двум TTF через `--font` и `--font-bold`. Выбери новое имя output. ReportLab/Matplotlib — верхние зависимости, а не полный transitive lock. Изменённый PDF нужно визуально проверить по всем страницам: переносы таблиц, кириллица, рисунки и отсутствие clipping. Successful build сам по себе не доказывает качество layout или numerical correctness.
+Выходы и среды располагаются вне каталога исходников, чтобы проверка его точного состава оставалась выполнимой. Недостающий ZIP означает отсутствие входов для необязательной проверки моделей; это не ошибка исполнения модели и не препятствие пересчёту текущих результатов.
+
+Малый набор содержит четыре контекста и пакет GPT из 16 историй. В нём нет наблюдаемых целевых меток и шести голов с согласованным KL; текущую таблицу он не пересчитывает. Версии кода и результаты прежних запусков указаны в [протоколах](../evidence/reproduction/INDEX.json).
+
+## Полное обучение
+
+Для отдельных этапов есть исполняемые команды и явные привязки внешних файлов. Их актуальный список и статус проверок приведены в [REPRODUCING.md](../REPRODUCING.md). Полные входы передаются отдельно по [инструкции переноса](TRANSFER_INPUTS.md). Новый запуск GPT и повторение банка от исторического E2 являются разными маршрутами; готовой общей цепочки из исходных CSV пока нет. [Исторический рецепт](README.md#исторический-рецепт-обучения) сохраняет настройки прежних запусков.

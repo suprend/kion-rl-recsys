@@ -1,37 +1,79 @@
 # Входы и происхождение
 
-## Что доступно после распаковки
+Текущий порядок действий: [REPRODUCING.md](../REPRODUCING.md). Описатели с хешами фиксируют состав входов; сами файлы поставляются отдельно там, где это указано.
 
-Компактные результаты и source snapshot включены в комплект. [source/manifest.json](../source/manifest.json) перечисляет точные сохранённые байты исходников; [excluded-inputs.json](../source/fullstudy/code/recipes/excluded-inputs.json) — исторические исключённые входы. Hash в историческом descriptor подтверждает ожидаемую идентичность, но не означает, что файл поставляется или был заново прочитан при упаковке.
+## Что получает читатель
 
-Создан actor/GPT export [inputs/manifest.json](inputs/manifest.json): 17 payload files, 68 375 375 байт плюс 7578 байт manifest; SHA256 manifest `e680dd145b2bfdc812107fb9a257bf16f6d1ef5a53c07845f7dc21838146a52c`. [Export receipt](../evidence/reproduction/actor-export-native.json) фиксирует только извлечение: fresh inference проверяется отдельными receipts, а не export-флагом.
+| Вход | Где находится | Как получить | Для чего нужен |
+|---|---|---|---|
+| Код, отчёт, компактные результаты | Текущий клон/архив репозитория | Получить текущую версию репозитория или архива от владельца | Проверка исходников и чтение |
+| `saved-metrics64k/` | Текущий клон/архив репозитория | Уже в комплекте; проверить `saved_metrics64k.py verify` | Текущие метрики и bootstrap на 65536 запросах |
+| `saved-metrics/manifest.json`, `saved-metrics/rankings.json` | Текущий клон/архив репозитория | Уже в комплекте; проверить командой проверки | Исторические метрики на 4096 запросах |
+| Входы actor, 17 файлов | Только прежний полный ZIP | Отдельно получить ZIP от владельца, сверить размер/SHA и распаковать | Проверка GPT и голов |
+| Входы RM, 9 файлов | Только прежний полный ZIP | Тот же отдельный ZIP | Проверка CatBoost |
+| Исходные данные KION и E5 | Внешние источники; в клоне и малом наборе отсутствуют | Отдельное получение по сохранённым источникам и хешам ниже | Полное обучение |
+| Полные банки признаков, выборки, графы, хранилища запросов и состояния обучения | Вне текущего клона и малых наборов | Передача или восстановление отдельно не оформлены | Полный расчёт предсказаний и обучение |
 
-| Exported inputs | Dtype / shape |
+Публичного URL для ZIP с моделями нет; факт передачи адресату не установлен. Точные права и доступ конкретного адресата не выводятся из наличия файлов у владельца. Настоящая подготовка не скачивает и не отправляет входы.
+
+## Текущие результаты: 65536 запросов
+
+`reproduction/saved-metrics64k/` содержит ранги и метки 53024 групп пользователей. Исходные ID пользователей, фильмов и запросов, истории и веса исключены. Описатель закрепляет размеры, хеши и происхождение файлов. Ранги 0–1024 сохраняют порядок прежней сортировки оценок моделей; ноль означает отсутствие цели в списке кандидатов.
+
+Команды [saved_metrics64k.py](saved_metrics64k.py) приведены в [REPRODUCING.md](../REPRODUCING.md). NumPy 2.5.4 нужен для повторения случайного потока bootstrap: 2000 мультиномиальных выборок пользователей, seed 20261024, пакет 32, общие выборки для всех 39 колонок, процентили 2,5/97,5. Все 1746 неизвестных целей и 10183 известных целей вне списка кандидатов остаются в знаменателе 65536. Общий объём экспорта: около 2,57 MiB.
+
+## Исторические результаты: 4096 запросов
+
+`reproduction/saved-metrics/` содержит прежние ранги 0–10 на 4096 запросах, без исходных ID, историй и весов. Ноль означает отсутствие попадания в top10. Все 122 неизвестные цели и 616 известных целей вне списка кандидатов остаются в знаменателе. Объём ограничен 1 MiB; размеры и SHA256 закреплены в `manifest.json`.
+
+[Программа пересчёта](saved_metrics.py) вычисляет MAP, Recall и NDCG. GPT/A/B/C взяты из прежней оценки; completion/residual: средние метрик трёх отдельных политик с согласованным KL, не ансамбль. Групп пользователей в этом экспорте нет, поэтому интервалы не пересчитываются.
+
+Источники в авторском дереве `artifacts/task2-kion/` указаны для проверки происхождения; получателю эти пути не нужны:
+
+| Источник | Байты метаданных | SHA256 метаданных |
+|---|---:|---|
+| `three-head-262k-20261024-r1/evaluation/evaluation.json` | 18013 | `ebc6cb8b8eb682298723aba8f1d24a3250c286b20e91c70f51e159e7ba000e56` |
+| `c-kl-seeds-20261025-r1/policy/full-six-r1/evaluation.json` | 41162 | `cc7dd2372a5c80f49aed0d5374deff4cdda8aa739ce41531f5c13245fe760ba5` |
+
+## Два набора моделей из прежнего ZIP
+
+Архив `kion-task2-final-20261025.zip`: 62719299 байт, SHA256 `1b03322432d8e0d612abfb507bdd6b9dd4edd53e0f31ac3c9826408718e0577e`. Из него используются только входы; код запуска и отчёт берутся из текущего репозитория. В клоне есть только описатели. `--inputs` может указывать на распакованные файлы вне клона.
+
+| Набор | Файлы | Описатель | SHA256 описателя |
+|---|---:|---:|---|
+| `reproduction/inputs/` | 17 файлов, 68375375 байт | 7578 байт | `e680dd145b2bfdc812107fb9a257bf16f6d1ef5a53c07845f7dc21838146a52c` |
+| `reproduction/inputs-rm-r1/` | 9 файлов, 33248280 байт | 4381 байт | `7b3e7dbefde3a6d0e113c0340dbbfc425d223574a7c4cd13db7927fb29b30380` |
+
+Это распакованные размеры; ZIP сжат. Хеши, размеры, типы и формы массивов перечислены в описателях и проверяются до загрузки.
+
+| Вход actor | Тип / форма |
 |---|---|
-| GPT item-token prefixes, lengths | int64 `[16,64]`, `[16]`; original trim 23 |
-| GPT user feature vectors | float32 `[16,3252]` |
-| Frozen item table | float32 `[15418,256]` |
-| Cached q / retrieval logits | float32 `[4,256]` / `[4,1024]` |
-| Candidate token/raw IDs | int32/int64 `[4,1024]` |
-| Head raw/source features | float32 `[4,1024,1068]` / `[4,1024,2]` |
-| GPT and C/completion/residual weights | Pure tensor state dictionaries; per-file hashes в manifest |
-| Historical oracle scores | float32 `[4,1024]` для каждой головы; validation-only |
+| Префиксы GPT, длины | int64 `[16,64]`, `[16]`; исходное усечение 23 |
+| Пользовательские векторы GPT | float32 `[16,3252]` |
+| Таблица векторов фильмов | float32 `[15418,256]` |
+| Сохранённые q / оценки поиска | float32 `[4,256]` / `[4,1024]` |
+| Токены / исходные ID кандидатов | int32/int64 `[4,1024]` |
+| Основные признаки / признаки источника | float32 `[4,1024,1068]` / `[4,1024,2]` |
+| Веса GPT и C/completion/residual | Словари тензоров |
+| Эталонные оценки для проверки | float32 `[4,1024]` для каждой головы |
 
-Четыре строки выбраны как первые позиции frozen screen cache независимо от outcome; GPT сохраняет полный producer B16 и slots 0–3. Fixture содержит преобразованные истории. Source user IDs, имена, observed target/reward labels и title mapping исключены; это не гарантия анонимности. Actual actor inference принят отдельными [summary/receipts](../evidence/reproduction/INDEX.json); export manifest намеренно описывает только export stage. Точный final archive состав задаёт `PACKAGE_MANIFEST.json`.
+Четыре строки: первые позиции проверочного кеша, выбранные независимо от результата. GPT сохраняет исходный пакет из 16 примеров и позиции 0–3. Головы: C, исходная completion seed20261024 и residual beta 0,5 seed20261024. Шесть голов с согласованным KL сюда не входят.
 
-RM export [inputs-rm-r1/manifest.json](inputs-rm-r1/manifest.json): 9 payload files, 33 248 280 байт плюс 4381 байт manifest; SHA256 manifest `7b3e7dbefde3a6d0e113c0340dbbfc425d223574a7c4cd13db7927fb29b30380`. Он содержит float32 context `[4,2079]`, candidate features `[4,1024,2008]`, candidate raw IDs, frozen fit counts/prior, validation-only references и исходную `model.cbm` (163 368 байт, SHA в таблице ниже). Это четыре contexts × 1024 candidates = 4096 candidate pairs. [RM export receipt](../evidence/reproduction/rm-export-native.json) и [extraction check](../evidence/reproduction/rm-extraction.json) фиксируют export/перенос. Отдельный [fresh RM replay](../evidence/reproduction/rm-replay-summary.json) выполнил CBM prediction: float64 maximum error 0, historical float32 reward/support exact; 3976 из 4096 pairs supported, RM fits/updates 0. [Все actual proofs](../evidence/reproduction/INDEX.json) имеют собственные hashes; SHA256 индекса `0a478130fa43a8a8b4c1aa9e5480395683dbac0386fcf61166fb3b33d905d3c1`.
-Полный frozen pipeline дополнительно требует E2 config/weights, подготовленные history tokens и user features, feature provider/cache, mapping, cohorts, graph и RM-r2 inputs. RM inference имеет отдельную schema 2079 context + 2008 candidate и модель CatBoost. Synthetic inputs полезны для проверки кода, но не воспроизводят исторические пользовательские predictions.
+RM содержит контекст float32 `[4,2079]`, признаки кандидатов float32 `[4,1024,2008]`, их ID, обучающие счётчики и средние, эталонные значения и `model.cbm`, 163368 байт. Это 4096 пар, а не 4096 оценочных запросов. Прежняя проверка дала 3976 поддержанных пар, ошибку float64 0 и точное совпадение float32 наград и поддержки. Версии входов и кода зафиксированы в [протоколах](../evidence/reproduction/INDEX.json).
 
-## Внешние признаки полного recipe
+Наблюдаемые целевые метки, исходные ID пользователей и названия фильмов исключены. Преобразованные истории и пользовательские векторы сохраняются: отсутствие ID не гарантирует анонимности.
 
-[external-provenance/INDEX.json](external-provenance/INDEX.json) связывает 13 historical metadata exports (17 540 011 байт): 12 прямых копий и один явно обозначенный sanitized derivative acquisition receipt. SHA256 самого индекса: `a0bbbc4f7939a51d92815b7adb99755db36e28338402cee6dba5e095d718900e`. Из derivative удалены все 1321 response-header objects для исключения служебных client/cookie headers; он не выдаётся за native exact input. Оригинальный source hash и hash включённой копии различаются явно. Включены public film/person identity ledger, MovieLens receipt, pageview query/acquisition plan, ordered external schema 161 и declarations. Они позволяют изучить provenance и исходную population без доступа к дискам автора; embedded absolute paths — исторические ссылки.
+## Внешние признаки
 
-Это не полный feature-input bundle. Исключены 149 dated external banks по 9 929 320 байт (итого 1 479 468 680 байт), Wikimedia response bodies, MovieLens archive и per-work aggregate/prior payloads. Их ожидаемые identities описаны сохранёнными receipts, но bytes не считаются заново проверенными этой копией metadata. Полный raw recipe потребует восстановления этих входов; ограниченный GPT/head/RM fixture не читает данный каталог.
-## Raw KION: получить отдельно
+[Индекс происхождения](external-provenance/INDEX.json) связывает 13 наборов метаданных (17 540 011 байт): 12 прямых копий и один очищенный протокол получения. SHA256 индекса: `a0bbbc4f7939a51d92815b7adb99755db36e28338402cee6dba5e095d718900e`. Из очищенной копии удалён 1321 объект HTTP-заголовков со служебными данными; хеши оригинала и производной копии указаны отдельно. Включены реестр фильмов и персон, сведения MovieLens, план запросов просмотров страниц и упорядоченная схема 161 внешнего признака.
 
-Raw `interactions.csv`, `users.csv`, `items.csv` в компактную поставку не входят. Описание и условия получения следует проверить у [организаторов RecSys Challenge 2021](https://ods.ai/competitions/competition-recsys-21/data); первичное описание релиза — [статья KION](https://arxiv.org/abs/2209.00325). Доступность URL не предоставляет новых прав на данные, веса или производные представления. Данные не скачиваются командами проверки и при финальной подготовке не загружались.
+Не включены 149 банков признаков по датам, каждый по 9 929 320 байт (всего 1 479 468 680), исходные ответы Wikimedia, архив MovieLens и агрегаты по произведениям. Их ожидаемые хеши сохранены в протоколах; наличие метаданных не означает наличия этих файлов. Малый набор проверки моделей их не использует.
 
-Исторические [download manifest](../evidence/raw-provenance/manifest.json) и [verification metadata](../evidence/raw-provenance/verified-download.json) указывают pinned сторонний mirror: [data_original.zip, revision f69775be](https://raw.githubusercontent.com/irsafilo/KION_DATASET/f69775be31fa5779907cf0a92ddedb70037fb5ae/data_original.zip). Это provenance конкретных использованных байтов, а не обозначение mirror официальным источником. Архив: 78 795 295 байт, SHA256 `50fc5b7db78cbda4c3d0ee5bb5bea4c416cff41e8af58aab0b661d0d3e9dfa9b`.
+## Исходные данные KION: получить отдельно
+
+Исходные `interactions.csv`, `users.csv`, `items.csv` в компактную поставку не входят. Описание и условия получения доступны у [организаторов RecSys Challenge 2021](https://ods.ai/competitions/competition-recsys-21/data); релиз описан в [статье KION](https://arxiv.org/abs/2209.00325). Обе страницы открывались при проверке 25 октября 2026 года. Архивы повторно не скачивались. Команды проверки данные не загружают.
+
+Исторические [описатель загрузки](../evidence/raw-provenance/manifest.json) и [результаты проверки](../evidence/raw-provenance/verified-download.json) указывают закреплённое стороннее зеркало: [data_original.zip, revision f69775be](https://raw.githubusercontent.com/irsafilo/KION_DATASET/f69775be31fa5779907cf0a92ddedb70037fb5ae/data_original.zip). Это источник использованных байтов, не официальный сайт датасета. Архив: 78 795 295 байт, SHA256 `50fc5b7db78cbda4c3d0ee5bb5bea4c416cff41e8af58aab0b661d0d3e9dfa9b`.
 
 | Файл после разрешённого получения и распаковки | Байты | Ожидаемый SHA256 |
 |---|---:|---|
@@ -39,29 +81,28 @@ Raw `interactions.csv`, `users.csv`, `items.csv` в компактную пос�
 | `users.csv` |29 945 389|`37b2945240628a3f215e1fb5f79b4cff386d8988b21fa61e5b135aef4541182c`|
 | `items.csv` |31 836 561|`027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e`|
 
-Metadata предупреждает, что отдельный `interactions.csv.zip` был усечён: для исторического recipe использовался полный архив и каталог `data/raw/kion/full/`. Сравнивать следует сами bytes CSV, не только имена. Перекодирование, другой line ending или пересохранение меняет hash.
+Метаданные предупреждают, что отдельный `interactions.csv.zip` был усечён: для прежнего запуска использовался полный архив и каталог `data/raw/kion/full/`. Сравнивать следует сами байты CSV, не только имена. Перекодирование, другие окончания строк или пересохранение меняет хеш.
 
 
-Для восстановления текстовых признаков полного pipeline нужны отдельно полученные файлы `intfloat/multilingual-e5-small`, revision `614241f622f53c4eeff9890bdc4f31cfecc418b3`. Они не входят в поставку. Точные пять имён, размеры и SHA256 находятся в `MODEL_FILES` сохранённого `source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_text_embeddings.py`; загрузчик использует `local_files_only=True`. Frozen table в ограниченном fixture заменяет эту стадию только для inference уже обученной модели.
+Для восстановления текстовых признаков полного процесса нужны отдельно полученные файлы `intfloat/multilingual-e5-small`, версия `614241f622f53c4eeff9890bdc4f31cfecc418b3`. Они не входят в поставку. Точные пять имён, размеры и SHA256 находятся в `MODEL_FILES` сохранённого `source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_text_embeddings.py`; загрузчик использует `local_files_only=True`. Сохранённая таблица в малом наборе заменяет эту стадию только при вычислении предсказаний уже обученной модели.
+
 ## Идентичность исторических моделей
 
-Это references к оригинальным входам, а не обещание их поставки. Полный список — в `excluded-inputs.json`; matched-KL pins сохранены вместе с его stage sources и selection metadata.
+Это хеши исходных моделей, не обещание их поставки. Полный список: [excluded-inputs.json](../source/fullstudy/code/recipes/excluded-inputs.json).
 
 | Роль | Исторический SHA256 |
 |---|---|
-| GPT E2 `latest.pt` / selected epoch 2 |`5e7101857c2dbe100fb4e1587c0369abc95c108303ed149123ee183f62aeac26`|
+| GPT E2 `latest.pt` / выбрана эпоха 2 |`5e7101857c2dbe100fb4e1587c0369abc95c108303ed149123ee183f62aeac26`|
 | E2 `config.json` |`e3b4b1730895fceb1b7d4ea6357aea783c046f5e87cacd7d4ff933cf94d45d45`|
 | C `head.pt` |`9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7`|
-| Original completion latest1000 |`436d735d67fd861e6b925719b9e3597582ec405eed1b13ede3db3671e1ce37b7`|
-| Original residual latest1000, beta 0,5 |`29d20cd3d058b4ccac52d94f3ad946891f3839601fe935817f7c7b89f09b1ee3`|
-| RM-r2 `model.cbm` — те же деревья, что r1 |`b6ed4c6427129afcddec017e2f64d9c3fb59fb31fc300e5c9d074964a21ddd62`|
+| Исходная completion latest1000 |`436d735d67fd861e6b925719b9e3597582ec405eed1b13ede3db3671e1ce37b7`|
+| Исходная residual latest1000, beta 0,5 |`29d20cd3d058b4ccac52d94f3ad946891f3839601fe935817f7c7b89f09b1ee3`|
+| RM-r2 `model.cbm` (те же деревья, что r1) |`b6ed4c6427129afcddec017e2f64d9c3fb59fb31fc300e5c9d074964a21ddd62`|
 | RM-r2 `scorer.npz` |`d5df55586a9df54b5e121d494a149764d956750ac3caaf2b4c1ada27a93243d4`|
-| Prepared context 64 `metadata.json` |`f02acaa9a5e5532e79b060279ba8a5027f268f202132e85ebab97cd4912fbd11`|
+| Подготовленные данные context 64 `metadata.json` |`f02acaa9a5e5532e79b060279ba8a5027f268f202132e85ebab97cd4912fbd11`|
 
-Новые минимальные exports могут иметь другие hashes: checkpoint с optimizer/RNG и чистый inference state dictionary — разные файлы. Их соответствие должно быть явно связано source hash, экспортным manifest и проверкой inference; одинаковое имя не доказывает происхождение.
+Минимальный экспорт весов может иметь другой хеш, чем исходная контрольная точка с состоянием оптимизатора и генератора случайных чисел. Соответствие устанавливают хеш источника, описатель экспорта и проверка предсказаний.
 
-## Безопасное использование весов
+## Загрузка весов
 
-Используй только доверенные собственные exports либо отдельно полученные входы с проверяемым происхождением. Portable replay должен проверять manifest, границы путей, SHA256, размеры/dtypes/shapes и source pins до numerical import/загрузки. NPY/NPZ читаются без pickle; state dictionaries — через `torch.load(..., weights_only=True)`. Не следует обходить эти проверки загрузкой произвольного checkpoint с `weights_only=False`.
-
-Fixture с удалёнными user IDs не следует автоматически считать анонимным: representations и features могут сохранять информацию об исходных примерах. Право распространять исходные данные или производные входы отдельно не выводится из наличия source bundle. Комплект не вводит новую лицензию; публикация/отправка не выполнялась.
+Используйте проверенные входы. CLI сверяет описатели, пути, хеши и размеры до загрузки; NPY/NPZ читаются без pickle, веса: через `torch.load(..., weights_only=True)`. Не обходите проверку с `weights_only=False`. Комплект не вводит новых прав на распространение данных, весов или производных признаков.

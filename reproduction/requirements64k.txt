@@ -1,0 +1,2 @@
+# Optional frozen-rank/cluster replay only; no training runtime.
+numpy==2.5.4

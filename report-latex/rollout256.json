@@ -1,0 +1,183 @@
+{
+  "histories": 256,
+  "users": 256,
+  "steps": 5,
+  "repeat_mask": "none",
+  "source": "followup-20261025-r1/rollout256-analysis.json",
+  "source_sha256": "bde6fe67f5c9c67e012823d927952cf3a30a3f3866bfca9a65d14ad5ac3b3567",
+  "audit_sha256": "79a8893ccda35acb928cec770f40950a5fce93c5de32c655e70c64d55db0f34f",
+  "seed_family_estimand": "Equal arithmetic mean of three fixed seed-specific metrics; concentration computed separately per seed inside each bootstrap draw, then averaged; seeds are not resampled",
+  "intervals": "pointwise percentile95; paired user-cluster bootstrap with shared draws across all arms/modes/masks; concentration recomputed inside each draw",
+  "bootstrap_draws": 2000,
+  "limitations": [
+    "fixed observed-s0 RM and synthetic ID prefixes, not behavior simulation",
+    "one common fixed categorical random stream per history; bootstrap does not estimate decoding-seed uncertainty",
+    "exclude-generated unique5=5 is an imposed constraint, not learned diversity",
+    "reused development histories; no final-test or causal utility claim",
+    "effective_catalog is inverse HHI, not the observed distinct-item count"
+  ],
+  "groups": [
+    {
+      "family": "C",
+      "selection": "greedy",
+      "metrics": {
+        "unique5": {
+          "estimate": 1.578125,
+          "ci95": [
+            1.484375,
+            1.68359375
+          ]
+        },
+        "max_share": {
+          "estimate": 0.35390625,
+          "ci95": [
+            0.3007421875,
+            0.40939453124999986
+          ]
+        },
+        "anyrepeat": {
+          "estimate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "family": "completion",
+      "selection": "greedy",
+      "metrics": {
+        "unique5": {
+          "estimate": 1.5572916666666667,
+          "ci95": [
+            1.47001953125,
+            1.656282552083333
+          ]
+        },
+        "max_share": {
+          "estimate": 0.5052083333333334,
+          "ci95": [
+            0.44869140625000004,
+            0.5614713541666666
+          ]
+        },
+        "anyrepeat": {
+          "estimate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "family": "residual",
+      "selection": "greedy",
+      "metrics": {
+        "unique5": {
+          "estimate": 1.7591145833333333,
+          "ci95": [
+            1.65234375,
+            1.863313802083333
+          ]
+        },
+        "max_share": {
+          "estimate": 0.25755208333333335,
+          "ci95": [
+            0.22863932291666667,
+            0.3098958333333333
+          ]
+        },
+        "anyrepeat": {
+          "estimate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    {
+      "family": "C",
+      "selection": "categorical",
+      "metrics": {
+        "unique5": {
+          "estimate": 4.90234375,
+          "ci95": [
+            4.8515625,
+            4.9453125
+          ]
+        },
+        "max_share": {
+          "estimate": 0.0234375,
+          "ci95": [
+            0.0203125,
+            0.0328125
+          ]
+        },
+        "anyrepeat": {
+          "estimate": 0.08203125,
+          "ci95": [
+            0.050683593750000006,
+            0.1171875
+          ]
+        }
+      }
+    },
+    {
+      "family": "completion",
+      "selection": "categorical",
+      "metrics": {
+        "unique5": {
+          "estimate": 4.901041666666667,
+          "ci95": [
+            4.86328125,
+            4.9375
+          ]
+        },
+        "max_share": {
+          "estimate": 0.030989583333333334,
+          "ci95": [
+            0.027604166666666666,
+            0.040625
+          ]
+        },
+        "anyrepeat": {
+          "estimate": 0.08723958333333333,
+          "ci95": [
+            0.057291666666666664,
+            0.1171875
+          ]
+        }
+      }
+    },
+    {
+      "family": "residual",
+      "selection": "categorical",
+      "metrics": {
+        "unique5": {
+          "estimate": 4.90625,
+          "ci95": [
+            4.867154947916666,
+            4.940104166666667
+          ]
+        },
+        "max_share": {
+          "estimate": 0.03177083333333333,
+          "ci95": [
+            0.02786458333333333,
+            0.04088541666666667
+          ]
+        },
+        "anyrepeat": {
+          "estimate": 0.08203125,
+          "ci95": [
+            0.0546875,
+            0.11067708333333333
+          ]
+        }
+      }
+    }
+  ]
+}

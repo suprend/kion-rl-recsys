@@ -5,6 +5,7 @@ import ast
 from pathlib import Path
 
 from .io import MAX_TOTAL, read_json, require, sha256, verify_array, verify_descriptor, verify_torch_archive
+from .rm import validate_metadata
 
 ARMS = ("C", "RL-completion", "RL-residual")
 SCHEMA = "71d90eee774d30db804d1ab32c4d82995d1320baf26aaf36443a6498fd85fc5d"
@@ -122,6 +123,7 @@ def verify_rm_fixture(fixture_root):
     manifest = read_json(manifest_path)
     require(manifest.get("contract") == "kion-portable-rm-fixture-v1"
             and manifest.get("state") == "completed", "Wrong/incomplete frozen RM fixture")
+    validate_metadata(manifest.get("rm"))
     arrays = manifest.get("arrays")
     require(type(arrays) is dict, "RM arrays required")
     spec = {"candidate_raw_ids": ("int64", [4, 1024]),
@@ -143,11 +145,6 @@ def verify_rm_fixture(fixture_root):
             and model.get("bytes") == 163368, "Frozen CatBoost identity differs")
     verify_descriptor(fixture_root, model)
     entries.append(model)
-    rm = manifest.get("rm", {})
-    require(rm.get("context_width") == 2079 and rm.get("candidate_width") == 2008
-            and rm.get("numeric_width") == 4087 and rm.get("history") is True
-            and rm.get("compatibility_pairs") == [] and rm.get("categorical_rule") == "item:{original_item_id}",
-            "Frozen RM feature semantics differ")
     require(sum(entry["bytes"] for entry in entries) <= MAX_TOTAL, "RM fixture byte budget exceeded")
     require(len({entry["path"] for entry in entries}) == len(entries), "RM file cannot have multiple roles")
     return manifest, {"manifest_sha256": sha256(manifest_path), "files": len(entries),

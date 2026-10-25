@@ -1,0 +1,262 @@
+{
+  "schema": "duration-report-summary-r10-v1",
+  "source_revision": "R10 current reviewed source map; R6 historical and unfinished R11 not current",
+  "primary_queries": 4096,
+  "additional_total_queries": 65536,
+  "comparator": "C",
+  "estimand": {
+    "population": "conditional on all films in each original 1024-candidate pool, including unknown durations",
+    "delta_i": "mean over queries of p_policy(i|film) - p_C(i|film)",
+    "theta": "sum_i delta_i * log(duration_minutes_i)",
+    "percent_contrast": "100 * (exp(theta) - 1)",
+    "mean_type": "geometric, not arithmetic"
+  },
+  "assumptions": [
+    "Bounds reflect deterministic source/metadata uncertainty, not confidence intervals.",
+    "Only unknown durations are constrained to each scenario envelope; accepted known source intervals are not clipped.",
+    "Without finite positive bounds for unknown durations the log bounds are unbounded.",
+    "Each completion seed is assessed separately.",
+    "The 65536 queries reuse development data and include the original 4096; this is not an independent confirmatory test.",
+    "Whole-work metadata do not certify the specific KION 2021 edition or watched_pct denominator."
+  ],
+  "interpretation": {
+    "short_content_shift_confirmed": false,
+    "shortening_at_least_1_percent_excluded": false,
+    "shortening_at_least_5_percent_excluded_only_under_unknown_1_to_1440_minutes": true,
+    "shortening_at_least_5_percent_excluded_under_unknown_0point1_to_10080_minutes": false
+  },
+  "results": {
+    "old4096": {
+      "completion-20261025": {
+        "known_nonzero_items": 7149,
+        "missing_nonzero_items": 4092,
+        "scenarios": {
+          "assumed_1_to_1440": {
+            "log_bounds": [
+              -0.033672194666624494,
+              0.04261974157577239
+            ],
+            "gates": {
+              "negative_direction": false,
+              "positive_direction": false,
+              "1percent": {
+                "shortening_confirmed": false,
+                "shortening_excluded": false,
+                "equivalence": false
+              },
+              "5percent": {
+                "shortening_confirmed": false,
+                "shortening_excluded": true,
+                "equivalence": true
+              }
+            },
+            "missing_only_assumed_minutes": [
+              1.0,
+              1440.0
+            ]
+          },
+          "assumed_0point1_to_10080": {
+            "log_bounds": [
+              -0.054484865362871185,
+              0.0646951561755768
+            ],
+            "gates": {
+              "negative_direction": false,
+              "positive_direction": false,
+              "1percent": {
+                "shortening_confirmed": false,
+                "shortening_excluded": false,
+                "equivalence": false
+              },
+              "5percent": {
+                "shortening_confirmed": false,
+                "shortening_excluded": false,
+                "equivalence": false
+              }
+            },
+            "missing_only_assumed_minutes": [
+              0.1,
+              10080.0
+            ]
+          }
+        }
+      },
+      "completion-20261026": {
+        "known_nonzero_items": 7149,
+        "missing_nonzero_items": 4092,
+        "scenarios": {
+          "assumed_1_to_1440": {
+            "log_bounds": [
+              -0.03405128165290258,
+              0.04240047155617738
+            ],
+            "gates": {
+              "negative_direction": false,
+              "positive_direction": false,
+              "1percent": {
+                "shortening_confirmed": false,
+                "shortening_excluded": false,
+                "equivalence": false
+              },
+              "5percent": {
+                "shortening_confirmed": false,
+                "shortening_excluded": true,
+                "equivalence": true
+              }
+            },
+            "missing_only_assumed_minutes": [
+              1.0,
+              1440.0
+            ]
+          },
+          "assumed_0point1_to_10080": {
+            "log_bounds": [
+              -0.05495922735872596,
+              0.06449694886961761
+            ],
+            "gates": {
+              "negative_direction": false,
+              "positive_direction": false,
+              "1percent": {
+                "shortening_confirmed": false,
+                "shortening_excluded": false,
+                "equivalence": false
+              },
+              "5percent": {
+                "shortening_confirmed": false,
+                "shortening_excluded": false,
+                "equivalence": false
+              }
+            },
+            "missing_only_assumed_minutes": [
+              0.1,
+              10080.0
+            ]
+          }
+        }
+      }
+    },
+    "all65536": {
+      "completion-20261025": {
+        "known_nonzero_items": 7264,
+        "missing_nonzero_items": 4226,
+        "scenarios": {
+          "assumed_1_to_1440": {
+            "log_bounds": [
+              -0.03343839072014773,
+              0.04212704744500857
+            ],
+            "gates": {
+              "negative_direction": false,
+              "positive_direction": false,
+              "1percent": {
+                "shortening_confirmed": false,
+                "shortening_excluded": false,
+                "equivalence": false
+              },
+              "5percent": {
+                "shortening_confirmed": false,
+                "shortening_excluded": true,
+                "equivalence": true
+              }
+            },
+            "missing_only_assumed_minutes": [
+              1.0,
+              1440.0
+            ]
+          },
+          "assumed_0point1_to_10080": {
+            "log_bounds": [
+              -0.05405640079560844,
+              0.06399310191988464
+            ],
+            "gates": {
+              "negative_direction": false,
+              "positive_direction": false,
+              "1percent": {
+                "shortening_confirmed": false,
+                "shortening_excluded": false,
+                "equivalence": false
+              },
+              "5percent": {
+                "shortening_confirmed": false,
+                "shortening_excluded": false,
+                "equivalence": false
+              }
+            },
+            "missing_only_assumed_minutes": [
+              0.1,
+              10080.0
+            ]
+          }
+        }
+      },
+      "completion-20261026": {
+        "known_nonzero_items": 7264,
+        "missing_nonzero_items": 4226,
+        "scenarios": {
+          "assumed_1_to_1440": {
+            "log_bounds": [
+              -0.033819550933266676,
+              0.04191306017272045
+            ],
+            "gates": {
+              "negative_direction": false,
+              "positive_direction": false,
+              "1percent": {
+                "shortening_confirmed": false,
+                "shortening_excluded": false,
+                "equivalence": false
+              },
+              "5percent": {
+                "shortening_confirmed": false,
+                "shortening_excluded": true,
+                "equivalence": true
+              }
+            },
+            "missing_only_assumed_minutes": [
+              1.0,
+              1440.0
+            ]
+          },
+          "assumed_0point1_to_10080": {
+            "log_bounds": [
+              -0.054534453075595006,
+              0.06380277475660535
+            ],
+            "gates": {
+              "negative_direction": false,
+              "positive_direction": false,
+              "1percent": {
+                "shortening_confirmed": false,
+                "shortening_excluded": false,
+                "equivalence": false
+              },
+              "5percent": {
+                "shortening_confirmed": false,
+                "shortening_excluded": false,
+                "equivalence": false
+              }
+            },
+            "missing_only_assumed_minutes": [
+              0.1,
+              10080.0
+            ]
+          }
+        }
+      }
+    }
+  },
+  "provenance": {
+    "artifact_directory_optional_local": "D:/tlab-recsys-2026/artifacts/task2-kion/duration-campaign-20261025-r1",
+    "note": "Exact bounds and assumptions are embedded here; source artifacts are optional local audit inputs, not committed dependencies.",
+    "sha256_verified_locally": {
+      "coordinator-r10-current-results.json": "fc7b3c6a3ce9572e5b1325a9977d96697a45217ade8e92262077d9247dedfaee",
+      "coordinator-r10-current-source-map.json": "08ff5f4ce9ac457fd2ca927e98866f747e12f0ac14573c90f51131b6541da99c",
+      "measurement-review-eval64k-duration-current-release.json": "c991dfaf8e6c48e2d9bf5015065e5904a8d12a7216729b23eafd25295bb5fdf0",
+      "coordinator-r10-final-check.json": "ccb28b37b3ba01bba31505a7ebd84e72937ea70d45824e3c34abfb2d83c45981"
+    },
+    "upstream_review_status": "PASS_CURRENT_REVIEWED_SOURCE_MAP_AND_ALL_BOUNDS",
+    "upstream_final_check_status": "CURRENT_PASS_CHECKED_PRIMARY_GOAL_UNRESOLVED"
+  }
+}

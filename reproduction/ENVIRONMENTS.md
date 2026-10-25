@@ -1,51 +1,70 @@
 # Окружения
 
-Для чтения Markdown/PDF Python не нужен. Для stdlib `verify` нужен Python 3.12+. Команды установки ниже предназначены для получателя; финальная подготовка сама не устанавливает пакеты и не обращается к model hubs.
+Актуальные команды: [REPRODUCING.md](../REPRODUCING.md). Для чтения PDF/Markdown Python не нужен. Подготовка этой редакции не устанавливает пакеты, не скачивает модели и не выполняет обучение.
 
-## Выбор среды
-
-| Среда | Закреплённые верхние зависимости | Назначение |
+| Среда | Зависимости | Назначение |
 |---|---|---|
-| Source/fixture check | Только Python standard library | Hashes, sizes, AST, metadata/headers; без model inference |
-| Aggregate figures | NumPy 2.2.6, Matplotlib 3.11.2 | Рисунки из компактных сохранённых агрегатов |
-| Actor | NumPy 2.2.6, Torch 2.8.0+cu126, Transformers 4.55.4, psutil 7.0.0 | Frozen GPT и C/RL heads |
-| Reward worker | NumPy 2.5.4, CatBoost 1.2.10, SciPy 1.18.1 | Отдельный CPU process для frozen RM-r2 |
-| PDF (по желанию) | ReportLab 4.4.9 — версия source/synthetic проверки builder | Пересборка Markdown в PDF; модельные пакеты не нужны |
+| Проверка исходников и метаданных | Python 3.12+, стандартная библиотека Python | Хеши, размеры, синтаксис и заголовки массивов |
+| Текущие 65536 запросов и bootstrap | Python 3.12+, NumPy 2.5.4 | `saved_metrics64k.py verify/recompute/bootstrap` |
+| Исторические 4096 запросов | Python 3.12+, стандартная библиотека Python | `saved_metrics.py verify/recompute`; без NumPy и моделей |
+| Actor | NumPy 2.2.6, Torch 2.8.0+cu126, Transformers 4.55.4, psutil 7.0.0 | Сохранённый GPT и три головы C/RL |
+| RM | Python 3.12.14, NumPy 2.5.4, CatBoost 1.2.10, SciPy 1.18.1 | Отдельный CPU-процесс для RM и команд её подготовки, обучения и калибровки |
+| Прежние рисунки | NumPy 2.2.6, Matplotlib 3.11.2 | Необязательная пересборка рисунков из JSON |
+| Текущий основной PDF | Исходник LaTeX `report-latex/main.tex`; сборка описана в корневом README | PDF из LaTeX; сборщик ReportLab относится к прежнему отчёту |
 
-Исторические runs использовали Python 3.12.14, Windows x64. [dependencies.json](../source/fullstudy/dependencies.json) сохраняет их происхождение и native backend hashes; [actor requirements](../source/fullstudy/code/requirements/actor.txt), [reward-worker requirements](../source/fullstudy/code/requirements/reward-worker.txt) и [figures requirements](../source/fullstudy/code/requirements/figures.txt) фиксируют верхние версии. Это не полный transitive lock, не wheel archive и не гарантия установки тех же бинарников на другой ОС. Historical driver version этим dependency audit не установлена.
+Прежние запуски использовали Windows x64 и Python 3.12.14. [dependencies.json](../source/fullstudy/dependencies.json) сохраняет версии пакетов. Требования для [actor](../source/fullstudy/code/requirements/actor.txt), [RM](../source/fullstudy/code/requirements/reward-worker.txt) и [рисунков](../source/fullstudy/code/requirements/figures.txt) закрепляют прямые зависимости, но не все транзитивные и системные компоненты. Установка с нуля и точное совпадение вычислений на другой машине не проверены; версия прежнего драйвера не установлена.
 
-## Создать отдельные окружения
+## Среда текущих метрик
 
-Все пути ниже относительны корню распакованного комплекта. `python` в дальнейших командах означает интерпретатор выбранной среды. Его можно использовать через полное имя без activation.
-
-```text
-python -m venv .venv-actor
-python -m venv .venv-rm
-python -m venv .venv-figures
-```
-
-В Windows интерпретатор среды — `.venv-actor/Scripts/python.exe`, в Linux/macOS — `.venv-actor/bin/python`; аналогично для других двух. Например, PowerShell:
+Из корня клона в PowerShell:
 
 ```powershell
-& ./.venv-actor/Scripts/python.exe -m pip install -r source/fullstudy/code/requirements/actor.txt --extra-index-url https://download.pytorch.org/whl/cu126
-& ./.venv-rm/Scripts/python.exe -m pip install -r source/fullstudy/code/requirements/reward-worker.txt
-& ./.venv-figures/Scripts/python.exe -m pip install -r source/fullstudy/code/requirements/figures.txt
+python -m venv ../kion-env-metrics
+& ../kion-env-metrics/Scripts/python.exe -m pip install numpy==2.5.4
 ```
 
-Для Linux/macOS замени только путь интерпретатора и синтаксис его вызова. Torch wheel `+cu126` относится к исторической CUDA 12.6 сборке. На платформе без совместимого wheel нужен отдельный CPU-compatible runtime; он не становится историческим FP16 runtime; его исполнение и численные расхождения оцениваются отдельно. Не заменяй dependency versions молча.
+В Linux/macOS путь к интерпретатору: `../kion-env-metrics/bin/python`, без PowerShell `&`. GPU, Torch, CatBoost и исходные данные KION для этого пути не нужны. Версия NumPy закреплена для повторения генератора bootstrap. Пересчёт 4096 запросов использует только стандартную библиотеку Python.
 
-Actor и RM используют разные NumPy. Не устанавливай оба набора в одно окружение и не импортируй CatBoost bridge после actor numerical imports в том же процессе. Запускай RM отдельным выбранным интерпретатором. Наличие CUDA wheel не означает, что CUDA доступна: устройство, backend versions и precision фиксируются в run receipt.
+## Раздельные среды actor/RM вне клона
 
-## Численный контракт
+Команды подготовки, обучения и калибровки RM проверяют точную версию Python 3.12.14. Python 3.12+ достаточно только для проверок исходников и пересчёта сохранённых метрик. Из корня клона в PowerShell укажите путь к установленному Python 3.12.14 и создайте среды рядом с клоном:
 
-Primary numerical gate — CUDA FP16 с exact oracle и historical producer precision. Форма полного producer batch, реальные slots и исходный trim существенны. Пересчёт одного примера вместо полного B16 может изменить близкие ranks и не считается exact historical parity. CPU FP32 запускается отдельно с `--oracle none`: такой run проверяет исполнение forward, а измеренные ошибки относительно historical oracle остаются описательными; допустимая граница для CPU из них не выводится.
+```powershell
+$Python31214 = 'C:/path/to/Python31214/python.exe'
+& $Python31214 --version
+& $Python31214 -m venv ../kion-env-actor
+& $Python31214 -m venv ../kion-env-rm
+```
 
-Изменённый runtime или precision записываются как новая проверка; exact mismatch должен завершать процесс ошибкой, а не скрываться fallback. CLI принимает только `--oracle exact` и `--oracle none`. Второй режим всё равно сохраняет описательные score errors и top10 agreement после inference, но не назначает допустимый предел и не даёт pass historical parity. Выбрать CPU при недоступной CUDA нужно явно; silent fallback отсутствует.
+Установка в PowerShell:
 
-Команды replay выполняют только inference с `eval`/`no_grad` или `inference_mode`, без optimizer, backward, model download, provider calls и raw preprocessing. Output должен быть новым каталогом; оригинальные fixtures и сохранённые результаты не перезаписываются.
+```powershell
+& ../kion-env-actor/Scripts/python.exe -m pip install -r source/fullstudy/code/requirements/actor.txt --extra-index-url https://download.pytorch.org/whl/cu126
+& ../kion-env-rm/Scripts/python.exe -m pip install -r source/fullstudy/code/requirements/reward-worker.txt
+```
 
-## Фактически проверенная среда
+На Linux/macOS используйте `../kion-env-actor/bin/python` и `../kion-env-rm/bin/python`, без PowerShell `&`. Для пакетов CUDA 12.6 нужны совместимые GPU и драйвер. Другая платформа или точность вычислений проверяется отдельно.
 
-Actual `frozen-encoder` replay из свежего минимального runtime+inputs архива принят на исходной Windows-машине: Python 3.12.14, NumPy 2.2.6, Torch 2.8.0+cu126, Transformers 4.55.4, CUDA FP16/SDPA. [Receipt](../evidence/reproduction/actor-replay-receipt.json) и [summary](../evidence/reproduction/actor-replay-summary.json) связывают точные runtime/input manifests и zero-error parity. Среда уже существовала; fresh dependency installation на новой машине не проверена. CPU FP32 и самостоятельный cached-features CLI не запускались. Отдельный [RM replay](../evidence/reproduction/rm-replay-summary.json) принят из новой проверочной распаковки в fresh CPU process: Python 3.12.14, NumPy 2.5.4, CatBoost 1.2.10; actual prediction/calibration, float64 error 0 и exact float32/support, без RM fit или updates. [RM receipt](../evidence/reproduction/rm-replay-receipt.json) связывает тот же runtime и отдельный RM fixture manifest.
+Actor и RM используют разные NumPy. Не объединяйте их в одну среду и не загружайте CatBoost в процесс actor. RM запускается отдельным интерпретатором.
 
-Historical aggregate replay принят на исходной Windows-машине: NumPy 2.2.6 / Matplotlib 3.11.2, 13 PNG совпали побайтно. Это историческое свидетельство уровня A; новый figure replay текущей поставки отдельно не заявляется. Совпадение PNG на другой font/render среде не обещается.
+Для необязательных рисунков создайте третью среду `python -m venv ../kion-env-figures`, затем в PowerShell:
+
+```powershell
+& ../kion-env-figures/Scripts/python.exe -m pip install -r source/fullstudy/code/requirements/figures.txt
+```
+
+В командах рисунков из [README](README.md) `python` означает этот интерпретатор.
+
+## Условия численного совпадения
+
+Основной режим проверки: CUDA FP16, исходный пакет из 16 примеров, позиции 0–3 и `--oracle exact`. Размер пакета влияет на близкие ранги. Требуется совпадение q, базовых оценок, оценок голов и top10 с эталоном; несовпадение завершает процесс ошибкой. При недоступной CUDA автоматического перехода на CPU нет.
+
+CPU FP32 выбирается явно: `--device cpu --precision fp32 --oracle none`. Он проверяет предсказания в другой среде и сохраняет величину расхождений, но не устанавливает `oracle_passed: true`.
+
+До загрузки численных библиотек CLI проверяет описатели кода и входов, границы путей, SHA256, размеры и типы массивов. NPY/NPZ читаются без pickle, веса: через `weights_only=True`. Выходной каталог должен отсутствовать, родительский каталог должен существовать; он не должен пересекаться с кодом или входами. Actor принимает `--cpu-threads` от 1 до 4, RM использует два потока. После вычислений хеши проверяются повторно. CLI не задаёт системные квоты RAM/VRAM и времени.
+
+## Прежние проверки
+
+[Протоколы](../evidence/reproduction/INDEX.json) подтверждают CUDA FP16 exact для actor и нулевую ошибку RM на исходной машине с готовыми средами. Установка с нуля, самостоятельные CPU FP32 и cached-features запуски не проверялись.
+
+После этих запусков усилена проверка метаданных RM: текущий `runtime-manifest.json` отличается от записанного в прежних протоколах. Поэтому они не подтверждают новый запуск текущей версии. Для новой проверки используются её хеши и новый протокол.
