@@ -1,0 +1,86 @@
+{
+  "contract": "kion-derived-completion-utility-v1",
+  "state": "completed",
+  "both_cohorts_ready": true,
+  "prefit_gate_passed": true,
+  "preregistration_sha256": "78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c",
+  "cohorts": {
+    "train": {
+      "base_completion": {
+        "supported_min": 0.0,
+        "supported_max": 0.9138413071632385,
+        "supported_sd": 0.15530581772327423,
+        "advantage_min": -0.5075065243659908,
+        "advantage_max": 0.6140255552698475,
+        "advantage_sd": 0.12929711719576795,
+        "reference_weighted_advantage_rms": 0.14472321444528893
+      },
+      "derived_utility": {
+        "supported_min": -0.471558195860293,
+        "supported_max": 0.3907607132586872,
+        "supported_sd": 0.11412442302351422,
+        "advantage_min": -0.43738424825643474,
+        "advantage_max": 0.45035872066405747,
+        "advantage_sd": 0.07347845602067674,
+        "reference_weighted_advantage_rms": 0.07114268739524214
+      },
+      "advantage_rms_ratio": 0.49157757909071925,
+      "active_states": 512,
+      "supported_pairs": 520101,
+      "prior_within_state_range_max": 0.6752120271445956,
+      "nondegenerate_prior": true,
+      "fraction_constant_within_state_priors": 0.0,
+      "changed_pairwise_preferences": 88624326,
+      "supported_unordered_pairs": 263927787,
+      "fraction_changed_pairwise_preferences": 0.33579005457276845,
+      "rms_definition": "sqrt(mean_active_states(sum_all_actions(p_C * centered_supported_utility^2))); unsupported advantage=0"
+    },
+    "screen": {
+      "base_completion": {
+        "supported_min": 0.0,
+        "supported_max": 0.9216280579566956,
+        "supported_sd": 0.15370537340641022,
+        "advantage_min": -0.5134474613821864,
+        "advantage_max": 0.4375102532934318,
+        "advantage_sd": 0.1252059274057083,
+        "reference_weighted_advantage_rms": 0.13908639199218945
+      },
+      "derived_utility": {
+        "supported_min": -0.49780617407074224,
+        "supported_max": 0.40756892076978535,
+        "supported_sd": 0.11482928886857262,
+        "advantage_min": -0.44895490435930574,
+        "advantage_max": 0.3850176331966114,
+        "advantage_sd": 0.07268420988656202,
+        "reference_weighted_advantage_rms": 0.06963358413209729
+      },
+      "advantage_rms_ratio": 0.5006498704489196,
+      "active_states": 256,
+      "supported_pairs": 254360,
+      "prior_within_state_range_max": 0.6752120271445956,
+      "nondegenerate_prior": true,
+      "fraction_constant_within_state_priors": 0.0,
+      "changed_pairwise_preferences": 43483235,
+      "supported_unordered_pairs": 126238908,
+      "fraction_changed_pairwise_preferences": 0.34445192602584934,
+      "rms_definition": "sqrt(mean_active_states(sum_all_actions(p_C * centered_supported_utility^2))); unsupported advantage=0"
+    }
+  },
+  "utility_manifests": {
+    "train": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reward/residual-r1/train/utility.json",
+      "sha256": "e888cb47586b8ea2a4e5323a1051401e949f602ec36e43d36254684e80a320a5"
+    },
+    "screen": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reward/residual-r1/screen/utility.json",
+      "sha256": "b3d4d9a000d953b207566d695066f6210155a345d683a58a1edf48e27765d709"
+    }
+  },
+  "prior_archive": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/rm-r2/scorer/scorer.npz",
+    "sha256": "d5df55586a9df54b5e121d494a149764d956750ac3caaf2b4c1ada27a93243d4"
+  },
+  "optimizer_created": false,
+  "model_loaded": false,
+  "provider_opened": false
+}

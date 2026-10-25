@@ -1,0 +1,17 @@
+{
+  "contract": "train-KL-calibration-target-v1",
+  "created_utc": "2026-10-25T05:41:24.352278+00:00",
+  "target_train_KL": 0.028141394929216676,
+  "old_residual_train_KL": 0.004426349121092763,
+  "beta1": 0.19829877276516375,
+  "rule": "clip(0.5*sqrt(K_old_residual/T),0.01,2)",
+  "probe": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/train-target-r1.json",
+    "sha256": "e51a6ca50350b93ce3c1925892c54acbff55dde01902eb47ec7876e7d9aa1c60"
+  },
+  "preregistration": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/preregistration.json",
+    "sha256": "46f348e871f185efca1a734cd31e5234dba6346be545b690d32deb447e488ab4"
+  },
+  "dev_selection_used": false
+}

@@ -1,0 +1,67 @@
+{
+  "review_type":"independent actual full4096 analysis arithmetic,bootstrap-method and claim audit",
+  "status":"PASS_ACTUAL_FULL4096_ANALYSIS_WITH_EXPLORATORY_CI_LIMITS",
+  "blocking_findings":[],
+  "path_base":"D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1",
+  "bindings":[
+    {"path":"interpretation/full-analysis-r1/analysis.json","sha256":"33c43018567f6c1e3b22aa55e280885201b8cac99479cb36f06c710bb66ab5c0","actual_hash_verified":true},
+    {"path":"operations/full-analysis-r1/receipt.json","sha256":"65a56890a0534d89da65c08c41c1301f225365d5db1612187cc86a74414229f0","actual_hash_verified":true},
+    {"path":"operations/full-analysis-r1/stage-completion.json","sha256":"8dc4e0e442515e4db7402e327afba42e49f662d88047bd905629f876d31c9a90","actual_hash_verified":true},
+    {"path":"request-full-analysis-r1.json","sha256":"db8c59ff3fa2fe0f67d112ce1b6ccfe4deefc62939f0f2c86bfe473263900c4d","actual_hash_verified":true},
+    {"path":"interpretation/analyze.py","sha256":"17e1ab00608996850b5f24cdd499665dc5a682e744fc040a6d296edf234b116b","actual_hash_verified":true},
+    {"path":"policy/full-scientific3-r1/evaluation.json","sha256":"5884cf09a3ddcde6638aad7991ed6c99915847b74583d7705e8a70f4a135a086","actual_hash_verified":true},
+    {"path":"protocols/evaluation.json","sha256":"ee0e1e06f060f27e4dd149a8c26c02827f9b1c9fb67a57d688d84e166fddfd25","actual_hash_verified":true}
+  ],
+  "actual_execution":{
+    "state":"succeeded",
+    "exit_code":0,
+    "cleanup_quiescent":true,
+    "elapsed_seconds":7.438000000081956,
+    "completed_stage_result_equals_saved_analysis":true,
+    "request_input_source_pins_match_result":true,
+    "cohort":"4096 queries from4035 users;122 unknown targets,616 known offpool misses,3358 covered;denominator4096 retained",
+    "full_branch_is_separate":"screen_diagnostics=null,item_decomposition=null,checkpoint_curve empty. Frozen source calls _screen only when stage==screen. Full result does not execute or depend on the failed screen-specific diagnostic branch. This receipt does not accept a failed screen-analysis attempt."
+  },
+  "rank_and_arithmetic_acceptance":{
+    "method":"Frozen analyzer independently validates all finite[4096,1024]scores,pool/raw identities and each saved top10 using full1024 lexsort(score descending,rawID ascending),then computes observed-target ranks and RR10/NDCG10/Recall10; all3 means must match evaluator before completion.",
+    "saved_summary_means_match_evaluation":true,
+    "all_nine_contrast_point_differences_match_arm_mean_subtraction":true,
+    "maximum_observed_double_rounding_error":1.5612511283791264e-17,
+    "all_nine_gain_loss_tie_counts_sum_to":4096,
+    "denominator_and_unknown_offpool_bins_preserved":true,
+    "payload_boundary":"Reviewer did not reopen arrays. Actual execution of integrity/rank/top10/metric guards is accepted from exact source plus the successful hash-bound completed native result. Metadata subtraction/count identities were checked independently without NumPy."
+  },
+  "bootstrap_acceptance":{
+    "replicates":2000,
+    "seed":20261024,
+    "unique_users":4035,
+    "unit":"One common multinomial multiplicity vector over unique users per replicate,with total4035 draws;all rows of a selected user follow its multiplicity.",
+    "pairing":"Same multiplicities simultaneously multiply user-level sums of all9 right-minus-left metric columns; no independent-arm resampling.",
+    "estimand":"Resampled query sum divided by resampled query count; point estimand is the original row-weighted query mean,not an equal-user mean. Source forms per-user counts and sums and preserves duplicate user draws.",
+    "interval":"NumPy linear quantiles at.025/.975 of2000 replicate paired means;unadjusted percentile95%. Source and output match frozen evaluation protocol.",
+    "multiple_comparison_adjustment":false,
+    "runtime_numpy_version":"2.2.6",
+    "concentration_intervals":"Not reported. Exposure summaries are point estimates under separate query/equal-user weights; this acceptance does not imply bootstrap intervals for HHI or catalog coverage."
+  },
+  "MAP10_comparisons":{
+    "RL-completion-minus-C":{"difference":-0.002481224423363095,"unadjusted_user_cluster_95CI":[-0.004946463325786996,-0.000017425600813575967]},
+    "RL-residual-minus-C":{"difference":-0.0007758246527777778,"unadjusted_user_cluster_95CI":[-0.002034549501113242,0.00042299520473882026]},
+    "RL-residual-minus-RL-completion":{"difference":0.0017053997705853178,"unadjusted_user_cluster_95CI":[-0.0008818732483028609,0.004254833362199177]}
+  },
+  "exposure_metadata_audit":{
+    "six_reported_distributions":"For3 arms x query/equal-user weighting,the saved sorted shares independently sum to1 within9e-15;sum of squared shares reproduces HHI within1.3e-15;effective items exactly equal1/HHI;listed item counts match unique counts.",
+    "query_weighted_C":{"top1_max_share":0.28515625,"HHI":0.03594276309013367,"effective_items":27.822012389317425,"unique_items":831},
+    "query_weighted_completion":{"top1_max_share":0.337646484375,"HHI":0.03767303228378296,"effective_items":26.54418663374937,"unique_items":794},
+    "query_weighted_residual":{"top1_max_share":0.25244140625,"HHI":0.03739211916923523,"effective_items":26.743603256986855,"unique_items":765},
+    "interpretation":"Residual lowers the maximum top1 share relative to C,but raises top10HHI,reduces effective catalog and uses fewer unique items(765 vs831;also fewer than completion794). This is a mixed concentration/diversity result,not general improvement. Equal-user weighting preserves the qualitative pattern."
+  },
+  "allowed_claims_and_required_limits":[
+    "Completion has lower full4096 MAP point value;its unadjusted95% cluster percentile interval barely excludes0 at an upper endpoint approximately-1.74e-5. Report this exact interval and exploratory setting; do not portray it as a robust confirmatory threshold crossing.",
+    "Residual-C and residual-completion MAP intervals include0. A positive residual-completion MAP point difference is not evidence of established MAP superiority; an interval including0 also does not establish equivalence or noninferiority.",
+    "Some NDCG/Recall intervals exclude0 unadjusted,including residual-completion. Those metric-specific findings must not be generalized to MAP or all metrics. Nine intervals share draws but have no multiplicity correction.",
+    "Intervals are conditional on the fitted/frozen models and this reused development cohort;they omit model-training/seed and selection uncertainty. The borderline completion MAP interval also has finite2000-replicate Monte Carlo uncertainty near0; no extra bootstrap/search is required or authorized by this audit.",
+    "Fixed beta with unequal actual KL and different prefit advantage scales remains an identification limitation. No causal personalization,online completion,retention or robust generalization conclusion follows.",
+    "Full4096 analysis contains relevance and exposure only. Reward/utility/support and item-reward decomposition evidence remain screen256. A failed screen branch remains failed until a separately reviewed successful version is accepted.",
+    "Reviewer used source,text/small JSON and metadata arithmetic only;no arrays/checkpoints/NPZ/model payloads,NumPy/Torch/ML imports,provider/GPU jobs or bootstrap reruns were executed."
+  ]
+}

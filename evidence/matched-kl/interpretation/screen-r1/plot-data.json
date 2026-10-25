@@ -1,0 +1,1167 @@
+{
+  "contract": "kion-matched-kl-multiseed-analysis-v1",
+  "state": "completed",
+  "stage": "screen",
+  "evaluation": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/screen-six-r1/evaluation.json",
+    "sha256": "719aa890baa571458761687dcacbeda401724ed0e238025d62bd3316a2e86e3b",
+    "bytes": 55373
+  },
+  "rows": 256,
+  "metric_denominator": 256,
+  "candidate_width": 1024,
+  "arms": [
+    "C",
+    "completion-20261024",
+    "residual-20261024",
+    "completion-20261025",
+    "residual-20261025",
+    "completion-20261026",
+    "residual-20261026"
+  ],
+  "seeds": [
+    20261024,
+    20261025,
+    20261026
+  ],
+  "checkpoints": {
+    "completion-20261024": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-1000.pt",
+      "sha256": "436d735d67fd861e6b925719b9e3597582ec405eed1b13ede3db3671e1ce37b7",
+      "step": 1000,
+      "seed": 20261024,
+      "utility": "completion",
+      "training": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/training.json",
+        "sha256": "cfdfc225be553305a3d6a8af7c5419227255b44827ccf7e3760a86b3e5dbf8bf"
+      },
+      "seed_provenance": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/preregistration.json",
+        "sha256": "025061343a0314691dfb6064063d7e18c74662ea62ab285ec423d374037538ac"
+      },
+      "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "training_contract": "kion-current-C1070-natural1024-H1-v1",
+      "updates": 1000,
+      "beta": 0.5,
+      "utility_formula": "exact supported centered advantage minus beta KL"
+    },
+    "residual-20261024": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot2/head-1000.pt",
+      "sha256": "c64dccd1a28d9177611d6c383d1b27adb0565355f7cd67d1e3502b39f91cc4d8",
+      "step": 1000,
+      "seed": 20261024,
+      "utility": "residual",
+      "training": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot2/training.json",
+        "sha256": "6971032b549fe11c15a085d679127fb8dd2a31e7c86d06018757bfa079bde000"
+      },
+      "loader_module": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/policy.py",
+        "sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5"
+      },
+      "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "training_contract": "kion-current-C1070-kl-seeds-H1-v1",
+      "updates": 1000,
+      "beta": 0.16274030138555867,
+      "utility_formula": "r_RM(s,i)-m_fit(i)"
+    },
+    "completion-20261025": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261025/head-1000.pt",
+      "sha256": "8f079caae520b60fe8be65342f6a7deb927ae8ca742ac7ce829d086e261d41ba",
+      "step": 1000,
+      "seed": 20261025,
+      "utility": "completion",
+      "training": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261025/training.json",
+        "sha256": "be0bfe159c641d97f2018c34e1382757255fbb7c715f0a55d1fcaee00082e47e"
+      },
+      "loader_module": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/policy.py",
+        "sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5"
+      },
+      "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "training_contract": "kion-current-C1070-kl-seeds-H1-v1",
+      "updates": 1000,
+      "beta": 0.5,
+      "utility_formula": "r_RM(s,i)"
+    },
+    "residual-20261025": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261025/head-1000.pt",
+      "sha256": "aef66d2d7d10bb4e2431f1c495ea2f2d34125bc2045e5a89944457cbc07c0cb8",
+      "step": 1000,
+      "seed": 20261025,
+      "utility": "residual",
+      "training": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261025/training.json",
+        "sha256": "bbc1a290a6aede108544d7fa65f94cc253c52db0cf9fec94a21b967d45bbf4e8"
+      },
+      "loader_module": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/policy.py",
+        "sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5"
+      },
+      "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "training_contract": "kion-current-C1070-kl-seeds-H1-v1",
+      "updates": 1000,
+      "beta": 0.16274030138555867,
+      "utility_formula": "r_RM(s,i)-m_fit(i)"
+    },
+    "completion-20261026": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261026/head-1000.pt",
+      "sha256": "2b323c60b672a19439adade769eea01f8eb535033de859cd248d911d09cba822",
+      "step": 1000,
+      "seed": 20261026,
+      "utility": "completion",
+      "training": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261026/training.json",
+        "sha256": "1840b9516f1c11451f2583a4adf211fb11f4dea41686829506abdf7573056d28"
+      },
+      "loader_module": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/policy.py",
+        "sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5"
+      },
+      "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "training_contract": "kion-current-C1070-kl-seeds-H1-v1",
+      "updates": 1000,
+      "beta": 0.5,
+      "utility_formula": "r_RM(s,i)"
+    },
+    "residual-20261026": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261026/head-1000.pt",
+      "sha256": "1e3b26461b9fb6c6233c97ba72d791234d4c3f3f00c4a5546a934044621eca1b",
+      "step": 1000,
+      "seed": 20261026,
+      "utility": "residual",
+      "training": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261026/training.json",
+        "sha256": "1aa61a1e8cb5adb30368911447eb21b17a2faa05fa114a5b60790dfc60ed04f9"
+      },
+      "loader_module": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/policy.py",
+        "sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5"
+      },
+      "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "training_contract": "kion-current-C1070-kl-seeds-H1-v1",
+      "updates": 1000,
+      "beta": 0.16274030138555867,
+      "utility_formula": "r_RM(s,i)-m_fit(i)"
+    },
+    "C": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/heads/C/head.pt",
+      "sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "step": null,
+      "lineage": "original supervised C; no RL updates"
+    }
+  },
+  "unique_users": 256,
+  "unknown_target_misses": 8,
+  "offpool_known_misses": 32,
+  "candidate_coverage_count": 216,
+  "original_C_parity": {
+    "max_abs_error": 0.0,
+    "score_tolerance_passed": true,
+    "scores_identical": true,
+    "top10_changed_rows": 0,
+    "changes_with_margin_above_tolerance": 0,
+    "basis": "immutable original screen cache C reference scores"
+  },
+  "training_KL_matching": {
+    "receipt": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/matching.json",
+      "sha256": "e45f26f9d682c71e2ee7b10b45a5e75861d572a3dd91d29547e501842eda154c",
+      "bytes": 2321
+    },
+    "train_KL_match_by_seed": {
+      "20261024": true,
+      "20261025": true,
+      "20261026": true
+    },
+    "all_three_train_KL_matches": true,
+    "receipt_metadata": {
+      "contract": "completed-train-KL-match-binding-v1",
+      "created_utc": "2026-10-25T06:08:47.387542+00:00",
+      "selected_checkpoints": {
+        "completion-20261024": "436d735d67fd861e6b925719b9e3597582ec405eed1b13ede3db3671e1ce37b7",
+        "residual-20261024": "c64dccd1a28d9177611d6c383d1b27adb0565355f7cd67d1e3502b39f91cc4d8",
+        "completion-20261025": "8f079caae520b60fe8be65342f6a7deb927ae8ca742ac7ce829d086e261d41ba",
+        "residual-20261025": "aef66d2d7d10bb4e2431f1c495ea2f2d34125bc2045e5a89944457cbc07c0cb8",
+        "completion-20261026": "2b323c60b672a19439adade769eea01f8eb535033de859cd248d911d09cba822",
+        "residual-20261026": "1e3b26461b9fb6c6233c97ba72d791234d4c3f3f00c4a5546a934044621eca1b"
+      },
+      "target_train_KL": 0.028141394929216676,
+      "tolerance": [
+        0.8,
+        1.2
+      ],
+      "train_KL_by_arm": {
+        "completion-20261024": 0.028141394929216676,
+        "residual-20261024": 0.025626846105626697,
+        "completion-20261025": 0.02857631484713826,
+        "residual-20261025": 0.02723862248082785,
+        "completion-20261026": 0.028560712775189928,
+        "residual-20261026": 0.026115598434196165
+      },
+      "ratio_by_seed": {
+        "20261024": 0.9106459068601696,
+        "20261025": 0.9531887728188166,
+        "20261026": 0.9143888893726146
+      },
+      "train_KL_match_by_seed": {
+        "20261024": true,
+        "20261025": true,
+        "20261026": true
+      },
+      "cache": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/train-cache-r1/cache.json",
+        "sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5"
+      },
+      "reference": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/train-target-r1.json",
+        "sha256": "e51a6ca50350b93ce3c1925892c54acbff55dde01902eb47ec7876e7d9aa1c60"
+      },
+      "final_train_diagnostics": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/train-final-six-r1.json",
+        "sha256": "6e4299ca58ee0da5d40d31e42317cd14c55c96d95d372dbc1827f4d8b1d4e103"
+      },
+      "beta_decision": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/frozen-beta.json",
+        "sha256": "be54df7bff4aabfa729480fdd3140661b976f532bcd418ad12d05cf1f192e13f"
+      },
+      "claim": "operational mean TRAIN512 natural1024 forward-KL match; not perstate/catalogue equivalence",
+      "no_dev_selection": true
+    },
+    "train_KL_residual_over_completion_by_seed": {
+      "20261024": 0.9106459068601696,
+      "20261025": 0.9531887728188166,
+      "20261026": 0.9143888893726146
+    },
+    "train_KL_distance_from_calibration_target_by_arm": {
+      "completion-20261024": 0.0,
+      "completion-20261025": 0.00043491991792158485,
+      "completion-20261026": 0.00041931784597325217,
+      "residual-20261024": -0.0025145488235899793,
+      "residual-20261025": -0.0009027724483888257,
+      "residual-20261026": -0.0020257964950205105
+    },
+    "matching_rule": "within-seed KL_residual / KL_completion in [0.8,1.2]; zero completion KL fails; calibration target distances are descriptive",
+    "cache": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/train-cache-r1/cache.json",
+      "sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+      "bytes": 6716
+    },
+    "reference": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/train-target-r1.json",
+      "sha256": "e51a6ca50350b93ce3c1925892c54acbff55dde01902eb47ec7876e7d9aa1c60",
+      "bytes": 11304
+    },
+    "reference_provenance": "Pinned small TRAIN512 reference receipt; arrays are never opened here.",
+    "status": "checkpoint-bound TRAIN512 matching receipt; three flags independently verified"
+  },
+  "summaries": {
+    "C": {
+      "metrics": {
+        "map10": 0.12278955853174603,
+        "ndcg10": 0.15004984767079585,
+        "recall10": 0.23828125
+      },
+      "exact_KL_to_C": 0.0
+    },
+    "completion-20261024": {
+      "metrics": {
+        "map10": 0.11365327380952381,
+        "ndcg10": 0.14102941437209787,
+        "recall10": 0.23046875
+      },
+      "exact_KL_to_C": 0.026805727530462245
+    },
+    "residual-20261024": {
+      "metrics": {
+        "map10": 0.11999937996031745,
+        "ndcg10": 0.14865063937261921,
+        "recall10": 0.2421875
+      },
+      "exact_KL_to_C": 0.022539174025775578
+    },
+    "completion-20261025": {
+      "metrics": {
+        "map10": 0.11170014880952381,
+        "ndcg10": 0.1395877337219864,
+        "recall10": 0.23046875
+      },
+      "exact_KL_to_C": 0.027226830875277358
+    },
+    "residual-20261025": {
+      "metrics": {
+        "map10": 0.11988622271825397,
+        "ndcg10": 0.14853410177147197,
+        "recall10": 0.2421875
+      },
+      "exact_KL_to_C": 0.02386755707629526
+    },
+    "completion-20261026": {
+      "metrics": {
+        "map10": 0.11170014880952381,
+        "ndcg10": 0.1395877337219864,
+        "recall10": 0.23046875
+      },
+      "exact_KL_to_C": 0.027234415669521353
+    },
+    "residual-20261026": {
+      "metrics": {
+        "map10": 0.12004898313492063,
+        "ndcg10": 0.1486932514211684,
+        "recall10": 0.2421875
+      },
+      "exact_KL_to_C": 0.022985660463611286
+    }
+  },
+  "comparisons": {
+    "20261024/completion-minus-C": {
+      "name": "20261024/completion-minus-C",
+      "kind": "completion-minus-C",
+      "seed": 20261024,
+      "terms": [
+        [
+          "C",
+          "completion-20261024"
+        ]
+      ],
+      "left": "C",
+      "right": "completion-20261024",
+      "metrics": {
+        "map10": {
+          "difference": -0.009136284722222223,
+          "user_cluster_95ci": [
+            -0.021020081535218255,
+            0.002516896081349201
+          ],
+          "gains": 12,
+          "losses": 21,
+          "ties": 223
+        },
+        "ndcg10": {
+          "difference": -0.009020433298697943,
+          "user_cluster_95ci": [
+            -0.019661129954775956,
+            0.0010360636787297484
+          ],
+          "gains": 12,
+          "losses": 21,
+          "ties": 223
+        },
+        "recall10": {
+          "difference": -0.0078125,
+          "user_cluster_95ci": [
+            -0.02734375,
+            0.01171875
+          ],
+          "gains": 2,
+          "losses": 4,
+          "ties": 250
+        }
+      }
+    },
+    "20261024/residual-minus-C": {
+      "name": "20261024/residual-minus-C",
+      "kind": "residual-minus-C",
+      "seed": 20261024,
+      "terms": [
+        [
+          "C",
+          "residual-20261024"
+        ]
+      ],
+      "left": "C",
+      "right": "residual-20261024",
+      "metrics": {
+        "map10": {
+          "difference": -0.002790178571428572,
+          "user_cluster_95ci": [
+            -0.009286024305555555,
+            0.002853771391369047
+          ],
+          "gains": 11,
+          "losses": 19,
+          "ties": 226
+        },
+        "ndcg10": {
+          "difference": -0.001399208298176615,
+          "user_cluster_95ci": [
+            -0.008593164005276276,
+            0.0056075764945073495
+          ],
+          "gains": 11,
+          "losses": 19,
+          "ties": 226
+        },
+        "recall10": {
+          "difference": 0.00390625,
+          "user_cluster_95ci": [
+            -0.01171875,
+            0.0234375
+          ],
+          "gains": 3,
+          "losses": 2,
+          "ties": 251
+        }
+      }
+    },
+    "20261024/residual-minus-completion": {
+      "name": "20261024/residual-minus-completion",
+      "kind": "residual-minus-completion",
+      "seed": 20261024,
+      "terms": [
+        [
+          "completion-20261024",
+          "residual-20261024"
+        ]
+      ],
+      "left": "completion-20261024",
+      "right": "residual-20261024",
+      "metrics": {
+        "map10": {
+          "difference": 0.006346106150793651,
+          "user_cluster_95ci": [
+            -0.007358630952380953,
+            0.0198928493923611
+          ],
+          "gains": 23,
+          "losses": 20,
+          "ties": 213
+        },
+        "ndcg10": {
+          "difference": 0.007621225000521327,
+          "user_cluster_95ci": [
+            -0.005329949519726339,
+            0.020041372105101193
+          ],
+          "gains": 23,
+          "losses": 20,
+          "ties": 213
+        },
+        "recall10": {
+          "difference": 0.01171875,
+          "user_cluster_95ci": [
+            -0.01171875,
+            0.03515625
+          ],
+          "gains": 6,
+          "losses": 3,
+          "ties": 247
+        }
+      }
+    },
+    "20261025/completion-minus-C": {
+      "name": "20261025/completion-minus-C",
+      "kind": "completion-minus-C",
+      "seed": 20261025,
+      "terms": [
+        [
+          "C",
+          "completion-20261025"
+        ]
+      ],
+      "left": "C",
+      "right": "completion-20261025",
+      "metrics": {
+        "map10": {
+          "difference": -0.011089409722222223,
+          "user_cluster_95ci": [
+            -0.023043271019345234,
+            0.0005565631200396823
+          ],
+          "gains": 12,
+          "losses": 22,
+          "ties": 222
+        },
+        "ndcg10": {
+          "difference": -0.010462113948809436,
+          "user_cluster_95ci": [
+            -0.021047829456643814,
+            5.347946803650895e-06
+          ],
+          "gains": 12,
+          "losses": 22,
+          "ties": 222
+        },
+        "recall10": {
+          "difference": -0.0078125,
+          "user_cluster_95ci": [
+            -0.02734375,
+            0.01171875
+          ],
+          "gains": 2,
+          "losses": 4,
+          "ties": 250
+        }
+      }
+    },
+    "20261025/residual-minus-C": {
+      "name": "20261025/residual-minus-C",
+      "kind": "residual-minus-C",
+      "seed": 20261025,
+      "terms": [
+        [
+          "C",
+          "residual-20261025"
+        ]
+      ],
+      "left": "C",
+      "right": "residual-20261025",
+      "metrics": {
+        "map10": {
+          "difference": -0.002903335813492064,
+          "user_cluster_95ci": [
+            -0.009443281870039682,
+            0.0026945762028769814
+          ],
+          "gains": 11,
+          "losses": 18,
+          "ties": 227
+        },
+        "ndcg10": {
+          "difference": -0.0015157458993238723,
+          "user_cluster_95ci": [
+            -0.008693220840272669,
+            0.005426273054892404
+          ],
+          "gains": 11,
+          "losses": 18,
+          "ties": 227
+        },
+        "recall10": {
+          "difference": 0.00390625,
+          "user_cluster_95ci": [
+            -0.01171875,
+            0.0234375
+          ],
+          "gains": 3,
+          "losses": 2,
+          "ties": 251
+        }
+      }
+    },
+    "20261025/residual-minus-completion": {
+      "name": "20261025/residual-minus-completion",
+      "kind": "residual-minus-completion",
+      "seed": 20261025,
+      "terms": [
+        [
+          "completion-20261025",
+          "residual-20261025"
+        ]
+      ],
+      "left": "completion-20261025",
+      "right": "residual-20261025",
+      "metrics": {
+        "map10": {
+          "difference": 0.00818607390873016,
+          "user_cluster_95ci": [
+            -0.005541759672619048,
+            0.02194665333581349
+          ],
+          "gains": 23,
+          "losses": 20,
+          "ties": 213
+        },
+        "ndcg10": {
+          "difference": 0.008946368049485563,
+          "user_cluster_95ci": [
+            -0.003954316084224506,
+            0.021454801394039998
+          ],
+          "gains": 23,
+          "losses": 20,
+          "ties": 213
+        },
+        "recall10": {
+          "difference": 0.01171875,
+          "user_cluster_95ci": [
+            -0.01171875,
+            0.03515625
+          ],
+          "gains": 6,
+          "losses": 3,
+          "ties": 247
+        }
+      }
+    },
+    "20261026/completion-minus-C": {
+      "name": "20261026/completion-minus-C",
+      "kind": "completion-minus-C",
+      "seed": 20261026,
+      "terms": [
+        [
+          "C",
+          "completion-20261026"
+        ]
+      ],
+      "left": "C",
+      "right": "completion-20261026",
+      "metrics": {
+        "map10": {
+          "difference": -0.011089409722222223,
+          "user_cluster_95ci": [
+            -0.023043271019345234,
+            0.0005565631200396823
+          ],
+          "gains": 12,
+          "losses": 22,
+          "ties": 222
+        },
+        "ndcg10": {
+          "difference": -0.010462113948809436,
+          "user_cluster_95ci": [
+            -0.021047829456643814,
+            5.347946803650895e-06
+          ],
+          "gains": 12,
+          "losses": 22,
+          "ties": 222
+        },
+        "recall10": {
+          "difference": -0.0078125,
+          "user_cluster_95ci": [
+            -0.02734375,
+            0.01171875
+          ],
+          "gains": 2,
+          "losses": 4,
+          "ties": 250
+        }
+      }
+    },
+    "20261026/residual-minus-C": {
+      "name": "20261026/residual-minus-C",
+      "kind": "residual-minus-C",
+      "seed": 20261026,
+      "terms": [
+        [
+          "C",
+          "residual-20261026"
+        ]
+      ],
+      "left": "C",
+      "right": "residual-20261026",
+      "metrics": {
+        "map10": {
+          "difference": -0.0027405753968253975,
+          "user_cluster_95ci": [
+            -0.009346129402281744,
+            0.00290647476438492
+          ],
+          "gains": 11,
+          "losses": 19,
+          "ties": 226
+        },
+        "ndcg10": {
+          "difference": -0.0013565962496274136,
+          "user_cluster_95ci": [
+            -0.008632149212876652,
+            0.005801905362602966
+          ],
+          "gains": 11,
+          "losses": 19,
+          "ties": 226
+        },
+        "recall10": {
+          "difference": 0.00390625,
+          "user_cluster_95ci": [
+            -0.01171875,
+            0.0234375
+          ],
+          "gains": 3,
+          "losses": 2,
+          "ties": 251
+        }
+      }
+    },
+    "20261026/residual-minus-completion": {
+      "name": "20261026/residual-minus-completion",
+      "kind": "residual-minus-completion",
+      "seed": 20261026,
+      "terms": [
+        [
+          "completion-20261026",
+          "residual-20261026"
+        ]
+      ],
+      "left": "completion-20261026",
+      "right": "residual-20261026",
+      "metrics": {
+        "map10": {
+          "difference": 0.008348834325396825,
+          "user_cluster_95ci": [
+            -0.005379231770833335,
+            0.022109685019841258
+          ],
+          "gains": 24,
+          "losses": 20,
+          "ties": 212
+        },
+        "ndcg10": {
+          "difference": 0.009105517699182022,
+          "user_cluster_95ci": [
+            -0.003955569356258011,
+            0.021483499335111064
+          ],
+          "gains": 24,
+          "losses": 20,
+          "ties": 212
+        },
+        "recall10": {
+          "difference": 0.01171875,
+          "user_cluster_95ci": [
+            -0.01171875,
+            0.03515625
+          ],
+          "gains": 6,
+          "losses": 3,
+          "ties": 247
+        }
+      }
+    },
+    "three-seed-average/completion-minus-C": {
+      "name": "three-seed-average/completion-minus-C",
+      "kind": "completion-minus-C",
+      "seed": null,
+      "terms": [
+        [
+          "C",
+          "completion-20261024"
+        ],
+        [
+          "C",
+          "completion-20261025"
+        ],
+        [
+          "C",
+          "completion-20261026"
+        ]
+      ],
+      "equal_seed_weight": 0.3333333333333333,
+      "metrics": {
+        "map10": {
+          "difference": -0.010438368055555557,
+          "user_cluster_95ci": [
+            -0.022261555989583334,
+            0.0010079520089285691
+          ],
+          "gains": 12,
+          "losses": 22,
+          "ties": 222
+        },
+        "ndcg10": {
+          "difference": -0.009981553732105606,
+          "user_cluster_95ci": [
+            -0.02050275896010847,
+            0.000400976380478152
+          ],
+          "gains": 12,
+          "losses": 22,
+          "ties": 222
+        },
+        "recall10": {
+          "difference": -0.0078125,
+          "user_cluster_95ci": [
+            -0.02734375,
+            0.01171875
+          ],
+          "gains": 2,
+          "losses": 4,
+          "ties": 250
+        }
+      }
+    },
+    "three-seed-average/residual-minus-C": {
+      "name": "three-seed-average/residual-minus-C",
+      "kind": "residual-minus-C",
+      "seed": null,
+      "terms": [
+        [
+          "C",
+          "residual-20261024"
+        ],
+        [
+          "C",
+          "residual-20261025"
+        ],
+        [
+          "C",
+          "residual-20261026"
+        ]
+      ],
+      "equal_seed_weight": 0.3333333333333333,
+      "metrics": {
+        "map10": {
+          "difference": -0.0028113632605820107,
+          "user_cluster_95ci": [
+            -0.009342447916666668,
+            0.002803470672123011
+          ],
+          "gains": 11,
+          "losses": 19,
+          "ties": 226
+        },
+        "ndcg10": {
+          "difference": -0.0014238501490426334,
+          "user_cluster_95ci": [
+            -0.008671827644935631,
+            0.005606036429890296
+          ],
+          "gains": 11,
+          "losses": 19,
+          "ties": 226
+        },
+        "recall10": {
+          "difference": 0.00390625,
+          "user_cluster_95ci": [
+            -0.01171875,
+            0.0234375
+          ],
+          "gains": 3,
+          "losses": 2,
+          "ties": 251
+        }
+      }
+    },
+    "three-seed-average/residual-minus-completion": {
+      "name": "three-seed-average/residual-minus-completion",
+      "kind": "residual-minus-completion",
+      "seed": null,
+      "terms": [
+        [
+          "completion-20261024",
+          "residual-20261024"
+        ],
+        [
+          "completion-20261025",
+          "residual-20261025"
+        ],
+        [
+          "completion-20261026",
+          "residual-20261026"
+        ]
+      ],
+      "equal_seed_weight": 0.3333333333333333,
+      "metrics": {
+        "map10": {
+          "difference": 0.007627004794973545,
+          "user_cluster_95ci": [
+            -0.0060210503472222215,
+            0.021149669828869032
+          ],
+          "gains": 24,
+          "losses": 20,
+          "ties": 212
+        },
+        "ndcg10": {
+          "difference": 0.008557703583062971,
+          "user_cluster_95ci": [
+            -0.004335592346455896,
+            0.020974745564138232
+          ],
+          "gains": 24,
+          "losses": 20,
+          "ties": 212
+        },
+        "recall10": {
+          "difference": 0.01171875,
+          "user_cluster_95ci": [
+            -0.01171875,
+            0.03515625
+          ],
+          "gains": 6,
+          "losses": 3,
+          "ties": 247
+        }
+      }
+    }
+  },
+  "seed_spread": {
+    "completion-minus-C": {
+      "map10": {
+        "mean": -0.010438368055555557,
+        "min": -0.011089409722222223,
+        "max": -0.009136284722222223,
+        "sample_std": 0.0011276372445109878,
+        "seed_count": 3,
+        "interpretation": "descriptive fitted-seed spread, not a seed-population confidence interval"
+      },
+      "ndcg10": {
+        "mean": -0.009981553732105604,
+        "min": -0.010462113948809436,
+        "max": -0.009020433298697943,
+        "sample_std": 0.0008323547114273452,
+        "seed_count": 3,
+        "interpretation": "descriptive fitted-seed spread, not a seed-population confidence interval"
+      },
+      "recall10": {
+        "mean": -0.0078125,
+        "min": -0.0078125,
+        "max": -0.0078125,
+        "sample_std": 0.0,
+        "seed_count": 3,
+        "interpretation": "descriptive fitted-seed spread, not a seed-population confidence interval"
+      }
+    },
+    "residual-minus-C": {
+      "map10": {
+        "mean": -0.002811363260582011,
+        "min": -0.002903335813492064,
+        "max": -0.0027405753968253975,
+        "sample_std": 8.342260844203212e-05,
+        "seed_count": 3,
+        "interpretation": "descriptive fitted-seed spread, not a seed-population confidence interval"
+      },
+      "ndcg10": {
+        "mean": -0.0014238501490426336,
+        "min": -0.0015157458993238723,
+        "max": -0.0013565962496274136,
+        "sample_std": 8.238670014148948e-05,
+        "seed_count": 3,
+        "interpretation": "descriptive fitted-seed spread, not a seed-population confidence interval"
+      },
+      "recall10": {
+        "mean": 0.00390625,
+        "min": 0.00390625,
+        "max": 0.00390625,
+        "sample_std": 0.0,
+        "seed_count": 3,
+        "interpretation": "descriptive fitted-seed spread, not a seed-population confidence interval"
+      }
+    },
+    "residual-minus-completion": {
+      "map10": {
+        "mean": 0.007627004794973545,
+        "min": 0.006346106150793651,
+        "max": 0.008348834325396825,
+        "sample_std": 0.0011122718825920194,
+        "seed_count": 3,
+        "interpretation": "descriptive fitted-seed spread, not a seed-population confidence interval"
+      },
+      "ndcg10": {
+        "mean": 0.008557703583062971,
+        "min": 0.007621225000521327,
+        "max": 0.009105517699182022,
+        "sample_std": 0.0008149087399329026,
+        "seed_count": 3,
+        "interpretation": "descriptive fitted-seed spread, not a seed-population confidence interval"
+      },
+      "recall10": {
+        "mean": 0.01171875,
+        "min": 0.01171875,
+        "max": 0.01171875,
+        "sample_std": 0.0,
+        "seed_count": 3,
+        "interpretation": "descriptive fitted-seed spread, not a seed-population confidence interval"
+      }
+    }
+  },
+  "primary_comparison": "three-seed-average/residual-minus-completion",
+  "primary_metric": "map10",
+  "secondary_metrics": [
+    "ndcg10",
+    "recall10"
+  ],
+  "seed_role_note": "20261024 is the calibration seed; 20261025 and 20261026 are prospective seeds. The pooled three-seed mean is descriptive.",
+  "prospective_seed_comparisons": [
+    "20261025/residual-minus-completion",
+    "20261026/residual-minus-completion"
+  ],
+  "prospective_two_seed_mean": {
+    "completion-minus-C": {
+      "map10": -0.011089409722222223,
+      "ndcg10": -0.010462113948809436,
+      "recall10": -0.0078125
+    },
+    "residual-minus-C": {
+      "map10": -0.0028219556051587305,
+      "ndcg10": -0.001436171074475643,
+      "recall10": 0.00390625
+    },
+    "residual-minus-completion": {
+      "map10": 0.008267454117063491,
+      "ndcg10": 0.009025942874333791,
+      "recall10": 0.01171875
+    }
+  },
+  "prospective_two_seed_mean_interpretation": "descriptive equal-weight paired mean of seeds20261025/20261026; no seed-population interval",
+  "optional_producer_diagnostics": {
+    "C": {
+      "rows": 256,
+      "map10": 0.12278955853174603,
+      "ndcg10": 0.15004984767079585,
+      "recall10": 0.23828125,
+      "expected_effective_reward": 4.2337883077322135e-18,
+      "supported_conditional_raw_reward": 0.4051129079150249,
+      "supported_probability_denominator": 248.671768617146,
+      "supported_top10_raw_reward": 0.41350328987617463,
+      "supported_top10_denominator": 2554,
+      "unsupported_mass": 0.028625903839273457,
+      "exact_KL": 0.0,
+      "entropy": 5.872029001865936,
+      "top1_max_share": 0.2890625,
+      "top10_HHI": 0.036282043457031246,
+      "effective_catalog": 27.56184340014636,
+      "states_without_support": 0,
+      "expected_effective_completion_utility": 4.2337883077322135e-18,
+      "expected_effective_residual_utility": 1.4973424925087894e-18,
+      "expected_supported_raw_RM_numerator_per_query": 0.39351618476900097,
+      "expected_supported_residual_numerator_per_query": -0.06477347113039925
+    },
+    "completion-20261024": {
+      "rows": 256,
+      "map10": 0.11365327380952381,
+      "ndcg10": 0.14102941437209787,
+      "recall10": 0.23046875,
+      "expected_effective_reward": 0.029113097340336444,
+      "supported_conditional_raw_reward": 0.43501115088994186,
+      "supported_probability_denominator": 249.47910615664694,
+      "supported_top10_raw_reward": 0.4703615863230758,
+      "supported_top10_denominator": 2553,
+      "unsupported_mass": 0.025472241575597885,
+      "exact_KL": 0.026805727530462245,
+      "entropy": 5.791566896498253,
+      "top1_max_share": 0.34765625,
+      "top10_HHI": 0.03772216796875,
+      "effective_catalog": 26.5096110284124,
+      "states_without_support": 0,
+      "expected_effective_completion_utility": 0.029113097340336444,
+      "expected_effective_residual_utility": 0.0031273311190966194,
+      "expected_supported_raw_RM_numerator_per_query": 0.4239304417663944,
+      "expected_supported_residual_numerator_per_query": -0.06184845777633527
+    },
+    "residual-20261024": {
+      "rows": 256,
+      "map10": 0.11999937996031745,
+      "ndcg10": 0.14865063937261921,
+      "recall10": 0.2421875,
+      "expected_effective_reward": 0.010170641495598372,
+      "supported_conditional_raw_reward": 0.41552568966712644,
+      "supported_probability_denominator": 249.75325897621605,
+      "supported_top10_raw_reward": 0.41692532126382637,
+      "supported_top10_denominator": 2554,
+      "unsupported_mass": 0.024401332124156058,
+      "exact_KL": 0.022539174025775578,
+      "entropy": 5.69049934754112,
+      "top1_max_share": 0.25,
+      "top10_HHI": 0.04007537841796874,
+      "effective_catalog": 24.952977101561853,
+      "states_without_support": 0,
+      "expected_effective_completion_utility": 0.010170641495598372,
+      "expected_effective_residual_utility": 0.009356628020542226,
+      "expected_supported_raw_RM_numerator_per_query": 0.4053863093074399,
+      "expected_supported_residual_numerator_per_query": -0.05569978480718953
+    },
+    "completion-20261025": {
+      "rows": 256,
+      "map10": 0.11170014880952381,
+      "ndcg10": 0.1395877337219864,
+      "recall10": 0.23046875,
+      "expected_effective_reward": 0.029302890816406475,
+      "supported_conditional_raw_reward": 0.435194239743348,
+      "supported_probability_denominator": 249.55397654011796,
+      "supported_top10_raw_reward": 0.4703756915883275,
+      "supported_top10_denominator": 2553,
+      "unsupported_mass": 0.02517977914016422,
+      "exact_KL": 0.027226830875277358,
+      "entropy": 5.784009880376656,
+      "top1_max_share": 0.3515625,
+      "top10_HHI": 0.037769775390625,
+      "effective_catalog": 26.476196632300184,
+      "states_without_support": 0,
+      "expected_effective_completion_utility": 0.029302890816406475,
+      "expected_effective_residual_utility": 0.00321204793971659,
+      "expected_supported_raw_RM_numerator_per_query": 0.4242361449035388,
+      "expected_supported_residual_numerator_per_query": -0.061784577453319736
+    },
+    "residual-20261025": {
+      "rows": 256,
+      "map10": 0.11988622271825397,
+      "ndcg10": 0.14853410177147197,
+      "recall10": 0.2421875,
+      "expected_effective_reward": 0.010367534773018262,
+      "supported_conditional_raw_reward": 0.4157180438364618,
+      "supported_probability_denominator": 249.8407357929438,
+      "supported_top10_raw_reward": 0.41745370313723573,
+      "supported_top10_denominator": 2554,
+      "unsupported_mass": 0.02405962580881322,
+      "exact_KL": 0.02386755707629526,
+      "entropy": 5.673034582374809,
+      "top1_max_share": 0.25390625,
+      "top10_HHI": 0.0400555419921875,
+      "effective_catalog": 24.965334389809072,
+      "states_without_support": 0,
+      "expected_effective_completion_utility": 0.010367534773018262,
+      "expected_effective_residual_utility": 0.009553257710442728,
+      "expected_supported_raw_RM_numerator_per_query": 0.40571602325978473,
+      "expected_supported_residual_numerator_per_query": -0.05552950499606054
+    },
+    "completion-20261026": {
+      "rows": 256,
+      "map10": 0.11170014880952381,
+      "ndcg10": 0.1395877337219864,
+      "recall10": 0.23046875,
+      "expected_effective_reward": 0.029314083976575388,
+      "supported_conditional_raw_reward": 0.43520954379018595,
+      "supported_probability_denominator": 249.53554783831942,
+      "supported_top10_raw_reward": 0.4705348659206081,
+      "supported_top10_denominator": 2553,
+      "unsupported_mass": 0.025251766256564764,
+      "exact_KL": 0.027234415669521353,
+      "entropy": 5.787216642513967,
+      "top1_max_share": 0.3515625,
+      "top10_HHI": 0.037813415527343755,
+      "effective_catalog": 26.445640682124495,
+      "states_without_support": 0,
+      "expected_effective_completion_utility": 0.029314083976575388,
+      "expected_effective_residual_utility": 0.00318662754949381,
+      "expected_supported_raw_RM_numerator_per_query": 0.42421973411777,
+      "expected_supported_residual_numerator_per_query": -0.06180423124110193
+    },
+    "residual-20261026": {
+      "rows": 256,
+      "map10": 0.12004898313492063,
+      "ndcg10": 0.1486932514211684,
+      "recall10": 0.2421875,
+      "expected_effective_reward": 0.010453934221681102,
+      "supported_conditional_raw_reward": 0.41581406012118693,
+      "supported_probability_denominator": 249.75198724035758,
+      "supported_top10_raw_reward": 0.41779678093798944,
+      "supported_top10_denominator": 2554,
+      "unsupported_mass": 0.024406299842353145,
+      "exact_KL": 0.022985660463611286,
+      "entropy": 5.688481767360554,
+      "top1_max_share": 0.25390625,
+      "top10_HHI": 0.03996612548828125,
+      "effective_catalog": 25.021189514435598,
+      "states_without_support": 0,
+      "expected_effective_completion_utility": 0.010453934221681102,
+      "expected_effective_residual_utility": 0.009461625666130201,
+      "expected_supported_raw_RM_numerator_per_query": 0.40566557749120297,
+      "expected_supported_residual_numerator_per_query": -0.05559579208082124
+    }
+  },
+  "optional_diagnostics_provenance": "Copied from pinned evaluator metadata; only exact_KL_to_C is recomputed here.",
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261024,
+    "batch_size": 32,
+    "unit": "unique user clusters sampled with replacement; all queries follow their user",
+    "estimand": "query-weighted ratio of resampled cluster sums to resampled query counts",
+    "seed_average": "equal weight 1/3 on the three fitted heads, before user resampling",
+    "common_draw_schedule": true,
+    "columns": 36,
+    "CI": "unadjusted percentile 2.5/97.5, NumPy linear quantiles",
+    "numpy_version": "2.2.6",
+    "multiple_comparison_adjustment": false
+  },
+  "limitations": [
+    "Reused development cohort; exploratory, not an untouched holdout.",
+    "User-cluster intervals are conditional on these six fitted heads and frozen C, not over training-seed populations.",
+    "Only three seeds: min/max/sample standard deviation describe fitted-seed spread; no population p-value is claimed.",
+    "TRAIN512 KL-match flags are reported separately from evaluation-cohort KL; absence of a receipt is not a match.",
+    "Offline natural1024 relevance metrics do not measure causal satisfaction, watchtime or retention.",
+    "No models, provider, raw datasets, final test, training or policy selection are accessed by this analyzer."
+  ]
+}

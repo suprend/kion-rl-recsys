@@ -1,0 +1,1012 @@
+{
+  "contract": "kion-matched-kl-multiseed-analysis-v1",
+  "state": "completed",
+  "stage": "full4096",
+  "evaluation": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/full-six-r1/evaluation.json",
+    "sha256": "cc7dd2372a5c80f49aed0d5374deff4cdda8aa739ce41531f5c13245fe760ba5",
+    "bytes": 41162
+  },
+  "rows": 4096,
+  "metric_denominator": 4096,
+  "candidate_width": 1024,
+  "arms": [
+    "C",
+    "completion-20261024",
+    "residual-20261024",
+    "completion-20261025",
+    "residual-20261025",
+    "completion-20261026",
+    "residual-20261026"
+  ],
+  "seeds": [
+    20261024,
+    20261025,
+    20261026
+  ],
+  "checkpoints": {
+    "completion-20261024": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-1000.pt",
+      "sha256": "436d735d67fd861e6b925719b9e3597582ec405eed1b13ede3db3671e1ce37b7",
+      "step": 1000,
+      "seed": 20261024,
+      "utility": "completion",
+      "training": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/training.json",
+        "sha256": "cfdfc225be553305a3d6a8af7c5419227255b44827ccf7e3760a86b3e5dbf8bf"
+      },
+      "seed_provenance": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/preregistration.json",
+        "sha256": "025061343a0314691dfb6064063d7e18c74662ea62ab285ec423d374037538ac"
+      },
+      "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "training_contract": "kion-current-C1070-natural1024-H1-v1",
+      "updates": 1000,
+      "beta": 0.5,
+      "utility_formula": "exact supported centered advantage minus beta KL"
+    },
+    "residual-20261024": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot2/head-1000.pt",
+      "sha256": "c64dccd1a28d9177611d6c383d1b27adb0565355f7cd67d1e3502b39f91cc4d8",
+      "step": 1000,
+      "seed": 20261024,
+      "utility": "residual",
+      "training": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot2/training.json",
+        "sha256": "6971032b549fe11c15a085d679127fb8dd2a31e7c86d06018757bfa079bde000"
+      },
+      "loader_module": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/policy.py",
+        "sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5"
+      },
+      "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "training_contract": "kion-current-C1070-kl-seeds-H1-v1",
+      "updates": 1000,
+      "beta": 0.16274030138555867,
+      "utility_formula": "r_RM(s,i)-m_fit(i)"
+    },
+    "completion-20261025": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261025/head-1000.pt",
+      "sha256": "8f079caae520b60fe8be65342f6a7deb927ae8ca742ac7ce829d086e261d41ba",
+      "step": 1000,
+      "seed": 20261025,
+      "utility": "completion",
+      "training": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261025/training.json",
+        "sha256": "be0bfe159c641d97f2018c34e1382757255fbb7c715f0a55d1fcaee00082e47e"
+      },
+      "loader_module": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/policy.py",
+        "sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5"
+      },
+      "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "training_contract": "kion-current-C1070-kl-seeds-H1-v1",
+      "updates": 1000,
+      "beta": 0.5,
+      "utility_formula": "r_RM(s,i)"
+    },
+    "residual-20261025": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261025/head-1000.pt",
+      "sha256": "aef66d2d7d10bb4e2431f1c495ea2f2d34125bc2045e5a89944457cbc07c0cb8",
+      "step": 1000,
+      "seed": 20261025,
+      "utility": "residual",
+      "training": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261025/training.json",
+        "sha256": "bbc1a290a6aede108544d7fa65f94cc253c52db0cf9fec94a21b967d45bbf4e8"
+      },
+      "loader_module": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/policy.py",
+        "sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5"
+      },
+      "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "training_contract": "kion-current-C1070-kl-seeds-H1-v1",
+      "updates": 1000,
+      "beta": 0.16274030138555867,
+      "utility_formula": "r_RM(s,i)-m_fit(i)"
+    },
+    "completion-20261026": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261026/head-1000.pt",
+      "sha256": "2b323c60b672a19439adade769eea01f8eb535033de859cd248d911d09cba822",
+      "step": 1000,
+      "seed": 20261026,
+      "utility": "completion",
+      "training": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261026/training.json",
+        "sha256": "1840b9516f1c11451f2583a4adf211fb11f4dea41686829506abdf7573056d28"
+      },
+      "loader_module": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/policy.py",
+        "sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5"
+      },
+      "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "training_contract": "kion-current-C1070-kl-seeds-H1-v1",
+      "updates": 1000,
+      "beta": 0.5,
+      "utility_formula": "r_RM(s,i)"
+    },
+    "residual-20261026": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261026/head-1000.pt",
+      "sha256": "1e3b26461b9fb6c6233c97ba72d791234d4c3f3f00c4a5546a934044621eca1b",
+      "step": 1000,
+      "seed": 20261026,
+      "utility": "residual",
+      "training": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261026/training.json",
+        "sha256": "1aa61a1e8cb5adb30368911447eb21b17a2faa05fa114a5b60790dfc60ed04f9"
+      },
+      "loader_module": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/policy.py",
+        "sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5"
+      },
+      "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "training_contract": "kion-current-C1070-kl-seeds-H1-v1",
+      "updates": 1000,
+      "beta": 0.16274030138555867,
+      "utility_formula": "r_RM(s,i)-m_fit(i)"
+    },
+    "C": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/heads/C/head.pt",
+      "sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "step": null,
+      "lineage": "original supervised C; no RL updates"
+    }
+  },
+  "unique_users": 4035,
+  "unknown_target_misses": 122,
+  "offpool_known_misses": 616,
+  "candidate_coverage_count": 3358,
+  "original_C_parity": {
+    "max_abs_error": 0.0,
+    "score_tolerance_passed": true,
+    "top10_changed_rows": 0,
+    "changes_with_margin_above_tolerance": 0,
+    "atol": 0.003,
+    "rtol": 0.001
+  },
+  "training_KL_matching": {
+    "receipt": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/matching.json",
+      "sha256": "e45f26f9d682c71e2ee7b10b45a5e75861d572a3dd91d29547e501842eda154c",
+      "bytes": 2321
+    },
+    "train_KL_match_by_seed": {
+      "20261024": true,
+      "20261025": true,
+      "20261026": true
+    },
+    "all_three_train_KL_matches": true,
+    "receipt_metadata": {
+      "contract": "completed-train-KL-match-binding-v1",
+      "created_utc": "2026-10-25T06:08:47.387542+00:00",
+      "selected_checkpoints": {
+        "completion-20261024": "436d735d67fd861e6b925719b9e3597582ec405eed1b13ede3db3671e1ce37b7",
+        "residual-20261024": "c64dccd1a28d9177611d6c383d1b27adb0565355f7cd67d1e3502b39f91cc4d8",
+        "completion-20261025": "8f079caae520b60fe8be65342f6a7deb927ae8ca742ac7ce829d086e261d41ba",
+        "residual-20261025": "aef66d2d7d10bb4e2431f1c495ea2f2d34125bc2045e5a89944457cbc07c0cb8",
+        "completion-20261026": "2b323c60b672a19439adade769eea01f8eb535033de859cd248d911d09cba822",
+        "residual-20261026": "1e3b26461b9fb6c6233c97ba72d791234d4c3f3f00c4a5546a934044621eca1b"
+      },
+      "target_train_KL": 0.028141394929216676,
+      "tolerance": [
+        0.8,
+        1.2
+      ],
+      "train_KL_by_arm": {
+        "completion-20261024": 0.028141394929216676,
+        "residual-20261024": 0.025626846105626697,
+        "completion-20261025": 0.02857631484713826,
+        "residual-20261025": 0.02723862248082785,
+        "completion-20261026": 0.028560712775189928,
+        "residual-20261026": 0.026115598434196165
+      },
+      "ratio_by_seed": {
+        "20261024": 0.9106459068601696,
+        "20261025": 0.9531887728188166,
+        "20261026": 0.9143888893726146
+      },
+      "train_KL_match_by_seed": {
+        "20261024": true,
+        "20261025": true,
+        "20261026": true
+      },
+      "cache": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/train-cache-r1/cache.json",
+        "sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5"
+      },
+      "reference": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/train-target-r1.json",
+        "sha256": "e51a6ca50350b93ce3c1925892c54acbff55dde01902eb47ec7876e7d9aa1c60"
+      },
+      "final_train_diagnostics": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/train-final-six-r1.json",
+        "sha256": "6e4299ca58ee0da5d40d31e42317cd14c55c96d95d372dbc1827f4d8b1d4e103"
+      },
+      "beta_decision": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/frozen-beta.json",
+        "sha256": "be54df7bff4aabfa729480fdd3140661b976f532bcd418ad12d05cf1f192e13f"
+      },
+      "claim": "operational mean TRAIN512 natural1024 forward-KL match; not perstate/catalogue equivalence",
+      "no_dev_selection": true
+    },
+    "train_KL_residual_over_completion_by_seed": {
+      "20261024": 0.9106459068601696,
+      "20261025": 0.9531887728188166,
+      "20261026": 0.9143888893726146
+    },
+    "train_KL_distance_from_calibration_target_by_arm": {
+      "completion-20261024": 0.0,
+      "completion-20261025": 0.00043491991792158485,
+      "completion-20261026": 0.00041931784597325217,
+      "residual-20261024": -0.0025145488235899793,
+      "residual-20261025": -0.0009027724483888257,
+      "residual-20261026": -0.0020257964950205105
+    },
+    "matching_rule": "within-seed KL_residual / KL_completion in [0.8,1.2]; zero completion KL fails; calibration target distances are descriptive",
+    "cache": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/train-cache-r1/cache.json",
+      "sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+      "bytes": 6716
+    },
+    "reference": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/train-target-r1.json",
+      "sha256": "e51a6ca50350b93ce3c1925892c54acbff55dde01902eb47ec7876e7d9aa1c60",
+      "bytes": 11304
+    },
+    "reference_provenance": "Pinned small TRAIN512 reference receipt; arrays are never opened here.",
+    "status": "checkpoint-bound TRAIN512 matching receipt; three flags independently verified"
+  },
+  "summaries": {
+    "C": {
+      "metrics": {
+        "map10": 0.09686366489955357,
+        "ndcg10": 0.1239494230603261,
+        "recall10": 0.21240234375
+      },
+      "exact_KL_to_C": 0.0
+    },
+    "completion-20261024": {
+      "metrics": {
+        "map10": 0.09438244047619047,
+        "ndcg10": 0.12055263362976343,
+        "recall10": 0.20556640625
+      },
+      "exact_KL_to_C": 0.02675185368179922
+    },
+    "residual-20261024": {
+      "metrics": {
+        "map10": 0.09615875728546627,
+        "ndcg10": 0.12291945427279921,
+        "recall10": 0.210205078125
+      },
+      "exact_KL_to_C": 0.023053328038231652
+    },
+    "completion-20261025": {
+      "metrics": {
+        "map10": 0.09444095672123015,
+        "ndcg10": 0.12065224568945596,
+        "recall10": 0.205810546875
+      },
+      "exact_KL_to_C": 0.027171379825183563
+    },
+    "residual-20261025": {
+      "metrics": {
+        "map10": 0.09657001798115078,
+        "ndcg10": 0.12345192395891996,
+        "recall10": 0.211181640625
+      },
+      "exact_KL_to_C": 0.024642175696903915
+    },
+    "completion-20261026": {
+      "metrics": {
+        "map10": 0.09428197467137897,
+        "ndcg10": 0.12047972392446069,
+        "recall10": 0.20556640625
+      },
+      "exact_KL_to_C": 0.02714263137906102
+    },
+    "residual-20261026": {
+      "metrics": {
+        "map10": 0.09605596633184524,
+        "ndcg10": 0.12279281191628305,
+        "recall10": 0.2099609375
+      },
+      "exact_KL_to_C": 0.02354423200473913
+    }
+  },
+  "comparisons": {
+    "20261024/completion-minus-C": {
+      "name": "20261024/completion-minus-C",
+      "kind": "completion-minus-C",
+      "seed": 20261024,
+      "terms": [
+        [
+          "C",
+          "completion-20261024"
+        ]
+      ],
+      "left": "C",
+      "right": "completion-20261024",
+      "metrics": {
+        "map10": {
+          "difference": -0.002481224423363095,
+          "user_cluster_95ci": [
+            -0.004946463325786996,
+            -1.7425600813575967e-05
+          ],
+          "gains": 250,
+          "losses": 284,
+          "ties": 3562
+        },
+        "ndcg10": {
+          "difference": -0.0033967894305626583,
+          "user_cluster_95ci": [
+            -0.00576875630501798,
+            -0.0008913923785085204
+          ],
+          "gains": 250,
+          "losses": 284,
+          "ties": 3562
+        },
+        "recall10": {
+          "difference": -0.0068359375,
+          "user_cluster_95ci": [
+            -0.011977878030077604,
+            -0.001951219512195122
+          ],
+          "gains": 43,
+          "losses": 71,
+          "ties": 3982
+        }
+      }
+    },
+    "20261024/residual-minus-C": {
+      "name": "20261024/residual-minus-C",
+      "kind": "residual-minus-C",
+      "seed": 20261024,
+      "terms": [
+        [
+          "C",
+          "residual-20261024"
+        ]
+      ],
+      "left": "C",
+      "right": "residual-20261024",
+      "metrics": {
+        "map10": {
+          "difference": -0.0007049076140873017,
+          "user_cluster_95ci": [
+            -0.002658427448558239,
+            0.0012082847958923473
+          ],
+          "gains": 195,
+          "losses": 227,
+          "ties": 3674
+        },
+        "ndcg10": {
+          "difference": -0.0010299687875268938,
+          "user_cluster_95ci": [
+            -0.0029248603294216432,
+            0.0008000917605990684
+          ],
+          "gains": 195,
+          "losses": 227,
+          "ties": 3674
+        },
+        "recall10": {
+          "difference": -0.002197265625,
+          "user_cluster_95ci": [
+            -0.0063369813066168745,
+            0.0014663025540951368
+          ],
+          "gains": 30,
+          "losses": 39,
+          "ties": 4027
+        }
+      }
+    },
+    "20261024/residual-minus-completion": {
+      "name": "20261024/residual-minus-completion",
+      "kind": "residual-minus-completion",
+      "seed": 20261024,
+      "terms": [
+        [
+          "completion-20261024",
+          "residual-20261024"
+        ]
+      ],
+      "left": "completion-20261024",
+      "right": "residual-20261024",
+      "metrics": {
+        "map10": {
+          "difference": 0.0017763168092757937,
+          "user_cluster_95ci": [
+            -0.001062429155339519,
+            0.004414947667568271
+          ],
+          "gains": 311,
+          "losses": 288,
+          "ties": 3497
+        },
+        "ndcg10": {
+          "difference": 0.0023668206430357648,
+          "user_cluster_95ci": [
+            -0.0004850796527746973,
+            0.0051062932804937745
+          ],
+          "gains": 311,
+          "losses": 288,
+          "ties": 3497
+        },
+        "recall10": {
+          "difference": 0.004638671875,
+          "user_cluster_95ci": [
+            -0.0009775230801322694,
+            0.010295481216255165
+          ],
+          "gains": 84,
+          "losses": 65,
+          "ties": 3947
+        }
+      }
+    },
+    "20261025/completion-minus-C": {
+      "name": "20261025/completion-minus-C",
+      "kind": "completion-minus-C",
+      "seed": 20261025,
+      "terms": [
+        [
+          "C",
+          "completion-20261025"
+        ]
+      ],
+      "left": "C",
+      "right": "completion-20261025",
+      "metrics": {
+        "map10": {
+          "difference": -0.0024227081783234124,
+          "user_cluster_95ci": [
+            -0.004872153876618209,
+            3.442189703608446e-05
+          ],
+          "gains": 249,
+          "losses": 284,
+          "ties": 3563
+        },
+        "ndcg10": {
+          "difference": -0.0032971773708701455,
+          "user_cluster_95ci": [
+            -0.0056597308067322495,
+            -0.0008548124478297719
+          ],
+          "gains": 249,
+          "losses": 284,
+          "ties": 3563
+        },
+        "recall10": {
+          "difference": -0.006591796875,
+          "user_cluster_95ci": [
+            -0.01171303074670571,
+            -0.0017098088092225856
+          ],
+          "gains": 43,
+          "losses": 70,
+          "ties": 3983
+        }
+      }
+    },
+    "20261025/residual-minus-C": {
+      "name": "20261025/residual-minus-C",
+      "kind": "residual-minus-C",
+      "seed": 20261025,
+      "terms": [
+        [
+          "C",
+          "residual-20261025"
+        ]
+      ],
+      "left": "C",
+      "right": "residual-20261025",
+      "metrics": {
+        "map10": {
+          "difference": -0.0002936469184027781,
+          "user_cluster_95ci": [
+            -0.0022388854785997023,
+            0.0016217462349084667
+          ],
+          "gains": 200,
+          "losses": 216,
+          "ties": 3680
+        },
+        "ndcg10": {
+          "difference": -0.0004974991014061407,
+          "user_cluster_95ci": [
+            -0.002399288153861323,
+            0.0013307503847740179
+          ],
+          "gains": 200,
+          "losses": 216,
+          "ties": 3680
+        },
+        "recall10": {
+          "difference": -0.001220703125,
+          "user_cluster_95ci": [
+            -0.005151037760901625,
+            0.002442643705241658
+          ],
+          "gains": 31,
+          "losses": 36,
+          "ties": 4029
+        }
+      }
+    },
+    "20261025/residual-minus-completion": {
+      "name": "20261025/residual-minus-completion",
+      "kind": "residual-minus-completion",
+      "seed": 20261025,
+      "terms": [
+        [
+          "completion-20261025",
+          "residual-20261025"
+        ]
+      ],
+      "left": "completion-20261025",
+      "right": "residual-20261025",
+      "metrics": {
+        "map10": {
+          "difference": 0.002129061259920635,
+          "user_cluster_95ci": [
+            -0.000657849841803345,
+            0.004805478786886692
+          ],
+          "gains": 313,
+          "losses": 283,
+          "ties": 3500
+        },
+        "ndcg10": {
+          "difference": 0.002799678269464005,
+          "user_cluster_95ci": [
+            -3.3099107375032154e-05,
+            0.005528745283732508
+          ],
+          "gains": 313,
+          "losses": 283,
+          "ties": 3500
+        },
+        "recall10": {
+          "difference": 0.00537109375,
+          "user_cluster_95ci": [
+            -0.00024313893227141434,
+            0.01102137536130198
+          ],
+          "gains": 84,
+          "losses": 62,
+          "ties": 3950
+        }
+      }
+    },
+    "20261026/completion-minus-C": {
+      "name": "20261026/completion-minus-C",
+      "kind": "completion-minus-C",
+      "seed": 20261026,
+      "terms": [
+        [
+          "C",
+          "completion-20261026"
+        ]
+      ],
+      "left": "C",
+      "right": "completion-20261026",
+      "metrics": {
+        "map10": {
+          "difference": -0.0025816902281746035,
+          "user_cluster_95ci": [
+            -0.005069854738022214,
+            -8.926589083411284e-05
+          ],
+          "gains": 250,
+          "losses": 287,
+          "ties": 3559
+        },
+        "ndcg10": {
+          "difference": -0.0034696991358653985,
+          "user_cluster_95ci": [
+            -0.005802476072058817,
+            -0.0009834569706044607
+          ],
+          "gains": 250,
+          "losses": 287,
+          "ties": 3559
+        },
+        "recall10": {
+          "difference": -0.0068359375,
+          "user_cluster_95ci": [
+            -0.011977878030077604,
+            -0.001951219512195122
+          ],
+          "gains": 43,
+          "losses": 71,
+          "ties": 3982
+        }
+      }
+    },
+    "20261026/residual-minus-C": {
+      "name": "20261026/residual-minus-C",
+      "kind": "residual-minus-C",
+      "seed": 20261026,
+      "terms": [
+        [
+          "C",
+          "residual-20261026"
+        ]
+      ],
+      "left": "C",
+      "right": "residual-20261026",
+      "metrics": {
+        "map10": {
+          "difference": -0.0008076985677083337,
+          "user_cluster_95ci": [
+            -0.002744867746298663,
+            0.0011022992300510424
+          ],
+          "gains": 193,
+          "losses": 222,
+          "ties": 3681
+        },
+        "ndcg10": {
+          "difference": -0.0011566111440430432,
+          "user_cluster_95ci": [
+            -0.0030403510381848587,
+            0.0007134463186654783
+          ],
+          "gains": 193,
+          "losses": 222,
+          "ties": 3681
+        },
+        "recall10": {
+          "difference": -0.00244140625,
+          "user_cluster_95ci": [
+            -0.00634455832113226,
+            0.0012254901960784314
+          ],
+          "gains": 29,
+          "losses": 39,
+          "ties": 4028
+        }
+      }
+    },
+    "20261026/residual-minus-completion": {
+      "name": "20261026/residual-minus-completion",
+      "kind": "residual-minus-completion",
+      "seed": 20261026,
+      "terms": [
+        [
+          "completion-20261026",
+          "residual-20261026"
+        ]
+      ],
+      "left": "completion-20261026",
+      "right": "residual-20261026",
+      "metrics": {
+        "map10": {
+          "difference": 0.0017739916604662697,
+          "user_cluster_95ci": [
+            -0.001019787928558349,
+            0.004440787238109948
+          ],
+          "gains": 313,
+          "losses": 291,
+          "ties": 3492
+        },
+        "ndcg10": {
+          "difference": 0.0023130879918223553,
+          "user_cluster_95ci": [
+            -0.0005474695384652054,
+            0.005052459142592886
+          ],
+          "gains": 313,
+          "losses": 291,
+          "ties": 3492
+        },
+        "recall10": {
+          "difference": 0.00439453125,
+          "user_cluster_95ci": [
+            -0.0012213069223122252,
+            0.010036965643995505
+          ],
+          "gains": 83,
+          "losses": 65,
+          "ties": 3948
+        }
+      }
+    },
+    "three-seed-average/completion-minus-C": {
+      "name": "three-seed-average/completion-minus-C",
+      "kind": "completion-minus-C",
+      "seed": null,
+      "terms": [
+        [
+          "C",
+          "completion-20261024"
+        ],
+        [
+          "C",
+          "completion-20261025"
+        ],
+        [
+          "C",
+          "completion-20261026"
+        ]
+      ],
+      "equal_seed_weight": 0.3333333333333333,
+      "metrics": {
+        "map10": {
+          "difference": -0.002495207609953704,
+          "user_cluster_95ci": [
+            -0.004950689336487972,
+            -4.207353467926607e-05
+          ],
+          "gains": 252,
+          "losses": 289,
+          "ties": 3555
+        },
+        "ndcg10": {
+          "difference": -0.003387888645766067,
+          "user_cluster_95ci": [
+            -0.00573300629127872,
+            -0.0008929079056855282
+          ],
+          "gains": 252,
+          "losses": 289,
+          "ties": 3555
+        },
+        "recall10": {
+          "difference": -0.006754557291666666,
+          "user_cluster_95ci": [
+            -0.011890291716292835,
+            -0.0018726477434342602
+          ],
+          "gains": 43,
+          "losses": 71,
+          "ties": 3982
+        }
+      }
+    },
+    "three-seed-average/residual-minus-C": {
+      "name": "three-seed-average/residual-minus-C",
+      "kind": "residual-minus-C",
+      "seed": null,
+      "terms": [
+        [
+          "C",
+          "residual-20261024"
+        ],
+        [
+          "C",
+          "residual-20261025"
+        ],
+        [
+          "C",
+          "residual-20261026"
+        ]
+      ],
+      "equal_seed_weight": 0.3333333333333333,
+      "metrics": {
+        "map10": {
+          "difference": -0.0006020843667328044,
+          "user_cluster_95ci": [
+            -0.0025359259711371517,
+            0.0012908431280159367
+          ],
+          "gains": 203,
+          "losses": 229,
+          "ties": 3664
+        },
+        "ndcg10": {
+          "difference": -0.0008946930109920259,
+          "user_cluster_95ci": [
+            -0.0027508656461989107,
+            0.0009351223043642459
+          ],
+          "gains": 203,
+          "losses": 229,
+          "ties": 3664
+        },
+        "recall10": {
+          "difference": -0.0019531249999999998,
+          "user_cluster_95ci": [
+            -0.005859410771520145,
+            0.0017150204910772182
+          ],
+          "gains": 31,
+          "losses": 40,
+          "ties": 4025
+        }
+      }
+    },
+    "three-seed-average/residual-minus-completion": {
+      "name": "three-seed-average/residual-minus-completion",
+      "kind": "residual-minus-completion",
+      "seed": null,
+      "terms": [
+        [
+          "completion-20261024",
+          "residual-20261024"
+        ],
+        [
+          "completion-20261025",
+          "residual-20261025"
+        ],
+        [
+          "completion-20261026",
+          "residual-20261026"
+        ]
+      ],
+      "equal_seed_weight": 0.3333333333333333,
+      "metrics": {
+        "map10": {
+          "difference": 0.0018931232432208998,
+          "user_cluster_95ci": [
+            -0.0009076384932878373,
+            0.0045200119549509655
+          ],
+          "gains": 318,
+          "losses": 293,
+          "ties": 3485
+        },
+        "ndcg10": {
+          "difference": 0.0024931956347740416,
+          "user_cluster_95ci": [
+            -0.00034703750972087376,
+            0.005195931394618959
+          ],
+          "gains": 318,
+          "losses": 293,
+          "ties": 3485
+        },
+        "recall10": {
+          "difference": 0.004801432291666667,
+          "user_cluster_95ci": [
+            -0.000651869295911674,
+            0.010478736764819533
+          ],
+          "gains": 85,
+          "losses": 66,
+          "ties": 3945
+        }
+      }
+    }
+  },
+  "seed_spread": {
+    "completion-minus-C": {
+      "map10": {
+        "mean": -0.0024952076099537036,
+        "min": -0.0025816902281746035,
+        "max": -0.0024227081783234124,
+        "sample_std": 8.040814743632939e-05,
+        "seed_count": 3,
+        "interpretation": "descriptive fitted-seed spread, not a seed-population confidence interval"
+      },
+      "ndcg10": {
+        "mean": -0.0033878886457660673,
+        "min": -0.0034696991358653985,
+        "max": -0.0032971773708701455,
+        "sample_std": 8.660460626759842e-05,
+        "seed_count": 3,
+        "interpretation": "descriptive fitted-seed spread, not a seed-population confidence interval"
+      },
+      "recall10": {
+        "mean": -0.006754557291666667,
+        "min": -0.0068359375,
+        "max": -0.006591796875,
+        "sample_std": 0.00014095465556387347,
+        "seed_count": 3,
+        "interpretation": "descriptive fitted-seed spread, not a seed-population confidence interval"
+      }
+    },
+    "residual-minus-C": {
+      "map10": {
+        "mean": -0.0006020843667328045,
+        "min": -0.0008076985677083337,
+        "max": -0.0002936469184027781,
+        "sample_std": 0.0002720142269915924,
+        "seed_count": 3,
+        "interpretation": "descriptive fitted-seed spread, not a seed-population confidence interval"
+      },
+      "ndcg10": {
+        "mean": -0.0008946930109920259,
+        "min": -0.0011566111440430432,
+        "max": -0.0004974991014061407,
+        "sample_std": 0.00034975966459138924,
+        "seed_count": 3,
+        "interpretation": "descriptive fitted-seed spread, not a seed-population confidence interval"
+      },
+      "recall10": {
+        "mean": -0.001953125,
+        "min": -0.00244140625,
+        "max": -0.001220703125,
+        "sample_std": 0.0006459353786778786,
+        "seed_count": 3,
+        "interpretation": "descriptive fitted-seed spread, not a seed-population confidence interval"
+      }
+    },
+    "residual-minus-completion": {
+      "map10": {
+        "mean": 0.0018931232432208996,
+        "min": 0.0017739916604662697,
+        "max": 0.002129061259920635,
+        "sample_std": 0.00020433162352509254,
+        "seed_count": 3,
+        "interpretation": "descriptive fitted-seed spread, not a seed-population confidence interval"
+      },
+      "ndcg10": {
+        "mean": 0.0024931956347740416,
+        "min": 0.0023130879918223553,
+        "max": 0.002799678269464005,
+        "sample_std": 0.0002667780041091873,
+        "seed_count": 3,
+        "interpretation": "descriptive fitted-seed spread, not a seed-population confidence interval"
+      },
+      "recall10": {
+        "mean": 0.004801432291666667,
+        "min": 0.00439453125,
+        "max": 0.00537109375,
+        "sample_std": 0.0005082192381509113,
+        "seed_count": 3,
+        "interpretation": "descriptive fitted-seed spread, not a seed-population confidence interval"
+      }
+    }
+  },
+  "primary_comparison": "three-seed-average/residual-minus-completion",
+  "primary_metric": "map10",
+  "secondary_metrics": [
+    "ndcg10",
+    "recall10"
+  ],
+  "seed_role_note": "20261024 is the calibration seed; 20261025 and 20261026 are prospective seeds. The pooled three-seed mean is descriptive.",
+  "prospective_seed_comparisons": [
+    "20261025/residual-minus-completion",
+    "20261026/residual-minus-completion"
+  ],
+  "prospective_two_seed_mean": {
+    "completion-minus-C": {
+      "map10": -0.002502199203249008,
+      "ndcg10": -0.003383438253367772,
+      "recall10": -0.0067138671875
+    },
+    "residual-minus-C": {
+      "map10": -0.0005506727430555559,
+      "ndcg10": -0.0008270551227245919,
+      "recall10": -0.0018310546875
+    },
+    "residual-minus-completion": {
+      "map10": 0.0019515264601934524,
+      "ndcg10": 0.00255638313064318,
+      "recall10": 0.0048828125
+    }
+  },
+  "prospective_two_seed_mean_interpretation": "descriptive equal-weight paired mean of seeds20261025/20261026; no seed-population interval",
+  "optional_producer_diagnostics": null,
+  "optional_diagnostics_provenance": "Copied from pinned evaluator metadata; only exact_KL_to_C is recomputed here.",
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261024,
+    "batch_size": 32,
+    "unit": "unique user clusters sampled with replacement; all queries follow their user",
+    "estimand": "query-weighted ratio of resampled cluster sums to resampled query counts",
+    "seed_average": "equal weight 1/3 on the three fitted heads, before user resampling",
+    "common_draw_schedule": true,
+    "columns": 36,
+    "CI": "unadjusted percentile 2.5/97.5, NumPy linear quantiles",
+    "numpy_version": "2.2.6",
+    "multiple_comparison_adjustment": false
+  },
+  "limitations": [
+    "Reused development cohort; exploratory, not an untouched holdout.",
+    "User-cluster intervals are conditional on these six fitted heads and frozen C, not over training-seed populations.",
+    "Only three seeds: min/max/sample standard deviation describe fitted-seed spread; no population p-value is claimed.",
+    "TRAIN512 KL-match flags are reported separately from evaluation-cohort KL; absence of a receipt is not a match.",
+    "Offline natural1024 relevance metrics do not measure causal satisfaction, watchtime or retention.",
+    "No models, provider, raw datasets, final test, training or policy selection are accessed by this analyzer."
+  ]
+}

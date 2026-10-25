@@ -1,0 +1,76 @@
+{
+  "contract": "kion-observed-render-environment-v1",
+  "scope": "Completed native rendering, including final layout render-r3; packaged replay and clean-machine ML inference remain separate checks.",
+  "renders": [
+    {
+      "cohort": "screen",
+      "source_path": "figures/screen/native-render.json",
+      "sha256": "9d81c09f54cc7cf0ccb1f84b307a134a5120578bfe88f18359803d77f27cbbdd",
+      "versions": {
+        "numpy": "2.2.6",
+        "matplotlib": "3.11.2"
+      },
+      "state": "completed"
+    },
+    {
+      "cohort": "full",
+      "source_path": "figures/full/native-render.json",
+      "sha256": "1289586257ec21fa2662314aca861b0431f40f2f4b5ffe2f3a0c5f08e2d492f2",
+      "versions": {
+        "numpy": "2.2.6",
+        "matplotlib": "3.11.2"
+      },
+      "state": "completed"
+    },
+    {
+      "cohort": "rollout",
+      "source_path": "figures/rollout/native-render.json",
+      "sha256": "21c164ea7f2b65b20946e9ada52067ea083ab876903144e68f63900dcbd5e546",
+      "versions": {
+        "numpy": "2.2.6",
+        "matplotlib": "3.11.2"
+      },
+      "state": "completed"
+    },
+    {
+      "cohort": "screen",
+      "source_path": "figures-v2/screen/native-render.json",
+      "sha256": "87ccb12f592daf98fe60780b0a2c06da30f50601e776d16bb685f228656d9281",
+      "versions": {
+        "numpy": "2.2.6",
+        "matplotlib": "3.11.2"
+      },
+      "state": "completed"
+    },
+    {
+      "cohort": "full",
+      "source_path": "figures-v2/full/native-render.json",
+      "sha256": "6db2a5c847445c66a43cb794693a9d547ea1b282f697dfaac8c0f8096dc2c2b8",
+      "versions": {
+        "numpy": "2.2.6",
+        "matplotlib": "3.11.2"
+      },
+      "state": "completed"
+    },
+    {
+      "cohort": "screen",
+      "source_path": "figures-v3/screen/native-render.json",
+      "sha256": "53f4e0726f448a6866563a759165a8113ce4c4cdc6ff7692a88377117ce6496e",
+      "versions": {
+        "numpy": "2.2.6",
+        "matplotlib": "3.11.2"
+      },
+      "state": "completed"
+    },
+    {
+      "cohort": "full",
+      "source_path": "figures-v3/full/native-render.json",
+      "sha256": "97fa112f45b6dfc510667d10146f07d406b6852609bac088ba67e59e60c8ff4e",
+      "versions": {
+        "numpy": "2.2.6",
+        "matplotlib": "3.11.2"
+      },
+      "state": "completed"
+    }
+  ]
+}

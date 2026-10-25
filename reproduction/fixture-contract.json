@@ -1,0 +1,106 @@
+{
+  "contract": "kion-portable-fixture-v1",
+  "document_role": "source-only export contract; neither an exported fixture nor numerical acceptance",
+  "selection": {
+    "source": "original frozen screen256 cache",
+    "positions": [0, 1, 2, 3],
+    "rule": "first4 fixed cache positions before inspecting outcomes or replay results",
+    "candidate_width": 1024,
+    "no_target_injection": true,
+    "no_seen_filter": true,
+    "target_labels_included": false,
+    "scope": "numerical mechanics and parity; no four-row quality estimate"
+  },
+  "producer": {
+    "precision": "cuda-fp16",
+    "head_batch_max": 16,
+    "candidate_chunk": 64,
+    "producer_layout": [{"size": 16, "slot": 0}, {"size": 16, "slot": 1}, {"size": 16, "slot": 2}, {"size": 16, "slot": 3}],
+    "GPT_encoder": "all16 original peers; trim to maximum length across all16 before BxT encoding and Bx15418 retrieval projection; gather slots0..3 afterwards",
+    "head": "pad selected rows at original producer slots; zero computational rows; retain chunk64; dummy rows are never metric or loss observations"
+  },
+  "arrays": {
+    "encoded": {"dtype": "float32", "shape": [4, 256]},
+    "candidate_ids": {"dtype": "int32", "shape": [4, 1024]},
+    "candidate_raw_ids": {"dtype": "int64", "shape": [4, 1024]},
+    "base_logits": {"dtype": "float32", "shape": [4, 1024]},
+    "raw_features": {"dtype": "float32", "shape": [4, 1024, 1068]},
+    "source_values": {"dtype": "float32", "shape": [4, 1024, 2]},
+    "item_table": {"dtype": "float32", "shape": [15418, 256]},
+    "gpt_x": {"dtype": "int64", "shape": [16, 64]},
+    "gpt_lengths": {"dtype": "int64", "shape": [16]},
+    "gpt_user_features": {"dtype": "float32", "shape": [16, 3252]}
+  },
+  "source_representation": {
+    "feature_schema_sha256": "71d90eee774d30db804d1ab32c4d82995d1320baf26aaf36443a6498fd85fc5d",
+    "raw_width": 1068,
+    "source_columns": ["current_detached_gpt_logit", "log1p_strict7d_count"],
+    "source12_equals_base_logits": true,
+    "full_item_table_retained": true,
+    "rebuild_item_feature_towers": false
+  },
+  "weights": {
+    "format": "torch-state-dict-v1",
+    "safe_load": "portable runtime and source heads: torch.load(...,map_location='cpu',weights_only=True)",
+    "one_time_teacher_export_exception": "Explicit root permission for ONLY locally trained original E2 SHA5e710185...aeac26 at its fixed source path, exact accepted full-hash/stat pin, root native guard: torch.load(weights_only=False) because archived payload contains NumPy RNG. No other pickle path may use this exception. Portable GPT.pt contains only validated CPU tensors and is always weights_only=True.",
+    "C": {"source_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7", "source_contract": "kion-three-head-262k-head-v1", "epochs": 3, "steps": 6144},
+    "RL-completion": {"source_sha256": "436d735d67fd861e6b925719b9e3597582ec405eed1b13ede3db3671e1ce37b7", "step": 1000, "beta": 0.5},
+    "RL-residual": {"source_sha256": "29d20cd3d058b4ccac52d94f3ad946891f3839601fe935817f7c7b89f09b1ee3", "step": 1000, "beta": 0.5, "scope": "historical F residual; not later matched-KL residual"},
+    "GPT": {"source_sha256": "5e7101857c2dbe100fb4e1587c0369abc95c108303ed149123ee183f62aeac26", "keys": "backbone.* plus user_projection.weight", "tensor_payload_bytes": 31821824},
+    "excluded": ["optimizer", "scaler", "training receipts with absolute paths", "unused feature towers", "unused pair scorer"]
+  },
+  "oracle": {
+    "source_manifest_sha256": "3439f885120173eb2b2f93bcb092d4c03b43ccfd06a2b9d884ef7512bc1fe7c1",
+    "arrays": ["C_scores", "RL-completion_scores", "RL-residual_scores"],
+    "dtype": "float32",
+    "shape_each": [4, 1024],
+    "role": "validation-only; never used as computational input to inference",
+    "candidate_alignment": "exact first4 token/raw-ID matrix comparison against source cache before export",
+    "fresh_replay_required": true,
+    "exact_gate": "new frozen-source scores equal historical score tensors; exact top10 raw-ID tie break",
+    "historical_original_gate": {"atol": 0.003, "rtol": 0.001, "top10_exact": true},
+    "CPU_FP32_scope": "separate numerical mode; exact historical CUDA parity must not be implied"
+  },
+  "layout": {
+    "manifest": "manifest.json",
+    "arrays": "<name>.npy; descriptor path,sha256,bytes,dtype,shape",
+    "weights": "weights/<arm>.pt; descriptor path,sha256,bytes,format,source_checkpoint_sha256,source_contract,step",
+    "expected": "oracle/<arm>_scores.npy; expected[arm] descriptor includes role=validation-only",
+    "private_provenance": "separate fresh R/research file; excluded from delivery; source paths/stat identities/cache positions",
+    "final_root": "fresh path supplied by root; proposed R/reproduction/inputs-r1"
+  },
+  "privacy": {
+    "included": ["derived q/raw/user-feature tensors", "full16 public-KION model-token prefix histories", "public catalog token/raw candidate IDs", "trained frozen inference weights"],
+    "excluded": ["source user IDs", "source user names", "observed target labels", "source-row/user mapping", "catalog title/vocabulary mapping", "absolute local source paths from public manifest"],
+    "limitation": "Anonymised context labels and removed direct IDs do not make representations or model-token prefixes information-free; local bundle inclusion was explicitly authorised by root. No publication/redistribution or causal claim follows."
+  },
+  "bounds": {
+    "selected_array_payload_bytes": 33604992,
+    "raw_feature_slice_payload_bytes": 17498112,
+    "original_raw_feature_file_bytes": 1119879296,
+    "original_teacher_checkpoint_bytes": 558979727,
+    "estimated_export_payload_bytes_before_headers": 68350604,
+    "maximum_output_bytes": 134217728,
+    "maximum_selected_array_payload_bytes": 67108864,
+    "maximum_hashed_source_bytes": 134217728,
+    "maximum_working_bytes": 2147483648,
+    "minimum_disk_free_bytes": 16106127360,
+    "maximum_seconds": 600,
+    "native_guard": "root-owned hard process budget and timeout required; working-set estimate is not itself a memory limiter",
+    "large_inputs": "Read only selected raw rows through mmap. Teacher secure load reads the trusted original checkpoint once, then saves only needed inference tensors. Huge raw/teacher full hashes are reused only through exact accepted root stat receipts; fail preflight if absent or changed."
+  },
+  "export_request": {
+    "contract": "kion-export-fixture-request-v1",
+    "entrypoint": "export_fixture.py::run(request,check=None)",
+    "required_fields": ["training_updates=0", "provider_opened=false", "positions=[0,1,2,3]", "cpu_threads<=4", "native_admission=root-owned", "deadline_utc", "output_dir", "private_provenance_output", "cache_manifest", "evaluation_manifest", "checkpoints", "teacher_checkpoint", "teacher_config", "gpt_helper", "limits"],
+    "pins": "metadata/helper:{path,sha256}; checkpoints:{path,sha256,bytes}; per-array identities taken from pinned metadata; known teacher config8,947,263B is pin-only under separate16MiB cap, never parsed",
+    "accepted_stat_receipt": {"pin": "{path,sha256}", "contract": "kion-root-accepted-file-stats-v1", "state": "accepted", "files": "absolute resolved path -> {sha256,hashes_verified:true,stat:{size,mtime_ns,ctime_ns}}"},
+    "dependencies": "stdlib on import/plan; run imports numpy and torch, then pinned owned kion_replay/gpt.py only",
+    "execution": "not executed by author agent; root alone may admit actual artifact reads and export"
+  },
+  "RM_boundary": {
+    "genuine_RM_from_core1068": false,
+    "reason": "frozen RM expects separate2079 context+2008 candidate numeric schema and categorical item identity; current actor raw1068 is different",
+    "extension": "Root-admitted export_rm_fixture.py owns first4 same-pool feature reconstruction, CBM/calibration, separate metadata integration. Head/GPT fixture never labels cached rewards as RM inference."
+  }
+}

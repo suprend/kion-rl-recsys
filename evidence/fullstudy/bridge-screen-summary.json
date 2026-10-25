@@ -1,0 +1,229 @@
+{
+  "contract": "current-C-local-RM-r2-bridge-v1",
+  "ready": true,
+  "states": 256,
+  "candidates_per_state": 1024,
+  "rows": 262144,
+  "state_selection": "first rows of fixed input cache; no outcome selection",
+  "cache": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-cache-r1/cache.json",
+    "sha256": "5baf5dae822a7fb812acb6344ac08c0a0f94a2e4af7adf24b1c53c4584096a82"
+  },
+  "state_arrays": {
+    "user_ids": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-cache-r1/user_ids.npy",
+      "sha256": "b06bfd020e74aec4ed8a3d66d56e1bbd4a96c3f55ee1b2e9e969326867fb0a75"
+    },
+    "origins": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-cache-r1/origins.npy",
+      "sha256": "735241af9f957fda0dccba23d396a418da6e886776747e2041f1fdbad498e5cd"
+    },
+    "x": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-cache-r1/x.npy",
+      "sha256": "250777f46d6ef20c422aa74f7c9cad90c75331b710ececb932e1b8ab43adc7ca"
+    },
+    "lengths": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-cache-r1/lengths.npy",
+      "sha256": "2b9e9b5d38f2e4e5bf23f647c81472ed16c70e3b819b4509c4fa93c2fb1ae721"
+    },
+    "candidate_raw_ids": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-cache-r1/candidate_raw_ids.npy",
+      "sha256": "cf57cd9a7fe46aad6e6702286b7abea2874a03a1f1727fc6e5e9c4d90412d971"
+    },
+    "candidate_sources": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-cache-r1/candidate_sources.npy",
+      "sha256": "4f8969aa14a28f6c724df4e3db74691e832264724428f8683d8f60d49f5dce76"
+    }
+  },
+  "input_cache_contract": "kion-current-C1070-natural1024-H1-v1",
+  "provenance": {
+    "closure": {
+      "eval_source": {
+        "path": "D:/tlab-recsys-2026/scripts/kion_reward_eval.py",
+        "sha256": "70a7d6d6f947d926f96b8d344d5db74287d6466657d30f983946a9e9e7f09677"
+      },
+      "freeze": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/freeze-rm-r2.json",
+        "sha256": "c1ca863d628e67b0d64d0974fd31174463890babaf93913734374469290ebe07"
+      },
+      "metadata": {
+        "path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+        "sha256": "f02acaa9a5e5532e79b060279ba8a5027f268f202132e85ebab97cd4912fbd11"
+      },
+      "basic_npz": {
+        "path": "D:/tlab-recsys-2026/data/processed/kion-basic-bundle-v1/features.npz",
+        "sha256": "8b0972d95e1e66eda10d9a01090fbe86ca226a4b408cd760ff53523c9d96e513"
+      },
+      "basic_manifest": {
+        "path": "D:/tlab-recsys-2026/data/processed/kion-basic-bundle-v1/manifest.json",
+        "sha256": "95f4386dec36c1f4d285e87bc42b4e3753ef8c641a6440d53995cc9385a62daf"
+      },
+      "raw_items": {
+        "path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+        "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e"
+      },
+      "raw_users": {
+        "path": "D:/tlab-recsys-2026/data/raw/kion/full/users.csv",
+        "sha256": "37b2945240628a3f215e1fb5f79b4cff386d8988b21fa61e5b135aef4541182c"
+      },
+      "raw_interactions": {
+        "path": "D:/tlab-recsys-2026/data/raw/kion/full/interactions.csv",
+        "sha256": "201dc9114eb309da9df6f5f227ada23a371d668edf64a32090fb613a75162ecf"
+      },
+      "rm_model_manifest": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/rm-r2/scorer/manifest.json",
+        "sha256": "dfc61f3ebfb9144be3cb86caf70050b72033d9234119145119dbfe90e0ee8507"
+      },
+      "rm_bundle_manifest": {
+        "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/manifest.json",
+        "sha256": "42d7532a5daea8af36198e0a4ba6ba3b134cd66e93dcfd75961913a14624144c"
+      },
+      "bridge_source": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/bridge.py",
+        "sha256": "097aceb6edd8004cd6d3258955ede50073012918ce6759a73020fcd4e9daa6eb"
+      }
+    },
+    "facade_timestamp": {
+      "excluded_path": "components.semantics.retrieved_at",
+      "timestamps": {
+        "fresh": "2026-10-24T19:42:55.477685+00:00",
+        "producer": "2026-10-20T09:37:35.471427+00:00"
+      },
+      "reason": "runtime generation timestamp; source bytes, rules, evidence, schema and every other provenance field remain exact"
+    },
+    "signature": "ee14bc4d7375a4d6978a2e1f476cd795369b45ef4250501b2f5992767e9ed261",
+    "schema": "7776a9d611b04ef8f3ef77fce0a67c1fb045f67142bf4b4bbde24cc469f9bda4",
+    "mapping": "b90df0d1fcce007008b62007e486bc1e9cb0b4ac89c97bb5107e84305e744db4",
+    "feature_source_bundle": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1",
+    "fit_cutoff_exclusive": "2021-08-02",
+    "execution_environment": {
+      "site": "D:/tlab-recsys-2026/.venv/Lib/site-packages",
+      "version": "1.2.10",
+      "files": {
+        "__init__.py": {
+          "path": "D:/tlab-recsys-2026/.venv/Lib/site-packages/catboost/__init__.py",
+          "sha256": "723075ad1115fe9fa812a642c98f3fd4caef91ee2f6372057328e102158d3c31"
+        },
+        "_catboost.pyd": {
+          "path": "D:/tlab-recsys-2026/.venv/Lib/site-packages/catboost/_catboost.pyd",
+          "sha256": "1ee52d699651cb7fcab3810186ff6b581eceb6e575e0557bd0cafda5b2987164"
+        },
+        "core.py": {
+          "path": "D:/tlab-recsys-2026/.venv/Lib/site-packages/catboost/core.py",
+          "sha256": "6bc0a210b7f62e3c1553682636a7ba2363ad0c71f6974a1030817e7d9754921e"
+        }
+      },
+      "numpy_version": "2.5.4",
+      "numpy_file": "D:/tlab-recsys-2026/.venv/Lib/site-packages/numpy/__init__.py",
+      "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "python_executable": "C:/Users/Михаил/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+      "abi_status": "existing backend import passed; real scoring parity remains a probe gate",
+      "numpy_backend": {
+        "site": "D:/tlab-recsys-2026/.venv/Lib/site-packages",
+        "version": "2.5.4",
+        "files": {
+          "__init__.py": {
+            "path": "D:/tlab-recsys-2026/.venv/Lib/site-packages/numpy/__init__.py",
+            "sha256": "a6958cb364663b7acce81ccfd58eeb65a2b34d5376157f924777b97211a73be4"
+          },
+          "_core/_multiarray_umath.cp312-win_amd64.pyd": {
+            "path": "D:/tlab-recsys-2026/.venv/Lib/site-packages/numpy/_core/_multiarray_umath.cp312-win_amd64.pyd",
+            "sha256": "9c10617e66e992b5ac6d9f78fe7cedd0011618e1c2f89d09a185bb63073e2c90"
+          }
+        },
+        "numpy_file": "D:/tlab-recsys-2026/.venv/Lib/site-packages/numpy/__init__.py"
+      }
+    }
+  },
+  "query_clock": "actual per-state origin; raw observed history strictly before origin; no date clamp",
+  "reward_clock": "fitted priors/transforms <2021-08-02; frozen calibration",
+  "native_pair_parity_max_abs": 0.0,
+  "history_max_date": 738010,
+  "candidate_feature_singleton_batch_parity_max_abs": 0.0,
+  "parity_scope": "score_rows vs scoring API on same assembled blocks; singleton vs batched native candidate facade, one pair per state",
+  "candidate_strata": {
+    "fit_count0": {
+      "pairs": 7784,
+      "support_fraction": 0.0,
+      "fallback_fraction": 1.0,
+      "mean_proxy": 0.4780277907848358
+    },
+    "fit_count1_4": {
+      "pairs": 36795,
+      "support_fraction": 1.0,
+      "fallback_fraction": 0.0,
+      "mean_proxy": 0.3649936318397522
+    },
+    "fit_count5plus": {
+      "pairs": 217565,
+      "support_fraction": 1.0,
+      "fallback_fraction": 0.0,
+      "mean_proxy": 0.4059593975543976
+    },
+    "source_GPT": {
+      "pairs": 216298,
+      "support_fraction": 0.9994267168443536,
+      "fallback_fraction": 0.0005732831556463767,
+      "mean_proxy": 0.4050043225288391
+    },
+    "source_pop7d": {
+      "pairs": 221349,
+      "support_fraction": 0.9664330988619781,
+      "fallback_fraction": 0.033566901138021854,
+      "mean_proxy": 0.40675392746925354
+    },
+    "source_KNN": {
+      "pairs": 239400,
+      "support_fraction": 0.989469507101086,
+      "fallback_fraction": 0.010530492898913951,
+      "mean_proxy": 0.4022064805030823
+    },
+    "pop7d_logcount_zero": {
+      "pairs": 21821,
+      "support_fraction": 0.9929425782503093,
+      "fallback_fraction": 0.007057421749690665,
+      "mean_proxy": 0.3788313865661621
+    },
+    "pop7d_logcount_positive": {
+      "pairs": 240323,
+      "support_fraction": 0.9682510621122407,
+      "fallback_fraction": 0.03174893788775939,
+      "mean_proxy": 0.40448471903800964
+    }
+  },
+  "support_count": 254360,
+  "support_fraction": 0.970306396484375,
+  "cold_count": 7784,
+  "fallback_fraction": 0.029693603515625,
+  "states_without_supported_actions": 0,
+  "fit_support_scope": "item ever observed as finite known target in RM fit; not causal overlap",
+  "scoring_seconds": 72.4820466999663,
+  "chunk_size": 128,
+  "files": {
+    "rewards.npy": {
+      "sha256": "56039af5c2ce294191fd8dca7e80e6c11ee4650b4026b9671a1aae61e6f3d4d6",
+      "shape": [
+        256,
+        1024
+      ],
+      "dtype": "float32"
+    },
+    "support.npy": {
+      "sha256": "774543949f643b6fc02e729b16e06d9c519a454906d9e79a1bc2c38c3011d1f4",
+      "shape": [
+        256,
+        1024
+      ],
+      "dtype": "bool"
+    },
+    "fallback.npy": {
+      "sha256": "ecbb2f8557dffb287ccfffa7f36865105c5b3d13fc143aa2d8562aafb43f515f",
+      "shape": [
+        256,
+        1024
+      ],
+      "dtype": "bool"
+    }
+  },
+  "observed_outcome_quality": "existing frozen local rm-eval-r1 20k later-development proof; no labels for arbitrary candidates"
+}

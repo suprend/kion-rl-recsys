@@ -1,0 +1,25 @@
+{
+  "url": "https://raw.githubusercontent.com/irsafilo/KION_DATASET/f69775be31fa5779907cf0a92ddedb70037fb5ae/data_original.zip",
+  "tree_sha": "f69775be31fa5779907cf0a92ddedb70037fb5ae",
+  "archive_bytes": 78795295,
+  "archive_sha256": "50fc5b7db78cbda4c3d0ee5bb5bea4c416cff41e8af58aab0b661d0d3e9dfa9b",
+  "zip_crc_validated": true,
+  "files": [
+    {
+      "file": "interactions.csv",
+      "bytes": 180032258,
+      "sha256": "201dc9114eb309da9df6f5f227ada23a371d668edf64a32090fb613a75162ecf"
+    },
+    {
+      "file": "users.csv",
+      "bytes": 29945389,
+      "sha256": "37b2945240628a3f215e1fb5f79b4cff386d8988b21fa61e5b135aef4541182c"
+    },
+    {
+      "file": "items.csv",
+      "bytes": 31836561,
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e"
+    }
+  ],
+  "warning": "../interactions.csv from standalone interactions.csv.zip is truncated; use only full/interactions.csv"
+}

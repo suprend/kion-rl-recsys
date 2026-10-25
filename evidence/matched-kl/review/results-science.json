@@ -1,0 +1,94 @@
+{
+  "reviewer": "independent-method-skeptic",
+  "status": "pass",
+  "scope": "Scientific review of actual compact full4096 results, scalar metadata and static analysis/bootstrap source. No arrays, models, per-query CSV processing, CI resampling or new numerical jobs. Final reader prose is not reviewed by this document.",
+  "root": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1",
+  "input_sha256": {
+    "interpretation/full-r1/analysis.json": "1FBAAE8AF0A4CCC94544F2886B021D062BD14778C574D3F92DC2B3AAF261274F",
+    "review/numeric-full4096.json": "F5728B8387643ECF4A66CBC163AC50C1601FC13E8CFE6A402D23BD1508A872C1",
+    "policy/full-six-r1/evaluation.json": "CC7DD2372A5C80F49AED0D5374DEFF4CDDA8AA739CE41531F5C13245FE760BA5",
+    "protocols/matching.json": "E45F26F9D682C71E2EE7B10B45A5E75861D572A3DD91D29547E501842EDA154C",
+    "protocols/preregistration.json": "46F348E871F185EFCA1A734CD31E5234DBA6346BE545B690D32DEB447E488AB4",
+    "interpretation/analyze.py": "BF86630A71546E27F4D336F8CF08E5C729C4AEB6D1AB3AAF862B57805F58F84E",
+    "operations/full-six-r1/receipt.json": "CFE0AD25EDB039708E639C1DB29DD4469B11AC49847161189CD50C2626658CCC"
+  },
+  "historical_comparison_pin": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/full-analysis-r1/analysis.json",
+    "sha256": "33C43018567F6C1E3B22AA55E280885201B8CAC99479CB36F06C710BB66AB5C0"
+  },
+  "checks": {
+    "numeric_verifier_pins_current_analysis_evaluation_and_matching": true,
+    "original_C_MAP_NDCG_Recall_exactly_reproduce_historical_F": true,
+    "completion24_MAP_NDCG_Recall_exactly_reproduce_historical_F_RL_completion": true,
+    "same4096_rows_and4035_unique_users_as_historical_F": true,
+    "denominator4096_includes122_unknown_and616_offpool_misses": true,
+    "candidate_coverage3358_plus_unknown122_plus_offpool616_equals4096": true,
+    "1024_candidate_actions_all_arms_same_scope": true,
+    "evaluation_declares_no_target_injection_or_seen_filter": true,
+    "evaluation_original_C_scores_exact_and_zero_top10_changed_rows": true,
+    "evaluation_one_shared_raw_pass_with512_raw_feature_calls": true,
+    "native_full_receipt_success_exit0_quiescent848_969seconds": true,
+    "all_three_residual_minus_completion_MAP_point_deltas_positive": true,
+    "scalar_recomputed_MAP_deltas_and_equal_seed_means_agree_within1e_minus12": true,
+    "both_prospective_MAP_deltas_positive_separately_reported": true,
+    "all_residual_MAP_points_below_original_C": true,
+    "primary_MAP_three_seed_mean_CI_contains_zero": true,
+    "residual_minus_C_mean_CI_contains_zero": true,
+    "static_bootstrap_source_uses_shared_user_cluster_draws_and_query_weighted_denominator": true,
+    "static_source_averages_three_fixed_head_deltas_before_user_resampling": true,
+    "bootstrap_provenance_declares2000_unadjusted_common_draws": true,
+    "primary_metric_and_registration_hash_unchanged": true,
+    "metadata_declares_no_policy_selection": true
+  },
+  "primary_MAP_evidence": {
+    "residual_minus_completion_by_seed": {
+      "20261024": 0.0017763168092757937,
+      "20261025": 0.002129061259920635,
+      "20261026": 0.0017739916604662697
+    },
+    "three_seed_mean": 0.0018931232432208998,
+    "conditional_user_cluster95CI": [-0.0009076384932878373, 0.0045200119549509655],
+    "prospective_two_seed_mean": 0.0019515264601934524,
+    "fitted_three_seed_sample_SD": 0.00020433162352509254,
+    "original_C_MAP": 0.09686366489955357,
+    "residual_minus_C_three_seed_mean": -0.0006020843667328044,
+    "residual_minus_C_conditional_user_cluster95CI": [-0.0025359259711371517, 0.0012908431280159367],
+    "mean_is_equal_weight_metric_mean_not_a_deployed_score_ensemble": true
+  },
+  "blocking_findings": [],
+  "scientific_findings": [
+    {
+      "id": "RESULT-01",
+      "severity": "interpretation_required",
+      "finding": "Residual has the higher observed MAP than completion in all three seed pairs, including both prospective pairs. The three-seed mean improvement is positive, but its conditional user-cluster95CI includes zero.",
+      "required_wording": "Describe a consistent positive point-estimate pattern within this frozen setup; do not claim established superiority, statistical equivalence, no effect, or a seed-population discovery."
+    },
+    {
+      "id": "RESULT-02",
+      "severity": "interpretation_required",
+      "finding": "Original C has the highest observed MAP among all seven evaluated heads. Every residual point is below C, and the mean residual-minus-C interval includes zero.",
+      "required_wording": "State that residual partially recovers completion's observed loss while failing to establish improvement over C. Do not say C is proven universally superior or that a zero-containing interval proves equality/noninferiority."
+    },
+    {
+      "id": "RESULT-03",
+      "severity": "scope_required",
+      "finding": "The user-cluster intervals condition on these six fitted heads and the reused dev cohort. SampleSD/range across the three fitted seeds describe a different source of variation and are not population intervals.",
+      "required_wording": "Keep the seed24 calibration role explicit and the two prospective deltas visible. Neither small fitted-seed SD nor three positive signs supplies a training-seed significance test. The declared bootstrap intervals are unadjusted and were not independently resampled by this review."
+    },
+    {
+      "id": "RESULT-04",
+      "severity": "scope_required",
+      "finding": "Matching is the preregistered scalar mean TRAIN512 natural1024 forward-KL criterion. It is not a dev-KL selection rule, per-state match, catalogue equivalence, or isolation of reward semantics from optimizer/scale effects.",
+      "required_wording": "Report the actual train ratios and tolerance. Limit any generalization to the fixed offline candidate-pool protocol; do not infer user satisfaction, watchtime, retention or causal benefit."
+    },
+    {
+      "id": "RESULT-05",
+      "severity": "denominator_required",
+      "finding": "All4096 states remain in relevance metric denominators, including122 unknown targets and616 known targets outside the1024 candidates. Only3358 states have candidate coverage.",
+      "required_wording": "Retain the denominator and misses in the report. Do not silently report a covered-only metric or describe these candidate-pool rankings as full-catalogue retrieval performance."
+    }
+  ],
+  "recommended_conclusion": "At the registered mean train-pool KL tolerance, residual had higher observed MAP@10 than completion in both prospective seeds and the calibration seed. The descriptive three-seed mean difference was+0.001893, with a conditional user-cluster95CI spanning zero[-0.000908,0.004520]. Original C retained the best observed MAP; improvement over C was not established. This small reused-dev experiment does not establish a general reward or causal advantage.",
+  "limitations_of_review": "Independent scalar consistency, historical reproduction, pinned metadata and static estimator logic were checked. The separate numeric verifier recomputed ranking metrics from pinned CSV, but neither it nor this scientific review independently resampled the bootstrap. This review did not reproduce scoring, candidate construction or tensor-level estimator execution.",
+  "conclusion": "The actual full4096 evidence is scientifically coherent and suitable for the bounded descriptive report with the stated interpretation constraints. No scientific result blocker was found; final prose requires its own consistency check."
+}

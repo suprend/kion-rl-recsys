@@ -1,0 +1,155 @@
+{
+  "contract": "kion-reproduction-dependencies-v1",
+  "status": "source-and-metadata inventory complete; actual current-machine packaged aggregate replay passed; clean-machine numerical inference not run",
+  "python": {
+    "historical_version": "3.12.14",
+    "historical_platform": "Windows x64 / MSC v.1944",
+    "bundle_verifier": "Python >=3.12, standard library only"
+  },
+  "environments": {
+    "aggregate_replay": {
+      "tested_root_render_packages": {
+        "matplotlib": "3.11.2",
+        "numpy": "2.2.6"
+      },
+      "tested_scope": "Current-machine packaged-code/compact-evidence replay passed for screen/full/rollout; all13PNG byte-identical to visually accepted primary render. No clean-machine model inference or full retraining claim.",
+      "root_native_actual_versions": "NumPy 2.2.6 / Matplotlib 3.11.2 recorded by native-render.json, including both accepted figures-v3 cohorts",
+      "stdlib_verifier_required": {},
+      "status": "passed actual packaged replay: plot_results_v4.py + frozen plot_results.py + compact labels.json for screen/full, plot_rollout.py for rollout; native replay_portable_v3.py validates manifest and source/input hashes before and after rendering",
+      "packaged_replay": {
+        "state": "passed",
+        "machine_scope": "original Windows workstation; no clean-machine replay",
+        "manifest_sha256": "6b054627fdcfd2ee205df2e3871d8da47e6d3d7cbdf47a58897968182f2e4085",
+        "versions": {
+          "numpy": "2.2.6",
+          "matplotlib": "3.11.2"
+        },
+        "results": [
+          {
+            "cohort": "screen",
+            "replay": {
+              "path": "evidence/portable-replay-screen.json",
+              "sha256": "f25594a23065f617abf7d3ecf73f188aeba26e14a798853fbf5e110d3b684ac5"
+            },
+            "native_receipt": {
+              "path": "evidence/portable-replay-screen-receipt.json",
+              "sha256": "481d83a992e1ddf8fa2e0c2624c5bb43fcaf191523edfedac58818b3a03b712f"
+            },
+            "elapsed_seconds": 9.578000000095926,
+            "state": "completed",
+            "cleanup_quiescent": true,
+            "png_byte_identical_count": 7
+          },
+          {
+            "cohort": "full",
+            "replay": {
+              "path": "evidence/portable-replay-full.json",
+              "sha256": "77d2ba20b81814539374ff29436dd18cb4b4d26809b0019b29d61f16d1d327ed"
+            },
+            "native_receipt": {
+              "path": "evidence/portable-replay-full-receipt.json",
+              "sha256": "4b3e9c8d94972745721e99f1e0ede8f6f82db6257c8689957f78cb9c0f21ed8e"
+            },
+            "elapsed_seconds": 7.484000000054948,
+            "state": "completed",
+            "cleanup_quiescent": true,
+            "png_byte_identical_count": 4
+          },
+          {
+            "cohort": "rollout",
+            "replay": {
+              "path": "evidence/portable-replay-rollout.json",
+              "sha256": "8e1a803a24077253c23fb8665e5774705e5001f95eddc7af915eb0543388434c"
+            },
+            "native_receipt": {
+              "path": "evidence/portable-replay-rollout-receipt.json",
+              "sha256": "b9e8e52ca178266b5c421586bebd73d607095d111e65eba8382a97d5993677f8"
+            },
+            "elapsed_seconds": 6.405999999959022,
+            "state": "completed",
+            "cleanup_quiescent": true,
+            "png_byte_identical_count": 2
+          }
+        ],
+        "acceptance": {
+          "path": "evidence/portable-replay-acceptance.json",
+          "sha256": "6e6944828ffa6b32d7db462e5ae5a5382fbc4f770a2fd46831cd7b9d73503d6d"
+        },
+        "accepted_png_count": 13,
+        "all_png_byte_identical_to_visually_accepted_primary": true,
+        "source_bundle_unchanged": true,
+        "excluded_heavy_payloads_read": false,
+        "model_inference": false
+      },
+      "reader_install_command": "python -m pip install numpy==2.2.6 matplotlib==3.11.2",
+      "alternative_not_tested": "PAS/base NumPy 2.5.4 was considered earlier; actual aggregate replay used NumPy 2.2.6. Frozen code/requirements/figures.txt already pins2.2.6/3.11.2."
+    },
+    "actor": {
+      "packages": {
+        "numpy": "2.2.6",
+        "torch": "2.8.0+cu126",
+        "transformers": "4.55.4",
+        "psutil": "7.0.0"
+      },
+      "cuda_wheel_channel": "cu126",
+      "precision": "cuda-fp16",
+      "evidence": [
+        "configs/datasets/kion-requirements.txt",
+        "artifacts/task2-kion/three-head-262k-20261024-r1/bank.py runtime version gate",
+        "actor ML environment selected package METADATA (read without importing numerical modules)"
+      ],
+      "priority": "Actor ML site precedes PAS/base packages in the frozen bootstrap. PAS NumPy 2.5.4 is not the actor runtime.",
+      "fp16_shape_contract": "B16 logical update; producer date-group shape/slot preserved by policy_v2/liveprefix_v2. Batch packing changes can alter scores/ranks. Use historical parity gates; bitwise portability is not established."
+    },
+    "reward_worker": {
+      "packages": {
+        "numpy": "2.5.4",
+        "catboost": "1.2.10",
+        "scipy": "1.18.1"
+      },
+      "CPU_only": true,
+      "fresh_process_required": true,
+      "threads": 2,
+      "evidence": [
+        "artifacts/task2-kion/c-rl-20261024-r1/reward/train512-r1/reward.json provenance.execution_environment",
+        "artifacts/task2-kion/c-rl-20261024-r1/reward/installed-backend-pins-r1.json",
+        "artifacts/task2-kion/c-rl-20261024-r1/reward/installed-numpy-pins-r1.json",
+        "RM environment scipy METADATA (read without importing numerical modules)"
+      ],
+      "native_hashes": {
+        "catboost/__init__.py": "723075ad1115fe9fa812a642c98f3fd4caef91ee2f6372057328e102158d3c31",
+        "catboost/core.py": "6bc0a210b7f62e3c1553682636a7ba2363ad0c71f6974a1030817e7d9754921e",
+        "catboost/_catboost.pyd": "1ee52d699651cb7fcab3810186ff6b581eceb6e575e0557bd0cafda5b2987164",
+        "numpy/__init__.py": "a6958cb364663b7acce81ccfd58eeb65a2b34d5376157f924777b97211a73be4",
+        "numpy/_core/_multiarray_umath.cp312-win_amd64.pyd": "9c10617e66e992b5ac6d9f78fe7cedd0011618e1c2f89d09a185bb63073e2c90"
+      },
+      "native_hash_scope": "Copied from accepted existing runtime provenance; binaries are excluded and were not rehashed by packaging.",
+      "isolation": "bridge.py selects pinned NumPy before CatBoost; do not import it into the actor numerical process."
+    }
+  },
+  "source_dependency_boundary": {
+    "snapshot": "code-manifest.json",
+    "dynamic_dependencies": "Union of actual request source_hashes plus explicit preparation/recipe/test files; exact bytes retained.",
+    "static_imports": "code/recipes/import-inventory.json",
+    "not_a_complete_environment_lock": true,
+    "conditional_imports": [
+      "threadpoolctl appears in historical source closure; its use is conditional and its version was not established in this audit"
+    ],
+    "third_party_binaries_bundled": false,
+    "driver_version": "not established by this packaging audit",
+    "hardware": "Historical actor ran on a native Windows CUDA workstation; specific hardware/native affinity guards remain in exact source snapshots."
+  },
+  "excluded_payloads": {
+    "descriptors": "code/recipes/excluded-inputs.json",
+    "raw_KION": "Obtain separately from an authorized source; no raw interactions, users, or histories included.",
+    "models": "Frozen GPT E2, A/B/C heads, RL heads and CatBoost/scorer weights excluded.",
+    "derived": "Prepared NPZ/NPY, event arrays, feature stores, graph caches, 262k bank and per-query predictions excluded.",
+    "integrity": "Recorded payload hashes are provenance references, not a new verification of excluded bytes."
+  },
+  "reproduction_claims": {
+    "A_source_and_invented_fixture": "passed: source size/SHA256, Python AST parse, invented ranking fixture; four synthetic integrity tests and one source-pin rebuild regression passed",
+    "A_compact_results_to_figures": "passed actual current-machine packaged replay for screen/full/rollout;13PNG byte-identical; compact proof exports in evidence/portable-replay-*.json; clean-machine replay not claimed",
+    "B_frozen_weight_inference": "not run; external weights/data/runtime relocation required",
+    "C_from_raw_full_training": "recipe and source only; not run in final packaging"
+  }
+}

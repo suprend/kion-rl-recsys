@@ -1,0 +1,42 @@
+{
+  "contract": "kion-final-three-arm-evaluation-v1",
+  "registered_utc": "2026-10-24T21:14:00.464044+00:00",
+  "preregistration": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/protocols/preregistration.json",
+    "sha256": "78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c"
+  },
+  "arms": [
+    "C",
+    "RL-completion",
+    "RL-residual"
+  ],
+  "screen_size": 256,
+  "full_relevance_size": 4096,
+  "separate_cohorts": true,
+  "natural_pool": 1024,
+  "same_pool_all_arms": true,
+  "target_injection": false,
+  "seen_filter": false,
+  "unknown_offpool_denominator": "allselectedrows,zero whenunknown/offpool",
+  "relevance_metrics": [
+    "MAP@10",
+    "NDCG@10",
+    "Recall@10"
+  ],
+  "uncertainty": {
+    "resampling_unit": "user_id",
+    "point_estimator": "row-weighted mean across original cohort; not equal-user mean",
+    "draws": 2000,
+    "seed": 20261024,
+    "interval": "two-sided percentile95% (2.5%,97.5%)",
+    "paired": "same user-cluster draw and row multiplicities for all arms and deltas",
+    "cohort": "separate bootstrap each screen/full cohort; users within own cohort"
+  },
+  "utility_estimator": "state-mean supported-neutral centered expectation over all1024action softmax; originalC weighted supported baseline frozen",
+  "primary_endpoint": "fixed latest1000 both RLarms; scientific no checkpointcherrypicking",
+  "score_parity": "preserve registered original producer-shape gates; actualgate values in source/request pinned",
+  "five_step": "preregistration192trajectories960steps;validobservedrelevanceats0only",
+  "fallback_scope": "all3arms common screen256 ifgeneralizedfullnotadmitted; existingC-completion4096 separate,declaredbeforebranch",
+  "no_test_reads": true,
+  "deadline_numeric": "2026-10-25T06:00:00+00:00"
+}

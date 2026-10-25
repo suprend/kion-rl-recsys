@@ -1,0 +1,766 @@
+{
+  "contract": "kion-current-C1070-kl-seeds-H1-v1",
+  "state": "completed",
+  "mode": "evaluate_train512",
+  "rows": 512,
+  "cache_sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+  "reward_sha256": "e8047d12f8009bb422cc4956261a355dc10e05f42d73351ef76ccd5f7bc9ce05",
+  "utility_sha256": "e888cb47586b8ea2a4e5323a1051401e949f602ec36e43d36254684e80a320a5",
+  "results": {
+    "original-C": {
+      "step": 0,
+      "metrics": {
+        "completion": {
+          "rows": 512,
+          "map10": 0.09379495287698413,
+          "ndcg10": 0.13165185879706998,
+          "recall10": 0.255859375,
+          "expected_effective_reward": -9.999223942337016e-19,
+          "supported_conditional_raw_reward": 0.40992762613323724,
+          "supported_probability_denominator": 504.50395879028497,
+          "supported_top10_raw_reward": 0.41708707184770744,
+          "supported_top10_denominator": 5038,
+          "unsupported_mass": 0.014640705487724656,
+          "exact_KL": 0.0,
+          "entropy": 5.827725778544034,
+          "top1_max_share": 0.265625,
+          "top10_HHI": 0.035929183959960934,
+          "effective_catalog": 27.832527482794724,
+          "states_without_support": 0
+        },
+        "residual": {
+          "rows": 512,
+          "map10": 0.09379495287698413,
+          "ndcg10": 0.13165185879706998,
+          "recall10": 0.255859375,
+          "expected_effective_reward": 2.9958496553200535e-19,
+          "supported_conditional_raw_reward": -0.05558893253960867,
+          "supported_probability_denominator": 504.50395879028497,
+          "supported_top10_raw_reward": -0.028948631540910045,
+          "supported_top10_denominator": 5038,
+          "unsupported_mass": 0.014640705487724656,
+          "exact_KL": 0.0,
+          "entropy": 5.827725778544034,
+          "top1_max_share": 0.265625,
+          "top10_HHI": 0.035929183959960934,
+          "effective_catalog": 27.832527482794724,
+          "states_without_support": 0
+        }
+      }
+    },
+    "completion-20261024": {
+      "checkpoint": {
+        "name": "completion-20261024",
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-1000.pt",
+        "sha256": "436d735d67fd861e6b925719b9e3597582ec405eed1b13ede3db3671e1ce37b7",
+        "step": 1000,
+        "utility": "completion"
+      },
+      "contract": "kion-current-C1070-natural1024-H1-v1",
+      "lineage": {
+        "contract": "kion-current-C1070-natural1024-H1-v1",
+        "state": "running",
+        "beta": 0.5,
+        "updates": 1000,
+        "checkpoints": [
+          {
+            "step": 0,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-0.pt",
+            "sha256": "20a616aeecd9856b3d96ab8f17f3321373b9f6a7bd158ab125d705e4d6f595ab"
+          },
+          {
+            "step": 250,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-250.pt",
+            "sha256": "aa8f4da51fd29021fb44e79681e84462e9bd8f7fd938326f93b18f3f3b9933da"
+          },
+          {
+            "step": 500,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-500.pt",
+            "sha256": "b8e8772666c93a28da252a0c9995475df5147405717aa0d71aaf895feba373d0"
+          }
+        ],
+        "implementation": "producer-shape-slot-v2",
+        "loss_normalization": "one mean over logical real B16 occurrences; no bucket means",
+        "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+        "cache_sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+        "reward_sha256": "e8047d12f8009bb422cc4956261a355dc10e05f42d73351ef76ccd5f7bc9ce05",
+        "preregistration_sha256": "025061343a0314691dfb6064063d7e18c74662ea62ab285ec423d374037538ac",
+        "frontier_sha256": "73d1eacc7000398341c3bcfb761929be41c18e3f2c094d2467dbee7fc8184530",
+        "update0_max_abs_error": 0.0,
+        "precision": "cuda-fp16",
+        "objective": "exact supported centered advantage minus beta KL",
+        "frozen_encoder": true,
+        "supervised_updates": 0,
+        "weight_decay": 0,
+        "batch_size": 16
+      },
+      "metrics": {
+        "completion": {
+          "rows": 512,
+          "map10": 0.09649910094246031,
+          "ndcg10": 0.13038680410157405,
+          "recall10": 0.2421875,
+          "expected_effective_reward": 0.03172184724174318,
+          "supported_conditional_raw_reward": 0.44209936630989766,
+          "supported_probability_denominator": 504.8937217641709,
+          "supported_top10_raw_reward": 0.4733010664768776,
+          "supported_top10_denominator": 5033,
+          "unsupported_mass": 0.013879449679353655,
+          "exact_KL": 0.028141394929216676,
+          "entropy": 5.7692012917134186,
+          "top1_max_share": 0.296875,
+          "top10_HHI": 0.03814407348632813,
+          "effective_catalog": 26.21639244582588,
+          "states_without_support": 0
+        },
+        "residual": {
+          "rows": 512,
+          "map10": 0.09649910094246031,
+          "ndcg10": 0.13038680410157405,
+          "recall10": 0.2421875,
+          "expected_effective_reward": 0.004054624509421119,
+          "supported_conditional_raw_reward": -0.0514820828459632,
+          "supported_probability_denominator": 504.8937217641709,
+          "supported_top10_raw_reward": -0.030124340651897195,
+          "supported_top10_denominator": 5033,
+          "unsupported_mass": 0.013879449679353655,
+          "exact_KL": 0.028141394929216676,
+          "entropy": 5.7692012917134186,
+          "top1_max_share": 0.296875,
+          "top10_HHI": 0.03814407348632813,
+          "effective_catalog": 26.21639244582588,
+          "states_without_support": 0
+        }
+      }
+    },
+    "residual-20261024": {
+      "checkpoint": {
+        "name": "residual-20261024",
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot2/head-1000.pt",
+        "sha256": "c64dccd1a28d9177611d6c383d1b27adb0565355f7cd67d1e3502b39f91cc4d8",
+        "step": 1000,
+        "utility": "residual"
+      },
+      "contract": "kion-current-C1070-kl-seeds-H1-v1",
+      "lineage": {
+        "contract": "kion-current-C1070-kl-seeds-H1-v1",
+        "state": "running",
+        "implementation": "producer-shape-slot-v2",
+        "start_from": "original-C",
+        "beta": 0.16274030138555867,
+        "utility": "residual",
+        "seed": 20261024,
+        "sampler_seed": 20261024,
+        "fit_admission": {
+          "maximum_new_fits": 8,
+          "fit_ordinal": 2,
+          "reservation_id": "fit-02-pilot2",
+          "ledger_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/fit-ledger-02.json",
+          "ledger_sha256": "d37ac75b21971cba6eca002de2bbfed663050e895daa7e03923b20c836a2b613"
+        },
+        "updates": 1000,
+        "checkpoints": [
+          {
+            "step": 0,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot2/head-0.pt",
+            "sha256": "651fa053d76f884a83e6266ac84f1e9ec41ca1b3a3c542ccf25a64c6858ce5be"
+          },
+          {
+            "step": 250,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot2/head-250.pt",
+            "sha256": "b6a0b9d20ada926def49194412ee2e823c9a81c5d99e588662e79e8d2359a35f"
+          },
+          {
+            "step": 500,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot2/head-500.pt",
+            "sha256": "86a9be0d4e935ce4aa10489089869c80595dc3095972d27487b1d35c41fcb08f"
+          }
+        ],
+        "batch_size": 16,
+        "learning_rate": 1e-05,
+        "optimizer": "Adam",
+        "weight_decay": 0,
+        "grad_clip": 1,
+        "precision": "cuda-fp16",
+        "frozen_encoder": true,
+        "supervised_updates": 0,
+        "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+        "cache_sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+        "utility_contract": "kion-derived-completion-utility-v1",
+        "utility_formula": "r_RM(s,i)-m_fit(i)",
+        "utility_sha256": "e888cb47586b8ea2a4e5323a1051401e949f602ec36e43d36254684e80a320a5",
+        "reward_sha256": "e8047d12f8009bb422cc4956261a355dc10e05f42d73351ef76ccd5f7bc9ce05",
+        "preregistration_sha256": "78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c",
+        "prefit_sha256": "f1431dd1092a5d7ef96e2ed89d4c2889067cd3558fa0f478f29eff73825c3d97",
+        "parity_proof": {
+          "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/repair-proof-r1.json",
+          "sha256": "dbdc6622bd620c15cbab77e2b12db4a241bb6e9577270fc0578b5da768d1e32b"
+        },
+        "immutable_policy_sha256": "da7baf199b685cb467edd7d5eedaada151798ec40bbc23e9edfaee8e36340dba",
+        "utility_source_sha256": "4cffa8d876c84723326f035b825cafc520c4ad561d98e3851bfe38a5d3e1cd0f",
+        "primary_contrast": "fixed-latest1000",
+        "update0_actor_reference_exact": true,
+        "update0_top10_exact": true,
+        "update0_max_abs_error": 0.0,
+        "loss_normalization": "one mean over logical real B16 occurrences; no bucket means",
+        "objective": "exact supported C-centered chosen utility minus beta KL; all1024 actions normalized",
+        "policy_source_sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5",
+        "checkpoint_steps": [
+          0,
+          250,
+          500,
+          1000
+        ],
+        "update0_cached_scores_exact": true,
+        "provider_opened": false,
+        "GPT_opened": false,
+        "RM_opened": false,
+        "temperature": 1.0
+      },
+      "metrics": {
+        "completion": {
+          "rows": 512,
+          "map10": 0.09753146701388889,
+          "ndcg10": 0.13455880348915428,
+          "recall10": 0.255859375,
+          "expected_effective_reward": 0.00964624653720008,
+          "supported_conditional_raw_reward": 0.4197012577581377,
+          "supported_probability_denominator": 504.9717996939985,
+          "supported_top10_raw_reward": 0.41957824102722774,
+          "supported_top10_denominator": 5050,
+          "unsupported_mass": 0.01372695372265921,
+          "exact_KL": 0.025626846105626697,
+          "entropy": 5.639521304019025,
+          "top1_max_share": 0.263671875,
+          "top10_HHI": 0.040718002319335936,
+          "effective_catalog": 24.55916162481099,
+          "states_without_support": 0
+        },
+        "residual": {
+          "rows": 512,
+          "map10": 0.09753146701388889,
+          "ndcg10": 0.13455880348915428,
+          "recall10": 0.255859375,
+          "expected_effective_reward": 0.0107222087506605,
+          "supported_conditional_raw_reward": -0.04471930282316122,
+          "supported_probability_denominator": 504.9717996939985,
+          "supported_top10_raw_reward": -0.019836828171031558,
+          "supported_top10_denominator": 5050,
+          "unsupported_mass": 0.01372695372265921,
+          "exact_KL": 0.025626846105626697,
+          "entropy": 5.639521304019025,
+          "top1_max_share": 0.263671875,
+          "top10_HHI": 0.040718002319335936,
+          "effective_catalog": 24.55916162481099,
+          "states_without_support": 0
+        }
+      }
+    },
+    "completion-20261025": {
+      "checkpoint": {
+        "name": "completion-20261025",
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261025/head-1000.pt",
+        "sha256": "8f079caae520b60fe8be65342f6a7deb927ae8ca742ac7ce829d086e261d41ba",
+        "step": 1000,
+        "utility": "completion"
+      },
+      "contract": "kion-current-C1070-kl-seeds-H1-v1",
+      "lineage": {
+        "contract": "kion-current-C1070-kl-seeds-H1-v1",
+        "state": "running",
+        "implementation": "producer-shape-slot-v2",
+        "start_from": "original-C",
+        "beta": 0.5,
+        "utility": "completion",
+        "seed": 20261025,
+        "sampler_seed": 20261025,
+        "fit_admission": {
+          "maximum_new_fits": 8,
+          "fit_ordinal": 3,
+          "reservation_id": "fit-03-completion-20261025",
+          "ledger_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/fit-ledger-03.json",
+          "ledger_sha256": "390497f21657ab5c44605f4c62873fed0dbb95915da0dce88ad8bafc4a586117"
+        },
+        "updates": 1000,
+        "checkpoints": [
+          {
+            "step": 0,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261025/head-0.pt",
+            "sha256": "f9c2991a611785d405a60eddac74174a8e2541df5906cf5b51c497be9438dd52"
+          },
+          {
+            "step": 250,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261025/head-250.pt",
+            "sha256": "555e7d913f4b3d7da3218dddd05a67bd3a124c8f46ebbd6fc04563e5ea67b226"
+          },
+          {
+            "step": 500,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261025/head-500.pt",
+            "sha256": "2ae028a9f8b6930b235cb8b731024fe262d1ce2befb7d385b53221ca0ef962c5"
+          }
+        ],
+        "batch_size": 16,
+        "learning_rate": 1e-05,
+        "optimizer": "Adam",
+        "weight_decay": 0,
+        "grad_clip": 1,
+        "precision": "cuda-fp16",
+        "frozen_encoder": true,
+        "supervised_updates": 0,
+        "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+        "cache_sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+        "utility_contract": "current-C-local-RM-r2-bridge-v1",
+        "utility_formula": "r_RM(s,i)",
+        "utility_sha256": "e888cb47586b8ea2a4e5323a1051401e949f602ec36e43d36254684e80a320a5",
+        "reward_sha256": "e8047d12f8009bb422cc4956261a355dc10e05f42d73351ef76ccd5f7bc9ce05",
+        "preregistration_sha256": "78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c",
+        "prefit_sha256": "f1431dd1092a5d7ef96e2ed89d4c2889067cd3558fa0f478f29eff73825c3d97",
+        "parity_proof": {
+          "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/repair-proof-r1.json",
+          "sha256": "dbdc6622bd620c15cbab77e2b12db4a241bb6e9577270fc0578b5da768d1e32b"
+        },
+        "immutable_policy_sha256": "da7baf199b685cb467edd7d5eedaada151798ec40bbc23e9edfaee8e36340dba",
+        "utility_source_sha256": "4cffa8d876c84723326f035b825cafc520c4ad561d98e3851bfe38a5d3e1cd0f",
+        "primary_contrast": "fixed-latest1000",
+        "update0_actor_reference_exact": true,
+        "update0_top10_exact": true,
+        "update0_max_abs_error": 0.0,
+        "loss_normalization": "one mean over logical real B16 occurrences; no bucket means",
+        "objective": "exact supported C-centered chosen utility minus beta KL; all1024 actions normalized",
+        "policy_source_sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5",
+        "checkpoint_steps": [
+          0,
+          250,
+          500,
+          1000
+        ],
+        "update0_cached_scores_exact": true,
+        "provider_opened": false,
+        "GPT_opened": false,
+        "RM_opened": false,
+        "temperature": 1.0
+      },
+      "metrics": {
+        "completion": {
+          "rows": 512,
+          "map10": 0.09674324156746031,
+          "ndcg10": 0.13058670375385364,
+          "recall10": 0.2421875,
+          "expected_effective_reward": 0.031950436557301086,
+          "supported_conditional_raw_reward": 0.4423225893526382,
+          "supported_probability_denominator": 504.9829926189352,
+          "supported_top10_raw_reward": 0.473693702219023,
+          "supported_top10_denominator": 5036,
+          "unsupported_mass": 0.013705092541142215,
+          "exact_KL": 0.02857631484713826,
+          "entropy": 5.761894864247631,
+          "top1_max_share": 0.296875,
+          "top10_HHI": 0.038306961059570314,
+          "effective_catalog": 26.10491598236994,
+          "states_without_support": 0
+        },
+        "residual": {
+          "rows": 512,
+          "map10": 0.09674324156746031,
+          "ndcg10": 0.13058670375385364,
+          "recall10": 0.2421875,
+          "expected_effective_reward": 0.0041535441725329,
+          "supported_conditional_raw_reward": -0.0513845897662188,
+          "supported_probability_denominator": 504.9829926189352,
+          "supported_top10_raw_reward": -0.030103457319442365,
+          "supported_top10_denominator": 5036,
+          "unsupported_mass": 0.013705092541142215,
+          "exact_KL": 0.02857631484713826,
+          "entropy": 5.761894864247631,
+          "top1_max_share": 0.296875,
+          "top10_HHI": 0.038306961059570314,
+          "effective_catalog": 26.10491598236994,
+          "states_without_support": 0
+        }
+      }
+    },
+    "residual-20261025": {
+      "checkpoint": {
+        "name": "residual-20261025",
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261025/head-1000.pt",
+        "sha256": "aef66d2d7d10bb4e2431f1c495ea2f2d34125bc2045e5a89944457cbc07c0cb8",
+        "step": 1000,
+        "utility": "residual"
+      },
+      "contract": "kion-current-C1070-kl-seeds-H1-v1",
+      "lineage": {
+        "contract": "kion-current-C1070-kl-seeds-H1-v1",
+        "state": "running",
+        "implementation": "producer-shape-slot-v2",
+        "start_from": "original-C",
+        "beta": 0.16274030138555867,
+        "utility": "residual",
+        "seed": 20261025,
+        "sampler_seed": 20261025,
+        "fit_admission": {
+          "maximum_new_fits": 8,
+          "fit_ordinal": 4,
+          "reservation_id": "fit-04-residual-20261025",
+          "ledger_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/fit-ledger-04.json",
+          "ledger_sha256": "e9cdfaae346d26c9c5c456eefd4548f149a3b7b962bdde17dce3df018f420096"
+        },
+        "updates": 1000,
+        "checkpoints": [
+          {
+            "step": 0,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261025/head-0.pt",
+            "sha256": "b4f0ebd0305f85722c8c05d0389608408de64247f4e4c40047f2e8eb93486836"
+          },
+          {
+            "step": 250,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261025/head-250.pt",
+            "sha256": "d855c3b606c08977c354307035f606fd14547da951b36da1850647a624c63718"
+          },
+          {
+            "step": 500,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261025/head-500.pt",
+            "sha256": "b99de4b9af523c908b0e1714e10c1c96be89c48a99c73451cd9ddf365110fb78"
+          }
+        ],
+        "batch_size": 16,
+        "learning_rate": 1e-05,
+        "optimizer": "Adam",
+        "weight_decay": 0,
+        "grad_clip": 1,
+        "precision": "cuda-fp16",
+        "frozen_encoder": true,
+        "supervised_updates": 0,
+        "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+        "cache_sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+        "utility_contract": "kion-derived-completion-utility-v1",
+        "utility_formula": "r_RM(s,i)-m_fit(i)",
+        "utility_sha256": "e888cb47586b8ea2a4e5323a1051401e949f602ec36e43d36254684e80a320a5",
+        "reward_sha256": "e8047d12f8009bb422cc4956261a355dc10e05f42d73351ef76ccd5f7bc9ce05",
+        "preregistration_sha256": "78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c",
+        "prefit_sha256": "f1431dd1092a5d7ef96e2ed89d4c2889067cd3558fa0f478f29eff73825c3d97",
+        "parity_proof": {
+          "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/repair-proof-r1.json",
+          "sha256": "dbdc6622bd620c15cbab77e2b12db4a241bb6e9577270fc0578b5da768d1e32b"
+        },
+        "immutable_policy_sha256": "da7baf199b685cb467edd7d5eedaada151798ec40bbc23e9edfaee8e36340dba",
+        "utility_source_sha256": "4cffa8d876c84723326f035b825cafc520c4ad561d98e3851bfe38a5d3e1cd0f",
+        "primary_contrast": "fixed-latest1000",
+        "update0_actor_reference_exact": true,
+        "update0_top10_exact": true,
+        "update0_max_abs_error": 0.0,
+        "loss_normalization": "one mean over logical real B16 occurrences; no bucket means",
+        "objective": "exact supported C-centered chosen utility minus beta KL; all1024 actions normalized",
+        "policy_source_sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5",
+        "checkpoint_steps": [
+          0,
+          250,
+          500,
+          1000
+        ],
+        "update0_cached_scores_exact": true,
+        "provider_opened": false,
+        "GPT_opened": false,
+        "RM_opened": false,
+        "temperature": 1.0
+      },
+      "metrics": {
+        "completion": {
+          "rows": 512,
+          "map10": 0.09777250744047619,
+          "ndcg10": 0.13481191162106926,
+          "recall10": 0.255859375,
+          "expected_effective_reward": 0.009843001818079128,
+          "supported_conditional_raw_reward": 0.41989272297453795,
+          "supported_probability_denominator": 505.1419792725094,
+          "supported_top10_raw_reward": 0.41949837265346757,
+          "supported_top10_denominator": 5054,
+          "unsupported_mass": 0.013394571733380132,
+          "exact_KL": 0.02723862248082785,
+          "entropy": 5.622000711492806,
+          "top1_max_share": 0.263671875,
+          "top10_HHI": 0.041139450073242184,
+          "effective_catalog": 24.3075684827984,
+          "states_without_support": 0
+        },
+        "residual": {
+          "rows": 512,
+          "map10": 0.09777250744047619,
+          "ndcg10": 0.13481191162106926,
+          "recall10": 0.255859375,
+          "expected_effective_reward": 0.010993790069717242,
+          "supported_conditional_raw_reward": -0.044451081880904346,
+          "supported_probability_denominator": 505.1419792725094,
+          "supported_top10_raw_reward": -0.019648077389895907,
+          "supported_top10_denominator": 5054,
+          "unsupported_mass": 0.013394571733380132,
+          "exact_KL": 0.02723862248082785,
+          "entropy": 5.622000711492806,
+          "top1_max_share": 0.263671875,
+          "top10_HHI": 0.041139450073242184,
+          "effective_catalog": 24.3075684827984,
+          "states_without_support": 0
+        }
+      }
+    },
+    "completion-20261026": {
+      "checkpoint": {
+        "name": "completion-20261026",
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261026/head-1000.pt",
+        "sha256": "2b323c60b672a19439adade769eea01f8eb535033de859cd248d911d09cba822",
+        "step": 1000,
+        "utility": "completion"
+      },
+      "contract": "kion-current-C1070-kl-seeds-H1-v1",
+      "lineage": {
+        "contract": "kion-current-C1070-kl-seeds-H1-v1",
+        "state": "running",
+        "implementation": "producer-shape-slot-v2",
+        "start_from": "original-C",
+        "beta": 0.5,
+        "utility": "completion",
+        "seed": 20261026,
+        "sampler_seed": 20261026,
+        "fit_admission": {
+          "maximum_new_fits": 8,
+          "fit_ordinal": 5,
+          "reservation_id": "fit-05-completion-20261026",
+          "ledger_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/fit-ledger-05.json",
+          "ledger_sha256": "f36d816bbde6324da39e5594e8c1c216d80f57306e4c05a24ab6ae2ffc570c00"
+        },
+        "updates": 1000,
+        "checkpoints": [
+          {
+            "step": 0,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261026/head-0.pt",
+            "sha256": "d9c165a4de6211d0027a3d67af1fb7f333d14af5140c91df761dd4413800b0ad"
+          },
+          {
+            "step": 250,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261026/head-250.pt",
+            "sha256": "45c6bc8a05a1b41a799bd4c4a9aad55b9e9867ff6c6484714d335c4ad3a58e85"
+          },
+          {
+            "step": 500,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261026/head-500.pt",
+            "sha256": "3f9b4ecd823ae14527f5539f2c2100397ab1a5c4d57b96d6071ad0aa44789dbf"
+          }
+        ],
+        "batch_size": 16,
+        "learning_rate": 1e-05,
+        "optimizer": "Adam",
+        "weight_decay": 0,
+        "grad_clip": 1,
+        "precision": "cuda-fp16",
+        "frozen_encoder": true,
+        "supervised_updates": 0,
+        "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+        "cache_sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+        "utility_contract": "current-C-local-RM-r2-bridge-v1",
+        "utility_formula": "r_RM(s,i)",
+        "utility_sha256": "e888cb47586b8ea2a4e5323a1051401e949f602ec36e43d36254684e80a320a5",
+        "reward_sha256": "e8047d12f8009bb422cc4956261a355dc10e05f42d73351ef76ccd5f7bc9ce05",
+        "preregistration_sha256": "78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c",
+        "prefit_sha256": "f1431dd1092a5d7ef96e2ed89d4c2889067cd3558fa0f478f29eff73825c3d97",
+        "parity_proof": {
+          "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/repair-proof-r1.json",
+          "sha256": "dbdc6622bd620c15cbab77e2b12db4a241bb6e9577270fc0578b5da768d1e32b"
+        },
+        "immutable_policy_sha256": "da7baf199b685cb467edd7d5eedaada151798ec40bbc23e9edfaee8e36340dba",
+        "utility_source_sha256": "4cffa8d876c84723326f035b825cafc520c4ad561d98e3851bfe38a5d3e1cd0f",
+        "primary_contrast": "fixed-latest1000",
+        "update0_actor_reference_exact": true,
+        "update0_top10_exact": true,
+        "update0_max_abs_error": 0.0,
+        "loss_normalization": "one mean over logical real B16 occurrences; no bucket means",
+        "objective": "exact supported C-centered chosen utility minus beta KL; all1024 actions normalized",
+        "policy_source_sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5",
+        "checkpoint_steps": [
+          0,
+          250,
+          500,
+          1000
+        ],
+        "update0_cached_scores_exact": true,
+        "provider_opened": false,
+        "GPT_opened": false,
+        "RM_opened": false,
+        "temperature": 1.0
+      },
+      "metrics": {
+        "completion": {
+          "rows": 512,
+          "map10": 0.09666961185515874,
+          "ndcg10": 0.13051383513100903,
+          "recall10": 0.2421875,
+          "expected_effective_reward": 0.031941594766851586,
+          "supported_conditional_raw_reward": 0.44231507786730745,
+          "supported_probability_denominator": 504.96592334195446,
+          "supported_top10_raw_reward": 0.4738432116883439,
+          "supported_top10_denominator": 5036,
+          "unsupported_mass": 0.013738430972745205,
+          "exact_KL": 0.028560712775189928,
+          "entropy": 5.765146085198172,
+          "top1_max_share": 0.294921875,
+          "top10_HHI": 0.03832969665527344,
+          "effective_catalog": 26.089431622528085,
+          "states_without_support": 0
+        },
+        "residual": {
+          "rows": 512,
+          "map10": 0.09666961185515874,
+          "ndcg10": 0.13051383513100903,
+          "recall10": 0.2421875,
+          "expected_effective_reward": 0.004110881514517727,
+          "supported_conditional_raw_reward": -0.051427559844621676,
+          "supported_probability_denominator": 504.96592334195446,
+          "supported_top10_raw_reward": -0.03022898638653336,
+          "supported_top10_denominator": 5036,
+          "unsupported_mass": 0.013738430972745205,
+          "exact_KL": 0.028560712775189928,
+          "entropy": 5.765146085198172,
+          "top1_max_share": 0.294921875,
+          "top10_HHI": 0.03832969665527344,
+          "effective_catalog": 26.089431622528085,
+          "states_without_support": 0
+        }
+      }
+    },
+    "residual-20261026": {
+      "checkpoint": {
+        "name": "residual-20261026",
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261026/head-1000.pt",
+        "sha256": "1e3b26461b9fb6c6233c97ba72d791234d4c3f3f00c4a5546a934044621eca1b",
+        "step": 1000,
+        "utility": "residual"
+      },
+      "contract": "kion-current-C1070-kl-seeds-H1-v1",
+      "lineage": {
+        "contract": "kion-current-C1070-kl-seeds-H1-v1",
+        "state": "running",
+        "implementation": "producer-shape-slot-v2",
+        "start_from": "original-C",
+        "beta": 0.16274030138555867,
+        "utility": "residual",
+        "seed": 20261026,
+        "sampler_seed": 20261026,
+        "fit_admission": {
+          "maximum_new_fits": 8,
+          "fit_ordinal": 6,
+          "reservation_id": "fit-06-residual-20261026",
+          "ledger_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/fit-ledger-06.json",
+          "ledger_sha256": "20a1ac11e6fe24fc0dc968851c9de3dab4236d2b78715bfcb4fa4130dbc686cc"
+        },
+        "updates": 1000,
+        "checkpoints": [
+          {
+            "step": 0,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261026/head-0.pt",
+            "sha256": "090c95764a8ad9d1a8ad38b62e3ad90d7814dfaa0a952ac5f119b3158cacf988"
+          },
+          {
+            "step": 250,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261026/head-250.pt",
+            "sha256": "804b38914bf421b9dbe8a31d90dfce724fcc0b59ccbedf7c7936ddbfec268628"
+          },
+          {
+            "step": 500,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261026/head-500.pt",
+            "sha256": "2f96dd1413e03b03bf01b7fb6092e71c400ec324d7abc3893d20a06c7f33b22c"
+          }
+        ],
+        "batch_size": 16,
+        "learning_rate": 1e-05,
+        "optimizer": "Adam",
+        "weight_decay": 0,
+        "grad_clip": 1,
+        "precision": "cuda-fp16",
+        "frozen_encoder": true,
+        "supervised_updates": 0,
+        "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+        "cache_sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+        "utility_contract": "kion-derived-completion-utility-v1",
+        "utility_formula": "r_RM(s,i)-m_fit(i)",
+        "utility_sha256": "e888cb47586b8ea2a4e5323a1051401e949f602ec36e43d36254684e80a320a5",
+        "reward_sha256": "e8047d12f8009bb422cc4956261a355dc10e05f42d73351ef76ccd5f7bc9ce05",
+        "preregistration_sha256": "78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c",
+        "prefit_sha256": "f1431dd1092a5d7ef96e2ed89d4c2889067cd3558fa0f478f29eff73825c3d97",
+        "parity_proof": {
+          "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/repair-proof-r1.json",
+          "sha256": "dbdc6622bd620c15cbab77e2b12db4a241bb6e9577270fc0578b5da768d1e32b"
+        },
+        "immutable_policy_sha256": "da7baf199b685cb467edd7d5eedaada151798ec40bbc23e9edfaee8e36340dba",
+        "utility_source_sha256": "4cffa8d876c84723326f035b825cafc520c4ad561d98e3851bfe38a5d3e1cd0f",
+        "primary_contrast": "fixed-latest1000",
+        "update0_actor_reference_exact": true,
+        "update0_top10_exact": true,
+        "update0_max_abs_error": 0.0,
+        "loss_normalization": "one mean over logical real B16 occurrences; no bucket means",
+        "objective": "exact supported C-centered chosen utility minus beta KL; all1024 actions normalized",
+        "policy_source_sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5",
+        "checkpoint_steps": [
+          0,
+          250,
+          500,
+          1000
+        ],
+        "update0_cached_scores_exact": true,
+        "provider_opened": false,
+        "GPT_opened": false,
+        "RM_opened": false,
+        "temperature": 1.0
+      },
+      "metrics": {
+        "completion": {
+          "rows": 512,
+          "map10": 0.09873589409722222,
+          "ndcg10": 0.13547489588853254,
+          "recall10": 0.255859375,
+          "expected_effective_reward": 0.009952297383033083,
+          "supported_conditional_raw_reward": 0.42001186904392834,
+          "supported_probability_denominator": 504.9254800769734,
+          "supported_top10_raw_reward": 0.42036460654337493,
+          "supported_top10_denominator": 5049,
+          "unsupported_mass": 0.013817421724661456,
+          "exact_KL": 0.026115598434196165,
+          "entropy": 5.637380402821732,
+          "top1_max_share": 0.265625,
+          "top10_HHI": 0.04067199707031249,
+          "effective_catalog": 24.586941188829034,
+          "states_without_support": 0
+        },
+        "residual": {
+          "rows": 512,
+          "map10": 0.09873589409722222,
+          "ndcg10": 0.13547489588853254,
+          "recall10": 0.255859375,
+          "expected_effective_reward": 0.010820835135710567,
+          "supported_conditional_raw_reward": -0.04461849664414838,
+          "supported_probability_denominator": 504.9254800769734,
+          "supported_top10_raw_reward": -0.019684973016163544,
+          "supported_top10_denominator": 5049,
+          "unsupported_mass": 0.013817421724661456,
+          "exact_KL": 0.026115598434196165,
+          "entropy": 5.637380402821732,
+          "top1_max_share": 0.265625,
+          "top10_HHI": 0.04067199707031249,
+          "effective_catalog": 24.586941188829034,
+          "states_without_support": 0
+        }
+      }
+    }
+  },
+  "update0_actor_reference_exact": true,
+  "update0_cached_scores_exact": true,
+  "update0_top10_exact": true,
+  "update0_max_abs_error": 0.0,
+  "fallback_pairs": 4187,
+  "optimizer_created": false,
+  "learning_updates": 0,
+  "provider_opened": false,
+  "GPT_opened": false,
+  "RM_opened": false,
+  "final_test_reads": 0,
+  "raw_feature_calls": 0,
+  "KL_definition": "mean_all512 sum_all1024 pi*(log(pi)-log(C)), temperature=1",
+  "support_definition": "unchanged frozen RM support; unsupported advantage=0; all1024 normalized"
+}

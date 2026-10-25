@@ -1,0 +1,51 @@
+{
+  "contract": "kion-native-figure-render-v1",
+  "state": "completed",
+  "stage": "rollout",
+  "rows": 16,
+  "row_unit": "contexts",
+  "unique_users": null,
+  "output": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures/rollout",
+  "data": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/rollout-summary-r1/rollout-summary.json",
+    "sha256": "5c2cfc841c643258716862dffc7885566d682dfa94f95cc4578324ac05dbecba",
+    "bytes": 215401
+  },
+  "plot_module": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_rollout.py",
+    "sha256": "7e5b32057f6eb45aedb8ae3784dcf8660b9f28bc94e7fc7fa95e8e1b14573255",
+    "bytes": 16727
+  },
+  "dependencies": [],
+  "title_enrichment": {
+    "enabled": false,
+    "items": null,
+    "requested_count": 0,
+    "found_title_count": 0,
+    "labels": [],
+    "canonical_sha256": "901555cba792b960de672d03da0dc30606f7c3bcac4cd8aeee65f89955d743a8"
+  },
+  "aggregate_canonical_sha256": "ecbd5d86e4db5b5a0c6766a082aad3a57700df5a4c63598833efec69475db4bc",
+  "source": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/render_figures.py",
+    "sha256": "a5ec1715c5d3adc657447d6692865bafb607ee0cf822cd7df7c472c826138cd1"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "matplotlib": "3.11.2"
+  },
+  "figures_index": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures/rollout/figures.json",
+    "sha256": "efeb432d6689ed344035d1987dc77b9198551a211330020421c5a589b64c5eca",
+    "bytes": 8278
+  },
+  "figure_count": 2,
+  "requires_visual_QA": true,
+  "position_count": 16,
+  "trajectory_count": 192,
+  "labels_artifact": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures/rollout/labels.json",
+    "sha256": "717dee62f0a1dd190562d57dd1b64d0b86f144664b44b72c1b4a0774a9efe596",
+    "bytes": 683
+  }
+}

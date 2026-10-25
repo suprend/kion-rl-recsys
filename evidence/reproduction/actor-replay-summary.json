@@ -1,0 +1,424 @@
+{
+  "contract": "kion-portable-inference-v1",
+  "state": "completed",
+  "tier": "frozen-encoder",
+  "rows": 4,
+  "candidate_width": 1024,
+  "device": "cuda",
+  "precision": "cuda-fp16",
+  "oracle_mode": "exact",
+  "oracle_passed": true,
+  "parity": {
+    "encoded": {
+      "passed": true,
+      "values_identical": true,
+      "maximum_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "gate": "exact-values"
+    },
+    "base_logits": {
+      "passed": true,
+      "values_identical": true,
+      "maximum_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "gate": "exact-values"
+    },
+    "C": {
+      "passed": true,
+      "scores_identical": true,
+      "top10_identical": true,
+      "maximum_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "gate": "exact-values"
+    },
+    "RL-completion": {
+      "passed": true,
+      "scores_identical": true,
+      "top10_identical": true,
+      "maximum_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "gate": "exact-values"
+    },
+    "RL-residual": {
+      "passed": true,
+      "scores_identical": true,
+      "top10_identical": true,
+      "maximum_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "gate": "exact-values"
+    }
+  },
+  "arms": {
+    "C": {
+      "rows": 4,
+      "mean_KL_to_recomputed_C": 0.0,
+      "mean_entropy": 6.086494052212435,
+      "top1_max_share": 0.25,
+      "top10_HHI": 0.058750000000000004,
+      "effective_catalog": 17.02127659574468,
+      "ranking_tie_break": "score-desc/rawID-asc",
+      "label_metrics_available": false,
+      "top10_tokens": [
+        [
+          11349,
+          9064,
+          7295,
+          3868,
+          5070,
+          135,
+          9312,
+          4197,
+          5759,
+          7264
+        ],
+        [
+          14267,
+          9064,
+          95,
+          9713,
+          3868,
+          1299,
+          12920,
+          11044,
+          11349,
+          8445
+        ],
+        [
+          9713,
+          9064,
+          11349,
+          7295,
+          3868,
+          12920,
+          13577,
+          15139,
+          7264,
+          5733
+        ],
+        [
+          9064,
+          12920,
+          9713,
+          14267,
+          3480,
+          3868,
+          11044,
+          7264,
+          8297,
+          7052
+        ]
+      ],
+      "top10_columns": [
+        [
+          1,
+          3,
+          162,
+          36,
+          514,
+          68,
+          27,
+          0,
+          33,
+          512
+        ],
+        [
+          0,
+          2,
+          19,
+          1,
+          11,
+          63,
+          7,
+          513,
+          6,
+          26
+        ],
+        [
+          0,
+          1,
+          5,
+          99,
+          16,
+          7,
+          1009,
+          49,
+          512,
+          10
+        ],
+        [
+          0,
+          1,
+          5,
+          2,
+          4,
+          61,
+          513,
+          512,
+          957,
+          48
+        ]
+      ]
+    },
+    "RL-completion": {
+      "rows": 4,
+      "mean_KL_to_recomputed_C": 0.02726034672688797,
+      "mean_entropy": 6.029986743245301,
+      "top1_max_share": 0.5,
+      "top10_HHI": 0.06125000000000001,
+      "effective_catalog": 16.326530612244895,
+      "ranking_tie_break": "score-desc/rawID-asc",
+      "label_metrics_available": false,
+      "top10_tokens": [
+        [
+          9064,
+          11349,
+          7295,
+          135,
+          3868,
+          5070,
+          4197,
+          9312,
+          3480,
+          7264
+        ],
+        [
+          14267,
+          9064,
+          9713,
+          95,
+          12920,
+          3868,
+          3480,
+          1299,
+          5342,
+          135
+        ],
+        [
+          9713,
+          9064,
+          12920,
+          7295,
+          13577,
+          3868,
+          3480,
+          11349,
+          5733,
+          5070
+        ],
+        [
+          9064,
+          12920,
+          14267,
+          9713,
+          3480,
+          7052,
+          8297,
+          3868,
+          11081,
+          2799
+        ]
+      ],
+      "top10_columns": [
+        [
+          3,
+          1,
+          162,
+          68,
+          36,
+          514,
+          0,
+          27,
+          13,
+          512
+        ],
+        [
+          0,
+          2,
+          1,
+          19,
+          7,
+          11,
+          3,
+          63,
+          18,
+          61
+        ],
+        [
+          0,
+          1,
+          7,
+          99,
+          1009,
+          16,
+          4,
+          5,
+          10,
+          514
+        ],
+        [
+          0,
+          1,
+          2,
+          5,
+          4,
+          48,
+          957,
+          61,
+          6,
+          11
+        ]
+      ]
+    },
+    "RL-residual": {
+      "rows": 4,
+      "mean_KL_to_recomputed_C": 0.004884099827899046,
+      "mean_entropy": 6.029125633359769,
+      "top1_max_share": 0.25,
+      "top10_HHI": 0.061250000000000006,
+      "effective_catalog": 16.326530612244895,
+      "ranking_tie_break": "score-desc/rawID-asc",
+      "label_metrics_available": false,
+      "top10_tokens": [
+        [
+          11349,
+          9064,
+          3868,
+          7295,
+          5070,
+          9312,
+          135,
+          4197,
+          5759,
+          7264
+        ],
+        [
+          14267,
+          9064,
+          95,
+          9713,
+          3868,
+          1299,
+          11044,
+          12920,
+          11349,
+          8445
+        ],
+        [
+          9713,
+          9064,
+          11349,
+          7295,
+          12920,
+          3868,
+          13577,
+          15139,
+          7264,
+          11044
+        ],
+        [
+          9064,
+          12920,
+          9713,
+          14267,
+          11044,
+          3868,
+          7264,
+          3480,
+          7052,
+          8297
+        ]
+      ],
+      "top10_columns": [
+        [
+          1,
+          3,
+          36,
+          162,
+          514,
+          27,
+          68,
+          0,
+          33,
+          512
+        ],
+        [
+          0,
+          2,
+          19,
+          1,
+          11,
+          63,
+          513,
+          7,
+          6,
+          26
+        ],
+        [
+          0,
+          1,
+          5,
+          99,
+          7,
+          16,
+          1009,
+          49,
+          512,
+          513
+        ],
+        [
+          0,
+          1,
+          5,
+          2,
+          513,
+          61,
+          512,
+          4,
+          48,
+          957
+        ]
+      ]
+    }
+  },
+  "encoder": {
+    "contract": "kion-frozen-e2-prefix-forward-v1",
+    "config": {
+      "vocab_size": 15418,
+      "context_length": 64,
+      "hidden_size": 256,
+      "layers": 4,
+      "heads": 4,
+      "user_feature_dim": 3252
+    },
+    "producer_batch_size": 16,
+    "row_slots": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "trimmed_context_width": 23,
+    "full_projection_shape": [
+      16,
+      15418
+    ],
+    "device": "cuda",
+    "precision": "cuda-fp16",
+    "parameter_dtype": "float32",
+    "table_dtype": "float32",
+    "transformers_version": "4.55.4",
+    "torch_version": "2.8.0+cu126",
+    "numpy_version": "2.2.6",
+    "attention_implementation": "sdpa",
+    "optimizer_created": false,
+    "optimizer_updates": 0,
+    "candidate_table_rebuilt": false,
+    "source": "frozen cached table + frozen encoder + transformed historical inputs with source user IDs excluded; anonymity is not established"
+  },
+  "raw_features_recomputed": false,
+  "candidate_pool_rebuilt": false,
+  "RM_recomputed": false,
+  "training_updates": 0,
+  "optimizer_created": false,
+  "scope": "bounded transformed model-input fixture with source user IDs omitted; not a full-cohort or raw-data rerun"
+}

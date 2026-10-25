@@ -1,0 +1,251 @@
+{
+  "contract": "kion-submission-independent-pdf-visual-final-v1",
+  "reviewer": "final25_visual_audit",
+  "review_date": "2026-10-25",
+  "state": "pass",
+  "base_path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1",
+  "pdf": {
+    "file": "reports/REPORT.pdf",
+    "sha256": "e26e476feac5b4614ff3bc726f5a301f15fb1cb845361871d186928c270a63b5",
+    "bytes": 1675410,
+    "page_count": 16
+  },
+  "source_markdown": {
+    "file": "reports/REPORT.md",
+    "sha256": "b299b49e09ba574ec346750e4b62c3df06a74d9f03314197172d134e5ae82b21"
+  },
+  "render": {
+    "pages_directory": "research/pdf-pages-r2",
+    "dpi": 115,
+    "renderer": "Poppler, run by root; independent reviewer did not render",
+    "root_receipt": "review/root-pdf-render-r2.json",
+    "root_receipt_poppler_exit_code": 0,
+    "known_nonfatal_warning_count": 3,
+    "known_nonfatal_warnings": "Root receipt records optional external nameToUnicode map warnings for Bulgarian/Greek/Thai under a Cyrillic username path. They are acknowledged, not called zero warnings. This reviewer did not rerun Poppler; actual visible document glyphs were checked separately."
+  },
+  "inspection": {
+    "all_initial_r1_pages_personally_viewed": true,
+    "initial_r1_directory": "research/pdf-pages-r1",
+    "initial_r1_pdf_sha256": "282aeaafe27ebef79b1cbc27d9d582e5bdf99af41d53d8b7b6ec8823c8958924",
+    "final_changed_pages_personally_reopened": [
+      11,
+      13
+    ],
+    "final_unchanged_pages_verified_by_sha256": 14,
+    "accepted_final_pages": 16,
+    "table_count_in_source": 18,
+    "embedded_figures_checked": 5,
+    "checks": [
+      "Cyrillic, Latin, math symbols, arrows and visible numbers: no missing glyph boxes or garbled text.",
+      "Table cell wrapping, column alignment, row boundaries and repeated headers: clear.",
+      "Five figure embeds: main labels/values, legends, axes and captions readable, no clipping or collisions.",
+      "Body/figure captions/footer/page-number separation: clear on all16 pages.",
+      "Internal page breaks: normal paragraph/table continuations; repeated table headers preserved.",
+      "Final canonical PDF and source Markdown SHA256 independently checked; all16 final page hashes bound below."
+    ]
+  },
+  "acceptance": {
+    "clean_visual_pass": true,
+    "blocker_count": 0,
+    "unresolved_findings": [],
+    "basis": "All16 actual r1 pages were personally inspected. Only final pages11/13 differ; both actual r2 pages were reopened and their header-code contrast fix verified. The other14 final PNGs match the personally inspected r1 bytes exactly."
+  },
+  "resolved_findings": [
+    {
+      "id": "PDF-HDR-CODE-01",
+      "pages": [
+        11,
+        13
+      ],
+      "location": "Page11 section8.2 centered-return headers; page13 example sequence header",
+      "initial_defect": "Inline-code G_comp/G_res inherited dark body foreground over dark blue header and lost contrast.",
+      "final_result": "Resolved: white code foreground is readable; no other layout change or new overlap observed."
+    }
+  ],
+  "limits": [
+    "Visual acceptance covers this PDF and the bound rendered-page bytes, not independent scientific validation or full model replay.",
+    "Dense figure fine print is small at page-fit scale. Main plot values, labels and external page captions remain readable; the report provides separate PNG/SVG figure links for full-detail inspection.",
+    "Three known nonfatal Poppler external-map warnings remain recorded; acceptance does not claim warning-free rendering.",
+    "This reviewer performed no PDF edit, creation, rendering, ML, numerical replay, publication or job launch."
+  ],
+  "publication": "not-authorized; not-performed",
+  "pages": [
+    {
+      "page": 1,
+      "file": "research/pdf-pages-r2/page-01.png",
+      "sha256": "436c8329d9e309d2b6090a99e1cdcfdb6af04471fc665e9f95899dc19f5e9336",
+      "bytes": 368530,
+      "r1_sha256": "436c8329d9e309d2b6090a99e1cdcfdb6af04471fc665e9f95899dc19f5e9336",
+      "identical_to_personally_viewed_r1": true,
+      "final_actual_page_reopened": false,
+      "result": "pass",
+      "notes": "Title, subtitle, summary, numbered questions and symbols readable; Cyrillic, arrows and beta visible. Body ends above footer; paragraph continues normally to page2."
+    },
+    {
+      "page": 2,
+      "file": "research/pdf-pages-r2/page-02.png",
+      "sha256": "ecf5a1311e1a0d35f10fb782d3c890a982385f283fd3ac67f469f2a67a6a2c02",
+      "bytes": 292942,
+      "r1_sha256": "ecf5a1311e1a0d35f10fb782d3c890a982385f283fd3ac67f469f2a67a6a2c02",
+      "identical_to_personally_viewed_r1": true,
+      "final_actual_page_reopened": false,
+      "result": "pass",
+      "notes": "Historical EDA table and cohort/volume table readable; long table cells wrap within columns. Volume table continues with repeated header on page3."
+    },
+    {
+      "page": 3,
+      "file": "research/pdf-pages-r2/page-03.png",
+      "sha256": "84a549c8bef4997e4184ac8b00f23b22033061152f9f6e7debb4f84557c28c39",
+      "bytes": 353811,
+      "r1_sha256": "84a549c8bef4997e4184ac8b00f23b22033061152f9f6e7debb4f84557c28c39",
+      "identical_to_personally_viewed_r1": true,
+      "final_actual_page_reopened": false,
+      "result": "pass",
+      "notes": "Repeated volume-table header and remaining rows clean. Model/raw-family table fits. Cyrillic, raw-feature names, interval brackets and schema hash readable, no footer collision."
+    },
+    {
+      "page": 4,
+      "file": "research/pdf-pages-r2/page-04.png",
+      "sha256": "40190de570f00dc188ea8652e20067b3c542c66b6bca405578f16ea436369771",
+      "bytes": 346244,
+      "r1_sha256": "40190de570f00dc188ea8652e20067b3c542c66b6bca405578f16ea436369771",
+      "identical_to_personally_viewed_r1": true,
+      "final_actual_page_reopened": false,
+      "result": "pass",
+      "notes": "Protocol prose, supervised metrics and RM-quality tables fit; numeric columns aligned, arrows and R-squared glyph visible. No clipped table rows."
+    },
+    {
+      "page": 5,
+      "file": "research/pdf-pages-r2/page-05.png",
+      "sha256": "81ced25455a25ed178504fb281b26afad364dc440a0ae46f726abb23cc60137c",
+      "bytes": 362611,
+      "r1_sha256": "81ced25455a25ed178504fb281b26afad364dc440a0ae46f726abb23cc60137c",
+      "identical_to_personally_viewed_r1": true,
+      "final_actual_page_reopened": false,
+      "result": "pass",
+      "notes": "RM support prose and shaded objective/formula blocks readable; sums, pi/theta/beta and minus glyphs visible. No boxes, overlaps or cropped formula lines."
+    },
+    {
+      "page": 6,
+      "file": "research/pdf-pages-r2/page-06.png",
+      "sha256": "68806db4b9fc2b8b6c51d76087817b992662022334008c84fa30bb811ccdc144",
+      "bytes": 302338,
+      "r1_sha256": "68806db4b9fc2b8b6c51d76087817b992662022334008c84fa30bb811ccdc144",
+      "identical_to_personally_viewed_r1": true,
+      "final_actual_page_reopened": false,
+      "result": "pass",
+      "notes": "Checkpoint table and figure1 fit. Lines, annotations, threshold and legend are distinct; figure caption stays with figure. Footer clear."
+    },
+    {
+      "page": 7,
+      "file": "research/pdf-pages-r2/page-07.png",
+      "sha256": "05effde0329784274dd526fa2171548eaf0522a8a51e049c9ddd62e1a94b3520",
+      "bytes": 279059,
+      "r1_sha256": "05effde0329784274dd526fa2171548eaf0522a8a51e049c9ddd62e1a94b3520",
+      "identical_to_personally_viewed_r1": true,
+      "final_actual_page_reopened": false,
+      "result": "pass",
+      "notes": "Utility-components table and six-panel figure2 fit. Main numerical labels and policy labels readable, no plot-label collisions. Caption and section6.4 heading readable."
+    },
+    {
+      "page": 8,
+      "file": "research/pdf-pages-r2/page-08.png",
+      "sha256": "484ec900d2dc348cd12afba4d2165a282d955354a33cfed65dfda1be6488099e",
+      "bytes": 271766,
+      "r1_sha256": "484ec900d2dc348cd12afba4d2165a282d955354a33cfed65dfda1be6488099e",
+      "identical_to_personally_viewed_r1": true,
+      "final_actual_page_reopened": false,
+      "result": "pass",
+      "notes": "Original full4096 table and exposure figure3 fit. Curves/bars, raw-ID/movie labels and legends retain their layout; figure caption separates query/equal-user and historical residual scope. Dense fine print is small at page fit."
+    },
+    {
+      "page": 9,
+      "file": "research/pdf-pages-r2/page-09.png",
+      "sha256": "9ba536789a3b9185b4d5f6addb119332e61340c52d60653b2499d0df6ee01411",
+      "bytes": 303362,
+      "r1_sha256": "9ba536789a3b9185b4d5f6addb119332e61340c52d60653b2499d0df6ee01411",
+      "identical_to_personally_viewed_r1": true,
+      "final_actual_page_reopened": false,
+      "result": "pass",
+      "notes": "Pilot, KL-ratio and seven-head metric tables readable; long headers and role text wrap inside cells. Section7.2 header has following content, footer clear."
+    },
+    {
+      "page": 10,
+      "file": "research/pdf-pages-r2/page-10.png",
+      "sha256": "6db40f6a9125bb2c24c66ece191fdb126c7bd6bbf026fc3d4fd4a41b272eec88",
+      "bytes": 306169,
+      "r1_sha256": "6db40f6a9125bb2c24c66ece191fdb126c7bd6bbf026fc3d4fd4a41b272eec88",
+      "identical_to_personally_viewed_r1": true,
+      "final_actual_page_reopened": false,
+      "result": "pass",
+      "notes": "Conditional-CI table and matched-KL figure4 clean. Calibration/prospective roles, KL-band, three-pair descriptive average and percentage-point axis are readable. Screen-diagnostics table continues to page11 with repeated header."
+    },
+    {
+      "page": 11,
+      "file": "research/pdf-pages-r2/page-11.png",
+      "sha256": "2c94108d7e6f85c3668492a438e970a13f754a85e918fa83a55357000afdd8d8",
+      "bytes": 349378,
+      "r1_sha256": "3e6d3bb2ba41217d12944f8bf78817bd75e545552b6c61bed7106784c7e480f7",
+      "identical_to_personally_viewed_r1": false,
+      "final_actual_page_reopened": true,
+      "result": "pass",
+      "notes": "Final r2 page reopened: inline-code G_comp/G_res in greedy-return table header is now white/readable on blue. Repeated screen-diagnostics header, prose, six table rows and footer retain layout, no regression."
+    },
+    {
+      "page": 12,
+      "file": "research/pdf-pages-r2/page-12.png",
+      "sha256": "ac38affcdddfe09b0963db6099f7a98ded7338de27bc367ce08909f95640748b",
+      "bytes": 253103,
+      "r1_sha256": "ac38affcdddfe09b0963db6099f7a98ded7338de27bc367ce08909f95640748b",
+      "identical_to_personally_viewed_r1": true,
+      "final_actual_page_reopened": false,
+      "result": "pass",
+      "notes": "Four-by-three rollout figure5 fits; row/mode/mask labels, percent/nats axes, step labels and three-arm legend readable. Caption explains descriptive context and no population CI. Section8.3 heading remains with introductory paragraph."
+    },
+    {
+      "page": 13,
+      "file": "research/pdf-pages-r2/page-13.png",
+      "sha256": "31e626c6540d1f122e965f6ae3514c33c875101110c40ea58aed107e101155c1",
+      "bytes": 330245,
+      "r1_sha256": "8599e97223c9b1f2592e5b55fe94d205d7a240f0eaf3882955e43c187e4eec6e",
+      "identical_to_personally_viewed_r1": false,
+      "final_actual_page_reopened": true,
+      "result": "pass",
+      "notes": "Final r2 page reopened: G_comp in example-table header is now white/readable. Long Russian movie sequences wrap within cells with arrows and return values intact. Sections9/10 and footer remain clear."
+    },
+    {
+      "page": 14,
+      "file": "research/pdf-pages-r2/page-14.png",
+      "sha256": "6c62b2cf48e8804c50c2dd6c6e67ede79be5aa21d9a9ab86f9bae175210fd40f",
+      "bytes": 354390,
+      "r1_sha256": "6c62b2cf48e8804c50c2dd6c6e67ede79be5aa21d9a9ab86f9bae175210fd40f",
+      "identical_to_personally_viewed_r1": true,
+      "final_actual_page_reopened": false,
+      "result": "pass",
+      "notes": "Reproduction-level table and actor/RM replay paragraphs readable; long cells wrap within margins. No clipped rows or link/footnote overlap, footer clear."
+    },
+    {
+      "page": 15,
+      "file": "research/pdf-pages-r2/page-15.png",
+      "sha256": "19d5b890cf20a71be80f394dc3f17323153c15620e3ebfe5c7ee8afe8d46fd55",
+      "bytes": 336862,
+      "r1_sha256": "19d5b890cf20a71be80f394dc3f17323153c15620e3ebfe5c7ee8afe8d46fd55",
+      "identical_to_personally_viewed_r1": true,
+      "final_actual_page_reopened": false,
+      "result": "pass",
+      "notes": "Portability prose, assignment-coverage table and figure-navigation introduction readable. Tables remain inside page; heading and following explanatory paragraph stay together."
+    },
+    {
+      "page": 16,
+      "file": "research/pdf-pages-r2/page-16.png",
+      "sha256": "8ed44fbb71c08922c34f03276a6c5be1625e4706d77a0d7066be13c010176254",
+      "bytes": 145040,
+      "r1_sha256": "8ed44fbb71c08922c34f03276a6c5be1625e4706d77a0d7066be13c010176254",
+      "identical_to_personally_viewed_r1": true,
+      "final_actual_page_reopened": false,
+      "result": "pass",
+      "notes": "All14 figure-navigation rows and conclusion readable; link text distinct. Footer16/16 fits and page has no accidental spillover or blank extra page."
+    }
+  ],
+  "root_render_receipt_sha256": "c6c6f999e27e7ed58401fed6f1bdc6fd18b008b2010a63f4cc9cdb403b7e8680"
+}

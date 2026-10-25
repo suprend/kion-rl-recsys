@@ -1,0 +1,187 @@
+{
+  "contract": "kion-task2-independent-final-requirements-review-v1",
+  "reviewer": "submit_requirements",
+  "state": "completed",
+  "reviewed_utc": "2026-10-25T08:18:50.4021774Z",
+  "verdict": "pass-with-explicit-scope-boundaries",
+  "material_findings": [],
+  "requirement_content_coverage_passed": true,
+  "practical_bounded_no_training_reproduction_supported": true,
+  "overall_submission_authorized": false,
+  "release_readiness_at_review_time": {
+    "research_requirement_coverage": "passed within explicitly disclosed head-only one-step interpretation",
+    "full_unified_report": "passed; full F study and Z matched-KL/seed follow-up are present in one report",
+    "bounded_actor_and_RM_reproduction": "supported by actual fresh spaced minimal-archive extraction plus successful inference receipts on current Windows runtimes",
+    "PDF_visual_QA": "not assessed by this reviewer; all-page final acceptance remains a separate root gate, including the reported header-contrast repair",
+    "final_delivery_archive": "assembly/CRC/hash/link/fresh-extraction acceptance pending root at this review time; no final ZIP acceptance is inferred from the smaller numerical-check archives",
+    "readiness_rule": "After final PDF and hand-in archive gates pass and current payload pins remain identical to accepted proofs, this review supplies no scientific requirement blocker. It does not authorize upload, publication, form submission, Git commit or push."
+  },
+  "authority": {
+    "current_release": "R/campaign.json; unified current report and practical reproduction; zero new optimizer updates/SFT epochs/RM fits/RL fits",
+    "assignment_url": "https://edu.tbank-online.com/selection/01a10b8d-f3da-73a2-950e-5395aeccdb3d/practice/89603/task/2",
+    "assignment_evidence": "evidence/fullstudy/source-condition.md; coordinator re-read full live task in this current release; this reviewer inspected the included saved capture rather than changing the browser",
+    "requirements_analysis": "research/REQUIREMENTS.md",
+    "important_distinction": "The assignment's scientific/report/code/instructions criteria and the current user's additional practical-release checks are separately identified; optional new research is not imposed as a hidden task requirement."
+  },
+  "reviewed_files": [
+    {"path":"reports/REPORT.md","bytes":68067,"sha256":"b299b49e09ba574ec346750e4b62c3df06a74d9f03314197172d134e5ae82b21"},
+    {"path":"reports/LIMITATIONS.md","bytes":18373,"sha256":"01202596bb0f7584cea95af16c6c65510d6345704a94cb55555d6146b9e5bc12"},
+    {"path":"reproduction/README.md","bytes":18878,"sha256":"071530d377f35f809a7c49ffa6c5f2e5e98bd0c74e8f40adfdeaefbcce05fdd0"},
+    {"path":"reproduction/INPUTS.md","bytes":11781,"sha256":"4e47a8fd8492ec0abfc55a8f1d466997f6279ecdde0716d1be2d47cccf5abdcd"},
+    {"path":"reproduction/ENVIRONMENTS.md","bytes":7503,"sha256":"d5392f1d8ecd90c162ab3089b7b6d9c79e81a5d2ab0fcbcd67551c142a9ff9fa"},
+    {"path":"reproduction/HAND_IN.md","bytes":7641,"sha256":"92a37dbb895562e23c38fe92f4b613feafb9a81bc55a03795167ee7d7df179a0"},
+    {"path":"evidence/reproduction/INDEX.json","bytes":3424,"sha256":"0a478130fa43a8a8b4c1aa9e5480395683dbac0386fcf61166fb3b33d905d3c1"},
+    {"path":"evidence/fullstudy/source-condition.md","bytes":4121,"sha256":"9fba33921f93e3e95ae88a6a0f5d624bb0728a9c671722048e6f145104b71a71"},
+    {"path":"reproduction/runtime-manifest.json","bytes":1744,"sha256":"ba79888e24957517991c338cef6cccc53ee7d4fa5dd4583051e626b930ab068d"},
+    {"path":"reproduction/inputs/manifest.json","bytes":7578,"sha256":"e680dd145b2bfdc812107fb9a257bf16f6d1ef5a53c07845f7dc21838146a52c"},
+    {"path":"reproduction/inputs-rm-r1/manifest.json","bytes":4381,"sha256":"7b3e7dbefde3a6d0e113c0340dbbfc425d223574a7c4cd13db7927fb29b30380"}
+  ],
+  "coverage": [
+    {
+      "id": "T1",
+      "requirement": "GPT-2 causal next-item model using item-ID tokens",
+      "status": "covered",
+      "report_sections": ["2.2","3.1"],
+      "report_lines": [57,76,78,80,82],
+      "evidence": ["evidence/fullstudy/e2-worker-completion.json","evidence/fullstudy/e2-completion.json"],
+      "assessment": "Architecture, vocabulary15418/context64/hidden256/four layers/four heads and feature augmentation are explained. Actual E2 is full3477437 x2, not five completed epochs. Frozen E2 ancestry is separated from smaller head/RL training."
+    },
+    {
+      "id": "T2",
+      "requirement": "History-aware reward model and held-out observed quality",
+      "status": "covered",
+      "report_sections": ["4","4.1","4.2"],
+      "report_lines": [118,120,124,130,132,136,138,140],
+      "evidence": ["evidence/fullstudy/rm-evaluation-metrics.json","evidence/fullstudy/rm-evaluation-manifest.json","evidence/fullstudy/bridge-screen-summary.json"],
+      "assessment": "RM-r2 schema/history, calibration, observed20k quality and baselines/support/cold are present. It is a continuous watched_pct/100 predictor; counterfactual accuracy and ideal calibration are not claimed. A new RM fit is unnecessary and forbidden in this release."
+    },
+    {
+      "id": "T3",
+      "requirement": "Actual chosen RL direction toward expected reward",
+      "status": "covered-under-explicit-methodological-interpretation",
+      "report_sections": ["5","6.1","7.1","12"],
+      "report_lines": [154,157,159,163,165,169,186,248,404,411],
+      "evidence": ["evidence/fullstudy/rl-completion-training.json","evidence/fullstudy/rl-residual-training.json","evidence/matched-kl/fit-ledger.json"],
+      "assessment": "Exact expected utility minus forward KL, head-only original-C optimization and actual1000 updates per final arm are explicit. No PPO/critic/backbone fine-tuning/multi-step training is claimed. Sufficiency of head-only is labelled an interpretation rather than direct assignment wording."
+    },
+    {
+      "id": "T4",
+      "requirement": "Reward/behavior/relevance/concentration analysis",
+      "status": "covered",
+      "report_sections": ["6","7.2","7.3","10"],
+      "report_lines": [179,194,202,219,225,227,264,276,293,302,361,363],
+      "evidence": ["evidence/fullstudy/analysis-screen.json","evidence/fullstudy/analysis-full.json","evidence/matched-kl/interpretation/full-r1/analysis.json","evidence/matched-kl/interpretation/screen-r1/analysis.json"],
+      "assessment": "MAP/NDCG/Recall, proxy and multiple exposure measures are present. Screen256 utility is not transferred to full4096. Lower top1 share is not mislabelled as universal diversity/personalization improvement. Negative and uncertain RL results are valid results."
+    },
+    {
+      "id": "T5",
+      "requirement": "Possible user-return reward and offline/online limits",
+      "status": "covered-as-analysis",
+      "report_sections": ["9"],
+      "report_lines": [353,355,357],
+      "assessment": "Return windows, session/unit, delayed outcomes, censoring, exposure/overlap and online/off-policy requirements are explained. No observed retention improvement or online result is claimed; those are not mandatory to run for the inspected assignment."
+    },
+    {
+      "id": "T6",
+      "requirement": "Five successive recommendations with context append and synthetic-vs-real analysis",
+      "status": "covered-by-actual-generation",
+      "report_sections": ["8.1","8.2","8.3"],
+      "report_lines": [310,312,314,318,327,329,339,349],
+      "evidence": ["evidence/fullstudy/rollout-summary.json","evidence/fullstudy/rollout-native-receipt.json","evidence/fullstudy/rollout-analysis-receipt.json"],
+      "assessment": "Actual192 trajectories/960 steps on16 contexts are covered. Original beta0.5 heads, fixed pool, live GPT prefix, fixed-s0 RM, current-prefix conditional KL and mechanical no-repeat mask are explicit. It is not relabelled a matched-KL rollout or trained multi-step user environment."
+    },
+    {
+      "id": "T7",
+      "requirement": "Different reward functions and reward/relevance tradeoff",
+      "status": "covered",
+      "report_sections": ["5","6.2","6.3","7"],
+      "report_lines": [147,148,149,152,196,205,239,256,274,278,304],
+      "evidence": ["evidence/fullstudy/residual-prefit.json","evidence/matched-kl/protocols/matching.json","evidence/matched-kl/protocols/frozen-beta.json"],
+      "assessment": "Completion and residual minus frozen smoothed item-completion prior are genuinely distinct utilities. Same-beta unequal-KL history and completed calibrated train-KL follow-up are separate. Three positive paired point differences with CI including zero are not presented as proof of superiority."
+    },
+    {
+      "id": "T8",
+      "requirement": "Temporal/no-target-leak protocol and honest inferential boundaries",
+      "status": "covered-with-material-boundaries-disclosed",
+      "report_sections": ["2.2","3.2","7.1","7.2","10"],
+      "report_lines": [53,68,70,96,98,239,256,258,289,365],
+      "limitations_lines": [9,10,11,12,13,14,15,55,57,59],
+      "assessment": "Strict-past origins and no evaluation target insertion are explained, unknown/off-pool remain misses. Reused development, previously opened test, retrospective metadata/aggregated completion and frozen E2/calibrator chronology prevent claims of pristine test, strict contemporaneous replay or causal effects. These disclosures are present rather than hidden by a no-leak slogan."
+    },
+    {
+      "id": "T9",
+      "requirement": "Readable full current report, implementation and reproduction instructions",
+      "status": "content-covered;final-packaging-QA-separate",
+      "report_sections": ["1","11","12"],
+      "report_lines": [15,28,369,371,383,385,387,391,393,409],
+      "documents": ["reproduction/README.md","reproduction/INPUTS.md","reproduction/ENVIRONMENTS.md","reproduction/HAND_IN.md"],
+      "assessment": "A unified main narrative contains baseline/RM/H1/two utilities/matchedKL3pairs/rollout/retention, without essential content being delegated to a nested old ZIP. Portable commands, real included fixtures, source/input manifests, environment split, external/raw recipe availability and actual bounded inference status are disclosed. Final PDF/hand-in ZIP acceptance is not asserted prematurely."
+    }
+  ],
+  "bounded_reproduction_evidence": {
+    "all_12_indexed_compact_proof_files_size_and_sha256_match": true,
+    "actor": {
+      "summary": {"path":"evidence/reproduction/actor-replay-summary.json","bytes":7759,"sha256":"e2b0b173f43b3d8c09094d8dcc721186e2d94fd7e2ea6363d51144bcb8f4a15e"},
+      "runtime_receipt": {"path":"evidence/reproduction/actor-replay-receipt.json","bytes":3749,"sha256":"0859582ae1d2c8badf4a30d21d65d6a3ccdde6c87f9c52ed90dbe96a5f53769a"},
+      "native_receipt": {"path":"evidence/reproduction/actor-replay-native.json","bytes":1172,"sha256":"9b97b54fa6136b06cf52160a6b9b102b914a557256c582cf88607232b3a0b9ce"},
+      "state": "completed/succeeded; exit0; cleanup_quiescent true",
+      "seconds": 9.781000000075437,
+      "actual_scope": "frozen GPT B16 producer batch, four selected slots x1024 candidates, C and original completion/residual beta0.5 heads, CUDA FP16 exact q/base/scores/top10",
+      "maximum_absolute_errors": 0,
+      "training_updates": 0,
+      "optimizer_created": false
+    },
+    "RM": {
+      "summary": {"path":"evidence/reproduction/rm-replay-summary.json","bytes":1717,"sha256":"1fc306457c50b94c58b91a22eeacd3947ed380e79fb1351b0d794b787bcf5f43"},
+      "runtime_receipt": {"path":"evidence/reproduction/rm-replay-receipt.json","bytes":3533,"sha256":"5f24a985e2e0a09f9193cdb4ab6021af8b46868551ff1c12e3e09b8a2ca9d6fb"},
+      "native_receipt": {"path":"evidence/reproduction/rm-replay-native.json","bytes":1159,"sha256":"edde41ca8264f7778ed00a1c20443aeb4ed42f3ce6039406b408fc99b003233d"},
+      "state": "completed/succeeded; exit0; cleanup_quiescent true",
+      "seconds": 4.407000000006519,
+      "actual_scope": "actual frozen CatBoost CBM prediction/calibration in separate CPU process; four contexts x1024 candidate pairs; float64 error0; historical float32 reward/support exact; supported3976/4096",
+      "training_updates": 0,
+      "RM_fits": 0,
+      "optimizer_created": false
+    },
+    "fresh_extraction": "Both compact extraction proofs bind full runtime/fixture files and spaced fresh paths. They establish checked-byte extraction before genuine model inference, not a final hand-in ZIP pass.",
+    "supported_claim": "Real bounded frozen-model predictions are practically reproducible from included model inputs/weights on the checked current runtimes. This is stronger than plotting aggregates, and narrower than full raw-to-feature/GPT/RM/cohort replay."
+  },
+  "material_boundaries_preserved": [
+    "Head-only one-step sufficiency is an explicit methodological interpretation; not all GPT weights were optimized and no PPO/multi-step-training claim is made.",
+    "Retrospective clocks/metadata, aggregated last-watch/completion and trained calibrator/E2 chronology limit temporal interpretation; strict contemporaneous replay is not claimed.",
+    "Development was reused and test previously opened; no untouched holdout or population training-seed inference is claimed.",
+    "Seed24 is calibration and seeds25/26 prospective; matched train endpoint KL controls a scalar rather than causal reward semantics or every optimization path.",
+    "No online A/B, causal completion/personalization/retention benefit, randomized exposure or counterfactual observed outcomes is claimed.",
+    "Bounded fixtures omit observed target/reward labels; they do not recompute full4096 MAP/CI, six matched-KL heads, or five-step rollout.",
+    "Fixtures include transformed item-token histories/user feature vectors; removing source user IDs is not asserted to establish anonymity. Publication rights or submission are not inferred.",
+    "Current Windows environments existed already; no fresh dependency install, new-machine/OS/backend validation, actor CPU FP32 pass or independent cached-features command execution is claimed.",
+    "Cached features/pool/item table are not rebuilt from raw. Full raw recipe has explicit unavailable external/dataset/model prerequisites and is not called a self-contained fresh training replay.",
+    "PDF appearance and final archive are separate release gates; no upload/publish/form-submit/commit/push authority arises from this review."
+  ],
+  "not_required_for_this_release": [
+    "new training or optimizer updates",
+    "five completed SFT epochs",
+    "unfreezing the GPT backbone",
+    "new RM fit or calibration",
+    "new untouched test/holdout cohort",
+    "new five-step RL training or matched-KL rollout",
+    "positive RL improvement",
+    "online retention experiment",
+    "fresh full-cohort/raw-data retraining to claim the explicitly bounded inference tier"
+  ],
+  "review_method_and_limits": {
+    "executed": [
+      "Read exact current report, limitations, four reproduction docs, included task source-condition capture and compact replay/extraction/native receipts.",
+      "Compared final content against T1-T9 and prior independently inspected actual F/Z completion evidence; stale planning gaps were not treated as requirements.",
+      "Recomputed sizes/SHA256 of all12 indexed compact reproduction proofs and reviewed text/manifest pins using PowerShell; every indexed compact proof matched.",
+      "Checked report for TODO/TBD/FIXME markers; none present.",
+      "Rechecked exact reviewed report/docs/manifests hashes before finalizing this JSON."
+    ],
+    "not_executed": [
+      "No ML array/checkpoint/raw-data reads, numerical imports, inference, training, bootstrap resampling, downloads, network/browser operations, PDF visual inspection or final archive creation.",
+      "No independent numerical claims beyond inspecting completed receipts and verifying compact file identity; broader scientific/source/privacy/delivery reviewers retain their distinct verification scopes."
+    ],
+    "source_edits": 0,
+    "authored_path": "review/requirements-final.json",
+    "freshness": "All reviewed-file hashes must still match before integration; any changed content requires focused re-review."
+  }
+}

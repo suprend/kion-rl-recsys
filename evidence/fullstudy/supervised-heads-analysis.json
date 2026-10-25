@@ -1,0 +1,327 @@
+{
+  "contract": "kion-three-head-262k-paired-user-cluster-analysis-v1",
+  "state": "completed",
+  "primary": "C-B.map10",
+  "exploratory_validation": true,
+  "evaluation": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/evaluation/evaluation.json",
+    "sha256": "ebc6cb8b8eb682298723aba8f1d24a3250c286b20e91c70f51e159e7ba000e56"
+  },
+  "denominator": 4096,
+  "rows": 4096,
+  "unique_users": 4035,
+  "known_targets": 3974,
+  "unknown_target_misses": 122,
+  "candidate_coverage_count": 3358,
+  "offpool_known_misses": 616,
+  "epochs_completed": 3,
+  "steps_per_head": 6144,
+  "rows_per_epoch": 262144,
+  "training_receipt": {
+    "contract": "kion-three-head-262k-head-v1",
+    "bank_manifest_sha256": "7eb271a5c5c44f33c2b22dfe26ce120bbd7016aeeba67b6fef817ad3e183ff5a",
+    "teacher": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft-recovery/run-recovery-r1/worker/model/latest.pt",
+      "sha256": "5e7101857c2dbe100fb4e1587c0369abc95c108303ed149123ee183f62aeac26",
+      "config_path": "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft-recovery/run-recovery-r1/worker/model/config.json",
+      "config_sha256": "e3b4b1730895fceb1b7d4ea6357aea783c046f5e87cacd7d4ff933cf94d45d45"
+    },
+    "feature_schema_sha256": "71d90eee774d30db804d1ab32c4d82995d1320baf26aaf36443a6498fd85fc5d",
+    "source_columns": [
+      "current_detached_gpt_logit",
+      "log1p_strict7d_count"
+    ],
+    "epochs_requested": 3,
+    "epochs_completed": 3,
+    "steps_per_head": 6144,
+    "head_steps": {
+      "A": 6144,
+      "B": 6144,
+      "C": 6144
+    },
+    "rows_per_epoch": 262144,
+    "batch_size": 128,
+    "seed": 20261024,
+    "shuffle": "python-random(seed+zero-based-epoch)",
+    "raw_gather": "ascending-physical-rows-then-inverse-permutation-close-mmap-per-batch-v1",
+    "common_batches": true,
+    "trained_from": "fresh-common-init-final-zero",
+    "status": "completed",
+    "epoch_records": [
+      {
+        "epoch": 1,
+        "shuffle_sha256": "bca13a145e81fc263b169d7b172ddf22b2c1dac958cc911b372b82bddd2c2b30",
+        "rows": 262144,
+        "updates_per_head": 2048,
+        "mean_ce": {
+          "A": 2.710691280197352,
+          "B": 2.6523657351499423,
+          "C": 2.6385504874633625
+        }
+      },
+      {
+        "epoch": 2,
+        "shuffle_sha256": "fa739e7077f1d98023ce4a22b944c54d96d6ba83f7afc5f8da6177675559604c",
+        "rows": 262144,
+        "updates_per_head": 2048,
+        "mean_ce": {
+          "A": 2.6268119632732123,
+          "B": 2.5013171532191336,
+          "C": 2.480870738858357
+        }
+      },
+      {
+        "epoch": 3,
+        "shuffle_sha256": "68d797b88a56d850c99fc06687fdfd02c20b721d8ea71d4ef85f6d63eb7e6009",
+        "rows": 262144,
+        "updates_per_head": 2048,
+        "mean_ce": {
+          "A": 2.583985698991455,
+          "B": 2.462798632797785,
+          "C": 2.435092815780081
+        }
+      }
+    ],
+    "last_batch": {
+      "epoch": 3,
+      "batch": 2048
+    },
+    "last_update": {
+      "A": 6144,
+      "B": 6144,
+      "C": 6144
+    },
+    "elapsed_seconds": 1392.468011100078
+  },
+  "metrics": {
+    "A": {
+      "rows": 4096,
+      "known_targets": 3974,
+      "unknown_target_misses": 122,
+      "candidate_coverage_count": 3358,
+      "candidate_coverage": 0.81982421875,
+      "offpool_known_misses": 616,
+      "map10": 0.08289630223834325,
+      "recall10": 0.188720703125,
+      "ndcg10": 0.1075892042200316
+    },
+    "B": {
+      "rows": 4096,
+      "known_targets": 3974,
+      "unknown_target_misses": 122,
+      "candidate_coverage_count": 3358,
+      "candidate_coverage": 0.81982421875,
+      "offpool_known_misses": 616,
+      "map10": 0.08645843021453373,
+      "recall10": 0.189208984375,
+      "ndcg10": 0.11050034817033791
+    },
+    "C": {
+      "rows": 4096,
+      "known_targets": 3974,
+      "unknown_target_misses": 122,
+      "candidate_coverage_count": 3358,
+      "candidate_coverage": 0.81982421875,
+      "offpool_known_misses": 616,
+      "map10": 0.09686366489955357,
+      "recall10": 0.21240234375,
+      "ndcg10": 0.1239494230603261
+    },
+    "GPT": {
+      "rows": 4096,
+      "known_targets": 3974,
+      "unknown_target_misses": 122,
+      "candidate_coverage_count": 3358,
+      "candidate_coverage": 0.81982421875,
+      "offpool_known_misses": 616,
+      "map10": 0.07231532505580357,
+      "recall10": 0.156982421875,
+      "ndcg10": 0.09230538711428132
+    },
+    "RRF": {
+      "rows": 4096,
+      "known_targets": 3974,
+      "unknown_target_misses": 122,
+      "candidate_coverage_count": 3358,
+      "candidate_coverage": 0.81982421875,
+      "offpool_known_misses": 616,
+      "map10": 0.07931005084325397,
+      "recall10": 0.170654296875,
+      "ndcg10": 0.10078366338990644
+    }
+  },
+  "comparisons": {
+    "C-B": {
+      "map10": {
+        "delta": 0.010405234685019842,
+        "ci95": [
+          0.007584894535241852,
+          0.013383825716186256
+        ]
+      },
+      "recall10": {
+        "delta": 0.023193359375,
+        "ci95": [
+          0.017569224804291923,
+          0.02855782977091251
+        ]
+      },
+      "ndcg10": {
+        "delta": 0.013449074889988196,
+        "ci95": [
+          0.01074899419343236,
+          0.016348850136092635
+        ]
+      }
+    },
+    "B-A": {
+      "map10": {
+        "delta": 0.003562127976190476,
+        "ci95": [
+          0.0012005878695670498,
+          0.005980364023980452
+        ]
+      },
+      "recall10": {
+        "delta": 0.00048828125,
+        "ci95": [
+          -0.005147092067553199,
+          0.006827686307417389
+        ]
+      },
+      "ndcg10": {
+        "delta": 0.0029111439503063117,
+        "ci95": [
+          0.0003724844352469085,
+          0.005694734769713556
+        ]
+      }
+    },
+    "C-A": {
+      "map10": {
+        "delta": 0.01396736266121032,
+        "ci95": [
+          0.01096197466468891,
+          0.017264665129775952
+        ]
+      },
+      "recall10": {
+        "delta": 0.023681640625,
+        "ci95": [
+          0.017118890795660643,
+          0.030784453895607477
+        ]
+      },
+      "ndcg10": {
+        "delta": 0.016360218840294507,
+        "ci95": [
+          0.013174741178856487,
+          0.019860343355088163
+        ]
+      }
+    }
+  },
+  "prior_pilot_reference": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/three-head-pilot-20261024-r1/evaluation/evaluation.json",
+    "sha256": "b2cb46bbffba8cabeff6e7333bd20732da1101f6b226d4af005b8647ddce897c",
+    "rows_per_epoch": 32768,
+    "epochs_completed": 3,
+    "steps_per_head": 768,
+    "metrics": {
+      "A": {
+        "rows": 4096,
+        "known_targets": 3974,
+        "unknown_target_misses": 122,
+        "candidate_coverage_count": 3358,
+        "candidate_coverage": 0.81982421875,
+        "offpool_known_misses": 616,
+        "map10": 0.08037254696800594,
+        "recall10": 0.17822265625,
+        "ndcg10": 0.10325964037990351
+      },
+      "B": {
+        "rows": 4096,
+        "known_targets": 3974,
+        "unknown_target_misses": 122,
+        "candidate_coverage_count": 3358,
+        "candidate_coverage": 0.81982421875,
+        "offpool_known_misses": 616,
+        "map10": 0.08411158001612104,
+        "recall10": 0.187744140625,
+        "ndcg10": 0.10835935009646669
+      },
+      "C": {
+        "rows": 4096,
+        "known_targets": 3974,
+        "unknown_target_misses": 122,
+        "candidate_coverage_count": 3358,
+        "candidate_coverage": 0.81982421875,
+        "offpool_known_misses": 616,
+        "map10": 0.09241245814732142,
+        "recall10": 0.20751953125,
+        "ndcg10": 0.11939194355314027
+      },
+      "GPT": {
+        "rows": 4096,
+        "known_targets": 3974,
+        "unknown_target_misses": 122,
+        "candidate_coverage_count": 3358,
+        "candidate_coverage": 0.81982421875,
+        "offpool_known_misses": 616,
+        "map10": 0.07231532505580357,
+        "recall10": 0.156982421875,
+        "ndcg10": 0.09230538711428132
+      },
+      "RRF": {
+        "rows": 4096,
+        "known_targets": 3974,
+        "unknown_target_misses": 122,
+        "candidate_coverage_count": 3358,
+        "candidate_coverage": 0.81982421875,
+        "offpool_known_misses": 616,
+        "map10": 0.07931005084325397,
+        "recall10": 0.170654296875,
+        "ndcg10": 0.10078366338990644
+      }
+    },
+    "identical_descriptor_arrays": [
+      "row_index",
+      "user_id",
+      "target_token",
+      "known_target",
+      "pool_ids",
+      "catalog_raw_ids",
+      "GPT_scores",
+      "GPT_top10",
+      "RRF_scores",
+      "RRF_top10"
+    ],
+    "comparison": "Descriptive paired same-cohort reference points; no added contrasts or intervals.",
+    "training_order": "Same global row-shuffle policy as the pilot; only physical I/O gathering changes.",
+    "limitation": "One fixed fit at each scale on reused development rows; descriptive comparison only."
+  },
+  "useful_gain_criterion": {
+    "contrast": "C-B.map10",
+    "absolute_margin": 0.002,
+    "rule": "95% lower bound strictly greater than 0.002; boundary is inconclusive",
+    "supported": true,
+    "exploratory": true
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261024,
+    "unit": "user_id",
+    "paired": true,
+    "batch_size": 32,
+    "estimator": "resample unique user clusters with replacement; mean over all rows in sampled clusters",
+    "interval": "percentile 2.5/97.5; no multiple-comparison adjustment"
+  },
+  "limits": [
+    "Same frozen 4096-row development cohort as the prior 32768-row pilot; not a fresh final holdout.",
+    "Scale-versus-prior-pilot comparisons must be paired on these same users/rows; no independent-sample inference.",
+    "Same global row-shuffle policy as the pilot; only physical I/O gathering changes.",
+    "One fixed fit at each training scale; prior-pilot points are descriptive only.",
+    "No final-test read or feature/budget selection from these results.",
+    "Shared raw1068 pass measures experimental throughput, not production latency of A/B."
+  ]
+}

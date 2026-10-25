@@ -1,0 +1,394 @@
+{
+  "contract": "kion-source-freeze-execution-index-v1",
+  "captured_utc": "2026-10-24T22:29:20.179142+00:00",
+  "scope": "Small request/admission/completion metadata only; no payloads reopened. Existing immutable stage metadata retained from earlier capture, final render-r3 status added. As-of source-freeze index, not live status.",
+  "later_receipts": "Actual packaged replay admission/receipts live outside code-manifest to avoid a hash cycle.",
+  "stages": [
+    {
+      "request": "artifacts/task2-kion/c-rl-final-20261025-r1/request-utility-r1.json",
+      "request_sha256": "23b8c5317a8ece311cc2d0f5893a59ddd8cb7e748ae56e6853fc5b4cd9487b62",
+      "operation": "utility-r1",
+      "stage": "reward_probe",
+      "module": "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/reward/utility.py",
+      "function": "run",
+      "admitted_at_capture": true,
+      "stage-completion.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/utility-r1/stage-completion.json",
+        "sha256": "21f526b9a9b5b825c87b6c39cbb4f4ddb796ad0956ad57f9314e1f2cee04350b",
+        "state": "completed",
+        "request_sha256": "23b8c5317a8ece311cc2d0f5893a59ddd8cb7e748ae56e6853fc5b4cd9487b62"
+      },
+      "receipt.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/utility-r1/receipt.json",
+        "sha256": "dc529fd20e41b1e1646930e5277c421b74ad7cdd8c034ca4a3ddbfe66d935a1d",
+        "state": "succeeded",
+        "exit_code": 0,
+        "cleanup_quiescent": true,
+        "elapsed_seconds": 4.358999999938533,
+        "request_sha256": "23b8c5317a8ece311cc2d0f5893a59ddd8cb7e748ae56e6853fc5b4cd9487b62"
+      }
+    },
+    {
+      "request": "artifacts/task2-kion/c-rl-final-20261025-r1/request-residual-fit-r1.json",
+      "request_sha256": "163dd7cf9fb2cb06d449feacf424c55f80d55f3e5f7ddda1c2a80cc132c58b09",
+      "operation": "residual-fit-r1",
+      "stage": "train_rl",
+      "module": "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/policy/residual.py",
+      "function": "train",
+      "admitted_at_capture": true,
+      "stage-completion.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/residual-fit-r1/stage-completion.json",
+        "sha256": "c8ee3e227d0e1e00efed8dd66c638290f1c6f2df3b2bd54261b60d1e51d80825",
+        "state": "completed",
+        "request_sha256": "163dd7cf9fb2cb06d449feacf424c55f80d55f3e5f7ddda1c2a80cc132c58b09"
+      },
+      "receipt.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/residual-fit-r1/receipt.json",
+        "sha256": "86e9b6c990c93f99a7acccf96025bf28fef5cc0552cb466211d2537fb147cbd7",
+        "state": "succeeded",
+        "exit_code": 0,
+        "cleanup_quiescent": true,
+        "elapsed_seconds": 167.31199999991804,
+        "request_sha256": "163dd7cf9fb2cb06d449feacf424c55f80d55f3e5f7ddda1c2a80cc132c58b09"
+      }
+    },
+    {
+      "request": "artifacts/task2-kion/c-rl-final-20261025-r1/request-screen-scientific3-r1.json",
+      "request_sha256": "8d33ecaf62fe028fe68c1677bb4e5c280ac222c0ce7bb2d6a3e1edae25b53e84",
+      "operation": "screen-scientific3-r1",
+      "stage": "evaluate",
+      "module": "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/policy/evaluate.py",
+      "function": "score",
+      "admitted_at_capture": true,
+      "stage-completion.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/screen-scientific3-r1/stage-completion.json",
+        "sha256": "94aac6b546bdaa6f06a944129e05ec9fadba40fcee095bae9be15b17c052c3e0",
+        "state": "completed",
+        "request_sha256": "8d33ecaf62fe028fe68c1677bb4e5c280ac222c0ce7bb2d6a3e1edae25b53e84"
+      },
+      "receipt.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/screen-scientific3-r1/receipt.json",
+        "sha256": "a33e3258bc92080702ee34a4c5db16acebcd5cc05c77d72485cc25ad59faa88d",
+        "state": "succeeded",
+        "exit_code": 0,
+        "cleanup_quiescent": true,
+        "elapsed_seconds": 11.812000000034459,
+        "request_sha256": "8d33ecaf62fe028fe68c1677bb4e5c280ac222c0ce7bb2d6a3e1edae25b53e84"
+      }
+    },
+    {
+      "request": "artifacts/task2-kion/c-rl-final-20261025-r1/request-full-scientific3-r1.json",
+      "request_sha256": "7d14405a2ceb181a9efc02c7c72060ede9753a77ac7efe8ca25fd04cdb90ec1f",
+      "operation": "full-scientific3-r1",
+      "stage": "evaluate",
+      "module": "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/policy/evaluate.py",
+      "function": "evaluate",
+      "admitted_at_capture": true,
+      "stage-completion.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/full-scientific3-r1/stage-completion.json",
+        "sha256": "eb7446dccd3c46ddbc740bf426cf48c3e6f3a85a928c5302c25468be881d9b64",
+        "state": "completed",
+        "request_sha256": "7d14405a2ceb181a9efc02c7c72060ede9753a77ac7efe8ca25fd04cdb90ec1f"
+      },
+      "receipt.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/full-scientific3-r1/receipt.json",
+        "sha256": "f5f69c97f51500a6b559a60db71ff28c0fa8932fb16f0d99a0d0a8f3684eb508",
+        "state": "succeeded",
+        "exit_code": 0,
+        "cleanup_quiescent": true,
+        "elapsed_seconds": 805.9529999999795,
+        "request_sha256": "7d14405a2ceb181a9efc02c7c72060ede9753a77ac7efe8ca25fd04cdb90ec1f"
+      }
+    },
+    {
+      "request": "artifacts/task2-kion/c-rl-final-20261025-r1/request-rollout-scientific3-r1.json",
+      "request_sha256": "165015d9c3ab605df77258d9f565e545cd58f21a0dba9b6c7768669a884646e4",
+      "operation": "rollout-scientific3-r1",
+      "stage": "live_prefix",
+      "module": "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/policy/rollout.py",
+      "function": "run",
+      "admitted_at_capture": true,
+      "stage-completion.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/rollout-scientific3-r1/stage-completion.json",
+        "sha256": "20267ed3a215bdf7999f7a2aab67d4e78c8d9b0f42f6ff791922ea4dde2e6ada",
+        "state": "completed",
+        "request_sha256": "165015d9c3ab605df77258d9f565e545cd58f21a0dba9b6c7768669a884646e4"
+      },
+      "receipt.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/rollout-scientific3-r1/receipt.json",
+        "sha256": "eb406dd020a46f05d6cd554573b8bf4eb6ef517a345977549b04e63ffe62a491",
+        "state": "succeeded",
+        "exit_code": 0,
+        "cleanup_quiescent": true,
+        "elapsed_seconds": 336.2820000000065,
+        "request_sha256": "165015d9c3ab605df77258d9f565e545cd58f21a0dba9b6c7768669a884646e4"
+      }
+    },
+    {
+      "request": "artifacts/task2-kion/c-rl-final-20261025-r1/request-screen-analysis-r1.json",
+      "request_sha256": "f386c0e07bcdb7afcc7ac2ee168984f6c5e3d82ee49c1cca5e92e73302440029",
+      "operation": "screen-analysis-r1",
+      "stage": "analyze",
+      "module": "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/analyze.py",
+      "function": "run",
+      "admitted_at_capture": true,
+      "stage-completion.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/screen-analysis-r1/stage-completion.json",
+        "sha256": "39c308b2b1c7376b520c81775271c5ddbb35e3360456f1107683eb71cdf8a7fa",
+        "state": "failed",
+        "request_sha256": "f386c0e07bcdb7afcc7ac2ee168984f6c5e3d82ee49c1cca5e92e73302440029"
+      },
+      "receipt.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/screen-analysis-r1/receipt.json",
+        "sha256": "c33bb29fc930167bd41527c86c9f4ccfd8f2ca22529e383f684f2ce293844776",
+        "state": "failed",
+        "exit_code": 1,
+        "cleanup_quiescent": true,
+        "elapsed_seconds": 3.265999999945052,
+        "request_sha256": "f386c0e07bcdb7afcc7ac2ee168984f6c5e3d82ee49c1cca5e92e73302440029"
+      }
+    },
+    {
+      "request": "artifacts/task2-kion/c-rl-final-20261025-r1/request-screen-analysis-r2.json",
+      "request_sha256": "eae634fa75fbb587adb042774ac7ba25f07908cf8133a7ef38af37cf68af0546",
+      "operation": "screen-analysis-r2",
+      "stage": "analyze",
+      "module": "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/analyze_v2.py",
+      "function": "run",
+      "admitted_at_capture": true,
+      "stage-completion.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/screen-analysis-r2/stage-completion.json",
+        "sha256": "774ebcae6829585ce46fc234f0d0a1ab6c64eb10550bf436762ae855e379d7a3",
+        "state": "completed",
+        "request_sha256": "eae634fa75fbb587adb042774ac7ba25f07908cf8133a7ef38af37cf68af0546"
+      },
+      "receipt.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/screen-analysis-r2/receipt.json",
+        "sha256": "806cec07d2f092729275601441ca377e57e1dce45953ea47e496f8b93c8d7e01",
+        "state": "succeeded",
+        "exit_code": 0,
+        "cleanup_quiescent": true,
+        "elapsed_seconds": 4.39000000001397,
+        "request_sha256": "eae634fa75fbb587adb042774ac7ba25f07908cf8133a7ef38af37cf68af0546"
+      }
+    },
+    {
+      "request": "artifacts/task2-kion/c-rl-final-20261025-r1/request-full-analysis-r1.json",
+      "request_sha256": "db8c59ff3fa2fe0f67d112ce1b6ccfe4deefc62939f0f2c86bfe473263900c4d",
+      "operation": "full-analysis-r1",
+      "stage": "analyze",
+      "module": "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/analyze.py",
+      "function": "run",
+      "admitted_at_capture": true,
+      "stage-completion.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/full-analysis-r1/stage-completion.json",
+        "sha256": "8dc4e0e442515e4db7402e327afba42e49f662d88047bd905629f876d31c9a90",
+        "state": "completed",
+        "request_sha256": "db8c59ff3fa2fe0f67d112ce1b6ccfe4deefc62939f0f2c86bfe473263900c4d"
+      },
+      "receipt.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/full-analysis-r1/receipt.json",
+        "sha256": "65a56890a0534d89da65c08c41c1301f225365d5db1612187cc86a74414229f0",
+        "state": "succeeded",
+        "exit_code": 0,
+        "cleanup_quiescent": true,
+        "elapsed_seconds": 7.438000000081956,
+        "request_sha256": "db8c59ff3fa2fe0f67d112ce1b6ccfe4deefc62939f0f2c86bfe473263900c4d"
+      }
+    },
+    {
+      "request": "artifacts/task2-kion/c-rl-final-20261025-r1/request-rollout-analysis-r1.json",
+      "request_sha256": "de4f54684ed8caa9c50198a1c929dab5f76f8ab3c6ed7c923048baedc16a43b3",
+      "operation": "rollout-analysis-r1",
+      "stage": "analyze",
+      "module": "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/rollout_summary.py",
+      "function": "run",
+      "admitted_at_capture": true,
+      "stage-completion.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/rollout-analysis-r1/stage-completion.json",
+        "sha256": "c1b6b6604f8385d6dbbf1ecb508dc0147b4417272c0328ccda965e0a11e970a1",
+        "state": "completed",
+        "request_sha256": "de4f54684ed8caa9c50198a1c929dab5f76f8ab3c6ed7c923048baedc16a43b3"
+      },
+      "receipt.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/rollout-analysis-r1/receipt.json",
+        "sha256": "73f21dd0dece2307b7d5dac9f437d922bb69fbd98bc0a35c5987b3f43a184ae8",
+        "state": "succeeded",
+        "exit_code": 0,
+        "cleanup_quiescent": true,
+        "elapsed_seconds": 1.125,
+        "request_sha256": "de4f54684ed8caa9c50198a1c929dab5f76f8ab3c6ed7c923048baedc16a43b3"
+      }
+    },
+    {
+      "request": "artifacts/task2-kion/c-rl-final-20261025-r1/request-render-screen-r1.json",
+      "request_sha256": "0a925895a8b2073ac43be6131b84197048d2eef50ba8bba7d29d8d8b72b65a9b",
+      "operation": "render-screen-r1",
+      "stage": "analyze",
+      "module": "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/render_figures.py",
+      "function": "run",
+      "admitted_at_capture": true,
+      "stage-completion.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/render-screen-r1/stage-completion.json",
+        "sha256": "eb8e0288ed7c2bf4b50d91cb6c869325fa5e737c1c165c2d9825877e88d2b24e",
+        "state": "completed",
+        "request_sha256": "0a925895a8b2073ac43be6131b84197048d2eef50ba8bba7d29d8d8b72b65a9b"
+      },
+      "receipt.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/render-screen-r1/receipt.json",
+        "sha256": "d9131e2909de5da420ccee5ab281df6d1f2b4c927a2245ef8ab09985d7338891",
+        "state": "succeeded",
+        "exit_code": 0,
+        "cleanup_quiescent": true,
+        "elapsed_seconds": 8.547000000020489,
+        "request_sha256": "0a925895a8b2073ac43be6131b84197048d2eef50ba8bba7d29d8d8b72b65a9b"
+      }
+    },
+    {
+      "request": "artifacts/task2-kion/c-rl-final-20261025-r1/request-render-full-r1.json",
+      "request_sha256": "18628f44135971b53f3bf20aa8285c091a4e6808524c2546fa3c96b869c72c5a",
+      "operation": "render-full-r1",
+      "stage": "analyze",
+      "module": "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/render_figures.py",
+      "function": "run",
+      "admitted_at_capture": true,
+      "stage-completion.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/render-full-r1/stage-completion.json",
+        "sha256": "32149df7e16ef0bf96b8b265a5f95fd3b7f68f1cef238bc36e16a5b47f248158",
+        "state": "completed",
+        "request_sha256": "18628f44135971b53f3bf20aa8285c091a4e6808524c2546fa3c96b869c72c5a"
+      },
+      "receipt.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/render-full-r1/receipt.json",
+        "sha256": "541d8cba0337e1ab2132727c143bab0c3edab52ed9d60be36a8ff8b3bc2459a2",
+        "state": "succeeded",
+        "exit_code": 0,
+        "cleanup_quiescent": true,
+        "elapsed_seconds": 6.421999999904074,
+        "request_sha256": "18628f44135971b53f3bf20aa8285c091a4e6808524c2546fa3c96b869c72c5a"
+      }
+    },
+    {
+      "request": "artifacts/task2-kion/c-rl-final-20261025-r1/request-render-rollout-r1.json",
+      "request_sha256": "070f1783f9e0ee4105a0fc8fe4be1426f014c859810ad319c3e8145a6621f9e4",
+      "operation": "render-rollout-r1",
+      "stage": "analyze",
+      "module": "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/render_figures.py",
+      "function": "run",
+      "admitted_at_capture": true,
+      "stage-completion.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/render-rollout-r1/stage-completion.json",
+        "sha256": "4b7eb4d4a8623f33e3fd4d115cea33f622deee73b5c211c299839046d431a8f2",
+        "state": "completed",
+        "request_sha256": "070f1783f9e0ee4105a0fc8fe4be1426f014c859810ad319c3e8145a6621f9e4"
+      },
+      "receipt.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/render-rollout-r1/receipt.json",
+        "sha256": "cc1a561e4928ca414a475f89341cf38f4f161b93a6abe1b27eaacf2c5a2e881f",
+        "state": "succeeded",
+        "exit_code": 0,
+        "cleanup_quiescent": true,
+        "elapsed_seconds": 4.297000000020489,
+        "request_sha256": "070f1783f9e0ee4105a0fc8fe4be1426f014c859810ad319c3e8145a6621f9e4"
+      }
+    },
+    {
+      "request": "artifacts/task2-kion/c-rl-final-20261025-r1/request-render-screen-r2.json",
+      "request_sha256": "a92f7982a7ec47f9ab2556517392143c28646f2efe5a13f7a13276838a8d5b80",
+      "operation": "render-screen-r2",
+      "stage": "analyze",
+      "module": "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/render_figures_v2.py",
+      "function": "run",
+      "admitted_at_capture": true,
+      "stage-completion.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/render-screen-r2/stage-completion.json",
+        "sha256": "6d783e1e5bec8c7b0f0f3428f2faa835fbd8c333d771618e7e5131cce3df0ed3",
+        "state": "completed",
+        "request_sha256": "a92f7982a7ec47f9ab2556517392143c28646f2efe5a13f7a13276838a8d5b80"
+      },
+      "receipt.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/render-screen-r2/receipt.json",
+        "sha256": "09f20bedefd5aa4c49a11217bb8e96ceb01a55883385aa9c00f117b25810cf6f",
+        "state": "succeeded",
+        "exit_code": 0,
+        "cleanup_quiescent": true,
+        "elapsed_seconds": 7.467999999993481,
+        "request_sha256": "a92f7982a7ec47f9ab2556517392143c28646f2efe5a13f7a13276838a8d5b80"
+      }
+    },
+    {
+      "request": "artifacts/task2-kion/c-rl-final-20261025-r1/request-render-full-r2.json",
+      "request_sha256": "b82d21ebc0e9d3533bb8c02cf0cc11ddc9c6436d94847d241f7c1919c487a1e6",
+      "operation": "render-full-r2",
+      "stage": "analyze",
+      "module": "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/render_figures_v2.py",
+      "function": "run",
+      "admitted_at_capture": true,
+      "stage-completion.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/render-full-r2/stage-completion.json",
+        "sha256": "f168ed773174f225a31c472b3301958f3d1ae00d4b93a1cadc86e44f3e79ce99",
+        "state": "completed",
+        "request_sha256": "b82d21ebc0e9d3533bb8c02cf0cc11ddc9c6436d94847d241f7c1919c487a1e6"
+      },
+      "receipt.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/render-full-r2/receipt.json",
+        "sha256": "3b48bdd8a8c85359a8d48d07938dffee256f70de7aef3b8907a0d90cc5548d02",
+        "state": "succeeded",
+        "exit_code": 0,
+        "cleanup_quiescent": true,
+        "elapsed_seconds": 5.375,
+        "request_sha256": "b82d21ebc0e9d3533bb8c02cf0cc11ddc9c6436d94847d241f7c1919c487a1e6"
+      }
+    },
+    {
+      "request": "artifacts/task2-kion/c-rl-final-20261025-r1/request-render-screen-r3.json",
+      "request_sha256": "3df97a6c7d36d1e478186ff248223483adce6034fd23d03a33ac9bcffc86f124",
+      "operation": "render-screen-r3",
+      "stage": "analyze",
+      "module": "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/render_figures_v3.py",
+      "function": "run",
+      "admitted_at_capture": true,
+      "stage-completion.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/render-screen-r3/stage-completion.json",
+        "sha256": "bb36611dc2e2e61061ded692c967a6a21d3e1d8e6475ff3009980848a0435fc8",
+        "state": "completed",
+        "request_sha256": "3df97a6c7d36d1e478186ff248223483adce6034fd23d03a33ac9bcffc86f124"
+      },
+      "receipt.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/render-screen-r3/receipt.json",
+        "sha256": "6f511a3dd083f77648d57ed538cdd9219adca994a13af0f1eecfc30e00334deb",
+        "state": "succeeded",
+        "exit_code": 0,
+        "cleanup_quiescent": true,
+        "elapsed_seconds": 7.437000000034459,
+        "request_sha256": "3df97a6c7d36d1e478186ff248223483adce6034fd23d03a33ac9bcffc86f124"
+      }
+    },
+    {
+      "request": "artifacts/task2-kion/c-rl-final-20261025-r1/request-render-full-r3.json",
+      "request_sha256": "db93e60702e36e150fea9ce0ea277370dd0a869f9ef571d44350ba357e44b5be",
+      "operation": "render-full-r3",
+      "stage": "analyze",
+      "module": "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/render_figures_v3.py",
+      "function": "run",
+      "admitted_at_capture": true,
+      "stage-completion.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/render-full-r3/stage-completion.json",
+        "sha256": "89cd34ac2921e38b46c99833b56f604a23fad2c088054339f3771a4f384b6693",
+        "state": "completed",
+        "request_sha256": "db93e60702e36e150fea9ce0ea277370dd0a869f9ef571d44350ba357e44b5be"
+      },
+      "receipt.json": {
+        "source_path": "artifacts/task2-kion/c-rl-final-20261025-r1/operations/render-full-r3/receipt.json",
+        "sha256": "4b4a3706421f03f185c7403e1e66bf6d5520d3ed236f2ba69eb61165e685b3ce",
+        "state": "succeeded",
+        "exit_code": 0,
+        "cleanup_quiescent": true,
+        "elapsed_seconds": 5.343999999924563,
+        "request_sha256": "db93e60702e36e150fea9ce0ea277370dd0a869f9ef571d44350ba357e44b5be"
+      }
+    }
+  ],
+  "failed_screen_analysis": "screen-analysis-r1 failed; accepted screen-analysis-r2 uses additive analyze_v2.py. Original analyze.py remains full4096 producer.",
+  "layout_versions": "Original/base plus v2/render-r1, layout-only v3/render_figures_v2/render-r2, and final legend-only v4/render_figures_v3/render-r3 are preserved separately. Accepted visual layout uses figures-v3 screen/full; rollout is original. No metric changes."
+}

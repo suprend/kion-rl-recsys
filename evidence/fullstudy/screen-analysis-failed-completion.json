@@ -1,0 +1,15 @@
+{
+  "contract": "kion-c-rl-native-v1",
+  "stage": "analyze",
+  "started_utc": "2026-10-24T21:48:25.615647+00:00",
+  "state": "failed",
+  "request_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/request-screen-analysis-r1.json",
+  "request_sha256": "f386c0e07bcdb7afcc7ac2ee168984f6c5e3d82ee49c1cca5e92e73302440029",
+  "job": {
+    "flags": 8720,
+    "cap_bytes": 4294967296,
+    "affinity": 85
+  },
+  "error": "ValueError('Recomputed screen diagnostic differs C/supported_top10_raw_reward')",
+  "finished_utc": "2026-10-24T21:48:28.615164+00:00"
+}

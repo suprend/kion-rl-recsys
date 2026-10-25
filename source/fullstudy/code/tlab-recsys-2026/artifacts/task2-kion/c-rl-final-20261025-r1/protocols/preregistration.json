@@ -1,0 +1,84 @@
+{
+  "contract": "kion-C-residual-RL-preregistered-v1",
+  "chosen_utility": "rm-minus-frozen-item-mean",
+  "formula": "r_RM(s,i)-m_fit(i)",
+  "coefficient": 1.0,
+  "beta": 0.5,
+  "temperature": 1.0,
+  "sampler_seed": 20261024,
+  "checkpoint_steps": [
+    0,
+    250,
+    500,
+    1000
+  ],
+  "optimizer": {
+    "name": "Adam",
+    "updates": 1000,
+    "batch_size": 16,
+    "lr": 1e-05,
+    "grad_clip": 1,
+    "weight_decay": 0,
+    "alpha_ce": 0
+  },
+  "start_from": "original-C",
+  "original_results_known": true,
+  "one_additional_fit_only": true,
+  "primary_contrast": "fixed-latest1000",
+  "no_gpt_unfreeze": true,
+  "no_rm_fit": true,
+  "no_sft": true,
+  "registered_utc": "2026-10-24T21:12:09.007682+00:00",
+  "authorization": "approved night PLAN current user instruction25Oct",
+  "planned_scientific_arms": [
+    "C",
+    "RL-completion",
+    "RL-residual"
+  ],
+  "planned_cohorts": {
+    "train": 512,
+    "screen": 256,
+    "relevance_full": 4096
+  },
+  "candidate_contract": "natural1024=GPT512+strict7dpop256+ItemKNN256; no target injection/no seen filter; unknown/offpool remaindenominator",
+  "support": "original native RM support unchanged; utility onlysupported; unsupported effectiveadvantage0;allactionssoftmaxKL",
+  "centering": "state-wise supported original-C weighted utility baseline; not chosen by outcomes",
+  "scale_diagnostics": "record supported and reference-weighted utility/prior variation beforefit; beta equal original units not matched KL;reject degenerate all-context constantprior",
+  "prior_archive": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/rm-r2/scorer/scorer.npz",
+    "sha256": "d5df55586a9df54b5e121d494a149764d956750ac3caaf2b4c1ada27a93243d4"
+  },
+  "selection": "scientific fixed1000; preserveoldengineeringselected0;noautomodelpromotion",
+  "fallback": "onlytechnical prior/mapping invalidbeforeanyresidualfitresult; record replacementprereg beforefit; rm+0.1/(1+log1p_strict7d_count),notbothfits",
+  "five_step": {
+    "positions": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rollout-selection-r1.json",
+      "sha256": "0a2c0f430250723c87449a7abf4552d5e5e42d1ffc51c9215d5f6eb6129e57a7"
+    },
+    "contexts": 16,
+    "arms": [
+      "C",
+      "RL-completion",
+      "RL-residual"
+    ],
+    "modes": [
+      "greedy",
+      "categorical"
+    ],
+    "masks": [
+      "none",
+      "exclude-generated"
+    ],
+    "steps": 5,
+    "expected_trajectories": 192,
+    "expected_steps": 960,
+    "reward_state": "fixed observed s0;raw1068/history/clockfrozen",
+    "policy_state": "liveGPTprefixq/base/source12;producerB/slot/fullvocabprojectionpreserved",
+    "relevance": "firstdecisionobservedtargetonly;nosyntheticfuturelabels",
+    "case_selection": "first3 preselectedcontexts,notoutcomechosen"
+  },
+  "development": "reusedAug9-15;notuntouchedtest",
+  "temporal_caveat": "RMfitpriors<Aug2;calibratorAug2-8;actorAug2-8 offlinelearnedproxyoptimizationnotcontemporaneous",
+  "numerical_deadline_utc": "2026-10-25T06:00:00+00:00",
+  "handoff_deadline_msk": "2026-10-25T10:00:00+03:00"
+}

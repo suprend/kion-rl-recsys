@@ -1,0 +1,59 @@
+{
+  "state": "frozen",
+  "bundle": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2",
+  "parent_bundle": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1",
+  "parent_freeze": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/freeze-rm-r1.json",
+  "parent_freeze_sha256": "0d5bcfc3564e3ed930a2eb42bcf09d76a02225dc426c1f166456d28c146e1378",
+  "sources": {
+    "scripts/kion_local_pack.py": "87412446a72033aae98897250cc0178084dd76b5818aee38a24fbb81a8e02aaf",
+    "scripts/kion_pack_static.py": "5a52ef6ab610b0f3d091bd6566982bd0894f1d0c1ad891986dd27d3f8703e181",
+    "scripts/kion_pack_people.py": "25c9b1f9ac9188f096f22085d63a5de694e55a757c9857da963854bb808e791b",
+    "scripts/kion_pack_history.py": "ecdd0cd0e853d20578a7855acc8987c72c430925d1a30f7e26fee250000659dd",
+    "scripts/kion_pack_dynamic.py": "7f53e94ddd5940514de8a132711ff5d782885983af9f0c62ae4c4515261bdd7a",
+    "scripts/kion_pack_semantics.py": "74a59bad3bf89c5eb92624452ffac8e4775c18592823411a611d09d50fe3d7ff",
+    "scripts/kion_pack_train.py": "0f11d3c1bcc5165dfd9f35a7728b9400b679cd51c8bb444af04360643711546a",
+    "scripts/kion_reward_data.py": "bc767e7987b9404273cc24a12e1f91562e480d0cfef39302e079fba7e296ddf6",
+    "scripts/kion_reward_boosting.py": "cb5446663794ec143b3d72bc2e4a5d8de3599c5a9f3a3c53baaeb44ed4d88727",
+    "scripts/kion_policy_rl.py": "3ced63dd23b72ab69da1b7758d445cb7064f393f34823101be169106a6a80425",
+    "scripts/kion_conditioned_train.py": "b6c2c93bb8ac1475d00a1a20cd8d278da898468ae38a001cc5be4ec218478caf",
+    "scripts/kion_full_train.py": "2b8d684e9f789eb7a51823e0b38df183dcd2f9f72942894a905fde1f1efd47ea",
+    "scripts/kion_train.py": "2066dcddcccabcd4c46971467287f2955cb06434bfa942247ac55f111e8d8d1b",
+    "scripts/kion_prepare.py": "81e8ac99a6d50398418fd95e0874bc07b55b3d33487e89731ec26397960c3e77",
+    "scripts/kion_basic_bundle_features.py": "25c5a80a2fba9de5ee76c67ac4bd6cd7bd437cf807cd42855baeba3b50f73ef8",
+    "scripts/kion_local_features.py": "e5f992093b53839d425ccd436dba0404862ad912b795a390d60ff6c9a2576de1",
+    "scripts/kion_sex_features.py": "e524c68af1ad327c3e83959aa4503be17aabdc700beaa24793831d09a152a905",
+    "scripts/kion_cuda_batches.py": "efcdc050c2e3778731e6f1e0ad49bb21c0b5dc622ea22f1f7992ed8c21568483",
+    "scripts/kion_night_supervisor.py": "af8c0eb6cfc45fed1a5e3a19e9c0940acd98eee2060998ed55ac9a66cdd92c48",
+    "scripts/kion_compare_predictions.py": "3b4966e6974a4fd52743ab90cf5999e65c0fb38bf9bd9f3b901fcbf65ae638c3",
+    "scripts/kion_map10.py": "921bcfcc84a0896379add147d60a19f41dcda006c3b1a1aff0c682cabce1f54e",
+    "scripts/hm_job.py": "a8ca33c389aad356ea2bd8b0a2ab43276a0af85029934888ebeca9f132c541a0"
+  },
+  "series_sha256": "18b672eda2fd8d711e2642fd933740abf0f28bfaf4031e27b46a5ee77ba647d6",
+  "changed_sources": [
+    "scripts/kion_reward_boosting.py"
+  ],
+  "review": {
+    "status": "no_remaining_supported_P1_P2",
+    "scope": "supported-only identity-gated calibration and exact-model-byte repair helper; static and temporary fixtures",
+    "tests": 26,
+    "source_sha256": "cb5446663794ec143b3d72bc2e4a5d8de3599c5a9f3a3c53baaeb44ed4d88727",
+    "tests_sha256": "f2a1604c4884779c00fd8e89035e36626795a12a80a4e553a2e323163096364f",
+    "reviewer": "/root/reward_boosting/review"
+  },
+  "producer_sources": {
+    "rm_data_manifest": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/manifest.json",
+    "rm_data_manifest_sha256": "42d7532a5daea8af36198e0a4ba6ba3b134cd66e93dcfd75961913a14624144c",
+    "rm_data_boosting_sha256": "51421aea405abb210bb49b4aa1e694170b21296b75a15f7e228b01416fc085b1",
+    "rm_data_builder_sha256": "bc767e7987b9404273cc24a12e1f91562e480d0cfef39302e079fba7e296ddf6"
+  },
+  "serving_source_sha256": "cb5446663794ec143b3d72bc2e4a5d8de3599c5a9f3a3c53baaeb44ed4d88727",
+  "legacy_scorer": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/rm-r1/scorer",
+    "signature": "4b7c87e51bf42c0fb2c7d532979406cfc162e37dc7dc37107f9bae9c192363a8",
+    "model_cbm_sha256": "b6ed4c6427129afcddec017e2f64d9c3fb59fb31fc300e5c9d074964a21ddd62"
+  },
+  "repair_executed": false,
+  "catboost_refit": false,
+  "GPU_launched": false,
+  "scope": "Source freeze only. Root separately admits one deterministic calibration-only repair to a new rm-r2/scorer."
+}

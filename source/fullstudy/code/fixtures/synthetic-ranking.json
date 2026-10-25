@@ -1,0 +1,12 @@
+{
+  "contract": "invented-ranking-fixture-v1",
+  "synthetic": true,
+  "description": "Three invented queries: target ranks 1, 2 and absent. No KION user, item or history is represented.",
+  "target_ranks": [1, 2, null],
+  "expected": {
+    "queries": 3,
+    "map10": 0.5,
+    "recall10": 0.6666666666666666,
+    "ndcg10": 0.5436432511904858
+  }
+}

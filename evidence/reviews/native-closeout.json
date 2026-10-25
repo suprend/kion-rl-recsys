@@ -1,0 +1,48 @@
+{
+  "contract": "kion-submission-native-closeout-v1",
+  "state": "closed-native-success",
+  "closed_utc": "2026-10-25T08:25:24.825707+00:00",
+  "operations": [
+    {
+      "operation": "export-actor-r1",
+      "native_receipt_sha256": "5368e4240e7008cfde6cb99f074bfb40e50b5e6e40d94ce49209a1eeecceb649",
+      "elapsed_seconds": 6.51500000001397,
+      "peak_private_bytes": 1509666816,
+      "exit_code": 0,
+      "cleanup_quiescent": true
+    },
+    {
+      "operation": "export-rm-r2",
+      "native_receipt_sha256": "08ced6919202ed05425a763040fae78f1391ee6b71bf3bf226f7a43277852cc4",
+      "elapsed_seconds": 133.4529999999795,
+      "peak_private_bytes": 1835814912,
+      "exit_code": 0,
+      "cleanup_quiescent": true
+    },
+    {
+      "operation": "replay-encoder-cuda-r1",
+      "native_receipt_sha256": "9b97b54fa6136b06cf52160a6b9b102b914a557256c582cf88607232b3a0b9ce",
+      "elapsed_seconds": 9.781000000075437,
+      "peak_private_bytes": 2258907136,
+      "exit_code": 0,
+      "cleanup_quiescent": true
+    },
+    {
+      "operation": "reward-replay-r1",
+      "native_receipt_sha256": "edde41ca8264f7778ed00a1c20443aeb4ed42f3ce6039406b408fc99b003233d",
+      "elapsed_seconds": 4.407000000006519,
+      "peak_private_bytes": 113332224,
+      "exit_code": 0,
+      "cleanup_quiescent": true
+    }
+  ],
+  "training_optimizer_updates": 0,
+  "supervised_updates": 0,
+  "rm_fits": 0,
+  "rl_updates": 0,
+  "final_test_reads": 0,
+  "new_external_downloads": 0,
+  "publication_or_submission": false,
+  "stop_sha256": "8f869b10ecdcc980478ec77ae6973a0024fd3a6b4a241cecd88169f170c589e3",
+  "remaining_work": "PDF/archive metadata and stdlib final delivery verification; no further numerical inference or training."
+}

@@ -1,0 +1,50 @@
+{
+  "contract": "kion-C3-RL-preregistered-v1",
+  "frozen_utc": "2026-10-24T19:03:04.100366+00:00",
+  "before_new_rewards_or_frontier": true,
+  "reference": "current C3 raw1068+source2 frozen E2",
+  "natural_candidates": 1024,
+  "temperature": 1.0,
+  "train_states_target": 512,
+  "screen_reward_states": 256,
+  "train_origin_window": "2021-08-02 through2021-08-08, strictpast",
+  "screen_query_origin": "2021-08-09 for original prepared validation histories, targetdates canAug9–15",
+  "excluded_train_users": "union actual localRM select/calibration user IDs",
+  "excluded_train_contexts": "actual localRM select/calibration state keys",
+  "sampler_seed": 20261024,
+  "optimizer": {
+    "name": "Adam",
+    "lr": 1e-05,
+    "weight_decay": 0,
+    "grad_clip": 1,
+    "batch_size": 16,
+    "updates": 1000,
+    "alpha_ce": 0
+  },
+  "checkpoint_steps": [
+    0,
+    250,
+    500,
+    1000
+  ],
+  "frontier_betas": [
+    0.1,
+    0.5
+  ],
+  "feasibility": {
+    "mean_MAP10_delta_min": -0.002,
+    "mean_KL_nats_max": 0.05,
+    "unsupported_probability_mass_increase_max": 0.01,
+    "top1_item_max_share_increase_max": 0.05
+  },
+  "beta_selection": "max mean centered expected proxy among feasible tilts; tie larger beta; if none feasible beta0.5 diagnostic only, no automatic promotion",
+  "checkpoint_selection": "max mean centered expected proxy among feasible screen checkpoints including0; ties higherMAP thenlowerKL thenearlierupdate; no fit-time β search",
+  "unsupported": "retain original1024; effective centered reward zero; fixed supported baseline frompi0; all-unsupported state excluded fromRLupdate; report mass changes",
+  "RM_labels": "only real observed finite watched_pct outcome; actor labels never become RM reward, unknownpairs notzeroobservations",
+  "calibration_chronology": "calibrator fittedAug2–8 frozen;actor sameweek isofflineproxyoptimization notcontemporaneousknownatreplay",
+  "comparison": "originalreference versusnewreference/update0 identicalpipeline; top10 exact update0/reference, scoretolatol0.003rtol0.001 for historicaldifferentAMPbatch reference, borderline ranks explicitly counted",
+  "final_eval": "same4096 originaldev rows,1024 naturalids, noseenfilter/notargetinjection; latest+selected sharedfeaturepass ifdistinct; selected0reusebaselineonlywithproof",
+  "rollout": "fixed originalnaturalpool;5uniqueactions,liveGPTprefix/q/base/source12;pop/raw/RMobserveds0fixed;reference sameprefix; firststeprelevanceonly",
+  "stop": "1000updates max, nonfinite/parity/support/schema/resourcefailure stopsdependentstage; no extraSFT/newseeds/additionalbetas",
+  "claim_limits": "reuseddevelopment, onefit, observationalcompletionproxy, noonline/causalretentionclaim"
+}

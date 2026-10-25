@@ -1,0 +1,247 @@
+{
+  "contract": "independent-final-report-review-v1",
+  "created_utc": "2026-10-25T06:32:04.605118+00:00",
+  "reviewer": "/root/kl_report_review",
+  "state": "final-source-science-pass-awaiting-separate-PDF-visual-acceptance",
+  "source_science_pass": true,
+  "findings": [],
+  "reviewed_sha256": {
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/reader.md": "72bc134e28f199aa1d7fc67d203a0c551e0cea0c3161d069dec44e48825dc10f",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/technical.md": "5612a7623d3f3b68a587ffdae566777a256a4aef6a6bdeb882b2b5a1150ada91",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/reproduce.md": "aab58810abb3247a2a0f9880e32fa17c8d250b9b3b565800e8d4660320f8682b",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/report-build.py": "09b941ea51077ae07cf206611985169fa2086425a2751835263b5942e42f78b8"
+  },
+  "context_sha256": {
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/preregistration.json": "46f348e871f185efca1a734cd31e5234dba6346be545b690d32deb447e488ab4",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/frozen-beta.json": "be54df7bff4aabfa729480fdd3140661b976f532bcd418ad12d05cf1f192e13f",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/matching.json": "e45f26f9d682c71e2ee7b10b45a5e75861d572a3dd91d29547e501842eda154c",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/scientific-arms.json": "ecb71996763b76206c68b976cf8416c10e9c5b0a1fe11e25f98099c2e99c867f",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/fit-ledger.json": "fc79668785e747ccb9834d4589132f7b7d1d64ca1c48244e46a4b82c9e7750a4",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/interpretation/full-r1/analysis.json": "1fbaae8af0a4ccc94544f2886b021d062bd14778c574d3f92dc2b3aaf261274f",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/interpretation/screen-r1/analysis.json": "038fd372d73a549e7ed9d0990669670a49f0a7a552a573e402bcfd6edb63db7a",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/review/numeric-full4096.json": "f5728b8387643ecf4a66cbc163ac50c1601fc13e8cfe6a402d23bd1508a872c1",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/review/numeric-screen.json": "ce7bfd32860f109eebbb846de6fe48dbd70de9418547c750b6c1e3752017efa6"
+  },
+  "source_checks": [
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/reader.md",
+      "bytes": 12543,
+      "sha256": "72bc134e28f199aa1d7fc67d203a0c551e0cea0c3161d069dec44e48825dc10f",
+      "pending_markers": 0,
+      "intended_pages": 3
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/technical.md",
+      "bytes": 21408,
+      "sha256": "5612a7623d3f3b68a587ffdae566777a256a4aef6a6bdeb882b2b5a1150ada91",
+      "pending_markers": 0,
+      "intended_pages": 1
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/reproduce.md",
+      "bytes": 7527,
+      "sha256": "aab58810abb3247a2a0f9880e32fa17c8d250b9b3b565800e8d4660320f8682b",
+      "pending_markers": 0,
+      "intended_pages": 1
+    }
+  ],
+  "checked_scalar_tables": [
+    "Reader all7 arms x3 relevance metrics",
+    "Technical all7 arms x3 metrics+fullKL",
+    "All3 metrics x3 paired seed deltas+mean/sampleSD/min/max/newseedmean in reader and technical",
+    "All7 screen arms x7 utility/KL/exposure scalars",
+    "All3 mean-delta conditional CIs",
+    "All3 train-KL pair ratios and arm values"
+  ],
+  "scientific_assessment": [
+    "Primary MAP@10, fixed endpoint1000, selectedpilot reuse and calibration/prospective roles agree with preregistration.",
+    "All3 train-KL ratios pass the inclusive operational tolerance; endpoint match is explicitly distinct from perstate/catalogue equivalence or causal isolation.",
+    "Positive paired point estimates are correctly qualified: individual/average user-cluster intervals include zero; neither superiority nor automatic C replacement is claimed.",
+    "Common user-cluster bootstrap2000 seed20261024 is conditional on fitted heads and reused development; observed seedSD is descriptive.",
+    "Screen surrogate expectations/exposure are separated from full4096 relevance; lower max top1 share and higher top10HHI are both disclosed.",
+    "RM timing, post-historical hypothesis, repeated development, aggregated outcomes and contemporaneous-replay limits are explicit.",
+    "Independent CSV proof is correctly limited to arithmetic/scalar bindings; scoring/ranking and bootstrap were not independently replayed."
+  ],
+  "checks_executed": [
+    "PAS python -B stdlib strict source inspection for all3 Markdown files passed with zero pending markers.",
+    "Stdlib table/scalar comparison against accepted compact full/screen analyses and numeric proof metadata passed.",
+    "All local Markdown destinations exist; historicalZIP central-directory includes root README.md and reproduce.md without opening model/data payloads.",
+    "Inputs matched root final-freeze hashes before and after checks."
+  ],
+  "limits": [
+    "No model/array reads, scoring/ranking replay, independent bootstrap resampling, numerical package import, actual rendering or jobs were performed.",
+    "This pass covers source/science/prose only; latest root-rendered PDF pages must separately pass review/visual-final.json."
+  ],
+  "local_links_checked": [
+    {
+      "source": "reader.md",
+      "label": "протокол",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/preregistration.json"
+    },
+    {
+      "source": "reader.md",
+      "label": "beta",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/frozen-beta.json"
+    },
+    {
+      "source": "reader.md",
+      "label": "matching",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/matching.json"
+    },
+    {
+      "source": "reader.md",
+      "label": "fit ledger",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/fit-ledger.json"
+    },
+    {
+      "source": "reader.md",
+      "label": "full analysis",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/interpretation/full-r1/analysis.json"
+    },
+    {
+      "source": "reader.md",
+      "label": "screen analysis",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/interpretation/screen-r1/analysis.json"
+    },
+    {
+      "source": "reader.md",
+      "label": "numeric proof",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/review/numeric-full4096.json"
+    },
+    {
+      "source": "reader.md",
+      "label": "приложение",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/technical.md"
+    },
+    {
+      "source": "reader.md",
+      "label": "воспроизведение",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/reproduce.md"
+    },
+    {
+      "source": "reader.md",
+      "label": "архив прежнего исследования",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/historical/kion-task2-research-20261025.zip"
+    },
+    {
+      "source": "technical.md",
+      "label": "preregistration",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/preregistration.json"
+    },
+    {
+      "source": "technical.md",
+      "label": "beta freeze",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/frozen-beta.json"
+    },
+    {
+      "source": "technical.md",
+      "label": "target.json",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/target.json"
+    },
+    {
+      "source": "technical.md",
+      "label": "Frozen beta",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/frozen-beta.json"
+    },
+    {
+      "source": "technical.md",
+      "label": "matching receipt",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/matching.json"
+    },
+    {
+      "source": "technical.md",
+      "label": "Глобальный fit ledger",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/fit-ledger.json"
+    },
+    {
+      "source": "technical.md",
+      "label": "screen analysis",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/interpretation/screen-r1/analysis.json"
+    },
+    {
+      "source": "technical.md",
+      "label": "Независимая CSV проверка",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/review/numeric-screen.json"
+    },
+    {
+      "source": "technical.md",
+      "label": "full analysis",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/interpretation/full-r1/analysis.json"
+    },
+    {
+      "source": "technical.md",
+      "label": "evaluation",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/full-six-r1/evaluation.json"
+    },
+    {
+      "source": "technical.md",
+      "label": "numeric proof",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/review/numeric-full4096.json"
+    },
+    {
+      "source": "technical.md",
+      "label": "архив предыдущего исследования",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/historical/kion-task2-research-20261025.zip"
+    },
+    {
+      "source": "technical.md",
+      "label": "policy method",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/METHOD.md"
+    },
+    {
+      "source": "technical.md",
+      "label": "evaluation method",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/METHOD-evaluation.md"
+    },
+    {
+      "source": "technical.md",
+      "label": "design proposal",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/proposal-method.md"
+    },
+    {
+      "source": "technical.md",
+      "label": "independent skeptic",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/review/method-skeptic.md"
+    },
+    {
+      "source": "reproduce.md",
+      "label": "историческим архивом",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/historical/kion-task2-research-20261025.zip"
+    },
+    {
+      "source": "reproduce.md",
+      "label": "исторического архива",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/historical/kion-task2-research-20261025.zip"
+    },
+    {
+      "source": "reproduce.md",
+      "label": "fit ledger",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/fit-ledger.json"
+    },
+    {
+      "source": "reproduce.md",
+      "label": "matching",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/matching.json"
+    },
+    {
+      "source": "reproduce.md",
+      "label": "screen analysis",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/interpretation/screen-r1/analysis.json"
+    },
+    {
+      "source": "reproduce.md",
+      "label": "full analysis",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/interpretation/full-r1/analysis.json"
+    },
+    {
+      "source": "reproduce.md",
+      "label": "screen",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/review/numeric-screen.json"
+    },
+    {
+      "source": "reproduce.md",
+      "label": "full4096",
+      "target": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/review/numeric-full4096.json"
+    }
+  ]
+}

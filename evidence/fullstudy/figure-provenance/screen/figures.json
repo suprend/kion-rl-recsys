@@ -1,0 +1,78 @@
+{
+  "contract": "kion-scientific3-figures-v1",
+  "state": "completed",
+  "stage": "screen",
+  "rows": 256,
+  "figures": [
+    {
+      "file": "01-checkpoint-tradeoff",
+      "title": "Почему selected0 сохранил C",
+      "caption": "Legacy completion screen256: 256 одинаковых запросов, natural1024, checkpoints 0/250/500/1000; число пользователей в исходных aggregates не сохранено. Это использованный при выборе screen; CI здесь не восстановлены. Зелёный = все gates пройдены; оранжевый = нарушено хотя бы одно. Selected0 не отменяет обучение latest1000.",
+      "formats": [
+        "svg",
+        "png"
+      ]
+    },
+    {
+      "file": "02-matched-comparison",
+      "title": "Три политики на одних и тех же запросах",
+      "caption": "reused development screen256; 256 запросов, 256 пользователей; natural1024. C и latest1000 двух RL; без seen-filter и target injection; unknown/off-pool включены в знаменатель. Фиксированный β, не matched-KL; исследовательский результат, не причинный эффект.",
+      "formats": [
+        "svg",
+        "png"
+      ]
+    },
+    {
+      "file": "03-paired-uncertainty",
+      "title": "Насколько устойчивы парные различия",
+      "caption": "reused development screen256; 256 запросов, 256 пользователей; natural1024. C и latest1000 двух RL; без seen-filter и target injection; unknown/off-pool включены в знаменатель. Фиксированный β, не matched-KL; исследовательский результат, не причинный эффект. Bootstrap: 2000 общих resamples пользователей, seed20261024; query-weighted ratio; процентильные CI без поправки на множественные сравнения. Интервалы условны на единственные fitted checkpoints.",
+      "formats": [
+        "svg",
+        "png"
+      ]
+    },
+    {
+      "file": "04-exposure-distribution",
+      "title": "Как распределяется каталог рекомендаций",
+      "caption": "reused development screen256; 256 запросов, 256 пользователей; natural1024. C и latest1000 двух RL; без seen-filter и target injection; unknown/off-pool включены в знаменатель. Фиксированный β, не matched-KL; исследовательский результат, не причинный эффект. Кривые слева сортируют фильмы отдельно в каждой политике; bars справа сопоставляют одинаковые raw IDs. Равный вес пользователей означает вес каждого его запроса 1 / число запросов пользователя.",
+      "formats": [
+        "svg",
+        "png"
+      ]
+    },
+    {
+      "file": "05-target-ranks",
+      "title": "Изменения рангов с полным знаменателем",
+      "caption": "reused development screen256; 256 запросов, 256 пользователей; natural1024. C и latest1000 двух RL; без seen-filter и target injection; unknown/off-pool включены в знаменатель. Фиксированный β, не matched-KL; исследовательский результат, не причинный эффект. Unknown и off-pool показаны отдельно; ранги 11–1024 имеют нулевой RR@10, но сохраняют полный target rank.",
+      "formats": [
+        "svg",
+        "png"
+      ]
+    },
+    {
+      "file": "06-screen-utilities-behavior",
+      "title": "Что оптимизируется и что меняется в выдаче",
+      "caption": "reused development screen256; 256 запросов, 256 пользователей; natural1024. C и latest1000 двух RL; без seen-filter и target injection; unknown/off-pool включены в знаменатель. Фиксированный β, не matched-KL; исследовательский результат, не причинный эффект. Для каждой utility: E_p[support·(u−E_C[u|supported,s])]; unsupported вклад равен0, все1024 действия в softmax. Prior — observed-fit item mean; conditional means не трактуются как сопоставимый expected utility. H63 — исходный truncated prefix.",
+      "formats": [
+        "svg",
+        "png"
+      ]
+    },
+    {
+      "file": "07-item-contributions",
+      "title": "Какие фильмы внесли вклад в изменение proxy",
+      "caption": "reused development screen256; 256 запросов, 256 пользователей; natural1024. C и latest1000 двух RL; без seen-filter и target injection; unknown/off-pool включены в знаменатель. Фиксированный β, не matched-KL; исследовательский результат, не причинный эффект. Вклад = mean_s[(p_RL−p_C)·support·(u−E_C[u|supported,s])]. Показаны12 наибольших |вкладов| на панель; полная сумма по каталогу и остаток сохранены в JSON/CSV. Это арифметическое разложение, не причинная атрибуция.",
+      "formats": [
+        "svg",
+        "png"
+      ]
+    }
+  ],
+  "requires_visual_QA": true,
+  "source": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_results.py",
+    "sha256": "f6be0387a947dd33f065deae54fe98d14881e30271040389d743602afcd024f4"
+  },
+  "aggregate_canonical_sha256": "f085b211875c5c208d2f037feb7a6dfd76a9eb10b674bd7a495bc74ae92aa448",
+  "matplotlib_version": "3.11.2"
+}

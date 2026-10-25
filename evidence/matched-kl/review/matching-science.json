@@ -1,0 +1,72 @@
+{
+  "reviewer": "independent-method-skeptic",
+  "status": "pass",
+  "scope": "Actual metadata scientific match review. Read matching, final TRAIN512 diagnostics, frozen protocol/beta, canonical final fit ledger and completion receipts; recomputed scalar ratios and hashed raw checkpoint files. No arrays, models, numerical jobs, screen outcomes or dev results were accessed.",
+  "root": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1",
+  "input_sha256": {
+    "protocols/matching.json": "E45F26F9D682C71E2EE7B10B45A5E75861D572A3DD91D29547E501842EDA154C",
+    "policy/train-final-six-r1.json": "6E4299CA58EE0DA5D40D31E42317CD14C55C96D95D372DBC1827F4D8B1D4E103",
+    "protocols/preregistration.json": "46F348E871F185EFCA1A734CD31E5234DBA6346BE545B690D32DEB447E488AB4",
+    "protocols/frozen-beta.json": "BE54DF7BFF4AABFA729480FDD3140661B976F532BCD418AD12D05CF1F192E13F",
+    "fit-ledger.json": "FC79668785E747CCB9834D4589132F7B7D1D64CA1C48244E46A4B82C9E7750A4",
+    "operations/train-final-six-r1/receipt.json": "73E605D453A1D8CC6EDE1771CF07D27C239AE283D141D7423492D54833767939"
+  },
+  "actual_checkpoint_sha256": {
+    "completion-20261024": "436d735d67fd861e6b925719b9e3597582ec405eed1b13ede3db3671e1ce37b7",
+    "residual-20261024": "c64dccd1a28d9177611d6c383d1b27adb0565355f7cd67d1e3502b39f91cc4d8",
+    "completion-20261025": "8f079caae520b60fe8be65342f6a7deb927ae8ca742ac7ce829d086e261d41ba",
+    "residual-20261025": "aef66d2d7d10bb4e2431f1c495ea2f2d34125bc2045e5a89944457cbc07c0cb8",
+    "completion-20261026": "2b323c60b672a19439adade769eea01f8eb535033de859cd248d911d09cba822",
+    "residual-20261026": "1e3b26461b9fb6c6233c97ba72d791234d4c3f3f00c4a5546a934044621eca1b"
+  },
+  "checks": {
+    "matching_points_to_current_final_diagnostics_and_frozen_beta": true,
+    "preregistration_and_beta_freeze_hashes_unchanged": true,
+    "all_six_actual_checkpoint_hashes_match_diagnostic_paths_and_matching_selection": true,
+    "all_six_selected_checkpoint_steps_equal1000": true,
+    "same_original_C_cache_reward_identity_across_six_lineages": true,
+    "final_diagnostics_completed_all512_fixed_train_states": true,
+    "same_mean_forward_KL_all1024_temperature1_definition": true,
+    "all_six_KL_values_finite_positive_and_identical_under_two_reward_views": true,
+    "all_six_matching_KL_values_equal_final_diagnostic_values": true,
+    "all_three_ratio_values_independently_recomputed_exactly": true,
+    "all_three_ratios_within_registered_inclusive_interval": true,
+    "completion_beta_0_5_all_seeds": true,
+    "residual_beta_0_16274030138555867_all_seeds": true,
+    "residual_seed24_is_selected_pilot2_without_retraining": true,
+    "newseed_lineage_seed_and_sampler_seed_match_arm_labels": true,
+    "all_four_prospective_fit_receipts_start_after_beta_freeze": true,
+    "all_six_new_fit_receipts_succeeded_exit0_cleanup_quiescent": true,
+    "final_train_diagnostics_follow_all_fit_completions": true,
+    "matching_timestamp_follows_final_train_diagnostic_completion": true,
+    "final_diagnostics_declare_no_optimizer_updates_or_external_model_opening": true,
+    "final_diagnostics_declare_zero_test_reads_and_raw_feature_calls": true,
+    "matching_declares_no_dev_selection": true
+  },
+  "ratios": {
+    "20261024": 0.9106459068601696,
+    "20261025": 0.9531887728188166,
+    "20261026": 0.9143888893726146
+  },
+  "registered_tolerance": [0.8, 1.2],
+  "budget": {
+    "canonical_ledger": "fit-ledger.json",
+    "scientific_fits": 6,
+    "technical_retries": 0,
+    "actual_updates_each_new_fit": 1000,
+    "all_new_optimizer_updates": 6000,
+    "training_phase": "closed-no-new-scientific-fits",
+    "within_absolute_eight_fit_cap": true
+  },
+  "blocking_findings": [],
+  "remarks": [
+    "The registered operational mean TRAIN512 candidate-pool KL match is satisfied for all three selected seed pairs. It is a tolerance match, not equality: all three residual KL values remain below the corresponding completion KL values.",
+    "This does not establish per-state matching, full-catalogue matching, statistical equivalence, causal isolation, or a ranking-quality advantage. No dev outcome has been reviewed here.",
+    "Seed24 remains the calibration/development pair, and only seeds25/26 are prospective comparisons. Successful KL matching does not turn the three seeds into three independent confirmations.",
+    "Six new scientific fits are two calibration pilots plus four prospective arms. The final six-arm table reuses historical completion24 and selected pilot2 as residual24; discarded pilot1 is still disclosed and counted in compute.",
+    "The canonical finalized ledger is root fit-ledger.json. protocols/fit-ledger-NN.json are immutable reservation snapshots and must not be mistaken for final execution states or rewritten.",
+    "The historical completion24 lineage omits explicit seed fields; its identity is bound by its previously reviewed step1000 checkpoint hash. Newseed seed/sampler fields were checked directly.",
+    "This is independent scalar/provenance verification of saved numerical evidence, not an independent rerun of the KL estimator or a live process-state certification."
+  ],
+  "conclusion": "The exact selected six checkpoint files support the protocol's operational mean TRAIN512 natural1024 forward-KL match, with the unchanged frozen residual beta and valid per-seed ratios. Scientific matching metadata passes; ranking conclusions await the separately controlled dev evaluation and honest descriptive reporting."
+}

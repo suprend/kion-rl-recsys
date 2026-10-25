@@ -1,0 +1,187 @@
+{
+  "contract": "kion-final25-independent-visual-audit-v2",
+  "reviewer": "final25_visual_audit",
+  "review_date": "2026-10-25",
+  "state": "pass",
+  "base_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1",
+  "scope": "Final independent visual reinspection of the four changed actual PNGs in reports/figures-v3, plus SHA256 identity inheritance for nine PNGs personally inspected in the initial audit. No render, numeric replay, model, inference, or publication.",
+  "publication": "not-authorized; not-performed",
+  "expected_png_count": 13,
+  "accepted_png_count": 13,
+  "freshly_reopened_png_count": 4,
+  "inherited_by_byte_identity_png_count": 9,
+  "prior_audit": "review/visual-audit.json",
+  "acceptance": {
+    "clean_visual_pass": true,
+    "blocker_count": 0,
+    "bounded_polish_count": 0,
+    "meaning": "All 13 final PNGs are visually accepted for the reviewed local report bundle. Four changed PNGs were reopened and inspected; nine unchanged PNGs exactly match their previously inspected bytes."
+  },
+  "blockers": [],
+  "remaining_findings": [],
+  "resolved_findings": [
+    {
+      "id": "B1",
+      "file": "reports/figures-v3/full/03-paired-uncertainty.png",
+      "result": "resolved",
+      "actual_visual_check": "MAP, NDCG and Recall now have three compact separated major tick labels. Numeric labels do not collide; zero lines, endpoints, contrasts and CI captions remain readable."
+    },
+    {
+      "id": "B2",
+      "file": "reports/figures-v3/screen/07-item-contributions.png",
+      "result": "resolved",
+      "actual_visual_check": "All four contribution panels now have three separated numeric ticks. Signed top-right/lower-left and small positive lower-right scales are readable; raw IDs, Russian titles, bars, sign baseline and captions remain legible and unclipped."
+    },
+    {
+      "id": "P1",
+      "file": "reports/figures-v3/screen/01-checkpoint-tradeoff.png",
+      "result": "resolved",
+      "actual_visual_check": "The right-panel legend is in the empty upper-right/middle area, between threshold/orange line and blue line. Its text and samples clear all data curves and threshold. No replacement orange/teal overlap observed."
+    },
+    {
+      "id": "R-screen03",
+      "file": "reports/figures-v3/screen/03-paired-uncertainty.png",
+      "result": "regression-check-pass",
+      "actual_visual_check": "Three separated compact ticks per panel; intervals, contrasts, zero reference and full bootstrap/cohort caption are readable. No clipping or overlap introduced."
+    }
+  ],
+  "inherited_checks": "Initial audit records actual pixel inspection of all 13 originals, Russian/raw-ID readability, cohort/units/CI/title checks, and consequential saved-aggregate/report spot checks. Its two blockers and one polish finding are closed above. Scientific arithmetic was not rerun in this final layout reinspection.",
+  "limits": [
+    "Acceptance concerns actual PNG layout and the prior bounded aggregate cross-checks, not independent validity of the scientific experiment.",
+    "No raw/model/feature/prediction arrays were opened; no rendering or training/inference job was launched.",
+    "Acceptance binds exactly to the listed final PNG SHA256 hashes. A changed PNG needs reinspection."
+  ],
+  "prior_audit_sha256": "6d3b7e2cd8acadd3a4395b852547468dffe3ff28487b9234c0e1d5e884b52601",
+  "images": [
+    {
+      "file": "reports/figures-v3/full/02-matched-comparison.png",
+      "sha256": "0a63b4c12616ff1f9f57bf4b8100b2458de85ba4aadaa1bdf65c0c4f86ae3e94",
+      "bytes": 205458,
+      "result": "pass",
+      "final_actual_png_reopened": false,
+      "inherited_by_exact_byte_identity": true,
+      "initial_viewed_file": "reports/figures/full/02-matched-comparison.png",
+      "initial_viewed_sha256": "0a63b4c12616ff1f9f57bf4b8100b2458de85ba4aadaa1bdf65c0c4f86ae3e94"
+    },
+    {
+      "file": "reports/figures-v3/full/03-paired-uncertainty.png",
+      "sha256": "706dae27f324f9fd0ad8f929580eb65b90edde118d02f9a3deff9a47a2f19014",
+      "bytes": 141710,
+      "result": "pass",
+      "final_actual_png_reopened": true,
+      "inherited_by_exact_byte_identity": false,
+      "initial_viewed_file": "reports/figures/full/03-paired-uncertainty.png",
+      "initial_viewed_sha256": "343b12db4029445ad978cedcf90b53e3f1fe1f3059d8fcba5b24f7d8d996cc2b"
+    },
+    {
+      "file": "reports/figures-v3/full/04-exposure-distribution.png",
+      "sha256": "349b12c25cb4679dead55a14a1e91fb2935e1685c7935d79c7bb0bb4ed4b3c4d",
+      "bytes": 324647,
+      "result": "pass",
+      "final_actual_png_reopened": false,
+      "inherited_by_exact_byte_identity": true,
+      "initial_viewed_file": "reports/figures/full/04-exposure-distribution.png",
+      "initial_viewed_sha256": "349b12c25cb4679dead55a14a1e91fb2935e1685c7935d79c7bb0bb4ed4b3c4d"
+    },
+    {
+      "file": "reports/figures-v3/full/05-target-ranks.png",
+      "sha256": "5147e592090718d3ca38381cf95937008eb575a26f683f1fe1d57d8a9b96802c",
+      "bytes": 163924,
+      "result": "pass",
+      "final_actual_png_reopened": false,
+      "inherited_by_exact_byte_identity": true,
+      "initial_viewed_file": "reports/figures/full/05-target-ranks.png",
+      "initial_viewed_sha256": "5147e592090718d3ca38381cf95937008eb575a26f683f1fe1d57d8a9b96802c"
+    },
+    {
+      "file": "reports/figures-v3/screen/01-checkpoint-tradeoff.png",
+      "sha256": "c045fd04b68d92114a033f6d1cda0688562fff6453963dcdbe58c12614ed7e59",
+      "bytes": 185386,
+      "result": "pass",
+      "final_actual_png_reopened": true,
+      "inherited_by_exact_byte_identity": false,
+      "initial_viewed_file": "reports/figures/screen/01-checkpoint-tradeoff.png",
+      "initial_viewed_sha256": "eda26b13a16f200432bfaa760b265c458c80f8651d7e7fd788d34a28a5b45bde"
+    },
+    {
+      "file": "reports/figures-v3/screen/02-matched-comparison.png",
+      "sha256": "c460020a24109bec657e573ff3226ecf7fdcfb1025cb175b87133554fe8def66",
+      "bytes": 201232,
+      "result": "pass",
+      "final_actual_png_reopened": false,
+      "inherited_by_exact_byte_identity": true,
+      "initial_viewed_file": "reports/figures/screen/02-matched-comparison.png",
+      "initial_viewed_sha256": "c460020a24109bec657e573ff3226ecf7fdcfb1025cb175b87133554fe8def66"
+    },
+    {
+      "file": "reports/figures-v3/screen/03-paired-uncertainty.png",
+      "sha256": "00c254e33a7cff08bcbca3bb14af94b94e8c8ebd5d8c63c5b209084b631c898e",
+      "bytes": 143468,
+      "result": "pass",
+      "final_actual_png_reopened": true,
+      "inherited_by_exact_byte_identity": false,
+      "initial_viewed_file": "reports/figures/screen/03-paired-uncertainty.png",
+      "initial_viewed_sha256": "177b9b353698d0371521a4b3dcd0458dca930b08e9b58416ff845ef62bd22e13"
+    },
+    {
+      "file": "reports/figures-v3/screen/04-exposure-distribution.png",
+      "sha256": "b83a9ab959379c4aa66932b2cbcf1b5e36de513731a731819f2b78cbe96ded1e",
+      "bytes": 331740,
+      "result": "pass",
+      "final_actual_png_reopened": false,
+      "inherited_by_exact_byte_identity": true,
+      "initial_viewed_file": "reports/figures/screen/04-exposure-distribution.png",
+      "initial_viewed_sha256": "b83a9ab959379c4aa66932b2cbcf1b5e36de513731a731819f2b78cbe96ded1e"
+    },
+    {
+      "file": "reports/figures-v3/screen/05-target-ranks.png",
+      "sha256": "9e9b9a7e5a7f524eb21c38dc2a220064456224d7dc6b4a559fd69688dd891a4e",
+      "bytes": 152857,
+      "result": "pass",
+      "final_actual_png_reopened": false,
+      "inherited_by_exact_byte_identity": true,
+      "initial_viewed_file": "reports/figures/screen/05-target-ranks.png",
+      "initial_viewed_sha256": "9e9b9a7e5a7f524eb21c38dc2a220064456224d7dc6b4a559fd69688dd891a4e"
+    },
+    {
+      "file": "reports/figures-v3/screen/06-screen-utilities-behavior.png",
+      "sha256": "1f407530ceb157bf0d1be3504fb20214130dcee2a62f23fca8b50635bbfb9ae4",
+      "bytes": 244433,
+      "result": "pass",
+      "final_actual_png_reopened": false,
+      "inherited_by_exact_byte_identity": true,
+      "initial_viewed_file": "reports/figures/screen/06-screen-utilities-behavior.png",
+      "initial_viewed_sha256": "1f407530ceb157bf0d1be3504fb20214130dcee2a62f23fca8b50635bbfb9ae4"
+    },
+    {
+      "file": "reports/figures-v3/screen/07-item-contributions.png",
+      "sha256": "a376163abbc617abe920ca1007260b299c453444506a6bb226795ef3457e10a3",
+      "bytes": 342182,
+      "result": "pass",
+      "final_actual_png_reopened": true,
+      "inherited_by_exact_byte_identity": false,
+      "initial_viewed_file": "reports/figures/screen/07-item-contributions.png",
+      "initial_viewed_sha256": "a7b7a383b4e5daf421fcf42456880088f97f87b35bdc4e2f1c0796f7b418397e"
+    },
+    {
+      "file": "reports/figures/rollout/08-five-step-panel.png",
+      "sha256": "189973f37121ee28145c0d0a56b5a6c8c49a51f4a7066910bb2763abae9fbc71",
+      "bytes": 449323,
+      "result": "pass",
+      "final_actual_png_reopened": false,
+      "inherited_by_exact_byte_identity": true,
+      "initial_viewed_file": "reports/figures/rollout/08-five-step-panel.png",
+      "initial_viewed_sha256": "189973f37121ee28145c0d0a56b5a6c8c49a51f4a7066910bb2763abae9fbc71"
+    },
+    {
+      "file": "reports/figures/rollout/08b-five-step-behavior.png",
+      "sha256": "62aeda935a319cbeb6f506c2e8c0d42d4530bcd33cf2ceb13f4b6ffd7ad0ff90",
+      "bytes": 436687,
+      "result": "pass",
+      "final_actual_png_reopened": false,
+      "inherited_by_exact_byte_identity": true,
+      "initial_viewed_file": "reports/figures/rollout/08b-five-step-behavior.png",
+      "initial_viewed_sha256": "62aeda935a319cbeb6f506c2e8c0d42d4530bcd33cf2ceb13f4b6ffd7ad0ff90"
+    }
+  ]
+}

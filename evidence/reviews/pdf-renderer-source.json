@@ -1,0 +1,139 @@
+{
+  "contract": "pdf-renderer-source-review-v1",
+  "reviewer": "/root/submit_pdf_builder/source_review",
+  "state": "passed-source-and-synthetic-checks",
+  "reviewed_root": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1",
+  "mode": "current-file-read-only-independent-review",
+  "open_findings": [],
+  "resolved_findings": [
+    {
+      "id": "renderer-unc-network-boundary",
+      "severity": "P2",
+      "axis": "correctness-and-safety",
+      "status": "fixed-and-rechecked",
+      "title": "Reject decoded Windows UNC paths before filesystem resolution",
+      "location": {
+        "path": "reports/render_report.py",
+        "original_lines": [
+          270,
+          277
+        ],
+        "final_lines": [
+          269,
+          279
+        ]
+      },
+      "supported_reason": "The original netloc-only guard accepted %5C%5Cserver%5Cshare%5Cx as a local reference. A no-network reproduction with Path.resolve replaced by identity returned file://server/share/x, after which inspect_source would stat/read a network target. This contradicted the documented unsupported-network-file boundary.",
+      "repair_evidence": "The final code checks decoded slash-normalized paths before Path.resolve. test_encoded_unc_file_links_are_rejected_before_filesystem_access patches Path.resolve with a denial sentinel and rejects raw and encoded UNC targets.",
+      "verification": "Final standard-library and ReportLab suites pass the regression; no network target was contacted."
+    },
+    {
+      "id": "renderer-logical-bookmark-page",
+      "severity": "P2",
+      "axis": "correctness-and-requirements",
+      "status": "fixed-and-rechecked",
+      "title": "Bind internal bookmarks to logical pages during deferred serialization",
+      "location": {
+        "path": "reports/render_report.py",
+        "original_lines": [
+          557,
+          559
+        ],
+        "final_lines": [
+          539,
+          548,
+          575,
+          576
+        ]
+      },
+      "supported_reason": "Original CountedCanvas.showPage deferred the base showPage call. ReportLab 4.4.9 Canvas._startPage increments only canvas._pageNumber; PDFDocument.pageCounter increments in addPage during base showPage. Paragraph anchors call bookmarkPage and thisPageRef, so headings laid out after page one would otherwise retain Page1 references.",
+      "repair_evidence": "logical_bookmark temporarily sets the PDFDocument counter to the logical canvas page number and restores the counter in finally; CountedCanvas.bookmarkPage delegates to it.",
+      "verification": "test_internal_bookmark_uses_logical_page_before_serialization passes with logical page3, document counter1 before/after, destination Page3 and an empty never-saved BytesIO buffer."
+    }
+  ],
+  "tests": [
+    {
+      "label": "standard-library-environment",
+      "command": ".\\pas.ps1 python -B -m unittest discover -s D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/reports -p test_render_report.py -v",
+      "exit_code": 0,
+      "discovered": 17,
+      "passed": 14,
+      "skipped": 3,
+      "failed": 0,
+      "note": "The optional ReportLab checks skip. A test launches --check under Python -I -S -B, checks successful Unicode JSON and verifies no fixture-directory writes."
+    },
+    {
+      "label": "reportlab-synthetic-no-pdf",
+      "runtime_dependency_path": "C:/Users/Михаил/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/Lib/site-packages",
+      "reportlab_version": "4.4.9",
+      "invocation": "PAS Python -B -c: add the dependency path to sys.path, unittest.defaultTestLoader.discover(reports, pattern=test_render_report.py), TextTestRunner(verbosity=2)",
+      "exit_code": 0,
+      "discovered": 17,
+      "passed": 17,
+      "skipped": 0,
+      "failed": 0,
+      "note": "Only synthetic fixtures, paragraph/table/image flowables and a never-saved empty canvas buffer. No PDF bytes were serialized."
+    }
+  ],
+  "test_quality": {
+    "meaningful_checks": [
+      "Lazy optional dependency and stdlib-only --check",
+      "Fenced/inline code cannot become executed links",
+      "Raw markup escaping and unsupported executable schemes",
+      "Local-reference relocation including spaces and balanced parentheses",
+      "Encoded network-file rejection before OS resolution",
+      "Anchor validation, captions consumed once, PNG dimensions",
+      "Table widths, repeat header and no-row-splitting configuration",
+      "Oversized row rejected before output acquisition",
+      "Existing artifact sentinel survives build refusal",
+      "Logical bookmark page while document serialization is deferred"
+    ],
+    "runtime_limits": [
+      "Flowable tests inspect wrapping/configuration; actual multipage table layout and complete bitmap decode are left to root PDF QA.",
+      "Footer current/total behavior, output PDF annotations and all-page visual appearance were inspected statically and were not exercised by this reviewer."
+    ]
+  },
+  "scope_boundaries": {
+    "source_files_reviewed": [
+      "reports/render_report.py",
+      "reports/test_render_report.py",
+      "research/PDF_LAYOUT.md"
+    ],
+    "related_context_read": [
+      "campaign.json",
+      "D:/personal-agent-system/docs/windows.md",
+      "D:/personal-agent-system/.agents/skills/code-review/SKILL.md",
+      "D:/personal-agent-system/docs/agents/coordination.md",
+      "D:/personal-agent-system/docs/agents/verification.md"
+    ],
+    "permitted_write": "review/pdf-renderer-source.json",
+    "reviewer_source_edits": false,
+    "author_repairs_observed": true,
+    "scientific_arrays_or_models_read": false,
+    "scientific_or_native_jobs_run": false,
+    "pdf_created_or_modified": false,
+    "report_markdown_or_images_modified": false,
+    "network_or_paid_operations": false,
+    "notes": "Tests create and clean their own synthetic temporary fixtures, including a pre-existing PDF-named sentinel that is not a PDF. No renderer build operation was invoked on a fresh output."
+  },
+  "freshness": {
+    "initial_capture_hashes": {
+      "reports/render_report.py": "dbdb87cfe53cbf950ffc77f3cf9ec1a3022a7364f125cc6abb8303ea69a56af2",
+      "reports/test_render_report.py": "f7587841acfadfb512ef79c1c8749590686b7ff7b9a8a05e179646a29abb478b",
+      "research/PDF_LAYOUT.md": "bba9ed8b69ec5ad3761e6eeba13207491915dd4418b79809adda41f2fe951868"
+    },
+    "explanation": "The author narrowly refreshed the freeze twice to repair the two independently identified defects. Both repairs and the resulting test/document changes were re-read and re-tested. Final before/after hashes below refer to the last reviewed freeze.",
+    "before_sha256": {
+      "reports/render_report.py": "a6f7a020becba2aec0b697accfae519c19765bad9cd7b7d5f60c646d91e880ed",
+      "reports/test_render_report.py": "fbd5626eb3089f75be7f6c0eb93396e3918814bb879bf7b14e1b6963b6944552",
+      "research/PDF_LAYOUT.md": "3722a8ac1d28d4f592d9f8026ea7bc5a811cfb5b2d80ec1ef7feaa33d105b16a"
+    },
+    "after_sha256": {
+      "reports/render_report.py": "a6f7a020becba2aec0b697accfae519c19765bad9cd7b7d5f60c646d91e880ed",
+      "reports/test_render_report.py": "fbd5626eb3089f75be7f6c0eb93396e3918814bb879bf7b14e1b6963b6944552",
+      "research/PDF_LAYOUT.md": "3722a8ac1d28d4f592d9f8026ea7bc5a811cfb5b2d80ec1ef7feaa33d105b16a"
+    },
+    "final_inputs_unchanged": true
+  },
+  "overall_assessment": "No supported open defect remains in the final reviewed source/test/layout freeze. This receipt establishes only source and synthetic-test review; it does not establish actual PDF creation, output page count or all-page visual acceptance."
+}

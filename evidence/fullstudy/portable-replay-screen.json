@@ -1,0 +1,143 @@
+{
+  "contract": "kion-packaged-aggregate-replay-v1",
+  "state": "completed",
+  "stage": "screen",
+  "rows": 256,
+  "bundle_manifest": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/code-manifest.json",
+    "sha256": "6b054627fdcfd2ee205df2e3871d8da47e6d3d7cbdf47a58897968182f2e4085",
+    "bytes": 109280
+  },
+  "package_verification": {
+    "state": "passed",
+    "files": 261,
+    "bytes": 6553172,
+    "python_files_parsed": 237,
+    "synthetic": {
+      "queries": 3,
+      "map10": 0.5,
+      "recall10": 0.6666666666666666,
+      "ndcg10": 0.5436432511904858
+    },
+    "scope": "source bytes, Python syntax and invented ranking arithmetic; no ML replay"
+  },
+  "data": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/evidence/plot-data-screen.json",
+    "sha256": "8ad2461b5c9a247f867264561af47e70113a45e39b4980bea7f63a231a62935c",
+    "bytes": 224266
+  },
+  "aggregate_canonical_sha256": "f085b211875c5c208d2f037feb7a6dfd76a9eb10b674bd7a495bc74ae92aa448",
+  "labels": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures-v3/screen/labels.json",
+    "sha256": "f90324967dabc59accb92d3d111b401ee8aca185d5abde034bfc40e1db90c30b",
+    "bytes": 5163
+  },
+  "titles_requested": 24,
+  "titles_present": 24,
+  "plot_module": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_results_v4.py",
+    "sha256": "a04715975f14af0bd03283be31721d31eea6e26c5914b1fa868839a0b5c0a147",
+    "bytes": 7027
+  },
+  "dependencies": [
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_results.py",
+      "sha256": "f6be0387a947dd33f065deae54fe98d14881e30271040389d743602afcd024f4",
+      "bytes": 17936
+    }
+  ],
+  "verifier": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/code/tools/verify_bundle.py",
+    "sha256": "3c1261f4765523ec027ace31b19f827d2c4ba8f84149efe7a0c5ce47e9b56119",
+    "bytes": 3505
+  },
+  "source": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/replay_portable_v3.py",
+    "sha256": "2293ffef654eef5dbc6a965a11cb1bd0264b8852089581a553e76d0cafc2496f"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "matplotlib": "3.11.2"
+  },
+  "output": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/screen",
+  "files": [
+    {
+      "path": "01-checkpoint-tradeoff.svg",
+      "sha256": "944ee64dac245c57473464d94080ccd19d6ee1b48386c9e0570facc70e3474bf",
+      "bytes": 32696
+    },
+    {
+      "path": "01-checkpoint-tradeoff.png",
+      "sha256": "c045fd04b68d92114a033f6d1cda0688562fff6453963dcdbe58c12614ed7e59",
+      "bytes": 185386
+    },
+    {
+      "path": "02-matched-comparison.svg",
+      "sha256": "ec90bb7f204d1830d83c61f5c11b2b439cb48360a87a93dbeb171b086cc3c724",
+      "bytes": 47851
+    },
+    {
+      "path": "02-matched-comparison.png",
+      "sha256": "c460020a24109bec657e573ff3226ecf7fdcfb1025cb175b87133554fe8def66",
+      "bytes": 201232
+    },
+    {
+      "path": "03-paired-uncertainty.svg",
+      "sha256": "74325f9bb1aaa19fe392d33056f115aee87b43f466d5a6c5b0415855b235fc34",
+      "bytes": 22829
+    },
+    {
+      "path": "03-paired-uncertainty.png",
+      "sha256": "00c254e33a7cff08bcbca3bb14af94b94e8c8ebd5d8c63c5b209084b631c898e",
+      "bytes": 143468
+    },
+    {
+      "path": "04-exposure-distribution.svg",
+      "sha256": "9c1f9652039bf3f2592bd3f2c302c26aea67476a75d71f635bb732c64aa3199f",
+      "bytes": 70552
+    },
+    {
+      "path": "04-exposure-distribution.png",
+      "sha256": "b83a9ab959379c4aa66932b2cbcf1b5e36de513731a731819f2b78cbe96ded1e",
+      "bytes": 331740
+    },
+    {
+      "path": "05-target-ranks.svg",
+      "sha256": "a555a268894857ff0ad0ebf48db139986ed10b8140d4f37fe0e55ef19c62eaf5",
+      "bytes": 26191
+    },
+    {
+      "path": "05-target-ranks.png",
+      "sha256": "9e9b9a7e5a7f524eb21c38dc2a220064456224d7dc6b4a559fd69688dd891a4e",
+      "bytes": 152857
+    },
+    {
+      "path": "06-screen-utilities-behavior.svg",
+      "sha256": "5bfb57119cf3b99ebe5439c0e4fd03451a476e643fa965d82dea400d34cc0628",
+      "bytes": 50441
+    },
+    {
+      "path": "06-screen-utilities-behavior.png",
+      "sha256": "1f407530ceb157bf0d1be3504fb20214130dcee2a62f23fca8b50635bbfb9ae4",
+      "bytes": 244433
+    },
+    {
+      "path": "07-item-contributions.svg",
+      "sha256": "8d1171fc284860205aa304f5110ed197edb59c7d2f0c7cf5fcb1ca36ff692236",
+      "bytes": 50776
+    },
+    {
+      "path": "07-item-contributions.png",
+      "sha256": "a376163abbc617abe920ca1007260b299c453444506a6bb226795ef3457e10a3",
+      "bytes": 342182
+    }
+  ],
+  "figures_index": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/screen/figures.json",
+    "sha256": "3e613089d18185dc488e494a1ca909383d11dc8f2a370a630f39888766c0f2a6",
+    "bytes": 6241
+  },
+  "requires_visual_QA": true,
+  "rendered_visual_QA": false,
+  "scope": "Packaged code and compact aggregate/title-map replay only; no model inference or raw-data training."
+}

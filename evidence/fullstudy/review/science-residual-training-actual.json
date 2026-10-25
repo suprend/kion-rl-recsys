@@ -1,0 +1,72 @@
+{
+  "review_type": "independent actual residual-training small-metadata and lineage audit",
+  "status": "PASS_ACTUAL_RESIDUAL_1000_TRAINING",
+  "blocking_findings": [],
+  "path_base": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1",
+  "bindings": [
+    {"path":"policy/residual-r1/training.json","sha256":"f275070714f6fd24c588bb3637b752697063cca8d422b01e7d827bc3d743cba6","actual_hash_verified":true},
+    {"path":"operations/residual-fit-r1/receipt.json","sha256":"86e9b6c990c93f99a7acccf96025bf28fef5cc0552cb466211d2537fb147cbd7","actual_hash_verified":true},
+    {"path":"operations/residual-fit-r1/stage-completion.json","sha256":"c8ee3e227d0e1e00efed8dd66c638290f1c6f2df3b2bd54261b60d1e51d80825","actual_hash_verified":true},
+    {"path":"request-residual-fit-r1.json","sha256":"163dd7cf9fb2cb06d449feacf424c55f80d55f3e5f7ddda1c2a80cc132c58b09","actual_hash_verified":true},
+    {"path":"protocols/preregistration.json","sha256":"78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c","actual_hash_verified":true},
+    {"path":"reward/residual-r1/prefit.json","sha256":"f1431dd1092a5d7ef96e2ed89d4c2889067cd3558fa0f478f29eff73825c3d97","actual_hash_verified":true},
+    {"path":"reward/residual-r1/train/utility.json","sha256":"e888cb47586b8ea2a4e5323a1051401e949f602ec36e43d36254684e80a320a5","actual_hash_verified":true},
+    {"path":"reward/residual-r1/screen/utility.json","sha256":"b3d4d9a000d953b207566d695066f6210155a345d683a58a1edf48e27765d709","actual_hash_verified":true}
+  ],
+  "runtime_evidence": {
+    "operation":"residual-fit-r1",
+    "state":"succeeded",
+    "exit_code":0,
+    "cleanup_quiescent":true,
+    "elapsed_seconds":167.31199999991804,
+    "stage_result_equals_training_json":true,
+    "actual_optimizer_updates":1000,
+    "worker_log":"1000 residual-exact-H1-update events in order1..1000, followed by residual-training-complete1000 and completed train_rl stage",
+    "prefit_order":"32 all-state update0 parity batches start0,16,...,496 occur before residual-before-optimizer; source creates Adam only after these gates",
+    "update0_actor_reference_exact":true,
+    "update0_top10_exact":true,
+    "update0_max_abs_error":0.0,
+    "reference_weights_unchanged":true,
+    "parameter_l2_delta":0.9295882484605889,
+    "provider_opened":false,
+    "GPT_opened":false,
+    "RM_opened":false,
+    "claim":"The single additional head-only residual fit actually completed1000 updates with a nonzero finite actor parameter change; this is stronger than an inference tilt or source-only readiness."
+  },
+  "protocol_and_input_alignment": {
+    "start_from":"original-C",
+    "C_checkpoint_sha256":"9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+    "train_cache_sha256":"e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+    "cohort_selection_sha256":"e480bb6a662f6ec57f3a4fa5319542ee3deb4157350a9de005c6de4dfa7bcbdf",
+    "parent_reward_sha256":"e8047d12f8009bb422cc4956261a355dc10e05f42d73351ef76ccd5f7bc9ce05",
+    "small_input_hashes_freshly_match_request":true,
+    "configuration":"Same original-C/train512/natural1024 producer-slot-v2 CUDA-FP16 arithmetic; fixed beta0.5,temperature1,Adam1e-5,B16,weight_decay0,gradclip1,CE0,sampler_seed20261024,primary fixed latest1000. Supervised updates0,new supervised epochs0,new RM fits0,final test reads0.",
+    "utility":"Previously accepted separate derived utility r_RM-m_fit; manifest/prefit/prereg pins match completed utility stage. Support and active-state set unchanged.",
+    "sampler":"Frozen old and new source both use random.Random(seed).choice over ordered eligible states for16 real occurrences with replacement. All512 states remain active; new run records sampler_positions_sha256979fb7687e3355e17a6e1ed25db8d38cbf7adb37ee47278e6e07b4368c7e56d9. Old completion receipt does not record a sampler digest, so no direct digest equality was asserted.",
+    "parity_proof":{"sha256":"dbdc6622bd620c15cbab77e2b12db4a241bb6e9577270fc0578b5da768d1e32b","actual_hash_verified":true,"scope":"Immutable producer-slot proof covers all512 forward cache/top10/reference comparisons and a separate16-occurrence synthetic backward fixture, including duplicate occurrences and zero dummy-output gradient. It is not an all512 backward proof."},
+    "finite_update_guard":"Reviewed frozen residual source checks finite loss/unscaled gradients/updated parameters,nonzero first gradient,unchanged reference and finite nonzero final delta; any violation stops before completed training.json. Successful completed stage is consistent with1000 actual updates rather than silently counted overflow skips."
+  },
+  "checkpoint_lineage": {
+    "manifest_steps":[0,250,500,1000],
+    "all_four_files_exist_with_nonzero_size":true,
+    "checkpoint_hashes_recorded_in_completed_training":{
+      "0":"59ee6242550a98fa2739389492b32377e7d24e6d66ccf7ada590ab319f79b2dd",
+      "250":"58a9cd91663ce60f61dd564af168afa85c02f30cdb1d73adfa55471ec2551259",
+      "500":"ce7e71f0b4bf1aaf768e8435e1cdff0e90c944c59375711ea416b1b0d5d9261b",
+      "1000":"29d20cd3d058b4ccac52d94f3ad946891f3839601fe935817f7c7b89f09b1ee3"
+    },
+    "payload_boundary":"Reviewer did not open/hash/deserialise checkpoint payloads. Training producer hashes are bound by the completed manifest; inference must independently enforce the actual file SHA,distinct residual checkpoint contract,step1000 and original-C ancestor at loading.",
+    "scientific_endpoint":"Use head1000 as registered. Checkpoint0/250/500 are preserved diagnostics,not candidates for post-result replacement of the scientific arm. Serialization bytes of head0 need not equal original-C checkpoint bytes."
+  },
+  "mandatory_report_limits":[
+    "Residual supported/reference-weighted advantage scale is roughly half completion (train RMS ratio0.4915775791,screen0.5006498704). Fixed beta0.5 is not matched KL or matched update strength; display actual post-fit KL before comparing outcomes.",
+    "Residual utility does not establish causal uplift,personalization,exact additive item-bias removal,online completion gain or retention.",
+    "One extra fit and one seed on reused development support an exploratory result,including honest negative outcomes; no robust superiority claim follows.",
+    "This receipt establishes actual training completion,not successful reward/relevance/concentration outcomes,full4096 evaluation,bootstrap correctness or960-step rollout completeness."
+  ],
+  "remaining_before_inference":[
+    "Freeze and review immutable three-arm evaluation/rollout sources and requests; pin residual head1000 and completed training.json alongside C and completion latest1000.",
+    "Preserve screen256 reward/utility versus full4096 relevance separation and all original target/pool denominators."
+  ],
+  "reviewer_execution_boundary":"Only source,text logs,small JSON and file metadata were inspected. No arrays/NPZ/checkpoint/model payloads,NumPy/Torch/ML imports,provider/GPU jobs or training were executed by this reviewer. No new training is authorized by this receipt."
+}

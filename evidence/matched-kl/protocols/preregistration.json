@@ -1,0 +1,106 @@
+{
+  "contract": "kion-C1070-train-KL-seeds-preregistered-v1",
+  "registered_utc": "2026-10-25T05:38:08.356824+00:00",
+  "authority": "User: Ставь goal, following matched-KL, multi-seed, short-report proposal",
+  "objective": "Bounded head-only comparison of two frozen rewards at similar TRAIN512 candidate-pool forward KL to original C; no causal claim",
+  "seeds": [
+    20261024,
+    20261025,
+    20261026
+  ],
+  "calibration_seed": 20261024,
+  "seed_scope": "seed24 reused completion plus selected calibration residual; seeds25/26 prospectively paired. Three seeds are descriptive, not three independent confirmations.",
+  "primary_metric": "MAP@10 on all fixed dev4096 states, latest1000 endpoint",
+  "secondary_metrics": [
+    "NDCG@10",
+    "Recall@10",
+    "screen256 completion and residual utilities",
+    "KL",
+    "exposure"
+  ],
+  "reference": "original frozen C1070; unchanged encoder/table/provider and frozen RM-r2",
+  "TRAIN_KL": "equal mean across all512 fixed train states of sum over all1024 actions pi*(log(pi)-log(C)); temperature1; same producer-slot FP16 packing",
+  "target": "T = TRAIN_KL(old completion seed20261024 head-1000); finite T>1e-8 required",
+  "initial_measurement": "Before any new fit evaluate C, old completion1000, old residual1000 on all512; exact C/cache/top10 parity required.",
+  "calibration": {
+    "beta1": "clip(0.5*sqrt(K_old_residual/T),0.01,2.0)",
+    "first_pilot": "residual seed24 original-C start, exactly1000 updates",
+    "stop_if_ratio_in": [
+      0.8,
+      1.2
+    ],
+    "beta2": "only if first pilot ratio outside tolerance: clip(beta1*sqrt(K1/T),0.01,2.0); do not repeat if identical beta",
+    "second_pilot": "at most one further residual seed24 original-C fit, exactly1000 updates",
+    "selection": "among finite positive pilot TRAIN KL choose smallest abs(log(K/T)); tie larger beta; if none valid stop branch",
+    "freeze": "Before any seed25/26 fit freeze residual beta and selected seed24 pilot checkpoint. Reuse this pilot as final seed24 arm; no duplicate fit.",
+    "forbidden": "No dev MAP/reward selection, no third beta, no per-seed retuning, no best checkpoint/seed selection"
+  },
+  "final_arms": "completion beta0.5 and residual frozen beta, each seeds24/25/26, latest1000. Reuse historical completion24 and selected pilot24.",
+  "matched_claim": "Only if for EACH seed TRAIN_KL(residual)/TRAIN_KL(completion) is in [0.8,1.2]. Otherwise whole attempt labelled not matched; report all outcomes without adaptive retuning.",
+  "match_limit": "Operational scalar candidate-pool KL tolerance, not statistical equivalence, per-state/fullcatalog matching or causal isolation.",
+  "fit_budget": {
+    "maximum_new_fits": 8,
+    "maximum_scientific_fits": 6,
+    "pilot_fits_max": 2,
+    "prospective_fits": 4,
+    "technical_retries_max": 2,
+    "maximum_updates_per_fit": 1000,
+    "retries": "Only diagnosed technical failure; every admitted launched attempt counts including failed attempts; no retry to improve metrics."
+  },
+  "optimizer": {
+    "start_from": "original-C",
+    "updates": 1000,
+    "logical_batch": 16,
+    "sampler": "Python random.Random(seed).choice over supported train states, with replacement",
+    "optimizer": "Adam",
+    "learning_rate": 1e-05,
+    "weight_decay": 0,
+    "grad_clip": 1,
+    "precision": "cuda-fp16",
+    "checkpoints": [
+      0,
+      250,
+      500,
+      1000
+    ],
+    "AMP": "Initial scale1024; skipped update is failure",
+    "temperature": 1,
+    "utility": "Frozen support; C-weighted supported centering; unsupported advantage0; all1024 actions normalized"
+  },
+  "inference": "One shared raw-feature dev4096 pass for C plus exactly six final arms on identical natural1024; cached screen256 diagnostics separately; no target injection/seen filter.",
+  "inference_statistics": {
+    "bootstrap": "2000 paired user-cluster draws shared across arms, fixed seed20261024; conditional on fitted heads, reused dev, unadjusted",
+    "seed_stats": "Show each paired seed delta, mean/range/sampleSD across3, and separate descriptive newseed25/26 mean; no seed-level significance from n3"
+  },
+  "exclusions": [
+    "new supervised epochs",
+    "new RM fits",
+    "final-test reads",
+    "external downloads",
+    "paid operations",
+    "uploads/publication/submission",
+    "commit/push"
+  ],
+  "execution": {
+    "owner": "root only actual native numerical/model jobs",
+    "global_heavy_jobs": 1,
+    "cpu_threads": 4,
+    "cap_gib": [
+      4,
+      8
+    ],
+    "reserve_gib": 2,
+    "disk_reserve_gib": 15,
+    "no_new_fit_after": "2026-10-25T09:25:00+03:00",
+    "numerical_deadline": "2026-10-25T09:45:00+03:00",
+    "report_deadline": "2026-10-25T10:00:00+03:00",
+    "old_roots": "F/O STOP and completed source/report/archive immutable",
+    "honesty": "If incomplete by cutoff save checkpoint, do not mark goal complete; no invented result"
+  },
+  "amendments_to_proposal": [
+    "MAP@10 primary for consistency with user/research; NDCG secondary",
+    "Reuse selected calibration seed24 pilot as final arm, avoiding redundant identical fit",
+    "Maximum6 scientific fits plus up to2 technical retries within total8",
+    "1000 optimizer updates and1024 candidate actions are different dimensions; no missing24 updates"
+  ]
+}

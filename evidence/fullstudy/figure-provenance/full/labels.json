@@ -1,0 +1,96 @@
+{
+  "contract": "kion-plot-title-labels-v1",
+  "state": "completed",
+  "stage": "full4096",
+  "aggregate": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/full-analysis-r1/plot-data.json",
+    "sha256": "6957ab49a1a86a6d9d5081927cc0bc423e6ddc886cf80b57f2eac6ebb41f9a1c",
+    "bytes": 495248
+  },
+  "aggregate_canonical_sha256": "44d9f5e3d07855995e2c8f143d98be4eec827df517366472eb8362eb6b9c538b",
+  "title_enrichment": {
+    "enabled": true,
+    "items": {
+      "path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e",
+      "bytes": 31836561
+    },
+    "requested_count": 12,
+    "found_title_count": 12,
+    "labels": [
+      {
+        "raw_id": 142,
+        "title": "Маша",
+        "missing_title": false,
+        "display_label": "142 · Маша"
+      },
+      {
+        "raw_id": 3734,
+        "title": "Прабабушка легкого поведения",
+        "missing_title": false,
+        "display_label": "3734 · Прабабушка легкого\nповедения"
+      },
+      {
+        "raw_id": 4151,
+        "title": "Секреты семейной жизни",
+        "missing_title": false,
+        "display_label": "4151 · Секреты семейной жизни"
+      },
+      {
+        "raw_id": 7793,
+        "title": "Радиовспышка",
+        "missing_title": false,
+        "display_label": "7793 · Радиовспышка"
+      },
+      {
+        "raw_id": 7829,
+        "title": "Поступь хаоса",
+        "missing_title": false,
+        "display_label": "7829 · Поступь хаоса"
+      },
+      {
+        "raw_id": 8636,
+        "title": "Белый снег",
+        "missing_title": false,
+        "display_label": "8636 · Белый снег"
+      },
+      {
+        "raw_id": 9728,
+        "title": "Гнев человеческий",
+        "missing_title": false,
+        "display_label": "9728 · Гнев человеческий"
+      },
+      {
+        "raw_id": 10440,
+        "title": "Хрустальный",
+        "missing_title": false,
+        "display_label": "10440 · Хрустальный"
+      },
+      {
+        "raw_id": 11863,
+        "title": "Девятаев - сериал",
+        "missing_title": false,
+        "display_label": "11863 · Девятаев - сериал"
+      },
+      {
+        "raw_id": 12192,
+        "title": "Фемида видит",
+        "missing_title": false,
+        "display_label": "12192 · Фемида видит"
+      },
+      {
+        "raw_id": 13865,
+        "title": "Девятаев",
+        "missing_title": false,
+        "display_label": "13865 · Девятаев"
+      },
+      {
+        "raw_id": 15297,
+        "title": "Клиника счастья",
+        "missing_title": false,
+        "display_label": "15297 · Клиника счастья"
+      }
+    ],
+    "canonical_sha256": "bd5b0545ea7151f045997ccb5ed17aed07e646aea14ec27f232efe83c2a3ff37"
+  }
+}

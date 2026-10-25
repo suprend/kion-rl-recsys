@@ -1,0 +1,293 @@
+{
+  "contract": "kion-submission-independent-source-review-v1",
+  "state": "passed-source-preservation-and-static-closure-review",
+  "reviewer": "/root/submit_source_review",
+  "reviewed_utc": "2026-10-25T07:30:02.814704+00:00",
+  "scope": "Preserved source bytes, original approved manifests, selected matched-KL request source pins, static imports, source helper, source README and SOURCE_CLOSURE. Not global package or numerical acceptance.",
+  "author_is_reviewer": false,
+  "findings": [],
+  "source_manifest_sha256": "8ea4eefae2900208c028bdb86493b950b328b048519ab5160ad069085784637a",
+  "reviewed_support_hashes": {
+    "source/manifest.json": "8ea4eefae2900208c028bdb86493b950b328b048519ab5160ad069085784637a",
+    "source/README.md": "b941c22b8b7bf44089c72705273a16ad6f62a4d2782162010dcedf1db43f76df",
+    "source/static-audit.json": "0628ef569c78920397ba95fcedb4e79e345b41612dfe74f87b891ec558a7f05c",
+    "source/verify_sources.py": "df00fd2b3cecfb5f39dc95256d8417d7ad0145264e50138872ebaa09fc2da6e4"
+  },
+  "closure_document": {
+    "path": "research/SOURCE_CLOSURE.md",
+    "sha256": "3023c4c3ab49e15369e2898d0908fbdd8e70246da328b9b58a9dc42623514d13"
+  },
+  "preservation": {
+    "files": 284,
+    "bytes": 6989216,
+    "all_compared_byte_for_byte_to_F_Z_originals": true,
+    "all_sizes_and_sha256_match_manifest": true,
+    "fullstudy_approved_files": 261,
+    "fullstudy_manifest_sha256": "6b054627fdcfd2ee205df2e3871d8da47e6d3d7cbdf47a58897968182f2e4085",
+    "fullstudy_manifest_rows_matched": 261,
+    "fullstudy_provenance_files": 2,
+    "matched_kl_approved_python_files": 20,
+    "matched_kl_selection_sha256": "801c0337ab63aead24b6fa1b13500d18b5d3ce0b4d7e55138f3ff897d8883c8b",
+    "selection_metadata_files": 1,
+    "python_AST_parsed_and_compiled_without_execution": 257,
+    "mismatches": [],
+    "source_tree_files_including_four_support_files": 288,
+    "source_tree_bytes_including_four_support_files": 7156401,
+    "final_freshness_recheck": "All preserved bytes, support hashes and closure hash rechecked immediately before writing this receipt."
+  },
+  "matched_kl_source_pin_closure": {
+    "request_metadata_files": [
+      {
+        "path": "request-analyze-full-r1.json",
+        "sha256": "98bd35b87e57e41e5f21147039170f5f1a162de9fc6ddda51a0685ae3d1179ed",
+        "source_pin_count": 134
+      },
+      {
+        "path": "request-analyze-screen-r1.json",
+        "sha256": "78ad749349c85596410c3e2aacf706b45a861f2136da267d53deea56905c8bba",
+        "source_pin_count": 134
+      },
+      {
+        "path": "request-completion-20261025.json",
+        "sha256": "a8b88cc6237f570f74d4260333a2872c6da21cfe5001a79a4c90274985941931",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-completion-20261026.json",
+        "sha256": "08bff9e2e011728f84c43cf26b26d3741107df7ce595b204138710a1f3c4b133",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-figures-r1.json",
+        "sha256": "5a62d5d5326be886af2149e047a509c8c0e58a499da26d1766ea7cdedb1d4e42",
+        "source_pin_count": 8
+      },
+      {
+        "path": "request-full-six-r1.json",
+        "sha256": "42d5ef03f877a4c355f5c23ce9bba78c4f4239a64c6773a596c329875e020c50",
+        "source_pin_count": 135
+      },
+      {
+        "path": "request-kl-pilot1.json",
+        "sha256": "ebfdd62416173c8d3c8303fbe8313f3b749dd1f6f23e4d8c27775037336f55c7",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-kl-pilot2.json",
+        "sha256": "e80bc5621c67caa88594150802b74939c4ca992b99d570caaf39885653c04779",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-pilot1.json",
+        "sha256": "bb3b6aa38e0d81c2d3bcfc2906c3b4ad22f29d6adadc055effa4123b868be8fb",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-pilot2.json",
+        "sha256": "fcb30871cc6154d230d91505f61e2b20c7fd5b27c0933528ac990f2ca5d391dc",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-reader-pdf-r1.json",
+        "sha256": "92cbb39760dd4aa590cf4c66d3482001b2741291db55e8a7a4bee7997ded8a14",
+        "source_pin_count": 7
+      },
+      {
+        "path": "request-residual-20261025.json",
+        "sha256": "0f881a7ad0a6b8fcb3c3ff2a748f5b1f7568b08aa329d92fc31b7a3291ebee58",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-residual-20261026.json",
+        "sha256": "85498b132ed3e85aaff8aad96d6214c7fde10a38fd30af8d70cee82afec8489c",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-screen-six-r1.json",
+        "sha256": "286bbf5fd5ab1879de363f948361473e25416405e51377c267da58fe065b9bfb",
+        "source_pin_count": 135
+      },
+      {
+        "path": "request-train-final-six-r1.json",
+        "sha256": "ff34ccb67219dcd84586f6aef8ccdaa3a96ffdaa05bb54b02442ed6ca6456daf",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-train-target-r1.json",
+        "sha256": "2b71c7485eb2f41e5e89dfc884548a60ecf65c15cd51dc6c689f12204c4ee22a",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-verify-full-r1.json",
+        "sha256": "2f48825c73594df74fdca2de0af42d0ab067245f013fb3711f9e36bd360a9cbf",
+        "source_pin_count": 7
+      },
+      {
+        "path": "request-verify-screen-r1.json",
+        "sha256": "a5e598e93de4be86e4b254960ab7a3858ed066aa163b0cfa3289a31c87eaa83e",
+        "source_pin_count": 7
+      }
+    ],
+    "requests": 18,
+    "bindings": 1897,
+    "unique_sources": 139,
+    "missing": [],
+    "mismatched": [],
+    "payloads_from_input_hashes_opened": false
+  },
+  "static_import_closure": {
+    "local_absolute_import_occurrences_with_preserved_candidates": 213,
+    "local_relative_import_occurrences_with_exact_targets": 2,
+    "scripts_namespace_imports_with_preserved_target": 1,
+    "local_import_occurrences_requiring_import_path_setup": 56,
+    "unknown_nonstdlib_roots_after_classification": [],
+    "external_import_occurrences": {
+      "numpy": 138,
+      "torch": 88,
+      "transformers": 19,
+      "psutil": 10,
+      "matplotlib": 9,
+      "catboost": 9,
+      "scipy": 3,
+      "reportlab": 7,
+      "threadpoolctl": 1
+    },
+    "scripts_namespace_target_sha256": "6bf97bb98c8fdf0cb858db18066862d3a94cb107334bcb14c74e340f2943911c",
+    "limit": "Source presence and request-pin closure only. sys.path setup, dynamic providers and numerical/native dependency resolution were not executed."
+  },
+  "executed_safe_checks": [
+    {
+      "check": "source/verify_sources.py under PAS Python -B",
+      "state": "passed",
+      "files": 284,
+      "bytes": 6989216,
+      "Python_AST_compile": 257
+    },
+    {
+      "check": "historical fullstudy/code/tools/verify_bundle.py --report-root source/fullstudy under PAS Python -B",
+      "state": "passed",
+      "files": 261,
+      "bytes": 6553172,
+      "python_AST_parsed": 237,
+      "invented_ranking_fixture": {
+        "queries": 3,
+        "map10": 0.5,
+        "recall10": 0.6666666666666666,
+        "ndcg10": 0.5436432511904858
+      }
+    },
+    {
+      "check": "In-memory manifest negative tests against exact helper SHA; Path.read_text mocked only for manifest; no fixture files written",
+      "state": "passed",
+      "cases_rejected": [
+        "parent escape",
+        "absolute path",
+        "Windows drive",
+        "backslash",
+        "empty path",
+        "outside source namespace",
+        "duplicate path",
+        "unlisted source file",
+        "size mismatch",
+        "SHA256 mismatch"
+      ],
+      "cases": 10
+    }
+  ],
+  "helper_review_references": [
+    {
+      "path": "source/verify_sources.py",
+      "lines": "27-43",
+      "claim": "Rejects unsafe/duplicate paths and escapes before source read."
+    },
+    {
+      "path": "source/verify_sources.py",
+      "lines": "45-52",
+      "claim": "Bounded source reads, SHA256 check, AST compilation without producer execution."
+    },
+    {
+      "path": "source/verify_sources.py",
+      "lines": "55-64",
+      "claim": "Rejects undeclared files in both preserved subtrees and total mismatch."
+    }
+  ],
+  "machine_seams_disclosed": [
+    {
+      "path": "source/README.md",
+      "line": 3,
+      "claim": "Preservation is explicitly distinguished from portable launchers."
+    },
+    {
+      "path": "research/SOURCE_CLOSURE.md",
+      "lines": "39-46",
+      "claim": "Pinned interpreter/PAS/ML sites, C/D/E paths, native RM isolation, historical sibling paths, import setup and excluded model/data payloads are explicitly disclosed."
+    },
+    {
+      "path": "source/matched-kl/control/common.py",
+      "lines": "13-16",
+      "claim": "Original interpreter/hash and PAS/runtime paths preserved."
+    },
+    {
+      "path": "source/matched-kl/policy/policy.py",
+      "lines": "13-26",
+      "claim": "Historical sibling source paths and source hashes retained; unchanged entrypoint is not relocatable by copying."
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_ready_runtime.py",
+      "lines": "7-24",
+      "claim": "Original native interpreter and actor/RM package site setup."
+    }
+  ],
+  "bounded_privacy_payload_scan": {
+    "source_files_scanned": 288,
+    "additional_closure_document_scanned": true,
+    "all_source_files_utf8_text": true,
+    "forbidden_payload_suffixes": [
+      ".ckpt",
+      ".csv",
+      ".db",
+      ".dll",
+      ".exe",
+      ".npy",
+      ".npz",
+      ".parquet",
+      ".pickle",
+      ".pkl",
+      ".pt",
+      ".pth",
+      ".pyd",
+      ".safetensors",
+      ".sqlite",
+      ".whl",
+      ".zip"
+    ],
+    "forbidden_payload_files": [],
+    "credential_shape_patterns": {
+      "private_key": "-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----",
+      "aws_access_key": "\\b(?:AKIA|ASIA)[A-Z0-9]{16}\\b",
+      "github_token": "\\b(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{50,})\\b",
+      "openai_key": "\\bsk-(?:proj-)?[A-Za-z0-9_-]{30,}\\b",
+      "credentialed_url": "https?://[^\\s/:@]+:[^\\s/@]+@",
+      "jwt": "\\beyJ[A-Za-z0-9_-]{15,}\\.[A-Za-z0-9_-]{15,}\\.[A-Za-z0-9_-]{15,}\\b"
+    },
+    "redacted_hits": [],
+    "limits": "Selected literal patterns and bounded text/type inventory only; no general proof that all possible secrets/personal data are absent. Original Windows username paths intentionally retained as disclosed provenance. No excluded raw CSV/history/model/array/cache/native payload opened."
+  },
+  "restrictions_observed": {
+    "scientific_producers_imported_or_executed": false,
+    "numerical_libraries_imported": false,
+    "models_or_arrays_or_raw_csv_opened": false,
+    "provider_or_training_run": false,
+    "new_training": false,
+    "network_or_download": false,
+    "old_or_new_source_mutations": false,
+    "files_written_by_reviewer": [
+      "review/source-final.json"
+    ]
+  },
+  "limitations": [
+    "No clean-machine numerical replay, model inference, FP16 parity or training reproducibility established by this source review.",
+    "Historical dependency versions agree with retained metadata/requirements; a complete environment lock and historical threadpoolctl version are not established.",
+    "Submission-wide manifest, archive contents, numerical adapter acceptance, report/PDF science and broad privacy audit belong to other reviewers/root."
+  ]
+}

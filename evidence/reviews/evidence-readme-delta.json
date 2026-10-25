@@ -1,0 +1,153 @@
+{
+  "contract": "kion-evidence-readme-focused-delta-review-v1",
+  "state": "passed",
+  "reviewed_utc": "2026-10-25T08:25:52.963219+00:00",
+  "reviewer": "/root/submit_data_privacy",
+  "scope": "Only current evidence/README.md wording/navigation delta at provided SHA, checked against bounded unchanged input/proof metadata. No source, input binary, array, model or whole-archive reads.",
+  "reviewed_file": {
+    "path": "evidence/README.md",
+    "bytes": 2610,
+    "sha256": "db291155fdffdcf84f37c3b189f774eff0a3c2c217dbc4adadb68f7ea873ab5a"
+  },
+  "author_declared_prior_SHA_prefix": "2fca2368",
+  "baseline_limit": "Prior README bytes were not supplied for an independent byte diff; this review checks current frozen content and stated delta against actual metadata.",
+  "findings": [],
+  "checks": {
+    "privacy_wording": {
+      "status": "passed",
+      "line": 12,
+      "transformed_item_token_prefixes_and_user_features": true,
+      "source_user_IDs_omitted_matches_actor_manifest": true,
+      "anonymity_not_established_explicit": true,
+      "existing_privacy_receipt_unchanged": true
+    },
+    "frozen_evidence_collection_scope": {
+      "status": "passed",
+      "lines": [
+        3,
+        12,
+        14
+      ],
+      "indexed_payloads": 176,
+      "figure_sets": 14,
+      "boundaries_explicitly_scope_evidence_collection_only": true,
+      "does_not_ascribe_old_no_native_jobs_collection_limit_to_new_reproduction": true,
+      "frozen176payloads_rehashed_by_this_focused_pass": false
+    },
+    "new_reproduction_navigation_and_claims": {
+      "status": "passed",
+      "lines": [
+        9,
+        12
+      ],
+      "public_reproduction_index_exists": true,
+      "exact_metadata_copies_rehashed": 12,
+      "actor_summary_completed_oracle_all_passed": true,
+      "RM_summary_actual_model_prediction": true,
+      "RM_historical_float32_and_support_exact": true,
+      "RM_native_float64_error": 0.0,
+      "actor_RM_native_receipts_succeeded_exit0_quiescent": true,
+      "training_updates_and_RM_fits": 0,
+      "fresh_candidate_extraction_metadata_present": true,
+      "independent_numerical_recomputation_by_reviewer": false
+    },
+    "reader_links": {
+      "status": "passed",
+      "ordinary_local_Markdown_targets": 6,
+      "all_exist": true,
+      "new_reviews_directory_exists": true
+    }
+  },
+  "context_manifests_and_JSON_proofs": [
+    {
+      "path": "evidence/INDEX.json",
+      "bytes": 208533,
+      "sha256": "79a680ef200ef3db5109d877131eaf50facc28abde349c9252577cf48387d398"
+    },
+    {
+      "path": "evidence/reproduction/INDEX.json",
+      "bytes": 3424,
+      "sha256": "0a478130fa43a8a8b4c1aa9e5480395683dbac0386fcf61166fb3b33d905d3c1"
+    },
+    {
+      "path": "evidence/reproduction/actor-export-native.json",
+      "bytes": 1158,
+      "sha256": "5368e4240e7008cfde6cb99f074bfb40e50b5e6e40d94ce49209a1eeecceb649"
+    },
+    {
+      "path": "evidence/reproduction/rm-export-native.json",
+      "bytes": 1153,
+      "sha256": "08ced6919202ed05425a763040fae78f1391ee6b71bf3bf226f7a43277852cc4"
+    },
+    {
+      "path": "evidence/reproduction/actor-replay-native.json",
+      "bytes": 1172,
+      "sha256": "9b97b54fa6136b06cf52160a6b9b102b914a557256c582cf88607232b3a0b9ce"
+    },
+    {
+      "path": "evidence/reproduction/actor-replay-summary.json",
+      "bytes": 7759,
+      "sha256": "e2b0b173f43b3d8c09094d8dcc721186e2d94fd7e2ea6363d51144bcb8f4a15e"
+    },
+    {
+      "path": "evidence/reproduction/actor-replay-receipt.json",
+      "bytes": 3749,
+      "sha256": "0859582ae1d2c8badf4a30d21d65d6a3ccdde6c87f9c52ed90dbe96a5f53769a"
+    },
+    {
+      "path": "evidence/reproduction/actor-extraction.json",
+      "bytes": 5807,
+      "sha256": "bc0c9187cf3fa7d868ae720ae41bed9ad585fbc8952f9130cc6dc5fb51fe70c5"
+    },
+    {
+      "path": "evidence/reproduction/rm-extraction.json",
+      "bytes": 4269,
+      "sha256": "0a2c7562636a791ab4d687c15df7efb89bcbc2c2543b9d4232e84c9ae1fa3f06"
+    },
+    {
+      "path": "evidence/reproduction/cbm-metadata-review.json",
+      "bytes": 1717,
+      "sha256": "a02385637255737b9e6b2a0ec7972895b96ea6f26e71b45d9ebeeb80cc66234a"
+    },
+    {
+      "path": "evidence/reproduction/source-tests.json",
+      "bytes": 1228,
+      "sha256": "edffe451d1de4e713336b956cfce1d535838495129f6895ae50356cad5105707"
+    },
+    {
+      "path": "evidence/reproduction/rm-replay-native.json",
+      "bytes": 1159,
+      "sha256": "edde41ca8264f7778ed00a1c20443aeb4ed42f3ce6039406b408fc99b003233d"
+    },
+    {
+      "path": "evidence/reproduction/rm-replay-summary.json",
+      "bytes": 1717,
+      "sha256": "1fc306457c50b94c58b91a22eeacd3947ed380e79fb1351b0d794b787bcf5f43"
+    },
+    {
+      "path": "evidence/reproduction/rm-replay-receipt.json",
+      "bytes": 3533,
+      "sha256": "5f24a985e2e0a09f9193cdb4ab6021af8b46868551ff1c12e3e09b8a2ca9d6fb"
+    },
+    {
+      "path": "reproduction/inputs/manifest.json",
+      "bytes": 7578,
+      "sha256": "e680dd145b2bfdc812107fb9a257bf16f6d1ef5a53c07845f7dc21838146a52c"
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/manifest.json",
+      "bytes": 4381,
+      "sha256": "7b3e7dbefde3a6d0e113c0340dbbfc425d223574a7c4cd13db7927fb29b30380"
+    },
+    {
+      "path": "review/inputs-privacy-final.json",
+      "bytes": 29537,
+      "sha256": "a87e344ab4c4c84e4b812844ea9545be5edfea7af20a5be8402677bfbe0cadab"
+    }
+  ],
+  "mutations": "Created only review/evidence-readme-delta.json. Existing README, evidence indexes, payloads and inputs-privacy-final.json remain unchanged.",
+  "remaining_limits": [
+    "This is a wording/navigation consistency review, not a new numerical, source,176payload-integrity or archive acceptance pass.",
+    "Historical absolute paths remain provenance, not portable runtime requirements."
+  ]
+}

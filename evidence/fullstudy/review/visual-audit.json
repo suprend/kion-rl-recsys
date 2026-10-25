@@ -1,0 +1,191 @@
+{
+  "contract": "kion-final25-independent-visual-audit-v1",
+  "reviewer": "final25_visual_audit",
+  "review_date": "2026-10-25",
+  "state": "needs-layout-fixes",
+  "base_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1",
+  "scope": "Independent read-only inspection of every actual PNG using view_image; aggregate/report spot checks only. No regeneration, model, numerical library, prediction-array, training, or inference run.",
+  "publication": "not-authorized; not-performed",
+  "expected_png_count": 13,
+  "reviewed_png_count": 13,
+  "unreviewed": [],
+  "acceptance": {
+    "clean_visual_pass": false,
+    "blocker_count": 2,
+    "bounded_polish_count": 1,
+    "meaning": "Two figures need numerical-axis layout correction before a clean visual acceptance. No scientific-value mismatch was found in the specified spot checks."
+  },
+  "findings": [
+    {
+      "id": "B1",
+      "classification": "blocker-for-clean-visual-acceptance",
+      "priority": 2,
+      "file": "reports/figures/full/03-paired-uncertainty.png",
+      "location": "NDCG@10 panel, horizontal numeric ticks",
+      "observation": "The five 4-decimal labels (approximately −0.0050,−0.0025,0.0000,0.0025,0.0050) have insufficient gaps and visually join. Other panel spacing is also tight, but NDCG is the concrete defect.",
+      "impact": "The numerical CI scale is difficult to read as separate tick values.",
+      "bounded_fix": "Use fewer major ticks or compact/scientific formatting, with a readable shared scale multiplier if used. Reopen the regenerated PNG at native size and normal fit width; require separated glyph bounds."
+    },
+    {
+      "id": "B2",
+      "classification": "blocker-for-clean-visual-acceptance",
+      "priority": 2,
+      "file": "reports/figures/screen/07-item-contributions.png",
+      "location": "Top-left contribution panel X ticks; top-right X ticks also crowded",
+      "observation": "Top-left 5-decimal tick labels from0 to≈0.002 are rendered as a near-continuous string. Top-right signed four-decimal labels also touch or nearly touch.",
+      "impact": "Exact contribution magnitudes cannot be reliably read from the numerical axis despite readable raw-ID/title labels and bars.",
+      "bounded_fix": "Reduce major tick count and/or use scientific formatting. Verify all four panels, including lower-right five-decimal scale, after regeneration."
+    },
+    {
+      "id": "P1",
+      "classification": "bounded-polish",
+      "priority": 3,
+      "file": "reports/figures/screen/01-checkpoint-tradeoff.png",
+      "location": "Right panel lower-left legend and teal step0→250 segment",
+      "observation": "The diagonal Δunsupported line passes through the legend samples/text.",
+      "impact": "Legend and data compete locally; endpoints, threshold and feasibility result remain interpretable.",
+      "bounded_fix": "Move legend to empty space or outside axes, or give it an opaque frame. Reopen the actual PNG to ensure it clears all curves."
+    }
+  ],
+  "evidence_spot_checks": [
+    {
+      "sources": [
+        "reports/evidence/scientific3-full.json",
+        "reports/evidence/scientific3-screen.json",
+        "reports/README.md"
+      ],
+      "check": "All displayed relevance bars (MAP/NDCG/Recall; three arms; both cohorts) match saved aggregate values at displayed precision."
+    },
+    {
+      "sources": [
+        "reports/evidence/analysis-full.json",
+        "reports/README.md"
+      ],
+      "check": "Full CI signs/crossings agree with table8.2, including completion−C MAP barely below0 and residual−C/residual−completion MAP crossing0; caption exposes user-cluster,2000 resamples,seed and unadjusted conditional interval scope."
+    },
+    {
+      "sources": [
+        "reports/evidence/analysis-full.json",
+        "reports/evidence/analysis-screen.json"
+      ],
+      "check": "Displayed RR counts and ties, full/screen denominator, unknown/offpool buckets and plot cohort captions agree. Top1/HHI/effective-catalog displayed values match report tables."
+    },
+    {
+      "sources": [
+        "reports/evidence/analysis-screen.json",
+        "reports/README.md"
+      ],
+      "check": "Checkpoint feasibility and proxy/relevance tradeoff, centered utility components, H63 percentages, unsupported slot percentages and log1p count bars agree at displayed precision. Contribution top-item labels/magnitudes spot-checked against report table; independent catalog join not repeated."
+    },
+    {
+      "sources": [
+        "reports/evidence/rollout-summary-report.md",
+        "reports/figures/rollout/figures.json"
+      ],
+      "check": "Both rollout figures show4 mode/mask facets,3 arms,steps1–5 and explicitly16 fixed contexts/192 trajectories/960 decisions. Units and synthetic/frozen-RM/one-categorical-seed/no-population-CI limitations are readable. Per-step numbers were not exhaustively recomputed."
+    }
+  ],
+  "images": [
+    {
+      "file": "reports/figures/full/02-matched-comparison.png",
+      "sha256": "0a63b4c12616ff1f9f57bf4b8100b2458de85ba4aadaa1bdf65c0c4f86ae3e94",
+      "actual_png_viewed": true,
+      "result": "pass",
+      "notes": "Шесть панелей без clipping/overlap. Все 9 relevance values и концентрационные bars согласуются с full4096 report/metrics после показанного округления. Три arm подписаны; cohort, users, natural1024, reused-development и ограничения присутствуют."
+    },
+    {
+      "file": "reports/figures/full/03-paired-uncertainty.png",
+      "sha256": "343b12db4029445ad978cedcf90b53e3f1fe1f3059d8fcba5b24f7d8d996cc2b",
+      "actual_png_viewed": true,
+      "result": "layout-fix-required",
+      "notes": "Три парных contrast и CI/zero line видимы; направления и crossing-zero согласуются с таблицей 8.2. Числовые ticks NDCG слишком плотные и сливаются; B1. Caption сообщает 2000 common user resamples, seed, percentile unadjusted CI и conditional checkpoints."
+    },
+    {
+      "file": "reports/figures/full/04-exposure-distribution.png",
+      "sha256": "349b12c25cb4679dead55a14a1e91fb2935e1685c7935d79c7bb0bb4ed4b3c4d",
+      "actual_png_viewed": true,
+      "result": "pass",
+      "notes": "Обе строки query/equal-user weights различимы. Русские названия + raw IDs, включая перенесённую Прабабушку, читаются. Кумулятивная доля и slot-share имеют % units; общий цветовой legend достаточен. Caption различает per-arm sorted curves и одинаковые ID справа."
+    },
+    {
+      "file": "reports/figures/full/05-target-ranks.png",
+      "sha256": "5147e592090718d3ca38381cf95937008eb575a26f683f1fe1d57d8a9b96802c",
+      "actual_png_viewed": true,
+      "result": "pass",
+      "notes": "Unknown/offpool и все rank bins видимы, наклонные подписи не обрезаны. RR gains/losses/ties legend читается, полный N=4096 показан; 284/3562/250 и 258/3550/288 согласуются с aggregates. Мелкие segments без числовой аннотации допустимы."
+    },
+    {
+      "file": "reports/figures/screen/01-checkpoint-tradeoff.png",
+      "sha256": "eda26b13a16f200432bfaa760b265c458c80f8651d7e7fd788d34a28a5b45bde",
+      "actual_png_viewed": true,
+      "result": "pass-with-polish",
+      "notes": "Название соответствует gates: step250 нарушает top1 gate, шаги500/1000 также MAP gate, baseline0 feasible. Checkpoint annotations и threshold читаются. Caption явно сообщает legacy screen256 и отсутствие CI/user count. Правая legend пересекается с teal line segment; P1."
+    },
+    {
+      "file": "reports/figures/screen/02-matched-comparison.png",
+      "sha256": "c460020a24109bec657e573ff3226ecf7fdcfb1025cb175b87133554fe8def66",
+      "actual_png_viewed": true,
+      "result": "pass",
+      "notes": "Все 9 relevance values и концентрационные bars совпадают с screen report/metrics при округлении. Нулевой baseline, readable arm labels, cohort256/256users и ограничения видимы; overlap/clipping не обнаружены."
+    },
+    {
+      "file": "reports/figures/screen/03-paired-uncertainty.png",
+      "sha256": "177b9b353698d0371521a4b3dcd0458dca930b08e9b58416ff845ef62bd22e13",
+      "actual_png_viewed": true,
+      "result": "pass",
+      "notes": "Ticks разнесены, CI/zero line и контрасты читаются. Три MAP intervals пересекают0, как в compact report. Caption даёт bootstrap unit/seed/replicates, unadjusted percentile и conditional single checkpoints. Независимый test не заявлен."
+    },
+    {
+      "file": "reports/figures/screen/04-exposure-distribution.png",
+      "sha256": "b83a9ab959379c4aa66932b2cbcf1b5e36de513731a731819f2b78cbe96ded1e",
+      "actual_png_viewed": true,
+      "result": "pass",
+      "notes": "Русские movie labels/raw IDs читаются, перенос длинного названия не пересекает соседей. % units, query/equal-user weighting и cohort указаны. Нет clipping/overlap; separate-sort caveat предотвращает ложное сопоставление позиций curves."
+    },
+    {
+      "file": "reports/figures/screen/05-target-ranks.png",
+      "sha256": "9e9b9a7e5a7f524eb21c38dc2a220064456224d7dc6b4a559fd69688dd891a4e",
+      "actual_png_viewed": true,
+      "result": "pass",
+      "notes": "Полные rank bins с unknown8/offpool32, N=256 и RR legend видимы. Показанные21/223, 236 и15/218/23 согласуются с агрегатами. Заголовок явно относится к RR@10, без ложной трактовки ties как неизменности полного ранга."
+    },
+    {
+      "file": "reports/figures/screen/06-screen-utilities-behavior.png",
+      "sha256": "1f407530ceb157bf0d1be3504fb20214130dcee2a62f23fca8b50635bbfb9ae4",
+      "actual_png_viewed": true,
+      "result": "pass",
+      "notes": "Proxy bars 0.0291/0.0048,0.0031/0.0043,0.0260/0.0004 и behavioral percentages/counts согласуются с screen diagnostics/report. Titles, baseline, % bar annotations и log1p measure читаются. Caption определяет support/centering/H63 и ограничивает expected-proxy интерпретацию."
+    },
+    {
+      "file": "reports/figures/screen/07-item-contributions.png",
+      "sha256": "a7b7a383b4e5daf421fcf42456880088f97f87b35bdc4e2f1c0796f7b418397e",
+      "actual_png_viewed": true,
+      "result": "layout-fix-required",
+      "notes": "Названия/raw IDs, знаки bars и контрасты readable; top items и приблизительные magnitudes согласуются с report (12192≈0.002126,13865≈0.001971). Caption отличает арифметическое разложение от причинной атрибуции, указывает top12 и remainder. Верхняя левая X-шкала сливается в строку; B2. Верхняя правая также тесная."
+    },
+    {
+      "file": "reports/figures/rollout/08-five-step-panel.png",
+      "sha256": "189973f37121ee28145c0d0a56b5a6c8c49a51f4a7066910bb2763abae9fbc71",
+      "actual_png_viewed": true,
+      "result": "pass",
+      "notes": "4 mode/mask rows ×3 metrics; 5 steps и three-arm legend readable. Proxy и KL nats различены, scale shared per metric across facets. Caption сообщает16 fixed contexts/192 trajectories/960 decisions, one categorical seed, no population CI, frozen RM/history и same-current-prefix KL. Не заявляет наблюдаемый outcome или five-step training."
+    },
+    {
+      "file": "reports/figures/rollout/08b-five-step-behavior.png",
+      "sha256": "62aeda935a319cbeb6f506c2e8c0d42d4530bcd33cf2ceb13f4b6ffd7ad0ff90",
+      "actual_png_viewed": true,
+      "result": "pass",
+      "notes": "4 mode/mask rows и three-arm legend readable. Entropy nats и percent axes корректно подписаны; zero repeats under exclude-generated соответствует определению. H63 отделён от generated repeat. Caption фиксирует cohort/seed, synthetic sequence scope и отсутствие observed outcomes/retention. Без clipping/overlap."
+    }
+  ],
+  "limits": [
+    "Visual inspection and compact saved-aggregate cross-checks do not establish independent scientific validity or counterfactual accuracy.",
+    "No raw interaction/feature/model/prediction arrays were opened and no numeric replay was attempted.",
+    "This audit binds to listed PNG hashes. Regenerated files require targeted visual reinspection; unchanged hashes retain this inspection."
+  ],
+  "reinspection_required": [
+    "reports/figures/full/03-paired-uncertainty.png",
+    "reports/figures/screen/07-item-contributions.png",
+    "reports/figures/screen/01-checkpoint-tradeoff.png"
+  ]
+}

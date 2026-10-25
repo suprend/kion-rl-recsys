@@ -1,0 +1,1693 @@
+{
+  "contract": "independent-submission-metrics-review-v1",
+  "state": "passed",
+  "scope": {
+    "REPORT.md": "b299b49e09ba574ec346750e4b62c3df06a74d9f03314197172d134e5ae82b21",
+    "LIMITATIONS.md": "01202596bb0f7584cea95af16c6c65510d6345704a94cb55555d6146b9e5bc12"
+  },
+  "verification": {
+    "tables_verified": 12,
+    "numeric_scalar_cells": 155,
+    "prose_checks": 15,
+    "source_pins": 30,
+    "findings": [],
+    "numeric_checks": [
+      {
+        "line": 106,
+        "display": "0.072315",
+        "source": "supervised#/metrics/GPT/map10",
+        "expected_raw": 0.07231532505580357,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 106,
+        "display": "0.092305",
+        "source": "supervised#/metrics/GPT/ndcg10",
+        "expected_raw": 0.09230538711428132,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 106,
+        "display": "0.156982",
+        "source": "supervised#/metrics/GPT/recall10",
+        "expected_raw": 0.156982421875,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 106,
+        "display": "0.048323",
+        "source": "i0#/arms/GPT/query_weighted/top10_hhi",
+        "expected_raw": 0.04832253575325012,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 106,
+        "display": "374",
+        "source": "i0#/arms/GPT/query_weighted/unique_top10_items",
+        "expected_raw": 374,
+        "decimal_places": 0,
+        "passed": true
+      },
+      {
+        "line": 107,
+        "display": "0.082896",
+        "source": "supervised#/metrics/A/map10",
+        "expected_raw": 0.08289630223834325,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 107,
+        "display": "0.107589",
+        "source": "supervised#/metrics/A/ndcg10",
+        "expected_raw": 0.1075892042200316,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 107,
+        "display": "0.188721",
+        "source": "supervised#/metrics/A/recall10",
+        "expected_raw": 0.188720703125,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 107,
+        "display": "0.053372",
+        "source": "i0#/arms/A/query_weighted/top10_hhi",
+        "expected_raw": 0.05337201118469238,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 107,
+        "display": "304",
+        "source": "i0#/arms/A/query_weighted/unique_top10_items",
+        "expected_raw": 304,
+        "decimal_places": 0,
+        "passed": true
+      },
+      {
+        "line": 108,
+        "display": "0.086458",
+        "source": "supervised#/metrics/B/map10",
+        "expected_raw": 0.08645843021453373,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 108,
+        "display": "0.110500",
+        "source": "supervised#/metrics/B/ndcg10",
+        "expected_raw": 0.11050034817033791,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 108,
+        "display": "0.189209",
+        "source": "supervised#/metrics/B/recall10",
+        "expected_raw": 0.189208984375,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 108,
+        "display": "0.043724",
+        "source": "i0#/arms/B/query_weighted/top10_hhi",
+        "expected_raw": 0.0437239670753479,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 108,
+        "display": "776",
+        "source": "i0#/arms/B/query_weighted/unique_top10_items",
+        "expected_raw": 776,
+        "decimal_places": 0,
+        "passed": true
+      },
+      {
+        "line": 109,
+        "display": "0.096864",
+        "source": "supervised#/metrics/C/map10",
+        "expected_raw": 0.09686366489955357,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 109,
+        "display": "0.123949",
+        "source": "supervised#/metrics/C/ndcg10",
+        "expected_raw": 0.1239494230603261,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 109,
+        "display": "0.212402",
+        "source": "supervised#/metrics/C/recall10",
+        "expected_raw": 0.21240234375,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 109,
+        "display": "0.035943",
+        "source": "i0#/arms/C/query_weighted/top10_hhi",
+        "expected_raw": 0.03594276309013367,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 109,
+        "display": "831",
+        "source": "i0#/arms/C/query_weighted/unique_top10_items",
+        "expected_raw": 831,
+        "decimal_places": 0,
+        "passed": true
+      },
+      {
+        "line": 110,
+        "display": "0.079310",
+        "source": "supervised#/metrics/RRF/map10",
+        "expected_raw": 0.07931005084325397,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 110,
+        "display": "0.100784",
+        "source": "supervised#/metrics/RRF/ndcg10",
+        "expected_raw": 0.10078366338990644,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 110,
+        "display": "0.170654",
+        "source": "supervised#/metrics/RRF/recall10",
+        "expected_raw": 0.170654296875,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 110,
+        "display": "0.066164",
+        "source": "i0#/arms/RRF/query_weighted/top10_hhi",
+        "expected_raw": 0.06616389393806457,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 110,
+        "display": "281",
+        "source": "i0#/arms/RRF/query_weighted/unique_top10_items",
+        "expected_raw": 281,
+        "decimal_places": 0,
+        "passed": true
+      },
+      {
+        "line": 126,
+        "display": "0.394847",
+        "source": "rm#/metrics/global_mean/metrics/rmse",
+        "expected_raw": 0.3948466787239076,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 126,
+        "display": "0.365978",
+        "source": "rm#/metrics/global_mean/metrics/mae",
+        "expected_raw": 0.365977684327266,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 126,
+        "display": "-0.037362",
+        "source": "rm#/metrics/global_mean/metrics/r2",
+        "expected_raw": -0.037362302742565356,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 127,
+        "display": "0.377042",
+        "source": "rm#/metrics/item_shrinkage/metrics/rmse",
+        "expected_raw": 0.3770415975175474,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 127,
+        "display": "0.339606",
+        "source": "rm#/metrics/item_shrinkage/metrics/mae",
+        "expected_raw": 0.3396060942532658,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 127,
+        "display": "0.054085",
+        "source": "rm#/metrics/item_shrinkage/metrics/r2",
+        "expected_raw": 0.054085207713422845,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 128,
+        "display": "0.370888",
+        "source": "rm#/metrics/full_raw_combined/metrics/rmse",
+        "expected_raw": 0.3708875363896892,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 128,
+        "display": "0.339858",
+        "source": "rm#/metrics/full_raw_combined/metrics/mae",
+        "expected_raw": 0.33985792277275767,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 128,
+        "display": "0.084712",
+        "source": "rm#/metrics/full_raw_combined/metrics/r2",
+        "expected_raw": 0.08471159285050922,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 129,
+        "display": "0.352010",
+        "source": "rm#/metrics/rm_uncalibrated/metrics/rmse",
+        "expected_raw": 0.35200984823327397,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 129,
+        "display": "0.304713",
+        "source": "rm#/metrics/rm_uncalibrated/metrics/mae",
+        "expected_raw": 0.30471303839699354,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 129,
+        "display": "0.175514",
+        "source": "rm#/metrics/rm_uncalibrated/metrics/r2",
+        "expected_raw": 0.1755143309278655,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 130,
+        "display": "0.352039",
+        "source": "rm#/metrics/rm_calibrated/metrics/rmse",
+        "expected_raw": 0.35203866109831383,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 130,
+        "display": "0.304319",
+        "source": "rm#/metrics/rm_calibrated/metrics/mae",
+        "expected_raw": 0.3043187412194117,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 130,
+        "display": "0.175379",
+        "source": "rm#/metrics/rm_calibrated/metrics/r2",
+        "expected_raw": 0.1753793530761696,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 181,
+        "display": "0",
+        "source": "original_screen#/checkpoint_curve/step",
+        "expected_raw": 0,
+        "decimal_places": 0,
+        "passed": true
+      },
+      {
+        "line": 181,
+        "display": "0.122790",
+        "source": "original_screen#/checkpoint_curve/map10",
+        "expected_raw": 0.12278955853174603,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 181,
+        "display": "0",
+        "source": "original_screen#/checkpoint_curve/exact_KL",
+        "expected_raw": 0.0,
+        "decimal_places": 0,
+        "passed": true
+      },
+      {
+        "line": 181,
+        "display": "28.91",
+        "source": "original_screen#/checkpoint_curve/top1_max_share*100",
+        "expected_raw": 28.90625,
+        "decimal_places": 2,
+        "passed": true
+      },
+      {
+        "line": 182,
+        "display": "250",
+        "source": "original_screen#/checkpoint_curve/step",
+        "expected_raw": 250,
+        "decimal_places": 0,
+        "passed": true
+      },
+      {
+        "line": 182,
+        "display": "0.121638",
+        "source": "original_screen#/checkpoint_curve/map10",
+        "expected_raw": 0.12163783482142856,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 182,
+        "display": "0.020440",
+        "source": "original_screen#/checkpoint_curve/expected_effective_reward",
+        "expected_raw": 0.020440266715522334,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 182,
+        "display": "0.017089",
+        "source": "original_screen#/checkpoint_curve/exact_KL",
+        "expected_raw": 0.017089056192608844,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 182,
+        "display": "34.77",
+        "source": "original_screen#/checkpoint_curve/top1_max_share*100",
+        "expected_raw": 34.765625,
+        "decimal_places": 2,
+        "passed": true
+      },
+      {
+        "line": 183,
+        "display": "500",
+        "source": "original_screen#/checkpoint_curve/step",
+        "expected_raw": 500,
+        "decimal_places": 0,
+        "passed": true
+      },
+      {
+        "line": 183,
+        "display": "0.116295",
+        "source": "original_screen#/checkpoint_curve/map10",
+        "expected_raw": 0.11629464285714286,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 183,
+        "display": "0.024999",
+        "source": "original_screen#/checkpoint_curve/expected_effective_reward",
+        "expected_raw": 0.024999390117628542,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 183,
+        "display": "0.021944",
+        "source": "original_screen#/checkpoint_curve/exact_KL",
+        "expected_raw": 0.02194445395564408,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 183,
+        "display": "34.77",
+        "source": "original_screen#/checkpoint_curve/top1_max_share*100",
+        "expected_raw": 34.765625,
+        "decimal_places": 2,
+        "passed": true
+      },
+      {
+        "line": 184,
+        "display": "1000",
+        "source": "original_screen#/checkpoint_curve/step",
+        "expected_raw": 1000,
+        "decimal_places": 0,
+        "passed": true
+      },
+      {
+        "line": 184,
+        "display": "0.113653",
+        "source": "original_screen#/checkpoint_curve/map10",
+        "expected_raw": 0.11365327380952381,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 184,
+        "display": "0.029113",
+        "source": "original_screen#/checkpoint_curve/expected_effective_reward",
+        "expected_raw": 0.029113097340336444,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 184,
+        "display": "0.026806",
+        "source": "original_screen#/checkpoint_curve/exact_KL",
+        "expected_raw": 0.026805727530462245,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 184,
+        "display": "34.77",
+        "source": "original_screen#/checkpoint_curve/top1_max_share*100",
+        "expected_raw": 34.765625,
+        "decimal_places": 2,
+        "passed": true
+      },
+      {
+        "line": 204,
+        "display": "+0.029113",
+        "source": "original_screen#/screen_diagnostics/RL-completion/utilities/completion",
+        "expected_raw": 0.029113097340336444,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 204,
+        "display": "+0.025986",
+        "source": "original_screen#/screen_diagnostics/RL-completion/utilities/prior",
+        "expected_raw": 0.025985766221239822,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 204,
+        "display": "+0.003127",
+        "source": "original_screen#/screen_diagnostics/RL-completion/utilities/residual",
+        "expected_raw": 0.0031273311190966194,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 205,
+        "display": "+0.004751",
+        "source": "original_screen#/screen_diagnostics/RL-residual/utilities/completion",
+        "expected_raw": 0.004751447404805972,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 205,
+        "display": "+0.000421",
+        "source": "original_screen#/screen_diagnostics/RL-residual/utilities/prior",
+        "expected_raw": 0.00042078063535147525,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 205,
+        "display": "+0.004331",
+        "source": "original_screen#/screen_diagnostics/RL-residual/utilities/residual",
+        "expected_raw": 0.004330666769454499,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 221,
+        "display": "0.096864",
+        "source": "original_full#/summaries/C/metrics/map10",
+        "expected_raw": 0.09686366489955357,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 221,
+        "display": "0.123949",
+        "source": "original_full#/summaries/C/metrics/ndcg10",
+        "expected_raw": 0.1239494230603261,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 221,
+        "display": "0.212402",
+        "source": "original_full#/summaries/C/metrics/recall10",
+        "expected_raw": 0.21240234375,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 221,
+        "display": "28.52",
+        "source": "original_full#/summaries/C/top1share*100",
+        "expected_raw": 28.515625,
+        "decimal_places": 2,
+        "passed": true
+      },
+      {
+        "line": 221,
+        "display": "0.035943",
+        "source": "original_full#/summaries/C/top10_hhi",
+        "expected_raw": 0.03594276309013367,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 222,
+        "display": "0.094382",
+        "source": "original_full#/summaries/RL-completion/metrics/map10",
+        "expected_raw": 0.09438244047619047,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 222,
+        "display": "0.120553",
+        "source": "original_full#/summaries/RL-completion/metrics/ndcg10",
+        "expected_raw": 0.12055263362976343,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 222,
+        "display": "0.205566",
+        "source": "original_full#/summaries/RL-completion/metrics/recall10",
+        "expected_raw": 0.20556640625,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 222,
+        "display": "33.76",
+        "source": "original_full#/summaries/RL-completion/top1share*100",
+        "expected_raw": 33.7646484375,
+        "decimal_places": 2,
+        "passed": true
+      },
+      {
+        "line": 222,
+        "display": "0.037673",
+        "source": "original_full#/summaries/RL-completion/top10_hhi",
+        "expected_raw": 0.03767303228378296,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 223,
+        "display": "0.096088",
+        "source": "original_full#/summaries/RL-residual/metrics/map10",
+        "expected_raw": 0.09608784024677579,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 223,
+        "display": "0.123216",
+        "source": "original_full#/summaries/RL-residual/metrics/ndcg10",
+        "expected_raw": 0.12321591284478758,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 223,
+        "display": "0.211670",
+        "source": "original_full#/summaries/RL-residual/metrics/recall10",
+        "expected_raw": 0.211669921875,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 223,
+        "display": "25.24",
+        "source": "original_full#/summaries/RL-residual/top1share*100",
+        "expected_raw": 25.244140625,
+        "decimal_places": 2,
+        "passed": true
+      },
+      {
+        "line": 223,
+        "display": "0.037392",
+        "source": "original_full#/summaries/RL-residual/top10_hhi",
+        "expected_raw": 0.03739211916923523,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 245,
+        "display": "0.198298773",
+        "source": "beta#/pilots/beta",
+        "expected_raw": 0.19829877276516375,
+        "decimal_places": 9,
+        "passed": true
+      },
+      {
+        "line": 245,
+        "display": "0.018953778",
+        "source": "beta#/pilots/train_KL",
+        "expected_raw": 0.01895377845601316,
+        "decimal_places": 9,
+        "passed": true
+      },
+      {
+        "line": 245,
+        "display": "0.673520",
+        "source": "beta#/pilots/ratio_to_target",
+        "expected_raw": 0.6735195076039091,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 246,
+        "display": "0.162740301",
+        "source": "beta#/pilots/beta",
+        "expected_raw": 0.16274030138555867,
+        "decimal_places": 9,
+        "passed": true
+      },
+      {
+        "line": 246,
+        "display": "0.025626846",
+        "source": "beta#/pilots/train_KL",
+        "expected_raw": 0.025626846105626697,
+        "decimal_places": 9,
+        "passed": true
+      },
+      {
+        "line": 246,
+        "display": "0.910646",
+        "source": "beta#/pilots/ratio_to_target",
+        "expected_raw": 0.9106459068601696,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 252,
+        "display": "0.0281414",
+        "source": "matching#/train_KL_by_arm/completion-20261024",
+        "expected_raw": 0.028141394929216676,
+        "decimal_places": 7,
+        "passed": true
+      },
+      {
+        "line": 252,
+        "display": "0.0256268",
+        "source": "matching#/train_KL_by_arm/residual-20261024",
+        "expected_raw": 0.025626846105626697,
+        "decimal_places": 7,
+        "passed": true
+      },
+      {
+        "line": 252,
+        "display": "0.910646",
+        "source": "matching#/ratio_by_seed/20261024",
+        "expected_raw": 0.9106459068601696,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 253,
+        "display": "0.0285763",
+        "source": "matching#/train_KL_by_arm/completion-20261025",
+        "expected_raw": 0.02857631484713826,
+        "decimal_places": 7,
+        "passed": true
+      },
+      {
+        "line": 253,
+        "display": "0.0272386",
+        "source": "matching#/train_KL_by_arm/residual-20261025",
+        "expected_raw": 0.02723862248082785,
+        "decimal_places": 7,
+        "passed": true
+      },
+      {
+        "line": 253,
+        "display": "0.953189",
+        "source": "matching#/ratio_by_seed/20261025",
+        "expected_raw": 0.9531887728188166,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 254,
+        "display": "0.0285607",
+        "source": "matching#/train_KL_by_arm/completion-20261026",
+        "expected_raw": 0.028560712775189928,
+        "decimal_places": 7,
+        "passed": true
+      },
+      {
+        "line": 254,
+        "display": "0.0261156",
+        "source": "matching#/train_KL_by_arm/residual-20261026",
+        "expected_raw": 0.026115598434196165,
+        "decimal_places": 7,
+        "passed": true
+      },
+      {
+        "line": 254,
+        "display": "0.914389",
+        "source": "matching#/ratio_by_seed/20261026",
+        "expected_raw": 0.9143888893726146,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 266,
+        "display": "0.096864",
+        "source": "matched_full#/summaries/C/metrics/map10",
+        "expected_raw": 0.09686366489955357,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 266,
+        "display": "0.123949",
+        "source": "matched_full#/summaries/C/metrics/ndcg10",
+        "expected_raw": 0.1239494230603261,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 266,
+        "display": "0.212402",
+        "source": "matched_full#/summaries/C/metrics/recall10",
+        "expected_raw": 0.21240234375,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 267,
+        "display": "0.094382",
+        "source": "matched_full#/summaries/completion-20261024/metrics/map10",
+        "expected_raw": 0.09438244047619047,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 267,
+        "display": "0.120553",
+        "source": "matched_full#/summaries/completion-20261024/metrics/ndcg10",
+        "expected_raw": 0.12055263362976343,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 267,
+        "display": "0.205566",
+        "source": "matched_full#/summaries/completion-20261024/metrics/recall10",
+        "expected_raw": 0.20556640625,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 268,
+        "display": "0.096159",
+        "source": "matched_full#/summaries/residual-20261024/metrics/map10",
+        "expected_raw": 0.09615875728546627,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 268,
+        "display": "0.122919",
+        "source": "matched_full#/summaries/residual-20261024/metrics/ndcg10",
+        "expected_raw": 0.12291945427279921,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 268,
+        "display": "0.210205",
+        "source": "matched_full#/summaries/residual-20261024/metrics/recall10",
+        "expected_raw": 0.210205078125,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 269,
+        "display": "0.094441",
+        "source": "matched_full#/summaries/completion-20261025/metrics/map10",
+        "expected_raw": 0.09444095672123015,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 269,
+        "display": "0.120652",
+        "source": "matched_full#/summaries/completion-20261025/metrics/ndcg10",
+        "expected_raw": 0.12065224568945596,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 269,
+        "display": "0.205811",
+        "source": "matched_full#/summaries/completion-20261025/metrics/recall10",
+        "expected_raw": 0.205810546875,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 270,
+        "display": "0.096570",
+        "source": "matched_full#/summaries/residual-20261025/metrics/map10",
+        "expected_raw": 0.09657001798115078,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 270,
+        "display": "0.123452",
+        "source": "matched_full#/summaries/residual-20261025/metrics/ndcg10",
+        "expected_raw": 0.12345192395891996,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 270,
+        "display": "0.211182",
+        "source": "matched_full#/summaries/residual-20261025/metrics/recall10",
+        "expected_raw": 0.211181640625,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 271,
+        "display": "0.094282",
+        "source": "matched_full#/summaries/completion-20261026/metrics/map10",
+        "expected_raw": 0.09428197467137897,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 271,
+        "display": "0.120480",
+        "source": "matched_full#/summaries/completion-20261026/metrics/ndcg10",
+        "expected_raw": 0.12047972392446069,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 271,
+        "display": "0.205566",
+        "source": "matched_full#/summaries/completion-20261026/metrics/recall10",
+        "expected_raw": 0.20556640625,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 272,
+        "display": "0.096056",
+        "source": "matched_full#/summaries/residual-20261026/metrics/map10",
+        "expected_raw": 0.09605596633184524,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 272,
+        "display": "0.122793",
+        "source": "matched_full#/summaries/residual-20261026/metrics/ndcg10",
+        "expected_raw": 0.12279281191628305,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 272,
+        "display": "0.209961",
+        "source": "matched_full#/summaries/residual-20261026/metrics/recall10",
+        "expected_raw": 0.2099609375,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 278,
+        "display": "+0.001893",
+        "source": "matched_full#/three-seed-average/residual-minus-completion/map10/difference",
+        "expected_raw": 0.0018931232432208998,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 278,
+        "display": "-0.000908",
+        "source": "matched_full#/three-seed-average/residual-minus-completion/map10/user_cluster_95ci",
+        "expected_raw": -0.0009076384932878373,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 278,
+        "display": "+0.004520",
+        "source": "matched_full#/three-seed-average/residual-minus-completion/map10/user_cluster_95ci",
+        "expected_raw": 0.0045200119549509655,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 279,
+        "display": "+0.002493",
+        "source": "matched_full#/three-seed-average/residual-minus-completion/ndcg10/difference",
+        "expected_raw": 0.0024931956347740416,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 279,
+        "display": "-0.000347",
+        "source": "matched_full#/three-seed-average/residual-minus-completion/ndcg10/user_cluster_95ci",
+        "expected_raw": -0.00034703750972087376,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 279,
+        "display": "+0.005196",
+        "source": "matched_full#/three-seed-average/residual-minus-completion/ndcg10/user_cluster_95ci",
+        "expected_raw": 0.005195931394618959,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 280,
+        "display": "+0.004801",
+        "source": "matched_full#/three-seed-average/residual-minus-completion/recall10/difference",
+        "expected_raw": 0.004801432291666667,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 280,
+        "display": "-0.000652",
+        "source": "matched_full#/three-seed-average/residual-minus-completion/recall10/user_cluster_95ci",
+        "expected_raw": -0.000651869295911674,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 280,
+        "display": "+0.010479",
+        "source": "matched_full#/three-seed-average/residual-minus-completion/recall10/user_cluster_95ci",
+        "expected_raw": 0.010478736764819533,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 281,
+        "display": "-0.000602",
+        "source": "matched_full#/three-seed-average/residual-minus-C/map10/difference",
+        "expected_raw": -0.0006020843667328044,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 281,
+        "display": "-0.002536",
+        "source": "matched_full#/three-seed-average/residual-minus-C/map10/user_cluster_95ci",
+        "expected_raw": -0.0025359259711371517,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 281,
+        "display": "+0.001291",
+        "source": "matched_full#/three-seed-average/residual-minus-C/map10/user_cluster_95ci",
+        "expected_raw": 0.0012908431280159367,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 297,
+        "display": "-0.018913",
+        "source": "matched_screen#/mean3/residual-minus-completion/expected_effective_completion_utility",
+        "expected_raw": -0.018912653881006856,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 298,
+        "display": "+0.006282",
+        "source": "matched_screen#/mean3/residual-minus-completion/expected_effective_residual_utility",
+        "expected_raw": 0.006281834929602712,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 299,
+        "display": "+0.002264",
+        "source": "matched_screen#/mean3/residual-minus-completion/top10_HHI",
+        "expected_raw": 0.0022638956705729094,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 300,
+        "display": "-9.77",
+        "source": "matched_screen#/mean3/residual-minus-completion/top1_max_share",
+        "expected_raw": -9.765625,
+        "decimal_places": 2,
+        "passed": true
+      },
+      {
+        "line": 320,
+        "display": "1.6875",
+        "source": "rollout#/group_summaries/C/greedy/none/mean_unique_generated",
+        "expected_raw": 1.6875,
+        "decimal_places": 4,
+        "passed": true
+      },
+      {
+        "line": 320,
+        "display": "0.197070",
+        "source": "rollout#/group_summaries/C/greedy/none/fixed_neutral_proxy_return",
+        "expected_raw": 0.19706983923951593,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 320,
+        "display": "0.096284",
+        "source": "rollout#/group_summaries/C/greedy/none/fixed_neutral_residual_proxy_return",
+        "expected_raw": 0.09628414051686689,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 321,
+        "display": "1.6250",
+        "source": "rollout#/group_summaries/RL-completion/greedy/none/mean_unique_generated",
+        "expected_raw": 1.625,
+        "decimal_places": 4,
+        "passed": true
+      },
+      {
+        "line": 321,
+        "display": "0.589693",
+        "source": "rollout#/group_summaries/RL-completion/greedy/none/fixed_neutral_proxy_return",
+        "expected_raw": 0.5896933687111825,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 321,
+        "display": "0.048214",
+        "source": "rollout#/group_summaries/RL-completion/greedy/none/fixed_neutral_residual_proxy_return",
+        "expected_raw": 0.04821440721472201,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 322,
+        "display": "1.8125",
+        "source": "rollout#/group_summaries/RL-residual/greedy/none/mean_unique_generated",
+        "expected_raw": 1.8125,
+        "decimal_places": 4,
+        "passed": true
+      },
+      {
+        "line": 322,
+        "display": "0.156140",
+        "source": "rollout#/group_summaries/RL-residual/greedy/none/fixed_neutral_proxy_return",
+        "expected_raw": 0.15614013499880638,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 322,
+        "display": "0.115782",
+        "source": "rollout#/group_summaries/RL-residual/greedy/none/fixed_neutral_residual_proxy_return",
+        "expected_raw": 0.11578211546950763,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 323,
+        "display": "5.0000",
+        "source": "rollout#/group_summaries/C/greedy/exclude-generated/mean_unique_generated",
+        "expected_raw": 5.0,
+        "decimal_places": 4,
+        "passed": true
+      },
+      {
+        "line": 323,
+        "display": "0.124479",
+        "source": "rollout#/group_summaries/C/greedy/exclude-generated/fixed_neutral_proxy_return",
+        "expected_raw": 0.124478876754548,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 323,
+        "display": "0.173149",
+        "source": "rollout#/group_summaries/C/greedy/exclude-generated/fixed_neutral_residual_proxy_return",
+        "expected_raw": 0.17314929676193605,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 324,
+        "display": "5.0000",
+        "source": "rollout#/group_summaries/RL-completion/greedy/exclude-generated/mean_unique_generated",
+        "expected_raw": 5.0,
+        "decimal_places": 4,
+        "passed": true
+      },
+      {
+        "line": 324,
+        "display": "0.343006",
+        "source": "rollout#/group_summaries/RL-completion/greedy/exclude-generated/fixed_neutral_proxy_return",
+        "expected_raw": 0.3430058493898246,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 324,
+        "display": "0.118623",
+        "source": "rollout#/group_summaries/RL-completion/greedy/exclude-generated/fixed_neutral_residual_proxy_return",
+        "expected_raw": 0.11862286877162619,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 325,
+        "display": "5.0000",
+        "source": "rollout#/group_summaries/RL-residual/greedy/exclude-generated/mean_unique_generated",
+        "expected_raw": 5.0,
+        "decimal_places": 4,
+        "passed": true
+      },
+      {
+        "line": 325,
+        "display": "0.113761",
+        "source": "rollout#/group_summaries/RL-residual/greedy/exclude-generated/fixed_neutral_proxy_return",
+        "expected_raw": 0.11376065603755374,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 325,
+        "display": "0.178069",
+        "source": "rollout#/group_summaries/RL-residual/greedy/exclude-generated/fixed_neutral_residual_proxy_return",
+        "expected_raw": 0.17806874083424457,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 343,
+        "display": "0.410706",
+        "source": "cases#/records/253/C/fixed_neutral_proxy_return",
+        "expected_raw": 0.41070550742136724,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 344,
+        "display": "0.354298",
+        "source": "cases#/records/253/RL-residual/fixed_neutral_proxy_return",
+        "expected_raw": 0.35429836484181176,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 345,
+        "display": "0.527537",
+        "source": "cases#/records/2/C/fixed_neutral_proxy_return",
+        "expected_raw": 0.5275368945443804,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 346,
+        "display": "0.048387",
+        "source": "cases#/records/30/C/fixed_neutral_proxy_return",
+        "expected_raw": 0.04838728682867438,
+        "decimal_places": 6,
+        "passed": true
+      },
+      {
+        "line": 347,
+        "display": "0.546359",
+        "source": "cases#/records/30/RL-completion/fixed_neutral_proxy_return",
+        "expected_raw": 0.5463594763266221,
+        "decimal_places": 6,
+        "passed": true
+      }
+    ],
+    "prose_checks_detail": [
+      {
+        "check": "completion mean3 MAP",
+        "matched_text": "0,094368"
+      },
+      {
+        "check": "residual mean3 MAP",
+        "matched_text": "0,096262"
+      },
+      {
+        "check": "coverage denominator",
+        "matched_text": "3358/4096 = 81,98%"
+      },
+      {
+        "check": "unknown misses",
+        "matched_text": "122 неизвестны"
+      },
+      {
+        "check": "off-pool misses",
+        "matched_text": "616 известны"
+      },
+      {
+        "check": "C-B gains/losses/ties",
+        "matched_text": "394 запроса улучшились, 142 ухудшились, 3560"
+      },
+      {
+        "check": "C-GPT gains/losses/ties",
+        "matched_text": "532/201/3363"
+      },
+      {
+        "check": "calibration support",
+        "matched_text": "19 345 supported из 20 000"
+      },
+      {
+        "check": "historical advantage RMS train",
+        "matched_text": "0,071143 против0,144723"
+      },
+      {
+        "check": "historical advantage RMS screen",
+        "matched_text": "0,069634 против0,139086"
+      },
+      {
+        "check": "negative historical completion-C MAP CI",
+        "matched_text": "CI **[−0,004946; −0,000017]**"
+      },
+      {
+        "check": "matched seed spread",
+        "matched_text": "sample SD3 **0,000204**"
+      },
+      {
+        "check": "prospective MAP mean",
+        "matched_text": "prospective25/26 **+0,001952**"
+      },
+      {
+        "check": "bootstrap seed",
+        "matched_text": "seed20261024"
+      },
+      {
+        "check": "rollout scope",
+        "matched_text": "Для новых matched-KL голов отдельный rollout не выполнялся"
+      }
+    ],
+    "source_copy_checks": [
+      {
+        "source_id": "supervised",
+        "sha256": "a4de63cd80e683dd0da12e2a0506fa1ba7081a41193038e1570455831c38eb9b",
+        "matches": true
+      },
+      {
+        "source_id": "rm",
+        "sha256": "5b48ddf391eed228a38414a131ef09e38c7ff32ad1dc87d95f3210bde31e3574",
+        "matches": true
+      },
+      {
+        "source_id": "original_screen",
+        "sha256": "26c9485c4391e4d7d2b4eb587cfc960421f5aab9ed95c445807d6bf7a3907ebc",
+        "matches": true
+      },
+      {
+        "source_id": "original_full",
+        "sha256": "33c43018567f6c1e3b22aa55e280885201b8cac99479cb36f06c710bb66ab5c0",
+        "matches": true
+      },
+      {
+        "source_id": "selection",
+        "sha256": "9983aada0c6909051384f34b80fdfa7e384767e92c600c81bdfcc91eb1b83ca6",
+        "matches": true
+      },
+      {
+        "source_id": "prefit",
+        "sha256": "f1431dd1092a5d7ef96e2ed89d4c2889067cd3558fa0f478f29eff73825c3d97",
+        "matches": true
+      },
+      {
+        "source_id": "rollout",
+        "sha256": "5c2cfc841c643258716862dffc7885566d682dfa94f95cc4578324ac05dbecba",
+        "matches": true
+      },
+      {
+        "source_id": "cases",
+        "sha256": "da4254c95d8691a6aa7f861a0a1665410e870c3269e6af94565ae2ae7cd7cda1",
+        "matches": true
+      },
+      {
+        "source_id": "original_eval_full",
+        "sha256": "5884cf09a3ddcde6638aad7991ed6c99915847b74583d7705e8a70f4a135a086",
+        "matches": true
+      },
+      {
+        "source_id": "original_prereg",
+        "sha256": "025061343a0314691dfb6064063d7e18c74662ea62ab285ec423d374037538ac",
+        "matches": true
+      },
+      {
+        "source_id": "eda",
+        "sha256": "c6e18f7e03a059a33bc5eda286e8d5e88ee732daf3d9afebdf45253c5ecfaf7f",
+        "matches": true
+      },
+      {
+        "source_id": "e2",
+        "sha256": "68c5528bbb4488dab96f6992801982e14437da75327aeae119514d4da525a62d",
+        "matches": true
+      },
+      {
+        "source_id": "matched_full",
+        "sha256": "1fbaae8af0a4ccc94544f2886b021d062bd14778c574d3f92dc2b3aaf261274f",
+        "matches": true
+      },
+      {
+        "source_id": "matched_screen",
+        "sha256": "038fd372d73a549e7ed9d0990669670a49f0a7a552a573e402bcfd6edb63db7a",
+        "matches": true
+      },
+      {
+        "source_id": "matching",
+        "sha256": "e45f26f9d682c71e2ee7b10b45a5e75861d572a3dd91d29547e501842eda154c",
+        "matches": true
+      },
+      {
+        "source_id": "beta",
+        "sha256": "be54df7bff4aabfa729480fdd3140661b976f532bcd418ad12d05cf1f192e13f",
+        "matches": true
+      },
+      {
+        "source_id": "target",
+        "sha256": "8f159a0a0efd27ebc42f16e7b87fe8e9066beae965403af3bfcdb8b9bd5316d0",
+        "matches": true
+      },
+      {
+        "source_id": "prereg",
+        "sha256": "46f348e871f185efca1a734cd31e5234dba6346be545b690d32deb447e488ab4",
+        "matches": true
+      },
+      {
+        "source_id": "arms",
+        "sha256": "ecb71996763b76206c68b976cf8416c10e9c5b0a1fe11e25f98099c2e99c867f",
+        "matches": true
+      },
+      {
+        "source_id": "fit_ledger",
+        "sha256": "fc79668785e747ccb9834d4589132f7b7d1d64ca1c48244e46a4b82c9e7750a4",
+        "matches": true
+      },
+      {
+        "source_id": "matched_eval_full",
+        "sha256": "cc7dd2372a5c80f49aed0d5374deff4cdda8aa739ce41531f5c13245fe760ba5",
+        "matches": true
+      },
+      {
+        "source_id": "matched_numeric_full",
+        "sha256": "f5728b8387643ecf4a66cbc163ac50c1601fc13e8cfe6a402d23bd1508a872c1",
+        "matches": true
+      },
+      {
+        "source_id": "matched_numeric_screen",
+        "sha256": "ce7bfd32860f109eebbb846de6fe48dbd70de9418547c750b6c1e3752017efa6",
+        "matches": true
+      },
+      {
+        "source_id": "i0",
+        "sha256": "25bfecc30b97a381e1bcdd7f2028feaf45f3c6aeb1e61cb6896fd1767aea3680",
+        "matches": true
+      },
+      {
+        "source_id": "original_completion_training",
+        "sha256": "cfdfc225be553305a3d6a8af7c5419227255b44827ccf7e3760a86b3e5dbf8bf",
+        "matches": true
+      },
+      {
+        "source_id": "original_residual_training",
+        "sha256": "f275070714f6fd24c588bb3637b752697063cca8d422b01e7d827bc3d743cba6",
+        "matches": true
+      },
+      {
+        "source_id": "original_completion_receipt",
+        "sha256": "cff6900fc5bb7fee552cc5c3f8cce8c91b037a320b9e3fb56ca842c4eb04c767",
+        "matches": true
+      },
+      {
+        "source_id": "original_residual_receipt",
+        "sha256": "86e9b6c990c93f99a7acccf96025bf28fef5cc0552cb466211d2537fb147cbd7",
+        "matches": true
+      },
+      {
+        "source_id": "bridge",
+        "sha256": "a4bccf42b9f020e72a191c536df59dce5ac4e21b7e38aee4e21edccab5c05676",
+        "matches": true
+      },
+      {
+        "source_id": "historical_aggregate_replay",
+        "sha256": "6e6944828ffa6b32d7db462e5ae5a5382fbc4f770a2fd46831cd7b9d73503d6d",
+        "matches": true
+      }
+    ]
+  },
+  "reviewed_utc": "2026-10-25T08:19:23.062611+00:00",
+  "reviewer": "submit_metrics (independent of report author)",
+  "claims_oracle_sha256": "141b328c27f9edbec7466db5a8d467f63cc937a7aa0de59dedd93d426ce575a3",
+  "active_findings": [],
+  "resolved_findings": [
+    {
+      "priority": "P3",
+      "file": "reports/REPORT.md",
+      "section": "8.3",
+      "title": "Bind all12 rollout variants to the summary rather than greedy-only case export",
+      "evidence": "rollout-case-returns.json contains9 greedy/none records,3cases×3arms. It does not contain all12 contexts for each example. Frozen final text now links greedy/none returns separately from rollout-summary.json/examples.",
+      "status": "resolved before accepted author freeze"
+    }
+  ],
+  "manual_findings_and_conclusions": [
+    {
+      "topic": "Historical versus matched residual",
+      "finding": "Correctly distinguished throughout. Historical beta0.5 fullMAP0.096088; newpilot2 residual24 beta0.1627403014 fullMAP0.096159. Rollout is explicitly historical and not reused as six-head evidence.",
+      "sources": [
+        "original_full",
+        "matched_full",
+        "beta",
+        "rollout"
+      ]
+    },
+    {
+      "topic": "Seed roles, matching and fit counting",
+      "finding": "Three operational TRAIN512 natural1024 KL ratios pass inclusive[0.8,1.2]; seed24 calibration and seeds25/26 prospective are explicit.6 newfits=2pilots+4prospective,6000 updates; final6heads includes5 newly selected +historical completion24.",
+      "sources": [
+        "matching",
+        "beta",
+        "fit_ledger"
+      ]
+    },
+    {
+      "topic": "Primary uncertainty",
+      "finding": "Mean3 residual-completionMAP+0.001893 and conditional95%CI[-0.000908,+0.004520] agree with saved source. All3 individualMAPCI include0. SampleSD/min/max and prospective mean are descriptive; report does not pool3x4096 independently or claim seed-population robustness.",
+      "sources": [
+        "matched_full",
+        "prereg"
+      ]
+    },
+    {
+      "topic": "Reward and concentration scope",
+      "finding": "Historical proxy/prior decomposition is correct and restricted to screen256. Matched residual-completion Ucomp/Ures/HHI/top1 mean differences agree. Lower top1share and higher HHI are both stated; no general diversity or causal personalization gain claimed.",
+      "sources": [
+        "original_screen",
+        "matched_screen"
+      ]
+    },
+    {
+      "topic": "Cohort and denominator",
+      "finding": "Common4096/users4035/coverage3358/unknown122/offpool616 and no-target-injection/no-seen-filter rule are maintained. RM observed20k is kept separate from arbitrary candidate rewards and full4096 policy outcome.",
+      "sources": [
+        "supervised",
+        "matched_eval_full",
+        "rm",
+        "bridge"
+      ]
+    },
+    {
+      "topic": "ObservedRM/calibration",
+      "finding": "RM table, cold metrics,19345/20000 calibration support,4265192 full-raw fit count and bridge254360/262144 support agree. Report correctly notes calibrated late RMSE is slightly worse than uncalibrated and does not call continuous completion a probability of full watch.",
+      "sources": [
+        "rm",
+        "bridge"
+      ]
+    },
+    {
+      "topic": "Rollout and cases",
+      "finding": "Grid16×3×2×2=192 trajectories,5steps=960,greedy unique means,all-supported return denominators and all3case sequences/returns match compact sources. Mask-generated uniqueness is not attributed to training; gamma0.9 return is frozen-s0 proxy with no observed later outcomes.",
+      "sources": [
+        "rollout",
+        "cases"
+      ]
+    },
+    {
+      "topic": "Temporal/counterfactual boundaries",
+      "finding": "Frozen-model chronology, reused development,test previously opened,last-watch aggregation,metadata availability,no exposures/propensities and no causal retention claim are explicit in REPORT and LIMITATIONS.",
+      "sources": [
+        "original_prereg",
+        "rm",
+        "prereg"
+      ]
+    },
+    {
+      "topic": "Reproduction claim scope",
+      "finding": "Updated final text correctly claims completed bounded actor CUDAFP16 frozen-encoder/three-original-head replay and separate CatBoost RM replay. Exact0,9.781s/4.407s and3976/4096 support match compact receipts. New MAP,matched-six-head/full4096/CPU/cache-only CLI,new-machine install and final archive numerical rerun remain unclaimed.",
+      "sources": [
+        "historical_aggregate_replay",
+        "focused_reproduction_refresh/source_pins"
+      ]
+    }
+  ],
+  "verification_limits": [
+    "No model checkpoints,numerical NPY/NPZ arrays or private source data payloads were opened by this reviewer.",
+    "No fitting,training,inference,model scoring,rank reconstruction,KL recomputation or bootstrap resampling was executed by this reviewer.",
+    "Scientific score parity/CI and new replay parity are bound to accepted compact JSON,receipt and source-manifest values; this independent readback does not reproduce producer numerical execution.",
+    "This audit covers numerical results,rounding,cohort/uncertainty interpretation and added replay status/scope. It is not independent all-page PDF/figure visual QA.",
+    "Fresh extraction replay was run by root from separate minimal archives on installed original Windows environment; current final delivery archive inference/full4096/new-machine install remain unclaimed."
+  ],
+  "prior_accepted_scopes": [
+    {
+      "REPORT.md": "3b3b9b0e2211a7f85b6252f59a82a262ceb37d7f065392fb4e793c72fe8f9df6",
+      "LIMITATIONS.md": "0c683de06dcd490891c9dc169871c0c044a634e2c9d89a7caf5da8519a416ee8"
+    }
+  ],
+  "focused_reproduction_refresh": {
+    "reviewed_utc": "2026-10-25T08:19:23.062611+00:00",
+    "state": "passed",
+    "source_pins": {
+      "actor-replay-summary.json": {
+        "path": "evidence/reproduction/actor-replay-summary.json",
+        "sha256": "e2b0b173f43b3d8c09094d8dcc721186e2d94fd7e2ea6363d51144bcb8f4a15e",
+        "bytes": 7759
+      },
+      "actor-replay-native.json": {
+        "path": "evidence/reproduction/actor-replay-native.json",
+        "sha256": "9b97b54fa6136b06cf52160a6b9b102b914a557256c582cf88607232b3a0b9ce",
+        "bytes": 1172
+      },
+      "actor-replay-receipt.json": {
+        "path": "evidence/reproduction/actor-replay-receipt.json",
+        "sha256": "0859582ae1d2c8badf4a30d21d65d6a3ccdde6c87f9c52ed90dbe96a5f53769a",
+        "bytes": 3749
+      },
+      "rm-replay-summary.json": {
+        "path": "evidence/reproduction/rm-replay-summary.json",
+        "sha256": "1fc306457c50b94c58b91a22eeacd3947ed380e79fb1351b0d794b787bcf5f43",
+        "bytes": 1717
+      },
+      "rm-replay-native.json": {
+        "path": "evidence/reproduction/rm-replay-native.json",
+        "sha256": "edde41ca8264f7778ed00a1c20443aeb4ed42f3ce6039406b408fc99b003233d",
+        "bytes": 1159
+      },
+      "rm-replay-receipt.json": {
+        "path": "evidence/reproduction/rm-replay-receipt.json",
+        "sha256": "5f24a985e2e0a09f9193cdb4ab6021af8b46868551ff1c12e3e09b8a2ca9d6fb",
+        "bytes": 3533
+      },
+      "actor-extraction.json": {
+        "path": "evidence/reproduction/actor-extraction.json",
+        "sha256": "bc0c9187cf3fa7d868ae720ae41bed9ad585fbc8952f9130cc6dc5fb51fe70c5",
+        "bytes": 5807
+      },
+      "rm-extraction.json": {
+        "path": "evidence/reproduction/rm-extraction.json",
+        "sha256": "0a2c7562636a791ab4d687c15df7efb89bcbc2c2543b9d4232e84c9ae1fa3f06",
+        "bytes": 4269
+      },
+      "INDEX.json": {
+        "path": "evidence/reproduction/INDEX.json",
+        "sha256": "0a478130fa43a8a8b4c1aa9e5480395683dbac0386fcf61166fb3b33d905d3c1",
+        "bytes": 3424
+      },
+      "reproduction/inputs/manifest.json": {
+        "path": "reproduction/inputs/manifest.json",
+        "sha256": "e680dd145b2bfdc812107fb9a257bf16f6d1ef5a53c07845f7dc21838146a52c",
+        "bytes": 7578
+      },
+      "reproduction/inputs-rm-r1/manifest.json": {
+        "path": "reproduction/inputs-rm-r1/manifest.json",
+        "sha256": "7b3e7dbefde3a6d0e113c0340dbbfc425d223574a7c4cd13db7927fb29b30380",
+        "bytes": 4381
+      }
+    },
+    "facts": {
+      "actor": {
+        "rows": 4,
+        "candidates_per_row": 1024,
+        "producer_batch_size": 16,
+        "row_slots": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "heads": [
+          "C",
+          "original-RL-completion-beta0.5-seed20261024",
+          "original-RL-residual-beta0.5-seed20261024"
+        ],
+        "device": "cuda",
+        "precision": "cuda-fp16",
+        "q_base_scores_max_abs_error": 0,
+        "top10_exact": true,
+        "native_elapsed_seconds": 9.781000000075437,
+        "exit_code": 0,
+        "cleanup_quiescent": true,
+        "training_updates": 0
+      },
+      "RM": {
+        "states": 4,
+        "candidates_per_state": 1024,
+        "candidate_pairs": 4096,
+        "supported_pairs": 3976,
+        "native_float64_max_abs_error": 0,
+        "historical_float32_exact": true,
+        "support_exact": true,
+        "native_elapsed_seconds": 4.407000000006519,
+        "exit_code": 0,
+        "cleanup_quiescent": true,
+        "rm_fits": 0,
+        "training_updates": 0
+      },
+      "scope": [
+        "Fresh extraction from separate minimal runtime+inputs archives into paths with spaces on same installed Windows machine.",
+        "Actual frozen encoder+three historical heads and separate frozen CatBoost prediction are proved by compact receipts; not all six matched heads.",
+        "No observed labels, new MAP/CI, raw feature/pool reconstruction, actorCPU/cached-only CLI, full4096/new-machine dependency install, final-delivery-archive numerical run or training."
+      ]
+    },
+    "inherited_scientific_checks": {
+      "tables": 12,
+      "numeric_scalar_cells": 155,
+      "critical_prose_checks": 15,
+      "all_original_source_pins_unchanged": true,
+      "current_scientific_line_display_checks": 155
+    },
+    "findings": [],
+    "method": "Independent compact JSON/hash/source-manifest readback only; no model,array,inference or bootstrap execution by reviewer."
+  }
+}

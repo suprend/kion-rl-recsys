@@ -1,0 +1,45 @@
+# Numerical payloads and models are distributed separately.
+*.npy
+*.npz
+*.pt
+*.pth
+*.cbm
+*.bin
+*.ckpt
+*.safetensors
+*.pkl
+*.pickle
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# Keep only the frozen descriptor/index metadata at these boundaries.
+/reproduction/inputs/*
+!/reproduction/inputs/manifest.json
+/reproduction/inputs-rm-r1/*
+!/reproduction/inputs-rm-r1/manifest.json
+/reproduction/external-provenance/*
+!/reproduction/external-provenance/INDEX.json
+
+# Local data, caches, runtime outputs and credentials.
+/data/
+/weights/
+/fixtures/
+/cache/
+/caches/
+/logs/
+/outputs/
+/replay-*/
+/control/
+/operations/
+__pycache__/
+*.py[cod]
+.cache/
+.pytest_cache/
+.venv/
+/.venv-*/
+venv/
+.env
+.env.*
+*.log

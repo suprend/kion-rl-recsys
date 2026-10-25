@@ -1,0 +1,286 @@
+{
+  "contract": "kion-current-C1070-kl-seeds-H1-v1",
+  "state": "completed",
+  "implementation": "producer-shape-slot-v2",
+  "start_from": "original-C",
+  "beta": 0.5,
+  "utility": "completion",
+  "seed": 20261026,
+  "sampler_seed": 20261026,
+  "fit_admission": {
+    "maximum_new_fits": 8,
+    "fit_ordinal": 5,
+    "reservation_id": "fit-05-completion-20261026",
+    "ledger_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/fit-ledger-05.json",
+    "ledger_sha256": "f36d816bbde6324da39e5594e8c1c216d80f57306e4c05a24ab6ae2ffc570c00"
+  },
+  "updates": 1000,
+  "checkpoints": [
+    {
+      "step": 0,
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261026/head-0.pt",
+      "sha256": "d9c165a4de6211d0027a3d67af1fb7f333d14af5140c91df761dd4413800b0ad"
+    },
+    {
+      "step": 250,
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261026/head-250.pt",
+      "sha256": "45c6bc8a05a1b41a799bd4c4a9aad55b9e9867ff6c6484714d335c4ad3a58e85"
+    },
+    {
+      "step": 500,
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261026/head-500.pt",
+      "sha256": "3f9b4ecd823ae14527f5539f2c2100397ab1a5c4d57b96d6071ad0aa44789dbf"
+    },
+    {
+      "step": 1000,
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261026/head-1000.pt",
+      "sha256": "2b323c60b672a19439adade769eea01f8eb535033de859cd248d911d09cba822"
+    }
+  ],
+  "batch_size": 16,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "weight_decay": 0,
+  "grad_clip": 1,
+  "precision": "cuda-fp16",
+  "frozen_encoder": true,
+  "supervised_updates": 0,
+  "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+  "cache_sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+  "utility_contract": "current-C-local-RM-r2-bridge-v1",
+  "utility_formula": "r_RM(s,i)",
+  "utility_sha256": "e888cb47586b8ea2a4e5323a1051401e949f602ec36e43d36254684e80a320a5",
+  "reward_sha256": "e8047d12f8009bb422cc4956261a355dc10e05f42d73351ef76ccd5f7bc9ce05",
+  "preregistration_sha256": "78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c",
+  "prefit_sha256": "f1431dd1092a5d7ef96e2ed89d4c2889067cd3558fa0f478f29eff73825c3d97",
+  "parity_proof": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/repair-proof-r1.json",
+    "sha256": "dbdc6622bd620c15cbab77e2b12db4a241bb6e9577270fc0578b5da768d1e32b"
+  },
+  "immutable_policy_sha256": "da7baf199b685cb467edd7d5eedaada151798ec40bbc23e9edfaee8e36340dba",
+  "utility_source_sha256": "4cffa8d876c84723326f035b825cafc520c4ad561d98e3851bfe38a5d3e1cd0f",
+  "primary_contrast": "fixed-latest1000",
+  "update0_actor_reference_exact": true,
+  "update0_top10_exact": true,
+  "update0_max_abs_error": 0.0,
+  "loss_normalization": "one mean over logical real B16 occurrences; no bucket means",
+  "objective": "exact supported C-centered chosen utility minus beta KL; all1024 actions normalized",
+  "policy_source_sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5",
+  "checkpoint_steps": [
+    0,
+    250,
+    500,
+    1000
+  ],
+  "update0_cached_scores_exact": true,
+  "provider_opened": false,
+  "GPT_opened": false,
+  "RM_opened": false,
+  "temperature": 1.0,
+  "history": [
+    {
+      "step": 25,
+      "loss": -0.005467482842504978,
+      "grad_norm": 0.19646720588207245
+    },
+    {
+      "step": 50,
+      "loss": -0.007968802936375141,
+      "grad_norm": 0.11195218563079834
+    },
+    {
+      "step": 75,
+      "loss": -0.009727559983730316,
+      "grad_norm": 0.1070801317691803
+    },
+    {
+      "step": 100,
+      "loss": -0.009944143705070019,
+      "grad_norm": 0.1165517196059227
+    },
+    {
+      "step": 125,
+      "loss": -0.010730688460171223,
+      "grad_norm": 0.11899664252996445
+    },
+    {
+      "step": 150,
+      "loss": -0.011382725089788437,
+      "grad_norm": 0.06952806562185287
+    },
+    {
+      "step": 175,
+      "loss": -0.011988957412540913,
+      "grad_norm": 0.07642167061567307
+    },
+    {
+      "step": 200,
+      "loss": -0.01414329931139946,
+      "grad_norm": 0.08973205089569092
+    },
+    {
+      "step": 225,
+      "loss": -0.011476768180727959,
+      "grad_norm": 0.07868222892284393
+    },
+    {
+      "step": 250,
+      "loss": -0.013256983831524849,
+      "grad_norm": 0.07492482662200928
+    },
+    {
+      "step": 275,
+      "loss": -0.014501256868243217,
+      "grad_norm": 0.0641130656003952
+    },
+    {
+      "step": 300,
+      "loss": -0.014982981607317924,
+      "grad_norm": 0.06769905239343643
+    },
+    {
+      "step": 325,
+      "loss": -0.013617496937513351,
+      "grad_norm": 0.0442015714943409
+    },
+    {
+      "step": 350,
+      "loss": -0.014201665297150612,
+      "grad_norm": 0.05552325025200844
+    },
+    {
+      "step": 375,
+      "loss": -0.016099411994218826,
+      "grad_norm": 0.08158865571022034
+    },
+    {
+      "step": 400,
+      "loss": -0.016290945932269096,
+      "grad_norm": 0.04854649677872658
+    },
+    {
+      "step": 425,
+      "loss": -0.01497070211917162,
+      "grad_norm": 0.043752167373895645
+    },
+    {
+      "step": 450,
+      "loss": -0.017758594825863838,
+      "grad_norm": 0.03912077099084854
+    },
+    {
+      "step": 475,
+      "loss": -0.01608487218618393,
+      "grad_norm": 0.09072772413492203
+    },
+    {
+      "step": 500,
+      "loss": -0.015601027756929398,
+      "grad_norm": 0.04753623902797699
+    },
+    {
+      "step": 525,
+      "loss": -0.016767315566539764,
+      "grad_norm": 0.0470438152551651
+    },
+    {
+      "step": 550,
+      "loss": -0.016815505921840668,
+      "grad_norm": 0.05253991112112999
+    },
+    {
+      "step": 575,
+      "loss": -0.015371853485703468,
+      "grad_norm": 0.04875646159052849
+    },
+    {
+      "step": 600,
+      "loss": -0.015790915116667747,
+      "grad_norm": 0.042893245816230774
+    },
+    {
+      "step": 625,
+      "loss": -0.015032236464321613,
+      "grad_norm": 0.053550515323877335
+    },
+    {
+      "step": 650,
+      "loss": -0.017954230308532715,
+      "grad_norm": 0.03449978306889534
+    },
+    {
+      "step": 675,
+      "loss": -0.01603136584162712,
+      "grad_norm": 0.06509102880954742
+    },
+    {
+      "step": 700,
+      "loss": -0.016671571880578995,
+      "grad_norm": 0.03664623945951462
+    },
+    {
+      "step": 725,
+      "loss": -0.018131960183382034,
+      "grad_norm": 0.042084772139787674
+    },
+    {
+      "step": 750,
+      "loss": -0.01851673051714897,
+      "grad_norm": 0.04479100927710533
+    },
+    {
+      "step": 775,
+      "loss": -0.016577668488025665,
+      "grad_norm": 0.055995211005210876
+    },
+    {
+      "step": 800,
+      "loss": -0.0177175160497427,
+      "grad_norm": 0.02664870209991932
+    },
+    {
+      "step": 825,
+      "loss": -0.019634392112493515,
+      "grad_norm": 0.05004332587122917
+    },
+    {
+      "step": 850,
+      "loss": -0.01575220376253128,
+      "grad_norm": 0.041427891701459885
+    },
+    {
+      "step": 875,
+      "loss": -0.02078118547797203,
+      "grad_norm": 0.054413072764873505
+    },
+    {
+      "step": 900,
+      "loss": -0.017880436033010483,
+      "grad_norm": 0.048989344388246536
+    },
+    {
+      "step": 925,
+      "loss": -0.01941806823015213,
+      "grad_norm": 0.037100329995155334
+    },
+    {
+      "step": 950,
+      "loss": -0.01894257217645645,
+      "grad_norm": 0.03125816211104393
+    },
+    {
+      "step": 975,
+      "loss": -0.019525358453392982,
+      "grad_norm": 0.03528875857591629
+    },
+    {
+      "step": 1000,
+      "loss": -0.01679968647658825,
+      "grad_norm": 0.05836920067667961
+    }
+  ],
+  "parameter_l2_delta": 1.0268598802211468,
+  "sampler_positions_sha256": "2c50759668022e84b9ed91f897d1b61b55a1c8e64e9b9533543ea2f2a9eb15f1",
+  "actual_optimizer_updates": 1000,
+  "reference_weights_unchanged": true
+}

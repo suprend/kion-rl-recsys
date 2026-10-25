@@ -1,0 +1,72 @@
+{
+  "state": "stopped",
+  "updates": 54470,
+  "selected_epoch": 2,
+  "artifacts": [
+    "best.pt",
+    "latest.pt",
+    "metrics.json",
+    "previous.pt",
+    "selected-epoch0001.json",
+    "selected-epoch0001.pt",
+    "selected-epoch0002.json",
+    "selected-epoch0002.pt",
+    "selected.json"
+  ],
+  "sha256": {
+    "best.pt": "5e7101857c2dbe100fb4e1587c0369abc95c108303ed149123ee183f62aeac26",
+    "latest.pt": "5e7101857c2dbe100fb4e1587c0369abc95c108303ed149123ee183f62aeac26",
+    "metrics.json": "0ec57bb571aa25a38f71d81cbf73cbc82787f2efef119f3c555160ef3fabd27b",
+    "previous.pt": "5e7101857c2dbe100fb4e1587c0369abc95c108303ed149123ee183f62aeac26",
+    "selected-epoch0001.json": "0dd1fb8fcade2b80a6569a52beba70a3ad77fc4a3f830bc78f565753bb1b3782",
+    "selected-epoch0001.pt": "a4c91aa4c3e892322c58f5dff6142ce19f7d038d661c909ebfd043d35e9dd663",
+    "selected-epoch0002.json": "56e910855f0fbc875b28a326c9d30edf02fdec6c2084416e34b995043e9d3796",
+    "selected-epoch0002.pt": "5e7101857c2dbe100fb4e1587c0369abc95c108303ed149123ee183f62aeac26",
+    "selected.json": "e4b14ecf42bc081142ff20c2636a5431fc54f7ed2b09f2015bad51e52de91c90"
+  },
+  "validation": {
+    "examples": 158760,
+    "known_targets": 154564,
+    "unknown_target_misses": 4196,
+    "actual_k": 10,
+    "cross_entropy_known": 7.362680558928058,
+    "retrieval_topk": 128,
+    "retrieval_coverage_all_rows": 0.40347064751826656,
+    "retrieval_coverage_known_rows": 0.41442379855593797,
+    "retrieval": {
+      "recall@10": 0.15795540438397582,
+      "ndcg@10": 0.09249753925513203
+    },
+    "rerank": {
+      "recall@10": 0.18170194003527337,
+      "ndcg@10": 0.10785896191608621
+    },
+    "scoring_mode": "rerank",
+    "recall@10": 0.18170194003527337,
+    "ndcg@10": 0.10785896191608621
+  },
+  "predictions_status": "deferred-runtime-stop",
+  "integration": {
+    "mode": "scoped_production",
+    "status": "admitted_scoped",
+    "scope_id": "ready-pack-20261020-r1",
+    "scope_decision": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/scope-decision-r1.json",
+      "sha256": "a674637029b96f564366fdda6e9c433a1cf3dab09721d191ad5a276b622cf962"
+    },
+    "active_families": [
+      "local_base",
+      "local_dynamic",
+      "semantic_extensions",
+      "text3fields",
+      "people_embeddings",
+      "personal_candidates",
+      "franchise_progress",
+      "external_interest"
+    ],
+    "full_package_admitted": false,
+    "full_row_fit_admitted": true
+  },
+  "test_accessed": false,
+  "learned_status": "optimizer-updated"
+}

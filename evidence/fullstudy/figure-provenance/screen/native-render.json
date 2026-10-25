@@ -1,0 +1,204 @@
+{
+  "contract": "kion-native-figure-render-v1",
+  "state": "completed",
+  "stage": "screen",
+  "rows": 256,
+  "row_unit": "queries",
+  "unique_users": 256,
+  "output": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures-v3/screen",
+  "data": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/screen-analysis-r2/plot-data.json",
+    "sha256": "8ad2461b5c9a247f867264561af47e70113a45e39b4980bea7f63a231a62935c",
+    "bytes": 224266
+  },
+  "plot_module": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_results_v4.py",
+    "sha256": "a04715975f14af0bd03283be31721d31eea6e26c5914b1fa868839a0b5c0a147",
+    "bytes": 7027
+  },
+  "dependencies": [
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_results.py",
+      "sha256": "f6be0387a947dd33f065deae54fe98d14881e30271040389d743602afcd024f4",
+      "bytes": 17936
+    }
+  ],
+  "title_enrichment": {
+    "enabled": true,
+    "items": {
+      "path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e",
+      "bytes": 31836561
+    },
+    "requested_count": 24,
+    "found_title_count": 24,
+    "labels": [
+      {
+        "raw_id": 142,
+        "title": "Маша",
+        "missing_title": false,
+        "display_label": "142 · Маша"
+      },
+      {
+        "raw_id": 831,
+        "title": "Костёр на ветру (субтитры)",
+        "missing_title": false,
+        "display_label": "831 · Костёр на ветру (субтитры)"
+      },
+      {
+        "raw_id": 2657,
+        "title": "Подслушано",
+        "missing_title": false,
+        "display_label": "2657 · Подслушано"
+      },
+      {
+        "raw_id": 3669,
+        "title": "ДУХLESS",
+        "missing_title": false,
+        "display_label": "3669 · ДУХLESS"
+      },
+      {
+        "raw_id": 3734,
+        "title": "Прабабушка легкого поведения",
+        "missing_title": false,
+        "display_label": "3734 · Прабабушка легкого\nповедения"
+      },
+      {
+        "raw_id": 4151,
+        "title": "Секреты семейной жизни",
+        "missing_title": false,
+        "display_label": "4151 · Секреты семейной жизни"
+      },
+      {
+        "raw_id": 4880,
+        "title": "Афера",
+        "missing_title": false,
+        "display_label": "4880 · Афера"
+      },
+      {
+        "raw_id": 6006,
+        "title": "Кости",
+        "missing_title": false,
+        "display_label": "6006 · Кости"
+      },
+      {
+        "raw_id": 6192,
+        "title": "Отчаянные домохозяйки",
+        "missing_title": false,
+        "display_label": "6192 · Отчаянные домохозяйки"
+      },
+      {
+        "raw_id": 6227,
+        "title": "Запретная любовь",
+        "missing_title": false,
+        "display_label": "6227 · Запретная любовь"
+      },
+      {
+        "raw_id": 7571,
+        "title": "100% волк",
+        "missing_title": false,
+        "display_label": "7571 · 100% волк"
+      },
+      {
+        "raw_id": 7793,
+        "title": "Радиовспышка",
+        "missing_title": false,
+        "display_label": "7793 · Радиовспышка"
+      },
+      {
+        "raw_id": 7829,
+        "title": "Поступь хаоса",
+        "missing_title": false,
+        "display_label": "7829 · Поступь хаоса"
+      },
+      {
+        "raw_id": 8636,
+        "title": "Белый снег",
+        "missing_title": false,
+        "display_label": "8636 · Белый снег"
+      },
+      {
+        "raw_id": 9728,
+        "title": "Гнев человеческий",
+        "missing_title": false,
+        "display_label": "9728 · Гнев человеческий"
+      },
+      {
+        "raw_id": 10440,
+        "title": "Хрустальный",
+        "missing_title": false,
+        "display_label": "10440 · Хрустальный"
+      },
+      {
+        "raw_id": 11863,
+        "title": "Девятаев - сериал",
+        "missing_title": false,
+        "display_label": "11863 · Девятаев - сериал"
+      },
+      {
+        "raw_id": 12192,
+        "title": "Фемида видит",
+        "missing_title": false,
+        "display_label": "12192 · Фемида видит"
+      },
+      {
+        "raw_id": 13582,
+        "title": "ДУХLESS 2",
+        "missing_title": false,
+        "display_label": "13582 · ДУХLESS 2"
+      },
+      {
+        "raw_id": 13865,
+        "title": "Девятаев",
+        "missing_title": false,
+        "display_label": "13865 · Девятаев"
+      },
+      {
+        "raw_id": 15297,
+        "title": "Клиника счастья",
+        "missing_title": false,
+        "display_label": "15297 · Клиника счастья"
+      },
+      {
+        "raw_id": 15659,
+        "title": "Курортный роман",
+        "missing_title": false,
+        "display_label": "15659 · Курортный роман"
+      },
+      {
+        "raw_id": 16228,
+        "title": "Содержанки",
+        "missing_title": false,
+        "display_label": "16228 · Содержанки"
+      },
+      {
+        "raw_id": 16301,
+        "title": "Астролог",
+        "missing_title": false,
+        "display_label": "16301 · Астролог"
+      }
+    ],
+    "canonical_sha256": "d364076ccdf99a1844ae4b6e70a71cac05c7ccdf30f92f93808bc02f3f0827ec"
+  },
+  "aggregate_canonical_sha256": "f085b211875c5c208d2f037feb7a6dfd76a9eb10b674bd7a495bc74ae92aa448",
+  "source": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/render_figures_v3.py",
+    "sha256": "323e0ff0bc1569f3bdb5610f585d07a32f3fd2a35d1086861de5babef0fbd8d2"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "matplotlib": "3.11.2"
+  },
+  "figures_index": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures-v3/screen/figures.json",
+    "sha256": "afef394cd637e13d9bd669b976bd5a9a1f702f8305c5080f40ba6a576a9f5eae",
+    "bytes": 6167
+  },
+  "figure_count": 7,
+  "requires_visual_QA": true,
+  "labels_artifact": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures-v3/screen/labels.json",
+    "sha256": "f90324967dabc59accb92d3d111b401ee8aca185d5abde034bfc40e1db90c30b",
+    "bytes": 5163
+  }
+}

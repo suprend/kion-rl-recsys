@@ -1,0 +1,190 @@
+{
+  "contract": "kion-submission-independent-source-docdelta-review-v1",
+  "state": "passed-focused-source-doclink-recheck",
+  "reviewer": "/root/submit_source_review",
+  "reviewed_utc": "2026-10-25T08:13:00.199583+00:00",
+  "base_review": {
+    "path": "review/source-final.json",
+    "sha256": "c09925ebea31c44801de864b529367f2d612c9e8ad24fdf6d4275a8fde1654fa",
+    "unchanged": true
+  },
+  "scope": "Only the two link/prose repairs in source/README.md and directory-to-README target repair in research/SOURCE_CLOSURE.md; prior source review remains valid for unchanged preserved bytes and helper/audit pins.",
+  "findings": [],
+  "documents": [
+    {
+      "path": "source/README.md",
+      "bytes": 3836,
+      "sha256": "905b1f72141e432471811a1c1b22679ba07a5b279c6515f7057cec50f485688b",
+      "prior_sha256": "b941c22b8b7bf44089c72705273a16ad6f62a4d2782162010dcedf1db43f76df",
+      "exact_allowed_replacements": 2,
+      "reversing_only_allowed_link_prose_repairs_restores_prior_sha256": true
+    },
+    {
+      "path": "research/SOURCE_CLOSURE.md",
+      "bytes": 8751,
+      "sha256": "56585980d125339219b3bcdbd2d8e7a5d84b97bc347e78f11c7c252060155c17",
+      "prior_sha256": "3023c4c3ab49e15369e2898d0908fbdd8e70246da328b9b58a9dc42623514d13",
+      "exact_allowed_replacements": 1,
+      "reversing_only_allowed_link_prose_repairs_restores_prior_sha256": true
+    }
+  ],
+  "relative_markdown_file_links_checked": 24,
+  "links": [
+    {
+      "document": "source/README.md",
+      "target": "manifest.json",
+      "resolved": "source/manifest.json",
+      "is_file": true
+    },
+    {
+      "document": "source/README.md",
+      "target": "fullstudy/code-manifest.json",
+      "resolved": "source/fullstudy/code-manifest.json",
+      "is_file": true
+    },
+    {
+      "document": "source/README.md",
+      "target": "fullstudy/dependencies.json",
+      "resolved": "source/fullstudy/dependencies.json",
+      "is_file": true
+    },
+    {
+      "document": "source/README.md",
+      "target": "matched-kl/selection-final-r1.json",
+      "resolved": "source/matched-kl/selection-final-r1.json",
+      "is_file": true
+    },
+    {
+      "document": "source/README.md",
+      "target": "static-audit.json",
+      "resolved": "source/static-audit.json",
+      "is_file": true
+    },
+    {
+      "document": "source/README.md",
+      "target": "../research/SOURCE_CLOSURE.md",
+      "resolved": "research/SOURCE_CLOSURE.md",
+      "is_file": true
+    },
+    {
+      "document": "source/README.md",
+      "target": "../reproduction/README.md",
+      "resolved": "reproduction/README.md",
+      "is_file": true
+    },
+    {
+      "document": "source/README.md",
+      "target": "fullstudy/code/requirements/actor.txt",
+      "resolved": "source/fullstudy/code/requirements/actor.txt",
+      "is_file": true
+    },
+    {
+      "document": "source/README.md",
+      "target": "fullstudy/code/requirements/reward-worker.txt",
+      "resolved": "source/fullstudy/code/requirements/reward-worker.txt",
+      "is_file": true
+    },
+    {
+      "document": "source/README.md",
+      "target": "fullstudy/code/requirements/figures.txt",
+      "resolved": "source/fullstudy/code/requirements/figures.txt",
+      "is_file": true
+    },
+    {
+      "document": "research/SOURCE_CLOSURE.md",
+      "target": "../source/manifest.json",
+      "resolved": "source/manifest.json",
+      "is_file": true
+    },
+    {
+      "document": "research/SOURCE_CLOSURE.md",
+      "target": "../source/fullstudy/code-manifest.json",
+      "resolved": "source/fullstudy/code-manifest.json",
+      "is_file": true
+    },
+    {
+      "document": "research/SOURCE_CLOSURE.md",
+      "target": "../source/matched-kl/selection-final-r1.json",
+      "resolved": "source/matched-kl/selection-final-r1.json",
+      "is_file": true
+    },
+    {
+      "document": "research/SOURCE_CLOSURE.md",
+      "target": "../source/static-audit.json",
+      "resolved": "source/static-audit.json",
+      "is_file": true
+    },
+    {
+      "document": "research/SOURCE_CLOSURE.md",
+      "target": "../source/verify_sources.py",
+      "resolved": "source/verify_sources.py",
+      "is_file": true
+    },
+    {
+      "document": "research/SOURCE_CLOSURE.md",
+      "target": "../source/fullstudy/code/tools/verify_bundle.py",
+      "resolved": "source/fullstudy/code/tools/verify_bundle.py",
+      "is_file": true
+    },
+    {
+      "document": "research/SOURCE_CLOSURE.md",
+      "target": "../reproduction/README.md",
+      "resolved": "reproduction/README.md",
+      "is_file": true
+    },
+    {
+      "document": "research/SOURCE_CLOSURE.md",
+      "target": "../source/fullstudy/code/recipes/source-requests.json",
+      "resolved": "source/fullstudy/code/recipes/source-requests.json",
+      "is_file": true
+    },
+    {
+      "document": "research/SOURCE_CLOSURE.md",
+      "target": "../source/fullstudy/code/recipes/execution-stage-index.json",
+      "resolved": "source/fullstudy/code/recipes/execution-stage-index.json",
+      "is_file": true
+    },
+    {
+      "document": "research/SOURCE_CLOSURE.md",
+      "target": "../source/fullstudy/code/recipes/excluded-inputs.json",
+      "resolved": "source/fullstudy/code/recipes/excluded-inputs.json",
+      "is_file": true
+    },
+    {
+      "document": "research/SOURCE_CLOSURE.md",
+      "target": "../source/fullstudy/code/recipes/import-inventory.json",
+      "resolved": "source/fullstudy/code/recipes/import-inventory.json",
+      "is_file": true
+    },
+    {
+      "document": "research/SOURCE_CLOSURE.md",
+      "target": "../evidence/raw-provenance/manifest.json",
+      "resolved": "evidence/raw-provenance/manifest.json",
+      "is_file": true
+    },
+    {
+      "document": "research/SOURCE_CLOSURE.md",
+      "target": "../evidence/raw-provenance/verified-download.json",
+      "resolved": "evidence/raw-provenance/verified-download.json",
+      "is_file": true
+    },
+    {
+      "document": "research/SOURCE_CLOSURE.md",
+      "target": "../source/fullstudy/dependencies.json",
+      "resolved": "source/fullstudy/dependencies.json",
+      "is_file": true
+    }
+  ],
+  "source_manifest_sha256": "8ea4eefae2900208c028bdb86493b950b328b048519ab5160ad069085784637a",
+  "preserved_source_rehash": {
+    "files": 284,
+    "bytes": 6989216,
+    "mismatches": [],
+    "manifest_unchanged": true,
+    "helper_and_static_audit_unchanged": true
+  },
+  "limitations": "Focused static doc delta only. No numerical packages, producers, providers, models, arrays or raw CSVs imported/opened/executed. Submission-wide package acceptance belongs to root.",
+  "files_written": [
+    "review/source-docdelta.json"
+  ]
+}

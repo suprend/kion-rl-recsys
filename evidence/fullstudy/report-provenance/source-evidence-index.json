@@ -1,0 +1,878 @@
+{
+  "contract": "kion-final25-report-evidence-v1",
+  "report": "README.md",
+  "as_of": "actual E2/I0/localRM/two1000fits/screen/full4096/bootstrap/decomposition/liveprefix192trajectories",
+  "scope": "compact metadata/source-text only; no model/array/GPU replay by report author",
+  "publication": "local review bundle; no upload/publish/submit",
+  "authoring_status": "final master text and evidence frozen; scientific outputs, 13 final visual figures and actual local replay A integrated; coordinator final delivery review external",
+  "evidence": [
+    {
+      "id": "I0",
+      "path": "evidence/i0-score-audit.json",
+      "included": true,
+      "sha256": "25bfecc30b97a381e1bcdd7f2028feaf45f3c6aeb1e61cb6896fd1767aea3680",
+      "bytes": 37288,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/interpretation/result-r1/score-audit.json",
+      "source_sha256": "25bfecc30b97a381e1bcdd7f2028feaf45f3c6aeb1e61cb6896fd1767aea3680",
+      "byte_identical_to_source": true,
+      "scope": "saved supervised comparison; 4096 queries/4035 users/natural1024",
+      "limits": "reused development; unknown/offpool remain misses"
+    },
+    {
+      "id": "I0-text",
+      "path": "evidence/i0-report.md",
+      "included": true,
+      "sha256": "f2d32b0b795f34f11a1b4018d31bc0cd3c9e9498d530fcaaa42140922974c975",
+      "bytes": 3305,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/interpretation/result-r1/REPORT.md",
+      "source_sha256": "4b4acbb081cca6e2d4131bed3fdddcd7ffa055b6f44cea9703aab13caf036726",
+      "byte_identical_to_source": false,
+      "scope": "brief saved-output interpretation",
+      "limits": "no new raw-feature attribution",
+      "kind": "transformed-reader-export",
+      "transformation": "Reader-export notice added;aggregate link rewritten score-audit.json→i0-score-audit.json;broken private per-query.csv/cases.json links replaced by plain-text exclusion notices;all original experimental numbers/method retained;canonical source unchanged"
+    },
+    {
+      "id": "S0",
+      "path": "evidence/screen-0.json",
+      "included": true,
+      "sha256": "e2f6bf09433aece8e6bdc55da0a43d3d04a65d767204dd9420d0a683a6f81a5a",
+      "bytes": 784,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-0-r1.json",
+      "source_sha256": "e2f6bf09433aece8e6bdc55da0a43d3d04a65d767204dd9420d0a683a6f81a5a",
+      "byte_identical_to_source": true,
+      "scope": "C reference checkpoint; screen256/natural1024",
+      "limits": "screen used for selection"
+    },
+    {
+      "id": "S250",
+      "path": "evidence/screen-250.json",
+      "included": true,
+      "sha256": "0cd377ab660e50d838bd2a99d1a44a8fa37ae973adebcc592e3a2e9fcd1529be",
+      "bytes": 800,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-250-r1.json",
+      "source_sha256": "0cd377ab660e50d838bd2a99d1a44a8fa37ae973adebcc592e3a2e9fcd1529be",
+      "byte_identical_to_source": true,
+      "scope": "completion checkpoint250; same screen256",
+      "limits": "screen used for selection"
+    },
+    {
+      "id": "S500",
+      "path": "evidence/screen-500.json",
+      "included": true,
+      "sha256": "98d01741222fcfe21fcec78f8ed800864966cb752638c9d75689a71e3492f45e",
+      "bytes": 800,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-500-r1.json",
+      "source_sha256": "98d01741222fcfe21fcec78f8ed800864966cb752638c9d75689a71e3492f45e",
+      "byte_identical_to_source": true,
+      "scope": "completion checkpoint500; same screen256",
+      "limits": "screen used for selection"
+    },
+    {
+      "id": "S1000",
+      "path": "evidence/screen-1000.json",
+      "included": true,
+      "sha256": "cd5b7f1e1a93b711f860fb02e8ac89f05f86b0f60e3be371d83399ab9f05cff4",
+      "bytes": 797,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-1000-r1.json",
+      "source_sha256": "cd5b7f1e1a93b711f860fb02e8ac89f05f86b0f60e3be371d83399ab9f05cff4",
+      "byte_identical_to_source": true,
+      "scope": "completion latest1000; same screen256",
+      "limits": "not full4096"
+    },
+    {
+      "id": "B-selection",
+      "path": "evidence/checkpoint-selection.json",
+      "included": true,
+      "sha256": "9983aada0c6909051384f34b80fdfa7e384767e92c600c81bdfcc91eb1b83ca6",
+      "bytes": 8181,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/checkpoint-selection-r1.json",
+      "source_sha256": "9983aada0c6909051384f34b80fdfa7e384767e92c600c81bdfcc91eb1b83ca6",
+      "byte_identical_to_source": true,
+      "scope": "registered engineering selected0 and actual latest1000",
+      "limits": "selected0 does not replace scientific arm1000"
+    },
+    {
+      "id": "B-train",
+      "path": "evidence/rl-completion-training.json",
+      "included": true,
+      "sha256": "cfdfc225be553305a3d6a8af7c5419227255b44827ccf7e3760a86b3e5dbf8bf",
+      "bytes": 6183,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/training.json",
+      "source_sha256": "cfdfc225be553305a3d6a8af7c5419227255b44827ccf7e3760a86b3e5dbf8bf",
+      "byte_identical_to_source": true,
+      "scope": "1000 actual head-only updates on train512",
+      "limits": "frozen E2/RM; beta0.5; cuda-fp16"
+    },
+    {
+      "id": "B-receipt",
+      "path": "evidence/rl-completion-receipt.json",
+      "included": true,
+      "sha256": "cff6900fc5bb7fee552cc5c3f8cce8c91b037a320b9e3fb56ca842c4eb04c767",
+      "bytes": 1140,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/operations/train-rl-r2/receipt.json",
+      "source_sha256": "cff6900fc5bb7fee552cc5c3f8cce8c91b037a320b9e3fb56ca842c4eb04c767",
+      "byte_identical_to_source": true,
+      "scope": "native completion timing and cleanup",
+      "limits": "163.766 seconds is fit wall time, not full pipeline cost"
+    },
+    {
+      "id": "B-protocol",
+      "path": "evidence/preregistration-completion.json",
+      "included": true,
+      "sha256": "025061343a0314691dfb6064063d7e18c74662ea62ab285ec423d374037538ac",
+      "bytes": 2709,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/preregistration.json",
+      "source_sha256": "025061343a0314691dfb6064063d7e18c74662ea62ab285ec423d374037538ac",
+      "byte_identical_to_source": true,
+      "scope": "completion protocol frozen before new rewards/frontier",
+      "limits": "development reused"
+    },
+    {
+      "id": "R-manifest",
+      "path": "evidence/rm-evaluation-manifest.json",
+      "included": true,
+      "sha256": "992c7a8ce3cf45a0f20605dd60f9ac3a11cb51424d2180f9a4cef3f1a08d7b35",
+      "bytes": 24691,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/rm-eval-r1/manifest.json",
+      "source_sha256": "992c7a8ce3cf45a0f20605dd60f9ac3a11cb51424d2180f9a4cef3f1a08d7b35",
+      "byte_identical_to_source": true,
+      "scope": "local RM observed20k evaluation input/source pins",
+      "limits": "not arbitrary-candidate labels"
+    },
+    {
+      "id": "R-metrics",
+      "path": "evidence/rm-evaluation-metrics.json",
+      "included": true,
+      "sha256": "5b48ddf391eed228a38414a131ef09e38c7ff32ad1dc87d95f3210bde31e3574",
+      "bytes": 204284,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/rm-eval-r1/report.json",
+      "source_sha256": "5b48ddf391eed228a38414a131ef09e38c7ff32ad1dc87d95f3210bde31e3574",
+      "byte_identical_to_source": true,
+      "scope": "local RM observed20k quality/support/calibration",
+      "limits": "observational last-watch; reused development"
+    },
+    {
+      "id": "R-bridge",
+      "path": "evidence/bridge-screen-summary.json",
+      "included": true,
+      "sha256": "a4bccf42b9f020e72a191c536df59dce5ac4e21b7e38aee4e21edccab5c05676",
+      "bytes": 9740,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/screen256-r1/reward.json",
+      "source_sha256": "a4bccf42b9f020e72a191c536df59dce5ac4e21b7e38aee4e21edccab5c05676",
+      "byte_identical_to_source": true,
+      "scope": "bridge parity and support for 256x1024 candidate pairs",
+      "limits": "parity establishes implementation, not counterfactual accuracy"
+    },
+    {
+      "id": "Q-source",
+      "path": "evidence/source-condition.md",
+      "included": true,
+      "sha256": "9fba33921f93e3e95ae88a6a0f5d624bb0728a9c671722048e6f145104b71a71",
+      "bytes": 4121,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/night-plan-20261025/source-check.md",
+      "source_sha256": "9fba33921f93e3e95ae88a6a0f5d624bb0728a9c671722048e6f145104b71a71",
+      "byte_identical_to_source": true,
+      "scope": "authenticated assignment summary; checked24Oct2026",
+      "limits": "summary sufficient to read report without account access"
+    },
+    {
+      "id": "N-protocol",
+      "path": "evidence/preregistration-residual.json",
+      "included": true,
+      "sha256": "78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c",
+      "bytes": 3105,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/protocols/preregistration.json",
+      "source_sha256": "78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c",
+      "byte_identical_to_source": true,
+      "scope": "prospective residual utility and five-step protocol",
+      "limits": "original completion results known; protocol is not execution evidence"
+    },
+    {
+      "id": "E2-completion",
+      "path": "evidence/e2-worker-completion.json",
+      "included": true,
+      "sha256": "68c5528bbb4488dab96f6992801982e14437da75327aeae119514d4da525a62d",
+      "bytes": 32051,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft-recovery/run-recovery-r1/worker/worker-completion.json",
+      "source_sha256": "68c5528bbb4488dab96f6992801982e14437da75327aeae119514d4da525a62d",
+      "byte_identical_to_source": true,
+      "scope": "E2 completed full3477437x2 ancestry",
+      "limits": "two completed epochs; five-epoch schedule not completed"
+    },
+    {
+      "id": "E2-model",
+      "path": "evidence/e2-completion.json",
+      "included": true,
+      "sha256": "98a29966c3de54b42b6dd276eef8827e5977b778ddf94ba695aaada3c574243b",
+      "bytes": 2535,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft-recovery/run-recovery-r1/worker/model/completion.json",
+      "source_sha256": "98a29966c3de54b42b6dd276eef8827e5977b778ddf94ba695aaada3c574243b",
+      "byte_identical_to_source": true,
+      "scope": "E2 latest/best/selected checksum",
+      "limits": "weights excluded from compact bundle"
+    },
+    {
+      "id": "H-method",
+      "path": "evidence/heads-method.md",
+      "included": true,
+      "sha256": "b238a7ae1eb7992b5043246c90fe84e31707e63d03d2401b715c7d3c934262ce",
+      "bytes": 6284,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/HEADS.md",
+      "source_sha256": "b238a7ae1eb7992b5043246c90fe84e31707e63d03d2401b715c7d3c934262ce",
+      "byte_identical_to_source": true,
+      "scope": "actual residual head architecture/masks/training recipe",
+      "limits": "method source alone is not execution proof; paired with I0 receipts"
+    },
+    {
+      "id": "H-bank",
+      "path": "evidence/bank-method.md",
+      "included": true,
+      "sha256": "d314b9f5a251c375da0cc6356a7fe32c1de5f9ccef66fb101a20d424967ea2f4",
+      "bytes": 5825,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/BANK.md",
+      "source_sha256": "d314b9f5a251c375da0cc6356a7fe32c1de5f9ccef66fb101a20d424967ea2f4",
+      "byte_identical_to_source": true,
+      "scope": "actual train32/natural1024 candidate/bank contract",
+      "limits": "method source alone is not execution proof"
+    },
+    {
+      "id": "N-prefit",
+      "path": "evidence/residual-prefit.json",
+      "included": true,
+      "sha256": "f1431dd1092a5d7ef96e2ed89d4c2889067cd3558fa0f478f29eff73825c3d97",
+      "bytes": 3620,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reward/residual-r1/prefit.json",
+      "source_sha256": "f1431dd1092a5d7ef96e2ed89d4c2889067cd3558fa0f478f29eff73825c3d97",
+      "byte_identical_to_source": true,
+      "scope": "actual data-only residual utility prior/support/nondegeneracy/scale checks",
+      "limits": "no optimizer/model/provider created;not policy fit or quality outcome"
+    },
+    {
+      "id": "N-training",
+      "path": "evidence/rl-residual-training.json",
+      "included": true,
+      "sha256": "f275070714f6fd24c588bb3637b752697063cca8d422b01e7d827bc3d743cba6",
+      "bytes": 7388,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/residual-r1/training.json",
+      "source_sha256": "f275070714f6fd24c588bb3637b752697063cca8d422b01e7d827bc3d743cba6",
+      "byte_identical_to_source": true,
+      "scope": "actual residual1000 updates from originalC;frozen encoder/RM;reference unchanged",
+      "limits": "one seed/fixedbeta.5;no new supervised updates"
+    },
+    {
+      "id": "N-receipt",
+      "path": "evidence/rl-residual-receipt.json",
+      "included": true,
+      "sha256": "86e9b6c990c93f99a7acccf96025bf28fef5cc0552cb466211d2537fb147cbd7",
+      "bytes": 1153,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/operations/residual-fit-r1/receipt.json",
+      "source_sha256": "86e9b6c990c93f99a7acccf96025bf28fef5cc0552cb466211d2537fb147cbd7",
+      "byte_identical_to_source": true,
+      "scope": "native residual fit exit0/167.312seconds/quiescent cleanup",
+      "limits": "fit timing only"
+    },
+    {
+      "id": "S3",
+      "path": "evidence/scientific3-screen.json",
+      "included": true,
+      "sha256": "3439f885120173eb2b2f93bcb092d4c03b43ccfd06a2b9d884ef7512bc1fe7c1",
+      "bytes": 41944,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/screen-scientific3-r1/evaluation.json",
+      "source_sha256": "3439f885120173eb2b2f93bcb092d4c03b43ccfd06a2b9d884ef7512bc1fe7c1",
+      "byte_identical_to_source": true,
+      "scope": "matched256 queries/1024actions/C+completion1000+residual1000;bothutilities",
+      "limits": "reused development;no bootstrap/fresh holdout;fixedbeta notmatchedKL"
+    },
+    {
+      "id": "I0-bootstrap",
+      "path": "evidence/supervised-heads-analysis.json",
+      "included": true,
+      "sha256": "a4de63cd80e683dd0da12e2a0506fa1ba7081a41193038e1570455831c38eb9b",
+      "bytes": 10028,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/analysis/analysis.json",
+      "source_sha256": "a4de63cd80e683dd0da12e2a0506fa1ba7081a41193038e1570455831c38eb9b",
+      "byte_identical_to_source": true,
+      "scope": "supervised C-B MAP delta.010405234685 and percentile95CI[.007584894535,.013383825716];2000paireduserclusters seed20261024 rowweighted4096/4035",
+      "limits": "same reuseddevelopment as pilot;no multiplicity correction;not fresh test"
+    },
+    {
+      "id": "F-eval",
+      "path": "evidence/scientific3-full.json",
+      "included": true,
+      "sha256": "5884cf09a3ddcde6638aad7991ed6c99915847b74583d7705e8a70f4a135a086",
+      "bytes": 31486,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/full-scientific3-r1/evaluation.json",
+      "source_sha256": "5884cf09a3ddcde6638aad7991ed6c99915847b74583d7705e8a70f4a135a086",
+      "byte_identical_to_source": true,
+      "scope": "actual4096shared-feature3arm evaluation;Cexacthistoricalparity;512rawcalls",
+      "limits": "relevance/exposure only;no reward scoredon4096"
+    },
+    {
+      "id": "F-receipt",
+      "path": "evidence/scientific3-full-receipt.json",
+      "included": true,
+      "sha256": "f5f69c97f51500a6b559a60db71ff28c0fa8932fb16f0d99a0d0a8f3684eb508",
+      "bytes": 1159,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/operations/full-scientific3-r1/receipt.json",
+      "source_sha256": "f5f69c97f51500a6b559a60db71ff28c0fa8932fb16f0d99a0d0a8f3684eb508",
+      "byte_identical_to_source": true,
+      "scope": "fullstage805.953seconds exit0 cleanupquiescent",
+      "limits": "native runtime;not clean-machine reproduce"
+    },
+    {
+      "id": "F-analysis",
+      "path": "evidence/analysis-full.json",
+      "included": true,
+      "sha256": "33c43018567f6c1e3b22aa55e280885201b8cac99479cb36f06c710bb66ab5c0",
+      "bytes": 495485,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/full-analysis-r1/analysis.json",
+      "source_sha256": "33c43018567f6c1e3b22aa55e280885201b8cac99479cb36f06c710bb66ab5c0",
+      "byte_identical_to_source": true,
+      "scope": "independent ranks/exposure and2000paired4035usercluster bootstrap on4096rows",
+      "limits": "unadjusted percentile;reuseddev;completion-CMAPupperCI=-.0000174256nearzero"
+    },
+    {
+      "id": "F-plotdata",
+      "path": "evidence/plot-data-full.json",
+      "included": true,
+      "sha256": "6957ab49a1a86a6d9d5081927cc0bc423e6ddc886cf80b57f2eac6ebb41f9a1c",
+      "bytes": 495248,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/full-analysis-r1/plot-data.json",
+      "source_sha256": "6957ab49a1a86a6d9d5081927cc0bc423e6ddc886cf80b57f2eac6ebb41f9a1c",
+      "byte_identical_to_source": true,
+      "scope": "full4096 reviewed aggregate figure inputs",
+      "limits": "no screenreward carryover;not renderedQA"
+    },
+    {
+      "id": "A-screen",
+      "path": "evidence/analysis-screen.json",
+      "included": true,
+      "sha256": "26c9485c4391e4d7d2b4eb587cfc960421f5aab9ed95c445807d6bf7a3907ebc",
+      "bytes": 224506,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/screen-analysis-r2/analysis.json",
+      "source_sha256": "26c9485c4391e4d7d2b4eb587cfc960421f5aab9ed95c445807d6bf7a3907ebc",
+      "byte_identical_to_source": true,
+      "scope": "screen256 pairedCI,item decomposition,observedH63/strict7d behavior",
+      "limits": "reused screening;notfull4096;RMmeanprior is not popularity"
+    },
+    {
+      "id": "P-screen",
+      "path": "evidence/plot-data-screen.json",
+      "included": true,
+      "sha256": "8ad2461b5c9a247f867264561af47e70113a45e39b4980bea7f63a231a62935c",
+      "bytes": 224266,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/screen-analysis-r2/plot-data.json",
+      "source_sha256": "8ad2461b5c9a247f867264561af47e70113a45e39b4980bea7f63a231a62935c",
+      "byte_identical_to_source": true,
+      "scope": "screen aggregate render inputs",
+      "limits": "scientific float64 utilities;producer float32 reduction separately checked"
+    },
+    {
+      "id": "A-screen-receipt",
+      "path": "evidence/screen-analysis-receipt.json",
+      "included": true,
+      "sha256": "806cec07d2f092729275601441ca377e57e1dce45953ea47e496f8b93c8d7e01",
+      "bytes": 1154,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/operations/screen-analysis-r2/receipt.json",
+      "source_sha256": "806cec07d2f092729275601441ca377e57e1dce45953ea47e496f8b93c8d7e01",
+      "byte_identical_to_source": true,
+      "scope": "actual screen analysis r2 completed4.390seconds",
+      "limits": "not a modelfit"
+    },
+    {
+      "id": "M-summary",
+      "path": "evidence/rollout-summary.json",
+      "included": true,
+      "sha256": "5c2cfc841c643258716862dffc7885566d682dfa94f95cc4578324ac05dbecba",
+      "bytes": 215401,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/rollout-summary-r1/rollout-summary.json",
+      "source_sha256": "5c2cfc841c643258716862dffc7885566d682dfa94f95cc4578324ac05dbecba",
+      "byte_identical_to_source": true,
+      "scope": "validated192trajectories/960steps/16contexts;bothneutralreturns;all12variants first3names",
+      "limits": "fixedpool1024/fixeds0RM;conditional current-arm-prefixKL;n16descriptive"
+    },
+    {
+      "id": "M-report",
+      "path": "evidence/rollout-summary-report.md",
+      "included": true,
+      "sha256": "dc03b0cc7f50cb93649f8c7f433c0626516054cded8879f4addeebe6c16580de",
+      "bytes": 2989,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/rollout-summary-r1/REPORT.md",
+      "source_sha256": "dc03b0cc7f50cb93649f8c7f433c0626516054cded8879f4addeebe6c16580de",
+      "byte_identical_to_source": true,
+      "scope": "human readable compact rollout summary",
+      "limits": "generated outputs are not real user sessions"
+    },
+    {
+      "id": "M-analysis-receipt",
+      "path": "evidence/rollout-analysis-receipt.json",
+      "included": true,
+      "sha256": "73f21dd0dece2307b7d5dac9f437d922bb69fbd98bc0a35c5987b3f43a184ae8",
+      "bytes": 1144,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/operations/rollout-analysis-r1/receipt.json",
+      "source_sha256": "73f21dd0dece2307b7d5dac9f437d922bb69fbd98bc0a35c5987b3f43a184ae8",
+      "byte_identical_to_source": true,
+      "scope": "saved rollout validator succeeded and cleanupquiescent",
+      "limits": "no model execution by validator"
+    },
+    {
+      "id": "M-native-receipt",
+      "path": "evidence/rollout-native-receipt.json",
+      "included": true,
+      "sha256": "eb406dd020a46f05d6cd554573b8bf4eb6ef517a345977549b04e63ffe62a491",
+      "bytes": 1167,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/operations/rollout-scientific3-r1/receipt.json",
+      "source_sha256": "eb406dd020a46f05d6cd554573b8bf4eb6ef517a345977549b04e63ffe62a491",
+      "byte_identical_to_source": true,
+      "scope": "actual rollout native336.282seconds/exit0/cleanupquiescent",
+      "limits": "inference only;no five-step policytraining"
+    },
+    {
+      "id": "A-screen-failed-receipt",
+      "path": "evidence/screen-analysis-failed-receipt.json",
+      "included": true,
+      "sha256": "c33bb29fc930167bd41527c86c9f4ccfd8f2ca22529e383f684f2ce293844776",
+      "bytes": 1152,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/operations/screen-analysis-r1/receipt.json",
+      "source_sha256": "c33bb29fc930167bd41527c86c9f4ccfd8f2ca22529e383f684f2ce293844776",
+      "byte_identical_to_source": true,
+      "scope": "preserved failed screenr1 dtype precision seam",
+      "limits": "FAILED intentionally preserved;not success evidence"
+    },
+    {
+      "id": "A-screen-failed-completion",
+      "path": "evidence/screen-analysis-failed-completion.json",
+      "included": true,
+      "sha256": "39c308b2b1c7376b520c81775271c5ddbb35e3360456f1107683eb71cdf8a7fa",
+      "bytes": 572,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/operations/screen-analysis-r1/stage-completion.json",
+      "source_sha256": "39c308b2b1c7376b520c81775271c5ddbb35e3360456f1107683eb71cdf8a7fa",
+      "byte_identical_to_source": true,
+      "scope": "failedr1 original error supported_top10_raw_reward mismatch",
+      "limits": "FAILED;fixedinr2 by strict producerfloat32 path andscientificfloat64 separation"
+    },
+    {
+      "id": "M-cases",
+      "kind": "derived-compact-export",
+      "path": "evidence/rollout-case-returns.json",
+      "included": true,
+      "sha256": "da4254c95d8691a6aa7f861a0a1665410e870c3269e6af94565ae2ae7cd7cda1",
+      "bytes": 8820,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/rollout-scientific3-r1.json",
+      "source_sha256": "67bc5e8ffedc5d2759e0f3b8e6d998a0887e94226ae4a13f5dd021db359137bf",
+      "byte_identical_to_source": false,
+      "derivation": "First3 predeclared positions in summary request order; greedy/none slates copied from summary, gamma and existing return fields joined by exact position+arm+selection+mask from accepted source rollout; no model or return recomputation",
+      "scope": "first3 predeclared named greedy/none case slates andexistingdiscountedreturnfields",
+      "limits": "source-prefix payload excluded;no rawhistories or userIDs copied;no outcome selection or return recomputation"
+    },
+    {
+      "id": "EDA",
+      "path": "evidence/eda-historical.json",
+      "included": true,
+      "sha256": "c6e18f7e03a059a33bc5eda286e8d5e88ee732daf3d9afebdf45253c5ecfaf7f",
+      "bytes": 5207,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/eda.json",
+      "source_sha256": "c6e18f7e03a059a33bc5eda286e8d5e88ee732daf3d9afebdf45253c5ecfaf7f",
+      "byte_identical_to_source": true,
+      "scope": "historical full raw source EDA counts/completion/historylengths/missingmetadata",
+      "limits": "historical metadata only;no new rawdata scan;means/quantiles nonmissing;0/100sharesallrows"
+    },
+    {
+      "id": "EDA-source",
+      "path": "evidence/eda-historical-script.py",
+      "included": true,
+      "sha256": "4f85b23ca828c8f1dfffc3ff7e0738fb3d3a59d3139b8b5c0446ca3096a9dbde",
+      "bytes": 2587,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/eda-script.py",
+      "source_sha256": "4f85b23ca828c8f1dfffc3ff7e0738fb3d3a59d3139b8b5c0446ca3096a9dbde",
+      "byte_identical_to_source": true,
+      "scope": "exact original EDA script reading raw/kion/full",
+      "limits": "sourceinspection only;not executed in this report pass"
+    },
+    {
+      "id": "V-final",
+      "path": "evidence/visual-final.json",
+      "included": true,
+      "sha256": "38ad8452c6c75a881534ea36774ecad60173b38a3cd356822ce6da3d6bd5a967",
+      "bytes": 9622,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/review/visual-final.json",
+      "source_sha256": "38ad8452c6c75a881534ea36774ecad60173b38a3cd356822ce6da3d6bd5a967",
+      "byte_identical_to_source": true,
+      "scope": "Independent final visual acceptance of all 13 actual PNGs: four reopened and nine inherited by exact byte identity",
+      "limits": "Visual layout acceptance; no numerical replay or claim of independent causal validity"
+    },
+    {
+      "id": "A-screen-result",
+      "path": "evidence/portable-replay-screen.json",
+      "included": true,
+      "sha256": "f25594a23065f617abf7d3ecf73f188aeba26e14a798853fbf5e110d3b684ac5",
+      "bytes": 5310,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/screen/replay.json",
+      "source_sha256": "f25594a23065f617abf7d3ecf73f188aeba26e14a798853fbf5e110d3b684ac5",
+      "byte_identical_to_source": true,
+      "scope": "Actual packaged-source compact-aggregate replay A: screen result; current machine",
+      "limits": "No clean-machine model inference or raw-data retraining claim"
+    },
+    {
+      "id": "A-screen-receipt",
+      "path": "evidence/portable-replay-screen-receipt.json",
+      "included": true,
+      "sha256": "481d83a992e1ddf8fa2e0c2624c5bb43fcaf191523edfedac58818b3a03b712f",
+      "bytes": 1151,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/operations/replay-screen-r1/receipt.json",
+      "source_sha256": "481d83a992e1ddf8fa2e0c2624c5bb43fcaf191523edfedac58818b3a03b712f",
+      "byte_identical_to_source": true,
+      "scope": "Actual packaged-source compact-aggregate replay A: screen receipt; current machine",
+      "limits": "No clean-machine model inference or raw-data retraining claim"
+    },
+    {
+      "id": "A-full-result",
+      "path": "evidence/portable-replay-full.json",
+      "included": true,
+      "sha256": "77d2ba20b81814539374ff29436dd18cb4b4d26809b0019b29d61f16d1d327ed",
+      "bytes": 4320,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/full/replay.json",
+      "source_sha256": "77d2ba20b81814539374ff29436dd18cb4b4d26809b0019b29d61f16d1d327ed",
+      "byte_identical_to_source": true,
+      "scope": "Actual packaged-source compact-aggregate replay A: full result; current machine",
+      "limits": "No clean-machine model inference or raw-data retraining claim"
+    },
+    {
+      "id": "A-full-receipt",
+      "path": "evidence/portable-replay-full-receipt.json",
+      "included": true,
+      "sha256": "4b3e9c8d94972745721e99f1e0ede8f6f82db6257c8689957f78cb9c0f21ed8e",
+      "bytes": 1148,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/operations/replay-full-r1/receipt.json",
+      "source_sha256": "4b3e9c8d94972745721e99f1e0ede8f6f82db6257c8689957f78cb9c0f21ed8e",
+      "byte_identical_to_source": true,
+      "scope": "Actual packaged-source compact-aggregate replay A: full receipt; current machine",
+      "limits": "No clean-machine model inference or raw-data retraining claim"
+    },
+    {
+      "id": "A-rollout-result",
+      "path": "evidence/portable-replay-rollout.json",
+      "included": true,
+      "sha256": "8e1a803a24077253c23fb8665e5774705e5001f95eddc7af915eb0543388434c",
+      "bytes": 3156,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/rollout/replay.json",
+      "source_sha256": "8e1a803a24077253c23fb8665e5774705e5001f95eddc7af915eb0543388434c",
+      "byte_identical_to_source": true,
+      "scope": "Actual packaged-source compact-aggregate replay A: rollout result; current machine",
+      "limits": "No clean-machine model inference or raw-data retraining claim"
+    },
+    {
+      "id": "A-rollout-receipt",
+      "path": "evidence/portable-replay-rollout-receipt.json",
+      "included": true,
+      "sha256": "b9e8e52ca178266b5c421586bebd73d607095d111e65eba8382a97d5993677f8",
+      "bytes": 1153,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/operations/replay-rollout-r1/receipt.json",
+      "source_sha256": "b9e8e52ca178266b5c421586bebd73d607095d111e65eba8382a97d5993677f8",
+      "byte_identical_to_source": true,
+      "scope": "Actual packaged-source compact-aggregate replay A: rollout receipt; current machine",
+      "limits": "No clean-machine model inference or raw-data retraining claim"
+    },
+    {
+      "id": "A-acceptance",
+      "path": "evidence/portable-replay-acceptance.json",
+      "included": true,
+      "sha256": "6e6944828ffa6b32d7db462e5ae5a5382fbc4f770a2fd46831cd7b9d73503d6d",
+      "bytes": 11312,
+      "source_original": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/review/portable-replay-acceptance.json",
+      "source_sha256": "6e6944828ffa6b32d7db462e5ae5a5382fbc4f770a2fd46831cd7b9d73503d6d",
+      "byte_identical_to_source": true,
+      "scope": "Coordinator actual A acceptance: three successful native replays, 261-member source bundle checked, all 13 regenerated PNG byte-identical to visually accepted primary PNG",
+      "limits": "Current-machine compact-aggregate replay only; not level B/C"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C01",
+      "section": "3.1",
+      "claim": "GPT E2 trained full3477437x2;6954874 examples;54470 updates",
+      "evidence": [
+        "E2-completion",
+        "E2-model",
+        "I0"
+      ],
+      "status": "accepted-existing"
+    },
+    {
+      "id": "C02",
+      "section": "3.1",
+      "claim": "A/B/C each262144x3;6144 updates;frozen E2; raw masks+source2",
+      "evidence": [
+        "I0",
+        "H-method",
+        "H-bank"
+      ],
+      "status": "accepted-existing"
+    },
+    {
+      "id": "C03",
+      "section": "3.2-3.3",
+      "claim": "I0 C MAP.096864 versus GPT.072315;C-Bdelta.010405234685/CI[.007584894535,.013383825716];4096 denominator;3358covered122unknown616offpool",
+      "evidence": [
+        "I0",
+        "I0-bootstrap"
+      ],
+      "status": "accepted-existing"
+    },
+    {
+      "id": "C04",
+      "section": "4",
+      "claim": "localRM-r2 calibrated observed20k RMSE .3520386611 versus full_raw_combined .3708875364",
+      "evidence": [
+        "R-metrics",
+        "R-manifest"
+      ],
+      "status": "accepted-existing"
+    },
+    {
+      "id": "C05",
+      "section": "4.2",
+      "claim": "screen bridge256x1024 support254360 cold7784 native parity0",
+      "evidence": [
+        "R-bridge"
+      ],
+      "status": "accepted-existing"
+    },
+    {
+      "id": "C06",
+      "section": "5",
+      "claim": "completion1000 actual updates beta.5 train512 elapsed163.766seconds cleanupquiescent",
+      "evidence": [
+        "B-train",
+        "B-receipt",
+        "B-protocol"
+      ],
+      "status": "accepted-existing"
+    },
+    {
+      "id": "C07",
+      "section": "6",
+      "claim": "matched screen256 proxyup MAPdown top1concentrationup;selected0",
+      "evidence": [
+        "S0",
+        "S250",
+        "S500",
+        "S1000",
+        "B-selection"
+      ],
+      "status": "accepted-existing"
+    },
+    {
+      "id": "C08",
+      "section": "7",
+      "claim": "residual1000 actual updates167.312seconds;matched screenMAP.1214704241/NDCG.1497887150/Recall.2421875/KL.0039635473;top1down butHHIup vsC;bothutilities evaluated",
+      "evidence": [
+        "N-protocol",
+        "N-prefit",
+        "N-training",
+        "N-receipt",
+        "S3"
+      ],
+      "status": "actual-completed-root-validated; independent report static review passed"
+    },
+    {
+      "id": "C09",
+      "section": "8",
+      "claim": "matched full4096 C/completion/residual MAP.0968636649/.0943824405/.09608784025;completion-Cdelta-.0024812244CI[-.0049464633,-.0000174256];residual-C and residual-completion MAP CIs cross0",
+      "evidence": [
+        "F-eval",
+        "F-receipt",
+        "F-analysis",
+        "F-plotdata"
+      ],
+      "status": "actual-completed-root-validated; independent report static review passed"
+    },
+    {
+      "id": "C10",
+      "section": "9",
+      "claim": "actual192complete5steptrajectories/960inference steps;fixed16x3x2x2;gamma.9;greedynone unique1.6875/1.625/1.8125;fixedpool/s0RM/current-arm-prefix conditionalKL",
+      "evidence": [
+        "N-protocol",
+        "M-summary",
+        "M-report",
+        "M-native-receipt",
+        "M-analysis-receipt",
+        "M-cases"
+      ],
+      "status": "actual-completed-root-validated; independent report static review passed"
+    },
+    {
+      "id": "C11",
+      "section": "12",
+      "claim": "assignment accepts negativeRL;differentrewardfunctions/readable report+code+instructions",
+      "evidence": [
+        "Q-source"
+      ],
+      "status": "source-checked"
+    },
+    {
+      "id": "C12",
+      "section": "7.1",
+      "claim": "screen256 completiondelta.0291130973=.0259857662meancompletionprior+.0031273311residual;residualdelta.0047514474=.0004207806prior+.0043306668residual;MAPCIsallcross0",
+      "evidence": [
+        "A-screen",
+        "P-screen",
+        "A-screen-receipt"
+      ],
+      "status": "actual-completed-and-producer-precision-validated"
+    },
+    {
+      "id": "C13",
+      "section": "2.1",
+      "claim": "historicalfullraw5476251interactions/962179users/15706items/15963catalog;828missing0invalidwatched_pct;mean46.374median32;usersorphan217891distinct",
+      "evidence": [
+        "EDA",
+        "EDA-source"
+      ],
+      "status": "historical-metadata-and-denominators-inspected;not-new-EDA-run"
+    },
+    {
+      "id": "C14",
+      "section": "12",
+      "claim": "Actual current-machine packaged replay A accepted: three modes exit0/quiescent;261 source members verified;13 regenerated PNG byte-identical to visually accepted primary",
+      "evidence": [
+        "A-screen-result",
+        "A-screen-receipt",
+        "A-full-result",
+        "A-full-receipt",
+        "A-rollout-result",
+        "A-rollout-receipt",
+        "A-acceptance",
+        "V-final"
+      ],
+      "status": "actual-completed-and-coordinator-accepted",
+      "limits": "Aggregate plotting replay; no new model inference or retraining"
+    }
+  ],
+  "missing_not_zero": [
+    "clean-machine model inference (level B)",
+    "raw-data full retraining (level C)",
+    "online causal completion or retention outcome"
+  ],
+  "private_payloads_excluded": [
+    "raw interactions/users",
+    "raw histories or case userIDs",
+    "feature arrays/caches",
+    "model weights/checkpoints",
+    "credentials/machine configuration"
+  ],
+  "notes": [
+    "Source_original paths are provenance only; included relative paths are reader-facing.",
+    "A byte-identical evidence export checks identity, not independent scientific validity.",
+    "Status changes require actual outputs, completion/cleanup and coordinator acceptance."
+  ],
+  "identities": {
+    "frozen_E2_checkpoint_sha256": "5e7101857c2dbe100fb4e1587c0369abc95c108303ed149123ee183f62aeac26",
+    "frozen_E2_config_sha256": "e3b4b1730895fceb1b7d4ea6357aea783c046f5e87cacd7d4ff933cf94d45d45",
+    "original_C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+    "C_raw_schema_sha256": "71d90eee774d30db804d1ab32c4d82995d1320baf26aaf36443a6498fd85fc5d",
+    "C_source_columns": [
+      "current_detached_gpt_logit",
+      "log1p_strict7d_count"
+    ],
+    "current_pool": "1024newunique GPT512+strict7dpop256+ItemKNN256;no target injection/no seen filter",
+    "local_RM_signature": "ee14bc4d7375a4d6978a2e1f476cd795369b45ef4250501b2f5992767e9ed261",
+    "local_RM_schema_sha256": "7776a9d611b04ef8f3ef77fce0a67c1fb045f67142bf4b4bbde24cc469f9bda4",
+    "RM_raw_ID_mapping_sha256": "b90df0d1fcce007008b62007e486bc1e9cb0b4ac89c97bb5107e84305e744db4"
+  },
+  "checks": [
+    {
+      "kind": "source-export-identity",
+      "scope": "48 compact evidence exports",
+      "result": "46 source files byte identical; 1 derived case export and 1 explicit reader transform bound to source/export SHA; no private per-query arrays or original case payload copied",
+      "limitation": "does not replay numerical pipeline"
+    },
+    {
+      "kind": "independent-static-science-review",
+      "reviewer": "final25_report/draft_review",
+      "result": "no material findings after RRF definition and centered-expectation correction",
+      "scope": "existing I0,RM20k,screen256 evidence;objective/cohorts/chronology",
+      "limitation": "new residual/full4096/liveprefix and packaging require fresh review"
+    },
+    {
+      "kind": "metadata-arithmetic",
+      "result": "pass",
+      "scope": [
+        "3358+122+616=4096",
+        "3358/4096=.81982421875",
+        "3477437x2=6954874",
+        "raw142+394+321+50+161=1068",
+        "B394+161=555",
+        "18978+1022=20000",
+        "MAPdelta=-.009136284722222221",
+        "NDCGdelta=-.009020433298697977",
+        "recalldelta=-.0078125",
+        "top1delta=5.859375percentagepoints"
+      ],
+      "limitation": "small metadata arithmetic only;no prediction arrays read"
+    },
+    {
+      "kind": "independent-static-science-review-scientific3",
+      "reviewer": "final25_report/draft_review",
+      "result": "no material findings;parity field count16 corrected and reread",
+      "scope": "README intro/diagram/section7/conclusion+limitations;residual1000 and matched3arm screen256 receipts",
+      "limitation": "no arrays/models/replay;full4096/bootstrap/liveprefix stillpending"
+    },
+    {
+      "kind": "independent-static-science-review-full4096",
+      "reviewer": "final25_report/draft_review",
+      "result": "no material findings;all9CI/rounding/exposure/gainloss agree",
+      "scope": "README intro/section8/coverage/conclusion+limitations;full4096 and analysis/plot-data aggregates",
+      "limitation": "static metadata/text only;no arrays/models/replay;rollout pending"
+    },
+    {
+      "kind": "independent-static-science-review-screen-rollout-EDA",
+      "reviewer": "final25_report/draft_review",
+      "result": "no material findings;screenCI/decomp/returns/drift/first3cases/EDAdenominators match",
+      "scope": "README2/6.3/7.1/9/coverage/conclusion+limitations+caseexport",
+      "limitation": "static metadata/text;no model/arrays/raw/jobs/visualQA"
+    },
+    {
+      "kind": "ru-text-normalization",
+      "result": "30README+2limitations prose lines spacing normalized;protectedinlinecode/linktargets/fences andnumeric-token sequences unchanged in automated pass",
+      "scope": "README/limitations/REPORT ownedprose;plusmanualplainseparatorpolish",
+      "limitation": "no methods or numerical evidence rewritten"
+    },
+    {
+      "kind": "independent-final-visual-review",
+      "reviewer": "final25_visual_audit",
+      "result": "pass: 13 accepted final PNG hashes; zero blockers or remaining findings",
+      "evidence": "V-final",
+      "scope": "figures-v3/screen, figures-v3/full, figures/rollout",
+      "limitation": "Actual PNG layout review, not numerical replay"
+    },
+    {
+      "kind": "independent-final-prose-and-link-review",
+      "reviewer": "final25_report/draft_review",
+      "result": "pass before final figure links: 42 local links and 2 anchors; scientific numbers and case privacy matched evidence",
+      "scope": "README, limitations, REPORT and compact evidence",
+      "limitation": "Final figure links receive a separate presence check; aggregate replay remains pending"
+    },
+    {
+      "kind": "independent-final-caption-and-link-review",
+      "reviewer": "final25_report/draft_review",
+      "result": "pass: 84 local links in master, seven embeds, all 13 unique PNG and 13 unique SVG present; no material findings",
+      "scope": "Final captions separate screen256, full4096 and rollout16; uncertainty, fixed pool and current-arm-prefix conditional KL preserved",
+      "limitation": "Static text/path validation; numerical package replay remains pending"
+    },
+    {
+      "kind": "actual-packaged-replay-A",
+      "reviewer": "coordinator",
+      "result": "pass: all three native jobs succeeded/exit0/quiescent; all 13 regenerated PNG byte-identical; 261 source members verified",
+      "evidence": "A-acceptance",
+      "scope": "Screen, full and rollout compact aggregate replays on current machine with packaged sources",
+      "limitation": "Levels B clean-machine inference and C raw training were not rerun"
+    }
+  ],
+  "figure_manifests": [
+    "figures-v3/screen/figures.json",
+    "figures-v3/full/figures.json",
+    "figures/rollout/figures.json"
+  ]
+}

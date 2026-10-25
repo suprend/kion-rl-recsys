@@ -1,0 +1,466 @@
+{
+  "contract": "kion-independent-csv-numeric-verification-v1",
+  "state": "completed",
+  "verified": true,
+  "stage": "screen",
+  "rows": 256,
+  "metric_denominator": 256,
+  "candidate_width": 1024,
+  "verified_utc": "2026-10-25T06:11:31.929861+00:00",
+  "source": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/interpretation/verify.py",
+    "sha256": "07f8de6c8c132bbdeda25a9edfc643ff5186916db880c2a9eea8461d33a88369"
+  },
+  "inputs": {
+    "analysis": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/interpretation/screen-r1/analysis.json",
+      "sha256": "038fd372d73a549e7ed9d0990669670a49f0a7a552a573e402bcfd6edb63db7a",
+      "bytes": 39278
+    },
+    "per_query": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/interpretation/screen-r1/per-query.csv",
+      "sha256": "703821a5e40f393ce9aa7d089f75aacf7c27e21d49c38dc6568b4b69e9469ea1",
+      "bytes": 39209
+    },
+    "evaluation_metadata": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/screen-six-r1/evaluation.json",
+      "sha256": "719aa890baa571458761687dcacbeda401724ed0e238025d62bd3316a2e86e3b",
+      "bytes": 55373
+    },
+    "matching_receipt": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/matching.json",
+      "sha256": "e45f26f9d682c71e2ee7b10b45a5e75861d572a3dd91d29547e501842eda154c",
+      "bytes": 2321
+    },
+    "train_cache_metadata": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/train-cache-r1/cache.json",
+      "sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+      "bytes": 6716
+    },
+    "train_reference_metadata": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/train-target-r1.json",
+      "sha256": "e51a6ca50350b93ce3c1925892c54acbff55dde01902eb47ec7876e7d9aa1c60",
+      "bytes": 11304
+    },
+    "six_arm_train_diagnostics": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/train-final-six-r1.json",
+      "sha256": "6e4299ca58ee0da5d40d31e42317cd14c55c96d95d372dbc1827f4d8b1d4e103",
+      "bytes": 34502
+    }
+  },
+  "arms": [
+    "C",
+    "completion-20261024",
+    "residual-20261024",
+    "completion-20261025",
+    "residual-20261025",
+    "completion-20261026",
+    "residual-20261026"
+  ],
+  "seeds": [
+    20261024,
+    20261025,
+    20261026
+  ],
+  "cohort": {
+    "rows": 256,
+    "unique_users": 256,
+    "unknown_target_misses": 8,
+    "offpool_known_misses": 32,
+    "candidate_coverage_count": 216,
+    "shared_row_binding_sha256": "28e06f340295ba4728a336b8e72fffd913f69a07ad4d7f51f61409a0f9e7aa6c"
+  },
+  "absolute_tolerance": 1e-12,
+  "independent_metric_recomputation": true,
+  "summaries": {
+    "C": {
+      "map10": 0.12278955853174603,
+      "ndcg10": 0.15004984767079582,
+      "recall10": 0.23828125
+    },
+    "completion-20261024": {
+      "map10": 0.11365327380952381,
+      "ndcg10": 0.1410294143720979,
+      "recall10": 0.23046875
+    },
+    "residual-20261024": {
+      "map10": 0.11999937996031745,
+      "ndcg10": 0.14865063937261921,
+      "recall10": 0.2421875
+    },
+    "completion-20261025": {
+      "map10": 0.11170014880952381,
+      "ndcg10": 0.1395877337219864,
+      "recall10": 0.23046875
+    },
+    "residual-20261025": {
+      "map10": 0.11988622271825397,
+      "ndcg10": 0.14853410177147194,
+      "recall10": 0.2421875
+    },
+    "completion-20261026": {
+      "map10": 0.11170014880952381,
+      "ndcg10": 0.1395877337219864,
+      "recall10": 0.23046875
+    },
+    "residual-20261026": {
+      "map10": 0.12004898313492063,
+      "ndcg10": 0.1486932514211684,
+      "recall10": 0.2421875
+    }
+  },
+  "comparisons": {
+    "20261024/completion-minus-C": {
+      "map10": {
+        "difference": -0.009136284722222223,
+        "gains": 12,
+        "losses": 21,
+        "ties": 223
+      },
+      "ndcg10": {
+        "difference": -0.009020433298697941,
+        "gains": 12,
+        "losses": 21,
+        "ties": 223
+      },
+      "recall10": {
+        "difference": -0.0078125,
+        "gains": 2,
+        "losses": 4,
+        "ties": 250
+      }
+    },
+    "20261024/residual-minus-C": {
+      "map10": {
+        "difference": -0.002790178571428572,
+        "gains": 11,
+        "losses": 19,
+        "ties": 226
+      },
+      "ndcg10": {
+        "difference": -0.001399208298176615,
+        "gains": 11,
+        "losses": 19,
+        "ties": 226
+      },
+      "recall10": {
+        "difference": 0.00390625,
+        "gains": 3,
+        "losses": 2,
+        "ties": 251
+      }
+    },
+    "20261024/residual-minus-completion": {
+      "map10": {
+        "difference": 0.006346106150793651,
+        "gains": 23,
+        "losses": 20,
+        "ties": 213
+      },
+      "ndcg10": {
+        "difference": 0.007621225000521327,
+        "gains": 23,
+        "losses": 20,
+        "ties": 213
+      },
+      "recall10": {
+        "difference": 0.01171875,
+        "gains": 6,
+        "losses": 3,
+        "ties": 247
+      }
+    },
+    "20261025/completion-minus-C": {
+      "map10": {
+        "difference": -0.011089409722222223,
+        "gains": 12,
+        "losses": 22,
+        "ties": 222
+      },
+      "ndcg10": {
+        "difference": -0.010462113948809436,
+        "gains": 12,
+        "losses": 22,
+        "ties": 222
+      },
+      "recall10": {
+        "difference": -0.0078125,
+        "gains": 2,
+        "losses": 4,
+        "ties": 250
+      }
+    },
+    "20261025/residual-minus-C": {
+      "map10": {
+        "difference": -0.0029033358134920636,
+        "gains": 11,
+        "losses": 18,
+        "ties": 227
+      },
+      "ndcg10": {
+        "difference": -0.0015157458993238723,
+        "gains": 11,
+        "losses": 18,
+        "ties": 227
+      },
+      "recall10": {
+        "difference": 0.00390625,
+        "gains": 3,
+        "losses": 2,
+        "ties": 251
+      }
+    },
+    "20261025/residual-minus-completion": {
+      "map10": {
+        "difference": 0.00818607390873016,
+        "gains": 23,
+        "losses": 20,
+        "ties": 213
+      },
+      "ndcg10": {
+        "difference": 0.008946368049485563,
+        "gains": 23,
+        "losses": 20,
+        "ties": 213
+      },
+      "recall10": {
+        "difference": 0.01171875,
+        "gains": 6,
+        "losses": 3,
+        "ties": 247
+      }
+    },
+    "20261026/completion-minus-C": {
+      "map10": {
+        "difference": -0.011089409722222223,
+        "gains": 12,
+        "losses": 22,
+        "ties": 222
+      },
+      "ndcg10": {
+        "difference": -0.010462113948809436,
+        "gains": 12,
+        "losses": 22,
+        "ties": 222
+      },
+      "recall10": {
+        "difference": -0.0078125,
+        "gains": 2,
+        "losses": 4,
+        "ties": 250
+      }
+    },
+    "20261026/residual-minus-C": {
+      "map10": {
+        "difference": -0.002740575396825397,
+        "gains": 11,
+        "losses": 19,
+        "ties": 226
+      },
+      "ndcg10": {
+        "difference": -0.0013565962496274136,
+        "gains": 11,
+        "losses": 19,
+        "ties": 226
+      },
+      "recall10": {
+        "difference": 0.00390625,
+        "gains": 3,
+        "losses": 2,
+        "ties": 251
+      }
+    },
+    "20261026/residual-minus-completion": {
+      "map10": {
+        "difference": 0.008348834325396825,
+        "gains": 24,
+        "losses": 20,
+        "ties": 212
+      },
+      "ndcg10": {
+        "difference": 0.009105517699182022,
+        "gains": 24,
+        "losses": 20,
+        "ties": 212
+      },
+      "recall10": {
+        "difference": 0.01171875,
+        "gains": 6,
+        "losses": 3,
+        "ties": 247
+      }
+    },
+    "three-seed-average/completion-minus-C": {
+      "map10": {
+        "difference": -0.010438368055555557,
+        "gains": 12,
+        "losses": 22,
+        "ties": 222
+      },
+      "ndcg10": {
+        "difference": -0.009981553732105604,
+        "gains": 12,
+        "losses": 22,
+        "ties": 222
+      },
+      "recall10": {
+        "difference": -0.0078125,
+        "gains": 2,
+        "losses": 4,
+        "ties": 250
+      }
+    },
+    "three-seed-average/residual-minus-C": {
+      "map10": {
+        "difference": -0.0028113632605820107,
+        "gains": 11,
+        "losses": 19,
+        "ties": 226
+      },
+      "ndcg10": {
+        "difference": -0.0014238501490426336,
+        "gains": 11,
+        "losses": 19,
+        "ties": 226
+      },
+      "recall10": {
+        "difference": 0.00390625,
+        "gains": 3,
+        "losses": 2,
+        "ties": 251
+      }
+    },
+    "three-seed-average/residual-minus-completion": {
+      "map10": {
+        "difference": 0.007627004794973546,
+        "gains": 24,
+        "losses": 20,
+        "ties": 212
+      },
+      "ndcg10": {
+        "difference": 0.008557703583062971,
+        "gains": 24,
+        "losses": 20,
+        "ties": 212
+      },
+      "recall10": {
+        "difference": 0.01171875,
+        "gains": 6,
+        "losses": 3,
+        "ties": 247
+      }
+    }
+  },
+  "seed_spread": {
+    "completion-minus-C": {
+      "map10": {
+        "mean": -0.010438368055555557,
+        "min": -0.011089409722222223,
+        "max": -0.009136284722222223,
+        "sample_std": 0.001127637244510988
+      },
+      "ndcg10": {
+        "mean": -0.009981553732105604,
+        "min": -0.010462113948809436,
+        "max": -0.009020433298697941,
+        "sample_std": 0.0008323547114273463
+      },
+      "recall10": {
+        "mean": -0.0078125,
+        "min": -0.0078125,
+        "max": -0.0078125,
+        "sample_std": 0.0
+      }
+    },
+    "residual-minus-C": {
+      "map10": {
+        "mean": -0.002811363260582011,
+        "min": -0.0029033358134920636,
+        "max": -0.002740575396825397,
+        "sample_std": 8.342260844203206e-05
+      },
+      "ndcg10": {
+        "mean": -0.0014238501490426339,
+        "min": -0.0015157458993238723,
+        "max": -0.0013565962496274136,
+        "sample_std": 8.238670014148948e-05
+      },
+      "recall10": {
+        "mean": 0.00390625,
+        "min": 0.00390625,
+        "max": 0.00390625,
+        "sample_std": 0.0
+      }
+    },
+    "residual-minus-completion": {
+      "map10": {
+        "mean": 0.007627004794973545,
+        "min": 0.006346106150793651,
+        "max": 0.008348834325396825,
+        "sample_std": 0.0011122718825920194
+      },
+      "ndcg10": {
+        "mean": 0.008557703583062971,
+        "min": 0.007621225000521327,
+        "max": 0.009105517699182022,
+        "sample_std": 0.0008149087399329026
+      },
+      "recall10": {
+        "mean": 0.01171875,
+        "min": 0.01171875,
+        "max": 0.01171875,
+        "sample_std": 0.0
+      }
+    }
+  },
+  "prospective_two_seed_mean": {
+    "completion-minus-C": {
+      "map10": -0.011089409722222223,
+      "ndcg10": -0.010462113948809436,
+      "recall10": -0.0078125
+    },
+    "residual-minus-C": {
+      "map10": -0.0028219556051587305,
+      "ndcg10": -0.001436171074475643,
+      "recall10": 0.00390625
+    },
+    "residual-minus-completion": {
+      "map10": 0.008267454117063491,
+      "ndcg10": 0.009025942874333791,
+      "recall10": 0.01171875
+    }
+  },
+  "training_KL_matching": {
+    "train_KL_by_arm": {
+      "completion-20261024": 0.028141394929216676,
+      "residual-20261024": 0.025626846105626697,
+      "completion-20261025": 0.02857631484713826,
+      "residual-20261025": 0.02723862248082785,
+      "completion-20261026": 0.028560712775189928,
+      "residual-20261026": 0.026115598434196165
+    },
+    "train_KL_residual_over_completion_by_seed": {
+      "20261024": 0.9106459068601696,
+      "20261025": 0.9531887728188166,
+      "20261026": 0.9143888893726146
+    },
+    "train_KL_match_by_seed": {
+      "20261024": true,
+      "20261025": true,
+      "20261026": true
+    },
+    "all_three_train_KL_matches": true,
+    "target_train_KL": 0.028141394929216676,
+    "scope": "Scalar consistency and checkpoint/cache/reference metadata bindings; KL was not recomputed from policies."
+  },
+  "bootstrap_intervals_independently_resampled": false,
+  "bootstrap_interval_validation": "Finite ordered endpoints within [-1,1] and declared 2000-draw user-cluster provenance checked; point containment is not required.",
+  "claim_scope": "Independent arithmetic from the pinned per-query target ranks: seven-arm MAP/NDCG/Recall, nine seed contrasts, three equal-seed average contrasts, paired signs, fitted-seed spread, and prospective two-seed means. TRAIN KL scalar/flag consistency checked against six-arm pinned diagnostic metadata.",
+  "limitations": [
+    "Target ranks, row/user identities and masks are CSV input evidence; scoring, ranking, tie-breaking and bindings to arrays are not independently reproduced.",
+    "No arrays, checkpoint bytes, raw datasets, models, training, RM or final test were opened by this verifier.",
+    "Cache/reference/checkpoint pins are metadata bindings; array integrity and TRAIN KL values are not independently recomputed.",
+    "Conditional user-cluster confidence intervals are not independently resampled here; only endpoint structure and declared provenance are checked.",
+    "Three fitted seeds and the two prospective seeds are descriptive; this proof supplies no training-seed population interval or causal claim."
+  ]
+}

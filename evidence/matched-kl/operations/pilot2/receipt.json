@@ -1,0 +1,35 @@
+{
+  "name": "pilot2",
+  "state": "succeeded",
+  "started_utc": "2026-10-25T05:49:58.700659+00:00",
+  "request_sha256": "fcb30871cc6154d230d91505f61e2b20c7fd5b27c0933528ac990f2ca5d391dc",
+  "argv": [
+    "C:/Users/Михаил/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "-B",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/control/worker.py",
+    "--request",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/request-pilot2.json",
+    "--request-sha256",
+    "fcb30871cc6154d230d91505f61e2b20c7fd5b27c0933528ac990f2ca5d391dc"
+  ],
+  "maximum_seconds": 900,
+  "deadline_utc": "2026-10-25T09:45:00+03:00",
+  "cap_gib": 8,
+  "reserve_gib": 2,
+  "cpu_affinity": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "worker_pid": 162708,
+  "exit_code": 0,
+  "initial_available_bytes": 15882117120,
+  "minimum_available_bytes": 11766083584,
+  "peak_rss_bytes": 3778699264,
+  "peak_private_bytes": 3526418432,
+  "cleanup_quiescent": true,
+  "idle_sleep_prevention_while_owned": true,
+  "finished_utc": "2026-10-25T05:52:44.156453+00:00",
+  "elapsed_seconds": 165.46900000004098
+}

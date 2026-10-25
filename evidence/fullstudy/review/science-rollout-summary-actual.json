@@ -1,0 +1,50 @@
+{
+  "review_type":"independent actual saved-rollout summary arithmetic and case-selection audit",
+  "status":"PASS_ACTUAL_ROLLOUT_SUMMARY",
+  "blocking_findings":[],
+  "path_base":"D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1",
+  "bindings":[
+    {"path":"interpretation/rollout-summary-r1/rollout-summary.json","sha256":"5c2cfc841c643258716862dffc7885566d682dfa94f95cc4578324ac05dbecba","actual_hash_verified":true},
+    {"path":"operations/rollout-analysis-r1/receipt.json","sha256":"73f21dd0dece2307b7d5dac9f437d922bb69fbd98bc0a35c5987b3f43a184ae8","actual_hash_verified":true},
+    {"path":"operations/rollout-analysis-r1/stage-completion.json","sha256":"c1b6b6604f8385d6dbbf1ecb508dc0147b4417272c0328ccda965e0a11e970a1","actual_hash_verified":true},
+    {"path":"request-rollout-analysis-r1.json","sha256":"de4f54684ed8caa9c50198a1c929dab5f76f8ab3c6ed7c923048baedc16a43b3","actual_hash_verified":true},
+    {"path":"interpretation/rollout_summary.py","sha256":"74a4148b078aa0495415b9d2698bf0c4d0e706f825458fcdcfb1b74ab31e9964","actual_hash_verified":true},
+    {"path":"policy/rollout-scientific3-r1.json","sha256":"67bc5e8ffedc5d2759e0f3b8e6d998a0887e94226ae4a13f5dd021db359137bf","actual_hash_verified":true}
+  ],
+  "actual_execution":{"state":"succeeded","exit_code":0,"cleanup_quiescent":true,"elapsed_seconds":1.125,"stage_result_equals_summary":true,"no_model_or_training":true},
+  "input_scope":"Exact previously accepted192 trajectories/960 steps over16 fixed initial contexts,3 scientific arms,2 modes,2 masks,plus16 observed-s0 RM controls. Source/rollout pins freshly match. No policy inference or feature recomputation is performed by this saved-JSON summarizer.",
+  "independent_aggregate_math":{
+    "groups":12,
+    "contexts_per_group":16,
+    "per_step_mean_fields_recomputed":960,
+    "maximum_mean_or_HHI_difference":8.881784197001252e-16,
+    "group_checks":"Recomputed mean unique/repeat counts,all supported-only/raw/neutral return means and denominators,slot exposure HHI/unique counts,and every reported per-step mean/denominator from exact saved trajectories. No discrepancy.",
+    "matched_C_contrasts":8,
+    "maximum_group_mean_contrast_difference":2.7755575615628914e-17,
+    "contrast_checks":"Recomputed completion/residual neutral-return and mean-unique differences from matched group means. No false common-later-prefix or independence assumption is required for these descriptive differences.",
+    "RM_controls":"16 controls each contain5 unique items and all80 chosen control items are supported. Static control is kept separate from autoregressive policies;KL/entropy/original-seen distribution metrics are explicitly unavailable rather than fabricated."
+  },
+  "predefined_named_cases":{
+    "positions":[253,2,30],
+    "selection":"First3 preselected positions in original request order;not chosen by observed result.",
+    "scientific_slates":36,
+    "named_item_slots_checked":180,
+    "ID_binding":"All12 arm/mode/mask slates per case reproduce their exact5 generated raw IDs from accepted rollout JSON. Every saved item slot has a nonempty title.3 static RM controls are also included in examples.",
+    "title_provenance":"Native summarizer pins original items.csv SHA027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e and requires complete named cases. Reviewer checked ID/title presence and source path,but did not reread the31.8MB catalog;independent title-content verification is outside this compact-JSON review."
+  },
+  "descriptive_findings":{
+    "greedy_unmasked_mean_unique":{"C":1.6875,"RL-completion":1.625,"RL-residual":1.8125},
+    "categorical_unmasked_mean_unique":{"C":4.875,"RL-completion":4.875,"RL-residual":4.875},
+    "exclude_generated_mean_unique_all_arms_modes":5.0,
+    "meaning":"Greedy unmasked inference collapses to roughly1.6-1.8 distinct items over5 steps in these16 cases;categorical decoding is much more varied in this fixed sample. The exclusion mask guarantees5 unique items by construction and cannot by itself establish a learned diversity improvement.",
+    "unsupported_return_denominators":"Some categorical groups have only13-15 of16 fully supported slates. Supported-only raw-return means use those explicit denominators;neutral proxies retain16. Group raw means with different supported-only subsets are not paired policy-effect estimates.",
+    "baseline_effect":"C has zero KL to itself at every live prefix,yet its later frozen-s0 centered proxy can move because GPT prefix changes while reward and initial supported baseline stay fixed. This is expected synthetic-prefix behavior,not C policy training or observed user response."
+  },
+  "report_claim_limits":[
+    "This is five-step inference from H1-trained heads,not five-step RL training or optimization of long-term observed returns.",
+    "RM/raw1068/user/source13/history/clock and the natural pool remain observed-s0-fixed while GPT q/base/source12 evolve. Different policies can generate different later prefixes;initial contexts are matched,not later state distributions.",
+    "Frozen RM returns are supported surrogates,not real watchtime,satisfaction,retention or causal counterfactual outcomes. Later synthetic steps have no observed relevance labels.",
+    "16 predetermined contexts and one categorical seed per context support descriptive cases and decoding behavior only,not population superiority or uncertainty claims.",
+    "Reviewer read source,JSON,brief generated Markdown and file metadata,with arithmetic on saved records only. No arrays/checkpoints/NPZ/model payloads,NumPy/Torch/ML imports or native jobs were used."
+  ]
+}

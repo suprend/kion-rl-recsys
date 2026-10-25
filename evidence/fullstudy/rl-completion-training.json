@@ -1,0 +1,245 @@
+{
+  "contract": "kion-current-C1070-natural1024-H1-v1",
+  "state": "completed",
+  "beta": 0.5,
+  "updates": 1000,
+  "checkpoints": [
+    {
+      "step": 0,
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-0.pt",
+      "sha256": "20a616aeecd9856b3d96ab8f17f3321373b9f6a7bd158ab125d705e4d6f595ab"
+    },
+    {
+      "step": 250,
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-250.pt",
+      "sha256": "aa8f4da51fd29021fb44e79681e84462e9bd8f7fd938326f93b18f3f3b9933da"
+    },
+    {
+      "step": 500,
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-500.pt",
+      "sha256": "b8e8772666c93a28da252a0c9995475df5147405717aa0d71aaf895feba373d0"
+    },
+    {
+      "step": 1000,
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-1000.pt",
+      "sha256": "436d735d67fd861e6b925719b9e3597582ec405eed1b13ede3db3671e1ce37b7"
+    }
+  ],
+  "implementation": "producer-shape-slot-v2",
+  "loss_normalization": "one mean over logical real B16 occurrences; no bucket means",
+  "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+  "cache_sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+  "reward_sha256": "e8047d12f8009bb422cc4956261a355dc10e05f42d73351ef76ccd5f7bc9ce05",
+  "preregistration_sha256": "025061343a0314691dfb6064063d7e18c74662ea62ab285ec423d374037538ac",
+  "frontier_sha256": "73d1eacc7000398341c3bcfb761929be41c18e3f2c094d2467dbee7fc8184530",
+  "update0_max_abs_error": 0.0,
+  "precision": "cuda-fp16",
+  "objective": "exact supported centered advantage minus beta KL",
+  "frozen_encoder": true,
+  "supervised_updates": 0,
+  "weight_decay": 0,
+  "batch_size": 16,
+  "history": [
+    {
+      "step": 25,
+      "loss": -0.005595571827143431,
+      "grad_norm": 0.19718299806118011
+    },
+    {
+      "step": 50,
+      "loss": -0.008224302902817726,
+      "grad_norm": 0.1809394806623459
+    },
+    {
+      "step": 75,
+      "loss": -0.01040695235133171,
+      "grad_norm": 0.11979714781045914
+    },
+    {
+      "step": 100,
+      "loss": -0.009664628654718399,
+      "grad_norm": 0.10812331736087799
+    },
+    {
+      "step": 125,
+      "loss": -0.00987778976559639,
+      "grad_norm": 0.07133376598358154
+    },
+    {
+      "step": 150,
+      "loss": -0.01071143802255392,
+      "grad_norm": 0.06478042155504227
+    },
+    {
+      "step": 175,
+      "loss": -0.013066215440630913,
+      "grad_norm": 0.09352779388427734
+    },
+    {
+      "step": 200,
+      "loss": -0.013870712369680405,
+      "grad_norm": 0.08934976160526276
+    },
+    {
+      "step": 225,
+      "loss": -0.012674727477133274,
+      "grad_norm": 0.06456632912158966
+    },
+    {
+      "step": 250,
+      "loss": -0.011900776997208595,
+      "grad_norm": 0.05735277384519577
+    },
+    {
+      "step": 275,
+      "loss": -0.015214435756206512,
+      "grad_norm": 0.05812594294548035
+    },
+    {
+      "step": 300,
+      "loss": -0.014399801380932331,
+      "grad_norm": 0.06875449419021606
+    },
+    {
+      "step": 325,
+      "loss": -0.014541395008563995,
+      "grad_norm": 0.07180370390415192
+    },
+    {
+      "step": 350,
+      "loss": -0.013128818944096565,
+      "grad_norm": 0.09466639906167984
+    },
+    {
+      "step": 375,
+      "loss": -0.016756799072027206,
+      "grad_norm": 0.05300256609916687
+    },
+    {
+      "step": 400,
+      "loss": -0.014544550329446793,
+      "grad_norm": 0.058331068605184555
+    },
+    {
+      "step": 425,
+      "loss": -0.016076907515525818,
+      "grad_norm": 0.06594158709049225
+    },
+    {
+      "step": 450,
+      "loss": -0.01583210378885269,
+      "grad_norm": 0.08938666433095932
+    },
+    {
+      "step": 475,
+      "loss": -0.01640569046139717,
+      "grad_norm": 0.041833776980638504
+    },
+    {
+      "step": 500,
+      "loss": -0.01595463789999485,
+      "grad_norm": 0.03913770988583565
+    },
+    {
+      "step": 525,
+      "loss": -0.013951817527413368,
+      "grad_norm": 0.06425067782402039
+    },
+    {
+      "step": 550,
+      "loss": -0.017308015376329422,
+      "grad_norm": 0.05071457847952843
+    },
+    {
+      "step": 575,
+      "loss": -0.01966111734509468,
+      "grad_norm": 0.049977537244558334
+    },
+    {
+      "step": 600,
+      "loss": -0.014192081987857819,
+      "grad_norm": 0.07912159711122513
+    },
+    {
+      "step": 625,
+      "loss": -0.015882648527622223,
+      "grad_norm": 0.04885058477520943
+    },
+    {
+      "step": 650,
+      "loss": -0.017643984407186508,
+      "grad_norm": 0.042555440217256546
+    },
+    {
+      "step": 675,
+      "loss": -0.017703719437122345,
+      "grad_norm": 0.038617316633462906
+    },
+    {
+      "step": 700,
+      "loss": -0.016911368817090988,
+      "grad_norm": 0.03724457323551178
+    },
+    {
+      "step": 725,
+      "loss": -0.016383901238441467,
+      "grad_norm": 0.053744278848171234
+    },
+    {
+      "step": 750,
+      "loss": -0.01748673804104328,
+      "grad_norm": 0.061332784593105316
+    },
+    {
+      "step": 775,
+      "loss": -0.017004989087581635,
+      "grad_norm": 0.02993962913751602
+    },
+    {
+      "step": 800,
+      "loss": -0.01767035201191902,
+      "grad_norm": 0.042992912232875824
+    },
+    {
+      "step": 825,
+      "loss": -0.015506505966186523,
+      "grad_norm": 0.038567375391721725
+    },
+    {
+      "step": 850,
+      "loss": -0.017076481133699417,
+      "grad_norm": 0.038745537400245667
+    },
+    {
+      "step": 875,
+      "loss": -0.01630055159330368,
+      "grad_norm": 0.08947201818227768
+    },
+    {
+      "step": 900,
+      "loss": -0.019343392923474312,
+      "grad_norm": 0.060751430690288544
+    },
+    {
+      "step": 925,
+      "loss": -0.019205518066883087,
+      "grad_norm": 0.03312547877430916
+    },
+    {
+      "step": 950,
+      "loss": -0.01728673279285431,
+      "grad_norm": 0.057710178196430206
+    },
+    {
+      "step": 975,
+      "loss": -0.017628319561481476,
+      "grad_norm": 0.029949111863970757
+    },
+    {
+      "step": 1000,
+      "loss": -0.019615642726421356,
+      "grad_norm": 0.03772660344839096
+    }
+  ],
+  "parameter_l2_delta": 1.0157538112237452
+}

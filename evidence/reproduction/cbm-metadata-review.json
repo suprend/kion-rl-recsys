@@ -1,0 +1,57 @@
+{
+  "contract": "root-cbm-byte-metadata-scan-v1",
+  "state": "completed",
+  "sha256": "b6ed4c6427129afcddec017e2f64d9c3fb59fb31fc300e5c9d074964a21ddd62",
+  "bytes": 163368,
+  "method": "stdlib ASCII string and parseable JSON metadata inspection; no CatBoost load; limited-pattern scan is not anonymity proof",
+  "ascii_strings": 35,
+  "json_dicts": 2,
+  "json_top_level_keys": [
+    [
+      "metrics"
+    ],
+    [
+      "allow_writing_files",
+      "best_model_min_trees",
+      "eval_file_name",
+      "final_ctr_computation_mode",
+      "final_feature_calcer_computation_mode",
+      "fstr_internal_file",
+      "fstr_regular_file",
+      "fstr_type",
+      "json_log",
+      "learn_error_log",
+      "metric_period",
+      "model_format",
+      "name",
+      "output_borders",
+      "output_columns",
+      "prediction_type",
+      "profile_log",
+      "result_model_file",
+      "roc_file",
+      "save_snapshot",
+      "snapshot_file",
+      "snapshot_interval",
+      "test_error_log",
+      "time_left_log",
+      "train_dir",
+      "training_options_file",
+      "use_best_model",
+      "verbose"
+    ]
+  ],
+  "selected_sensitive_pattern_hits": {
+    "credential": 0,
+    "windows_path": 1,
+    "email": 1
+  },
+  "native_deserialization": false,
+  "training_updates": 0,
+  "manual_classification": {
+    "windows_path": "CatBoost upstream CI source build path D:/a/catboost/catboost/catboost",
+    "email": "CatBoost upstream author metadata at yandex-team.com; no dataset/owner identity",
+    "credential_hits": 0,
+    "conclusion": "No owner/user private IDs found in inspected readable CBM metadata; categorical hashes/modelparameters and inferred-data leakage are outside a metadata-pattern audit."
+  }
+}

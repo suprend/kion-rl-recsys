@@ -1,0 +1,10 @@
+{
+  "state": "promoted-final-layout",
+  "path": "reports/REPORT.pdf",
+  "sha256": "e26e476feac5b4614ff3bc726f5a301f15fb1cb845361871d186928c270a63b5",
+  "bytes": 1675410,
+  "source_md_sha256": "b299b49e09ba574ec346750e4b62c3df06a74d9f03314197172d134e5ae82b21",
+  "earlier_layout_preserved": "research/REPORT-layout-r1.pdf",
+  "actual_build_receipt": "review/pdf-build-r2.json",
+  "actual_all_page_review": "review/root-pdf-render-r2.json"
+}

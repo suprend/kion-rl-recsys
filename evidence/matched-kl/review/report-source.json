@@ -1,0 +1,93 @@
+{
+  "contract": "independent-report-source-review-v1",
+  "created_utc": "2026-10-25T05:48:06.994284+00:00",
+  "reviewer": "/root/kl_report_review",
+  "state": "source-only-reviewed-awaiting-numerical-and-render-review",
+  "scope_mode": "current named files; no historical diff baseline",
+  "authority": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/preregistration.json",
+    "sha256": "46f348e871f185efca1a734cd31e5234dba6346be545b690d32deb447e488ab4"
+  },
+  "reviewed_sha256": {
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/reader.md": "2aa86d33a9d7cd8941a2046c206168552324190c163bedb1c958126b8b403d3e",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/technical.md": "cabb4bff2a44bc42e7ac904052b4bce7b99fce1ed744d2e82ac0b549b84227b7",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/reproduce.md": "898fa9ffd0506f3fa8f976ed17a302a3bb6da3d9e0be968ce5a66682fdcf362c",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/report-build.py": "09b941ea51077ae07cf206611985169fa2086425a2751835263b5942e42f78b8"
+  },
+  "context_sha256": {
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/preregistration.json": "46f348e871f185efca1a734cd31e5234dba6346be545b690d32deb447e488ab4",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/target.json": "8f159a0a0efd27ebc42f16e7b87fe8e9066beae965403af3bfcdb8b9bd5316d0",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/README.md": "9d471eb6b8f5ad86ab0b14974323e4e951e6107609a74e5f66cb8167e77ee354",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/reproduce.md": "4af1b57f578c0a3305def5b3bf8ccd57e51ae66349d08a0177e04f02c94a3d3c"
+  },
+  "input_freshness": "Hashes matched before and after final stdlib checks; newer revisions require re-review.",
+  "findings": [],
+  "resolved_findings": [
+    {
+      "priority": "P2",
+      "file": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/report-build.py",
+      "original_line": 49,
+      "original_sha256": "58360851b308135d396487f55c66dc618dec676c2b268eb36fc343ca4c2c692e",
+      "title": "Preserve PDF evidence link destinations",
+      "trigger": "Original inline() replaced every Markdown link with its label, erasing all evidence destinations from rendered PDF.",
+      "resolution": "Current lines 48-80 resolve local evidence to file URIs and retain escaped href links; external/local/escaping/rejection stdlib scenarios passed. PDF link annotations themselves remain unrendered."
+    },
+    {
+      "priority": "P3",
+      "file": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/technical.md",
+      "line": 30,
+      "title": "Distinguish invalid initial probe from pilot selection",
+      "trigger": "Blanket nonfinite-stop wording could exclude a valid first pilot when a later pilot has invalid KL.",
+      "resolution": "Line 30 now separates invalid T/K0 initial probe from choosing finite positive pilot KL and stopping only if no valid candidate remains."
+    }
+  ],
+  "protocol_coverage": [
+    "MAP@10 primary; NDCG@10 and Recall@10 secondary; denominator4096 retains unknown/off-pool targets.",
+    "TRAIN512 mean forward candidate-pool KL over all1024 actions, tolerance[0.8,1.2] required independently for every seed pair.",
+    "Seed24 calibrates; selected pilot reused; seeds25/26 prospective; maximum2 pilots+4 scientific fits and diagnosed technical retries within total8.",
+    "Each final endpoint1000 actual updates; fixed original C lineage; no reward/relevance-based beta/checkpoint/seed selection.",
+    "2000 paired user-cluster bootstrap draws seed20261024 conditional on fitted heads; individual deltas, sampleSD/range and newseed mean distinguished from seed-population inference.",
+    "No new SFT/RM fit or test reads allowed; screen utilities/exposure remain distinct from full4096 relevance and observed outcomes.",
+    "Accepted target.json metadata supports displayed T/K0/beta1; no final fit/evaluation result inferred from it."
+  ],
+  "checks_executed": [
+    "PAS python -B report-build.py --check --allow-pending --part all passed.",
+    "Final stdlib runpy/AST review: all current Markdown block/table parsing passed and all three strict source inspections rejected PENDING as expected.",
+    "External URL query escaping, local evidence fragment, quoted/angle-bracket label, bold/code escaping, XML-balanced inline markup and unsupported scheme rejection passed without opening destinations.",
+    "Historical setup counts and architecture descriptions cross-checked against read-only F README/reproduce; primary arrays/models were not opened.",
+    "Final sys.modules check confirmed NumPy/Torch/CatBoost/ReportLab absent."
+  ],
+  "source_checks": [
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/reader.md",
+      "bytes": 10283,
+      "sha256": "2aa86d33a9d7cd8941a2046c206168552324190c163bedb1c958126b8b403d3e",
+      "pending_markers": 72,
+      "intended_pages": 3
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/technical.md",
+      "bytes": 13937,
+      "sha256": "cabb4bff2a44bc42e7ac904052b4bce7b99fce1ed744d2e82ac0b549b84227b7",
+      "pending_markers": 17,
+      "intended_pages": 1
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/reproduce.md",
+      "bytes": 6798,
+      "sha256": "898fa9ffd0506f3fa8f976ed17a302a3bb6da3d9e0be968ce5a66682fdcf362c",
+      "pending_markers": 3,
+      "intended_pages": 1
+    }
+  ],
+  "limitations": [
+    "PENDING is permitted for this source draft; this review does not approve a final scientific conclusion.",
+    "No model/array reads, numerical computation, actual jobs, PDF creation, ReportLab import, PNG render or visual review executed.",
+    "The declared three intended reader pages and table/font layout require root actual render and all-page QA; source-only checks cannot establish page count, no clipping or readability.",
+    "PDF local file URIs depend on this machine root; reproduce.md explicitly states rebuild may be needed after moving the directory.",
+    "Numerical result/source binding, execution receipts, remaining draft evidence links and final metric values must be reviewed when completed."
+  ],
+  "writes": [
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/review/report-source.json"
+  ]
+}

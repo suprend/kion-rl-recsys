@@ -1,0 +1,528 @@
+{
+  "contract": "kion-inputs-privacy-final-v1",
+  "state": "passed-for-local-input-preparation",
+  "reviewed_utc": "2026-10-25T08:04:54.057370+00:00",
+  "reviewer": "/root/submit_data_privacy",
+  "authority": "Authorized local hand-in preparation only; no upload, publication, external sharing, submission or training authorized by this receipt.",
+  "mode": "Actual input metadata/text/header review; array values, pickle metadata, model tensors and CBM not opened by this reviewer.",
+  "findings": [],
+  "actual_input_manifests": {
+    "actor": {
+      "path": "reproduction/inputs/manifest.json",
+      "bytes": 7578,
+      "sha256": "e680dd145b2bfdc812107fb9a257bf16f6d1ef5a53c07845f7dc21838146a52c"
+    },
+    "RM": {
+      "path": "reproduction/inputs-rm-r1/manifest.json",
+      "bytes": 4381,
+      "sha256": "7b3e7dbefde3a6d0e113c0340dbbfc425d223574a7c4cd13db7927fb29b30380"
+    },
+    "external_provenance": {
+      "path": "reproduction/external-provenance/INDEX.json",
+      "bytes": 8957,
+      "sha256": "a0bbbc4f7939a51d92815b7adb99755db36e28338402cee6dba5e095d718900e"
+    }
+  },
+  "expected_package_input_allowlist": [
+    {
+      "path": "reproduction/external-provenance/INDEX.json",
+      "bytes": 8957,
+      "sha256": "a0bbbc4f7939a51d92815b7adb99755db36e28338402cee6dba5e095d718900e",
+      "admission": null,
+      "role": "external-provenance-index",
+      "hash_evidence": "Reviewer read and hashed bounded JSON."
+    },
+    {
+      "path": "reproduction/external-provenance/entity-links/shared-links-current-r3.json",
+      "bytes": 5214447,
+      "sha256": "adcb614c750308c8ebbd5b8446cfc34c0c6dd9ef0c74979be9ba116d6f8faf25",
+      "admission": null,
+      "role": "exact-original-bytes",
+      "hash_evidence": "Full JSON bytes independently reviewed and freshly rehashed;12exact+1sanitized."
+    },
+    {
+      "path": "reproduction/external-provenance/entity-links/shared-union-independent-review-r3.json",
+      "bytes": 647822,
+      "sha256": "c8e033968b9e36d68d143df544690d1919e58c5d353ba8cea2ac64201a624ee1",
+      "admission": null,
+      "role": "exact-original-bytes",
+      "hash_evidence": "Full JSON bytes independently reviewed and freshly rehashed;12exact+1sanitized."
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/movielens-pass-r2/receipt.json",
+      "bytes": 2793,
+      "sha256": "6ee8b810edc62d50810f62aa646251449f68be940f97ac3b4ecef876e9f8c76b",
+      "admission": null,
+      "role": "exact-original-bytes",
+      "hash_evidence": "Full JSON bytes independently reviewed and freshly rehashed;12exact+1sanitized."
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/phase4-complete-cache-plan-r1.json",
+      "bytes": 2188440,
+      "sha256": "1805c75faa7752562f51face1ba9559fbeca842a7cee6a8ebff8fec1ed0ee010",
+      "admission": null,
+      "role": "exact-original-bytes",
+      "hash_evidence": "Full JSON bytes independently reviewed and freshly rehashed;12exact+1sanitized."
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/phase4-dated-population-r1/column-schema.json",
+      "bytes": 49542,
+      "sha256": "04ae7abdb36161fde064a65f06b3b545542a10dc7edc40f9d670d48dacd028b6",
+      "admission": null,
+      "role": "exact-original-bytes",
+      "hash_evidence": "Full JSON bytes independently reviewed and freshly rehashed;12exact+1sanitized."
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/phase4-dated-population-r1/coverage-by-origin.json",
+      "bytes": 115925,
+      "sha256": "d165ef809104acbd2265c37bbcedb39dabc5375afb2e804dda3b93d51748d856",
+      "admission": null,
+      "role": "exact-original-bytes",
+      "hash_evidence": "Full JSON bytes independently reviewed and freshly rehashed;12exact+1sanitized."
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/phase4-dated-population-r1/manifest.json",
+      "bytes": 21668,
+      "sha256": "decabacca0905ee270060c5b37cba939de5d48311fa3e6c3899e85381e2c9f42",
+      "admission": null,
+      "role": "exact-original-bytes",
+      "hash_evidence": "Full JSON bytes independently reviewed and freshly rehashed;12exact+1sanitized."
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/phase4-dated-population-r1/rm-declaration.json",
+      "bytes": 2745856,
+      "sha256": "59bd183c88af8bd9f7e1c4bb9c1e49b10ca6c24cb84e0bae84d0e2e0302e1541",
+      "admission": null,
+      "role": "exact-original-bytes",
+      "hash_evidence": "Full JSON bytes independently reviewed and freshly rehashed;12exact+1sanitized."
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/phase4-dated-population-r1/sft-declaration.json",
+      "bytes": 2880494,
+      "sha256": "7bd7176ad9d4fe67e9f9520b7970587bfc9d8f290ccd90cb51cf5dea829986d5",
+      "admission": null,
+      "role": "exact-original-bytes",
+      "hash_evidence": "Full JSON bytes independently reviewed and freshly rehashed;12exact+1sanitized."
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/phase4-frozen-input-manifest-r1.json",
+      "bytes": 6959,
+      "sha256": "459af1c69b16b714b29c19696a9395df3e97f0e649e4d062d64a33a946a24791",
+      "admission": null,
+      "role": "exact-original-bytes",
+      "hash_evidence": "Full JSON bytes independently reviewed and freshly rehashed;12exact+1sanitized."
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/phase4-independent-review-r1.json",
+      "bytes": 6464,
+      "sha256": "238ad8931639c63b9b90d4a21b5a1ad12d2efe0fa0118a36c0fa24e227e66b34",
+      "admission": null,
+      "role": "exact-original-bytes",
+      "hash_evidence": "Full JSON bytes independently reviewed and freshly rehashed;12exact+1sanitized."
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/phase4-wiki-fixed403-r1/acquisition.json",
+      "bytes": 3654309,
+      "sha256": "64c36b64e885a22d50cab897e4381d3cb5f14a2bbc2eedc2d51a08da685ad8eb",
+      "admission": null,
+      "role": "sanitized-derivative-v1",
+      "hash_evidence": "Full JSON bytes independently reviewed and freshly rehashed;12exact+1sanitized."
+    },
+    {
+      "path": "reproduction/external-provenance/root-bank-origins-r1.json",
+      "bytes": 5292,
+      "sha256": "efed779cf47328d6742fbde09dcaa2c6e81adaa93dec03af91e5a9950321f53e",
+      "admission": null,
+      "role": "exact-original-bytes",
+      "hash_evidence": "Full JSON bytes independently reviewed and freshly rehashed;12exact+1sanitized."
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/candidate_raw_ids.npy",
+      "bytes": 32896,
+      "sha256": "f994ec05a0edf55c27c1db0eb5addee0512e26b1e01d3c6f5e881ffb9502fd5f",
+      "admission": "derived_fixture",
+      "role": "arrays:candidate_raw_ids",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/manifest.json",
+      "bytes": 4381,
+      "sha256": "7b3e7dbefde3a6d0e113c0340dbbfc425d223574a7c4cd13db7927fb29b30380",
+      "admission": null,
+      "role": "fixture-manifest",
+      "hash_evidence": "Reviewer read and hashed bounded JSON."
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/model.cbm",
+      "bytes": 163368,
+      "sha256": "b6ed4c6427129afcddec017e2f64d9c3fb59fb31fc300e5c9d074964a21ddd62",
+      "admission": "frozen_weights",
+      "role": "weights:RM",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized frozen inference weights; portable pure state/model export excludes optimizer and RNG payloads; parameters may retain information."
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/rm_candidate_numeric.npy",
+      "bytes": 32899200,
+      "sha256": "5fad3c99fdcf4b75334cda438238412a279c98f8daefc31cb60c601269a8b0f6",
+      "admission": "derived_fixture",
+      "role": "arrays:rm_candidate_numeric",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/rm_context_numeric.npy",
+      "bytes": 33392,
+      "sha256": "a2e75f6ca031a74a34a9b3573e3f92e5e290e441c43a9d493ceef6f25851124e",
+      "admission": "derived_fixture",
+      "role": "arrays:rm_context_numeric",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/rm_fit_counts.npy",
+      "bytes": 32896,
+      "sha256": "d90a4ce304bd13e58a072c5cf89011517638f1192200eb75ccc61ac44c128cff",
+      "admission": "derived_fixture",
+      "role": "arrays:rm_fit_counts",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/rm_item_prior.npy",
+      "bytes": 32896,
+      "sha256": "541ab498ac9a9e21d1b866154196fd2cc40c14eaad7eccc60ae5c2ac89d74dbd",
+      "admission": "derived_fixture",
+      "role": "arrays:rm_item_prior",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/rm_reference_reward.npy",
+      "bytes": 16512,
+      "sha256": "a2063a4e94715fb7d0deb33137d2c53bdd706e30b9c019a1fd4638f9b87c5b88",
+      "admission": "derived_fixture",
+      "role": "arrays:rm_reference_reward",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/rm_reference_reward64.npy",
+      "bytes": 32896,
+      "sha256": "95067c9bdde44dade0f8ef830c573b29be50ee6938ad13255ec01dec4027d0ab",
+      "admission": "derived_fixture",
+      "role": "arrays:rm_reference_reward64",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/rm_reference_support.npy",
+      "bytes": 4224,
+      "sha256": "c8f8314d560f2d803ab1a3890bdbacc00fe58bb3369adb7c05fca17a5c75b689",
+      "admission": "derived_fixture",
+      "role": "arrays:rm_reference_support",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs/base_logits.npy",
+      "bytes": 16512,
+      "sha256": "596e7939f85233c463b975922fddc84284cd42f3d4f69ea14c84aeae2121452e",
+      "admission": "derived_fixture",
+      "role": "arrays:base_logits",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs/candidate_ids.npy",
+      "bytes": 16512,
+      "sha256": "511bf501c6dbbc0165bfaaf4b9b55cbe962329b9c6fa19ec0aa7678555a4a3a5",
+      "admission": "derived_fixture",
+      "role": "arrays:candidate_ids",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs/candidate_raw_ids.npy",
+      "bytes": 32896,
+      "sha256": "f994ec05a0edf55c27c1db0eb5addee0512e26b1e01d3c6f5e881ffb9502fd5f",
+      "admission": "derived_fixture",
+      "role": "arrays:candidate_raw_ids",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs/encoded.npy",
+      "bytes": 4224,
+      "sha256": "4401a68dcf0eacbe4a5ac90832cf58490a4c37ae735b7e10432bd31dbd84859c",
+      "admission": "derived_fixture",
+      "role": "arrays:encoded",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs/gpt_lengths.npy",
+      "bytes": 256,
+      "sha256": "7cc75275ffb68a5a81b2d8dd4edc904b5c35ecf864f7cfc4afa0419360fbd1f9",
+      "admission": "derived_fixture",
+      "role": "arrays:gpt_lengths",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs/gpt_user_features.npy",
+      "bytes": 208256,
+      "sha256": "a474265851e39dcc7d900a7214916104f228e06187f89dbd887aff8a87ef43b9",
+      "admission": "derived_fixture",
+      "role": "arrays:gpt_user_features",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs/gpt_x.npy",
+      "bytes": 8320,
+      "sha256": "c944cdfa89fce677cfc4479811c0d1826ece4fc4e3e5537eb1fcc9a24fd89315",
+      "admission": "derived_fixture",
+      "role": "arrays:gpt_x",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs/item_table.npy",
+      "bytes": 15788160,
+      "sha256": "13abf44751ec3a57faf15f30ab02110301714993acd75702350d5ca6a1a358f3",
+      "admission": "derived_fixture",
+      "role": "arrays:item_table",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs/manifest.json",
+      "bytes": 7578,
+      "sha256": "e680dd145b2bfdc812107fb9a257bf16f6d1ef5a53c07845f7dc21838146a52c",
+      "admission": null,
+      "role": "fixture-manifest",
+      "hash_evidence": "Reviewer read and hashed bounded JSON."
+    },
+    {
+      "path": "reproduction/inputs/oracle/C_scores.npy",
+      "bytes": 16512,
+      "sha256": "6fd2be266073a7332bb9b1586f1204ca16583c82e7c7449d59f449a4a87e358a",
+      "admission": "derived_fixture",
+      "role": "expected:C",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs/oracle/RL-completion_scores.npy",
+      "bytes": 16512,
+      "sha256": "99c0760e187473ad0432731f1c4c1ba676e14aa69bfa289727377f71adaec1c2",
+      "admission": "derived_fixture",
+      "role": "expected:RL-completion",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs/oracle/RL-residual_scores.npy",
+      "bytes": 16512,
+      "sha256": "648fc024845db6b0b941faa06e6fb076e16ed54b4af61ada37e3b8b49630bc75",
+      "admission": "derived_fixture",
+      "role": "expected:RL-residual",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs/raw_features.npy",
+      "bytes": 17498240,
+      "sha256": "81033bbd8d23bd01d186d3083ca51b639599540fdad139b905fe572144bf0409",
+      "admission": "derived_fixture",
+      "role": "arrays:raw_features",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs/source_values.npy",
+      "bytes": 32896,
+      "sha256": "9c5cfc439732ea660965f947d7fa03e00f987caf96149724b691b1e457201a3b",
+      "admission": "derived_fixture",
+      "role": "arrays:source_values",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized real-derived transformed numerical fixture; may retain source information and is not proven anonymous; explicit source-user-ID mapping and observed target labels excluded."
+    },
+    {
+      "path": "reproduction/inputs/weights/C.pt",
+      "bytes": 960601,
+      "sha256": "2dbe8f0b3de2af804aff6a82a18a6444dde2c5e77928c0f50858a858db72345d",
+      "admission": "frozen_weights",
+      "role": "weights:C",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized frozen inference weights; portable pure state/model export excludes optimizer and RNG payloads; parameters may retain information."
+    },
+    {
+      "path": "reproduction/inputs/weights/GPT.pt",
+      "bytes": 31837764,
+      "sha256": "b952dc61f45dc09132db97c8b5d90975d044114237d64b6487b8770f04312c1e",
+      "admission": "frozen_weights",
+      "role": "weights:GPT",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized frozen inference weights; portable pure state/model export excludes optimizer and RNG payloads; parameters may retain information."
+    },
+    {
+      "path": "reproduction/inputs/weights/RL-completion.pt",
+      "bytes": 960601,
+      "sha256": "3faf78f3495dcb0a557601d9cdccf8a5697cf7ad7b3e4d7b4740c7bbfee01f0f",
+      "admission": "frozen_weights",
+      "role": "weights:RL-completion",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized frozen inference weights; portable pure state/model export excludes optimizer and RNG payloads; parameters may retain information."
+    },
+    {
+      "path": "reproduction/inputs/weights/RL-residual.pt",
+      "bytes": 960601,
+      "sha256": "0c6afdea70d8bb2a760866b698c296f482cad37ec78bde54e83b4249dc7623e1",
+      "admission": "frozen_weights",
+      "role": "weights:RL-residual",
+      "hash_evidence": "Declared by root actual-export manifest; reviewer verified filesystem size and NPY/Torch headers only, not payload hash or values.",
+      "admission_reason": "Root-authorized frozen inference weights; portable pure state/model export excludes optimizer and RNG payloads; parameters may retain information."
+    }
+  ],
+  "expected_input_member_count": 42,
+  "expected_input_bytes": 119184582,
+  "checks": {
+    "actor_exact_payload_list_and_sizes": {
+      "status": "passed",
+      "files": 17,
+      "bytes": 68375375,
+      "NPY_headers": 13,
+      "Torch_ZIP_member_headers": 4
+    },
+    "RM_exact_payload_list_and_sizes": {
+      "status": "passed",
+      "files": 9,
+      "bytes": 33248280,
+      "NPY_headers": 8,
+      "CBM_size_only": 163368,
+      "CBM_opened_by_reviewer": false
+    },
+    "actor_RM_binding": {
+      "status": "passed",
+      "candidate_raw_ID_descriptors_identical": true,
+      "source_cache_SHA256_identical": true
+    },
+    "native_export_receipts": {
+      "status": "passed-as-recorded",
+      "actor": {
+        "path": "operations/export-actor-r1/receipt.json",
+        "bytes": 1158,
+        "sha256": "5368e4240e7008cfde6cb99f074bfb40e50b5e6e40d94ce49209a1eeecceb649",
+        "state": "succeeded",
+        "exit_code": 0,
+        "cleanup_quiescent": true
+      },
+      "RM": {
+        "path": "operations/export-rm-r2/receipt.json",
+        "bytes": 1153,
+        "sha256": "08ced6919202ed05425a763040fae78f1391ee6b71bf3bf226f7a43277852cc4",
+        "state": "succeeded",
+        "exit_code": 0,
+        "cleanup_quiescent": true
+      },
+      "both_succeeded_exit0_cleanup_quiescent": true,
+      "RM_manifest_updates_and_fits": 0,
+      "RM_saved_native_pair_and_candidate_feature_error": 0.0,
+      "independent_array_recomputation_by_this_reviewer": false
+    },
+    "external_provenance": {
+      "status": "passed",
+      "exports": 13,
+      "payload_bytes": 17540011,
+      "exact_copies": 12,
+      "sanitized_derivatives": 1,
+      "independent_reviewer": "/root/submit_data_privacy/external_metadata_review",
+      "full_structural_text_pass": {
+        "nodes": 342222,
+        "strings": 240107
+      },
+      "no_remaining_supported_findings": true
+    },
+    "minimization": {
+      "status": "passed-for-declared-export-boundary",
+      "explicit_source_viewer_user_ID_mapping_excluded": true,
+      "observed_target_reward_labels_excluded": true,
+      "raw_KION_CSV_excluded": true,
+      "full_policy_token_title_mapping_excluded": true,
+      "original_scorer_archive_with_user_priors_excluded": true,
+      "private_export_provenance_expected_excluded": true,
+      "real_derived_histories_and_features_included": true,
+      "anonymity_established": false,
+      "derived_information_warning_present": true
+    },
+    "root_CBM_metadata_inspection": {
+      "status": "passed-limited-root-byte-scan",
+      "receipt": {
+        "path": "review/root-cbm-metadata-r1.json",
+        "bytes": 1717,
+        "sha256": "a02385637255737b9e6b2a0ec7972895b96ea6f26e71b45d9ebeeb80cc66234a"
+      },
+      "model_sha256": "b6ed4c6427129afcddec017e2f64d9c3fb59fb31fc300e5c9d074964a21ddd62",
+      "model_bytes": 163368,
+      "ascii_strings": 35,
+      "parseable_JSON_dicts": 2,
+      "credential_pattern_hits": 0,
+      "one_build_path_and_one_email_classified_as_upstream_vendor_provenance": true,
+      "owner_or_viewer_private_identifiers_found_in_inspected_metadata": false,
+      "native_deserialization": false,
+      "general_inferred_data_leakage_or_anonymity_proof": false
+    },
+    "exact_package_input_selection": {
+      "status": "passed-as-finite-expected-subset",
+      "member_count": 42,
+      "bytes": 119184582,
+      "root_mapping_commitment": "Root explicitly confirmed strict mapping of all42expected input members into selection; final delivery audit will independently bind actual archive members.",
+      "final_archive_or_actual_selection_reviewed_here": false,
+      "no_hash_cycle": "This receipt binds expected inputs and their manifests, not its own including archive manifest."
+    },
+    "legacy_teacher_export_boundary": {
+      "status": "documented",
+      "source_export_only": "One root-authorized trusted legacy teacher checkpoint load; never inherited by portable runtime.",
+      "portable_tensor_runtime_weights_only": true,
+      "source_legacy_checkpoint_included": false
+    }
+  },
+  "resolved_findings": [
+    {
+      "id": "external-acquisition-transport-metadata",
+      "priority": "P2",
+      "original_source_SHA256": "8d736f001df065246fe5b1b2c795e1e5bbe65d60acdb4865d6efb04014bef7f5",
+      "export_SHA256": "64c36b64e885a22d50cab897e4381d3cb5f14a2bbc2eedc2d51a08da685ad8eb",
+      "issue": "Original acquisition response_headers contained collector IP, cookies and request identifiers; values were not printed.",
+      "repair": "Removed all1321 receipt.response_headers objects; renamed original receipt digest fields and separately recomputed sanitized canonical digests; explicit derivative contract/provenance.",
+      "independent_recheck": "passed;12other JSONs remain byte-exact, no collector IP/cookie values or transport-header objects remain."
+    }
+  ],
+  "exclusions_and_limits": {
+    "dated_external_matrix_banks": {
+      "files": 149,
+      "total_bytes": 1479468680,
+      "included": false
+    },
+    "response_bodies_MovieLens_archive_and_aggregate_prior_raw_KION": "excluded",
+    "full_raw_pipeline_or_training_verified": false,
+    "fixture_inference_parity": "Separate root-owned numerical/extracted acceptance; export availability and source parity are not sufficient by themselves.",
+    "no_general_secret_absence_proof": true,
+    "real_derived_fixture_not_proven_anonymous": true
+  },
+  "pending_acceptance": [],
+  "scope": "Finite expected42member input allowlist, actual actor/RM export manifests and headers, compact external provenance and root byte-only CBM metadata classification. Final archive/selection binding is a separate delivery review.",
+  "review_note": {
+    "path": "research/DATA_AND_AVAILABILITY.md",
+    "bytes": 22164,
+    "sha256": "4525477c750847dd64e472d49a46a255909c2d01cfd719f49d006f3179f8167f"
+  },
+  "separate_delivery_requirements": [
+    "Compare actual selection/archive input subset against these exact42paths,bytes,hashes,admissions.",
+    "Exclude private export provenance, raw input payloads, source-user-ID/title-token mappings, original unsanitized acquisition and original optimizer/scorer archives.",
+    "Bind numerical parity and fresh-extraction claims only to their separate actual receipts; this privacy pass does not recompute them."
+  ]
+}

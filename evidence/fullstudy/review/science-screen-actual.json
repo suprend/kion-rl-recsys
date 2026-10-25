@@ -1,0 +1,63 @@
+{
+  "review_type":"independent actual three-arm screen evaluation metadata audit",
+  "status":"PASS_ACTUAL_MATCHED_SCREEN256_POINT_RESULTS",
+  "blocking_findings":[],
+  "path_base":"D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1",
+  "bindings":[
+    {"path":"policy/screen-scientific3-r1/evaluation.json","sha256":"3439f885120173eb2b2f93bcb092d4c03b43ccfd06a2b9d884ef7512bc1fe7c1","actual_hash_verified":true},
+    {"path":"operations/screen-scientific3-r1/receipt.json","sha256":"a33e3258bc92080702ee34a4c5db16acebcd5cc05c77d72485cc25ad59faa88d","actual_hash_verified":true},
+    {"path":"operations/screen-scientific3-r1/stage-completion.json","sha256":"94aac6b546bdaa6f06a944129e05ec9fadba40fcee095bae9be15b17c052c3e0","actual_hash_verified":true},
+    {"path":"request-screen-scientific3-r1.json","sha256":"8d33ecaf62fe028fe68c1677bb4e5c280ac222c0ce7bb2d6a3e1edae25b53e84","actual_hash_verified":true}
+  ],
+  "runtime_evidence":{
+    "operation":"screen-scientific3-r1",
+    "state":"succeeded",
+    "exit_code":0,
+    "cleanup_quiescent":true,
+    "elapsed_seconds":11.812000000034459,
+    "request_receipt_stage_hash_consistent":true,
+    "stage_result_equals_evaluation_json":true,
+    "new_optimizer_updates":0,
+    "new_supervised_updates":0,
+    "raw_feature_calls":0,
+    "provider_opened":false
+  },
+  "cohort_and_lineage_acceptance":{
+    "arms":["C","RL-completion","RL-residual"],
+    "matched_rows":256,
+    "metric_denominator":256,
+    "candidate_width":1024,
+    "known_targets":248,
+    "unknown_target_misses":8,
+    "offpool_known_misses":32,
+    "candidate_coverage_count":216,
+    "unknown_and_offpool_remain_denominator":true,
+    "no_target_injection":true,
+    "no_seen_filter":true,
+    "same_parent_hashes":"Seven output manifests exactly match their source-cache array SHA descriptors:row_index,user_id,target_token,pool_ids,candidate_raw_ids,history_tokens,candidate_sources. Same256 rows/order/targets/natural pool are shared by all arms.",
+    "input_json_hashes_freshly_verified":{"screen_cache":"5baf5dae822a7fb812acb6344ac08c0a0f94a2e4af7adf24b1c53c4584096a82","parent_reward":"a4bccf42b9f020e72a191c536df59dce5ac4e21b7e38aee4e21edccab5c05676","utility":"b3d4d9a000d953b207566d695066f6210155a345d683a58a1edf48e27765d709","completion_training":"cfdfc225be553305a3d6a8af7c5419227255b44827ccf7e3760a86b3e5dbf8bf","residual_training":"f275070714f6fd24c588bb3637b752697063cca8d422b01e7d827bc3d743cba6"},
+    "checkpoints":"C original9c42a75a...ea7; completion actual latest1000 SHA436d735d67fd861e6b925719b9e3597582ec405eed1b13ede3db3671e1ce37b7; residual actual latest1000 SHA29d20cd3d058b4ccac52d94f3ad946891f3839601fe935817f7c7b89f09b1ee3. Completed training receipts and common C ancestor match. Frozen evaluator source pins and checkpoint lineage gates freshly checked; checkpoint payloads not reopened by reviewer.",
+    "original_C_parity":"Native manifest reports scores_identical=true,top10_changed_rows0. Frozen evaluator requires exact C/cache scores before producing completed result.",
+    "legacy_parity":"Reviewer freshly hashed/read original screen-0-r1 and screen-1000-r1 and independently compared all16 declared legacy fields per arm:zero differences. The count is16,not17. Scientific C and completion reproduce accepted prior evidence exactly.",
+    "evaluation_protocol_binding":"Request input_hashes pins previously accepted evaluation protocol ee0e1e06f060f27e4dd149a8c26c02827f9b1c9fb67a57d688d84e166fddfd25 and prereg78c1568c...ba59c."
+  },
+  "accepted_point_metrics":{
+    "C":{"MAP10":0.12278955853174603,"NDCG10":0.15004984767079585,"Recall10":0.23828125,"KL_to_C":0.0,"top1_max_share":0.2890625,"top10_HHI":0.036282043457031246,"effective_catalog":27.56184340014636,"centered_completion_utility":4.2337883077322135e-18,"centered_residual_utility":1.4973424925087894e-18},
+    "RL-completion":{"MAP10":0.11365327380952381,"NDCG10":0.14102941437209787,"Recall10":0.23046875,"KL_to_C":0.026805727530462245,"top1_max_share":0.34765625,"top10_HHI":0.03772216796875,"effective_catalog":26.5096110284124,"centered_completion_utility":0.029113097340336444,"centered_residual_utility":0.0031273311190966194},
+    "RL-residual":{"MAP10":0.12147042410714287,"NDCG10":0.1497887150162604,"Recall10":0.2421875,"KL_to_C":0.003963547302160973,"top1_max_share":0.265625,"top10_HHI":0.03790802001953126,"effective_catalog":26.37964207797644,"centered_completion_utility":0.004751447404805972,"centered_residual_utility":0.004330666769454499}
+  },
+  "scientific_interpretation":{
+    "negative_relevance":"Both RL arms have lower point MAP10 than C on the reused256 screen. Residual delta is approximately-0.00131913; completion delta approximately-0.00913628. Residual NDCG is slightly lower while Recall is slightly higher than C,so no blanket relevance improvement claim is warranted.",
+    "utility":"On the same256 states/all1024 distributions,both registered utilities are evaluated for every arm with original-C supported baselines and unsupported effective advantage0. Residual has the larger residual-utility point value,completion the larger completion-utility point value. Values across different utility columns are not one interchangeable reward scale or observed watchtime.",
+    "concentration":"Residual reduces top1 maximum share from0.2890625 to0.265625 but increases top10 HHI from0.0362820 to0.0379080 and reduces effective catalog from27.5618 to26.3796. Its HHI also exceeds completion0.0377222. Therefore lower top1 peak does not establish generally improved diversity.",
+    "identification":"Residual KL0.00396355 is much smaller than completion KL0.02680573. Combined with prefit advantage RMS about0.5x completion,this is fixed beta with unequal policy movement; it does not isolate reward shape from movement magnitude and is not matched-KL superiority.",
+    "support_denominators":"Original completion conditional mean,numerator and C-centered effective proxy remain separate. Support mass differs across arms; do not subtract conditional means as though they share a fixed denominator,or substitute residual utility for original calibrated RM prediction."
+  },
+  "limits_and_next_acceptance":[
+    "This acceptance covers matched screen256 saved point results only. No full4096 result or full4096 reward evidence exists in this receipt.",
+    "No uncertainty intervals are present in these saved screen point results. Registered paired user-cluster bootstrap still needs actual source/execution/result validation before inferential claims.",
+    "Repeated development,one seed,observational calibrated RM and frozen item priors retain their original temporal/confounding limits. No online/causal personalization,retention or robust generalization claim follows.",
+    "No automatic model promotion or further fit is authorized. Preserve negative completion results and fixed latest1000 scientific endpoints.",
+    "Reviewer opened only source,small JSON and file metadata; no arrays/checkpoint/NPZ/model payloads,NumPy/Torch/ML imports or provider/GPU jobs were used."
+  ]
+}

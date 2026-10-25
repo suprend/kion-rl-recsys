@@ -1,0 +1,189 @@
+{
+  "contract": "kion-current-C1070-kl-seeds-H1-v1",
+  "state": "completed",
+  "mode": "evaluate_train512",
+  "rows": 512,
+  "cache_sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+  "reward_sha256": "e8047d12f8009bb422cc4956261a355dc10e05f42d73351ef76ccd5f7bc9ce05",
+  "utility_sha256": "e888cb47586b8ea2a4e5323a1051401e949f602ec36e43d36254684e80a320a5",
+  "results": {
+    "original-C": {
+      "step": 0,
+      "metrics": {
+        "completion": {
+          "rows": 512,
+          "map10": 0.09379495287698413,
+          "ndcg10": 0.13165185879706998,
+          "recall10": 0.255859375,
+          "expected_effective_reward": -9.999223942337016e-19,
+          "supported_conditional_raw_reward": 0.40992762613323724,
+          "supported_probability_denominator": 504.50395879028497,
+          "supported_top10_raw_reward": 0.41708707184770744,
+          "supported_top10_denominator": 5038,
+          "unsupported_mass": 0.014640705487724656,
+          "exact_KL": 0.0,
+          "entropy": 5.827725778544034,
+          "top1_max_share": 0.265625,
+          "top10_HHI": 0.035929183959960934,
+          "effective_catalog": 27.832527482794724,
+          "states_without_support": 0
+        },
+        "residual": {
+          "rows": 512,
+          "map10": 0.09379495287698413,
+          "ndcg10": 0.13165185879706998,
+          "recall10": 0.255859375,
+          "expected_effective_reward": 2.9958496553200535e-19,
+          "supported_conditional_raw_reward": -0.05558893253960867,
+          "supported_probability_denominator": 504.50395879028497,
+          "supported_top10_raw_reward": -0.028948631540910045,
+          "supported_top10_denominator": 5038,
+          "unsupported_mass": 0.014640705487724656,
+          "exact_KL": 0.0,
+          "entropy": 5.827725778544034,
+          "top1_max_share": 0.265625,
+          "top10_HHI": 0.035929183959960934,
+          "effective_catalog": 27.832527482794724,
+          "states_without_support": 0
+        }
+      }
+    },
+    "pilot2": {
+      "checkpoint": {
+        "name": "pilot2",
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot2/head-1000.pt",
+        "sha256": "c64dccd1a28d9177611d6c383d1b27adb0565355f7cd67d1e3502b39f91cc4d8",
+        "step": 1000,
+        "utility": "residual"
+      },
+      "contract": "kion-current-C1070-kl-seeds-H1-v1",
+      "lineage": {
+        "contract": "kion-current-C1070-kl-seeds-H1-v1",
+        "state": "running",
+        "implementation": "producer-shape-slot-v2",
+        "start_from": "original-C",
+        "beta": 0.16274030138555867,
+        "utility": "residual",
+        "seed": 20261024,
+        "sampler_seed": 20261024,
+        "fit_admission": {
+          "maximum_new_fits": 8,
+          "fit_ordinal": 2,
+          "reservation_id": "fit-02-pilot2",
+          "ledger_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/fit-ledger-02.json",
+          "ledger_sha256": "d37ac75b21971cba6eca002de2bbfed663050e895daa7e03923b20c836a2b613"
+        },
+        "updates": 1000,
+        "checkpoints": [
+          {
+            "step": 0,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot2/head-0.pt",
+            "sha256": "651fa053d76f884a83e6266ac84f1e9ec41ca1b3a3c542ccf25a64c6858ce5be"
+          },
+          {
+            "step": 250,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot2/head-250.pt",
+            "sha256": "b6a0b9d20ada926def49194412ee2e823c9a81c5d99e588662e79e8d2359a35f"
+          },
+          {
+            "step": 500,
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot2/head-500.pt",
+            "sha256": "86a9be0d4e935ce4aa10489089869c80595dc3095972d27487b1d35c41fcb08f"
+          }
+        ],
+        "batch_size": 16,
+        "learning_rate": 1e-05,
+        "optimizer": "Adam",
+        "weight_decay": 0,
+        "grad_clip": 1,
+        "precision": "cuda-fp16",
+        "frozen_encoder": true,
+        "supervised_updates": 0,
+        "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+        "cache_sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+        "utility_contract": "kion-derived-completion-utility-v1",
+        "utility_formula": "r_RM(s,i)-m_fit(i)",
+        "utility_sha256": "e888cb47586b8ea2a4e5323a1051401e949f602ec36e43d36254684e80a320a5",
+        "reward_sha256": "e8047d12f8009bb422cc4956261a355dc10e05f42d73351ef76ccd5f7bc9ce05",
+        "preregistration_sha256": "78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c",
+        "prefit_sha256": "f1431dd1092a5d7ef96e2ed89d4c2889067cd3558fa0f478f29eff73825c3d97",
+        "parity_proof": {
+          "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/repair-proof-r1.json",
+          "sha256": "dbdc6622bd620c15cbab77e2b12db4a241bb6e9577270fc0578b5da768d1e32b"
+        },
+        "immutable_policy_sha256": "da7baf199b685cb467edd7d5eedaada151798ec40bbc23e9edfaee8e36340dba",
+        "utility_source_sha256": "4cffa8d876c84723326f035b825cafc520c4ad561d98e3851bfe38a5d3e1cd0f",
+        "primary_contrast": "fixed-latest1000",
+        "update0_actor_reference_exact": true,
+        "update0_top10_exact": true,
+        "update0_max_abs_error": 0.0,
+        "loss_normalization": "one mean over logical real B16 occurrences; no bucket means",
+        "objective": "exact supported C-centered chosen utility minus beta KL; all1024 actions normalized",
+        "policy_source_sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5",
+        "checkpoint_steps": [
+          0,
+          250,
+          500,
+          1000
+        ],
+        "update0_cached_scores_exact": true,
+        "provider_opened": false,
+        "GPT_opened": false,
+        "RM_opened": false,
+        "temperature": 1.0
+      },
+      "metrics": {
+        "completion": {
+          "rows": 512,
+          "map10": 0.09753146701388889,
+          "ndcg10": 0.13455880348915428,
+          "recall10": 0.255859375,
+          "expected_effective_reward": 0.00964624653720008,
+          "supported_conditional_raw_reward": 0.4197012577581377,
+          "supported_probability_denominator": 504.9717996939985,
+          "supported_top10_raw_reward": 0.41957824102722774,
+          "supported_top10_denominator": 5050,
+          "unsupported_mass": 0.01372695372265921,
+          "exact_KL": 0.025626846105626697,
+          "entropy": 5.639521304019025,
+          "top1_max_share": 0.263671875,
+          "top10_HHI": 0.040718002319335936,
+          "effective_catalog": 24.55916162481099,
+          "states_without_support": 0
+        },
+        "residual": {
+          "rows": 512,
+          "map10": 0.09753146701388889,
+          "ndcg10": 0.13455880348915428,
+          "recall10": 0.255859375,
+          "expected_effective_reward": 0.0107222087506605,
+          "supported_conditional_raw_reward": -0.04471930282316122,
+          "supported_probability_denominator": 504.9717996939985,
+          "supported_top10_raw_reward": -0.019836828171031558,
+          "supported_top10_denominator": 5050,
+          "unsupported_mass": 0.01372695372265921,
+          "exact_KL": 0.025626846105626697,
+          "entropy": 5.639521304019025,
+          "top1_max_share": 0.263671875,
+          "top10_HHI": 0.040718002319335936,
+          "effective_catalog": 24.55916162481099,
+          "states_without_support": 0
+        }
+      }
+    }
+  },
+  "update0_actor_reference_exact": true,
+  "update0_cached_scores_exact": true,
+  "update0_top10_exact": true,
+  "update0_max_abs_error": 0.0,
+  "fallback_pairs": 4187,
+  "optimizer_created": false,
+  "learning_updates": 0,
+  "provider_opened": false,
+  "GPT_opened": false,
+  "RM_opened": false,
+  "final_test_reads": 0,
+  "raw_feature_calls": 0,
+  "KL_definition": "mean_all512 sum_all1024 pi*(log(pi)-log(C)), temperature=1",
+  "support_definition": "unchanged frozen RM support; unsupported advantage=0; all1024 normalized"
+}

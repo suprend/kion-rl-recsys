@@ -1,0 +1,1096 @@
+{
+  "contract": "C3-saved-output-I0-v1",
+  "state": "completed",
+  "seconds": 8.172000000020489,
+  "source": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/interpretation/analyze_saved.py",
+    "bytes": 26852,
+    "sha256": "aa6426e79c9c54ffbd24692bc80094b5ccb0423248d34fdcbb571930ab66303e"
+  },
+  "evaluation": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/evaluation/evaluation.json",
+    "bytes": 18013,
+    "sha256": "ebc6cb8b8eb682298723aba8f1d24a3250c286b20e91c70f51e159e7ba000e56"
+  },
+  "source_arrays": [
+    {
+      "name": "row_index",
+      "path": "row_index.npy",
+      "bytes": 32896,
+      "sha256": "aa15a1726431b92e43891b07b9f7c556488d3db928c75c7e68c512d767cac541",
+      "dtype": "int64",
+      "shape": [
+        4096
+      ]
+    },
+    {
+      "name": "user_id",
+      "path": "user_id.npy",
+      "bytes": 32896,
+      "sha256": "4d889c18767d3c1e3d9b082dba9c05378d8fb63a6cd55639e5d755f985ef5abd",
+      "dtype": "int64",
+      "shape": [
+        4096
+      ]
+    },
+    {
+      "name": "target_token",
+      "path": "target_token.npy",
+      "bytes": 32896,
+      "sha256": "1d242d750bfbaa79c532d82ecefe69670e4d99c637b9f96ba393ad313e6df2a1",
+      "dtype": "int64",
+      "shape": [
+        4096
+      ]
+    },
+    {
+      "name": "target_date",
+      "path": "target_date.npy",
+      "bytes": 32896,
+      "sha256": "12d87284d0278c48ec6d4137f07c7af18ae6fccfd84ef016ce4effc5b22afdd8",
+      "dtype": "int64",
+      "shape": [
+        4096
+      ]
+    },
+    {
+      "name": "target_item_id",
+      "path": "target_item_id.npy",
+      "bytes": 32896,
+      "sha256": "8cfae4476d6b4115d03fafab8edd4ae25b74cb3700af550d7956b39f3d64ea94",
+      "dtype": "int64",
+      "shape": [
+        4096
+      ]
+    },
+    {
+      "name": "known_target",
+      "path": "known_target.npy",
+      "bytes": 4224,
+      "sha256": "9ef9725342a3285b33c6365172a3c7fdc355e49e69c608de5723deefb90374be",
+      "dtype": "bool",
+      "shape": [
+        4096
+      ]
+    },
+    {
+      "name": "candidate_coverage",
+      "path": "candidate_coverage.npy",
+      "bytes": 4224,
+      "sha256": "5653f706a5c215aae091078a23cf1dfeea000aeb9ebdd5419e42b09238a1f87e",
+      "dtype": "bool",
+      "shape": [
+        4096
+      ]
+    },
+    {
+      "name": "catalog_raw_ids",
+      "path": "catalog_raw_ids.npy",
+      "bytes": 123448,
+      "sha256": "8e8afc6d960236c0e53a3f041ecccca96adc2624f9956014b7b41095eb1959a7",
+      "dtype": "int64",
+      "shape": [
+        15415
+      ]
+    },
+    {
+      "name": "pool_ids",
+      "path": "pool_ids.npy",
+      "bytes": 16777344,
+      "sha256": "d1ff17db9a35dee3bcd7a8a95e8a9a4fd817dbc4762d531de989fae769a76093",
+      "dtype": "int32",
+      "shape": [
+        4096,
+        1024
+      ]
+    },
+    {
+      "name": "A_scores",
+      "path": "A_scores.npy",
+      "bytes": 16777344,
+      "sha256": "2077677f354a9e6e0461784daee6a830e770a9521b79123d88818e1328b9e6a0",
+      "dtype": "float32",
+      "shape": [
+        4096,
+        1024
+      ]
+    },
+    {
+      "name": "A_top10",
+      "path": "A_top10.npy",
+      "bytes": 163968,
+      "sha256": "8b957b0bd10683f20ad1d4168f261a362d597fdd748c0a68f4931e11cb747695",
+      "dtype": "int32",
+      "shape": [
+        4096,
+        10
+      ]
+    },
+    {
+      "name": "B_scores",
+      "path": "B_scores.npy",
+      "bytes": 16777344,
+      "sha256": "ceac52b44ac1c13cd923fd62f2dd484dff41ac9d7db4f0fa518904c311b24f3e",
+      "dtype": "float32",
+      "shape": [
+        4096,
+        1024
+      ]
+    },
+    {
+      "name": "B_top10",
+      "path": "B_top10.npy",
+      "bytes": 163968,
+      "sha256": "6b33ed60ccc3db28aa52336f412b4e26c93c43526f706d3f2b4e67063becff5f",
+      "dtype": "int32",
+      "shape": [
+        4096,
+        10
+      ]
+    },
+    {
+      "name": "C_scores",
+      "path": "C_scores.npy",
+      "bytes": 16777344,
+      "sha256": "7fc7893c0f08afd72fc0850088109d107d4cda5f6dbdd7abfb59de66337c1efc",
+      "dtype": "float32",
+      "shape": [
+        4096,
+        1024
+      ]
+    },
+    {
+      "name": "C_top10",
+      "path": "C_top10.npy",
+      "bytes": 163968,
+      "sha256": "c39a6e96dc853a41a17b232bf950f7adf6ffd8b1ccdfe2ed616e78922db1f049",
+      "dtype": "int32",
+      "shape": [
+        4096,
+        10
+      ]
+    },
+    {
+      "name": "GPT_scores",
+      "path": "GPT_scores.npy",
+      "bytes": 16777344,
+      "sha256": "3b88c9d460bfa489145c42b0a43a20149f18655a93c6f66142899eb8f1f4abfb",
+      "dtype": "float32",
+      "shape": [
+        4096,
+        1024
+      ]
+    },
+    {
+      "name": "GPT_top10",
+      "path": "GPT_top10.npy",
+      "bytes": 163968,
+      "sha256": "3eb3eb27322864198c3daa04b57dd551814dc4099234c67b06d5fc4e0bdb7f96",
+      "dtype": "int32",
+      "shape": [
+        4096,
+        10
+      ]
+    },
+    {
+      "name": "RRF_scores",
+      "path": "RRF_scores.npy",
+      "bytes": 16777344,
+      "sha256": "a7ac4ae2ee54b5599dd08dde3dd083cd4f8889b30d849fad45986d6a9f77f98f",
+      "dtype": "float32",
+      "shape": [
+        4096,
+        1024
+      ]
+    },
+    {
+      "name": "RRF_top10",
+      "path": "RRF_top10.npy",
+      "bytes": 163968,
+      "sha256": "7b4bf53ebfb46b05afbb4d01abcf71ac4bd089acf8160aa3e7ef00581a369eda",
+      "dtype": "int32",
+      "shape": [
+        4096,
+        10
+      ]
+    }
+  ],
+  "lineage": {
+    "frozen_teacher": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft-recovery/run-recovery-r1/worker/model/latest.pt",
+      "sha256": "5e7101857c2dbe100fb4e1587c0369abc95c108303ed149123ee183f62aeac26",
+      "config_path": "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft-recovery/run-recovery-r1/worker/model/config.json",
+      "config_sha256": "e3b4b1730895fceb1b7d4ea6357aea783c046f5e87cacd7d4ff933cf94d45d45"
+    },
+    "feature_schema_sha256": "71d90eee774d30db804d1ab32c4d82995d1320baf26aaf36443a6498fd85fc5d",
+    "head_receipts": {
+      "A": {
+        "contract": "kion-three-head-262k-head-v1",
+        "bank_manifest_sha256": "7eb271a5c5c44f33c2b22dfe26ce120bbd7016aeeba67b6fef817ad3e183ff5a",
+        "teacher": {
+          "path": "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft-recovery/run-recovery-r1/worker/model/latest.pt",
+          "sha256": "5e7101857c2dbe100fb4e1587c0369abc95c108303ed149123ee183f62aeac26",
+          "config_path": "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft-recovery/run-recovery-r1/worker/model/config.json",
+          "config_sha256": "e3b4b1730895fceb1b7d4ea6357aea783c046f5e87cacd7d4ff933cf94d45d45"
+        },
+        "feature_schema_sha256": "71d90eee774d30db804d1ab32c4d82995d1320baf26aaf36443a6498fd85fc5d",
+        "source_columns": [
+          "current_detached_gpt_logit",
+          "log1p_strict7d_count"
+        ],
+        "epochs_requested": 3,
+        "epochs_completed": 3,
+        "steps_per_head": 6144,
+        "head_steps": {
+          "A": 6144,
+          "B": 6144,
+          "C": 6144
+        },
+        "rows_per_epoch": 262144,
+        "batch_size": 128,
+        "seed": 20261024,
+        "shuffle": "python-random(seed+zero-based-epoch)",
+        "raw_gather": "ascending-physical-rows-then-inverse-permutation-close-mmap-per-batch-v1",
+        "common_batches": true,
+        "trained_from": "fresh-common-init-final-zero",
+        "status": "completed",
+        "epoch_records": [
+          {
+            "epoch": 1,
+            "shuffle_sha256": "bca13a145e81fc263b169d7b172ddf22b2c1dac958cc911b372b82bddd2c2b30",
+            "rows": 262144,
+            "updates_per_head": 2048,
+            "mean_ce": {
+              "A": 2.710691280197352,
+              "B": 2.6523657351499423,
+              "C": 2.6385504874633625
+            }
+          },
+          {
+            "epoch": 2,
+            "shuffle_sha256": "fa739e7077f1d98023ce4a22b944c54d96d6ba83f7afc5f8da6177675559604c",
+            "rows": 262144,
+            "updates_per_head": 2048,
+            "mean_ce": {
+              "A": 2.6268119632732123,
+              "B": 2.5013171532191336,
+              "C": 2.480870738858357
+            }
+          },
+          {
+            "epoch": 3,
+            "shuffle_sha256": "68d797b88a56d850c99fc06687fdfd02c20b721d8ea71d4ef85f6d63eb7e6009",
+            "rows": 262144,
+            "updates_per_head": 2048,
+            "mean_ce": {
+              "A": 2.583985698991455,
+              "B": 2.462798632797785,
+              "C": 2.435092815780081
+            }
+          }
+        ],
+        "last_batch": {
+          "epoch": 3,
+          "batch": 2048
+        },
+        "last_update": {
+          "A": 6144,
+          "B": 6144,
+          "C": 6144
+        },
+        "elapsed_seconds": 1392.468011100078
+      },
+      "B": {
+        "contract": "kion-three-head-262k-head-v1",
+        "bank_manifest_sha256": "7eb271a5c5c44f33c2b22dfe26ce120bbd7016aeeba67b6fef817ad3e183ff5a",
+        "teacher": {
+          "path": "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft-recovery/run-recovery-r1/worker/model/latest.pt",
+          "sha256": "5e7101857c2dbe100fb4e1587c0369abc95c108303ed149123ee183f62aeac26",
+          "config_path": "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft-recovery/run-recovery-r1/worker/model/config.json",
+          "config_sha256": "e3b4b1730895fceb1b7d4ea6357aea783c046f5e87cacd7d4ff933cf94d45d45"
+        },
+        "feature_schema_sha256": "71d90eee774d30db804d1ab32c4d82995d1320baf26aaf36443a6498fd85fc5d",
+        "source_columns": [
+          "current_detached_gpt_logit",
+          "log1p_strict7d_count"
+        ],
+        "epochs_requested": 3,
+        "epochs_completed": 3,
+        "steps_per_head": 6144,
+        "head_steps": {
+          "A": 6144,
+          "B": 6144,
+          "C": 6144
+        },
+        "rows_per_epoch": 262144,
+        "batch_size": 128,
+        "seed": 20261024,
+        "shuffle": "python-random(seed+zero-based-epoch)",
+        "raw_gather": "ascending-physical-rows-then-inverse-permutation-close-mmap-per-batch-v1",
+        "common_batches": true,
+        "trained_from": "fresh-common-init-final-zero",
+        "status": "completed",
+        "epoch_records": [
+          {
+            "epoch": 1,
+            "shuffle_sha256": "bca13a145e81fc263b169d7b172ddf22b2c1dac958cc911b372b82bddd2c2b30",
+            "rows": 262144,
+            "updates_per_head": 2048,
+            "mean_ce": {
+              "A": 2.710691280197352,
+              "B": 2.6523657351499423,
+              "C": 2.6385504874633625
+            }
+          },
+          {
+            "epoch": 2,
+            "shuffle_sha256": "fa739e7077f1d98023ce4a22b944c54d96d6ba83f7afc5f8da6177675559604c",
+            "rows": 262144,
+            "updates_per_head": 2048,
+            "mean_ce": {
+              "A": 2.6268119632732123,
+              "B": 2.5013171532191336,
+              "C": 2.480870738858357
+            }
+          },
+          {
+            "epoch": 3,
+            "shuffle_sha256": "68d797b88a56d850c99fc06687fdfd02c20b721d8ea71d4ef85f6d63eb7e6009",
+            "rows": 262144,
+            "updates_per_head": 2048,
+            "mean_ce": {
+              "A": 2.583985698991455,
+              "B": 2.462798632797785,
+              "C": 2.435092815780081
+            }
+          }
+        ],
+        "last_batch": {
+          "epoch": 3,
+          "batch": 2048
+        },
+        "last_update": {
+          "A": 6144,
+          "B": 6144,
+          "C": 6144
+        },
+        "elapsed_seconds": 1392.468011100078
+      },
+      "C": {
+        "contract": "kion-three-head-262k-head-v1",
+        "bank_manifest_sha256": "7eb271a5c5c44f33c2b22dfe26ce120bbd7016aeeba67b6fef817ad3e183ff5a",
+        "teacher": {
+          "path": "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft-recovery/run-recovery-r1/worker/model/latest.pt",
+          "sha256": "5e7101857c2dbe100fb4e1587c0369abc95c108303ed149123ee183f62aeac26",
+          "config_path": "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft-recovery/run-recovery-r1/worker/model/config.json",
+          "config_sha256": "e3b4b1730895fceb1b7d4ea6357aea783c046f5e87cacd7d4ff933cf94d45d45"
+        },
+        "feature_schema_sha256": "71d90eee774d30db804d1ab32c4d82995d1320baf26aaf36443a6498fd85fc5d",
+        "source_columns": [
+          "current_detached_gpt_logit",
+          "log1p_strict7d_count"
+        ],
+        "epochs_requested": 3,
+        "epochs_completed": 3,
+        "steps_per_head": 6144,
+        "head_steps": {
+          "A": 6144,
+          "B": 6144,
+          "C": 6144
+        },
+        "rows_per_epoch": 262144,
+        "batch_size": 128,
+        "seed": 20261024,
+        "shuffle": "python-random(seed+zero-based-epoch)",
+        "raw_gather": "ascending-physical-rows-then-inverse-permutation-close-mmap-per-batch-v1",
+        "common_batches": true,
+        "trained_from": "fresh-common-init-final-zero",
+        "status": "completed",
+        "epoch_records": [
+          {
+            "epoch": 1,
+            "shuffle_sha256": "bca13a145e81fc263b169d7b172ddf22b2c1dac958cc911b372b82bddd2c2b30",
+            "rows": 262144,
+            "updates_per_head": 2048,
+            "mean_ce": {
+              "A": 2.710691280197352,
+              "B": 2.6523657351499423,
+              "C": 2.6385504874633625
+            }
+          },
+          {
+            "epoch": 2,
+            "shuffle_sha256": "fa739e7077f1d98023ce4a22b944c54d96d6ba83f7afc5f8da6177675559604c",
+            "rows": 262144,
+            "updates_per_head": 2048,
+            "mean_ce": {
+              "A": 2.6268119632732123,
+              "B": 2.5013171532191336,
+              "C": 2.480870738858357
+            }
+          },
+          {
+            "epoch": 3,
+            "shuffle_sha256": "68d797b88a56d850c99fc06687fdfd02c20b721d8ea71d4ef85f6d63eb7e6009",
+            "rows": 262144,
+            "updates_per_head": 2048,
+            "mean_ce": {
+              "A": 2.583985698991455,
+              "B": 2.462798632797785,
+              "C": 2.435092815780081
+            }
+          }
+        ],
+        "last_batch": {
+          "epoch": 3,
+          "batch": 2048
+        },
+        "last_update": {
+          "A": 6144,
+          "B": 6144,
+          "C": 6144
+        },
+        "elapsed_seconds": 1392.468011100078
+      }
+    },
+    "selection": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/validation-selection.json",
+      "sha256": "660100ad03709ed2b1ddb2a62c83c3b9e51de3fc22cabdadfde0735467aa3707"
+    },
+    "candidate_contract": {
+      "contract": "kion-live-gpt-strict-origin-mixed1024-v1",
+      "source_feature_names": [
+        "owner_gpt",
+        "owner_pop7d",
+        "owner_knn",
+        "nominated_current2048_gpt",
+        "nominated_current2048_pop7d",
+        "nominated_current2048_knn",
+        "capped_rank_over2049_gpt",
+        "capped_rank_over2049_pop7d",
+        "capped_rank_over2049_knn",
+        "missing_rank_gpt",
+        "missing_rank_pop7d",
+        "missing_rank_knn",
+        "current_detached_gpt_logit",
+        "log1p_strict7d_count"
+      ],
+      "natural_quotas": [
+        512,
+        256,
+        256
+      ],
+      "new_unique_quotas": true,
+      "current_detached_gpt": true,
+      "train_positive_column": 0,
+      "train_negatives": 31,
+      "all_training_rows_retained": true,
+      "same_user_same_origin_positives_excluded": true,
+      "validation_target_injection": false,
+      "unknown_validation_targets_are_misses": true,
+      "cutoff": "event_date < query_origin; fixed validation origin",
+      "validation_origin": 738011,
+      "train_origins": 148,
+      "seed": 20261024,
+      "cache_key": "c9a71127d4d4433f8e0812fdc0398152dd1945d731bc8a2faa99b94f8a137d59",
+      "cache_root": "E:/codex-kion-full-joint-e1-20261024-r1/cache",
+      "cache_ram_origins": 2,
+      "max_cache_disk_bytes": 5368709120,
+      "minimum_disk_free_bytes": 16106127360,
+      "validation_graph": {
+        "root": "D:/tlab-recsys-2026/artifacts/task2-kion/three-head-pilot-20261024-r1/cache/validation-graph",
+        "origin": 738011,
+        "train_cache_read_only": true,
+        "validation_cache_read_only": true,
+        "rebuild_forbidden": true
+      }
+    }
+  },
+  "rows": 4096,
+  "unique_users": 4035,
+  "candidate_width": 1024,
+  "target_outcome_counts": {
+    "covered": 3358,
+    "unknown": 122,
+    "offpool": 616
+  },
+  "tie_policy": "score descending, raw item ID ascending",
+  "full_denominator": 4096,
+  "arms": {
+    "A": {
+      "map10": 0.08289630223834325,
+      "recall10": 0.188720703125,
+      "ndcg10": 0.10758920422003158,
+      "query_weighted": {
+        "top1_max_item_share": 0.295166015625,
+        "top1_most_frequent_token": 9064,
+        "top10_hhi": 0.05337201118469238,
+        "effective_catalog_items": 18.736412171906494,
+        "unique_top10_items": 304,
+        "catalog_coverage": 0.019721050924424263,
+        "within_list_duplicate_fraction": 0.0,
+        "meaning": "recommendation exposure, not actual impressions or watches"
+      },
+      "equal_user_weighted": {
+        "top1_max_item_share": 0.29318463444857495,
+        "top1_most_frequent_token": 9064,
+        "top10_hhi": 0.053507978668681254,
+        "effective_catalog_items": 18.68880164941289,
+        "unique_top10_items": 304,
+        "catalog_coverage": 0.019721050924424263,
+        "within_list_duplicate_fraction": 0.0,
+        "meaning": "recommendation exposure, not actual impressions or watches"
+      },
+      "content_type": {
+        "state": "available",
+        "recommendation_slots": {
+          "series": 16365,
+          "film": 24595
+        },
+        "fractions": {
+          "series": 0.3995361328125,
+          "film": 0.6004638671875
+        },
+        "valid_type_count_per_list": {
+          "count": 4096,
+          "mean": 1.933837890625,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 2.0,
+          "p95": 2.0,
+          "max": 2.0
+        },
+        "temporal_assumption": "static items snapshot assumed valid at origin; dates not established"
+      }
+    },
+    "B": {
+      "map10": 0.08645843021453373,
+      "recall10": 0.189208984375,
+      "ndcg10": 0.1105003481703379,
+      "query_weighted": {
+        "top1_max_item_share": 0.296630859375,
+        "top1_most_frequent_token": 9064,
+        "top10_hhi": 0.0437239670753479,
+        "effective_catalog_items": 22.870751829922863,
+        "unique_top10_items": 776,
+        "catalog_coverage": 0.05034057735971456,
+        "within_list_duplicate_fraction": 0.0,
+        "meaning": "recommendation exposure, not actual impressions or watches"
+      },
+      "equal_user_weighted": {
+        "top1_max_item_share": 0.295910780669145,
+        "top1_most_frequent_token": 9064,
+        "top10_hhi": 0.04387931252101731,
+        "effective_catalog_items": 22.789782759723504,
+        "unique_top10_items": 776,
+        "catalog_coverage": 0.05034057735971456,
+        "within_list_duplicate_fraction": 0.0,
+        "meaning": "recommendation exposure, not actual impressions or watches"
+      },
+      "content_type": {
+        "state": "available",
+        "recommendation_slots": {
+          "series": 16016,
+          "film": 24944
+        },
+        "fractions": {
+          "series": 0.391015625,
+          "film": 0.608984375
+        },
+        "valid_type_count_per_list": {
+          "count": 4096,
+          "mean": 1.931884765625,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 2.0,
+          "p95": 2.0,
+          "max": 2.0
+        },
+        "temporal_assumption": "static items snapshot assumed valid at origin; dates not established"
+      }
+    },
+    "C": {
+      "map10": 0.09686366489955357,
+      "recall10": 0.21240234375,
+      "ndcg10": 0.1239494230603261,
+      "query_weighted": {
+        "top1_max_item_share": 0.28515625,
+        "top1_most_frequent_token": 9064,
+        "top10_hhi": 0.03594276309013367,
+        "effective_catalog_items": 27.822012389317425,
+        "unique_top10_items": 831,
+        "catalog_coverage": 0.053908530651962376,
+        "within_list_duplicate_fraction": 0.0,
+        "meaning": "recommendation exposure, not actual impressions or watches"
+      },
+      "equal_user_weighted": {
+        "top1_max_item_share": 0.28376703841387857,
+        "top1_most_frequent_token": 9064,
+        "top10_hhi": 0.03607297116771005,
+        "effective_catalog_items": 27.721586762310523,
+        "unique_top10_items": 831,
+        "catalog_coverage": 0.053908530651962376,
+        "within_list_duplicate_fraction": 0.0,
+        "meaning": "recommendation exposure, not actual impressions or watches"
+      },
+      "content_type": {
+        "state": "available",
+        "recommendation_slots": {
+          "series": 16046,
+          "film": 24914
+        },
+        "fractions": {
+          "series": 0.391748046875,
+          "film": 0.608251953125
+        },
+        "valid_type_count_per_list": {
+          "count": 4096,
+          "mean": 1.9365234375,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 2.0,
+          "p95": 2.0,
+          "max": 2.0
+        },
+        "temporal_assumption": "static items snapshot assumed valid at origin; dates not established"
+      }
+    },
+    "GPT": {
+      "map10": 0.07231532505580357,
+      "recall10": 0.156982421875,
+      "ndcg10": 0.09230538711428132,
+      "query_weighted": {
+        "top1_max_item_share": 0.240234375,
+        "top1_most_frequent_token": 14267,
+        "top10_hhi": 0.04832253575325012,
+        "effective_catalog_items": 20.694278237100608,
+        "unique_top10_items": 374,
+        "catalog_coverage": 0.02426208238728511,
+        "within_list_duplicate_fraction": 0.0,
+        "meaning": "recommendation exposure, not actual impressions or watches"
+      },
+      "equal_user_weighted": {
+        "top1_max_item_share": 0.24213135068153654,
+        "top1_most_frequent_token": 14267,
+        "top10_hhi": 0.0484973434124275,
+        "effective_catalog_items": 20.61968614437031,
+        "unique_top10_items": 374,
+        "catalog_coverage": 0.02426208238728511,
+        "within_list_duplicate_fraction": 0.0,
+        "meaning": "recommendation exposure, not actual impressions or watches"
+      },
+      "content_type": {
+        "state": "available",
+        "recommendation_slots": {
+          "series": 14253,
+          "film": 26707
+        },
+        "fractions": {
+          "series": 0.3479736328125,
+          "film": 0.6520263671875
+        },
+        "valid_type_count_per_list": {
+          "count": 4096,
+          "mean": 1.89697265625,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 2.0,
+          "p95": 2.0,
+          "max": 2.0
+        },
+        "temporal_assumption": "static items snapshot assumed valid at origin; dates not established"
+      }
+    },
+    "RRF": {
+      "map10": 0.07931005084325397,
+      "recall10": 0.170654296875,
+      "ndcg10": 0.10078366338990642,
+      "query_weighted": {
+        "top1_max_item_share": 0.326416015625,
+        "top1_most_frequent_token": 9713,
+        "top10_hhi": 0.06616389393806457,
+        "effective_catalog_items": 15.113983480719726,
+        "unique_top10_items": 281,
+        "catalog_coverage": 0.01822899772948427,
+        "within_list_duplicate_fraction": 0.0,
+        "meaning": "recommendation exposure, not actual impressions or watches"
+      },
+      "equal_user_weighted": {
+        "top1_max_item_share": 0.32812887236679056,
+        "top1_most_frequent_token": 9713,
+        "top10_hhi": 0.06634028090638143,
+        "effective_catalog_items": 15.07379809577815,
+        "unique_top10_items": 281,
+        "catalog_coverage": 0.01822899772948427,
+        "within_list_duplicate_fraction": 0.0,
+        "meaning": "recommendation exposure, not actual impressions or watches"
+      },
+      "content_type": {
+        "state": "available",
+        "recommendation_slots": {
+          "series": 19544,
+          "film": 21416
+        },
+        "fractions": {
+          "series": 0.4771484375,
+          "film": 0.5228515625
+        },
+        "valid_type_count_per_list": {
+          "count": 4096,
+          "mean": 1.9482421875,
+          "min": 1.0,
+          "p05": 1.0,
+          "median": 2.0,
+          "p95": 2.0,
+          "max": 2.0
+        },
+        "temporal_assumption": "static items snapshot assumed valid at origin; dates not established"
+      }
+    }
+  },
+  "comparisons": {
+    "C-B": {
+      "denominator": 4096,
+      "gains": 394,
+      "losses": 142,
+      "ties": 3560,
+      "mean_rr10_difference": 0.01040523468501984,
+      "target_rank_change_covered": {
+        "count": 3358,
+        "mean": 3.4821322215604527,
+        "min": -577.0,
+        "p05": -63.0,
+        "median": 2.0,
+        "p95": 71.0,
+        "max": 542.0
+      },
+      "mean_absolute_all_candidate_rank_displacement": {
+        "count": 4096,
+        "mean": 40.26379442214966,
+        "min": 22.65625,
+        "p05": 28.98046875,
+        "median": 38.134765625,
+        "p95": 60.345703125,
+        "max": 91.7734375
+      },
+      "top10_overlap_fraction": {
+        "count": 4096,
+        "mean": 0.75751953125,
+        "min": 0.1,
+        "p05": 0.5,
+        "median": 0.8,
+        "p95": 1.0,
+        "max": 1.0
+      }
+    },
+    "C-GPT": {
+      "denominator": 4096,
+      "gains": 532,
+      "losses": 201,
+      "ties": 3363,
+      "mean_rr10_difference": 0.02454833984375,
+      "target_rank_change_covered": {
+        "count": 3358,
+        "mean": 95.63490172721858,
+        "min": -833.0,
+        "p05": -286.0,
+        "median": 6.0,
+        "p95": 740.0,
+        "max": 954.0
+      },
+      "mean_absolute_all_candidate_rank_displacement": {
+        "count": 4096,
+        "mean": 242.0098819732666,
+        "min": 100.537109375,
+        "p05": 170.564453125,
+        "median": 246.015625,
+        "p95": 301.16015625,
+        "max": 354.12890625
+      },
+      "top10_overlap_fraction": {
+        "count": 4096,
+        "mean": 0.440673828125,
+        "min": 0.0,
+        "p05": 0.1,
+        "median": 0.5,
+        "p95": 0.7,
+        "max": 1.0
+      }
+    }
+  },
+  "saved_residual_C_minus_GPT": {
+    "scope": "difference of saved float scores, not raw feature attribution",
+    "candidate_count": 4194304,
+    "mean": 5.511006582751392,
+    "std": 2.4430071881009052,
+    "min": -7.5625,
+    "max": 17.046875,
+    "per_query_means": {
+      "count": 4096,
+      "mean": 5.511006582751392,
+      "min": 2.150583839043975,
+      "p05": 3.4678990617394447,
+      "median": 5.544360995292664,
+      "p95": 7.5527691836468875,
+      "max": 9.258668899536133
+    }
+  },
+  "optional_sources": {
+    "items_csv": {
+      "path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "bytes": 31836561,
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e"
+    }
+  },
+  "unavailable": {
+    "repeat_in_observed_preorigin_history": "No validated row-H63/rawID/date join supplied",
+    "novelty_and_head_tail": "No pinned train-only/pre-origin counts; missing is not zero",
+    "runtime": "No trustworthy catalog runtime supplied; target duration/watchpct not used",
+    "RM_reward": "Saved score audit does not serve RM; current compatible RM handled separately",
+    "policy_KL_entropy": "No policy normalization/temperature binding requested; no softmax guessed",
+    "raw_feature_or_neuron_attribution": "I0 contains only saved scores; no model/provider access"
+  },
+  "old_RL_own_cohort_audit": [
+    {
+      "run": "run-rl-r1",
+      "screening": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/rl/run-rl-r1/worker/training/screening.json",
+        "bytes": 5133,
+        "sha256": "b70862c485273695b2e9e98eb7c86b04d9ec3d9b9c665f259219c036e5f01c56"
+      },
+      "updates": 1000,
+      "selected_update": 0,
+      "update0": {
+        "policy": {
+          "examples": 512,
+          "known_targets": 502,
+          "unknown_misses": 10,
+          "map@10": 0.08841300843253969,
+          "recall@10": 0.19140625,
+          "ndcg@10": 0.11274110407237704
+        },
+        "reference": {
+          "examples": 512,
+          "known_targets": 502,
+          "unknown_misses": 10,
+          "map@10": 0.08841300843253969,
+          "recall@10": 0.19140625,
+          "ndcg@10": 0.11274110407237704
+        },
+        "mean_exact_kl": 1.2825596154897312e-05,
+        "cohort_sha256": "db3cbbecc5ea9186849625991e48482079b1c7127bb6865f5a6813fc45963bbd",
+        "protocol": "frozen unforced retrieval128; no seen mask; unknown targets miss",
+        "heldout_RM_reward": {
+          "state": "unavailable",
+          "reason": "native_Aug2_cap_cannot_query_Aug9; no date clamping"
+        }
+      },
+      "trained_latest1000": {
+        "policy": {
+          "examples": 512,
+          "known_targets": 502,
+          "unknown_misses": 10,
+          "map@10": 0.074853515625,
+          "recall@10": 0.1875,
+          "ndcg@10": 0.10111378700086299
+        },
+        "reference": {
+          "examples": 512,
+          "known_targets": 502,
+          "unknown_misses": 10,
+          "map@10": 0.08841300843253969,
+          "recall@10": 0.19140625,
+          "ndcg@10": 0.11274110407237704
+        },
+        "mean_exact_kl": 0.1373847110371571,
+        "cohort_sha256": "db3cbbecc5ea9186849625991e48482079b1c7127bb6865f5a6813fc45963bbd",
+        "protocol": "frozen unforced retrieval128; no seen mask; unknown targets miss",
+        "heldout_RM_reward": {
+          "state": "unavailable",
+          "reason": "native_Aug2_cap_cannot_query_Aug9; no date clamping"
+        }
+      },
+      "selected": {
+        "policy": {
+          "examples": 512,
+          "known_targets": 502,
+          "unknown_misses": 10,
+          "map@10": 0.08841300843253969,
+          "recall@10": 0.19140625,
+          "ndcg@10": 0.11274110407237704
+        },
+        "reference": {
+          "examples": 512,
+          "known_targets": 502,
+          "unknown_misses": 10,
+          "map@10": 0.08841300843253969,
+          "recall@10": 0.19140625,
+          "ndcg@10": 0.11274110407237704
+        },
+        "mean_exact_kl": 1.2825596154897312e-05,
+        "cohort_sha256": "db3cbbecc5ea9186849625991e48482079b1c7127bb6865f5a6813fc45963bbd",
+        "protocol": "frozen unforced retrieval128; no seen mask; unknown targets miss",
+        "heldout_RM_reward": {
+          "state": "unavailable",
+          "reason": "native_Aug2_cap_cannot_query_Aug9; no date clamping"
+        }
+      },
+      "latest_minus_update0_ndcg10": -0.011627317071514057,
+      "selected_is_update0_by_receipt": true,
+      "selected_behavior_identity": "implied by selection receipt; no new tensor/model replay",
+      "saved_policy_top10_score_file_inventory": [],
+      "additional_behavior_metrics": {
+        "state": "unavailable",
+        "reason": "No complete matched update0/latest1000 policy predictions saved; screen-cache reference/base are not trained-policy outputs."
+      },
+      "reward_hacking": "not established; heldout reward/proxy diagnostic unavailable",
+      "comparison_scope": "old frozen unforced128 own512 screen; not current C natural1024"
+    },
+    {
+      "run": "run-rl-recovered-r1",
+      "screening": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/rl/run-rl-recovered-r1/worker/training/screening.json",
+        "bytes": 5142,
+        "sha256": "2254e59286d24d16b61db6f2aaba36ff2f95025389e3fcca5d5c97481ec12f8f"
+      },
+      "updates": 1000,
+      "selected_update": 0,
+      "update0": {
+        "policy": {
+          "examples": 512,
+          "known_targets": 502,
+          "unknown_misses": 10,
+          "map@10": 0.08073614211309524,
+          "recall@10": 0.177734375,
+          "ndcg@10": 0.10366637810535309
+        },
+        "reference": {
+          "examples": 512,
+          "known_targets": 502,
+          "unknown_misses": 10,
+          "map@10": 0.0807826450892857,
+          "recall@10": 0.177734375,
+          "ndcg@10": 0.10371105360100678
+        },
+        "mean_exact_kl": 1.050928544188423e-05,
+        "cohort_sha256": "db3cbbecc5ea9186849625991e48482079b1c7127bb6865f5a6813fc45963bbd",
+        "protocol": "frozen unforced retrieval128; no seen mask; unknown targets miss",
+        "heldout_RM_reward": {
+          "state": "unavailable",
+          "reason": "native_Aug2_cap_cannot_query_Aug9; no date clamping"
+        }
+      },
+      "trained_latest1000": {
+        "policy": {
+          "examples": 512,
+          "known_targets": 502,
+          "unknown_misses": 10,
+          "map@10": 0.07345455109126985,
+          "recall@10": 0.1640625,
+          "ndcg@10": 0.09469310767212896
+        },
+        "reference": {
+          "examples": 512,
+          "known_targets": 502,
+          "unknown_misses": 10,
+          "map@10": 0.0807826450892857,
+          "recall@10": 0.177734375,
+          "ndcg@10": 0.10371105360100678
+        },
+        "mean_exact_kl": 0.12404654029523954,
+        "cohort_sha256": "db3cbbecc5ea9186849625991e48482079b1c7127bb6865f5a6813fc45963bbd",
+        "protocol": "frozen unforced retrieval128; no seen mask; unknown targets miss",
+        "heldout_RM_reward": {
+          "state": "unavailable",
+          "reason": "native_Aug2_cap_cannot_query_Aug9; no date clamping"
+        }
+      },
+      "selected": {
+        "policy": {
+          "examples": 512,
+          "known_targets": 502,
+          "unknown_misses": 10,
+          "map@10": 0.08073614211309524,
+          "recall@10": 0.177734375,
+          "ndcg@10": 0.10366637810535309
+        },
+        "reference": {
+          "examples": 512,
+          "known_targets": 502,
+          "unknown_misses": 10,
+          "map@10": 0.0807826450892857,
+          "recall@10": 0.177734375,
+          "ndcg@10": 0.10371105360100678
+        },
+        "mean_exact_kl": 1.050928544188423e-05,
+        "cohort_sha256": "db3cbbecc5ea9186849625991e48482079b1c7127bb6865f5a6813fc45963bbd",
+        "protocol": "frozen unforced retrieval128; no seen mask; unknown targets miss",
+        "heldout_RM_reward": {
+          "state": "unavailable",
+          "reason": "native_Aug2_cap_cannot_query_Aug9; no date clamping"
+        }
+      },
+      "latest_minus_update0_ndcg10": -0.008973270433224129,
+      "selected_is_update0_by_receipt": true,
+      "selected_behavior_identity": "implied by selection receipt; no new tensor/model replay",
+      "saved_policy_top10_score_file_inventory": [],
+      "additional_behavior_metrics": {
+        "state": "unavailable",
+        "reason": "No complete matched update0/latest1000 policy predictions saved; screen-cache reference/base are not trained-policy outputs."
+      },
+      "reward_hacking": "not established; heldout reward/proxy diagnostic unavailable",
+      "comparison_scope": "old frozen unforced128 own512 screen; not current C natural1024"
+    }
+  ],
+  "ready_RM_SHAP_reuse": {
+    "state": "reused_closed_report_hash_verified_no_SHAP_or_model_load",
+    "sources": [
+      {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/reports/interpretation-provenance.json",
+        "bytes": 2323,
+        "sha256": "77aaf32000d8ced410ffd99fde0a6166b8a658999753d8a333954bdfced05f4d"
+      },
+      {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/auxiliary/request-rm-r2.json",
+        "bytes": 5086,
+        "sha256": "4b8d6ba2c87699ce639724278c39f85e9b5261603dbb12bc0946c97b54986fd1"
+      },
+      {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/auxiliary/run-rm-r2/result/rm-interpretation.json",
+        "bytes": 485373,
+        "sha256": "f954137723c587d93d033a902aa412b7fb619b27d24155a25a2c7cd56397d9a7"
+      },
+      {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/reports/rm-interpretation.md",
+        "bytes": 4875,
+        "sha256": "4ccb948894d664524ce7fcb7fc11ad9638bac2ae315859f4b311e38089cd00d7"
+      },
+      {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/rm-r1/scorer/manifest.json",
+        "bytes": 33420103,
+        "sha256": "14da6e9bccaf8ab97a1c988abb4cb8062f2b4e24a48d8f5bdb8737c1c62a397c"
+      },
+      {
+        "path": "D:/tlab-recsys-2026/data/processed/kion-reward-ready-20261020-r1/manifest.json",
+        "bytes": 34768990,
+        "sha256": "c3d59dd054c074b216b9a7384359ffe0a3ec5c8d2b6720fae130394efec2f383"
+      }
+    ],
+    "scope": "ready RM raw CatBoost output before calibration/clipping/fallback; not C or RL",
+    "sample": "256 SHA-selected supported select rows Aug2-8; histories frozen before Aug2",
+    "schema": "11227 numeric + 7 categorical; 24 namespaces",
+    "excluded_unsupported_select_targets": 605,
+    "leading_groups": [
+      "candidate:local_dynamic",
+      "context:history"
+    ],
+    "group_statistics": "report preserves sum mean|column SHAP| and mean|sum group SHAP|",
+    "limitations": "selected supported observed watched pairs; not causal response/retention or untouched test"
+  },
+  "limits": [
+    "One seed/reused development cohort; no untouched test or long-term causal claims",
+    "C-B compares independently fitted heads; not decomposition of C features",
+    "Case studies cannot establish population feature importance"
+  ],
+  "new_model_feature_or_SHAP_execution": false
+}

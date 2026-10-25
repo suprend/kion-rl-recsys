@@ -1,0 +1,72 @@
+{
+  "contract": "kion-kl-seeds-completion-v1",
+  "state": "completed",
+  "completed_utc": "2026-10-25T06:44:56.904821+00:00",
+  "root": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1",
+  "completed_new_fits": 6,
+  "actual_new_optimizer_updates": 6000,
+  "native_operations": 18,
+  "all_operations_succeeded_exit0_quiescent": true,
+  "no_further_native_jobs": true,
+  "all_three_train_KL_matches": true,
+  "training_scope": "Frozen E2/C/RM; head-only RL on fixed TRAIN512; 6newfits, no new supervised epochs/RM fits/final-test reads.",
+  "main_conclusion": "Residual-minus-completion MAP point estimates positive at all3seeds; conditional paired-user CI includes0. No demonstrated superiority over completion or C; C remains point-best on reused dev4096.",
+  "reader_pdf": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/reader-r1.pdf",
+    "sha256": "c469c2323fb484484741db3eb87f8f732e7c1a8dc020b25e9b43c73a4f088282",
+    "pages": 3
+  },
+  "archive": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/delivery/build-r1/kion-task2-kl-seeds-20261025.zip",
+    "bytes": 6210324,
+    "sha256": "2d182621c468f7aadc8cfdbbac4e19a4f630096b81ed7fca73e94f462b1371b3",
+    "member_count": 148
+  },
+  "accepted_reviews": {
+    "numeric-full4096.json": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/review/numeric-full4096.json",
+      "sha256": "f5728b8387643ecf4a66cbc163ac50c1601fc13e8cfe6a402d23bd1508a872c1"
+    },
+    "numeric-screen.json": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/review/numeric-screen.json",
+      "sha256": "ce7bfd32860f109eebbb846de6fe48dbd70de9418547c750b6c1e3752017efa6"
+    },
+    "results-science.json": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/review/results-science.json",
+      "sha256": "84eab7652f06236b02b896f58c4d014caa51dd2c0786e71b5c166814edf2ce3e"
+    },
+    "report-final.json": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/review/report-final.json",
+      "sha256": "5ed0b242170f052f23788d7bd5ea9d2221c0f759d94f6f3ea1e63d038339243e"
+    },
+    "visual-final.json": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/review/visual-final.json",
+      "sha256": "78501557e083ea6f557899e69615eb796d5f2e2989fe20537393e9116aad50d1"
+    },
+    "delivery-source-final.json": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/review/delivery-source-final.json",
+      "sha256": "cc7db1caba13190fa6cf80eaa06648f43030872d414af0deb8e909e23323bf45"
+    },
+    "delivery-root-readback.json": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/review/delivery-root-readback.json",
+      "sha256": "f146c859d9e8c1afa072f8a00a11b8680060e667ecdece818d58a4b661a6e407"
+    },
+    "delivery-final.json": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/review/delivery-final.json",
+      "sha256": "1dd88d938edce3b48406607fa99208580a3dde4fbc1261252c3e007fedbb3763"
+    }
+  },
+  "frozen_metadata_note": "campaign/state/JOURNAL are the immutable pre-package execution checkpoint included in the ZIP. This postbuild completion sidecar and shared queue record final delivery acceptance.",
+  "canonical_updates": {
+    "D:/tlab-recsys-2026/docs/task2-next-plan.md": {
+      "before_sha256": "f5d9dc8d0bb359eb707e0ca386aff7f5a94a776fc52515cb3f5da4f217dd4705",
+      "after_sha256": "4b82db191052180dec9bafc52704eedc95996d152186f9b923b111f625134ac5"
+    },
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/queue.json": {
+      "before_sha256": "b77e0f59bf4b101eb0a92ad7556ba98efde992505833c2bd7957efbf7d0cf963",
+      "after_sha256": "9bb1144881e5d6dfe4b22a1edfef07076c6db75170c17d31bbcf86d0cf537385"
+    }
+  },
+  "numerical_clean_machine_replay_verified": false,
+  "no_upload_publication_submission_commit_push": true
+}

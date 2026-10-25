@@ -1,0 +1,65 @@
+{
+  "review_type":"independent actual matched full4096 relevance metadata audit",
+  "status":"PASS_ACTUAL_MATCHED_FULL4096_POINT_RESULTS",
+  "blocking_findings":[],
+  "path_base":"D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1",
+  "bindings":[
+    {"path":"policy/full-scientific3-r1/evaluation.json","sha256":"5884cf09a3ddcde6638aad7991ed6c99915847b74583d7705e8a70f4a135a086","actual_hash_verified":true},
+    {"path":"operations/full-scientific3-r1/receipt.json","sha256":"f5f69c97f51500a6b559a60db71ff28c0fa8932fb16f0d99a0d0a8f3684eb508","actual_hash_verified":true},
+    {"path":"operations/full-scientific3-r1/stage-completion.json","sha256":"eb7446dccd3c46ddbc740bf426cf48c3e6f3a85a928c5302c25468be881d9b64","actual_hash_verified":true},
+    {"path":"request-full-scientific3-r1.json","sha256":"7d14405a2ceb181a9efc02c7c72060ede9753a77ac7efe8ca25fd04cdb90ec1f","actual_hash_verified":true}
+  ],
+  "runtime_evidence":{
+    "operation":"full-scientific3-r1",
+    "state":"succeeded",
+    "exit_code":0,
+    "cleanup_quiescent":true,
+    "elapsed_seconds":805.9529999999795,
+    "peak_private_bytes":7722663936,
+    "cap_bytes":8589934592,
+    "stage_result_equals_evaluation_json":true,
+    "request_hash_matches_native_and_stage":true,
+    "provider_passes":1,
+    "raw_feature_calls":512,
+    "scientific_arms_share_raw_pass":true,
+    "batch_size":128,
+    "candidate_chunk":64,
+    "one_pass_arithmetic":"4096/128 batches times1024/64 candidate chunks =512 raw-feature calls shared by all3 arms. This is a completed single pass,not3 separate feature replays."
+  },
+  "cohort_and_lineage_acceptance":{
+    "arms":["C","RL-completion","RL-residual"],
+    "matched_rows":4096,
+    "metric_denominator":4096,
+    "candidate_width":1024,
+    "known_targets":3974,
+    "unknown_target_misses":122,
+    "offpool_known_misses":616,
+    "candidate_coverage_count":3358,
+    "candidate_coverage":0.81982421875,
+    "denominator_identity":"122 unknown +616 known offpool +3358 covered =4096; all arms retain these rows and candidate pools. Unknown/offpool relevance contributions are zero,not removed.",
+    "no_target_injection":true,
+    "no_seen_filter":true,
+    "final_test_reads":0,
+    "same_original_development_selection_sha256":"660100ad03709ed2b1ddb2a62c83c3b9e51de3fc22cabdadfde0735467aa3707",
+    "original_evaluation_sha256":"ebc6cb8b8eb682298723aba8f1d24a3250c286b20e91c70f51e159e7ba000e56",
+    "original_evaluation_actual_hash_verified":true,
+    "original_array_descriptor_equality":"Nine source/new manifest SHA pairs match exactly:row_index,user_id,target_token,known_target,catalog_raw_ids,pool_ids,candidate_coverage,C_scores,C_top10. C metric JSON values also match exactly. New candidate_raw_ids has no identical original array descriptor asserted here.",
+    "C_parity":{"max_abs_error":0.0,"top10_changed_rows":0,"changes_with_margin_above_tolerance":0,"score_tolerance_passed":true},
+    "latest1000_lineage":"Both training receipt JSON pins freshly match accepted completed receipts:completion cfdfc225be553305a3d6a8af7c5419227255b44827ccf7e3760a86b3e5dbf8bf,residual f275070714f6fd24c588bb3637b752697063cca8d422b01e7d827bc3d743cba6. Step1000 checkpoint pins match the prior screen and accepted training. C is original9c42a75a...ea7;selected0 did not replace either trained arm.",
+    "source_freshness":"Evaluator54fd8e1509d25ea5032731396ab5278c57eaee958d32d499a5ecd34359041e18 and frozen policy/residual/utility source hashes freshly match manifest. Request pins previously accepted evaluation/preregistration protocols.",
+    "full_array_shapes":"All3 score descriptors[4096,1024]float32 and top10 descriptors[4096,10]int32; shared row/user/target/known/coverage descriptors have4096 entries. No partial4096 is represented as complete."
+  },
+  "accepted_point_metrics":{
+    "C":{"MAP10":0.09686366489955357,"NDCG10":0.1239494230603261,"Recall10":0.21240234375},
+    "RL-completion":{"MAP10":0.09438244047619047,"NDCG10":0.12055263362976343,"Recall10":0.20556640625},
+    "RL-residual":{"MAP10":0.09608784024677579,"NDCG10":0.12321591284478758,"Recall10":0.211669921875}
+  },
+  "interpretation_and_limits":[
+    "On the matched4096 development point estimates,both RL arms have lower MAP,NDCG and Recall than original C. Residual MAP is closer to C than completion MAP. These are point comparisons; significance and interval claims await actual paired user-cluster bootstrap acceptance.",
+    "Full manifest explicitly sets reward_proxy_available=false. Calibrated RM/completion/residual-utility,KL/support and reward decomposition claims remain tied to their screen256 evidence unless separately evaluated. Do not label screen utility numbers n4096.",
+    "Residual's much smaller screen KL and about half prefit advantage RMS remain a fixed-beta,unequal-movement limitation; full relevance estimates do not resolve that identification issue.",
+    "Same original development cohort preserves matching but does not create a fresh holdout. One seed and observational RM do not establish causal,online,retention or robust superiority claims.",
+    "Actual rollout960-step completeness and final report acceptance are separate future gates. No additional training or numerical replay is authorized by this audit.",
+    "Reviewer read source,small JSON and metadata only; no NPY/NPZ/checkpoint/model payloads,NumPy/Torch/ML imports or provider/GPU jobs were executed. SHA equality of array descriptors is independently checked across manifests; array payloads were not reopened."
+  ]
+}

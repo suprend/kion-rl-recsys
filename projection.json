@@ -1,0 +1,3501 @@
+{
+  "contract": "kion-source-only-git-projection-v1",
+  "operation": "Exact-byte local projection only; no training, model/array decoding, numerical inference, downloads, or historical-tree changes.",
+  "upstream": {
+    "package_format": "kion-handin-package-v1",
+    "frozen_manifest_path": "delivery/frozen-final-r1.json",
+    "frozen_manifest_sha256": "f242fb74c9e94d45923432507270222326574d533f8494cbb420ec30fde812db",
+    "selection_sha256": "16ab7ae35e8145946779476706fa3b8f45a146a2ee85eabe962b5a0935fe1e18",
+    "payload_files": 566,
+    "payload_bytes": 136184813
+  },
+  "copied_totals": {
+    "files": 526,
+    "bytes": 17014776
+  },
+  "excluded_totals": {
+    "files": 40,
+    "bytes": 119170037
+  },
+  "authored_files_not_hashed": [
+    ".gitattributes",
+    ".gitignore",
+    "README.md",
+    "REPRODUCING.md",
+    "PROJECTION.md",
+    "projection.json",
+    "verify_repository.py"
+  ],
+  "authored_file_note": "The finite exact-byte inventory covers copied payloads only. Newly authored repository documentation, this manifest, Git attributes/ignore rules and verifier are intentionally outside its checksum closure to avoid self-reference and mutable-document hash cycles.",
+  "preservation": {
+    "source_files": 288,
+    "historical_source_payloads": 284,
+    "runtime_python_files": 10,
+    "historical_text_paths_with_crlf_preserved_using_git_minus_text": [
+      "evidence/fullstudy/checkpoint-selection.json",
+      "evidence/fullstudy/eda-historical.json",
+      "evidence/fullstudy/source-condition.md",
+      "evidence/matched-kl/interpretation/full-r1/paired-metrics.csv",
+      "evidence/matched-kl/interpretation/screen-r1/paired-metrics.csv",
+      "evidence/raw-provenance/manifest.json",
+      "reports/figures/fullstudy/full/02-matched-comparison.svg",
+      "reports/figures/fullstudy/full/03-paired-uncertainty.svg",
+      "reports/figures/fullstudy/full/04-exposure-distribution.svg",
+      "reports/figures/fullstudy/full/05-target-ranks.svg",
+      "reports/figures/fullstudy/rollout/08-five-step-panel.svg",
+      "reports/figures/fullstudy/rollout/08b-five-step-behavior.svg",
+      "reports/figures/fullstudy/screen/01-checkpoint-tradeoff.svg",
+      "reports/figures/fullstudy/screen/02-matched-comparison.svg",
+      "reports/figures/fullstudy/screen/03-paired-uncertainty.svg",
+      "reports/figures/fullstudy/screen/04-exposure-distribution.svg",
+      "reports/figures/fullstudy/screen/05-target-ranks.svg",
+      "reports/figures/fullstudy/screen/06-screen-utilities-behavior.svg",
+      "reports/figures/fullstudy/screen/07-item-contributions.svg",
+      "reports/figures/matched-kl/train-kl-and-map.svg",
+      "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/freeze-rm-r1.json",
+      "source/fullstudy/code/tlab-recsys-2026/pyproject.toml"
+    ]
+  },
+  "copied_files": [
+    {
+      "path": "delivery/PACKAGING.md",
+      "bytes": 9913,
+      "sha256": "78f00048a74b93bea4d8677076f23c6689fe192da959c8032f240bc579c287b6",
+      "upstream_source": "delivery/PACKAGING.md"
+    },
+    {
+      "path": "delivery/package.py",
+      "bytes": 29699,
+      "sha256": "69012f55fb8ff27f78211563aea34ab57074d486241441d3e91f3594108dbdbb",
+      "upstream_source": "delivery/package.py"
+    },
+    {
+      "path": "delivery/tests/test_package.py",
+      "bytes": 19954,
+      "sha256": "33c890b186362ed60a98890763c81683e559e28f3ebef3b0e7562002ce9463cd",
+      "upstream_source": "delivery/tests/test_package.py"
+    },
+    {
+      "path": "evidence/INDEX.json",
+      "bytes": 208533,
+      "sha256": "79a680ef200ef3db5109d877131eaf50facc28abde349c9252577cf48387d398",
+      "upstream_source": "evidence/INDEX.json"
+    },
+    {
+      "path": "evidence/README.md",
+      "bytes": 2610,
+      "sha256": "db291155fdffdcf84f37c3b189f774eff0a3c2c217dbc4adadb68f7ea873ab5a",
+      "upstream_source": "evidence/README.md"
+    },
+    {
+      "path": "evidence/fullstudy/analysis-full.json",
+      "bytes": 495485,
+      "sha256": "33c43018567f6c1e3b22aa55e280885201b8cac99479cb36f06c710bb66ab5c0",
+      "upstream_source": "evidence/fullstudy/analysis-full.json"
+    },
+    {
+      "path": "evidence/fullstudy/analysis-screen.json",
+      "bytes": 224506,
+      "sha256": "26c9485c4391e4d7d2b4eb587cfc960421f5aab9ed95c445807d6bf7a3907ebc",
+      "upstream_source": "evidence/fullstudy/analysis-screen.json"
+    },
+    {
+      "path": "evidence/fullstudy/bank-method.md",
+      "bytes": 5825,
+      "sha256": "d314b9f5a251c375da0cc6356a7fe32c1de5f9ccef66fb101a20d424967ea2f4",
+      "upstream_source": "evidence/fullstudy/bank-method.md"
+    },
+    {
+      "path": "evidence/fullstudy/bridge-screen-summary.json",
+      "bytes": 9740,
+      "sha256": "a4bccf42b9f020e72a191c536df59dce5ac4e21b7e38aee4e21edccab5c05676",
+      "upstream_source": "evidence/fullstudy/bridge-screen-summary.json"
+    },
+    {
+      "path": "evidence/fullstudy/checkpoint-selection.json",
+      "bytes": 8181,
+      "sha256": "9983aada0c6909051384f34b80fdfa7e384767e92c600c81bdfcc91eb1b83ca6",
+      "upstream_source": "evidence/fullstudy/checkpoint-selection.json"
+    },
+    {
+      "path": "evidence/fullstudy/e2-completion.json",
+      "bytes": 2535,
+      "sha256": "98a29966c3de54b42b6dd276eef8827e5977b778ddf94ba695aaada3c574243b",
+      "upstream_source": "evidence/fullstudy/e2-completion.json"
+    },
+    {
+      "path": "evidence/fullstudy/e2-worker-completion.json",
+      "bytes": 32051,
+      "sha256": "68c5528bbb4488dab96f6992801982e14437da75327aeae119514d4da525a62d",
+      "upstream_source": "evidence/fullstudy/e2-worker-completion.json"
+    },
+    {
+      "path": "evidence/fullstudy/eda-historical-script.py",
+      "bytes": 2587,
+      "sha256": "4f85b23ca828c8f1dfffc3ff7e0738fb3d3a59d3139b8b5c0446ca3096a9dbde",
+      "upstream_source": "evidence/fullstudy/eda-historical-script.py"
+    },
+    {
+      "path": "evidence/fullstudy/eda-historical.json",
+      "bytes": 5207,
+      "sha256": "c6e18f7e03a059a33bc5eda286e8d5e88ee732daf3d9afebdf45253c5ecfaf7f",
+      "upstream_source": "evidence/fullstudy/eda-historical.json"
+    },
+    {
+      "path": "evidence/fullstudy/figure-provenance/full/figures.json",
+      "bytes": 3626,
+      "sha256": "0917ddf5e439cf044421126e1bafe698f51cf0dc197cf6effc47f893f2f1555a",
+      "upstream_source": "evidence/fullstudy/figure-provenance/full/figures.json"
+    },
+    {
+      "path": "evidence/fullstudy/figure-provenance/full/labels.json",
+      "bytes": 3079,
+      "sha256": "e054ee92bb35b198558c864b6cac480f3e772ca5aea9ce5f40cd38d93495b5b9",
+      "upstream_source": "evidence/fullstudy/figure-provenance/full/labels.json"
+    },
+    {
+      "path": "evidence/fullstudy/figure-provenance/full/native-render.json",
+      "bytes": 4557,
+      "sha256": "97fa112f45b6dfc510667d10146f07d406b6852609bac088ba67e59e60c8ff4e",
+      "upstream_source": "evidence/fullstudy/figure-provenance/full/native-render.json"
+    },
+    {
+      "path": "evidence/fullstudy/figure-provenance/rollout/figures.json",
+      "bytes": 8278,
+      "sha256": "efeb432d6689ed344035d1987dc77b9198551a211330020421c5a589b64c5eca",
+      "upstream_source": "evidence/fullstudy/figure-provenance/rollout/figures.json"
+    },
+    {
+      "path": "evidence/fullstudy/figure-provenance/rollout/labels.json",
+      "bytes": 683,
+      "sha256": "717dee62f0a1dd190562d57dd1b64d0b86f144664b44b72c1b4a0774a9efe596",
+      "upstream_source": "evidence/fullstudy/figure-provenance/rollout/labels.json"
+    },
+    {
+      "path": "evidence/fullstudy/figure-provenance/rollout/native-render.json",
+      "bytes": 1973,
+      "sha256": "21c164ea7f2b65b20946e9ada52067ea083ab876903144e68f63900dcbd5e546",
+      "upstream_source": "evidence/fullstudy/figure-provenance/rollout/native-render.json"
+    },
+    {
+      "path": "evidence/fullstudy/figure-provenance/screen/figures.json",
+      "bytes": 6167,
+      "sha256": "afef394cd637e13d9bd669b976bd5a9a1f702f8305c5080f40ba6a576a9f5eae",
+      "upstream_source": "evidence/fullstudy/figure-provenance/screen/figures.json"
+    },
+    {
+      "path": "evidence/fullstudy/figure-provenance/screen/labels.json",
+      "bytes": 5163,
+      "sha256": "f90324967dabc59accb92d3d111b401ee8aca185d5abde034bfc40e1db90c30b",
+      "upstream_source": "evidence/fullstudy/figure-provenance/screen/labels.json"
+    },
+    {
+      "path": "evidence/fullstudy/figure-provenance/screen/native-render.json",
+      "bytes": 6645,
+      "sha256": "53f4e0726f448a6866563a759165a8113ce4c4cdc6ff7692a88377117ce6496e",
+      "upstream_source": "evidence/fullstudy/figure-provenance/screen/native-render.json"
+    },
+    {
+      "path": "evidence/fullstudy/heads-method.md",
+      "bytes": 6284,
+      "sha256": "b238a7ae1eb7992b5043246c90fe84e31707e63d03d2401b715c7d3c934262ce",
+      "upstream_source": "evidence/fullstudy/heads-method.md"
+    },
+    {
+      "path": "evidence/fullstudy/i0-report.md",
+      "bytes": 3305,
+      "sha256": "f2d32b0b795f34f11a1b4018d31bc0cd3c9e9498d530fcaaa42140922974c975",
+      "upstream_source": "evidence/fullstudy/i0-report.md"
+    },
+    {
+      "path": "evidence/fullstudy/i0-score-audit.json",
+      "bytes": 37288,
+      "sha256": "25bfecc30b97a381e1bcdd7f2028feaf45f3c6aeb1e61cb6896fd1767aea3680",
+      "upstream_source": "evidence/fullstudy/i0-score-audit.json"
+    },
+    {
+      "path": "evidence/fullstudy/plot-data-full.json",
+      "bytes": 495248,
+      "sha256": "6957ab49a1a86a6d9d5081927cc0bc423e6ddc886cf80b57f2eac6ebb41f9a1c",
+      "upstream_source": "evidence/fullstudy/plot-data-full.json"
+    },
+    {
+      "path": "evidence/fullstudy/plot-data-screen.json",
+      "bytes": 224266,
+      "sha256": "8ad2461b5c9a247f867264561af47e70113a45e39b4980bea7f63a231a62935c",
+      "upstream_source": "evidence/fullstudy/plot-data-screen.json"
+    },
+    {
+      "path": "evidence/fullstudy/portable-replay-acceptance.json",
+      "bytes": 11312,
+      "sha256": "6e6944828ffa6b32d7db462e5ae5a5382fbc4f770a2fd46831cd7b9d73503d6d",
+      "upstream_source": "evidence/fullstudy/portable-replay-acceptance.json"
+    },
+    {
+      "path": "evidence/fullstudy/portable-replay-full-receipt.json",
+      "bytes": 1148,
+      "sha256": "4b3e9c8d94972745721e99f1e0ede8f6f82db6257c8689957f78cb9c0f21ed8e",
+      "upstream_source": "evidence/fullstudy/portable-replay-full-receipt.json"
+    },
+    {
+      "path": "evidence/fullstudy/portable-replay-full.json",
+      "bytes": 4320,
+      "sha256": "77d2ba20b81814539374ff29436dd18cb4b4d26809b0019b29d61f16d1d327ed",
+      "upstream_source": "evidence/fullstudy/portable-replay-full.json"
+    },
+    {
+      "path": "evidence/fullstudy/portable-replay-rollout-receipt.json",
+      "bytes": 1153,
+      "sha256": "b9e8e52ca178266b5c421586bebd73d607095d111e65eba8382a97d5993677f8",
+      "upstream_source": "evidence/fullstudy/portable-replay-rollout-receipt.json"
+    },
+    {
+      "path": "evidence/fullstudy/portable-replay-rollout.json",
+      "bytes": 3156,
+      "sha256": "8e1a803a24077253c23fb8665e5774705e5001f95eddc7af915eb0543388434c",
+      "upstream_source": "evidence/fullstudy/portable-replay-rollout.json"
+    },
+    {
+      "path": "evidence/fullstudy/portable-replay-screen-receipt.json",
+      "bytes": 1151,
+      "sha256": "481d83a992e1ddf8fa2e0c2624c5bb43fcaf191523edfedac58818b3a03b712f",
+      "upstream_source": "evidence/fullstudy/portable-replay-screen-receipt.json"
+    },
+    {
+      "path": "evidence/fullstudy/portable-replay-screen.json",
+      "bytes": 5310,
+      "sha256": "f25594a23065f617abf7d3ecf73f188aeba26e14a798853fbf5e110d3b684ac5",
+      "upstream_source": "evidence/fullstudy/portable-replay-screen.json"
+    },
+    {
+      "path": "evidence/fullstudy/preregistration-completion.json",
+      "bytes": 2709,
+      "sha256": "025061343a0314691dfb6064063d7e18c74662ea62ab285ec423d374037538ac",
+      "upstream_source": "evidence/fullstudy/preregistration-completion.json"
+    },
+    {
+      "path": "evidence/fullstudy/preregistration-evaluation.json",
+      "bytes": 1804,
+      "sha256": "ee0e1e06f060f27e4dd149a8c26c02827f9b1c9fb67a57d688d84e166fddfd25",
+      "upstream_source": "evidence/fullstudy/preregistration-evaluation.json"
+    },
+    {
+      "path": "evidence/fullstudy/preregistration-residual.json",
+      "bytes": 3105,
+      "sha256": "78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c",
+      "upstream_source": "evidence/fullstudy/preregistration-residual.json"
+    },
+    {
+      "path": "evidence/fullstudy/report-provenance/references.md",
+      "bytes": 13009,
+      "sha256": "1c38c4e117209cb264babf1f10a20af2cf983e82c3f7cb133a66e210ad3c9e94",
+      "upstream_source": "evidence/fullstudy/report-provenance/references.md"
+    },
+    {
+      "path": "evidence/fullstudy/report-provenance/source-code-manifest.json",
+      "bytes": 109280,
+      "sha256": "6b054627fdcfd2ee205df2e3871d8da47e6d3d7cbdf47a58897968182f2e4085",
+      "upstream_source": "evidence/fullstudy/report-provenance/source-code-manifest.json"
+    },
+    {
+      "path": "evidence/fullstudy/report-provenance/source-dependencies.json",
+      "bytes": 8334,
+      "sha256": "959813ab3f9cb072af132dced6bd18b538dbb4e4116e8fd68c72fa4f54e4502a",
+      "upstream_source": "evidence/fullstudy/report-provenance/source-dependencies.json"
+    },
+    {
+      "path": "evidence/fullstudy/report-provenance/source-evidence-index.json",
+      "bytes": 42590,
+      "sha256": "6924e56fc20b8bc44778f028354884f8e8a9244a2ad152270c1e52634b9993e3",
+      "upstream_source": "evidence/fullstudy/report-provenance/source-evidence-index.json"
+    },
+    {
+      "path": "evidence/fullstudy/report-provenance/source-excluded-inputs.json",
+      "bytes": 34896,
+      "sha256": "3b7f2d49e5ebe4373bc61f90080cf2e77f591038f8593aaa972c167208ee4e24",
+      "upstream_source": "evidence/fullstudy/report-provenance/source-excluded-inputs.json"
+    },
+    {
+      "path": "evidence/fullstudy/report-provenance/source-execution-stage-index.json",
+      "bytes": 20999,
+      "sha256": "b7be3aa2fa6efdc62cca5ffeecd32cd08b6a5311a9ae7d903398c6f9c8f49a44",
+      "upstream_source": "evidence/fullstudy/report-provenance/source-execution-stage-index.json"
+    },
+    {
+      "path": "evidence/fullstudy/report-provenance/source-package-allowlist.json",
+      "bytes": 8028,
+      "sha256": "4e5ae6597f72b386c540ebb35d3f05fbb79c056d59996db51154c40097447e79",
+      "upstream_source": "evidence/fullstudy/report-provenance/source-package-allowlist.json"
+    },
+    {
+      "path": "evidence/fullstudy/report-provenance/source-path-map.template.json",
+      "bytes": 1252,
+      "sha256": "d2206fa717555dcbfacf2dfa7f29049cea26a1fba189f2a81fb8e2c3514e6040",
+      "upstream_source": "evidence/fullstudy/report-provenance/source-path-map.template.json"
+    },
+    {
+      "path": "evidence/fullstudy/residual-prefit.json",
+      "bytes": 3620,
+      "sha256": "f1431dd1092a5d7ef96e2ed89d4c2889067cd3558fa0f478f29eff73825c3d97",
+      "upstream_source": "evidence/fullstudy/residual-prefit.json"
+    },
+    {
+      "path": "evidence/fullstudy/review/literature-final-review.json",
+      "bytes": 10893,
+      "sha256": "68536b2a1edb9d740ffe390dd340937ec8a5b9ca417251510af4f960abdc9b13",
+      "upstream_source": "evidence/fullstudy/review/literature-final-review.json"
+    },
+    {
+      "path": "evidence/fullstudy/review/science-final-acceptance.json",
+      "bytes": 9816,
+      "sha256": "61600228917768b39cae7a27afe50c71c68bfdd22060a49d43538dc3a5cbaa0b",
+      "upstream_source": "evidence/fullstudy/review/science-final-acceptance.json"
+    },
+    {
+      "path": "evidence/fullstudy/review/science-full-actual.json",
+      "bytes": 5528,
+      "sha256": "e0036c8da6566cb9ecc7b8a0cbef7dd6675a217ec114aeb86935c09d8ef1800a",
+      "upstream_source": "evidence/fullstudy/review/science-full-actual.json"
+    },
+    {
+      "path": "evidence/fullstudy/review/science-full-analysis-actual.json",
+      "bytes": 7362,
+      "sha256": "6c31602fef8f7040dda46af1f73807f4b50b4fcab8c6de974ec62a8fcef2ae18",
+      "upstream_source": "evidence/fullstudy/review/science-full-analysis-actual.json"
+    },
+    {
+      "path": "evidence/fullstudy/review/science-residual-training-actual.json",
+      "bytes": 7059,
+      "sha256": "459bc49b9315b99359838f893866cb3ec5251dd971b7bc021062845057c40054",
+      "upstream_source": "evidence/fullstudy/review/science-residual-training-actual.json"
+    },
+    {
+      "path": "evidence/fullstudy/review/science-rollout-actual.json",
+      "bytes": 6230,
+      "sha256": "f41147f4105a890281212c47b1c6393492d286f653ecc4658634e67d1fdb1f36",
+      "upstream_source": "evidence/fullstudy/review/science-rollout-actual.json"
+    },
+    {
+      "path": "evidence/fullstudy/review/science-rollout-summary-actual.json",
+      "bytes": 5632,
+      "sha256": "df0cf330db8f6c44a38de62c2f9d5f7845f15bbcbc9d366d245a8e3358990534",
+      "upstream_source": "evidence/fullstudy/review/science-rollout-summary-actual.json"
+    },
+    {
+      "path": "evidence/fullstudy/review/science-screen-actual.json",
+      "bytes": 7063,
+      "sha256": "a82f10e3e30aca3794a2ca5f0d9c34a32bb91b18f76bf4d3dcfe57a4f074a972",
+      "upstream_source": "evidence/fullstudy/review/science-screen-actual.json"
+    },
+    {
+      "path": "evidence/fullstudy/review/science-screen-analysis-actual.json",
+      "bytes": 6724,
+      "sha256": "0a29877ecd791eb4478e7a437ce811042392ad9581236544b29ed67f74508619",
+      "upstream_source": "evidence/fullstudy/review/science-screen-analysis-actual.json"
+    },
+    {
+      "path": "evidence/fullstudy/review/science-utility-actual.json",
+      "bytes": 7329,
+      "sha256": "c2f4bde7f6736d74857903089e0b87968d80d80f7afb64019546b08e1b58b7b1",
+      "upstream_source": "evidence/fullstudy/review/science-utility-actual.json"
+    },
+    {
+      "path": "evidence/fullstudy/review/visual-audit.json",
+      "bytes": 13320,
+      "sha256": "6d3b7e2cd8acadd3a4395b852547468dffe3ff28487b9234c0e1d5e884b52601",
+      "upstream_source": "evidence/fullstudy/review/visual-audit.json"
+    },
+    {
+      "path": "evidence/fullstudy/rl-completion-receipt.json",
+      "bytes": 1140,
+      "sha256": "cff6900fc5bb7fee552cc5c3f8cce8c91b037a320b9e3fb56ca842c4eb04c767",
+      "upstream_source": "evidence/fullstudy/rl-completion-receipt.json"
+    },
+    {
+      "path": "evidence/fullstudy/rl-completion-training.json",
+      "bytes": 6183,
+      "sha256": "cfdfc225be553305a3d6a8af7c5419227255b44827ccf7e3760a86b3e5dbf8bf",
+      "upstream_source": "evidence/fullstudy/rl-completion-training.json"
+    },
+    {
+      "path": "evidence/fullstudy/rl-residual-receipt.json",
+      "bytes": 1153,
+      "sha256": "86e9b6c990c93f99a7acccf96025bf28fef5cc0552cb466211d2537fb147cbd7",
+      "upstream_source": "evidence/fullstudy/rl-residual-receipt.json"
+    },
+    {
+      "path": "evidence/fullstudy/rl-residual-training.json",
+      "bytes": 7388,
+      "sha256": "f275070714f6fd24c588bb3637b752697063cca8d422b01e7d827bc3d743cba6",
+      "upstream_source": "evidence/fullstudy/rl-residual-training.json"
+    },
+    {
+      "path": "evidence/fullstudy/rm-evaluation-manifest.json",
+      "bytes": 24691,
+      "sha256": "992c7a8ce3cf45a0f20605dd60f9ac3a11cb51424d2180f9a4cef3f1a08d7b35",
+      "upstream_source": "evidence/fullstudy/rm-evaluation-manifest.json"
+    },
+    {
+      "path": "evidence/fullstudy/rm-evaluation-metrics.json",
+      "bytes": 204284,
+      "sha256": "5b48ddf391eed228a38414a131ef09e38c7ff32ad1dc87d95f3210bde31e3574",
+      "upstream_source": "evidence/fullstudy/rm-evaluation-metrics.json"
+    },
+    {
+      "path": "evidence/fullstudy/rollout-analysis-receipt.json",
+      "bytes": 1144,
+      "sha256": "73f21dd0dece2307b7d5dac9f437d922bb69fbd98bc0a35c5987b3f43a184ae8",
+      "upstream_source": "evidence/fullstudy/rollout-analysis-receipt.json"
+    },
+    {
+      "path": "evidence/fullstudy/rollout-case-returns.json",
+      "bytes": 8820,
+      "sha256": "da4254c95d8691a6aa7f861a0a1665410e870c3269e6af94565ae2ae7cd7cda1",
+      "upstream_source": "evidence/fullstudy/rollout-case-returns.json"
+    },
+    {
+      "path": "evidence/fullstudy/rollout-native-receipt.json",
+      "bytes": 1167,
+      "sha256": "eb406dd020a46f05d6cd554573b8bf4eb6ef517a345977549b04e63ffe62a491",
+      "upstream_source": "evidence/fullstudy/rollout-native-receipt.json"
+    },
+    {
+      "path": "evidence/fullstudy/rollout-summary-report.md",
+      "bytes": 2989,
+      "sha256": "dc03b0cc7f50cb93649f8c7f433c0626516054cded8879f4addeebe6c16580de",
+      "upstream_source": "evidence/fullstudy/rollout-summary-report.md"
+    },
+    {
+      "path": "evidence/fullstudy/rollout-summary.json",
+      "bytes": 215401,
+      "sha256": "5c2cfc841c643258716862dffc7885566d682dfa94f95cc4578324ac05dbecba",
+      "upstream_source": "evidence/fullstudy/rollout-summary.json"
+    },
+    {
+      "path": "evidence/fullstudy/scientific3-full-receipt.json",
+      "bytes": 1159,
+      "sha256": "f5f69c97f51500a6b559a60db71ff28c0fa8932fb16f0d99a0d0a8f3684eb508",
+      "upstream_source": "evidence/fullstudy/scientific3-full-receipt.json"
+    },
+    {
+      "path": "evidence/fullstudy/scientific3-full.json",
+      "bytes": 31486,
+      "sha256": "5884cf09a3ddcde6638aad7991ed6c99915847b74583d7705e8a70f4a135a086",
+      "upstream_source": "evidence/fullstudy/scientific3-full.json"
+    },
+    {
+      "path": "evidence/fullstudy/scientific3-screen-receipt.json",
+      "bytes": 1164,
+      "sha256": "a33e3258bc92080702ee34a4c5db16acebcd5cc05c77d72485cc25ad59faa88d",
+      "upstream_source": "evidence/fullstudy/scientific3-screen-receipt.json"
+    },
+    {
+      "path": "evidence/fullstudy/scientific3-screen.json",
+      "bytes": 41944,
+      "sha256": "3439f885120173eb2b2f93bcb092d4c03b43ccfd06a2b9d884ef7512bc1fe7c1",
+      "upstream_source": "evidence/fullstudy/scientific3-screen.json"
+    },
+    {
+      "path": "evidence/fullstudy/screen-0.json",
+      "bytes": 784,
+      "sha256": "e2f6bf09433aece8e6bdc55da0a43d3d04a65d767204dd9420d0a683a6f81a5a",
+      "upstream_source": "evidence/fullstudy/screen-0.json"
+    },
+    {
+      "path": "evidence/fullstudy/screen-1000.json",
+      "bytes": 797,
+      "sha256": "cd5b7f1e1a93b711f860fb02e8ac89f05f86b0f60e3be371d83399ab9f05cff4",
+      "upstream_source": "evidence/fullstudy/screen-1000.json"
+    },
+    {
+      "path": "evidence/fullstudy/screen-250.json",
+      "bytes": 800,
+      "sha256": "0cd377ab660e50d838bd2a99d1a44a8fa37ae973adebcc592e3a2e9fcd1529be",
+      "upstream_source": "evidence/fullstudy/screen-250.json"
+    },
+    {
+      "path": "evidence/fullstudy/screen-500.json",
+      "bytes": 800,
+      "sha256": "98d01741222fcfe21fcec78f8ed800864966cb752638c9d75689a71e3492f45e",
+      "upstream_source": "evidence/fullstudy/screen-500.json"
+    },
+    {
+      "path": "evidence/fullstudy/screen-analysis-failed-completion.json",
+      "bytes": 572,
+      "sha256": "39c308b2b1c7376b520c81775271c5ddbb35e3360456f1107683eb71cdf8a7fa",
+      "upstream_source": "evidence/fullstudy/screen-analysis-failed-completion.json"
+    },
+    {
+      "path": "evidence/fullstudy/screen-analysis-failed-receipt.json",
+      "bytes": 1152,
+      "sha256": "c33bb29fc930167bd41527c86c9f4ccfd8f2ca22529e383f684f2ce293844776",
+      "upstream_source": "evidence/fullstudy/screen-analysis-failed-receipt.json"
+    },
+    {
+      "path": "evidence/fullstudy/screen-analysis-receipt.json",
+      "bytes": 1154,
+      "sha256": "806cec07d2f092729275601441ca377e57e1dce45953ea47e496f8b93c8d7e01",
+      "upstream_source": "evidence/fullstudy/screen-analysis-receipt.json"
+    },
+    {
+      "path": "evidence/fullstudy/source-condition.md",
+      "bytes": 4121,
+      "sha256": "9fba33921f93e3e95ae88a6a0f5d624bb0728a9c671722048e6f145104b71a71",
+      "upstream_source": "evidence/fullstudy/source-condition.md"
+    },
+    {
+      "path": "evidence/fullstudy/supervised-heads-analysis.json",
+      "bytes": 10028,
+      "sha256": "a4de63cd80e683dd0da12e2a0506fa1ba7081a41193038e1570455831c38eb9b",
+      "upstream_source": "evidence/fullstudy/supervised-heads-analysis.json"
+    },
+    {
+      "path": "evidence/fullstudy/utility-native-receipt.json",
+      "bytes": 1137,
+      "sha256": "dc529fd20e41b1e1646930e5277c421b74ad7cdd8c034ca4a3ddbfe66d935a1d",
+      "upstream_source": "evidence/fullstudy/utility-native-receipt.json"
+    },
+    {
+      "path": "evidence/fullstudy/visual-final.json",
+      "bytes": 9622,
+      "sha256": "38ad8452c6c75a881534ea36774ecad60173b38a3cd356822ce6da3d6bd5a967",
+      "upstream_source": "evidence/fullstudy/visual-final.json"
+    },
+    {
+      "path": "evidence/matched-kl/completion.json",
+      "bytes": 3997,
+      "sha256": "84cd0a6ece87e9a12719c01271f5d9f60d7cd76acfe860235df6cf2185532c84",
+      "upstream_source": "evidence/matched-kl/completion.json"
+    },
+    {
+      "path": "evidence/matched-kl/fit-ledger.json",
+      "bytes": 3263,
+      "sha256": "fc79668785e747ccb9834d4589132f7b7d1d64ca1c48244e46a4b82c9e7750a4",
+      "upstream_source": "evidence/matched-kl/fit-ledger.json"
+    },
+    {
+      "path": "evidence/matched-kl/interpretation/full-r1/analysis.json",
+      "bytes": 32847,
+      "sha256": "1fbaae8af0a4ccc94544f2886b021d062bd14778c574d3f92dc2b3aaf261274f",
+      "upstream_source": "evidence/matched-kl/interpretation/full-r1/analysis.json"
+    },
+    {
+      "path": "evidence/matched-kl/interpretation/full-r1/paired-metrics.csv",
+      "bytes": 4674,
+      "sha256": "9390f46b68f46728e9b828b0b23c66f78be3f7459bbf820dfa6dced81e8475b4",
+      "upstream_source": "evidence/matched-kl/interpretation/full-r1/paired-metrics.csv"
+    },
+    {
+      "path": "evidence/matched-kl/interpretation/full-r1/plot-data.json",
+      "bytes": 32610,
+      "sha256": "fbbaa3558968e7894258be360ba3cee56f19f911bc0ce504e0d5079c048b8166",
+      "upstream_source": "evidence/matched-kl/interpretation/full-r1/plot-data.json"
+    },
+    {
+      "path": "evidence/matched-kl/interpretation/screen-r1/analysis.json",
+      "bytes": 39278,
+      "sha256": "038fd372d73a549e7ed9d0990669670a49f0a7a552a573e402bcfd6edb63db7a",
+      "upstream_source": "evidence/matched-kl/interpretation/screen-r1/analysis.json"
+    },
+    {
+      "path": "evidence/matched-kl/interpretation/screen-r1/paired-metrics.csv",
+      "bytes": 4123,
+      "sha256": "504aa796882aaf13988d9de8d0facea7ed90eb2995e4350024155d799b43553c",
+      "upstream_source": "evidence/matched-kl/interpretation/screen-r1/paired-metrics.csv"
+    },
+    {
+      "path": "evidence/matched-kl/interpretation/screen-r1/plot-data.json",
+      "bytes": 39041,
+      "sha256": "eeb6b5111a7091f8f0a1aa3288d2012dc2505d7502e4792f149a54b676ef0f2e",
+      "upstream_source": "evidence/matched-kl/interpretation/screen-r1/plot-data.json"
+    },
+    {
+      "path": "evidence/matched-kl/operations/analyze-full-r1/receipt.json",
+      "bytes": 1151,
+      "sha256": "647352a5729bbf35420f772a7d39db66c40131d2c6b0fb8450cfc86793a7624d",
+      "upstream_source": "evidence/matched-kl/operations/analyze-full-r1/receipt.json"
+    },
+    {
+      "path": "evidence/matched-kl/operations/analyze-screen-r1/receipt.json",
+      "bytes": 1153,
+      "sha256": "9b5490abc1e5c21293f5cdb01f1ab3453d576b4b080eec9fb93de317fd535ddb",
+      "upstream_source": "evidence/matched-kl/operations/analyze-screen-r1/receipt.json"
+    },
+    {
+      "path": "evidence/matched-kl/operations/completion-20261025/receipt.json",
+      "bytes": 1149,
+      "sha256": "2d54116fa841feeff6dbe52419b6bd8f31284ce4dbcb40d51c2b95da2ba50e85",
+      "upstream_source": "evidence/matched-kl/operations/completion-20261025/receipt.json"
+    },
+    {
+      "path": "evidence/matched-kl/operations/completion-20261026/receipt.json",
+      "bytes": 1160,
+      "sha256": "8935b86d46f282c7699280c571829c640e652dc7736e97e7c5155e24921c3c0c",
+      "upstream_source": "evidence/matched-kl/operations/completion-20261026/receipt.json"
+    },
+    {
+      "path": "evidence/matched-kl/operations/figures-r1/receipt.json",
+      "bytes": 1139,
+      "sha256": "e4e6e3250858cacfcc897fe4ab076ca01c428932ef8522b3f7c2e4f30ad57c08",
+      "upstream_source": "evidence/matched-kl/operations/figures-r1/receipt.json"
+    },
+    {
+      "path": "evidence/matched-kl/operations/full-six-r1/receipt.json",
+      "bytes": 1143,
+      "sha256": "cfe0ad25edb039708e639c1db29dd4469b11ac49847161189cd50c2626658ccc",
+      "upstream_source": "evidence/matched-kl/operations/full-six-r1/receipt.json"
+    },
+    {
+      "path": "evidence/matched-kl/operations/kl-pilot1/receipt.json",
+      "bytes": 1141,
+      "sha256": "3b5e64ff2399e9ed47fcec82918b43d0e7138bc1204ddcdd23b32b55fb23e572",
+      "upstream_source": "evidence/matched-kl/operations/kl-pilot1/receipt.json"
+    },
+    {
+      "path": "evidence/matched-kl/operations/kl-pilot2/receipt.json",
+      "bytes": 1140,
+      "sha256": "a3588f350f0f57e340779b813f4a8ef37387aabf5b9eeaf11f4b6ccad87a6127",
+      "upstream_source": "evidence/matched-kl/operations/kl-pilot2/receipt.json"
+    },
+    {
+      "path": "evidence/matched-kl/operations/pilot1/receipt.json",
+      "bytes": 1135,
+      "sha256": "4319364a6ad8615d0cb486df4145c74fbceba7b3c247871081b0c50f816eb357",
+      "upstream_source": "evidence/matched-kl/operations/pilot1/receipt.json"
+    },
+    {
+      "path": "evidence/matched-kl/operations/pilot2/receipt.json",
+      "bytes": 1135,
+      "sha256": "84f358bd9331348098a47fb774ff50b6465aabf55a54b2655c1b1945ce3450c4",
+      "upstream_source": "evidence/matched-kl/operations/pilot2/receipt.json"
+    },
+    {
+      "path": "evidence/matched-kl/operations/reader-pdf-r1/receipt.json",
+      "bytes": 1144,
+      "sha256": "34b5ff2ca375642cbbe0e5c8b509e7fec0e6a7b18316c669633eae184d20ddc4",
+      "upstream_source": "evidence/matched-kl/operations/reader-pdf-r1/receipt.json"
+    },
+    {
+      "path": "evidence/matched-kl/operations/residual-20261025/receipt.json",
+      "bytes": 1157,
+      "sha256": "408f0f721be5dc51c495eef830aa5dbe594ec58164b28478a640bd5024418463",
+      "upstream_source": "evidence/matched-kl/operations/residual-20261025/receipt.json"
+    },
+    {
+      "path": "evidence/matched-kl/operations/residual-20261026/receipt.json",
+      "bytes": 1156,
+      "sha256": "9dae1256b5f9415fa601ae102725b0b3dd1cd6f507880f50e42fd2b9e64d21a0",
+      "upstream_source": "evidence/matched-kl/operations/residual-20261026/receipt.json"
+    },
+    {
+      "path": "evidence/matched-kl/operations/screen-six-r1/receipt.json",
+      "bytes": 1147,
+      "sha256": "9925594ac3ac07cf742bdc638d01c53d99d88da16d3107c001850050fb42ef2f",
+      "upstream_source": "evidence/matched-kl/operations/screen-six-r1/receipt.json"
+    },
+    {
+      "path": "evidence/matched-kl/operations/train-final-six-r1/receipt.json",
+      "bytes": 1158,
+      "sha256": "73e605d453a1d8cc6ede1771cf07d27c239ae283d141d7423492d54833767939",
+      "upstream_source": "evidence/matched-kl/operations/train-final-six-r1/receipt.json"
+    },
+    {
+      "path": "evidence/matched-kl/operations/train-target-r1/receipt.json",
+      "bytes": 1152,
+      "sha256": "2d2512c7b8282c778fd27fbca4ff81af3a05b3deb6af6747922a583674a944ae",
+      "upstream_source": "evidence/matched-kl/operations/train-target-r1/receipt.json"
+    },
+    {
+      "path": "evidence/matched-kl/operations/verify-full-r1/receipt.json",
+      "bytes": 1146,
+      "sha256": "6548333affb7baffaaa8fc2f0d174e5bce1b3d59401a011928b812e530e44df1",
+      "upstream_source": "evidence/matched-kl/operations/verify-full-r1/receipt.json"
+    },
+    {
+      "path": "evidence/matched-kl/operations/verify-screen-r1/receipt.json",
+      "bytes": 1150,
+      "sha256": "65a972bca9d5a61b891b0f659767b8213d765490ab97353ca2bee7017ce20cd4",
+      "upstream_source": "evidence/matched-kl/operations/verify-screen-r1/receipt.json"
+    },
+    {
+      "path": "evidence/matched-kl/policy/completion-20261025/training.json",
+      "bytes": 7941,
+      "sha256": "be0bfe159c641d97f2018c34e1382757255fbb7c715f0a55d1fcaee00082e47e",
+      "upstream_source": "evidence/matched-kl/policy/completion-20261025/training.json"
+    },
+    {
+      "path": "evidence/matched-kl/policy/completion-20261026/training.json",
+      "bytes": 7942,
+      "sha256": "1840b9516f1c11451f2583a4adf211fb11f4dea41686829506abdf7573056d28",
+      "upstream_source": "evidence/matched-kl/policy/completion-20261026/training.json"
+    },
+    {
+      "path": "evidence/matched-kl/policy/full-six-r1/evaluation.json",
+      "bytes": 41162,
+      "sha256": "cc7dd2372a5c80f49aed0d5374deff4cdda8aa739ce41531f5c13245fe760ba5",
+      "upstream_source": "evidence/matched-kl/policy/full-six-r1/evaluation.json"
+    },
+    {
+      "path": "evidence/matched-kl/policy/kl-pilot1.json",
+      "bytes": 8111,
+      "sha256": "801d4276bcda582c70aeaca71a89754d1cd443cf6bd5ff9f4dd449ea529d3b85",
+      "upstream_source": "evidence/matched-kl/policy/kl-pilot1.json"
+    },
+    {
+      "path": "evidence/matched-kl/policy/kl-pilot2.json",
+      "bytes": 8113,
+      "sha256": "97b37374bf3799684a099a78e0ef439239c3376ce088252027eb1bca41f20b2c",
+      "upstream_source": "evidence/matched-kl/policy/kl-pilot2.json"
+    },
+    {
+      "path": "evidence/matched-kl/policy/pilot1/training.json",
+      "bytes": 7929,
+      "sha256": "1846796d5eb2beb4ed6394643dea0d1bea4db2d1b434b1c437cd817193ce44d8",
+      "upstream_source": "evidence/matched-kl/policy/pilot1/training.json"
+    },
+    {
+      "path": "evidence/matched-kl/policy/pilot2/training.json",
+      "bytes": 7919,
+      "sha256": "6971032b549fe11c15a085d679127fb8dd2a31e7c86d06018757bfa079bde000",
+      "upstream_source": "evidence/matched-kl/policy/pilot2/training.json"
+    },
+    {
+      "path": "evidence/matched-kl/policy/residual-20261025/training.json",
+      "bytes": 7975,
+      "sha256": "bbc1a290a6aede108544d7fa65f94cc253c52db0cf9fec94a21b967d45bbf4e8",
+      "upstream_source": "evidence/matched-kl/policy/residual-20261025/training.json"
+    },
+    {
+      "path": "evidence/matched-kl/policy/residual-20261026/training.json",
+      "bytes": 7975,
+      "sha256": "1aa61a1e8cb5adb30368911447eb21b17a2faa05fa114a5b60790dfc60ed04f9",
+      "upstream_source": "evidence/matched-kl/policy/residual-20261026/training.json"
+    },
+    {
+      "path": "evidence/matched-kl/policy/screen-six-r1/evaluation.json",
+      "bytes": 55373,
+      "sha256": "719aa890baa571458761687dcacbeda401724ed0e238025d62bd3316a2e86e3b",
+      "upstream_source": "evidence/matched-kl/policy/screen-six-r1/evaluation.json"
+    },
+    {
+      "path": "evidence/matched-kl/policy/train-final-six-r1.json",
+      "bytes": 34502,
+      "sha256": "6e4299ca58ee0da5d40d31e42317cd14c55c96d95d372dbc1827f4d8b1d4e103",
+      "upstream_source": "evidence/matched-kl/policy/train-final-six-r1.json"
+    },
+    {
+      "path": "evidence/matched-kl/policy/train-target-r1.json",
+      "bytes": 11304,
+      "sha256": "e51a6ca50350b93ce3c1925892c54acbff55dde01902eb47ec7876e7d9aa1c60",
+      "upstream_source": "evidence/matched-kl/policy/train-target-r1.json"
+    },
+    {
+      "path": "evidence/matched-kl/protocols/fit-ledger-01.json",
+      "bytes": 431,
+      "sha256": "d6c3f34ed755827812d755bb0689704200628b7749b225437f71d548d46c50eb",
+      "upstream_source": "evidence/matched-kl/protocols/fit-ledger-01.json"
+    },
+    {
+      "path": "evidence/matched-kl/protocols/fit-ledger-02.json",
+      "bytes": 761,
+      "sha256": "d37ac75b21971cba6eca002de2bbfed663050e895daa7e03923b20c836a2b613",
+      "upstream_source": "evidence/matched-kl/protocols/fit-ledger-02.json"
+    },
+    {
+      "path": "evidence/matched-kl/protocols/fit-ledger-03.json",
+      "bytes": 1103,
+      "sha256": "390497f21657ab5c44605f4c62873fed0dbb95915da0dce88ad8bafc4a586117",
+      "upstream_source": "evidence/matched-kl/protocols/fit-ledger-03.json"
+    },
+    {
+      "path": "evidence/matched-kl/protocols/fit-ledger-04.json",
+      "bytes": 1455,
+      "sha256": "e9cdfaae346d26c9c5c456eefd4548f149a3b7b962bdde17dce3df018f420096",
+      "upstream_source": "evidence/matched-kl/protocols/fit-ledger-04.json"
+    },
+    {
+      "path": "evidence/matched-kl/protocols/fit-ledger-05.json",
+      "bytes": 1797,
+      "sha256": "f36d816bbde6324da39e5594e8c1c216d80f57306e4c05a24ab6ae2ffc570c00",
+      "upstream_source": "evidence/matched-kl/protocols/fit-ledger-05.json"
+    },
+    {
+      "path": "evidence/matched-kl/protocols/fit-ledger-06.json",
+      "bytes": 2833,
+      "sha256": "20a1ac11e6fe24fc0dc968851c9de3dab4236d2b78715bfcb4fa4130dbc686cc",
+      "upstream_source": "evidence/matched-kl/protocols/fit-ledger-06.json"
+    },
+    {
+      "path": "evidence/matched-kl/protocols/frozen-beta.json",
+      "bytes": 2456,
+      "sha256": "be54df7bff4aabfa729480fdd3140661b976f532bcd418ad12d05cf1f192e13f",
+      "upstream_source": "evidence/matched-kl/protocols/frozen-beta.json"
+    },
+    {
+      "path": "evidence/matched-kl/protocols/matching.json",
+      "bytes": 2321,
+      "sha256": "e45f26f9d682c71e2ee7b10b45a5e75861d572a3dd91d29547e501842eda154c",
+      "upstream_source": "evidence/matched-kl/protocols/matching.json"
+    },
+    {
+      "path": "evidence/matched-kl/protocols/pilot1-decision.json",
+      "bytes": 794,
+      "sha256": "3e1d57c8f1c179d83b9044a2689b88644734a05a3f23efacc42c0dd23566317a",
+      "upstream_source": "evidence/matched-kl/protocols/pilot1-decision.json"
+    },
+    {
+      "path": "evidence/matched-kl/protocols/preregistration.json",
+      "bytes": 5268,
+      "sha256": "46f348e871f185efca1a734cd31e5234dba6346be545b690d32deb447e488ab4",
+      "upstream_source": "evidence/matched-kl/protocols/preregistration.json"
+    },
+    {
+      "path": "evidence/matched-kl/protocols/proposal-method.md",
+      "bytes": 9437,
+      "sha256": "bd4905acec147c1c97c22fa60d01a38171b84f804310ce7c9f8d8dcfc723a724",
+      "upstream_source": "evidence/matched-kl/protocols/proposal-method.md"
+    },
+    {
+      "path": "evidence/matched-kl/protocols/scientific-arms.json",
+      "bytes": 4369,
+      "sha256": "ecb71996763b76206c68b976cf8416c10e9c5b0a1fe11e25f98099c2e99c867f",
+      "upstream_source": "evidence/matched-kl/protocols/scientific-arms.json"
+    },
+    {
+      "path": "evidence/matched-kl/protocols/sources.json",
+      "bytes": 1728,
+      "sha256": "01727aed87fc5922da9df2000cf555e240ce238a95fd09b2b4aa95efbc8b8e6f",
+      "upstream_source": "evidence/matched-kl/protocols/sources.json"
+    },
+    {
+      "path": "evidence/matched-kl/protocols/target.json",
+      "bytes": 737,
+      "sha256": "8f159a0a0efd27ebc42f16e7b87fe8e9066beae965403af3bfcdb8b9bd5316d0",
+      "upstream_source": "evidence/matched-kl/protocols/target.json"
+    },
+    {
+      "path": "evidence/matched-kl/reports/figures-r1/manifest.json",
+      "bytes": 5249,
+      "sha256": "f58cf0dcfc04bc30a26093c540949cafae9c9260cc7ff0ed089f1441ad3fa8ec",
+      "upstream_source": "evidence/matched-kl/reports/figures-r1/manifest.json"
+    },
+    {
+      "path": "evidence/matched-kl/review/beta-freeze-science.json",
+      "bytes": 3934,
+      "sha256": "5b4739969fcbc19d5490813c1062a550f850d8bd36f7f1844b854327d26484c6",
+      "upstream_source": "evidence/matched-kl/review/beta-freeze-science.json"
+    },
+    {
+      "path": "evidence/matched-kl/review/delivery-final.json",
+      "bytes": 5618,
+      "sha256": "1dd88d938edce3b48406607fa99208580a3dde4fbc1261252c3e007fedbb3763",
+      "upstream_source": "evidence/matched-kl/review/delivery-final.json"
+    },
+    {
+      "path": "evidence/matched-kl/review/delivery-root-readback.json",
+      "bytes": 783,
+      "sha256": "f146c859d9e8c1afa072f8a00a11b8680060e667ecdece818d58a4b661a6e407",
+      "upstream_source": "evidence/matched-kl/review/delivery-root-readback.json"
+    },
+    {
+      "path": "evidence/matched-kl/review/delivery-source-final.json",
+      "bytes": 2693,
+      "sha256": "cc7db1caba13190fa6cf80eaa06648f43030872d414af0deb8e909e23323bf45",
+      "upstream_source": "evidence/matched-kl/review/delivery-source-final.json"
+    },
+    {
+      "path": "evidence/matched-kl/review/matching-science.json",
+      "bytes": 5496,
+      "sha256": "813d42cec2776f99bea149c043f656e0e7ddd9b27ea16c9ed57d93c7547e1eb6",
+      "upstream_source": "evidence/matched-kl/review/matching-science.json"
+    },
+    {
+      "path": "evidence/matched-kl/review/numeric-full4096.json",
+      "bytes": 13644,
+      "sha256": "f5728b8387643ecf4a66cbc163ac50c1601fc13e8cfe6a402d23bd1508a872c1",
+      "upstream_source": "evidence/matched-kl/review/numeric-full4096.json"
+    },
+    {
+      "path": "evidence/matched-kl/review/numeric-screen.json",
+      "bytes": 13314,
+      "sha256": "ce7bfd32860f109eebbb846de6fe48dbd70de9418547c750b6c1e3752017efa6",
+      "upstream_source": "evidence/matched-kl/review/numeric-screen.json"
+    },
+    {
+      "path": "evidence/matched-kl/review/report-final.json",
+      "bytes": 12150,
+      "sha256": "5ed0b242170f052f23788d7bd5ea9d2221c0f759d94f6f3ea1e63d038339243e",
+      "upstream_source": "evidence/matched-kl/review/report-final.json"
+    },
+    {
+      "path": "evidence/matched-kl/review/report-source.json",
+      "bytes": 6587,
+      "sha256": "6bd8f03f137c25b7660b3536657dff1e3a4398903339b0eb1db9c10abc2cb0eb",
+      "upstream_source": "evidence/matched-kl/review/report-source.json"
+    },
+    {
+      "path": "evidence/matched-kl/review/results-science.json",
+      "bytes": 7575,
+      "sha256": "84eab7652f06236b02b896f58c4d014caa51dd2c0786e71b5c166814edf2ce3e",
+      "upstream_source": "evidence/matched-kl/review/results-science.json"
+    },
+    {
+      "path": "evidence/matched-kl/review/root-source-tests.json",
+      "bytes": 1363,
+      "sha256": "304d1bbaaf2d7af55dff486b36fba19bdaa027a5d490c3dea99ace245e9068a3",
+      "upstream_source": "evidence/matched-kl/review/root-source-tests.json"
+    },
+    {
+      "path": "evidence/matched-kl/review/source-validation.json",
+      "bytes": 2257,
+      "sha256": "eb2d5197e9bd6f143a16e00b42404a393dcb123bf9b2f41506558db6423f0914",
+      "upstream_source": "evidence/matched-kl/review/source-validation.json"
+    },
+    {
+      "path": "evidence/matched-kl/review/target-science.json",
+      "bytes": 4497,
+      "sha256": "7bcb45dfc55d15f60fa2a7c27453fe2573cb8b3797fc66fbe694211cf68072fa",
+      "upstream_source": "evidence/matched-kl/review/target-science.json"
+    },
+    {
+      "path": "evidence/matched-kl/review/visual-final.json",
+      "bytes": 7381,
+      "sha256": "78501557e083ea6f557899e69615eb796d5f2e2989fe20537393e9116aad50d1",
+      "upstream_source": "evidence/matched-kl/review/visual-final.json"
+    },
+    {
+      "path": "evidence/raw-provenance/manifest.json",
+      "bytes": 946,
+      "sha256": "3dcb98f6930c11453fc5426a05da7de5a97e2a9179d3d165556fdfa139674262",
+      "upstream_source": "evidence/raw-provenance/manifest.json"
+    },
+    {
+      "path": "evidence/raw-provenance/verified-download.json",
+      "bytes": 676,
+      "sha256": "13c21bdddfeff740bd8293bcb7073abd47b8ebf16eb35877e7b3a5b9c8a0b49a",
+      "upstream_source": "evidence/raw-provenance/verified-download.json"
+    },
+    {
+      "path": "evidence/reproduction/INDEX.json",
+      "bytes": 3424,
+      "sha256": "0a478130fa43a8a8b4c1aa9e5480395683dbac0386fcf61166fb3b33d905d3c1",
+      "upstream_source": "evidence/reproduction/INDEX.json"
+    },
+    {
+      "path": "evidence/reproduction/actor-export-native.json",
+      "bytes": 1158,
+      "sha256": "5368e4240e7008cfde6cb99f074bfb40e50b5e6e40d94ce49209a1eeecceb649",
+      "upstream_source": "evidence/reproduction/actor-export-native.json"
+    },
+    {
+      "path": "evidence/reproduction/actor-extraction.json",
+      "bytes": 5807,
+      "sha256": "bc0c9187cf3fa7d868ae720ae41bed9ad585fbc8952f9130cc6dc5fb51fe70c5",
+      "upstream_source": "evidence/reproduction/actor-extraction.json"
+    },
+    {
+      "path": "evidence/reproduction/actor-replay-native.json",
+      "bytes": 1172,
+      "sha256": "9b97b54fa6136b06cf52160a6b9b102b914a557256c582cf88607232b3a0b9ce",
+      "upstream_source": "evidence/reproduction/actor-replay-native.json"
+    },
+    {
+      "path": "evidence/reproduction/actor-replay-receipt.json",
+      "bytes": 3749,
+      "sha256": "0859582ae1d2c8badf4a30d21d65d6a3ccdde6c87f9c52ed90dbe96a5f53769a",
+      "upstream_source": "evidence/reproduction/actor-replay-receipt.json"
+    },
+    {
+      "path": "evidence/reproduction/actor-replay-summary.json",
+      "bytes": 7759,
+      "sha256": "e2b0b173f43b3d8c09094d8dcc721186e2d94fd7e2ea6363d51144bcb8f4a15e",
+      "upstream_source": "evidence/reproduction/actor-replay-summary.json"
+    },
+    {
+      "path": "evidence/reproduction/cbm-metadata-review.json",
+      "bytes": 1717,
+      "sha256": "a02385637255737b9e6b2a0ec7972895b96ea6f26e71b45d9ebeeb80cc66234a",
+      "upstream_source": "evidence/reproduction/cbm-metadata-review.json"
+    },
+    {
+      "path": "evidence/reproduction/rm-export-native.json",
+      "bytes": 1153,
+      "sha256": "08ced6919202ed05425a763040fae78f1391ee6b71bf3bf226f7a43277852cc4",
+      "upstream_source": "evidence/reproduction/rm-export-native.json"
+    },
+    {
+      "path": "evidence/reproduction/rm-extraction.json",
+      "bytes": 4269,
+      "sha256": "0a2c7562636a791ab4d687c15df7efb89bcbc2c2543b9d4232e84c9ae1fa3f06",
+      "upstream_source": "evidence/reproduction/rm-extraction.json"
+    },
+    {
+      "path": "evidence/reproduction/rm-replay-native.json",
+      "bytes": 1159,
+      "sha256": "edde41ca8264f7778ed00a1c20443aeb4ed42f3ce6039406b408fc99b003233d",
+      "upstream_source": "evidence/reproduction/rm-replay-native.json"
+    },
+    {
+      "path": "evidence/reproduction/rm-replay-receipt.json",
+      "bytes": 3533,
+      "sha256": "5f24a985e2e0a09f9193cdb4ab6021af8b46868551ff1c12e3e09b8a2ca9d6fb",
+      "upstream_source": "evidence/reproduction/rm-replay-receipt.json"
+    },
+    {
+      "path": "evidence/reproduction/rm-replay-summary.json",
+      "bytes": 1717,
+      "sha256": "1fc306457c50b94c58b91a22eeacd3947ed380e79fb1351b0d794b787bcf5f43",
+      "upstream_source": "evidence/reproduction/rm-replay-summary.json"
+    },
+    {
+      "path": "evidence/reproduction/source-tests.json",
+      "bytes": 1228,
+      "sha256": "edffe451d1de4e713336b956cfce1d535838495129f6895ae50356cad5105707",
+      "upstream_source": "evidence/reproduction/source-tests.json"
+    },
+    {
+      "path": "evidence/reviews/evidence-readme-delta.json",
+      "bytes": 5770,
+      "sha256": "c23e2377bce415dc5ee4ff4771db39d15ee34ffd5dd1b47ccffedccaef552710",
+      "upstream_source": "evidence/reviews/evidence-readme-delta.json"
+    },
+    {
+      "path": "evidence/reviews/inputs-privacy-final.json",
+      "bytes": 29537,
+      "sha256": "a87e344ab4c4c84e4b812844ea9545be5edfea7af20a5be8402677bfbe0cadab",
+      "upstream_source": "evidence/reviews/inputs-privacy-final.json"
+    },
+    {
+      "path": "evidence/reviews/metrics-final.json",
+      "bytes": 53962,
+      "sha256": "6b312e37d7187d283883398905ea912457b20ff85657aacff1fda20cb85d3f43",
+      "upstream_source": "evidence/reviews/metrics-final.json"
+    },
+    {
+      "path": "evidence/reviews/native-closeout.json",
+      "bytes": 1724,
+      "sha256": "f9d74d3d072f64782d942eb63e1ae0f78d4ad060f81fa2c8e660d07ab103e261",
+      "upstream_source": "evidence/reviews/native-closeout.json"
+    },
+    {
+      "path": "evidence/reviews/native-guard-source.json",
+      "bytes": 9031,
+      "sha256": "1b80092359a071e14d2152fb6d194a89547d9d28ffe20b33929cc42f0e38480d",
+      "upstream_source": "evidence/reviews/native-guard-source.json"
+    },
+    {
+      "path": "evidence/reviews/pdf-canonical-r2.json",
+      "bytes": 440,
+      "sha256": "e3c3cd04bec87581204b390b138e1e085fb90511c83f644bb528fabb4e5eba65",
+      "upstream_source": "evidence/reviews/pdf-canonical-r2.json"
+    },
+    {
+      "path": "evidence/reviews/pdf-renderer-header-contrast.json",
+      "bytes": 4209,
+      "sha256": "ef44e0e34a55fc422c957b498e39449397fd5a757947e0d3b38f74e5762047ff",
+      "upstream_source": "evidence/reviews/pdf-renderer-header-contrast.json"
+    },
+    {
+      "path": "evidence/reviews/pdf-renderer-source.json",
+      "bytes": 7622,
+      "sha256": "6a54e72d0d9fb421c1ad333cbd64a636b83502a74b2810095315e140680e1763",
+      "upstream_source": "evidence/reviews/pdf-renderer-source.json"
+    },
+    {
+      "path": "evidence/reviews/pdf-visual-final.json",
+      "bytes": 13182,
+      "sha256": "f5efc9c9e8bd319bdbc493b05f80e688c42151b4b10a531838e6c2ecdc4ac64f",
+      "upstream_source": "evidence/reviews/pdf-visual-final.json"
+    },
+    {
+      "path": "evidence/reviews/requirements-final.json",
+      "bytes": 16087,
+      "sha256": "5a6d7998d816684d7083bf50fb03f7efe5cc640c6b57960d8f1be341d93475b0",
+      "upstream_source": "evidence/reviews/requirements-final.json"
+    },
+    {
+      "path": "evidence/reviews/root-pdf-render-r2.json",
+      "bytes": 3497,
+      "sha256": "c6c6f999e27e7ed58401fed6f1bdc6fd18b008b2010a63f4cc9cdb403b7e8680",
+      "upstream_source": "evidence/reviews/root-pdf-render-r2.json"
+    },
+    {
+      "path": "evidence/reviews/science-final.json",
+      "bytes": 9944,
+      "sha256": "33e77c23e0bd48599465982e33c3dc9b73807df048abc016242674a616027146",
+      "upstream_source": "evidence/reviews/science-final.json"
+    },
+    {
+      "path": "evidence/reviews/source-docdelta.json",
+      "bytes": 6625,
+      "sha256": "aa60a49a3cf6bb485e61f1fb88aa300b5300a3f866873cebf148fef73c1477aa",
+      "upstream_source": "evidence/reviews/source-docdelta.json"
+    },
+    {
+      "path": "evidence/reviews/source-final.json",
+      "bytes": 11335,
+      "sha256": "c09925ebea31c44801de864b529367f2d612c9e8ad24fdf6d4275a8fde1654fa",
+      "upstream_source": "evidence/reviews/source-final.json"
+    },
+    {
+      "path": "reports/LIMITATIONS.md",
+      "bytes": 18373,
+      "sha256": "01202596bb0f7584cea95af16c6c65510d6345704a94cb55555d6146b9e5bc12",
+      "upstream_source": "reports/LIMITATIONS.md"
+    },
+    {
+      "path": "reports/REPORT.md",
+      "bytes": 68067,
+      "sha256": "b299b49e09ba574ec346750e4b62c3df06a74d9f03314197172d134e5ae82b21",
+      "upstream_source": "reports/REPORT.md"
+    },
+    {
+      "path": "reports/REPORT.pdf",
+      "bytes": 1675410,
+      "sha256": "e26e476feac5b4614ff3bc726f5a301f15fb1cb845361871d186928c270a63b5",
+      "upstream_source": "reports/REPORT.pdf"
+    },
+    {
+      "path": "reports/figures/fullstudy/full/02-matched-comparison.png",
+      "bytes": 205458,
+      "sha256": "0a63b4c12616ff1f9f57bf4b8100b2458de85ba4aadaa1bdf65c0c4f86ae3e94",
+      "upstream_source": "reports/figures/fullstudy/full/02-matched-comparison.png"
+    },
+    {
+      "path": "reports/figures/fullstudy/full/02-matched-comparison.svg",
+      "bytes": 49145,
+      "sha256": "630fd8f7aec6e3c27c8ea28e5111b2f73840a0c975ab89c4070cbcc43636d184",
+      "upstream_source": "reports/figures/fullstudy/full/02-matched-comparison.svg"
+    },
+    {
+      "path": "reports/figures/fullstudy/full/03-paired-uncertainty.png",
+      "bytes": 141710,
+      "sha256": "706dae27f324f9fd0ad8f929580eb65b90edde118d02f9a3deff9a47a2f19014",
+      "upstream_source": "reports/figures/fullstudy/full/03-paired-uncertainty.png"
+    },
+    {
+      "path": "reports/figures/fullstudy/full/03-paired-uncertainty.svg",
+      "bytes": 22825,
+      "sha256": "c504bc22ac34e06389020c0b9534e0b2b79580a356eac97aa5609a9e42b81455",
+      "upstream_source": "reports/figures/fullstudy/full/03-paired-uncertainty.svg"
+    },
+    {
+      "path": "reports/figures/fullstudy/full/04-exposure-distribution.png",
+      "bytes": 324647,
+      "sha256": "349b12c25cb4679dead55a14a1e91fb2935e1685c7935d79c7bb0bb4ed4b3c4d",
+      "upstream_source": "reports/figures/fullstudy/full/04-exposure-distribution.png"
+    },
+    {
+      "path": "reports/figures/fullstudy/full/04-exposure-distribution.svg",
+      "bytes": 70332,
+      "sha256": "80582800bc43415145872f6fd13c80f4a096428d63de002689ea919d82354098",
+      "upstream_source": "reports/figures/fullstudy/full/04-exposure-distribution.svg"
+    },
+    {
+      "path": "reports/figures/fullstudy/full/05-target-ranks.png",
+      "bytes": 163924,
+      "sha256": "5147e592090718d3ca38381cf95937008eb575a26f683f1fe1d57d8a9b96802c",
+      "upstream_source": "reports/figures/fullstudy/full/05-target-ranks.png"
+    },
+    {
+      "path": "reports/figures/fullstudy/full/05-target-ranks.svg",
+      "bytes": 29587,
+      "sha256": "bf4feb43a59b19bac1a790dafdc92f30626ea7737af62c746c426bc8de98c74f",
+      "upstream_source": "reports/figures/fullstudy/full/05-target-ranks.svg"
+    },
+    {
+      "path": "reports/figures/fullstudy/rollout/08-five-step-panel.png",
+      "bytes": 449323,
+      "sha256": "189973f37121ee28145c0d0a56b5a6c8c49a51f4a7066910bb2763abae9fbc71",
+      "upstream_source": "reports/figures/fullstudy/rollout/08-five-step-panel.png"
+    },
+    {
+      "path": "reports/figures/fullstudy/rollout/08-five-step-panel.svg",
+      "bytes": 114106,
+      "sha256": "e373b66e194c04da7cb11ef6d1e2db444b8215c3cd355441d7d6c0f128da31c0",
+      "upstream_source": "reports/figures/fullstudy/rollout/08-five-step-panel.svg"
+    },
+    {
+      "path": "reports/figures/fullstudy/rollout/08b-five-step-behavior.png",
+      "bytes": 436687,
+      "sha256": "62aeda935a319cbeb6f506c2e8c0d42d4530bcd33cf2ceb13f4b6ffd7ad0ff90",
+      "upstream_source": "reports/figures/fullstudy/rollout/08b-five-step-behavior.png"
+    },
+    {
+      "path": "reports/figures/fullstudy/rollout/08b-five-step-behavior.svg",
+      "bytes": 117631,
+      "sha256": "c96bd62e0374a1afc766dd9b2278678f9d9d8085a3c2202cfa478d2e2457aca2",
+      "upstream_source": "reports/figures/fullstudy/rollout/08b-five-step-behavior.svg"
+    },
+    {
+      "path": "reports/figures/fullstudy/screen/01-checkpoint-tradeoff.png",
+      "bytes": 185386,
+      "sha256": "c045fd04b68d92114a033f6d1cda0688562fff6453963dcdbe58c12614ed7e59",
+      "upstream_source": "reports/figures/fullstudy/screen/01-checkpoint-tradeoff.png"
+    },
+    {
+      "path": "reports/figures/fullstudy/screen/01-checkpoint-tradeoff.svg",
+      "bytes": 32696,
+      "sha256": "95a91f26a33ee32b84d96ca5be82b741b3c6b82717eee86e684e5269deb8fddb",
+      "upstream_source": "reports/figures/fullstudy/screen/01-checkpoint-tradeoff.svg"
+    },
+    {
+      "path": "reports/figures/fullstudy/screen/02-matched-comparison.png",
+      "bytes": 201232,
+      "sha256": "c460020a24109bec657e573ff3226ecf7fdcfb1025cb175b87133554fe8def66",
+      "upstream_source": "reports/figures/fullstudy/screen/02-matched-comparison.png"
+    },
+    {
+      "path": "reports/figures/fullstudy/screen/02-matched-comparison.svg",
+      "bytes": 47851,
+      "sha256": "247197f986dccf438d75aad85a97e396eceecd482d3d80eb744cea6de6388128",
+      "upstream_source": "reports/figures/fullstudy/screen/02-matched-comparison.svg"
+    },
+    {
+      "path": "reports/figures/fullstudy/screen/03-paired-uncertainty.png",
+      "bytes": 143468,
+      "sha256": "00c254e33a7cff08bcbca3bb14af94b94e8c8ebd5d8c63c5b209084b631c898e",
+      "upstream_source": "reports/figures/fullstudy/screen/03-paired-uncertainty.png"
+    },
+    {
+      "path": "reports/figures/fullstudy/screen/03-paired-uncertainty.svg",
+      "bytes": 22829,
+      "sha256": "227daa3ab86985f3331b146698f920f5df4cad7dc73db482c107c28145dc596f",
+      "upstream_source": "reports/figures/fullstudy/screen/03-paired-uncertainty.svg"
+    },
+    {
+      "path": "reports/figures/fullstudy/screen/04-exposure-distribution.png",
+      "bytes": 331740,
+      "sha256": "b83a9ab959379c4aa66932b2cbcf1b5e36de513731a731819f2b78cbe96ded1e",
+      "upstream_source": "reports/figures/fullstudy/screen/04-exposure-distribution.png"
+    },
+    {
+      "path": "reports/figures/fullstudy/screen/04-exposure-distribution.svg",
+      "bytes": 70552,
+      "sha256": "44aff31e6cec9967d35fac7f46a0d9f9e1bbfac91278a3511d77e6c994f36a01",
+      "upstream_source": "reports/figures/fullstudy/screen/04-exposure-distribution.svg"
+    },
+    {
+      "path": "reports/figures/fullstudy/screen/05-target-ranks.png",
+      "bytes": 152857,
+      "sha256": "9e9b9a7e5a7f524eb21c38dc2a220064456224d7dc6b4a559fd69688dd891a4e",
+      "upstream_source": "reports/figures/fullstudy/screen/05-target-ranks.png"
+    },
+    {
+      "path": "reports/figures/fullstudy/screen/05-target-ranks.svg",
+      "bytes": 26191,
+      "sha256": "0cc400b4af6677076dcedddcfb7855eeec87ad15c21d90f47cc6c5eb99aaa6b7",
+      "upstream_source": "reports/figures/fullstudy/screen/05-target-ranks.svg"
+    },
+    {
+      "path": "reports/figures/fullstudy/screen/06-screen-utilities-behavior.png",
+      "bytes": 244433,
+      "sha256": "1f407530ceb157bf0d1be3504fb20214130dcee2a62f23fca8b50635bbfb9ae4",
+      "upstream_source": "reports/figures/fullstudy/screen/06-screen-utilities-behavior.png"
+    },
+    {
+      "path": "reports/figures/fullstudy/screen/06-screen-utilities-behavior.svg",
+      "bytes": 50441,
+      "sha256": "1096732514aa632808dcc7d7d5540e651108ce773d5e7949d31f37f9248b0928",
+      "upstream_source": "reports/figures/fullstudy/screen/06-screen-utilities-behavior.svg"
+    },
+    {
+      "path": "reports/figures/fullstudy/screen/07-item-contributions.png",
+      "bytes": 342182,
+      "sha256": "a376163abbc617abe920ca1007260b299c453444506a6bb226795ef3457e10a3",
+      "upstream_source": "reports/figures/fullstudy/screen/07-item-contributions.png"
+    },
+    {
+      "path": "reports/figures/fullstudy/screen/07-item-contributions.svg",
+      "bytes": 50776,
+      "sha256": "04e401e0273ecc9ee786bb779775517560eb89d75b29867545045506fc87c018",
+      "upstream_source": "reports/figures/fullstudy/screen/07-item-contributions.svg"
+    },
+    {
+      "path": "reports/figures/matched-kl/train-kl-and-map.png",
+      "bytes": 235893,
+      "sha256": "86f1962a15ace1cb244536d40f9683059d409b760ee4802ac560e115d57fafb1",
+      "upstream_source": "reports/figures/matched-kl/train-kl-and-map.png"
+    },
+    {
+      "path": "reports/figures/matched-kl/train-kl-and-map.svg",
+      "bytes": 25589,
+      "sha256": "a054b44e48ab4780a660ea37e8cd604f93aa8e02e9537e0b7abf5115e2789c41",
+      "upstream_source": "reports/figures/matched-kl/train-kl-and-map.svg"
+    },
+    {
+      "path": "reports/render_report.py",
+      "bytes": 31574,
+      "sha256": "dfbffc0e48cb11951038e714b7a577f165730255299fe3baf7f64d6016ef2c3c",
+      "upstream_source": "reports/render_report.py"
+    },
+    {
+      "path": "reports/test_render_report.py",
+      "bytes": 12412,
+      "sha256": "78b4ad43f1acc322e056967a5923910f652e5b3e602c7b86af57977262d354ca",
+      "upstream_source": "reports/test_render_report.py"
+    },
+    {
+      "path": "reproduction/ENVIRONMENTS.md",
+      "bytes": 7503,
+      "sha256": "d5392f1d8ecd90c162ab3089b7b6d9c79e81a5d2ab0fcbcd67551c142a9ff9fa",
+      "upstream_source": "reproduction/ENVIRONMENTS.md"
+    },
+    {
+      "path": "reproduction/HAND_IN.md",
+      "bytes": 7641,
+      "sha256": "92a37dbb895562e23c38fe92f4b613feafb9a81bc55a03795167ee7d7df179a0",
+      "upstream_source": "reproduction/HAND_IN.md"
+    },
+    {
+      "path": "reproduction/INPUTS.md",
+      "bytes": 11781,
+      "sha256": "4e47a8fd8492ec0abfc55a8f1d466997f6279ecdde0716d1be2d47cccf5abdcd",
+      "upstream_source": "reproduction/INPUTS.md"
+    },
+    {
+      "path": "reproduction/README.md",
+      "bytes": 18878,
+      "sha256": "071530d377f35f809a7c49ffa6c5f2e5e98bd0c74e8f40adfdeaefbcce05fdd0",
+      "upstream_source": "reproduction/README.md"
+    },
+    {
+      "path": "reproduction/export_fixture.py",
+      "bytes": 29284,
+      "sha256": "411d912e5f6372029f6e1a47293420f1d276cb29e9fc2c655a59331e655e3c28",
+      "upstream_source": "reproduction/export_fixture.py"
+    },
+    {
+      "path": "reproduction/export_rm_fixture.py",
+      "bytes": 18030,
+      "sha256": "3c00b9bb3fbdbaf3c362385d10587ba341c0dc56ede61d5df46b3bd67f911967",
+      "upstream_source": "reproduction/export_rm_fixture.py"
+    },
+    {
+      "path": "reproduction/external-provenance/INDEX.json",
+      "bytes": 8957,
+      "sha256": "a0bbbc4f7939a51d92815b7adb99755db36e28338402cee6dba5e095d718900e",
+      "upstream_source": "reproduction/external-provenance/INDEX.json"
+    },
+    {
+      "path": "reproduction/fixture-contract.json",
+      "bytes": 7924,
+      "sha256": "5321acccd918f2b85d35c142d3a1869e6f6779e0b6f23960a60b218e7755436a",
+      "upstream_source": "reproduction/fixture-contract.json"
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/manifest.json",
+      "bytes": 4381,
+      "sha256": "7b3e7dbefde3a6d0e113c0340dbbfc425d223574a7c4cd13db7927fb29b30380",
+      "upstream_source": "reproduction/inputs-rm-r1/manifest.json"
+    },
+    {
+      "path": "reproduction/inputs/manifest.json",
+      "bytes": 7578,
+      "sha256": "e680dd145b2bfdc812107fb9a257bf16f6d1ef5a53c07845f7dc21838146a52c",
+      "upstream_source": "reproduction/inputs/manifest.json"
+    },
+    {
+      "path": "reproduction/kion_replay/__init__.py",
+      "bytes": 106,
+      "sha256": "ab7272ae400ab141305a1e7dc7f241760874c25c84291bab8c10fe4d42b7dabb",
+      "upstream_source": "reproduction/kion_replay/__init__.py"
+    },
+    {
+      "path": "reproduction/kion_replay/__main__.py",
+      "bytes": 276,
+      "sha256": "d96070e07dca6bfd2f71f5c3755f76620d8e500de5be3dcaedee3fcce7d02693",
+      "upstream_source": "reproduction/kion_replay/__main__.py"
+    },
+    {
+      "path": "reproduction/kion_replay/cli.py",
+      "bytes": 11082,
+      "sha256": "031a9bf711c981f416bab96ad6c14afe7af9d9db7740a665ee23903968fc3d26",
+      "upstream_source": "reproduction/kion_replay/cli.py"
+    },
+    {
+      "path": "reproduction/kion_replay/gpt.py",
+      "bytes": 10427,
+      "sha256": "596be64c5c8a7f7cdc779b8f0e10a94a9c59137f8ac8256c8f89e1e20e615a28",
+      "upstream_source": "reproduction/kion_replay/gpt.py"
+    },
+    {
+      "path": "reproduction/kion_replay/head.py",
+      "bytes": 5797,
+      "sha256": "53e5ea2e4338daa97d7e188c57f6e90e79367e65f18297dd630e3515f0acc6ca",
+      "upstream_source": "reproduction/kion_replay/head.py"
+    },
+    {
+      "path": "reproduction/kion_replay/io.py",
+      "bytes": 8626,
+      "sha256": "c494b0996b746d5a5bbc7bf3b27534ca22c43e2ac36477bc41d34b07b0b41033",
+      "upstream_source": "reproduction/kion_replay/io.py"
+    },
+    {
+      "path": "reproduction/kion_replay/metrics.py",
+      "bytes": 2760,
+      "sha256": "a63a69181f60c98811a317793936e75301ab05d6d1d137f492fbab4b31b12357",
+      "upstream_source": "reproduction/kion_replay/metrics.py"
+    },
+    {
+      "path": "reproduction/kion_replay/rm.py",
+      "bytes": 8641,
+      "sha256": "dc9e2115b508c8d3b528e8eb6e07dcd00a36957156cdd9f5c6b7795d0824abf3",
+      "upstream_source": "reproduction/kion_replay/rm.py"
+    },
+    {
+      "path": "reproduction/kion_replay/test_core.py",
+      "bytes": 8713,
+      "sha256": "910c9b9d731de453ef2dd927562c1409d22e1234175e44221c3f476d52f6dc94",
+      "upstream_source": "reproduction/kion_replay/test_core.py"
+    },
+    {
+      "path": "reproduction/kion_replay/verify.py",
+      "bytes": 9856,
+      "sha256": "27f4217d91f9795f1bb9c78112dbf3088d4c2df2710eb44414741c37027dbaf6",
+      "upstream_source": "reproduction/kion_replay/verify.py"
+    },
+    {
+      "path": "reproduction/runtime-manifest.json",
+      "bytes": 1744,
+      "sha256": "ba79888e24957517991c338cef6cccc53ee7d4fa5dd4583051e626b930ab068d",
+      "upstream_source": "reproduction/runtime-manifest.json"
+    },
+    {
+      "path": "reproduction/test_export_fixture.py",
+      "bytes": 10079,
+      "sha256": "480e7ed1252390999a8cbb02d3f4e8e3bd658e4de6ce08ce01e0013f5ddf1232",
+      "upstream_source": "reproduction/test_export_fixture.py"
+    },
+    {
+      "path": "reproduction/test_rm_portability.py",
+      "bytes": 2372,
+      "sha256": "6031fa86756e9ebaef0d7aad52333203d7c3732965c763e4f441b6fb89aaeee2",
+      "upstream_source": "reproduction/test_rm_portability.py"
+    },
+    {
+      "path": "research/RM_PORTABILITY.md",
+      "bytes": 15907,
+      "sha256": "1ff32816bf6b7fc9eb6a4af20a44e6603cfd7a6c9e8b9fb1db078ccc14f04f1c",
+      "upstream_source": "research/RM_PORTABILITY.md"
+    },
+    {
+      "path": "research/SOURCE_CLOSURE.md",
+      "bytes": 8751,
+      "sha256": "56585980d125339219b3bcdbd2d8e7a5d84b97bc347e78f11c7c252060155c17",
+      "upstream_source": "research/SOURCE_CLOSURE.md"
+    },
+    {
+      "path": "source/README.md",
+      "bytes": 3836,
+      "sha256": "905b1f72141e432471811a1c1b22679ba07a5b279c6515f7057cec50f485688b",
+      "upstream_source": "source/README.md"
+    },
+    {
+      "path": "source/fullstudy/code-manifest.json",
+      "bytes": 109280,
+      "sha256": "6b054627fdcfd2ee205df2e3871d8da47e6d3d7cbdf47a58897968182f2e4085",
+      "upstream_source": "source/fullstudy/code-manifest.json"
+    },
+    {
+      "path": "source/fullstudy/code/fixtures/synthetic-ranking.json",
+      "bytes": 347,
+      "sha256": "c5f3854802c2cbb8b3991a6dac4f150a7f9e88b02fc074889690312b7633d915",
+      "upstream_source": "source/fullstudy/code/fixtures/synthetic-ranking.json"
+    },
+    {
+      "path": "source/fullstudy/code/personal-agent-system/scripts/portability.py",
+      "bytes": 24158,
+      "sha256": "5a63306d80767c7676d066cb3d148856f047a09013590ba9c2b21acab9d54684",
+      "upstream_source": "source/fullstudy/code/personal-agent-system/scripts/portability.py"
+    },
+    {
+      "path": "source/fullstudy/code/recipes/excluded-inputs.json",
+      "bytes": 34896,
+      "sha256": "3b7f2d49e5ebe4373bc61f90080cf2e77f591038f8593aaa972c167208ee4e24",
+      "upstream_source": "source/fullstudy/code/recipes/excluded-inputs.json"
+    },
+    {
+      "path": "source/fullstudy/code/recipes/execution-stage-index.json",
+      "bytes": 20999,
+      "sha256": "b7be3aa2fa6efdc62cca5ffeecd32cd08b6a5311a9ae7d903398c6f9c8f49a44",
+      "upstream_source": "source/fullstudy/code/recipes/execution-stage-index.json"
+    },
+    {
+      "path": "source/fullstudy/code/recipes/import-inventory.json",
+      "bytes": 263754,
+      "sha256": "61ce001f7fb1285c537ec8971d98b732e9fdc094099b2dba49dfcc0a1a748e36",
+      "upstream_source": "source/fullstudy/code/recipes/import-inventory.json"
+    },
+    {
+      "path": "source/fullstudy/code/recipes/package-allowlist.json",
+      "bytes": 8028,
+      "sha256": "4e5ae6597f72b386c540ebb35d3f05fbb79c056d59996db51154c40097447e79",
+      "upstream_source": "source/fullstudy/code/recipes/package-allowlist.json"
+    },
+    {
+      "path": "source/fullstudy/code/recipes/path-map.template.json",
+      "bytes": 1252,
+      "sha256": "d2206fa717555dcbfacf2dfa7f29049cea26a1fba189f2a81fb8e2c3514e6040",
+      "upstream_source": "source/fullstudy/code/recipes/path-map.template.json"
+    },
+    {
+      "path": "source/fullstudy/code/recipes/root-render-environment.json",
+      "bytes": 2282,
+      "sha256": "f3bbf3913978a06e3c658e0bcaf97a62bc7cd6405f8bfb982e409416b8ce0a47",
+      "upstream_source": "source/fullstudy/code/recipes/root-render-environment.json"
+    },
+    {
+      "path": "source/fullstudy/code/recipes/source-requests.json",
+      "bytes": 72030,
+      "sha256": "6b1e3759c26cce8602b4cbaffc66a0e5f27eaa8269c462f4af3dc21052238480",
+      "upstream_source": "source/fullstudy/code/recipes/source-requests.json"
+    },
+    {
+      "path": "source/fullstudy/code/requirements/actor.txt",
+      "bytes": 124,
+      "sha256": "6614d6268cb1856909592998f0933d9d2d66e333e6a0bea7be5c025458a7dc18",
+      "upstream_source": "source/fullstudy/code/requirements/actor.txt"
+    },
+    {
+      "path": "source/fullstudy/code/requirements/figures.txt",
+      "bytes": 32,
+      "sha256": "67ca867be6c15fff020cec1570e0b241254170f76ef7743fdd84d9184032d85d",
+      "upstream_source": "source/fullstudy/code/requirements/figures.txt"
+    },
+    {
+      "path": "source/fullstudy/code/requirements/reward-worker.txt",
+      "bytes": 44,
+      "sha256": "06391ca78a8198378a6bd0ba979a30e0929412dc8b6bb219c34d2e8a3ba97a4e",
+      "upstream_source": "source/fullstudy/code/requirements/reward-worker.txt"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/cohorts/cohort_sampler.py",
+      "bytes": 16021,
+      "sha256": "3ce70beacf5aa578e40079e4a4ece97dd9b11de6f5982ab26680098401c46704",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/cohorts/cohort_sampler.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/cohorts/test_cohort_sampler.py",
+      "bytes": 3446,
+      "sha256": "c3bf6d10d01d309558b33454757d0933f01e77b090a7442942946f03285008ff",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/cohorts/test_cohort_sampler.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/control/common.py",
+      "bytes": 8144,
+      "sha256": "7eee3522f3df7f843b55f56d33adfc667e4eb855a53918d7d4b58ef926d7daa9",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/control/common.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/control/launch.py",
+      "bytes": 1949,
+      "sha256": "fc9a158fb1e3d91b72a6479a08abdff20864225062d6294371b93ee57ef792e8",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/control/launch.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/control/supervise.py",
+      "bytes": 8416,
+      "sha256": "f25381ca3ecec4f5fa510b368314b3ccc9759826049563c4da6000608cf9a957",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/control/supervise.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/control/worker.py",
+      "bytes": 4783,
+      "sha256": "bb6e7d8026c3ab72a8f2b61406b265997d71cee77adc65aeada442f2048a3472",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/control/worker.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/interpretation/analyze_rl.py",
+      "bytes": 18708,
+      "sha256": "764d5818fbf214577f51e1b37511b5b156625844e53ef71076cf6b5beeb55c69",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/interpretation/analyze_rl.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/interpretation/analyze_saved.py",
+      "bytes": 26852,
+      "sha256": "aa6426e79c9c54ffbd24692bc80094b5ccb0423248d34fdcbb571930ab66303e",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/interpretation/analyze_saved.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/interpretation/summarize_rollout.py",
+      "bytes": 21911,
+      "sha256": "f4a53e6625af758e495e1d3877102ab617d312d3e4f0d42dad52151274ea642a",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/interpretation/summarize_rollout.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/interpretation/test_analyze_rl.py",
+      "bytes": 4417,
+      "sha256": "5dbb36871a00235d34b1cbbf6795934b55811b0a7be2d79edbb0b2466771758c",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/interpretation/test_analyze_rl.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/interpretation/test_analyze_saved.py",
+      "bytes": 4857,
+      "sha256": "485b4008cd9d025f06edf3e03cb41be741b99fb8bc0b1cd83deaebdb751fdbe2",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/interpretation/test_analyze_saved.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/interpretation/test_summarize_rollout.py",
+      "bytes": 9223,
+      "sha256": "b84e3afb5bd6d487912db90b84188d1cc467a70badcdc3b57715a99140a44388",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/interpretation/test_summarize_rollout.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/liveprefix.py",
+      "bytes": 15982,
+      "sha256": "a5eb3ad24d39b59ad5fdda98883b858b59516756e901f478aeaac3968ae1e36a",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/liveprefix.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/liveprefix_v2.py",
+      "bytes": 19172,
+      "sha256": "27c862ecaca9d991632a108f13398714ba15e8d2276090cd44d3b57fda9945fa",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/liveprefix_v2.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/policy.py",
+      "bytes": 47669,
+      "sha256": "5635b93e0c9c9a245cbf723cdf257d688ce4f0025162a647354918ae52bd11a1",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/policy.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/policy_v2.py",
+      "bytes": 59446,
+      "sha256": "da7baf199b685cb467edd7d5eedaada151798ec40bbc23e9edfaee8e36340dba",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/policy_v2.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/test_liveprefix_source.py",
+      "bytes": 5767,
+      "sha256": "bc4713122bfa085adf1ee743791d781f2ac7ebfbf67c0684f22a739505215ef0",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/test_liveprefix_source.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/test_liveprefix_v2_source.py",
+      "bytes": 9250,
+      "sha256": "3d987aa71c640a9d119be03111ccbf8c63ff0e2cd65e5dbab2e6f5e004cc0c2d",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/test_liveprefix_v2_source.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/test_policy_source.py",
+      "bytes": 5913,
+      "sha256": "b4ee296216da1e1355ca65810058da43fbae3ab344e40965fd389950d5fa3fc6",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/test_policy_source.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/test_policy_v2_source.py",
+      "bytes": 5626,
+      "sha256": "90a1a18663a0dd189c45811148862bd1b991894fedc6daaeb506749e3ae25f82",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/test_policy_v2_source.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/bridge.py",
+      "bytes": 28023,
+      "sha256": "097aceb6edd8004cd6d3258955ede50073012918ce6759a73020fcd4e9daa6eb",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/bridge.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/test_bridge.py",
+      "bytes": 16451,
+      "sha256": "bd8aa817f6d596248048bd8c0f056de95b55b018f93d18aec4597998897404f6",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/test_bridge.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/admit_postprocess.py",
+      "bytes": 2805,
+      "sha256": "13dbd8bb2bfb391b71d02ae818f4e4b2392a954c65b30567c920366d06038693",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/admit_postprocess.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/README.md",
+      "bytes": 6285,
+      "sha256": "85845f51174c40d96bb0dc4feae7e7f56bae3ee0c5ffd50e1bcdedfe60c0ab47",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/README.md"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/common.py",
+      "bytes": 8144,
+      "sha256": "7eee3522f3df7f843b55f56d33adfc667e4eb855a53918d7d4b58ef926d7daa9",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/common.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/launch.py",
+      "bytes": 1949,
+      "sha256": "fc9a158fb1e3d91b72a6479a08abdff20864225062d6294371b93ee57ef792e8",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/launch.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/supervise.py",
+      "bytes": 8416,
+      "sha256": "f25381ca3ecec4f5fa510b368314b3ccc9759826049563c4da6000608cf9a957",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/supervise.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/test_control.py",
+      "bytes": 8433,
+      "sha256": "129ca2fbd6b3aaf92cb4c26935a59b68003e92220deb47f1b1b11e7d90a7f384",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/test_control.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/worker.py",
+      "bytes": 4783,
+      "sha256": "bb6e7d8026c3ab72a8f2b61406b265997d71cee77adc65aeada442f2048a3472",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/worker.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/ANALYZE.md",
+      "bytes": 10546,
+      "sha256": "38020112c315d9f85f5b2aa5aa541cd192346c87b620c8765828f770a9179a90",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/ANALYZE.md"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/analyze.py",
+      "bytes": 34157,
+      "sha256": "17e1ab00608996850b5f24cdd499665dc5a682e744fc040a6d296edf234b116b",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/analyze.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/analyze_v2.py",
+      "bytes": 37780,
+      "sha256": "3343cfd806bd623c921a851a1434e80d83d1f85970391b14e6d361ff720fa593",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/analyze_v2.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_results.py",
+      "bytes": 17936,
+      "sha256": "f6be0387a947dd33f065deae54fe98d14881e30271040389d743602afcd024f4",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_results.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_results_v2.py",
+      "bytes": 6222,
+      "sha256": "08dc40464172cbb3d6cd4f0925fb97b1753f36beae270d56b0ed5a70760906df",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_results_v2.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_results_v3.py",
+      "bytes": 7027,
+      "sha256": "4020dce961bb6abbc7d3b48e40a94266f5b9ce3c2e8b27b5a88f08537b7c97a1",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_results_v3.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_results_v4.py",
+      "bytes": 7027,
+      "sha256": "a04715975f14af0bd03283be31721d31eea6e26c5914b1fa868839a0b5c0a147",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_results_v4.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_rollout.py",
+      "bytes": 16727,
+      "sha256": "7e5b32057f6eb45aedb8ae3784dcf8660b9f28bc94e7fc7fa95e8e1b14573255",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_rollout.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/render_figures.py",
+      "bytes": 9847,
+      "sha256": "a5ec1715c5d3adc657447d6692865bafb607ee0cf822cd7df7c472c826138cd1",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/render_figures.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/render_figures_v2.py",
+      "bytes": 10021,
+      "sha256": "ca315c84fb7bfff7c9efc8d2895ad9cabebf978eeb61d9b409e782a3d942d5f1",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/render_figures_v2.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/render_figures_v3.py",
+      "bytes": 10021,
+      "sha256": "323e0ff0bc1569f3bdb5610f585d07a32f3fd2a35d1086861de5babef0fbd8d2",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/render_figures_v3.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/replay_portable.py",
+      "bytes": 12823,
+      "sha256": "6f9dcd4c6c97c42f8ab33ae16648d0d510a58989f1edf9320c2dacd063d48cc4",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/replay_portable.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/replay_portable_v2.py",
+      "bytes": 12890,
+      "sha256": "5c60050c05d861053934bf44a99d82be5901615427bfb47d5d6e73f7a719e2e9",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/replay_portable_v2.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/replay_portable_v3.py",
+      "bytes": 12890,
+      "sha256": "2293ffef654eef5dbc6a965a11cb1bd0264b8852089581a553e76d0cafc2496f",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/replay_portable_v3.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/rollout_summary.py",
+      "bytes": 33421,
+      "sha256": "74a4148b078aa0495415b9d2698bf0c4d0e706f825458fcdcfb1b74ab31e9964",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/rollout_summary.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_analyze.py",
+      "bytes": 7545,
+      "sha256": "5e3ddd9c19a4be8ae65380feea9ed6f3dc303f63c451d96665df092b52ead947",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_analyze.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_analyze_v2.py",
+      "bytes": 6718,
+      "sha256": "04292c93e14cef2196a9fe671acfe0a0677ef4997a7bf9fcc3510de906d02b92",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_analyze_v2.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_plot_results_v3.py",
+      "bytes": 4761,
+      "sha256": "d76b91db0579f7f9c46c36f095d5daabf530725be753f6b3b544810b5eee8f04",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_plot_results_v3.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_plot_rollout.py",
+      "bytes": 9120,
+      "sha256": "12f47e9515a4db7ac53e05801650a47f0e0f1a69e29dabe5b7a9d379254f261d",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_plot_rollout.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_plot_source.py",
+      "bytes": 1994,
+      "sha256": "560f8665dabc06e82d489d9f85900460c9d0204f0abcedf4dc0188e214abbfd7",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_plot_source.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_render_figures.py",
+      "bytes": 16055,
+      "sha256": "a3474ee80ca945f8adc65612d1debec966a903fe2b0a8b009c8d1131e849fd28",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_render_figures.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_render_figures_v2.py",
+      "bytes": 15990,
+      "sha256": "c4583570d0663c17d5d16ec005f159b768d8a92202a15012012009e4ab1a94d2",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_render_figures_v2.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_render_layout_v4.py",
+      "bytes": 3854,
+      "sha256": "932acf8d514786a86633892c6cfb82b3af49e5dc784146be149bab10c68b4440",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_render_layout_v4.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_replay_portable.py",
+      "bytes": 11368,
+      "sha256": "52f9d8a01e9c3cd6cc2295332f6b3b264fa801f734b1211ca4b98f685ee2df61",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_replay_portable.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_replay_portable_v2.py",
+      "bytes": 13142,
+      "sha256": "90918597027eab2794434ada8a1cc71819d51cfe08967fa13609f8d62970b6df",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_replay_portable_v2.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_rollout_summary.py",
+      "bytes": 11773,
+      "sha256": "6dcf995f2db94da8375bc2d124bea3168d7417b8938a989c6e037588deee6f54",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/test_rollout_summary.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/EVALUATE.md",
+      "bytes": 9292,
+      "sha256": "f8c2030b214db6a704f987a82ad98897f4588d98a136cc632ab8890803e0b868",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/EVALUATE.md"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/RESIDUAL.md",
+      "bytes": 4265,
+      "sha256": "ae3408fe9caf25796de2de1c52e3f3785c8ce8ebf1581e9fb1370dbecaff1b4a",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/RESIDUAL.md"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/ROLLOUT.md",
+      "bytes": 5146,
+      "sha256": "1e6938e237d325cbbfaf81b66ab986aac57d23ac8b6f86a5a875d899b1ac325b",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/ROLLOUT.md"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/evaluate.py",
+      "bytes": 28264,
+      "sha256": "54fd8e1509d25ea5032731396ab5278c57eaee958d32d499a5ecd34359041e18",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/evaluate.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/residual.py",
+      "bytes": 15253,
+      "sha256": "781db1659305f2e6cc020f96cf52266201fa9f2ecfe21adde18bf6f16127b7f0",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/residual.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/rollout.py",
+      "bytes": 30864,
+      "sha256": "c4c8b59b33caf9823115d0889d24f5a29d675799e99c174eba91ec4b613b1ce9",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/rollout.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/test_evaluate.py",
+      "bytes": 8545,
+      "sha256": "fccc3ee0fb235907e48e13438404c046ab187302fe6fca477bee42e11fced8c5",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/test_evaluate.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/test_residual.py",
+      "bytes": 7943,
+      "sha256": "f522b2e42c67d7e4bf7e07ee7f54176206eb0eec2182e82409e9fb498a7c36d4",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/test_residual.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/test_rollout.py",
+      "bytes": 9060,
+      "sha256": "d47cec1d90b2115276fd6f314441837731fc96117dc9f37dac0a5ec162de072f",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/test_rollout.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_analysis_requests.py",
+      "bytes": 3445,
+      "sha256": "13876cee267f4b61497e01c2df85e7d6810c0a787423fdee1300c87c63e767c5",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_analysis_requests.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_evaluation_requests.py",
+      "bytes": 4984,
+      "sha256": "8b0a03bf7d8eed8ff9c67ddd645b38cd7102a9a78be11b4127847ee8f448c065",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_evaluation_requests.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_render_requests.py",
+      "bytes": 2403,
+      "sha256": "ca587e64366e6e31b19ef1362789afe006002811ccf3fafa730b606f03ed4cf9",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_render_requests.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_render_requests_v2.py",
+      "bytes": 2098,
+      "sha256": "ccb5e04186264087b037b782ee44c4219dbf94071731bce614e4dda2b3e5a6c1",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_render_requests_v2.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_render_requests_v3.py",
+      "bytes": 2098,
+      "sha256": "d00930dd543793608a7c027710760077bd9d40e2b5e32e2c5b7233e7528974e7",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_render_requests_v3.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_replay_requests.py",
+      "bytes": 2806,
+      "sha256": "c14750410f599a065fd0e17e97244ebda8560c708669039ffbcc6f62933bcaf3",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_replay_requests.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/protocols/evaluation.json",
+      "bytes": 1804,
+      "sha256": "ee0e1e06f060f27e4dd149a8c26c02827f9b1c9fb67a57d688d84e166fddfd25",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/protocols/evaluation.json"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/protocols/preregistration.json",
+      "bytes": 3105,
+      "sha256": "78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/protocols/preregistration.json"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reward/UTILITY.md",
+      "bytes": 4133,
+      "sha256": "e51886b8b876b621ebc2b7666d895bbdca16eecb931107fe6601e0880005b0c7",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reward/UTILITY.md"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reward/test_utility.py",
+      "bytes": 4106,
+      "sha256": "757daf0b10d11a567f3d33e2203c3022dccddb045c113db0e096b6cb182a763e",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reward/test_utility.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reward/utility.py",
+      "bytes": 16004,
+      "sha256": "4cffa8d876c84723326f035b825cafc520c4ad561d98e3851bfe38a5d3e1cd0f",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reward/utility.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/candidate-baselines-20261023-r1/worker.py",
+      "bytes": 20669,
+      "sha256": "5e3c76195479ec0b31d5356176dc1f7df15a784cf50d675a7d4d57f687736a5c",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/candidate-baselines-20261023-r1/worker.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/candidate-optim-20261022-r1/personal/personal_vector.py",
+      "bytes": 7563,
+      "sha256": "bb85283c5741a79f21635d785c32f76f3c2958903380cab7dac8b677ba035096",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/candidate-optim-20261022-r1/personal/personal_vector.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/candidate-optim-20261022-r1/related/related_direct_features.py",
+      "bytes": 8511,
+      "sha256": "15e311c091dc84180c4ef3650282e5a35eef52bc7c47333a54fd826162a444e4",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/candidate-optim-20261022-r1/related/related_direct_features.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/control-r2/benchmark_bridge.py",
+      "bytes": 6477,
+      "sha256": "ad0248346050824ee6ecac6c304c5388e2cfccb928bd97f1d82bc4a6b17f523d",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/control-r2/benchmark_bridge.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/control-r2/control.py",
+      "bytes": 21429,
+      "sha256": "ffe849bc80d14937f5d579d6a553b2c4edbd5580b5bfc88516a079c38c7c7a58",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/control-r2/control.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/control-r2/native_adapter.py",
+      "bytes": 2693,
+      "sha256": "dca315406ca7de82e9e8ec34dd0c3586cfa0648e40316bc414923f5892581bbb",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/control-r2/native_adapter.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/control-r2/probe.py",
+      "bytes": 4650,
+      "sha256": "65d82134def9f1a54e1ef631f85888aeea9e65aaaff92650ef4a1f5d003ac551",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/control-r2/probe.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/negative-worker-r2/benchmark.py",
+      "bytes": 3980,
+      "sha256": "2d0564b093928ae4b311c4e0b4203ccb5161ba168b7e4a2a2b26f1e4a891d88a",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/negative-worker-r2/benchmark.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/negative-worker-r2/hooks.py",
+      "bytes": 3082,
+      "sha256": "2c3399638216a980797e07b70132bdcec05b938ce9a189f8b0803de5ec84f6cc",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/negative-worker-r2/hooks.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/negative-worker-r2/sampler.py",
+      "bytes": 5798,
+      "sha256": "71d8747bfb080bc6ea82059c28b899e5c1bd266649deb9943de80de431933c44",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/negative-worker-r2/sampler.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/negative-worker-r2/worker.py",
+      "bytes": 4048,
+      "sha256": "e7d15f23605bf541125fcd20b2111656e1a189a5fb2ed8e2beda1569b0defccf",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/negative-worker-r2/worker.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/perf-audit-r1/dynamic_feature_cache.py",
+      "bytes": 6499,
+      "sha256": "3a9ba56b34561a3e129a0f116159e25deb6e3b2f81a1680cef0e770071f0b611",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/perf-audit-r1/dynamic_feature_cache.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/perf-batch-query-r1/kion_complete_pack.py",
+      "bytes": 95176,
+      "sha256": "9897cf3f9c361d9c9c86f7929c43dd10795147119e6679fe1696621c19921014",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/perf-batch-query-r1/kion_complete_pack.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/perf-batch-query-r1/query_batching.py",
+      "bytes": 4747,
+      "sha256": "a8f1f177bb848a2cb558ee3d65d2443b6f42ee1fbce2ad1d6b386d52dd9cf4cf",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/perf-batch-query-r1/query_batching.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/eda-script.py",
+      "bytes": 2587,
+      "sha256": "4f85b23ca828c8f1dfffc3ff7e0738fb3d3a59d3139b8b5c0446ca3096a9dbde",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/eda-script.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/full-joint-e1-20261024-r1/candidates.py",
+      "bytes": 18886,
+      "sha256": "6923f4e63ce6278de3297449c8d59fa498b9117f2cdc85537d7e9bd4e0acc09d",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/full-joint-e1-20261024-r1/candidates.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/hm_job.py",
+      "bytes": 8251,
+      "sha256": "a8ca33c389aad356ea2bd8b0a2ab43276a0af85029934888ebeca9f132c541a0",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/hm_job.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_basic_bundle_features.py",
+      "bytes": 17520,
+      "sha256": "25c5a80a2fba9de5ee76c67ac4bd6cd7bd437cf807cd42855baeba3b50f73ef8",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_basic_bundle_features.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_compare_predictions.py",
+      "bytes": 19781,
+      "sha256": "3b4966e6974a4fd52743ab90cf5999e65c0fb38bf9bd9f3b901fcbf65ae638c3",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_compare_predictions.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_conditioned_train.py",
+      "bytes": 65463,
+      "sha256": "b6c2c93bb8ac1475d00a1a20cd8d278da898468ae38a001cc5be4ec218478caf",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_conditioned_train.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_cuda_batches.py",
+      "bytes": 11143,
+      "sha256": "efcdc050c2e3778731e6f1e0ad49bb21c0b5dc622ea22f1f7992ed8c21568483",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_cuda_batches.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_full_train.py",
+      "bytes": 21542,
+      "sha256": "2b8d684e9f789eb7a51823e0b38df183dcd2f9f72942894a905fde1f1efd47ea",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_full_train.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_local_features.py",
+      "bytes": 16326,
+      "sha256": "e5f992093b53839d425ccd436dba0404862ad912b795a390d60ff6c9a2576de1",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_local_features.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_local_pack.py",
+      "bytes": 14868,
+      "sha256": "87412446a72033aae98897250cc0178084dd76b5818aee38a24fbb81a8e02aaf",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_local_pack.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_map10.py",
+      "bytes": 9000,
+      "sha256": "921bcfcc84a0896379add147d60a19f41dcda006c3b1a1aff0c682cabce1f54e",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_map10.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_night_supervisor.py",
+      "bytes": 39891,
+      "sha256": "af8c0eb6cfc45fed1a5e3a19e9c0940acd98eee2060998ed55ac9a66cdd92c48",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_night_supervisor.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_pack_dynamic.py",
+      "bytes": 34212,
+      "sha256": "7f53e94ddd5940514de8a132711ff5d782885983af9f0c62ae4c4515261bdd7a",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_pack_dynamic.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_pack_history.py",
+      "bytes": 34227,
+      "sha256": "ecdd0cd0e853d20578a7855acc8987c72c430925d1a30f7e26fee250000659dd",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_pack_history.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_pack_people.py",
+      "bytes": 22213,
+      "sha256": "25c9b1f9ac9188f096f22085d63a5de694e55a757c9857da963854bb808e791b",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_pack_people.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_pack_semantics.py",
+      "bytes": 60706,
+      "sha256": "74a59bad3bf89c5eb92624452ffac8e4775c18592823411a611d09d50fe3d7ff",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_pack_semantics.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_pack_static.py",
+      "bytes": 28604,
+      "sha256": "5a52ef6ab610b0f3d091bd6566982bd0894f1d0c1ad891986dd27d3f8703e181",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_pack_static.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_pack_train.py",
+      "bytes": 33878,
+      "sha256": "0f11d3c1bcc5165dfd9f35a7728b9400b679cd51c8bb444af04360643711546a",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_pack_train.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_policy_rl.py",
+      "bytes": 43624,
+      "sha256": "3ced63dd23b72ab69da1b7758d445cb7064f393f34823101be169106a6a80425",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_policy_rl.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_prepare.py",
+      "bytes": 13605,
+      "sha256": "81e8ac99a6d50398418fd95e0874bc07b55b3d33487e89731ec26397960c3e77",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_prepare.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_reward_boosting.py",
+      "bytes": 47491,
+      "sha256": "51421aea405abb210bb49b4aa1e694170b21296b75a15f7e228b01416fc085b1",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_reward_boosting.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_reward_data.py",
+      "bytes": 21248,
+      "sha256": "bc767e7987b9404273cc24a12e1f91562e480d0cfef39302e079fba7e296ddf6",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_reward_data.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_sex_features.py",
+      "bytes": 8397,
+      "sha256": "e524c68af1ad327c3e83959aa4503be17aabdc700beaa24793831d09a152a905",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_sex_features.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_train.py",
+      "bytes": 26201,
+      "sha256": "2066dcddcccabcd4c46971467287f2955cb06434bfa942247ac55f111e8d8d1b",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_train.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/hm_job.py",
+      "bytes": 8251,
+      "sha256": "a8ca33c389aad356ea2bd8b0a2ab43276a0af85029934888ebeca9f132c541a0",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/hm_job.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_basic_bundle_features.py",
+      "bytes": 17520,
+      "sha256": "25c5a80a2fba9de5ee76c67ac4bd6cd7bd437cf807cd42855baeba3b50f73ef8",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_basic_bundle_features.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_compare_predictions.py",
+      "bytes": 19781,
+      "sha256": "3b4966e6974a4fd52743ab90cf5999e65c0fb38bf9bd9f3b901fcbf65ae638c3",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_compare_predictions.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_conditioned_train.py",
+      "bytes": 65463,
+      "sha256": "b6c2c93bb8ac1475d00a1a20cd8d278da898468ae38a001cc5be4ec218478caf",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_conditioned_train.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_cuda_batches.py",
+      "bytes": 11143,
+      "sha256": "efcdc050c2e3778731e6f1e0ad49bb21c0b5dc622ea22f1f7992ed8c21568483",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_cuda_batches.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_full_train.py",
+      "bytes": 21542,
+      "sha256": "2b8d684e9f789eb7a51823e0b38df183dcd2f9f72942894a905fde1f1efd47ea",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_full_train.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_local_features.py",
+      "bytes": 16326,
+      "sha256": "e5f992093b53839d425ccd436dba0404862ad912b795a390d60ff6c9a2576de1",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_local_features.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_local_pack.py",
+      "bytes": 14868,
+      "sha256": "87412446a72033aae98897250cc0178084dd76b5818aee38a24fbb81a8e02aaf",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_local_pack.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_map10.py",
+      "bytes": 9000,
+      "sha256": "921bcfcc84a0896379add147d60a19f41dcda006c3b1a1aff0c682cabce1f54e",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_map10.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_night_supervisor.py",
+      "bytes": 39891,
+      "sha256": "af8c0eb6cfc45fed1a5e3a19e9c0940acd98eee2060998ed55ac9a66cdd92c48",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_night_supervisor.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_pack_dynamic.py",
+      "bytes": 34212,
+      "sha256": "7f53e94ddd5940514de8a132711ff5d782885983af9f0c62ae4c4515261bdd7a",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_pack_dynamic.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_pack_history.py",
+      "bytes": 34227,
+      "sha256": "ecdd0cd0e853d20578a7855acc8987c72c430925d1a30f7e26fee250000659dd",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_pack_history.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_pack_people.py",
+      "bytes": 22213,
+      "sha256": "25c9b1f9ac9188f096f22085d63a5de694e55a757c9857da963854bb808e791b",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_pack_people.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_pack_semantics.py",
+      "bytes": 60706,
+      "sha256": "74a59bad3bf89c5eb92624452ffac8e4775c18592823411a611d09d50fe3d7ff",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_pack_semantics.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_pack_static.py",
+      "bytes": 28604,
+      "sha256": "5a52ef6ab610b0f3d091bd6566982bd0894f1d0c1ad891986dd27d3f8703e181",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_pack_static.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_pack_train.py",
+      "bytes": 33878,
+      "sha256": "0f11d3c1bcc5165dfd9f35a7728b9400b679cd51c8bb444af04360643711546a",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_pack_train.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_policy_rl.py",
+      "bytes": 43624,
+      "sha256": "3ced63dd23b72ab69da1b7758d445cb7064f393f34823101be169106a6a80425",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_policy_rl.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_prepare.py",
+      "bytes": 13605,
+      "sha256": "81e8ac99a6d50398418fd95e0874bc07b55b3d33487e89731ec26397960c3e77",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_prepare.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_reward_boosting.py",
+      "bytes": 58473,
+      "sha256": "cb5446663794ec143b3d72bc2e4a5d8de3599c5a9f3a3c53baaeb44ed4d88727",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_reward_boosting.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_reward_data.py",
+      "bytes": 21248,
+      "sha256": "bc767e7987b9404273cc24a12e1f91562e480d0cfef39302e079fba7e296ddf6",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_reward_data.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_sex_features.py",
+      "bytes": 8397,
+      "sha256": "e524c68af1ad327c3e83959aa4503be17aabdc700beaa24793831d09a152a905",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_sex_features.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_train.py",
+      "bytes": 26201,
+      "sha256": "2066dcddcccabcd4c46971467287f2955cb06434bfa942247ac55f111e8d8d1b",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_train.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/freeze-rm-r1.json",
+      "bytes": 2888,
+      "sha256": "0d5bcfc3564e3ed930a2eb42bcf09d76a02225dc426c1f166456d28c146e1378",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/freeze-rm-r1.json"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/freeze-rm-r2.json",
+      "bytes": 4302,
+      "sha256": "c1ca863d628e67b0d64d0974fd31174463890babaf93913734374469290ebe07",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/freeze-rm-r2.json"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/run-rm-fit-r1.py",
+      "bytes": 3003,
+      "sha256": "1902e14eae985f931c5e3f2bd62ce86c211e1d86385644c990134801b5af6f5f",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/run-rm-fit-r1.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/performance/performance_hook.py",
+      "bytes": 5615,
+      "sha256": "e412098f8c55caa7258f3e35116960eed42317cc7c7c0f081395afc1556adfde",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/performance/performance_hook.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/prepare_recovery_request.py",
+      "bytes": 7674,
+      "sha256": "df35bf92ca66b9f9533c5c038e6048cfce344f0fd4394a41ec82471a7d8539e6",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/prepare_recovery_request.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft-recovery/soft_residency.py",
+      "bytes": 12483,
+      "sha256": "0ff85698e0b25eb675751d1c78cbf1b78561e89e051b2888147ce3e046797462",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft-recovery/soft_residency.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft-recovery/worker.py",
+      "bytes": 17309,
+      "sha256": "cf142bf5309e236570594575c14cb67549d460d10c47042d53b183f9395cc236",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft-recovery/worker.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft/worker.py",
+      "bytes": 28607,
+      "sha256": "fde07c575c26f4cb9cdb29a9d49c93e78243702592738da5e500ab146853efb0",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft/worker.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/binding/build_pilot_r2.py",
+      "bytes": 10525,
+      "sha256": "d8ecf56454432ac732b8a979dc970d0d03fb700c15e390a55957fef6c8d32b84",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/binding/build_pilot_r2.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/execution/native_phase_guard.py",
+      "bytes": 25291,
+      "sha256": "0b45946f866b59aae94f9cf2f1eaa6a550641c849d9468eb04d6d6b4c9024e1f",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/execution/native_phase_guard.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/full-execution/bind_full.py",
+      "bytes": 12565,
+      "sha256": "dc8e66e136f4338e75bdabac50977801297d676c9e5d380aa89ae7076f821db1",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/full-execution/bind_full.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/full-execution/native_phase_guard.py",
+      "bytes": 25468,
+      "sha256": "9d25a5942cda0be54e56297c9c71dd28a3f57307165288c7b372af0e22a2cf2a",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/full-execution/native_phase_guard.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/full-preparation/worker.py",
+      "bytes": 28157,
+      "sha256": "bb220140d90c0c3e032e96f3c79c973440138c44e8f2d20bc8a2ce959f7edc1d",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/full-preparation/worker.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/preparation/store_hook.py",
+      "bytes": 9479,
+      "sha256": "cb1307d3e869325174db9791f6665979bf7efbe12f38c6fbf546db56793d34bf",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/preparation/store_hook.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/preparation/worker.py",
+      "bytes": 22331,
+      "sha256": "13f61bd71f285ca43991e66e1036bc1498b1920d3e585c8f5a5a33cff1c3398f",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/preparation/worker.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/query-store/query_store.py",
+      "bytes": 28769,
+      "sha256": "11d00afcebbcdc3b9b455a7f0fcfba3cb5d2ebc7a8128ec918c4b2ce316e34c3",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/query-store/query_store.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/training/bind_benchmark.py",
+      "bytes": 12175,
+      "sha256": "64d562965bab2b76f7bdbbac8f737f49743b3afdfa245ccefb9c8a3ea1ea26fd",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/training/bind_benchmark.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/training/bind_full_e1.py",
+      "bytes": 17352,
+      "sha256": "bef9523973910a1e0f076081be4509c39834a8a782052eb8a34e2f96c1c4a5ce",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/training/bind_full_e1.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/training/worker.py",
+      "bytes": 24693,
+      "sha256": "d3134effd421ad37abde9268235c09d9ea6b3c1a0c3f505f6c6dfe2514d8c001",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/training/worker.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/quality-recovery-20261021/pair-probe-r1/probe.py",
+      "bytes": 14709,
+      "sha256": "757b0fb52e13fb62195e9f849f9a262b8f148db49f4b6f6dfe87589c21608811",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/quality-recovery-20261021/pair-probe-r1/probe.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/quality-recovery-20261021/pair-probe-r1/worker.py",
+      "bytes": 16892,
+      "sha256": "b0a4a06e99ad4b1f4367540041e6be1bd7ce985ad242d95b9fc99cf325cfa3a3",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/quality-recovery-20261021/pair-probe-r1/worker.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/quality-recovery-20261021/uniform-control-r1/control.py",
+      "bytes": 18600,
+      "sha256": "f9f226ece0294b0c5402ae1af454c9d61833d0fa4be904a601955da9c80e4cd6",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/quality-recovery-20261021/uniform-control-r1/control.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/quality-recovery-20261021/uniform-control-r1/hooks.py",
+      "bytes": 7904,
+      "sha256": "2dc7ba017dac6314a30ca4e2ff33ebd5d26602c4d99129f5535f0b5637465989",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/quality-recovery-20261021/uniform-control-r1/hooks.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/quality-recovery-20261021/uniform-control-r1/worker.py",
+      "bytes": 13647,
+      "sha256": "c39ec2b3cf50723591e0b5da2fef46012947e852970f36dc8c513ab30abe3f9f",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/quality-recovery-20261021/uniform-control-r1/worker.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/model/owned-sft-ws-r1/working_set.py",
+      "bytes": 9079,
+      "sha256": "9dcbf1a43606511f936fadfbe323bde7c597b2a91bf98c9dd99e0204b2a6e1be",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/model/owned-sft-ws-r1/working_set.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/model/rl-native-resource-r1/guard.py",
+      "bytes": 23333,
+      "sha256": "b1bee55f2ec947c188bc8f6065d66b08bfce85b16a2bc7b631d72a8e3b785e87",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/model/rl-native-resource-r1/guard.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/model/rl-native-resource-r1/native_job.py",
+      "bytes": 3398,
+      "sha256": "0da87bf737038e08602ddaf18929a9441543269adf0edd191f1ac4151e916296",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/model/rl-native-resource-r1/native_job.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/hm_job.py",
+      "bytes": 8251,
+      "sha256": "a8ca33c389aad356ea2bd8b0a2ab43276a0af85029934888ebeca9f132c541a0",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/hm_job.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_acquire_assets.py",
+      "bytes": 10177,
+      "sha256": "214fb40f9922764d96db3f9c7baad118343b25d0aecae88553d42754c2fe0a23",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_acquire_assets.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_audience_fast.py",
+      "bytes": 19999,
+      "sha256": "b0d358ce30f4b7e49b3793f4aa4d2d659995a669e1d60189fd8ec96da3459be8",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_audience_fast.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_audience_features.py",
+      "bytes": 48657,
+      "sha256": "70777ef4301e3dcebcf69378ce879888f252f5829f53aee4b45f131fa36e98f1",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_audience_features.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_basic_bundle_features.py",
+      "bytes": 17520,
+      "sha256": "25c5a80a2fba9de5ee76c67ac4bd6cd7bd437cf807cd42855baeba3b50f73ef8",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_basic_bundle_features.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_compare_predictions.py",
+      "bytes": 26574,
+      "sha256": "49cb08603ec40ce21d11e2b08190d750fbe49ec10d1bad56fb22916362c0ce2c",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_compare_predictions.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_competition_data.py",
+      "bytes": 19289,
+      "sha256": "2a721a19e546811b27f09718515fdb83fd999b374e45eda0d3ae9784eeb261de",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_competition_data.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_competition_predict.py",
+      "bytes": 26074,
+      "sha256": "988915bc2cacdc844020e123f17a3f1a90924b78ce3f6a47c37ed0760119e4bf",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_competition_predict.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_competition_seen.py",
+      "bytes": 14553,
+      "sha256": "6593387caf3ac07f4def26099541cc70cf6b8510374286879174b572b671a4ff",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_competition_seen.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_competition_variants.py",
+      "bytes": 20596,
+      "sha256": "ea961402f74554705c5ca34c6a0ec59059ae2a9d64cd4d95ec1bfe11beb08397",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_competition_variants.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_compare.py",
+      "bytes": 34687,
+      "sha256": "7aa09564b22aaf4089799c0aaa56d675419c302c764ba3fab427308c898d967b",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_compare.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_manifest.py",
+      "bytes": 59408,
+      "sha256": "1cc9ca82a712c0a4cbb55e2f8a651b40ac698793f50e58d35b51d98f2bfb9549",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_manifest.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_model.py",
+      "bytes": 14675,
+      "sha256": "8d1be2352cd268481f4a1f7b764943f745e910695a1a270fd3d0b1c4e7ec24e7",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_model.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_pack.py",
+      "bytes": 95029,
+      "sha256": "7cbe284dfbd9d133bd98e2d363a9ee8b8d8530ffe7b977cbe13c6146d0f4fe5e",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_pack.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_reward_data.py",
+      "bytes": 95614,
+      "sha256": "e117944d6227a400f17e6b87295d1fbcb2dd12c9489c0c213d24d9fa7512ce6c",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_reward_data.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_rl.py",
+      "bytes": 65907,
+      "sha256": "e5337638c0006d6ab3d8cbf20861822402317ae68800004a8b65c7dd2eddd3e2",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_rl.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_train.py",
+      "bytes": 43530,
+      "sha256": "16180fc30db79f6a5b5c0fc82080eb89658d4b466c65f3a96f66d313c85746d9",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_train.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_completion_diagnostics.py",
+      "bytes": 22609,
+      "sha256": "862e647f96f10ed0e2a1e8b5c78c80245fb48c9029937706e68e1a2d1962d552",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_completion_diagnostics.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_completion_event_store.py",
+      "bytes": 38820,
+      "sha256": "8dd79dff657f4feaa2ef5d430278ec24fc2dc7c11aa713f3bc65b4f755a20ef5",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_completion_event_store.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_conditioned_train.py",
+      "bytes": 65463,
+      "sha256": "b6c2c93bb8ac1475d00a1a20cd8d278da898468ae38a001cc5be4ec218478caf",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_conditioned_train.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_cuda_batches.py",
+      "bytes": 11143,
+      "sha256": "efcdc050c2e3778731e6f1e0ad49bb21c0b5dc622ea22f1f7992ed8c21568483",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_cuda_batches.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_download.py",
+      "bytes": 3062,
+      "sha256": "93f989274caf762837601368e310078bfb23de8153b3ea5431b4875ce9467e79",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_download.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_encode_text_bundle.py",
+      "bytes": 25314,
+      "sha256": "cb0c65a1583ecaf8c99229dc71312d963fd408acc2b36b955f7ece5b24c518b4",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_encode_text_bundle.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_entity_links.py",
+      "bytes": 77232,
+      "sha256": "c505adaa15c7af136dfbc9b4fe6372d24e83f034950684125c7e0231f8e50b11",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_entity_links.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_external_facts.py",
+      "bytes": 105524,
+      "sha256": "240c4babdd9763e6c1a62e8fc78c987a456988fbe08677563fbaa15fb3ac222c",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_external_facts.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_external_interest.py",
+      "bytes": 68128,
+      "sha256": "a1e0f9a0dbd005c9df28287c40aaf3e465813ce491f63391285336d650af809c",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_external_interest.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_feature_train.py",
+      "bytes": 17206,
+      "sha256": "27bac5d3fa11f184cf149a78d33f49aaac3873fa823b581faa31156308fa7102",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_feature_train.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_franchise_progress.py",
+      "bytes": 51959,
+      "sha256": "a954c884b98082093a351f23d4e508e91f4b73bb62b2c35999d45a11c9250ba0",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_franchise_progress.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_full_train.py",
+      "bytes": 21542,
+      "sha256": "2b8d684e9f789eb7a51823e0b38df183dcd2f9f72942894a905fde1f1efd47ea",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_full_train.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_geography_time.py",
+      "bytes": 57389,
+      "sha256": "33c34f28f2294362505f366c2a484fbda8053d2af0e93009683b53815df14c3e",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_geography_time.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_handoff.py",
+      "bytes": 13466,
+      "sha256": "900859f825991f360c6609cba0c9e6cef59105d591e29fcd5167e4c0506a640a",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_handoff.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_local_features.py",
+      "bytes": 16326,
+      "sha256": "e5f992093b53839d425ccd436dba0404862ad912b795a390d60ff6c9a2576de1",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_local_features.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_local_pack.py",
+      "bytes": 14868,
+      "sha256": "87412446a72033aae98897250cc0178084dd76b5818aee38a24fbb81a8e02aaf",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_local_pack.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_local_pack_rl.py",
+      "bytes": 29264,
+      "sha256": "6a99d31eae101b15e51865845c75b99cbee4e02d729e2020321cd153dc1f4d58",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_local_pack_rl.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_map10.py",
+      "bytes": 8889,
+      "sha256": "36515250e9131485a5d2daed7c94613923f18ff0791bb4eb667b78b74b7eb72c",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_map10.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_narrative_relations.py",
+      "bytes": 34035,
+      "sha256": "e0d3978901a84db781543046252592a4e1db978a5e3e4853dc1acc9942360756",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_narrative_relations.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_night_supervisor.py",
+      "bytes": 40357,
+      "sha256": "b88ec1765cbe4756a7fc3ec95e6b8a0d5d8142f4a0d6c62e5802b6be13bfe4d4",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_night_supervisor.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_dynamic.py",
+      "bytes": 34212,
+      "sha256": "7f53e94ddd5940514de8a132711ff5d782885983af9f0c62ae4c4515261bdd7a",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_dynamic.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_history.py",
+      "bytes": 34227,
+      "sha256": "ecdd0cd0e853d20578a7855acc8987c72c430925d1a30f7e26fee250000659dd",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_history.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_people.py",
+      "bytes": 22213,
+      "sha256": "25c9b1f9ac9188f096f22085d63a5de694e55a757c9857da963854bb808e791b",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_people.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_semantics.py",
+      "bytes": 60706,
+      "sha256": "74a59bad3bf89c5eb92624452ffac8e4775c18592823411a611d09d50fe3d7ff",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_semantics.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_static.py",
+      "bytes": 28604,
+      "sha256": "5a52ef6ab610b0f3d091bd6566982bd0894f1d0c1ad891986dd27d3f8703e181",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_static.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_train.py",
+      "bytes": 33878,
+      "sha256": "0f11d3c1bcc5165dfd9f35a7728b9400b679cd51c8bb444af04360643711546a",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_train.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_training_benchmark.py",
+      "bytes": 45052,
+      "sha256": "ced09f2586d38a6ca2a6acfe25973dda0482eda53155d24fd12bdc9e1277a013",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_training_benchmark.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_people_banks.py",
+      "bytes": 45700,
+      "sha256": "1a511e8f025bba1f6d0bdb16095fb833e7a407ffffa8e67561f161f42f73b070",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_people_banks.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_people_dynamics.py",
+      "bytes": 53657,
+      "sha256": "6bf97bb98c8fdf0cb858db18066862d3a94cb107334bcb14c74e340f2943911c",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_people_dynamics.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_people_dynamics_fast.py",
+      "bytes": 13249,
+      "sha256": "e6ad0d34174c44f50f4c27e088fab36a399e839a0ee96b77ec0df27e2bda2a91",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_people_dynamics_fast.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_people_embeddings.py",
+      "bytes": 18233,
+      "sha256": "473d4a097f3e39c50198c0a6cc15f6dd1ce0b283a37e73234d8def49c760c1ad",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_people_embeddings.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_personal_candidates.py",
+      "bytes": 41110,
+      "sha256": "4769be6fe5de205a9cd793d511aa58a5c2b602a7e18c3690db44b4d7c119cff8",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_personal_candidates.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_policy_rl.py",
+      "bytes": 49278,
+      "sha256": "3ff82a4eb4e1beabeeec3aaaae0541dd3467f79f8454452764cb4a5f28887108",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_policy_rl.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_prepare.py",
+      "bytes": 13605,
+      "sha256": "81e8ac99a6d50398418fd95e0874bc07b55b3d33487e89731ec26397960c3e77",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_prepare.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_profession_relations.py",
+      "bytes": 41901,
+      "sha256": "bf6890604f9388ba49af92d25a42a8ec1e85c751f122e554dd4e424e4c3c3303",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_profession_relations.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_ready_gpu_preflight.py",
+      "bytes": 41720,
+      "sha256": "d04ae1a054628b7ec2300b4d88f97cf61c09710ba253ec091bdb749a3ecdd27a",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_ready_gpu_preflight.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_ready_runtime.py",
+      "bytes": 1706,
+      "sha256": "1e80ed9987dd6fe86e2aef846be7f7537fde001464e109cd305235829be71daa",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_ready_runtime.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_related_features.py",
+      "bytes": 45066,
+      "sha256": "0999efdccd9d682e4c1d0ce0393bdab12a3abdbc8b2e7fb14a4288a6dde8fae8",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_related_features.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_reward_boosting.py",
+      "bytes": 58473,
+      "sha256": "cb5446663794ec143b3d72bc2e4a5d8de3599c5a9f3a3c53baaeb44ed4d88727",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_reward_boosting.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_reward_data.py",
+      "bytes": 21248,
+      "sha256": "bc767e7987b9404273cc24a12e1f91562e480d0cfef39302e079fba7e296ddf6",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_reward_data.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_reward_eval.py",
+      "bytes": 41023,
+      "sha256": "70a7d6d6f947d926f96b8d344d5db74287d6466657d30f983946a9e9e7f09677",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_reward_eval.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_rm_preflight.py",
+      "bytes": 14196,
+      "sha256": "dd8a32d588888633c37089ace2a04d2fa66dd16fbd38fe7e8bfb10fab6b98f89",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_rm_preflight.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_semantic_extensions.py",
+      "bytes": 32543,
+      "sha256": "6116813f219d83e00d1189dea9c5955b700db85312f462f34e61b2555c37a136",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_semantic_extensions.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_sex_features.py",
+      "bytes": 8397,
+      "sha256": "e524c68af1ad327c3e83959aa4503be17aabdc700beaa24793831d09a152a905",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_sex_features.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_sports_settings.py",
+      "bytes": 37252,
+      "sha256": "b96e71bcff8e426652b057de5142147fe403dffe2e06c88f0dec4a6a2f3c9a2d",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_sports_settings.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_story_format.py",
+      "bytes": 54295,
+      "sha256": "56ad45fcab54823ea54253cdaf7b6c724b6b2d95d349ef2803fd217ae9db3c29",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_story_format.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_text_embeddings.py",
+      "bytes": 27736,
+      "sha256": "401272cd3dfe04eadde75f15f8a3d5baf8637e52973ed88bd07b86ca0c088d4a",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_text_embeddings.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_train.py",
+      "bytes": 26201,
+      "sha256": "2066dcddcccabcd4c46971467287f2955cb06434bfa942247ac55f111e8d8d1b",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_train.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_training_benchmark.py",
+      "bytes": 40990,
+      "sha256": "f8b3fc2ff0379be24c1ebadbadc911093cf889e6e76d45b51be2c7c07cb806ab",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_training_benchmark.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_user_diagnostics.py",
+      "bytes": 25046,
+      "sha256": "8b39da0a9515d986ef82649b37066d2778b5e45a7bdf6d6e8183f8041ef4e8da",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_user_diagnostics.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/tests/test_kion_complete_reward_data.py",
+      "bytes": 80345,
+      "sha256": "22e41e02f40ca6f767c119230f4290c206712c9d1776bf3e6b8fa0114012d1e8",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/tests/test_kion_complete_reward_data.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/reward-data/load_psutil_runtime_r1.py",
+      "bytes": 1728,
+      "sha256": "25f20e6e766e5cc53ecfaac5a676c3b8435d713993f5331ebddb937fce729bda",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/reward-data/load_psutil_runtime_r1.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/sft-e5-20261023-r1/training/worker.py",
+      "bytes": 24040,
+      "sha256": "01ea7a3c4b6a9e43c32e7fa518723f419a44fc2a48e1b7cedd56954f0b75d5d1",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/sft-e5-20261023-r1/training/worker.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/bank.py",
+      "bytes": 35362,
+      "sha256": "cb171615f7ed3b63f4ea6e6bf7c61b109c4fe7b4e9108b16c0d3f9a1cb227c36",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/bank.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/evaluate.py",
+      "bytes": 17384,
+      "sha256": "110346b2974ee75e5a4578d2dbe6199a54c08a904ece46b3131dd0d3a47f4d07",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/evaluate.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/heads.py",
+      "bytes": 24555,
+      "sha256": "795cdfe87f08079cadf067dc9c58811f7bcdacf9d1ebf2dbcb6c019dd68d6799",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/heads.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/smoke.py",
+      "bytes": 3400,
+      "sha256": "03bb14530ffdb0fa42210009a31395aa8e2fb1055330f8e50ec3f5b87db83f9b",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/smoke.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/supervise.py",
+      "bytes": 9182,
+      "sha256": "e7514a0928687f836dcf295a2668b7becd920c7d926474acbc584512cc1489e6",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/supervise.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/test_bank_source.py",
+      "bytes": 10303,
+      "sha256": "94acd9f17992404d900375a3beadd4a589a91c9a925e70e018a565e8dcd58da3",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/test_bank_source.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/test_eval_source.py",
+      "bytes": 17591,
+      "sha256": "885810bd1790a458366dfc942c5e46494c504784c84220996e983f46a8914fac",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/test_eval_source.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/test_heads_source.py",
+      "bytes": 20571,
+      "sha256": "e293d2cea75cbf09b220c3d791a3fe13a31bc987b2ad582612f989ac9a658ac8",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/test_heads_source.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/worker.py",
+      "bytes": 9738,
+      "sha256": "981471f83f76f0fc2c2b394312056d4da4c36cac8f13d0b1b086dbdbbc0e20eb",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/worker.py"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/configs/datasets/kion-requirements.txt",
+      "bytes": 124,
+      "sha256": "6614d6268cb1856909592998f0933d9d2d66e333e6a0bea7be5c025458a7dc18",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/configs/datasets/kion-requirements.txt"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/configs/datasets/kion-series-v1.json",
+      "bytes": 733530,
+      "sha256": "18b672eda2fd8d711e2642fd933740abf0f28bfaf4031e27b46a5ee77ba647d6",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/configs/datasets/kion-series-v1.json"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/pyproject.toml",
+      "bytes": 383,
+      "sha256": "c4834c58cd411754b0fda95e21196778f3aada44a5fa758409d7321132cde931",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/pyproject.toml"
+    },
+    {
+      "path": "source/fullstudy/code/tlab-recsys-2026/scripts/kion_reward_eval.py",
+      "bytes": 41023,
+      "sha256": "70a7d6d6f947d926f96b8d344d5db74287d6466657d30f983946a9e9e7f09677",
+      "upstream_source": "source/fullstudy/code/tlab-recsys-2026/scripts/kion_reward_eval.py"
+    },
+    {
+      "path": "source/fullstudy/code/tools/build_snapshot.py",
+      "bytes": 12250,
+      "sha256": "0dfeb3dfddc9ed7c6e19c6b5601d86db54a29776aae42004fcf216046c72c41c",
+      "upstream_source": "source/fullstudy/code/tools/build_snapshot.py"
+    },
+    {
+      "path": "source/fullstudy/code/tools/test_build_snapshot.py",
+      "bytes": 1728,
+      "sha256": "455fb5754a3a9d5c59e2103e3c132151c1e50a4df49294e04e061ec39b28e9ea",
+      "upstream_source": "source/fullstudy/code/tools/test_build_snapshot.py"
+    },
+    {
+      "path": "source/fullstudy/code/tools/test_verify_bundle.py",
+      "bytes": 3310,
+      "sha256": "7fc5ab4299c476a66359f6b395348a4474d0412ba0169389b173df78644c2eee",
+      "upstream_source": "source/fullstudy/code/tools/test_verify_bundle.py"
+    },
+    {
+      "path": "source/fullstudy/code/tools/verify_bundle.py",
+      "bytes": 3505,
+      "sha256": "3c1261f4765523ec027ace31b19f827d2c4ba8f84149efe7a0c5ce47e9b56119",
+      "upstream_source": "source/fullstudy/code/tools/verify_bundle.py"
+    },
+    {
+      "path": "source/fullstudy/dependencies.json",
+      "bytes": 8334,
+      "sha256": "959813ab3f9cb072af132dced6bd18b538dbb4e4116e8fd68c72fa4f54e4502a",
+      "upstream_source": "source/fullstudy/dependencies.json"
+    },
+    {
+      "path": "source/manifest.json",
+      "bytes": 135352,
+      "sha256": "8ea4eefae2900208c028bdb86493b950b328b048519ab5160ad069085784637a",
+      "upstream_source": "source/manifest.json"
+    },
+    {
+      "path": "source/matched-kl/control/common.py",
+      "bytes": 8144,
+      "sha256": "7eee3522f3df7f843b55f56d33adfc667e4eb855a53918d7d4b58ef926d7daa9",
+      "upstream_source": "source/matched-kl/control/common.py"
+    },
+    {
+      "path": "source/matched-kl/control/launch.py",
+      "bytes": 1949,
+      "sha256": "fc9a158fb1e3d91b72a6479a08abdff20864225062d6294371b93ee57ef792e8",
+      "upstream_source": "source/matched-kl/control/launch.py"
+    },
+    {
+      "path": "source/matched-kl/control/supervise.py",
+      "bytes": 8416,
+      "sha256": "f25381ca3ecec4f5fa510b368314b3ccc9759826049563c4da6000608cf9a957",
+      "upstream_source": "source/matched-kl/control/supervise.py"
+    },
+    {
+      "path": "source/matched-kl/control/worker.py",
+      "bytes": 4783,
+      "sha256": "bb6e7d8026c3ab72a8f2b61406b265997d71cee77adc65aeada442f2048a3472",
+      "upstream_source": "source/matched-kl/control/worker.py"
+    },
+    {
+      "path": "source/matched-kl/delivery/package.py",
+      "bytes": 23818,
+      "sha256": "0f4d22f4a0caf19fb73bd35a27c3e265f5b2861c89a2343b8492da21d53a93af",
+      "upstream_source": "source/matched-kl/delivery/package.py"
+    },
+    {
+      "path": "source/matched-kl/final_requests.py",
+      "bytes": 6692,
+      "sha256": "e456405aae8721ccd4cbaa834a28b63555d7fae5e9828b4e8a330ba6a0b24a0c",
+      "upstream_source": "source/matched-kl/final_requests.py"
+    },
+    {
+      "path": "source/matched-kl/interpretation/analyze.py",
+      "bytes": 25254,
+      "sha256": "bf86630a71546e27f4d336f8cf08e5c729c4aeb6d1ab3aaf862b57805f58f84e",
+      "upstream_source": "source/matched-kl/interpretation/analyze.py"
+    },
+    {
+      "path": "source/matched-kl/interpretation/test_analyze.py",
+      "bytes": 11813,
+      "sha256": "a6aa3bdb6179032365172d5039de1e05bd9e6afd5d8c0b8facbadb7dfc45c195",
+      "upstream_source": "source/matched-kl/interpretation/test_analyze.py"
+    },
+    {
+      "path": "source/matched-kl/interpretation/test_verify.py",
+      "bytes": 19331,
+      "sha256": "c84321b79dec5f7c3756b324d587b5f616f6093aba69f675c356bb8bc9e7858b",
+      "upstream_source": "source/matched-kl/interpretation/test_verify.py"
+    },
+    {
+      "path": "source/matched-kl/interpretation/verify.py",
+      "bytes": 27058,
+      "sha256": "07f8de6c8c132bbdeda25a9edfc643ff5186916db880c2a9eea8461d33a88369",
+      "upstream_source": "source/matched-kl/interpretation/verify.py"
+    },
+    {
+      "path": "source/matched-kl/next_request.py",
+      "bytes": 5674,
+      "sha256": "f5a12b0fc05cd1afadb91bd580015fe5b2c9c6d2d6f29dcb15eca2eb364d5988",
+      "upstream_source": "source/matched-kl/next_request.py"
+    },
+    {
+      "path": "source/matched-kl/policy/evaluate.py",
+      "bytes": 32110,
+      "sha256": "334c7f7e3414d9682d6a657f43094c53bc99c8782db0b3599aadac9b6bafed8f",
+      "upstream_source": "source/matched-kl/policy/evaluate.py"
+    },
+    {
+      "path": "source/matched-kl/policy/policy.py",
+      "bytes": 26549,
+      "sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5",
+      "upstream_source": "source/matched-kl/policy/policy.py"
+    },
+    {
+      "path": "source/matched-kl/policy/test_evaluate.py",
+      "bytes": 10899,
+      "sha256": "8baf651e7a2150411d1b599ccc5653a1f42a68486db3246ed9957f164e5f4e0b",
+      "upstream_source": "source/matched-kl/policy/test_evaluate.py"
+    },
+    {
+      "path": "source/matched-kl/policy/test_policy.py",
+      "bytes": 7925,
+      "sha256": "30cfc7b249d479da0f5159aca3946768eaa03b3afb4010ce6d6de5e0dc908565",
+      "upstream_source": "source/matched-kl/policy/test_policy.py"
+    },
+    {
+      "path": "source/matched-kl/post_requests.py",
+      "bytes": 3237,
+      "sha256": "27e7d24212066a601974a4a2595c6cfad81cefabc8d88ac8171e3bec373d09bf",
+      "upstream_source": "source/matched-kl/post_requests.py"
+    },
+    {
+      "path": "source/matched-kl/prepare.py",
+      "bytes": 11934,
+      "sha256": "742699377620a1490fbb8b99de00c752cd9d1c72fcd3244dd3f74b4603705daf",
+      "upstream_source": "source/matched-kl/prepare.py"
+    },
+    {
+      "path": "source/matched-kl/reports/figures.py",
+      "bytes": 21580,
+      "sha256": "8c5bb340f2dd149523b2354e3f4f38a04241e4af7ac6e76a7caa42ca4cae3e84",
+      "upstream_source": "source/matched-kl/reports/figures.py"
+    },
+    {
+      "path": "source/matched-kl/reports/report-build.py",
+      "bytes": 13495,
+      "sha256": "09b941ea51077ae07cf206611985169fa2086425a2751835263b5942e42f78b8",
+      "upstream_source": "source/matched-kl/reports/report-build.py"
+    },
+    {
+      "path": "source/matched-kl/reports/test_figures.py",
+      "bytes": 16006,
+      "sha256": "2ba0d463f4f95b07e9a7ace86613a1ff4af39533bdb926ef3fc6d46aa3c59a66",
+      "upstream_source": "source/matched-kl/reports/test_figures.py"
+    },
+    {
+      "path": "source/matched-kl/selection-final-r1.json",
+      "bytes": 31763,
+      "sha256": "801c0337ab63aead24b6fa1b13500d18b5d3ce0b4d7e55138f3ff897d8883c8b",
+      "upstream_source": "source/matched-kl/selection-final-r1.json"
+    },
+    {
+      "path": "source/static-audit.json",
+      "bytes": 24814,
+      "sha256": "0628ef569c78920397ba95fcedb4e79e345b41612dfe74f87b891ec558a7f05c",
+      "upstream_source": "source/static-audit.json"
+    },
+    {
+      "path": "source/verify_sources.py",
+      "bytes": 3339,
+      "sha256": "df00fd2b3cecfb5f39dc95256d8417d7ad0145264e50138872ebaa09fc2da6e4",
+      "upstream_source": "source/verify_sources.py"
+    }
+  ],
+  "excluded_files": [
+    {
+      "path": "README.md",
+      "bytes": 6371,
+      "sha256": "5cf131b57218795e03978550d5a3e81177e36f9f89b32302bd5f6e96bd89834d",
+      "reason": "The standalone hand-in README is replaced by repository documentation that describes the source-only boundary.",
+      "disposition": "replaced-by-repository-documentation"
+    },
+    {
+      "path": "reproduction/external-provenance/entity-links/shared-links-current-r3.json",
+      "bytes": 5214447,
+      "sha256": "adcb614c750308c8ebbd5b8446cfc34c0c6dd9ef0c74979be9ba116d6f8faf25",
+      "reason": "External data-provenance JSON payload is excluded from Git; only the frozen INDEX metadata is preserved.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/external-provenance/entity-links/shared-union-independent-review-r3.json",
+      "bytes": 647822,
+      "sha256": "c8e033968b9e36d68d143df544690d1919e58c5d353ba8cea2ac64201a624ee1",
+      "reason": "External data-provenance JSON payload is excluded from Git; only the frozen INDEX metadata is preserved.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/movielens-pass-r2/receipt.json",
+      "bytes": 2793,
+      "sha256": "6ee8b810edc62d50810f62aa646251449f68be940f97ac3b4ecef876e9f8c76b",
+      "reason": "External data-provenance JSON payload is excluded from Git; only the frozen INDEX metadata is preserved.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/phase4-complete-cache-plan-r1.json",
+      "bytes": 2188440,
+      "sha256": "1805c75faa7752562f51face1ba9559fbeca842a7cee6a8ebff8fec1ed0ee010",
+      "reason": "External data-provenance JSON payload is excluded from Git; only the frozen INDEX metadata is preserved.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/phase4-dated-population-r1/column-schema.json",
+      "bytes": 49542,
+      "sha256": "04ae7abdb36161fde064a65f06b3b545542a10dc7edc40f9d670d48dacd028b6",
+      "reason": "External data-provenance JSON payload is excluded from Git; only the frozen INDEX metadata is preserved.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/phase4-dated-population-r1/coverage-by-origin.json",
+      "bytes": 115925,
+      "sha256": "d165ef809104acbd2265c37bbcedb39dabc5375afb2e804dda3b93d51748d856",
+      "reason": "External data-provenance JSON payload is excluded from Git; only the frozen INDEX metadata is preserved.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/phase4-dated-population-r1/manifest.json",
+      "bytes": 21668,
+      "sha256": "decabacca0905ee270060c5b37cba939de5d48311fa3e6c3899e85381e2c9f42",
+      "reason": "External data-provenance JSON payload is excluded from Git; only the frozen INDEX metadata is preserved.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/phase4-dated-population-r1/rm-declaration.json",
+      "bytes": 2745856,
+      "sha256": "59bd183c88af8bd9f7e1c4bb9c1e49b10ca6c24cb84e0bae84d0e2e0302e1541",
+      "reason": "External data-provenance JSON payload is excluded from Git; only the frozen INDEX metadata is preserved.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/phase4-dated-population-r1/sft-declaration.json",
+      "bytes": 2880494,
+      "sha256": "7bd7176ad9d4fe67e9f9520b7970587bfc9d8f290ccd90cb51cf5dea829986d5",
+      "reason": "External data-provenance JSON payload is excluded from Git; only the frozen INDEX metadata is preserved.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/phase4-frozen-input-manifest-r1.json",
+      "bytes": 6959,
+      "sha256": "459af1c69b16b714b29c19696a9395df3e97f0e649e4d062d64a33a946a24791",
+      "reason": "External data-provenance JSON payload is excluded from Git; only the frozen INDEX metadata is preserved.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/phase4-independent-review-r1.json",
+      "bytes": 6464,
+      "sha256": "238ad8931639c63b9b90d4a21b5a1ad12d2efe0fa0118a36c0fa24e227e66b34",
+      "reason": "External data-provenance JSON payload is excluded from Git; only the frozen INDEX metadata is preserved.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/external-provenance/ratings-pageviews/phase4-wiki-fixed403-r1/acquisition.json",
+      "bytes": 3654309,
+      "sha256": "64c36b64e885a22d50cab897e4381d3cb5f14a2bbc2eedc2d51a08da685ad8eb",
+      "reason": "External data-provenance JSON payload is excluded from Git; only the frozen INDEX metadata is preserved.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/external-provenance/root-bank-origins-r1.json",
+      "bytes": 5292,
+      "sha256": "efed779cf47328d6742fbde09dcaa2c6e81adaa93dec03af91e5a9950321f53e",
+      "reason": "External data-provenance JSON payload is excluded from Git; only the frozen INDEX metadata is preserved.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/candidate_raw_ids.npy",
+      "bytes": 32896,
+      "sha256": "f994ec05a0edf55c27c1db0eb5addee0512e26b1e01d3c6f5e881ffb9502fd5f",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/model.cbm",
+      "bytes": 163368,
+      "sha256": "b6ed4c6427129afcddec017e2f64d9c3fb59fb31fc300e5c9d074964a21ddd62",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/rm_candidate_numeric.npy",
+      "bytes": 32899200,
+      "sha256": "5fad3c99fdcf4b75334cda438238412a279c98f8daefc31cb60c601269a8b0f6",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/rm_context_numeric.npy",
+      "bytes": 33392,
+      "sha256": "a2e75f6ca031a74a34a9b3573e3f92e5e290e441c43a9d493ceef6f25851124e",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/rm_fit_counts.npy",
+      "bytes": 32896,
+      "sha256": "d90a4ce304bd13e58a072c5cf89011517638f1192200eb75ccc61ac44c128cff",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/rm_item_prior.npy",
+      "bytes": 32896,
+      "sha256": "541ab498ac9a9e21d1b866154196fd2cc40c14eaad7eccc60ae5c2ac89d74dbd",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/rm_reference_reward.npy",
+      "bytes": 16512,
+      "sha256": "a2063a4e94715fb7d0deb33137d2c53bdd706e30b9c019a1fd4638f9b87c5b88",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/rm_reference_reward64.npy",
+      "bytes": 32896,
+      "sha256": "95067c9bdde44dade0f8ef830c573b29be50ee6938ad13255ec01dec4027d0ab",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs-rm-r1/rm_reference_support.npy",
+      "bytes": 4224,
+      "sha256": "c8f8314d560f2d803ab1a3890bdbacc00fe58bb3369adb7c05fca17a5c75b689",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs/base_logits.npy",
+      "bytes": 16512,
+      "sha256": "596e7939f85233c463b975922fddc84284cd42f3d4f69ea14c84aeae2121452e",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs/candidate_ids.npy",
+      "bytes": 16512,
+      "sha256": "511bf501c6dbbc0165bfaaf4b9b55cbe962329b9c6fa19ec0aa7678555a4a3a5",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs/candidate_raw_ids.npy",
+      "bytes": 32896,
+      "sha256": "f994ec05a0edf55c27c1db0eb5addee0512e26b1e01d3c6f5e881ffb9502fd5f",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs/encoded.npy",
+      "bytes": 4224,
+      "sha256": "4401a68dcf0eacbe4a5ac90832cf58490a4c37ae735b7e10432bd31dbd84859c",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs/gpt_lengths.npy",
+      "bytes": 256,
+      "sha256": "7cc75275ffb68a5a81b2d8dd4edc904b5c35ecf864f7cfc4afa0419360fbd1f9",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs/gpt_user_features.npy",
+      "bytes": 208256,
+      "sha256": "a474265851e39dcc7d900a7214916104f228e06187f89dbd887aff8a87ef43b9",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs/gpt_x.npy",
+      "bytes": 8320,
+      "sha256": "c944cdfa89fce677cfc4479811c0d1826ece4fc4e3e5537eb1fcc9a24fd89315",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs/item_table.npy",
+      "bytes": 15788160,
+      "sha256": "13abf44751ec3a57faf15f30ab02110301714993acd75702350d5ca6a1a358f3",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs/oracle/C_scores.npy",
+      "bytes": 16512,
+      "sha256": "6fd2be266073a7332bb9b1586f1204ca16583c82e7c7449d59f449a4a87e358a",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs/oracle/RL-completion_scores.npy",
+      "bytes": 16512,
+      "sha256": "99c0760e187473ad0432731f1c4c1ba676e14aa69bfa289727377f71adaec1c2",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs/oracle/RL-residual_scores.npy",
+      "bytes": 16512,
+      "sha256": "648fc024845db6b0b941faa06e6fb076e16ed54b4af61ada37e3b8b49630bc75",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs/raw_features.npy",
+      "bytes": 17498240,
+      "sha256": "81033bbd8d23bd01d186d3083ca51b639599540fdad139b905fe572144bf0409",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs/source_values.npy",
+      "bytes": 32896,
+      "sha256": "9c5cfc439732ea660965f947d7fa03e00f987caf96149724b691b1e457201a3b",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs/weights/C.pt",
+      "bytes": 960601,
+      "sha256": "2dbe8f0b3de2af804aff6a82a18a6444dde2c5e77928c0f50858a858db72345d",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs/weights/GPT.pt",
+      "bytes": 31837764,
+      "sha256": "b952dc61f45dc09132db97c8b5d90975d044114237d64b6487b8770f04312c1e",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs/weights/RL-completion.pt",
+      "bytes": 960601,
+      "sha256": "3faf78f3495dcb0a557601d9cdccf8a5697cf7ad7b3e4d7b4740c7bbfee01f0f",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    },
+    {
+      "path": "reproduction/inputs/weights/RL-residual.pt",
+      "bytes": 960601,
+      "sha256": "0c6afdea70d8bb2a760866b698c296f482cad37ec78bde54e83b4249dc7623e1",
+      "reason": "Numerical fixture or model-weight payload is excluded from Git; use the separately distributed hand-in when authorized.",
+      "disposition": "omitted"
+    }
+  ],
+  "unselected_local_material": "All original local files outside the frozen 566-member package selection remain outside this projection, including submission controls, logs, live operation trees, old/full archives, raw data, historical full user-level payloads, caches, and secrets.",
+  "availability": "Git is a source/report/evidence projection. Descriptor manifests and historical successful replay receipts do not make the separately excluded numerical fixtures or data available in this checkout."
+}

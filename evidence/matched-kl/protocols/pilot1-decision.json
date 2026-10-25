@@ -1,0 +1,20 @@
+{
+  "contract": "bounded-train-only-pilot-decision-v1",
+  "pilot": "pilot1",
+  "seed": 20261024,
+  "actual_updates": 1000,
+  "target_train_KL": 0.028141394929216676,
+  "pilot_train_KL": 0.01895377845601316,
+  "ratio_to_target": 0.6735195076039091,
+  "tolerance": [0.8, 1.2],
+  "first_pilot_matched": false,
+  "beta1": 0.19829877276516375,
+  "beta2": 0.16274030138555867,
+  "rule": "clip(beta1*sqrt(K1/T),0.01,2)",
+  "decision": "Run the second and last prespecified residual seed24 pilot, original-C start, exactly1000 updates. No third calibration fit.",
+  "diagnostics": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/kl-pilot1.json",
+    "sha256": "801d4276bcda582c70aeaca71a89754d1cd443cf6bd5ff9f4dd449ea529d3b85"
+  },
+  "dev_selection_used": false
+}

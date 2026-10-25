@@ -1,0 +1,22 @@
+{
+  "contract": "kion-reproduction-path-map-v1",
+  "status": "documentation-template-not-a-launch-request",
+  "roots": {
+    "PROJECT": "./code/tlab-recsys-2026",
+    "PERSONAL_OS": "./code/personal-agent-system",
+    "DATA_ROOT": "<authorized KION raw and prepared data outside the bundle>",
+    "BANK_CACHE_ROOT": "<excluded 262k bank and local array caches>",
+    "GRAPH_CACHE_ROOT": "<excluded frozen candidate graph cache>",
+    "QUERY_STORE_ROOT": "<excluded frozen query-feature store>",
+    "BASE_PYTHON": "<Python 3.12.14 interpreter for the chosen environment>",
+    "ACTOR_SITE": "<NumPy 2.2.6 / Torch 2.8.0+cu126 environment>",
+    "RM_SITE": "<separate NumPy 2.5.4 / CatBoost 1.2.10 environment>"
+  },
+  "relative_to": "report root; PROJECT mirrors original repository-relative paths",
+  "limitations": [
+    "Substituting JSON roots alone does not relocate machine-bound producer constants or native guards.",
+    "Historical source snapshots deliberately preserve original bytes and their hashes.",
+    "A changed-source numerical harness needs new source pins, request admission and matched parity checks before inference.",
+    "No model weights, prepared arrays, raw interactions, feature stores or real user IDs are included."
+  ]
+}

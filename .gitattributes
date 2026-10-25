@@ -1,0 +1,28 @@
+# New text uses LF; frozen payload bytes must keep their original hashes.
+* text=auto eol=lf
+*.png binary
+*.pdf binary
+
+# Frozen CRLF text is preserved byte-for-byte rather than normalized.
+/evidence/fullstudy/checkpoint-selection.json -text
+/evidence/fullstudy/eda-historical.json -text
+/evidence/fullstudy/source-condition.md -text
+/evidence/matched-kl/interpretation/full-r1/paired-metrics.csv -text
+/evidence/matched-kl/interpretation/screen-r1/paired-metrics.csv -text
+/evidence/raw-provenance/manifest.json -text
+/reports/figures/fullstudy/full/02-matched-comparison.svg -text
+/reports/figures/fullstudy/full/03-paired-uncertainty.svg -text
+/reports/figures/fullstudy/full/04-exposure-distribution.svg -text
+/reports/figures/fullstudy/full/05-target-ranks.svg -text
+/reports/figures/fullstudy/rollout/08-five-step-panel.svg -text
+/reports/figures/fullstudy/rollout/08b-five-step-behavior.svg -text
+/reports/figures/fullstudy/screen/01-checkpoint-tradeoff.svg -text
+/reports/figures/fullstudy/screen/02-matched-comparison.svg -text
+/reports/figures/fullstudy/screen/03-paired-uncertainty.svg -text
+/reports/figures/fullstudy/screen/04-exposure-distribution.svg -text
+/reports/figures/fullstudy/screen/05-target-ranks.svg -text
+/reports/figures/fullstudy/screen/06-screen-utilities-behavior.svg -text
+/reports/figures/fullstudy/screen/07-item-contributions.svg -text
+/reports/figures/matched-kl/train-kl-and-map.svg -text
+/source/fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/freeze-rm-r1.json -text
+/source/fullstudy/code/tlab-recsys-2026/pyproject.toml -text

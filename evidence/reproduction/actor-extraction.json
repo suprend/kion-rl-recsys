@@ -1,0 +1,163 @@
+{
+  "state": "prepared-for-genuine-inference",
+  "created_utc": "2026-10-25T07:43:34.031503+00:00",
+  "purpose": "Private minimal runtime+fixedmodelinputs clean extraction; not final hand-in package or numerical replay acceptance.",
+  "archive": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/research/validation-actor-candidate-r1.zip",
+    "sha256": "6ccb74526384e7fc511717ea91776f1a5069c3c95d7270ce7b2fcde5cf1741b2",
+    "bytes": 49438883
+  },
+  "clean_bundle": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/research/validation actor clean r1",
+  "runtime_manifest_sha256": "ba79888e24957517991c338cef6cccc53ee7d4fa5dd4583051e626b930ab068d",
+  "member_count": 29,
+  "total_bytes": 68450981,
+  "all_CRC_SHA_readback": true,
+  "files": [
+    {
+      "path": "reproduction/inputs/base_logits.npy",
+      "bytes": 16512,
+      "sha256": "596e7939f85233c463b975922fddc84284cd42f3d4f69ea14c84aeae2121452e"
+    },
+    {
+      "path": "reproduction/inputs/candidate_ids.npy",
+      "bytes": 16512,
+      "sha256": "511bf501c6dbbc0165bfaaf4b9b55cbe962329b9c6fa19ec0aa7678555a4a3a5"
+    },
+    {
+      "path": "reproduction/inputs/candidate_raw_ids.npy",
+      "bytes": 32896,
+      "sha256": "f994ec05a0edf55c27c1db0eb5addee0512e26b1e01d3c6f5e881ffb9502fd5f"
+    },
+    {
+      "path": "reproduction/inputs/encoded.npy",
+      "bytes": 4224,
+      "sha256": "4401a68dcf0eacbe4a5ac90832cf58490a4c37ae735b7e10432bd31dbd84859c"
+    },
+    {
+      "path": "reproduction/inputs/gpt_lengths.npy",
+      "bytes": 256,
+      "sha256": "7cc75275ffb68a5a81b2d8dd4edc904b5c35ecf864f7cfc4afa0419360fbd1f9"
+    },
+    {
+      "path": "reproduction/inputs/gpt_user_features.npy",
+      "bytes": 208256,
+      "sha256": "a474265851e39dcc7d900a7214916104f228e06187f89dbd887aff8a87ef43b9"
+    },
+    {
+      "path": "reproduction/inputs/gpt_x.npy",
+      "bytes": 8320,
+      "sha256": "c944cdfa89fce677cfc4479811c0d1826ece4fc4e3e5537eb1fcc9a24fd89315"
+    },
+    {
+      "path": "reproduction/inputs/item_table.npy",
+      "bytes": 15788160,
+      "sha256": "13abf44751ec3a57faf15f30ab02110301714993acd75702350d5ca6a1a358f3"
+    },
+    {
+      "path": "reproduction/inputs/manifest.json",
+      "bytes": 7578,
+      "sha256": "e680dd145b2bfdc812107fb9a257bf16f6d1ef5a53c07845f7dc21838146a52c"
+    },
+    {
+      "path": "reproduction/inputs/oracle/C_scores.npy",
+      "bytes": 16512,
+      "sha256": "6fd2be266073a7332bb9b1586f1204ca16583c82e7c7449d59f449a4a87e358a"
+    },
+    {
+      "path": "reproduction/inputs/oracle/RL-completion_scores.npy",
+      "bytes": 16512,
+      "sha256": "99c0760e187473ad0432731f1c4c1ba676e14aa69bfa289727377f71adaec1c2"
+    },
+    {
+      "path": "reproduction/inputs/oracle/RL-residual_scores.npy",
+      "bytes": 16512,
+      "sha256": "648fc024845db6b0b941faa06e6fb076e16ed54b4af61ada37e3b8b49630bc75"
+    },
+    {
+      "path": "reproduction/inputs/raw_features.npy",
+      "bytes": 17498240,
+      "sha256": "81033bbd8d23bd01d186d3083ca51b639599540fdad139b905fe572144bf0409"
+    },
+    {
+      "path": "reproduction/inputs/source_values.npy",
+      "bytes": 32896,
+      "sha256": "9c5cfc439732ea660965f947d7fa03e00f987caf96149724b691b1e457201a3b"
+    },
+    {
+      "path": "reproduction/inputs/weights/C.pt",
+      "bytes": 960601,
+      "sha256": "2dbe8f0b3de2af804aff6a82a18a6444dde2c5e77928c0f50858a858db72345d"
+    },
+    {
+      "path": "reproduction/inputs/weights/GPT.pt",
+      "bytes": 31837764,
+      "sha256": "b952dc61f45dc09132db97c8b5d90975d044114237d64b6487b8770f04312c1e"
+    },
+    {
+      "path": "reproduction/inputs/weights/RL-completion.pt",
+      "bytes": 960601,
+      "sha256": "3faf78f3495dcb0a557601d9cdccf8a5697cf7ad7b3e4d7b4740c7bbfee01f0f"
+    },
+    {
+      "path": "reproduction/inputs/weights/RL-residual.pt",
+      "bytes": 960601,
+      "sha256": "0c6afdea70d8bb2a760866b698c296f482cad37ec78bde54e83b4249dc7623e1"
+    },
+    {
+      "path": "reproduction/kion_replay/__init__.py",
+      "bytes": 106,
+      "sha256": "ab7272ae400ab141305a1e7dc7f241760874c25c84291bab8c10fe4d42b7dabb"
+    },
+    {
+      "path": "reproduction/kion_replay/__main__.py",
+      "bytes": 276,
+      "sha256": "d96070e07dca6bfd2f71f5c3755f76620d8e500de5be3dcaedee3fcce7d02693"
+    },
+    {
+      "path": "reproduction/kion_replay/cli.py",
+      "bytes": 11082,
+      "sha256": "031a9bf711c981f416bab96ad6c14afe7af9d9db7740a665ee23903968fc3d26"
+    },
+    {
+      "path": "reproduction/kion_replay/gpt.py",
+      "bytes": 10427,
+      "sha256": "596be64c5c8a7f7cdc779b8f0e10a94a9c59137f8ac8256c8f89e1e20e615a28"
+    },
+    {
+      "path": "reproduction/kion_replay/head.py",
+      "bytes": 5797,
+      "sha256": "53e5ea2e4338daa97d7e188c57f6e90e79367e65f18297dd630e3515f0acc6ca"
+    },
+    {
+      "path": "reproduction/kion_replay/io.py",
+      "bytes": 8626,
+      "sha256": "c494b0996b746d5a5bbc7bf3b27534ca22c43e2ac36477bc41d34b07b0b41033"
+    },
+    {
+      "path": "reproduction/kion_replay/metrics.py",
+      "bytes": 2760,
+      "sha256": "a63a69181f60c98811a317793936e75301ab05d6d1d137f492fbab4b31b12357"
+    },
+    {
+      "path": "reproduction/kion_replay/rm.py",
+      "bytes": 8641,
+      "sha256": "dc9e2115b508c8d3b528e8eb6e07dcd00a36957156cdd9f5c6b7795d0824abf3"
+    },
+    {
+      "path": "reproduction/kion_replay/test_core.py",
+      "bytes": 8713,
+      "sha256": "910c9b9d731de453ef2dd927562c1409d22e1234175e44221c3f476d52f6dc94"
+    },
+    {
+      "path": "reproduction/kion_replay/verify.py",
+      "bytes": 9856,
+      "sha256": "27f4217d91f9795f1bb9c78112dbf3088d4c2df2710eb44414741c37027dbaf6"
+    },
+    {
+      "path": "reproduction/runtime-manifest.json",
+      "bytes": 1744,
+      "sha256": "ba79888e24957517991c338cef6cccc53ee7d4fa5dd4583051e626b930ab068d"
+    }
+  ],
+  "training_updates": 0
+}

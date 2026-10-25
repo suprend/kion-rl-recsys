@@ -1,0 +1,116 @@
+{
+  "contract": "independent-final-visual-review-v1",
+  "created_utc": "2026-10-25T06:29:52.665606+00:00",
+  "reviewer": "/root/kl_report_review",
+  "state": "final-figure-and-all-PDF-pages-pass",
+  "overall_pass": true,
+  "figure": {
+    "visual_pass": true,
+    "actual_png_viewed": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/figures-r1/train-kl-and-map.png",
+    "dimensions": [
+      2832,
+      1500
+    ],
+    "input_and_output_hashes_verified": true,
+    "plot_scalars_equal_accepted_compact_sources": true,
+    "findings": [],
+    "observations": [
+      "Title, panel labels, all seed roles, axis labels, tick labels, ratios, points, whiskers and numeric interval labels are readable with no clipping/overlap.",
+      "Inclusive KL band covers0.8 to1.2; all three matching points fall within it. Calibration24 uses a hollow marker; prospective25/26 are clearly colored.",
+      "MAP effect axis explicitly uses percentage points; zero reference, point/CI positions and signed annotations agree. All four displayed intervals cross zero.",
+      "Three-seed average is explicitly descriptive, includes calibration24, and is separated from individual seed rows.",
+      "Conditional exploratory user-cluster interval, reused development and no-causal-user-outcome limitations are visible."
+    ]
+  },
+  "pdf": {
+    "state": "all3actual-rendered-pages-viewed-pass",
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/reader-r1.pdf",
+    "sha256": "c469c2323fb484484741db3eb87f8f732e7c1a8dc020b25e9b43c73a4f088282",
+    "bytes": 104434,
+    "page_count": 3,
+    "page_limit_pass": true,
+    "page_count_evidence": "Root pdfinfo reports3A4pages; stdlib PDF page-object count independently equals3.",
+    "render_dpi": 120,
+    "render_dpi_source": "root render receipt/message",
+    "pages_viewed": [
+      {
+        "page": 1,
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/pdf-qa-r1/page-1.png",
+        "sha256": "6a5625060c52fdaf83443df34fd012a1d85e5150935f63ccd486fc3b093794ae",
+        "dimensions": [
+          993,
+          1404
+        ],
+        "visual_pass": true
+      },
+      {
+        "page": 2,
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/pdf-qa-r1/page-2.png",
+        "sha256": "2b97c5419eea1633ecf49767c3cf554b37306871c6b82098bca27026e7335b55",
+        "dimensions": [
+          993,
+          1404
+        ],
+        "visual_pass": true
+      },
+      {
+        "page": 3,
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/pdf-qa-r1/page-3.png",
+        "sha256": "1e71f192f6372e9fc76b8d7c0de036fc768a6b27cb5703d22341acf17fc79d2b",
+        "dimensions": [
+          993,
+          1404
+        ],
+        "visual_pass": true
+      }
+    ],
+    "visual_pass": true,
+    "font_evidence": "All actual pages display readable Cyrillic and Latin text with no missing-glyph squares; PDF contains embedded Arial TrueType font and ToUnicode objects.",
+    "links": {
+      "visual_underlines_readable": true,
+      "expected_destinations": 11,
+      "actual_uri_annotations": 11,
+      "all_source_destinations_present": true,
+      "method": "Standard-library PDF literal URI metadata inspection; no destination opened."
+    },
+    "observations": [
+      "Page1 title/setup/matching table is complete and readable; text stays within margins and all3 match rows are visible.",
+      "Page2 all7-arm outcomes and all3-metric/3-seed differences fit their cells; header/data alignment and wrapped min/max cells are readable; CI and interpretation remain on the page.",
+      "Page3 screen contrasts, limitations, provenance table and linked evidence are complete; references finish well above the footer.",
+      "All3pages have consistent typography/table shading, clear section transitions, no clipped/overlapping text, no split orphan rows, and visible correct page numbers1/2/3."
+    ],
+    "warnings": {
+      "root_reported": "Poppler emitted nonfatal external nameToUnicode map warnings for Bulgarian/Greek/Thai resources involving a Cyrillic username path.",
+      "scope": "Root reports exit0 and successful all-page rendering. Actual Russian/English glyphs are visibly intact on all pages. This review does not claim zero renderer warnings."
+    }
+  },
+  "reviewed_sha256": {
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/figures-r1/train-kl-and-map.png": "86f1962a15ace1cb244536d40f9683059d409b760ee4802ac560e115d57fafb1",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/figures-r1/train-kl-and-map.svg": "a054b44e48ab4780a660ea37e8cd604f93aa8e02e9537e0b7abf5115e2789c41",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/figures-r1/manifest.json": "f58cf0dcfc04bc30a26093c540949cafae9c9260cc7ff0ed089f1441ad3fa8ec",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/interpretation/full-r1/analysis.json": "1fbaae8af0a4ccc94544f2886b021d062bd14778c574d3f92dc2b3aaf261274f",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/matching.json": "e45f26f9d682c71e2ee7b10b45a5e75861d572a3dd91d29547e501842eda154c",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/reader-r1.pdf": "c469c2323fb484484741db3eb87f8f732e7c1a8dc020b25e9b43c73a4f088282",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/pdf-qa-r1/page-1.png": "6a5625060c52fdaf83443df34fd012a1d85e5150935f63ccd486fc3b093794ae",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/pdf-qa-r1/page-2.png": "2b97c5419eea1633ecf49767c3cf554b37306871c6b82098bca27026e7335b55",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/pdf-qa-r1/page-3.png": "1e71f192f6372e9fc76b8d7c0de036fc768a6b27cb5703d22341acf17fc79d2b"
+  },
+  "limitations": [
+    "Root created/rendered the PDF and numerical outputs; this reviewer ran no rendering, model, array or numerical job.",
+    "Visual pass and PDF metadata inspection confirm the latest3page reader and standalone figure; they do not independently reproduce model scoring/ranking or bootstrap.",
+    "Local PDF file URIs remain machine-root dependent as explicitly documented in reproduce.md; Markdown links remain relative."
+  ],
+  "updated_utc": "2026-10-25T06:33:37.838248+00:00",
+  "findings": [],
+  "source_review": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/review/report-final.json",
+    "sha256": "5ed0b242170f052f23788d7bd5ea9d2221c0f759d94f6f3ea1e63d038339243e",
+    "source_science_pass": true,
+    "reviewed_report_sha256": {
+      "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/reader.md": "72bc134e28f199aa1d7fc67d203a0c551e0cea0c3161d069dec44e48825dc10f",
+      "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/technical.md": "5612a7623d3f3b68a587ffdae566777a256a4aef6a6bdeb882b2b5a1150ada91",
+      "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/reproduce.md": "aab58810abb3247a2a0f9880e32fa17c8d250b9b3b565800e8d4660320f8682b",
+      "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/reports/report-build.py": "09b941ea51077ae07cf206611985169fa2086425a2751835263b5942e42f78b8"
+    }
+  }
+}

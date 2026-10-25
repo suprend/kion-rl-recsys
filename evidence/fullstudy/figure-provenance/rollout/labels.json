@@ -1,0 +1,19 @@
+{
+  "contract": "kion-plot-title-labels-v1",
+  "state": "completed",
+  "stage": "rollout",
+  "aggregate": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/rollout-summary-r1/rollout-summary.json",
+    "sha256": "5c2cfc841c643258716862dffc7885566d682dfa94f95cc4578324ac05dbecba",
+    "bytes": 215401
+  },
+  "aggregate_canonical_sha256": "ecbd5d86e4db5b5a0c6766a082aad3a57700df5a4c63598833efec69475db4bc",
+  "title_enrichment": {
+    "enabled": false,
+    "items": null,
+    "requested_count": 0,
+    "found_title_count": 0,
+    "labels": [],
+    "canonical_sha256": "901555cba792b960de672d03da0dc30606f7c3bcac4cd8aeee65f89955d743a8"
+  }
+}

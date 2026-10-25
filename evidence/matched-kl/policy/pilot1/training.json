@@ -1,0 +1,286 @@
+{
+  "contract": "kion-current-C1070-kl-seeds-H1-v1",
+  "state": "completed",
+  "implementation": "producer-shape-slot-v2",
+  "start_from": "original-C",
+  "beta": 0.19829877276516375,
+  "utility": "residual",
+  "seed": 20261024,
+  "sampler_seed": 20261024,
+  "fit_admission": {
+    "maximum_new_fits": 8,
+    "fit_ordinal": 1,
+    "reservation_id": "fit-01-pilot1",
+    "ledger_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/fit-ledger-01.json",
+    "ledger_sha256": "d6c3f34ed755827812d755bb0689704200628b7749b225437f71d548d46c50eb"
+  },
+  "updates": 1000,
+  "checkpoints": [
+    {
+      "step": 0,
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot1/head-0.pt",
+      "sha256": "f34b8c8afef99c371a1167c9b9cb9ef364144c31c7e8b1d26d1f5813fe59d75d"
+    },
+    {
+      "step": 250,
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot1/head-250.pt",
+      "sha256": "9b6c72538fcc8ed9ac71aa681d872179e90df7141f700eb975557a2d86b97f66"
+    },
+    {
+      "step": 500,
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot1/head-500.pt",
+      "sha256": "c895154ac77f1308767e15c34b851f7e2c9dd9c68cfad544099d6cdc511a8563"
+    },
+    {
+      "step": 1000,
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot1/head-1000.pt",
+      "sha256": "c094ee7aa1423f951b58c57cff3ce7ca1381834e9a8843224b1f44749e2bfc88"
+    }
+  ],
+  "batch_size": 16,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "weight_decay": 0,
+  "grad_clip": 1,
+  "precision": "cuda-fp16",
+  "frozen_encoder": true,
+  "supervised_updates": 0,
+  "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+  "cache_sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+  "utility_contract": "kion-derived-completion-utility-v1",
+  "utility_formula": "r_RM(s,i)-m_fit(i)",
+  "utility_sha256": "e888cb47586b8ea2a4e5323a1051401e949f602ec36e43d36254684e80a320a5",
+  "reward_sha256": "e8047d12f8009bb422cc4956261a355dc10e05f42d73351ef76ccd5f7bc9ce05",
+  "preregistration_sha256": "78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c",
+  "prefit_sha256": "f1431dd1092a5d7ef96e2ed89d4c2889067cd3558fa0f478f29eff73825c3d97",
+  "parity_proof": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/repair-proof-r1.json",
+    "sha256": "dbdc6622bd620c15cbab77e2b12db4a241bb6e9577270fc0578b5da768d1e32b"
+  },
+  "immutable_policy_sha256": "da7baf199b685cb467edd7d5eedaada151798ec40bbc23e9edfaee8e36340dba",
+  "utility_source_sha256": "4cffa8d876c84723326f035b825cafc520c4ad561d98e3851bfe38a5d3e1cd0f",
+  "primary_contrast": "fixed-latest1000",
+  "update0_actor_reference_exact": true,
+  "update0_top10_exact": true,
+  "update0_max_abs_error": 0.0,
+  "loss_normalization": "one mean over logical real B16 occurrences; no bucket means",
+  "objective": "exact supported C-centered chosen utility minus beta KL; all1024 actions normalized",
+  "policy_source_sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5",
+  "checkpoint_steps": [
+    0,
+    250,
+    500,
+    1000
+  ],
+  "update0_cached_scores_exact": true,
+  "provider_opened": false,
+  "GPT_opened": false,
+  "RM_opened": false,
+  "temperature": 1.0,
+  "history": [
+    {
+      "step": 25,
+      "loss": -0.001963167218491435,
+      "grad_norm": 0.076959028840065
+    },
+    {
+      "step": 50,
+      "loss": -0.002710099797695875,
+      "grad_norm": 0.06462595611810684
+    },
+    {
+      "step": 75,
+      "loss": -0.002635730430483818,
+      "grad_norm": 0.04283846542239189
+    },
+    {
+      "step": 100,
+      "loss": -0.0026517563965171576,
+      "grad_norm": 0.05223054811358452
+    },
+    {
+      "step": 125,
+      "loss": -0.002649202011525631,
+      "grad_norm": 0.032731540501117706
+    },
+    {
+      "step": 150,
+      "loss": -0.002643377985805273,
+      "grad_norm": 0.04916897416114807
+    },
+    {
+      "step": 175,
+      "loss": -0.004108264110982418,
+      "grad_norm": 0.061200447380542755
+    },
+    {
+      "step": 200,
+      "loss": -0.0036367110442370176,
+      "grad_norm": 0.070350281894207
+    },
+    {
+      "step": 225,
+      "loss": -0.004128474276512861,
+      "grad_norm": 0.05026213079690933
+    },
+    {
+      "step": 250,
+      "loss": -0.0038106937427073717,
+      "grad_norm": 0.028453519567847252
+    },
+    {
+      "step": 275,
+      "loss": -0.003982430789619684,
+      "grad_norm": 0.04259786382317543
+    },
+    {
+      "step": 300,
+      "loss": -0.003944329917430878,
+      "grad_norm": 0.051606982946395874
+    },
+    {
+      "step": 325,
+      "loss": -0.004221511073410511,
+      "grad_norm": 0.028856899589300156
+    },
+    {
+      "step": 350,
+      "loss": -0.004730624612420797,
+      "grad_norm": 0.054298870265483856
+    },
+    {
+      "step": 375,
+      "loss": -0.0045027295127511024,
+      "grad_norm": 0.05080530047416687
+    },
+    {
+      "step": 400,
+      "loss": -0.004688877612352371,
+      "grad_norm": 0.024436097592115402
+    },
+    {
+      "step": 425,
+      "loss": -0.005601042881608009,
+      "grad_norm": 0.08899227529764175
+    },
+    {
+      "step": 450,
+      "loss": -0.005769634619355202,
+      "grad_norm": 0.11686727404594421
+    },
+    {
+      "step": 475,
+      "loss": -0.004182710312306881,
+      "grad_norm": 0.06601111590862274
+    },
+    {
+      "step": 500,
+      "loss": -0.004201449453830719,
+      "grad_norm": 0.03827865794301033
+    },
+    {
+      "step": 525,
+      "loss": -0.004876920022070408,
+      "grad_norm": 0.05420264974236488
+    },
+    {
+      "step": 550,
+      "loss": -0.004559498280286789,
+      "grad_norm": 0.02450140379369259
+    },
+    {
+      "step": 575,
+      "loss": -0.005462776403874159,
+      "grad_norm": 0.038284216076135635
+    },
+    {
+      "step": 600,
+      "loss": -0.005042319186031818,
+      "grad_norm": 0.035514798015356064
+    },
+    {
+      "step": 625,
+      "loss": -0.004809224978089333,
+      "grad_norm": 0.05269918218255043
+    },
+    {
+      "step": 650,
+      "loss": -0.005159780383110046,
+      "grad_norm": 0.07142575085163116
+    },
+    {
+      "step": 675,
+      "loss": -0.004785673692822456,
+      "grad_norm": 0.034051913768053055
+    },
+    {
+      "step": 700,
+      "loss": -0.004605877213180065,
+      "grad_norm": 0.045176535844802856
+    },
+    {
+      "step": 725,
+      "loss": -0.004952282179147005,
+      "grad_norm": 0.03421803563833237
+    },
+    {
+      "step": 750,
+      "loss": -0.005868519656360149,
+      "grad_norm": 0.04940587282180786
+    },
+    {
+      "step": 775,
+      "loss": -0.004810972139239311,
+      "grad_norm": 0.025501230731606483
+    },
+    {
+      "step": 800,
+      "loss": -0.004713546484708786,
+      "grad_norm": 0.06978970766067505
+    },
+    {
+      "step": 825,
+      "loss": -0.005970736965537071,
+      "grad_norm": 0.050030697137117386
+    },
+    {
+      "step": 850,
+      "loss": -0.0049881162121891975,
+      "grad_norm": 0.039888907223939896
+    },
+    {
+      "step": 875,
+      "loss": -0.007507197093218565,
+      "grad_norm": 0.1603308916091919
+    },
+    {
+      "step": 900,
+      "loss": -0.005392864346504211,
+      "grad_norm": 0.037741273641586304
+    },
+    {
+      "step": 925,
+      "loss": -0.005512990988790989,
+      "grad_norm": 0.08002880960702896
+    },
+    {
+      "step": 950,
+      "loss": -0.0056357914581894875,
+      "grad_norm": 0.01710265688598156
+    },
+    {
+      "step": 975,
+      "loss": -0.0051606930792331696,
+      "grad_norm": 0.028601570054888725
+    },
+    {
+      "step": 1000,
+      "loss": -0.006372454110532999,
+      "grad_norm": 0.031388405710458755
+    }
+  ],
+  "parameter_l2_delta": 1.243886541414812,
+  "sampler_positions_sha256": "979fb7687e3355e17a6e1ed25db8d38cbf7adb37ee47278e6e07b4368c7e56d9",
+  "actual_optimizer_updates": 1000,
+  "reference_weights_unchanged": true
+}

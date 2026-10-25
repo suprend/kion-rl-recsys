@@ -1,0 +1,286 @@
+{
+  "contract": "kion-current-C1070-kl-seeds-H1-v1",
+  "state": "completed",
+  "implementation": "producer-shape-slot-v2",
+  "start_from": "original-C",
+  "beta": 0.16274030138555867,
+  "utility": "residual",
+  "seed": 20261026,
+  "sampler_seed": 20261026,
+  "fit_admission": {
+    "maximum_new_fits": 8,
+    "fit_ordinal": 6,
+    "reservation_id": "fit-06-residual-20261026",
+    "ledger_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/fit-ledger-06.json",
+    "ledger_sha256": "20a1ac11e6fe24fc0dc968851c9de3dab4236d2b78715bfcb4fa4130dbc686cc"
+  },
+  "updates": 1000,
+  "checkpoints": [
+    {
+      "step": 0,
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261026/head-0.pt",
+      "sha256": "090c95764a8ad9d1a8ad38b62e3ad90d7814dfaa0a952ac5f119b3158cacf988"
+    },
+    {
+      "step": 250,
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261026/head-250.pt",
+      "sha256": "804b38914bf421b9dbe8a31d90dfce724fcc0b59ccbedf7c7936ddbfec268628"
+    },
+    {
+      "step": 500,
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261026/head-500.pt",
+      "sha256": "2f96dd1413e03b03bf01b7fb6092e71c400ec324d7abc3893d20a06c7f33b22c"
+    },
+    {
+      "step": 1000,
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261026/head-1000.pt",
+      "sha256": "1e3b26461b9fb6c6233c97ba72d791234d4c3f3f00c4a5546a934044621eca1b"
+    }
+  ],
+  "batch_size": 16,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "weight_decay": 0,
+  "grad_clip": 1,
+  "precision": "cuda-fp16",
+  "frozen_encoder": true,
+  "supervised_updates": 0,
+  "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+  "cache_sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+  "utility_contract": "kion-derived-completion-utility-v1",
+  "utility_formula": "r_RM(s,i)-m_fit(i)",
+  "utility_sha256": "e888cb47586b8ea2a4e5323a1051401e949f602ec36e43d36254684e80a320a5",
+  "reward_sha256": "e8047d12f8009bb422cc4956261a355dc10e05f42d73351ef76ccd5f7bc9ce05",
+  "preregistration_sha256": "78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c",
+  "prefit_sha256": "f1431dd1092a5d7ef96e2ed89d4c2889067cd3558fa0f478f29eff73825c3d97",
+  "parity_proof": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/repair-proof-r1.json",
+    "sha256": "dbdc6622bd620c15cbab77e2b12db4a241bb6e9577270fc0578b5da768d1e32b"
+  },
+  "immutable_policy_sha256": "da7baf199b685cb467edd7d5eedaada151798ec40bbc23e9edfaee8e36340dba",
+  "utility_source_sha256": "4cffa8d876c84723326f035b825cafc520c4ad561d98e3851bfe38a5d3e1cd0f",
+  "primary_contrast": "fixed-latest1000",
+  "update0_actor_reference_exact": true,
+  "update0_top10_exact": true,
+  "update0_max_abs_error": 0.0,
+  "loss_normalization": "one mean over logical real B16 occurrences; no bucket means",
+  "objective": "exact supported C-centered chosen utility minus beta KL; all1024 actions normalized",
+  "policy_source_sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5",
+  "checkpoint_steps": [
+    0,
+    250,
+    500,
+    1000
+  ],
+  "update0_cached_scores_exact": true,
+  "provider_opened": false,
+  "GPT_opened": false,
+  "RM_opened": false,
+  "temperature": 1.0,
+  "history": [
+    {
+      "step": 25,
+      "loss": -0.002861970802769065,
+      "grad_norm": 0.10437338054180145
+    },
+    {
+      "step": 50,
+      "loss": -0.0028244350105524063,
+      "grad_norm": 0.051187314093112946
+    },
+    {
+      "step": 75,
+      "loss": -0.0036626202054321766,
+      "grad_norm": 0.05993546545505524
+    },
+    {
+      "step": 100,
+      "loss": -0.003070638980716467,
+      "grad_norm": 0.03582853451371193
+    },
+    {
+      "step": 125,
+      "loss": -0.0030972931999713182,
+      "grad_norm": 0.08159167319536209
+    },
+    {
+      "step": 150,
+      "loss": -0.003186105750501156,
+      "grad_norm": 0.05126525089144707
+    },
+    {
+      "step": 175,
+      "loss": -0.004290935583412647,
+      "grad_norm": 0.0757690966129303
+    },
+    {
+      "step": 200,
+      "loss": -0.004110096953809261,
+      "grad_norm": 0.06956695765256882
+    },
+    {
+      "step": 225,
+      "loss": -0.004349130671471357,
+      "grad_norm": 0.038301751017570496
+    },
+    {
+      "step": 250,
+      "loss": -0.003829868510365486,
+      "grad_norm": 0.04051363095641136
+    },
+    {
+      "step": 275,
+      "loss": -0.004096555057913065,
+      "grad_norm": 0.04772968590259552
+    },
+    {
+      "step": 300,
+      "loss": -0.0047210101038217545,
+      "grad_norm": 0.04803554341197014
+    },
+    {
+      "step": 325,
+      "loss": -0.004116032272577286,
+      "grad_norm": 0.027095302939414978
+    },
+    {
+      "step": 350,
+      "loss": -0.004469052888453007,
+      "grad_norm": 0.04092934727668762
+    },
+    {
+      "step": 375,
+      "loss": -0.006472460459917784,
+      "grad_norm": 0.056340932846069336
+    },
+    {
+      "step": 400,
+      "loss": -0.004764909856021404,
+      "grad_norm": 0.03083723783493042
+    },
+    {
+      "step": 425,
+      "loss": -0.004726515617221594,
+      "grad_norm": 0.04335974529385567
+    },
+    {
+      "step": 450,
+      "loss": -0.004156047478318214,
+      "grad_norm": 0.02380930446088314
+    },
+    {
+      "step": 475,
+      "loss": -0.005287088919430971,
+      "grad_norm": 0.062122393399477005
+    },
+    {
+      "step": 500,
+      "loss": -0.005294691771268845,
+      "grad_norm": 0.0458824597299099
+    },
+    {
+      "step": 525,
+      "loss": -0.00493534654378891,
+      "grad_norm": 0.03339714556932449
+    },
+    {
+      "step": 550,
+      "loss": -0.004752173088490963,
+      "grad_norm": 0.03860069811344147
+    },
+    {
+      "step": 575,
+      "loss": -0.005766665562987328,
+      "grad_norm": 0.04207079857587814
+    },
+    {
+      "step": 600,
+      "loss": -0.006439800374209881,
+      "grad_norm": 0.02690354362130165
+    },
+    {
+      "step": 625,
+      "loss": -0.005674117244780064,
+      "grad_norm": 0.03769804537296295
+    },
+    {
+      "step": 650,
+      "loss": -0.0053059072233736515,
+      "grad_norm": 0.047167908400297165
+    },
+    {
+      "step": 675,
+      "loss": -0.006414160598069429,
+      "grad_norm": 0.07712451368570328
+    },
+    {
+      "step": 700,
+      "loss": -0.004863556940108538,
+      "grad_norm": 0.04064152389764786
+    },
+    {
+      "step": 725,
+      "loss": -0.005405440926551819,
+      "grad_norm": 0.04969129338860512
+    },
+    {
+      "step": 750,
+      "loss": -0.006355165503919125,
+      "grad_norm": 0.05755419284105301
+    },
+    {
+      "step": 775,
+      "loss": -0.005214568227529526,
+      "grad_norm": 0.0557531900703907
+    },
+    {
+      "step": 800,
+      "loss": -0.005443228408694267,
+      "grad_norm": 0.03636913746595383
+    },
+    {
+      "step": 825,
+      "loss": -0.008874813094735146,
+      "grad_norm": 0.08792179077863693
+    },
+    {
+      "step": 850,
+      "loss": -0.006427163258194923,
+      "grad_norm": 0.03918642923235893
+    },
+    {
+      "step": 875,
+      "loss": -0.009556406177580357,
+      "grad_norm": 0.13273197412490845
+    },
+    {
+      "step": 900,
+      "loss": -0.0072058564983308315,
+      "grad_norm": 0.045918092131614685
+    },
+    {
+      "step": 925,
+      "loss": -0.007570735644549131,
+      "grad_norm": 0.052326228469610214
+    },
+    {
+      "step": 950,
+      "loss": -0.006171491462737322,
+      "grad_norm": 0.03141056001186371
+    },
+    {
+      "step": 975,
+      "loss": -0.005217225290834904,
+      "grad_norm": 0.0253648292273283
+    },
+    {
+      "step": 1000,
+      "loss": -0.006116936448961496,
+      "grad_norm": 0.06015674024820328
+    }
+  ],
+  "parameter_l2_delta": 1.3278208664872697,
+  "sampler_positions_sha256": "2c50759668022e84b9ed91f897d1b61b55a1c8e64e9b9533543ea2f2a9eb15f1",
+  "actual_optimizer_updates": 1000,
+  "reference_weights_unchanged": true
+}

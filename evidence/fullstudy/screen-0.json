@@ -1,0 +1,20 @@
+{
+  "rows": 256,
+  "map10": 0.12278955853174603,
+  "ndcg10": 0.15004984767079585,
+  "recall10": 0.23828125,
+  "expected_effective_reward": 4.2337883077322135e-18,
+  "supported_conditional_raw_reward": 0.4051129079150249,
+  "supported_probability_denominator": 248.671768617146,
+  "supported_top10_raw_reward": 0.41350328987617463,
+  "supported_top10_denominator": 2554,
+  "unsupported_mass": 0.028625903839273457,
+  "exact_KL": 0.0,
+  "entropy": 5.872029001865936,
+  "top1_max_share": 0.2890625,
+  "top10_HHI": 0.036282043457031246,
+  "effective_catalog": 27.56184340014636,
+  "states_without_support": 0,
+  "checkpoint_sha256": "20a616aeecd9856b3d96ab8f17f3321373b9f6a7bd158ab125d705e4d6f595ab",
+  "cache_sha256": "5baf5dae822a7fb812acb6344ac08c0a0f94a2e4af7adf24b1c53c4584096a82"
+}

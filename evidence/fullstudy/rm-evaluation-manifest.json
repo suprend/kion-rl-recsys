@@ -1,0 +1,415 @@
+{
+  "contract": "kion-reward-development-eval-v1",
+  "ready": true,
+  "report": "report.json",
+  "files": {
+    "report.json": "5b48ddf391eed228a38414a131ef09e38c7ff32ad1dc87d95f3210bde31e3574",
+    "predictions.npz": "0832e61f55054814be5d5f6a503327e65cf6e348d6d1b23aaf5ceb800a2d1634"
+  },
+  "inputs": {
+    "eval_source": {
+      "path": "D:/tlab-recsys-2026/scripts/kion_reward_eval.py",
+      "sha256": "70a7d6d6f947d926f96b8d344d5db74287d6466657d30f983946a9e9e7f09677"
+    },
+    "freeze": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/freeze-rm-r2.json",
+      "sha256": "c1ca863d628e67b0d64d0974fd31174463890babaf93913734374469290ebe07"
+    },
+    "metadata": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/metadata.json",
+      "sha256": "f02acaa9a5e5532e79b060279ba8a5027f268f202132e85ebab97cd4912fbd11"
+    },
+    "basic_npz": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-basic-bundle-v1/features.npz",
+      "sha256": "8b0972d95e1e66eda10d9a01090fbe86ca226a4b408cd760ff53523c9d96e513"
+    },
+    "basic_manifest": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-basic-bundle-v1/manifest.json",
+      "sha256": "95f4386dec36c1f4d285e87bc42b4e3753ef8c641a6440d53995cc9385a62daf"
+    },
+    "prepared_val": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-full-context64/val.npz",
+      "sha256": "4c8839b69a4abeff5e4eea3ffeea1d83715deea8775f4547f8f85c0e055bad99"
+    },
+    "rm_bundle_manifest": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/manifest.json",
+      "sha256": "42d7532a5daea8af36198e0a4ba6ba3b134cd66e93dcfd75961913a14624144c"
+    },
+    "rm_model_manifest": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/rm-r2/scorer/manifest.json",
+      "sha256": "dfc61f3ebfb9144be3cb86caf70050b72033d9234119145119dbfe90e0ee8507"
+    },
+    "sft_cache_manifest": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-all-local-20261020-r1/manifest.json",
+      "sha256": "738e74698104b295ea1d5d1b8a986f75503978c241685bae26bd77c8f1bca0be"
+    },
+    "raw_items": {
+      "path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e"
+    },
+    "raw_users": {
+      "path": "D:/tlab-recsys-2026/data/raw/kion/full/users.csv",
+      "sha256": "37b2945240628a3f215e1fb5f79b4cff386d8988b21fa61e5b135aef4541182c"
+    },
+    "raw_interactions": {
+      "path": "D:/tlab-recsys-2026/data/raw/kion/full/interactions.csv",
+      "sha256": "201dc9114eb309da9df6f5f227ada23a371d668edf64a32090fb613a75162ecf"
+    },
+    "source/scripts/kion_local_pack.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_local_pack.py",
+      "sha256": "87412446a72033aae98897250cc0178084dd76b5818aee38a24fbb81a8e02aaf"
+    },
+    "source/scripts/kion_pack_static.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_pack_static.py",
+      "sha256": "5a52ef6ab610b0f3d091bd6566982bd0894f1d0c1ad891986dd27d3f8703e181"
+    },
+    "source/scripts/kion_pack_people.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_pack_people.py",
+      "sha256": "25c9b1f9ac9188f096f22085d63a5de694e55a757c9857da963854bb808e791b"
+    },
+    "source/scripts/kion_pack_history.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_pack_history.py",
+      "sha256": "ecdd0cd0e853d20578a7855acc8987c72c430925d1a30f7e26fee250000659dd"
+    },
+    "source/scripts/kion_pack_dynamic.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_pack_dynamic.py",
+      "sha256": "7f53e94ddd5940514de8a132711ff5d782885983af9f0c62ae4c4515261bdd7a"
+    },
+    "source/scripts/kion_pack_semantics.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_pack_semantics.py",
+      "sha256": "74a59bad3bf89c5eb92624452ffac8e4775c18592823411a611d09d50fe3d7ff"
+    },
+    "source/scripts/kion_pack_train.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_pack_train.py",
+      "sha256": "0f11d3c1bcc5165dfd9f35a7728b9400b679cd51c8bb444af04360643711546a"
+    },
+    "source/scripts/kion_reward_data.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_reward_data.py",
+      "sha256": "bc767e7987b9404273cc24a12e1f91562e480d0cfef39302e079fba7e296ddf6"
+    },
+    "source/scripts/kion_reward_boosting.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_reward_boosting.py",
+      "sha256": "cb5446663794ec143b3d72bc2e4a5d8de3599c5a9f3a3c53baaeb44ed4d88727"
+    },
+    "source/scripts/kion_policy_rl.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_policy_rl.py",
+      "sha256": "3ced63dd23b72ab69da1b7758d445cb7064f393f34823101be169106a6a80425"
+    },
+    "source/scripts/kion_conditioned_train.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_conditioned_train.py",
+      "sha256": "b6c2c93bb8ac1475d00a1a20cd8d278da898468ae38a001cc5be4ec218478caf"
+    },
+    "source/scripts/kion_full_train.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_full_train.py",
+      "sha256": "2b8d684e9f789eb7a51823e0b38df183dcd2f9f72942894a905fde1f1efd47ea"
+    },
+    "source/scripts/kion_train.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_train.py",
+      "sha256": "2066dcddcccabcd4c46971467287f2955cb06434bfa942247ac55f111e8d8d1b"
+    },
+    "source/scripts/kion_prepare.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_prepare.py",
+      "sha256": "81e8ac99a6d50398418fd95e0874bc07b55b3d33487e89731ec26397960c3e77"
+    },
+    "source/scripts/kion_basic_bundle_features.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_basic_bundle_features.py",
+      "sha256": "25c5a80a2fba9de5ee76c67ac4bd6cd7bd437cf807cd42855baeba3b50f73ef8"
+    },
+    "source/scripts/kion_local_features.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_local_features.py",
+      "sha256": "e5f992093b53839d425ccd436dba0404862ad912b795a390d60ff6c9a2576de1"
+    },
+    "source/scripts/kion_sex_features.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_sex_features.py",
+      "sha256": "e524c68af1ad327c3e83959aa4503be17aabdc700beaa24793831d09a152a905"
+    },
+    "source/scripts/kion_cuda_batches.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_cuda_batches.py",
+      "sha256": "efcdc050c2e3778731e6f1e0ad49bb21c0b5dc622ea22f1f7992ed8c21568483"
+    },
+    "source/scripts/kion_night_supervisor.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_night_supervisor.py",
+      "sha256": "af8c0eb6cfc45fed1a5e3a19e9c0940acd98eee2060998ed55ac9a66cdd92c48"
+    },
+    "source/scripts/kion_compare_predictions.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_compare_predictions.py",
+      "sha256": "3b4966e6974a4fd52743ab90cf5999e65c0fb38bf9bd9f3b901fcbf65ae638c3"
+    },
+    "source/scripts/kion_map10.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/kion_map10.py",
+      "sha256": "921bcfcc84a0896379add147d60a19f41dcda006c3b1a1aff0c682cabce1f54e"
+    },
+    "source/scripts/hm_job.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r2/scripts/hm_job.py",
+      "sha256": "a8ca33c389aad356ea2bd8b0a2ab43276a0af85029934888ebeca9f132c541a0"
+    },
+    "producer_freeze": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/freeze-rm-r1.json",
+      "sha256": "0d5bcfc3564e3ed930a2eb42bcf09d76a02225dc426c1f166456d28c146e1378"
+    },
+    "producer_source/scripts/kion_local_pack.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_local_pack.py",
+      "sha256": "87412446a72033aae98897250cc0178084dd76b5818aee38a24fbb81a8e02aaf"
+    },
+    "producer_source/scripts/kion_pack_static.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_pack_static.py",
+      "sha256": "5a52ef6ab610b0f3d091bd6566982bd0894f1d0c1ad891986dd27d3f8703e181"
+    },
+    "producer_source/scripts/kion_pack_people.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_pack_people.py",
+      "sha256": "25c9b1f9ac9188f096f22085d63a5de694e55a757c9857da963854bb808e791b"
+    },
+    "producer_source/scripts/kion_pack_history.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_pack_history.py",
+      "sha256": "ecdd0cd0e853d20578a7855acc8987c72c430925d1a30f7e26fee250000659dd"
+    },
+    "producer_source/scripts/kion_pack_dynamic.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_pack_dynamic.py",
+      "sha256": "7f53e94ddd5940514de8a132711ff5d782885983af9f0c62ae4c4515261bdd7a"
+    },
+    "producer_source/scripts/kion_pack_semantics.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_pack_semantics.py",
+      "sha256": "74a59bad3bf89c5eb92624452ffac8e4775c18592823411a611d09d50fe3d7ff"
+    },
+    "producer_source/scripts/kion_pack_train.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_pack_train.py",
+      "sha256": "0f11d3c1bcc5165dfd9f35a7728b9400b679cd51c8bb444af04360643711546a"
+    },
+    "producer_source/scripts/kion_reward_data.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_reward_data.py",
+      "sha256": "bc767e7987b9404273cc24a12e1f91562e480d0cfef39302e079fba7e296ddf6"
+    },
+    "producer_source/scripts/kion_reward_boosting.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_reward_boosting.py",
+      "sha256": "51421aea405abb210bb49b4aa1e694170b21296b75a15f7e228b01416fc085b1"
+    },
+    "producer_source/scripts/kion_policy_rl.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_policy_rl.py",
+      "sha256": "3ced63dd23b72ab69da1b7758d445cb7064f393f34823101be169106a6a80425"
+    },
+    "producer_source/scripts/kion_conditioned_train.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_conditioned_train.py",
+      "sha256": "b6c2c93bb8ac1475d00a1a20cd8d278da898468ae38a001cc5be4ec218478caf"
+    },
+    "producer_source/scripts/kion_full_train.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_full_train.py",
+      "sha256": "2b8d684e9f789eb7a51823e0b38df183dcd2f9f72942894a905fde1f1efd47ea"
+    },
+    "producer_source/scripts/kion_train.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_train.py",
+      "sha256": "2066dcddcccabcd4c46971467287f2955cb06434bfa942247ac55f111e8d8d1b"
+    },
+    "producer_source/scripts/kion_prepare.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_prepare.py",
+      "sha256": "81e8ac99a6d50398418fd95e0874bc07b55b3d33487e89731ec26397960c3e77"
+    },
+    "producer_source/scripts/kion_basic_bundle_features.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_basic_bundle_features.py",
+      "sha256": "25c5a80a2fba9de5ee76c67ac4bd6cd7bd437cf807cd42855baeba3b50f73ef8"
+    },
+    "producer_source/scripts/kion_local_features.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_local_features.py",
+      "sha256": "e5f992093b53839d425ccd436dba0404862ad912b795a390d60ff6c9a2576de1"
+    },
+    "producer_source/scripts/kion_sex_features.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_sex_features.py",
+      "sha256": "e524c68af1ad327c3e83959aa4503be17aabdc700beaa24793831d09a152a905"
+    },
+    "producer_source/scripts/kion_cuda_batches.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_cuda_batches.py",
+      "sha256": "efcdc050c2e3778731e6f1e0ad49bb21c0b5dc622ea22f1f7992ed8c21568483"
+    },
+    "producer_source/scripts/kion_night_supervisor.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_night_supervisor.py",
+      "sha256": "af8c0eb6cfc45fed1a5e3a19e9c0940acd98eee2060998ed55ac9a66cdd92c48"
+    },
+    "producer_source/scripts/kion_compare_predictions.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_compare_predictions.py",
+      "sha256": "3b4966e6974a4fd52743ab90cf5999e65c0fb38bf9bd9f3b901fcbf65ae638c3"
+    },
+    "producer_source/scripts/kion_map10.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/kion_map10.py",
+      "sha256": "921bcfcc84a0896379add147d60a19f41dcda006c3b1a1aff0c682cabce1f54e"
+    },
+    "producer_source/scripts/hm_job.py": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/bundle-rm-r1/scripts/hm_job.py",
+      "sha256": "a8ca33c389aad356ea2bd8b0a2ab43276a0af85029934888ebeca9f132c541a0"
+    },
+    "rm_bundle/fit.numeric.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/fit.numeric.npy",
+      "sha256": "2c99aa0b1bf7a4fd5c2174c99f1b7010f8aa643621b3499fcbaada96be335748"
+    },
+    "rm_bundle/fit.candidate_numeric.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/fit.candidate_numeric.npy",
+      "sha256": "284226f1788ab8732651944c9037cf1ffc3933da3bca62099f9be4e8ce9f06a8"
+    },
+    "rm_bundle/fit.categorical.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/fit.categorical.npy",
+      "sha256": "d20e1b49c56c688df9227f9d07fb1148546d3764bee7a706e9c10492e3eecfb1"
+    },
+    "rm_bundle/fit.observed.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/fit.observed.npy",
+      "sha256": "46ce6da7b2f77258321b30c3e457fed03708eed353da2db6aaa1e67ed43de331"
+    },
+    "rm_bundle/fit.reward.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/fit.reward.npy",
+      "sha256": "e58a9963dbc28f093fb3152a64d546a46d328b747cd0a47e95f5c8838415f319"
+    },
+    "rm_bundle/fit.user_id.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/fit.user_id.npy",
+      "sha256": "4f28075ec91b5314be68339ae8cec31d52d8910151e4d5c9ee1a65b1124be09f"
+    },
+    "rm_bundle/fit.item_id.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/fit.item_id.npy",
+      "sha256": "0e28243646d752ca66cd3138a9bda8ad228cab6bffb310a4db91f97f853abade"
+    },
+    "rm_bundle/fit.target_date.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/fit.target_date.npy",
+      "sha256": "2116761146381456fecdcbda300d0bb4ade3889c99a54c6dc02d2550fe89a2ea"
+    },
+    "rm_bundle/fit.history_cutoff.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/fit.history_cutoff.npy",
+      "sha256": "2116761146381456fecdcbda300d0bb4ade3889c99a54c6dc02d2550fe89a2ea"
+    },
+    "rm_bundle/fit.history_max_date.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/fit.history_max_date.npy",
+      "sha256": "ca7937a559579661f6400e194ce284cba2697330a176976ebd23703064f17138"
+    },
+    "rm_bundle/fit.history_length.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/fit.history_length.npy",
+      "sha256": "088b1df44348e61555776660c286d473b51f0979642a26917f8382236b982778"
+    },
+    "rm_bundle/select.numeric.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/select.numeric.npy",
+      "sha256": "8072c556f45ca30ae6e7835659f0ff13c7c97cb62a2df4363ec80fc310b94b37"
+    },
+    "rm_bundle/select.candidate_numeric.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/select.candidate_numeric.npy",
+      "sha256": "66a6b183ecfea2bfc083b97c4b21af4e02926c136fd2c393a97703139d0a4337"
+    },
+    "rm_bundle/select.categorical.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/select.categorical.npy",
+      "sha256": "29e0c23187062a908cb24baf54750de2d5672f686722b1a85a0d270879805df5"
+    },
+    "rm_bundle/select.observed.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/select.observed.npy",
+      "sha256": "f9fde39131a33da20d13a1ad7b86260e923dba9b6433c614347b5e2e3ffd0949"
+    },
+    "rm_bundle/select.reward.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/select.reward.npy",
+      "sha256": "b2a4d6f57ab3a08c420cc7018151d6e219352ecf355d805395306e484ce3c831"
+    },
+    "rm_bundle/select.user_id.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/select.user_id.npy",
+      "sha256": "062681e1227a590f03d179c72f9508602a4aeb03fca1bc6356f0c344c856d3b4"
+    },
+    "rm_bundle/select.item_id.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/select.item_id.npy",
+      "sha256": "118741d75a97631beb5a377b3b47349292d74672db8784ab66bb56c5e7ecedd5"
+    },
+    "rm_bundle/select.target_date.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/select.target_date.npy",
+      "sha256": "763fd28f8330605137fcf4ade9c815071bbe937102cf0c86e7decf5e1486e9a0"
+    },
+    "rm_bundle/select.history_cutoff.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/select.history_cutoff.npy",
+      "sha256": "d3f24ba3227f2fe12032478e651aa46f5febee00aca4aa13e2632952f2481b95"
+    },
+    "rm_bundle/select.history_max_date.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/select.history_max_date.npy",
+      "sha256": "0c951f575169c4abd08811317ef7b16a75c492b2c3b8b4be96563876f8c7c0fb"
+    },
+    "rm_bundle/select.history_length.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/select.history_length.npy",
+      "sha256": "2b1e97eb5d2ac9e249aabf5d98ca6f422e994a5fc6e64e6d1e781cf88dae507d"
+    },
+    "rm_bundle/calibration.numeric.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/calibration.numeric.npy",
+      "sha256": "f60634db26786973749c7a1aa43a37620ce7e0221988f0ca94ee1993eace43f0"
+    },
+    "rm_bundle/calibration.candidate_numeric.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/calibration.candidate_numeric.npy",
+      "sha256": "5a85a7a867d85895f7d3b2c24f1c0f2bca9e2d50744fecf77d735d6f28796f36"
+    },
+    "rm_bundle/calibration.categorical.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/calibration.categorical.npy",
+      "sha256": "29e0c23187062a908cb24baf54750de2d5672f686722b1a85a0d270879805df5"
+    },
+    "rm_bundle/calibration.observed.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/calibration.observed.npy",
+      "sha256": "f9fde39131a33da20d13a1ad7b86260e923dba9b6433c614347b5e2e3ffd0949"
+    },
+    "rm_bundle/calibration.reward.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/calibration.reward.npy",
+      "sha256": "297a72691041cd92ce2e6dbaa2bfe4b1eb267d595eedde5f7a0823864ec0ba91"
+    },
+    "rm_bundle/calibration.user_id.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/calibration.user_id.npy",
+      "sha256": "f7795cf1eca1b5101cc78fab1a1a8ad82f54c9f632e924a484008a84a090c4bf"
+    },
+    "rm_bundle/calibration.item_id.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/calibration.item_id.npy",
+      "sha256": "b6334b59f697472559d3f0401b7f94f0a1c965e362ce919a0225f798c42c127a"
+    },
+    "rm_bundle/calibration.target_date.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/calibration.target_date.npy",
+      "sha256": "b65dc40a65a64fffd7dc5784cb35995f020c22bd29aafe5cf7cc9b4dde4c100d"
+    },
+    "rm_bundle/calibration.history_cutoff.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/calibration.history_cutoff.npy",
+      "sha256": "d3f24ba3227f2fe12032478e651aa46f5febee00aca4aa13e2632952f2481b95"
+    },
+    "rm_bundle/calibration.history_max_date.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/calibration.history_max_date.npy",
+      "sha256": "86f3d1adfd4d154fba1b1567769b979612a2ca97ea6f56f152fec8f8237ea6df"
+    },
+    "rm_bundle/calibration.history_length.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/calibration.history_length.npy",
+      "sha256": "3c4f6f451f366acb25a5a549f8127f3f46c124a4bd65a4ef7289786c75900b97"
+    },
+    "rm_bundle/catalog.npz": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/catalog.npz",
+      "sha256": "a3e16b919996e717edefaf0aa120565adba772f9106aac7223225e06909d63cd"
+    },
+    "rm_bundle/fit.x.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/fit.x.npy",
+      "sha256": "40f590b80d58571fe94f016e737d5408b3b15cf95b3d37f6c1a955ddca13ff2c"
+    },
+    "rm_bundle/fit.lengths.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/fit.lengths.npy",
+      "sha256": "3b67239719af89b0215273957bb0cbdeb46da2e06cd30043c0115922b5c33884"
+    },
+    "rm_bundle/select.x.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/select.x.npy",
+      "sha256": "18b3ab98c01d8df390809c54de801cde1110db56300e0bf55662a34e723f11fb"
+    },
+    "rm_bundle/select.lengths.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/select.lengths.npy",
+      "sha256": "d86c1314bacacd97e444a379e5b9ce08f94fb3a863fd60bc7238de50ad2683a3"
+    },
+    "rm_bundle/calibration.x.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/calibration.x.npy",
+      "sha256": "48660d57be692568d7a77eb92d7c4a19c87b88da76df274a04061a88e9abab9f"
+    },
+    "rm_bundle/calibration.lengths.npy": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/calibration.lengths.npy",
+      "sha256": "25fb44811ecb2caff8e362a79ba33ae1e215f88d776f7cd50c628057bbfa2045"
+    },
+    "rm_bundle/full_target_support.npz": {
+      "path": "D:/tlab-recsys-2026/data/processed/kion-reward-local-20261020-r1/full_target_support.npz",
+      "sha256": "a0271f7a216ff04fb5fb954d5f76b7eb113db4879e4df20e7c416d8bf7f7b446"
+    },
+    "rm_model/scorer.npz": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/rm-r2/scorer/scorer.npz",
+      "sha256": "d5df55586a9df54b5e121d494a149764d956750ac3caaf2b4c1ada27a93243d4"
+    },
+    "rm_model/model.cbm": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/rm-r2/scorer/model.cbm",
+      "sha256": "b6ed4c6427129afcddec017e2f64d9c3fb59fb31fc300e5c9d074964a21ddd62"
+    }
+  },
+  "scorer_signature": "ee14bc4d7375a4d6978a2e1f476cd795369b45ef4250501b2f5992767e9ed261",
+  "row_binding": "131bc72914792e7ce68148e8f013c4d439a676ab9285901c24437cee0319df4b",
+  "policy_mapping_sha256": "b90df0d1fcce007008b62007e486bc1e9cb0b4ac89c97bb5107e84305e744db4",
+  "schema_signature": "7776a9d611b04ef8f3ef77fce0a67c1fb045f67142bf4b4bbde24cc469f9bda4"
+}

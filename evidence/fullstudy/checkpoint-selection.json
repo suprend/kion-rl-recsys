@@ -1,0 +1,192 @@
+{
+  "state": "completed",
+  "created_utc": "2026-10-24T20:29:07.742350+00:00",
+  "preregistration_sha256": "025061343a0314691dfb6064063d7e18c74662ea62ab285ec423d374037538ac",
+  "training_sha256": "cfdfc225be553305a3d6a8af7c5419227255b44827ccf7e3760a86b3e5dbf8bf",
+  "frontier_sha256": "73d1eacc7000398341c3bcfb761929be41c18e3f2c094d2467dbee7fc8184530",
+  "reference_screen": {
+    "rows": 256,
+    "map10": 0.12278955853174603,
+    "ndcg10": 0.15004984767079585,
+    "recall10": 0.23828125,
+    "expected_effective_reward": 4.2337883077322135e-18,
+    "supported_conditional_raw_reward": 0.4051129079150249,
+    "supported_probability_denominator": 248.671768617146,
+    "supported_top10_raw_reward": 0.41350328987617463,
+    "supported_top10_denominator": 2554,
+    "unsupported_mass": 0.028625903839273457,
+    "exact_KL": 0.0,
+    "entropy": 5.872029001865936,
+    "top1_max_share": 0.2890625,
+    "top10_HHI": 0.036282043457031246,
+    "effective_catalog": 27.56184340014636,
+    "states_without_support": 0
+  },
+  "screen_rows": 256,
+  "records": [
+    {
+      "step": 0,
+      "checkpoint": {
+        "step": 0,
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-0.pt",
+        "sha256": "20a616aeecd9856b3d96ab8f17f3321373b9f6a7bd158ab125d705e4d6f595ab"
+      },
+      "metrics": {
+        "rows": 256,
+        "map10": 0.12278955853174603,
+        "ndcg10": 0.15004984767079585,
+        "recall10": 0.23828125,
+        "expected_effective_reward": 4.2337883077322135e-18,
+        "supported_conditional_raw_reward": 0.4051129079150249,
+        "supported_probability_denominator": 248.671768617146,
+        "supported_top10_raw_reward": 0.41350328987617463,
+        "supported_top10_denominator": 2554,
+        "unsupported_mass": 0.028625903839273457,
+        "exact_KL": 0.0,
+        "entropy": 5.872029001865936,
+        "top1_max_share": 0.2890625,
+        "top10_HHI": 0.036282043457031246,
+        "effective_catalog": 27.56184340014636,
+        "states_without_support": 0,
+        "checkpoint_sha256": "20a616aeecd9856b3d96ab8f17f3321373b9f6a7bd158ab125d705e4d6f595ab",
+        "cache_sha256": "5baf5dae822a7fb812acb6344ac08c0a0f94a2e4af7adf24b1c53c4584096a82"
+      },
+      "gates": {
+        "map": true,
+        "KL": true,
+        "unsupported": true,
+        "top1": true
+      },
+      "feasible": true,
+      "screen_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-0-r1.json",
+      "screen_sha256": "e2f6bf09433aece8e6bdc55da0a43d3d04a65d767204dd9420d0a683a6f81a5a"
+    },
+    {
+      "step": 250,
+      "checkpoint": {
+        "step": 250,
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-250.pt",
+        "sha256": "aa8f4da51fd29021fb44e79681e84462e9bd8f7fd938326f93b18f3f3b9933da"
+      },
+      "metrics": {
+        "rows": 256,
+        "map10": 0.12163783482142856,
+        "ndcg10": 0.14882324652180962,
+        "recall10": 0.23828125,
+        "expected_effective_reward": 0.020440266715522334,
+        "supported_conditional_raw_reward": 0.42608422097879706,
+        "supported_probability_denominator": 249.50120057011927,
+        "supported_top10_raw_reward": 0.4508502096894577,
+        "supported_top10_denominator": 2554,
+        "unsupported_mass": 0.02538593527297165,
+        "exact_KL": 0.017089056192608844,
+        "entropy": 5.800168242957178,
+        "top1_max_share": 0.34765625,
+        "top10_HHI": 0.03791168212890625,
+        "effective_catalog": 26.37709391526938,
+        "states_without_support": 0,
+        "checkpoint_sha256": "aa8f4da51fd29021fb44e79681e84462e9bd8f7fd938326f93b18f3f3b9933da",
+        "cache_sha256": "5baf5dae822a7fb812acb6344ac08c0a0f94a2e4af7adf24b1c53c4584096a82"
+      },
+      "gates": {
+        "map": true,
+        "KL": true,
+        "unsupported": true,
+        "top1": false
+      },
+      "feasible": false,
+      "screen_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-250-r1.json",
+      "screen_sha256": "0cd377ab660e50d838bd2a99d1a44a8fa37ae973adebcc592e3a2e9fcd1529be"
+    },
+    {
+      "step": 500,
+      "checkpoint": {
+        "step": 500,
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-500.pt",
+        "sha256": "b8e8772666c93a28da252a0c9995475df5147405717aa0d71aaf895feba373d0"
+      },
+      "metrics": {
+        "rows": 256,
+        "map10": 0.11629464285714286,
+        "ndcg10": 0.14473326653688698,
+        "recall10": 0.23828125,
+        "expected_effective_reward": 0.024999390117628542,
+        "supported_conditional_raw_reward": 0.4307890312497937,
+        "supported_probability_denominator": 249.41575705394152,
+        "supported_top10_raw_reward": 0.46132053503695186,
+        "supported_top10_denominator": 2554,
+        "unsupported_mass": 0.025719699008040962,
+        "exact_KL": 0.02194445395564408,
+        "entropy": 5.794868721125561,
+        "top1_max_share": 0.34765625,
+        "top10_HHI": 0.03762908935546874,
+        "effective_catalog": 26.57518470759025,
+        "states_without_support": 0,
+        "checkpoint_sha256": "b8e8772666c93a28da252a0c9995475df5147405717aa0d71aaf895feba373d0",
+        "cache_sha256": "5baf5dae822a7fb812acb6344ac08c0a0f94a2e4af7adf24b1c53c4584096a82"
+      },
+      "gates": {
+        "map": false,
+        "KL": true,
+        "unsupported": true,
+        "top1": false
+      },
+      "feasible": false,
+      "screen_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-500-r1.json",
+      "screen_sha256": "98d01741222fcfe21fcec78f8ed800864966cb752638c9d75689a71e3492f45e"
+    },
+    {
+      "step": 1000,
+      "checkpoint": {
+        "step": 1000,
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-1000.pt",
+        "sha256": "436d735d67fd861e6b925719b9e3597582ec405eed1b13ede3db3671e1ce37b7"
+      },
+      "metrics": {
+        "rows": 256,
+        "map10": 0.11365327380952381,
+        "ndcg10": 0.14102941437209787,
+        "recall10": 0.23046875,
+        "expected_effective_reward": 0.029113097340336444,
+        "supported_conditional_raw_reward": 0.43501115088994186,
+        "supported_probability_denominator": 249.47910615664694,
+        "supported_top10_raw_reward": 0.4703615863230758,
+        "supported_top10_denominator": 2553,
+        "unsupported_mass": 0.025472241575597885,
+        "exact_KL": 0.026805727530462245,
+        "entropy": 5.791566896498253,
+        "top1_max_share": 0.34765625,
+        "top10_HHI": 0.03772216796875,
+        "effective_catalog": 26.5096110284124,
+        "states_without_support": 0,
+        "checkpoint_sha256": "436d735d67fd861e6b925719b9e3597582ec405eed1b13ede3db3671e1ce37b7",
+        "cache_sha256": "5baf5dae822a7fb812acb6344ac08c0a0f94a2e4af7adf24b1c53c4584096a82"
+      },
+      "gates": {
+        "map": false,
+        "KL": true,
+        "unsupported": true,
+        "top1": false
+      },
+      "feasible": false,
+      "screen_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-1000-r1.json",
+      "screen_sha256": "cd5b7f1e1a93b711f860fb02e8ac89f05f86b0f60e3be371d83399ab9f05cff4"
+    }
+  ],
+  "selected_step": 0,
+  "selected_checkpoint": {
+    "step": 0,
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-0.pt",
+    "sha256": "20a616aeecd9856b3d96ab8f17f3321373b9f6a7bd158ab125d705e4d6f595ab"
+  },
+  "latest_checkpoint": {
+    "step": 1000,
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-1000.pt",
+    "sha256": "436d735d67fd861e6b925719b9e3597582ec405eed1b13ede3db3671e1ce37b7"
+  },
+  "selection_rule": "max mean centered expected proxy among feasible screen checkpoints including0; ties higherMAP thenlowerKL thenearlierupdate; no fit-time β search",
+  "diagnostic_only": true,
+  "automatic_model_promotion_allowed": false,
+  "new_supervised_updates": 0,
+  "actual_RL_updates": 1000
+}

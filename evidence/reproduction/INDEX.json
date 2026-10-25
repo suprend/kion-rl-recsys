@@ -1,0 +1,90 @@
+{
+  "contract": "kion-submission-reproduction-evidence-v1",
+  "files": [
+    {
+      "path": "actor-export-native.json",
+      "bytes": 1158,
+      "sha256": "5368e4240e7008cfde6cb99f074bfb40e50b5e6e40d94ce49209a1eeecceb649",
+      "source_root_relative": "operations/export-actor-r1/receipt.json",
+      "copy_exact": true
+    },
+    {
+      "path": "rm-export-native.json",
+      "bytes": 1153,
+      "sha256": "08ced6919202ed05425a763040fae78f1391ee6b71bf3bf226f7a43277852cc4",
+      "source_root_relative": "operations/export-rm-r2/receipt.json",
+      "copy_exact": true
+    },
+    {
+      "path": "actor-replay-native.json",
+      "bytes": 1172,
+      "sha256": "9b97b54fa6136b06cf52160a6b9b102b914a557256c582cf88607232b3a0b9ce",
+      "source_root_relative": "operations/replay-encoder-cuda-r1/receipt.json",
+      "copy_exact": true
+    },
+    {
+      "path": "actor-replay-summary.json",
+      "bytes": 7759,
+      "sha256": "e2b0b173f43b3d8c09094d8dcc721186e2d94fd7e2ea6363d51144bcb8f4a15e",
+      "source_root_relative": "research/replay-encoder-cuda-r1/summary.json",
+      "copy_exact": true
+    },
+    {
+      "path": "actor-replay-receipt.json",
+      "bytes": 3749,
+      "sha256": "0859582ae1d2c8badf4a30d21d65d6a3ccdde6c87f9c52ed90dbe96a5f53769a",
+      "source_root_relative": "research/replay-encoder-cuda-r1/run-receipt.json",
+      "copy_exact": true
+    },
+    {
+      "path": "actor-extraction.json",
+      "bytes": 5807,
+      "sha256": "bc0c9187cf3fa7d868ae720ae41bed9ad585fbc8952f9130cc6dc5fb51fe70c5",
+      "source_root_relative": "research/validation-actor-candidate-r1.json",
+      "copy_exact": true
+    },
+    {
+      "path": "rm-extraction.json",
+      "bytes": 4269,
+      "sha256": "0a2c7562636a791ab4d687c15df7efb89bcbc2c2543b9d4232e84c9ae1fa3f06",
+      "source_root_relative": "research/validation-rm-candidate-r2.json",
+      "copy_exact": true
+    },
+    {
+      "path": "cbm-metadata-review.json",
+      "bytes": 1717,
+      "sha256": "a02385637255737b9e6b2a0ec7972895b96ea6f26e71b45d9ebeeb80cc66234a",
+      "source_root_relative": "review/root-cbm-metadata-r1.json",
+      "copy_exact": true
+    },
+    {
+      "path": "source-tests.json",
+      "bytes": 1228,
+      "sha256": "edffe451d1de4e713336b956cfce1d535838495129f6895ae50356cad5105707",
+      "source_root_relative": "review/root-source-tests-r1.json",
+      "copy_exact": true
+    },
+    {
+      "path": "rm-replay-native.json",
+      "bytes": 1159,
+      "sha256": "edde41ca8264f7778ed00a1c20443aeb4ed42f3ce6039406b408fc99b003233d",
+      "source_root_relative": "operations/reward-replay-r1/receipt.json",
+      "copy_exact": true
+    },
+    {
+      "path": "rm-replay-summary.json",
+      "bytes": 1717,
+      "sha256": "1fc306457c50b94c58b91a22eeacd3947ed380e79fb1351b0d794b787bcf5f43",
+      "source_root_relative": "reproduction/rm-replay-r1/rm-summary.json",
+      "copy_exact": true
+    },
+    {
+      "path": "rm-replay-receipt.json",
+      "bytes": 3533,
+      "sha256": "5f24a985e2e0a09f9193cdb4ab6021af8b46868551ff1c12e3e09b8a2ca9d6fb",
+      "source_root_relative": "reproduction/rm-replay-r1/run-receipt.json",
+      "copy_exact": true
+    }
+  ],
+  "scope": "Actual no-training compact actor/RM fixture exports, fresh spaced candidate extraction, frozen-GPT+three-head CUDAFP16 exact inference and separate frozen CatBoost RM exact inference. Four contexts x1024; no new full4096 evaluation or training."
+}

@@ -1,0 +1,162 @@
+{
+  "contract": "kion-external-provenance-v1",
+  "state": "copied-sanitized-and-verified",
+  "created_utc": "2026-10-25T07:31:07.928820+00:00",
+  "files": [
+    {
+      "path": "entity-links/shared-links-current-r3.json",
+      "bytes": 5214447,
+      "sha256": "adcb614c750308c8ebbd5b8446cfc34c0c6dd9ef0c74979be9ba116d6f8faf25",
+      "source_identifier": "task2-kion/all-agreed-20261020/entity-links/shared-links-current-r3.json",
+      "copy_mode": "exact-original-bytes",
+      "purpose": "Reviewed public film/person identity ledger; no KION viewer identities"
+    },
+    {
+      "path": "entity-links/shared-union-independent-review-r3.json",
+      "bytes": 647822,
+      "sha256": "c8e033968b9e36d68d143df544690d1919e58c5d353ba8cea2ac64201a624ee1",
+      "source_identifier": "task2-kion/all-agreed-20261020/entity-links/shared-union-independent-review-r3.json",
+      "copy_mode": "exact-original-bytes",
+      "purpose": "Historical independent public identity-ledger review"
+    },
+    {
+      "path": "ratings-pageviews/movielens-pass-r2/receipt.json",
+      "bytes": 2793,
+      "sha256": "6ee8b810edc62d50810f62aa646251449f68be940f97ac3b4ecef876e9f8c76b",
+      "source_identifier": "task2-kion/all-agreed-20261020/ratings-pageviews/movielens-pass-r2/receipt.json",
+      "copy_mode": "exact-original-bytes",
+      "purpose": "MovieLens25M archive/aggregate/prior provenance"
+    },
+    {
+      "path": "ratings-pageviews/phase4-complete-cache-plan-r1.json",
+      "bytes": 2188440,
+      "sha256": "1805c75faa7752562f51face1ba9559fbeca842a7cee6a8ebff8fec1ed0ee010",
+      "source_identifier": "task2-kion/all-agreed-20261020/ratings-pageviews/phase4-complete-cache-plan-r1.json",
+      "copy_mode": "exact-original-bytes",
+      "purpose": "Frozen exact pageview query/cache population plan; receipt metadata only"
+    },
+    {
+      "path": "ratings-pageviews/phase4-dated-population-r1/column-schema.json",
+      "bytes": 49542,
+      "sha256": "04ae7abdb36161fde064a65f06b3b545542a10dc7edc40f9d670d48dacd028b6",
+      "source_identifier": "task2-kion/all-agreed-20261020/ratings-pageviews/phase4-dated-population-r1/column-schema.json",
+      "copy_mode": "exact-original-bytes",
+      "purpose": "Ordered161-column schema and units"
+    },
+    {
+      "path": "ratings-pageviews/phase4-dated-population-r1/coverage-by-origin.json",
+      "bytes": 115925,
+      "sha256": "d165ef809104acbd2265c37bbcedb39dabc5375afb2e804dda3b93d51748d856",
+      "source_identifier": "task2-kion/all-agreed-20261020/ratings-pageviews/phase4-dated-population-r1/coverage-by-origin.json",
+      "copy_mode": "exact-original-bytes",
+      "purpose": "Aggregate public metadata coverage by origin"
+    },
+    {
+      "path": "ratings-pageviews/phase4-dated-population-r1/manifest.json",
+      "bytes": 21668,
+      "sha256": "decabacca0905ee270060c5b37cba939de5d48311fa3e6c3899e85381e2c9f42",
+      "source_identifier": "task2-kion/all-agreed-20261020/ratings-pageviews/phase4-dated-population-r1/manifest.json",
+      "copy_mode": "exact-original-bytes",
+      "purpose": "Dated external-bank schema/provenance, without matrix payloads"
+    },
+    {
+      "path": "ratings-pageviews/phase4-dated-population-r1/rm-declaration.json",
+      "bytes": 2745856,
+      "sha256": "59bd183c88af8bd9f7e1c4bb9c1e49b10ca6c24cb84e0bae84d0e2e0302e1541",
+      "source_identifier": "task2-kion/all-agreed-20261020/ratings-pageviews/phase4-dated-population-r1/rm-declaration.json",
+      "copy_mode": "exact-original-bytes",
+      "purpose": "RM external-bank declarations, matrix payloads excluded"
+    },
+    {
+      "path": "ratings-pageviews/phase4-dated-population-r1/sft-declaration.json",
+      "bytes": 2880494,
+      "sha256": "7bd7176ad9d4fe67e9f9520b7970587bfc9d8f290ccd90cb51cf5dea829986d5",
+      "source_identifier": "task2-kion/all-agreed-20261020/ratings-pageviews/phase4-dated-population-r1/sft-declaration.json",
+      "copy_mode": "exact-original-bytes",
+      "purpose": "SFT external-bank declarations, matrix payloads excluded"
+    },
+    {
+      "path": "ratings-pageviews/phase4-frozen-input-manifest-r1.json",
+      "bytes": 6959,
+      "sha256": "459af1c69b16b714b29c19696a9395df3e97f0e649e4d062d64a33a946a24791",
+      "source_identifier": "task2-kion/all-agreed-20261020/ratings-pageviews/phase4-frozen-input-manifest-r1.json",
+      "copy_mode": "exact-original-bytes",
+      "purpose": "Frozen external-input provenance boundary"
+    },
+    {
+      "path": "ratings-pageviews/phase4-independent-review-r1.json",
+      "bytes": 6464,
+      "sha256": "238ad8931639c63b9b90d4a21b5a1ad12d2efe0fa0118a36c0fa24e227e66b34",
+      "source_identifier": "task2-kion/all-agreed-20261020/ratings-pageviews/phase4-independent-review-r1.json",
+      "copy_mode": "exact-original-bytes",
+      "purpose": "Historical independent bank review"
+    },
+    {
+      "path": "ratings-pageviews/phase4-wiki-fixed403-r1/acquisition.json",
+      "bytes": 3654309,
+      "sha256": "64c36b64e885a22d50cab897e4381d3cb5f14a2bbc2eedc2d51a08da685ad8eb",
+      "source_identifier": "task2-kion/all-agreed-20261020/ratings-pageviews/phase4-wiki-fixed403-r1/acquisition.json",
+      "copy_mode": "sanitized-derivative-v1",
+      "purpose": "Public pageview query/receipt provenance with all collector response transport headers removed; original source hashes retained as provenance only.",
+      "source_bytes": 6052883,
+      "source_sha256": "8d736f001df065246fe5b1b2c795e1e5bbe65d60acdb4865d6efb04014bef7f5",
+      "transformation": "Remove all1321 results[].receipt.response_headers objects, including collector IP, cookies and request identifiers. Rename each receipt_sha256 to original_receipt_sha256. Add sanitized_receipt_canonical_sha256 over UTF-8 canonical JSON (sort_keys=True,separators comma/colon,ensure_ascii=False)."
+    },
+    {
+      "path": "root-bank-origins-r1.json",
+      "bytes": 5292,
+      "sha256": "efed779cf47328d6742fbde09dcaa2c6e81adaa93dec03af91e5a9950321f53e",
+      "source_identifier": "task2-kion/all-agreed-20261020/root-bank-origins-r1.json",
+      "copy_mode": "exact-original-bytes",
+      "purpose": "Exact historical149-origin declaration"
+    }
+  ],
+  "file_count": 13,
+  "payload_bytes": 17540011,
+  "maximum_payload_bytes": 33554432,
+  "maximum_file_bytes": 8388608,
+  "purpose": "Compact exact historical public external metadata for provenance and source-machine restore; not a full raw-data replay input bundle.",
+  "historical_paths": {
+    "original_absolute_references_retained_in_exact_copies": true,
+    "runtime_required": false,
+    "handling": "References inside frozen JSON are historical provenance. The relative paths in this index locate actual exports. Source references to the original acquisition SHA identify the excluded original; the sanitized derivative is not a native provider input."
+  },
+  "privacy": {
+    "source_viewer_user_records_included": false,
+    "public_work_and_person_names_included": true,
+    "raw_KION_CSV_included": false,
+    "array_banks_or_response_bodies_included": false,
+    "credentials_included": false,
+    "interpretation": "Public film/person identity metadata; separate real-derived model fixtures are not proven anonymous.",
+    "collector_IP_cookie_and_response_headers_included": false
+  },
+  "checks": {
+    "all_JSON_parsed_before_copy": true,
+    "structured_source_user_ID_or_credential_keys": "no_candidates",
+    "selected_credential_and_email_patterns": "no_candidates; transport-header review additionally performed independently",
+    "all_source_and_copy_SHA256_equal": false,
+    "arrays_models_or_raw_user_payloads_opened": false,
+    "source_copy_integrity": "12 exact original copies;1 explicitly sanitized derivative bound separately to its source bytes/SHA256 and exported bytes/SHA256.",
+    "transport_metadata_scan": "Original acquisition had1321 collector-IP/cookie/response-header objects; all response_headers removed from the derivative. No matching transport metadata in other12 payloads."
+  },
+  "excluded_prerequisites": {
+    "dated_external_banks": {
+      "files": 149,
+      "bytes_per_file": 9929320,
+      "total_bytes": 1479468680,
+      "verification": "Local file metadata inventory only; no array payload opened or hashed."
+    },
+    "Wikimedia_response_bodies": "Excluded; acquisition/plan metadata references the exact historical population.",
+    "MovieLens_archive_and_per_work_aggregate_prior_payloads": "Excluded; preserved receipt identifies original hashes.",
+    "KION_raw_prepared_mapping_histories_other_feature_caches_and_full_training": "Excluded/full recipe not verified by this copy operation."
+  },
+  "capabilities": {
+    "historical_metadata_read_and_hash_check": true,
+    "GPT_head_RM_fixture_inference_requires_this_directory": false,
+    "full_raw_pipeline_verified": false,
+    "training_performed": false,
+    "network_performed": false
+  },
+  "exact_original_copy_count": 12,
+  "sanitized_derivative_count": 1
+}

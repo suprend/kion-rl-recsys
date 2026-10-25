@@ -1,0 +1,132 @@
+{
+  "contract": "kion-native-figure-render-v1",
+  "state": "completed",
+  "stage": "full4096",
+  "rows": 4096,
+  "row_unit": "queries",
+  "unique_users": 4035,
+  "output": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures-v3/full",
+  "data": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/full-analysis-r1/plot-data.json",
+    "sha256": "6957ab49a1a86a6d9d5081927cc0bc423e6ddc886cf80b57f2eac6ebb41f9a1c",
+    "bytes": 495248
+  },
+  "plot_module": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_results_v4.py",
+    "sha256": "a04715975f14af0bd03283be31721d31eea6e26c5914b1fa868839a0b5c0a147",
+    "bytes": 7027
+  },
+  "dependencies": [
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_results.py",
+      "sha256": "f6be0387a947dd33f065deae54fe98d14881e30271040389d743602afcd024f4",
+      "bytes": 17936
+    }
+  ],
+  "title_enrichment": {
+    "enabled": true,
+    "items": {
+      "path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e",
+      "bytes": 31836561
+    },
+    "requested_count": 12,
+    "found_title_count": 12,
+    "labels": [
+      {
+        "raw_id": 142,
+        "title": "Маша",
+        "missing_title": false,
+        "display_label": "142 · Маша"
+      },
+      {
+        "raw_id": 3734,
+        "title": "Прабабушка легкого поведения",
+        "missing_title": false,
+        "display_label": "3734 · Прабабушка легкого\nповедения"
+      },
+      {
+        "raw_id": 4151,
+        "title": "Секреты семейной жизни",
+        "missing_title": false,
+        "display_label": "4151 · Секреты семейной жизни"
+      },
+      {
+        "raw_id": 7793,
+        "title": "Радиовспышка",
+        "missing_title": false,
+        "display_label": "7793 · Радиовспышка"
+      },
+      {
+        "raw_id": 7829,
+        "title": "Поступь хаоса",
+        "missing_title": false,
+        "display_label": "7829 · Поступь хаоса"
+      },
+      {
+        "raw_id": 8636,
+        "title": "Белый снег",
+        "missing_title": false,
+        "display_label": "8636 · Белый снег"
+      },
+      {
+        "raw_id": 9728,
+        "title": "Гнев человеческий",
+        "missing_title": false,
+        "display_label": "9728 · Гнев человеческий"
+      },
+      {
+        "raw_id": 10440,
+        "title": "Хрустальный",
+        "missing_title": false,
+        "display_label": "10440 · Хрустальный"
+      },
+      {
+        "raw_id": 11863,
+        "title": "Девятаев - сериал",
+        "missing_title": false,
+        "display_label": "11863 · Девятаев - сериал"
+      },
+      {
+        "raw_id": 12192,
+        "title": "Фемида видит",
+        "missing_title": false,
+        "display_label": "12192 · Фемида видит"
+      },
+      {
+        "raw_id": 13865,
+        "title": "Девятаев",
+        "missing_title": false,
+        "display_label": "13865 · Девятаев"
+      },
+      {
+        "raw_id": 15297,
+        "title": "Клиника счастья",
+        "missing_title": false,
+        "display_label": "15297 · Клиника счастья"
+      }
+    ],
+    "canonical_sha256": "bd5b0545ea7151f045997ccb5ed17aed07e646aea14ec27f232efe83c2a3ff37"
+  },
+  "aggregate_canonical_sha256": "44d9f5e3d07855995e2c8f143d98be4eec827df517366472eb8362eb6b9c538b",
+  "source": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/render_figures_v3.py",
+    "sha256": "323e0ff0bc1569f3bdb5610f585d07a32f3fd2a35d1086861de5babef0fbd8d2"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "matplotlib": "3.11.2"
+  },
+  "figures_index": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures-v3/full/figures.json",
+    "sha256": "0917ddf5e439cf044421126e1bafe698f51cf0dc197cf6effc47f893f2f1555a",
+    "bytes": 3626
+  },
+  "figure_count": 4,
+  "requires_visual_QA": true,
+  "labels_artifact": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures-v3/full/labels.json",
+    "sha256": "e054ee92bb35b198558c864b6cac480f3e772ca5aea9ce5f40cd38d93495b5b9",
+    "bytes": 3079
+  }
+}

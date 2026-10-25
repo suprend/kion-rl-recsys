@@ -1,0 +1,114 @@
+{
+  "contract": "root-final-pdf-render-review-v1",
+  "pdf": "reports/REPORT.pdf",
+  "pdf_sha256": "e26e476feac5b4614ff3bc726f5a301f15fb1cb845361871d186928c270a63b5",
+  "pages": [
+    {
+      "page": 1,
+      "sha256": "436c8329d9e309d2b6090a99e1cdcfdb6af04471fc665e9f95899dc19f5e9336",
+      "bytes": 368530,
+      "unchanged_from_r1": true
+    },
+    {
+      "page": 2,
+      "sha256": "ecf5a1311e1a0d35f10fb782d3c890a982385f283fd3ac67f469f2a67a6a2c02",
+      "bytes": 292942,
+      "unchanged_from_r1": true
+    },
+    {
+      "page": 3,
+      "sha256": "84a549c8bef4997e4184ac8b00f23b22033061152f9f6e7debb4f84557c28c39",
+      "bytes": 353811,
+      "unchanged_from_r1": true
+    },
+    {
+      "page": 4,
+      "sha256": "40190de570f00dc188ea8652e20067b3c542c66b6bca405578f16ea436369771",
+      "bytes": 346244,
+      "unchanged_from_r1": true
+    },
+    {
+      "page": 5,
+      "sha256": "81ced25455a25ed178504fb281b26afad364dc440a0ae46f726abb23cc60137c",
+      "bytes": 362611,
+      "unchanged_from_r1": true
+    },
+    {
+      "page": 6,
+      "sha256": "68806db4b9fc2b8b6c51d76087817b992662022334008c84fa30bb811ccdc144",
+      "bytes": 302338,
+      "unchanged_from_r1": true
+    },
+    {
+      "page": 7,
+      "sha256": "05effde0329784274dd526fa2171548eaf0522a8a51e049c9ddd62e1a94b3520",
+      "bytes": 279059,
+      "unchanged_from_r1": true
+    },
+    {
+      "page": 8,
+      "sha256": "484ec900d2dc348cd12afba4d2165a282d955354a33cfed65dfda1be6488099e",
+      "bytes": 271766,
+      "unchanged_from_r1": true
+    },
+    {
+      "page": 9,
+      "sha256": "9ba536789a3b9185b4d5f6addb119332e61340c52d60653b2499d0df6ee01411",
+      "bytes": 303362,
+      "unchanged_from_r1": true
+    },
+    {
+      "page": 10,
+      "sha256": "6db40f6a9125bb2c24c66ece191fdb126c7bd6bbf026fc3d4fd4a41b272eec88",
+      "bytes": 306169,
+      "unchanged_from_r1": true
+    },
+    {
+      "page": 11,
+      "sha256": "2c94108d7e6f85c3668492a438e970a13f754a85e918fa83a55357000afdd8d8",
+      "bytes": 349378,
+      "unchanged_from_r1": false
+    },
+    {
+      "page": 12,
+      "sha256": "ac38affcdddfe09b0963db6099f7a98ded7338de27bc367ce08909f95640748b",
+      "bytes": 253103,
+      "unchanged_from_r1": true
+    },
+    {
+      "page": 13,
+      "sha256": "31e626c6540d1f122e965f6ae3514c33c875101110c40ea58aed107e101155c1",
+      "bytes": 330245,
+      "unchanged_from_r1": false
+    },
+    {
+      "page": 14,
+      "sha256": "6c62b2cf48e8804c50c2dd6c6e67ede79be5aa21d9a9ab86f9bae175210fd40f",
+      "bytes": 354390,
+      "unchanged_from_r1": true
+    },
+    {
+      "page": 15,
+      "sha256": "19d5b890cf20a71be80f394dc3f17323153c15620e3ebfe5c7ee8afe8d46fd55",
+      "bytes": 336862,
+      "unchanged_from_r1": true
+    },
+    {
+      "page": 16,
+      "sha256": "8ed44fbb71c08922c34f03276a6c5be1625e4706d77a0d7066be13c010176254",
+      "bytes": 145040,
+      "unchanged_from_r1": true
+    }
+  ],
+  "poppler_exit_code": 0,
+  "known_nonfatal_warnings": "Three optional externalnameToUnicode maps Bulgarian/Greek/Thai at Cyrillic username path unavailable; embedded document glyphs and all actual16page PNG visually checked separately.",
+  "original_all16pages_root_visually_checked": true,
+  "changed_pages": [
+    11,
+    13
+  ],
+  "changed_page_visual_review": "passed: root visually inspected both final pages11and13, headercodes nowwhite, allcontent/layout retained",
+  "training_updates": 0,
+  "all16_final_pages_accepted_by_root": true,
+  "state": "passed-root-visual-and-page-hash-closure"
+}

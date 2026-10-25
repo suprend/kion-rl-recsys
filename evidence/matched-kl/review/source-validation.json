@@ -1,0 +1,32 @@
+{
+  "contract": "primary-source-reading-validation-v1",
+  "date": "2026-10-25",
+  "owner": "root",
+  "scope": "Primary public HTML pages read during the controlled full evaluation; no external dataset/model/source archive was downloaded or changed, and no experiment decision was selected from these readings.",
+  "sources": [
+    {
+      "title": "MTS Kion Implicit Contextualised Sequential Dataset for Movie Recommendation",
+      "url": "https://arxiv.org/html/2209.00325#S2.SS2",
+      "version": "2209.00325v1",
+      "verified_scope": "Section2.2 describes last interaction dates with watch duration/percentage aggregated over repeated user-item watches, and dates13March–22August2021. This supports the granularity caveat, not a causal watchtime interpretation."
+    },
+    {
+      "title": "Official KION dataset repository",
+      "url": "https://github.com/irsafilo/KION_DATASET",
+      "verified_scope": "Official status and public counts are consistent with the frozen data. Its README end-year2022 conflicts with the paper and measured local2021 range; the existing frozen local range is retained, not silently changed. Sandbox text is historical and does not verify present submission access."
+    },
+    {
+      "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "url": "https://arxiv.org/html/2305.18290v3#S3",
+      "version": "2305.18290v3",
+      "verified_scope": "Equations3–4 provide reward-minus-forward-KL objective and reference-times-exponential-reward optimum. Our categorical exact expected-utility head fitting is not DPO; the square-root beta update is our bounded heuristic, not a cited convergence guarantee."
+    },
+    {
+      "title": "Deep Reinforcement Learning at the Edge of the Statistical Precipice",
+      "url": "https://arxiv.org/abs/2108.13264v4",
+      "version": "2108.13264v4",
+      "verified_scope": "The primary abstract motivates uncertainty reporting with few training runs. It does not validate our exact conditional bootstrap or imply that three sampler seeds estimate a training-seed population reliably."
+    }
+  ],
+  "experiment_effect": "No changes to frozen utility, beta, seed, checkpoint, data, masks, endpoint, selection or matching rules."
+}

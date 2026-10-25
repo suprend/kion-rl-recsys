@@ -1,0 +1,70 @@
+{
+  "contract": "frozen-residual-beta-v1",
+  "frozen_utc": "2026-10-25T05:54:20.497534+00:00",
+  "target_train_KL": 0.028141394929216676,
+  "tolerance": [
+    0.8,
+    1.2
+  ],
+  "pilots": [
+    {
+      "operation": "pilot1",
+      "beta": 0.19829877276516375,
+      "train_KL": 0.01895377845601316,
+      "ratio_to_target": 0.6735195076039091,
+      "checkpoint": {
+        "name": "residual-20261024",
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot1/head-1000.pt",
+        "sha256": "c094ee7aa1423f951b58c57cff3ce7ca1381834e9a8843224b1f44749e2bfc88",
+        "step": 1000,
+        "utility": "residual"
+      },
+      "diagnostics": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/kl-pilot1.json",
+        "sha256": "801d4276bcda582c70aeaca71a89754d1cd443cf6bd5ff9f4dd449ea529d3b85"
+      }
+    },
+    {
+      "operation": "pilot2",
+      "beta": 0.16274030138555867,
+      "train_KL": 0.025626846105626697,
+      "ratio_to_target": 0.9106459068601696,
+      "checkpoint": {
+        "name": "residual-20261024",
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot2/head-1000.pt",
+        "sha256": "c64dccd1a28d9177611d6c383d1b27adb0565355f7cd67d1e3502b39f91cc4d8",
+        "step": 1000,
+        "utility": "residual"
+      },
+      "diagnostics": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/kl-pilot2.json",
+        "sha256": "97b37374bf3799684a099a78e0ef439239c3376ce088252027eb1bca41f20b2c"
+      }
+    }
+  ],
+  "selected": {
+    "operation": "pilot2",
+    "beta": 0.16274030138555867,
+    "train_KL": 0.025626846105626697,
+    "ratio_to_target": 0.9106459068601696,
+    "checkpoint": {
+      "name": "residual-20261024",
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot2/head-1000.pt",
+      "sha256": "c64dccd1a28d9177611d6c383d1b27adb0565355f7cd67d1e3502b39f91cc4d8",
+      "step": 1000,
+      "utility": "residual"
+    },
+    "diagnostics": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/kl-pilot2.json",
+      "sha256": "97b37374bf3799684a099a78e0ef439239c3376ce088252027eb1bca41f20b2c"
+    }
+  },
+  "beta": 0.16274030138555867,
+  "calibration_matched": true,
+  "no_dev_selection": true,
+  "prospective_seeds": [
+    20261025,
+    20261026
+  ],
+  "checkpoint_reused_as_seed24": true
+}

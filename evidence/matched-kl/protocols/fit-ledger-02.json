@@ -1,0 +1,28 @@
+{
+  "contract": "root-global-fit-reservations-v1",
+  "maximum_new_fits": 8,
+  "reservations": [
+    {
+      "fit_ordinal": 1,
+      "reservation_id": "fit-01-pilot1",
+      "operation": "pilot1",
+      "utility": "residual",
+      "seed": 20261024,
+      "beta": 0.19829877276516375,
+      "optimizer_updates_max": 1000,
+      "state": "reserved-before-launch",
+      "reserved_utc": "2026-10-25T05:41:36.300097+00:00"
+    },
+    {
+      "fit_ordinal": 2,
+      "reservation_id": "fit-02-pilot2",
+      "operation": "pilot2",
+      "utility": "residual",
+      "seed": 20261024,
+      "beta": 0.16274030138555867,
+      "optimizer_updates_max": 1000,
+      "state": "reserved-before-launch",
+      "reserved_utc": "2026-10-25T05:48:29.283974+00:00"
+    }
+  ]
+}

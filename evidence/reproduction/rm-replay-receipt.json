@@ -1,0 +1,111 @@
+{
+  "contract": "kion-portable-run-receipt-v1",
+  "state": "completed",
+  "runtime": {
+    "manifest_sha256": "ba79888e24957517991c338cef6cccc53ee7d4fa5dd4583051e626b930ab068d",
+    "files": [
+      {
+        "path": "reproduction/kion_replay/__init__.py",
+        "bytes": 106,
+        "sha256": "ab7272ae400ab141305a1e7dc7f241760874c25c84291bab8c10fe4d42b7dabb"
+      },
+      {
+        "path": "reproduction/kion_replay/__main__.py",
+        "bytes": 276,
+        "sha256": "d96070e07dca6bfd2f71f5c3755f76620d8e500de5be3dcaedee3fcce7d02693"
+      },
+      {
+        "path": "reproduction/kion_replay/cli.py",
+        "bytes": 11082,
+        "sha256": "031a9bf711c981f416bab96ad6c14afe7af9d9db7740a665ee23903968fc3d26"
+      },
+      {
+        "path": "reproduction/kion_replay/gpt.py",
+        "bytes": 10427,
+        "sha256": "596be64c5c8a7f7cdc779b8f0e10a94a9c59137f8ac8256c8f89e1e20e615a28"
+      },
+      {
+        "path": "reproduction/kion_replay/head.py",
+        "bytes": 5797,
+        "sha256": "53e5ea2e4338daa97d7e188c57f6e90e79367e65f18297dd630e3515f0acc6ca"
+      },
+      {
+        "path": "reproduction/kion_replay/io.py",
+        "bytes": 8626,
+        "sha256": "c494b0996b746d5a5bbc7bf3b27534ca22c43e2ac36477bc41d34b07b0b41033"
+      },
+      {
+        "path": "reproduction/kion_replay/metrics.py",
+        "bytes": 2760,
+        "sha256": "a63a69181f60c98811a317793936e75301ab05d6d1d137f492fbab4b31b12357"
+      },
+      {
+        "path": "reproduction/kion_replay/rm.py",
+        "bytes": 8641,
+        "sha256": "dc9e2115b508c8d3b528e8eb6e07dcd00a36957156cdd9f5c6b7795d0824abf3"
+      },
+      {
+        "path": "reproduction/kion_replay/test_core.py",
+        "bytes": 8713,
+        "sha256": "910c9b9d731de453ef2dd927562c1409d22e1234175e44221c3f476d52f6dc94"
+      },
+      {
+        "path": "reproduction/kion_replay/verify.py",
+        "bytes": 9856,
+        "sha256": "27f4217d91f9795f1bb9c78112dbf3088d4c2df2710eb44414741c37027dbaf6"
+      }
+    ],
+    "python_ast_parsed": 10
+  },
+  "fixture": {
+    "manifest_sha256": "7b3e7dbefde3a6d0e113c0340dbbfc425d223574a7c4cd13db7927fb29b30380",
+    "files": 9,
+    "bytes": 33248280,
+    "rows": 4,
+    "numerical_execution": false
+  },
+  "versions": {
+    "python": "3.12.14",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy": "2.5.4",
+    "torch": "2.8.0+cu126",
+    "transformers": "4.55.4",
+    "catboost": "1.2.10",
+    "scipy": "1.18.1"
+  },
+  "outputs": {
+    "rm-summary.json": {
+      "path": "rm-summary.json",
+      "bytes": 1717,
+      "sha256": "1fc306457c50b94c58b91a22eeacd3947ed380e79fb1351b0d794b787bcf5f43"
+    },
+    "rm_prior.npy": {
+      "path": "rm_prior.npy",
+      "bytes": 32896,
+      "sha256": "541ab498ac9a9e21d1b866154196fd2cc40c14eaad7eccc60ae5c2ac89d74dbd"
+    },
+    "rm_reward.npy": {
+      "path": "rm_reward.npy",
+      "bytes": 16512,
+      "sha256": "a2063a4e94715fb7d0deb33137d2c53bdd706e30b9c019a1fd4638f9b87c5b88"
+    },
+    "rm_reward64.npy": {
+      "path": "rm_reward64.npy",
+      "bytes": 32896,
+      "sha256": "95067c9bdde44dade0f8ef830c573b29be50ee6938ad13255ec01dec4027d0ab"
+    },
+    "rm_support.npy": {
+      "path": "rm_support.npy",
+      "bytes": 4224,
+      "sha256": "c8f8314d560f2d803ab1a3890bdbacc00fe58bb3369adb7c05fca17a5c75b689"
+    },
+    "rm_utility.npy": {
+      "path": "rm_utility.npy",
+      "bytes": 32896,
+      "sha256": "6ef073f2216cf9f6167795d2ed48d0a9f42eb41a47cba89d74bc125ce6026477"
+    }
+  },
+  "training_updates": 0,
+  "optimizer_created": false,
+  "tier": "frozen-RM"
+}

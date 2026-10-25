@@ -1,0 +1,696 @@
+{
+  "contract": "kion-scientific3-evaluation-v1",
+  "state": "completed",
+  "stage": "screen",
+  "rows": 256,
+  "metric_denominator": 256,
+  "candidate_width": 1024,
+  "arms": [
+    "C",
+    "RL-completion",
+    "RL-residual"
+  ],
+  "checkpoints": {
+    "RL-completion": {
+      "step": 1000,
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-1000.pt",
+      "sha256": "436d735d67fd861e6b925719b9e3597582ec405eed1b13ede3db3671e1ce37b7",
+      "training": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/training.json",
+        "sha256": "cfdfc225be553305a3d6a8af7c5419227255b44827ccf7e3760a86b3e5dbf8bf"
+      },
+      "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "training_contract": "kion-current-C1070-natural1024-H1-v1",
+      "updates": 1000,
+      "utility": "exact supported centered advantage minus beta KL"
+    },
+    "RL-residual": {
+      "step": 1000,
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/residual-r1/head-1000.pt",
+      "sha256": "29d20cd3d058b4ccac52d94f3ad946891f3839601fe935817f7c7b89f09b1ee3",
+      "training": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/residual-r1/training.json",
+        "sha256": "f275070714f6fd24c588bb3637b752697063cca8d422b01e7d827bc3d743cba6"
+      },
+      "C_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "training_contract": "kion-current-C1070-residual-H1-v1",
+      "updates": 1000,
+      "utility": "r_RM(s,i)-m_fit(i)"
+    },
+    "C": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/heads/C/head.pt",
+      "sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "step": null,
+      "lineage": "original supervised C; no RL updates"
+    }
+  },
+  "temperature": 1.0,
+  "tie_break": "score descending, raw item ID ascending",
+  "no_target_injection": true,
+  "no_seen_filter": true,
+  "unknown_and_offpool_are_zero": true,
+  "final_test_reads": 0,
+  "source": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/evaluate.py",
+    "sha256": "54fd8e1509d25ea5032731396ab5278c57eaee958d32d499a5ecd34359041e18"
+  },
+  "policy_module": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/policy_v2.py",
+    "sha256": "da7baf199b685cb467edd7d5eedaada151798ec40bbc23e9edfaee8e36340dba"
+  },
+  "residual_module": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/residual.py",
+    "sha256": "781db1659305f2e6cc020f96cf52266201fa9f2ecfe21adde18bf6f16127b7f0"
+  },
+  "utility_module": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reward/utility.py",
+    "sha256": "4cffa8d876c84723326f035b825cafc520c4ad561d98e3851bfe38a5d3e1cd0f"
+  },
+  "source_hashes": {
+    "D:/personal-agent-system/scripts/portability.py": "5a63306d80767c7676d066cb3d148856f047a09013590ba9c2b21acab9d54684",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/control-r2/benchmark_bridge.py": "ad0248346050824ee6ecac6c304c5388e2cfccb928bd97f1d82bc4a6b17f523d",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/control-r2/control.py": "ffe849bc80d14937f5d579d6a553b2c4edbd5580b5bfc88516a079c38c7c7a58",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/control-r2/native_adapter.py": "dca315406ca7de82e9e8ec34dd0c3586cfa0648e40316bc414923f5892581bbb",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/control-r2/probe.py": "65d82134def9f1a54e1ef631f85888aeea9e65aaaff92650ef4a1f5d003ac551",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/negative-worker-r2/benchmark.py": "2d0564b093928ae4b311c4e0b4203ccb5161ba168b7e4a2a2b26f1e4a891d88a",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/negative-worker-r2/hooks.py": "2c3399638216a980797e07b70132bdcec05b938ce9a189f8b0803de5ec84f6cc",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/negative-worker-r2/sampler.py": "71d8747bfb080bc6ea82059c28b899e5c1bd266649deb9943de80de431933c44",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/negative-worker-r2/worker.py": "e7d15f23605bf541125fcd20b2111656e1a189a5fb2ed8e2beda1569b0defccf",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/perf-audit-r1/dynamic_feature_cache.py": "3a9ba56b34561a3e129a0f116159e25deb6e3b2f81a1680cef0e770071f0b611",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/perf-batch-query-r1/kion_complete_pack.py": "9897cf3f9c361d9c9c86f7929c43dd10795147119e6679fe1696621c19921014",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/binding/build_pilot_r2.py": "d8ecf56454432ac732b8a979dc970d0d03fb700c15e390a55957fef6c8d32b84",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/execution/native_phase_guard.py": "0b45946f866b59aae94f9cf2f1eaa6a550641c849d9468eb04d6d6b4c9024e1f",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/full-execution/bind_full.py": "dc8e66e136f4338e75bdabac50977801297d676c9e5d380aa89ae7076f821db1",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/full-execution/native_phase_guard.py": "9d25a5942cda0be54e56297c9c71dd28a3f57307165288c7b372af0e22a2cf2a",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/full-preparation/worker.py": "bb220140d90c0c3e032e96f3c79c973440138c44e8f2d20bc8a2ce959f7edc1d",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/preparation/store_hook.py": "cb1307d3e869325174db9791f6665979bf7efbe12f38c6fbf546db56793d34bf",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/preparation/worker.py": "13f61bd71f285ca43991e66e1036bc1498b1920d3e585c8f5a5a33cff1c3398f",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/query-store/query_store.py": "11d00afcebbcdc3b9b455a7f0fcfba3cb5d2ebc7a8128ec918c4b2ce316e34c3",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/quality-recovery-20261021/pair-probe-r1/probe.py": "757b0fb52e13fb62195e9f849f9a262b8f148db49f4b6f6dfe87589c21608811",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/quality-recovery-20261021/pair-probe-r1/worker.py": "b0a4a06e99ad4b1f4367540041e6be1bd7ce985ad242d95b9fc99cf325cfa3a3",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/quality-recovery-20261021/uniform-control-r1/control.py": "f9f226ece0294b0c5402ae1af454c9d61833d0fa4be904a601955da9c80e4cd6",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/quality-recovery-20261021/uniform-control-r1/hooks.py": "2dc7ba017dac6314a30ca4e2ff33ebd5d26602c4d99129f5535f0b5637465989",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/quality-recovery-20261021/uniform-control-r1/worker.py": "c39ec2b3cf50723591e0b5da2fef46012947e852970f36dc8c513ab30abe3f9f",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/model/owned-sft-ws-r1/working_set.py": "9dcbf1a43606511f936fadfbe323bde7c597b2a91bf98c9dd99e0204b2a6e1be",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/model/rl-native-resource-r1/guard.py": "b1bee55f2ec947c188bc8f6065d66b08bfce85b16a2bc7b631d72a8e3b785e87",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/model/rl-native-resource-r1/native_job.py": "0da87bf737038e08602ddaf18929a9441543269adf0edd191f1ac4151e916296",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/hm_job.py": "a8ca33c389aad356ea2bd8b0a2ab43276a0af85029934888ebeca9f132c541a0",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_acquire_assets.py": "214fb40f9922764d96db3f9c7baad118343b25d0aecae88553d42754c2fe0a23",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_audience_fast.py": "b0d358ce30f4b7e49b3793f4aa4d2d659995a669e1d60189fd8ec96da3459be8",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_audience_features.py": "70777ef4301e3dcebcf69378ce879888f252f5829f53aee4b45f131fa36e98f1",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_basic_bundle_features.py": "25c5a80a2fba9de5ee76c67ac4bd6cd7bd437cf807cd42855baeba3b50f73ef8",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_compare_predictions.py": "49cb08603ec40ce21d11e2b08190d750fbe49ec10d1bad56fb22916362c0ce2c",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_competition_data.py": "2a721a19e546811b27f09718515fdb83fd999b374e45eda0d3ae9784eeb261de",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_competition_predict.py": "988915bc2cacdc844020e123f17a3f1a90924b78ce3f6a47c37ed0760119e4bf",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_competition_seen.py": "6593387caf3ac07f4def26099541cc70cf6b8510374286879174b572b671a4ff",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_competition_variants.py": "ea961402f74554705c5ca34c6a0ec59059ae2a9d64cd4d95ec1bfe11beb08397",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_compare.py": "7aa09564b22aaf4089799c0aaa56d675419c302c764ba3fab427308c898d967b",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_manifest.py": "1cc9ca82a712c0a4cbb55e2f8a651b40ac698793f50e58d35b51d98f2bfb9549",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_model.py": "8d1be2352cd268481f4a1f7b764943f745e910695a1a270fd3d0b1c4e7ec24e7",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_pack.py": "7cbe284dfbd9d133bd98e2d363a9ee8b8d8530ffe7b977cbe13c6146d0f4fe5e",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_reward_data.py": "e117944d6227a400f17e6b87295d1fbcb2dd12c9489c0c213d24d9fa7512ce6c",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_rl.py": "e5337638c0006d6ab3d8cbf20861822402317ae68800004a8b65c7dd2eddd3e2",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_complete_train.py": "16180fc30db79f6a5b5c0fc82080eb89658d4b466c65f3a96f66d313c85746d9",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_completion_diagnostics.py": "862e647f96f10ed0e2a1e8b5c78c80245fb48c9029937706e68e1a2d1962d552",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_completion_event_store.py": "8dd79dff657f4feaa2ef5d430278ec24fc2dc7c11aa713f3bc65b4f755a20ef5",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_conditioned_train.py": "b6c2c93bb8ac1475d00a1a20cd8d278da898468ae38a001cc5be4ec218478caf",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_cuda_batches.py": "efcdc050c2e3778731e6f1e0ad49bb21c0b5dc622ea22f1f7992ed8c21568483",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_download.py": "93f989274caf762837601368e310078bfb23de8153b3ea5431b4875ce9467e79",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_encode_text_bundle.py": "cb0c65a1583ecaf8c99229dc71312d963fd408acc2b36b955f7ece5b24c518b4",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_entity_links.py": "c505adaa15c7af136dfbc9b4fe6372d24e83f034950684125c7e0231f8e50b11",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_external_facts.py": "240c4babdd9763e6c1a62e8fc78c987a456988fbe08677563fbaa15fb3ac222c",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_external_interest.py": "a1e0f9a0dbd005c9df28287c40aaf3e465813ce491f63391285336d650af809c",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_feature_train.py": "27bac5d3fa11f184cf149a78d33f49aaac3873fa823b581faa31156308fa7102",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_franchise_progress.py": "a954c884b98082093a351f23d4e508e91f4b73bb62b2c35999d45a11c9250ba0",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_full_train.py": "2b8d684e9f789eb7a51823e0b38df183dcd2f9f72942894a905fde1f1efd47ea",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_geography_time.py": "33c34f28f2294362505f366c2a484fbda8053d2af0e93009683b53815df14c3e",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_handoff.py": "900859f825991f360c6609cba0c9e6cef59105d591e29fcd5167e4c0506a640a",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_local_features.py": "e5f992093b53839d425ccd436dba0404862ad912b795a390d60ff6c9a2576de1",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_local_pack.py": "87412446a72033aae98897250cc0178084dd76b5818aee38a24fbb81a8e02aaf",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_local_pack_rl.py": "6a99d31eae101b15e51865845c75b99cbee4e02d729e2020321cd153dc1f4d58",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_map10.py": "36515250e9131485a5d2daed7c94613923f18ff0791bb4eb667b78b74b7eb72c",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_narrative_relations.py": "e0d3978901a84db781543046252592a4e1db978a5e3e4853dc1acc9942360756",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_night_supervisor.py": "b88ec1765cbe4756a7fc3ec95e6b8a0d5d8142f4a0d6c62e5802b6be13bfe4d4",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_dynamic.py": "7f53e94ddd5940514de8a132711ff5d782885983af9f0c62ae4c4515261bdd7a",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_history.py": "ecdd0cd0e853d20578a7855acc8987c72c430925d1a30f7e26fee250000659dd",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_people.py": "25c9b1f9ac9188f096f22085d63a5de694e55a757c9857da963854bb808e791b",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_semantics.py": "74a59bad3bf89c5eb92624452ffac8e4775c18592823411a611d09d50fe3d7ff",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_static.py": "5a52ef6ab610b0f3d091bd6566982bd0894f1d0c1ad891986dd27d3f8703e181",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_train.py": "0f11d3c1bcc5165dfd9f35a7728b9400b679cd51c8bb444af04360643711546a",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_pack_training_benchmark.py": "ced09f2586d38a6ca2a6acfe25973dda0482eda53155d24fd12bdc9e1277a013",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_people_banks.py": "1a511e8f025bba1f6d0bdb16095fb833e7a407ffffa8e67561f161f42f73b070",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_people_dynamics.py": "6bf97bb98c8fdf0cb858db18066862d3a94cb107334bcb14c74e340f2943911c",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_people_dynamics_fast.py": "e6ad0d34174c44f50f4c27e088fab36a399e839a0ee96b77ec0df27e2bda2a91",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_people_embeddings.py": "473d4a097f3e39c50198c0a6cc15f6dd1ce0b283a37e73234d8def49c760c1ad",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_personal_candidates.py": "4769be6fe5de205a9cd793d511aa58a5c2b602a7e18c3690db44b4d7c119cff8",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_policy_rl.py": "3ff82a4eb4e1beabeeec3aaaae0541dd3467f79f8454452764cb4a5f28887108",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_prepare.py": "81e8ac99a6d50398418fd95e0874bc07b55b3d33487e89731ec26397960c3e77",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_profession_relations.py": "bf6890604f9388ba49af92d25a42a8ec1e85c751f122e554dd4e424e4c3c3303",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_ready_gpu_preflight.py": "d04ae1a054628b7ec2300b4d88f97cf61c09710ba253ec091bdb749a3ecdd27a",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_ready_runtime.py": "1e80ed9987dd6fe86e2aef846be7f7537fde001464e109cd305235829be71daa",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_related_features.py": "0999efdccd9d682e4c1d0ce0393bdab12a3abdbc8b2e7fb14a4288a6dde8fae8",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_reward_boosting.py": "cb5446663794ec143b3d72bc2e4a5d8de3599c5a9f3a3c53baaeb44ed4d88727",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_reward_data.py": "bc767e7987b9404273cc24a12e1f91562e480d0cfef39302e079fba7e296ddf6",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_reward_eval.py": "70a7d6d6f947d926f96b8d344d5db74287d6466657d30f983946a9e9e7f09677",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_rm_preflight.py": "dd8a32d588888633c37089ace2a04d2fa66dd16fbd38fe7e8bfb10fab6b98f89",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_semantic_extensions.py": "6116813f219d83e00d1189dea9c5955b700db85312f462f34e61b2555c37a136",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_sex_features.py": "e524c68af1ad327c3e83959aa4503be17aabdc700beaa24793831d09a152a905",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_sports_settings.py": "b96e71bcff8e426652b057de5142147fe403dffe2e06c88f0dec4a6a2f3c9a2d",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_story_format.py": "56ad45fcab54823ea54253cdaf7b6c724b6b2d95d349ef2803fd217ae9db3c29",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_text_embeddings.py": "401272cd3dfe04eadde75f15f8a3d5baf8637e52973ed88bd07b86ca0c088d4a",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_train.py": "2066dcddcccabcd4c46971467287f2955cb06434bfa942247ac55f111e8d8d1b",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_training_benchmark.py": "f8b3fc2ff0379be24c1ebadbadc911093cf889e6e76d45b51be2c7c07cb806ab",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_user_diagnostics.py": "8b39da0a9515d986ef82649b37066d2778b5e45a7bdf6d6e8183f8041ef4e8da",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/tests/test_kion_complete_reward_data.py": "22e41e02f40ca6f767c119230f4290c206712c9d1776bf3e6b8fa0114012d1e8",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/reward-data/load_psutil_runtime_r1.py": "25f20e6e766e5cc53ecfaac5a676c3b8435d713993f5331ebddb937fce729bda",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/training/worker.py": "d3134effd421ad37abde9268235c09d9ea6b3c1a0c3f505f6c6dfe2514d8c001",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/training/bind_benchmark.py": "64d562965bab2b76f7bdbbac8f737f49743b3afdfa245ccefb9c8a3ea1ea26fd",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/training/bind_full_e1.py": "bef9523973910a1e0f076081be4509c39834a8a782052eb8a34e2f96c1c4a5ce",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft/worker.py": "fde07c575c26f4cb9cdb29a9d49c93e78243702592738da5e500ab146853efb0",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/performance/performance_hook.py": "e412098f8c55caa7258f3e35116960eed42317cc7c7c0f081395afc1556adfde",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/candidate-optim-20261022-r1/personal/personal_vector.py": "bb85283c5741a79f21635d785c32f76f3c2958903380cab7dac8b677ba035096",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/candidate-optim-20261022-r1/related/related_direct_features.py": "15e311c091dc84180c4ef3650282e5a35eef52bc7c47333a54fd826162a444e4",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft-recovery/worker.py": "cf142bf5309e236570594575c14cb67549d460d10c47042d53b183f9395cc236",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/sft-recovery/soft_residency.py": "0ff85698e0b25eb675751d1c78cbf1b78561e89e051b2888147ce3e046797462",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/night-20261023-r1/prepare_recovery_request.py": "df35bf92ca66b9f9533c5c038e6048cfce344f0fd4394a41ec82471a7d8539e6",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/sft-e5-20261023-r1/training/worker.py": "01ea7a3c4b6a9e43c32e7fa518723f419a44fc2a48e1b7cedd56954f0b75d5d1",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/full-joint-e1-20261024-r1/candidates.py": "6923f4e63ce6278de3297449c8d59fa498b9117f2cdc85537d7e9bd4e0acc09d",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/candidate-baselines-20261023-r1/worker.py": "5e3c76195479ec0b31d5356176dc1f7df15a784cf50d675a7d4d57f687736a5c",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/worker.py": "981471f83f76f0fc2c2b394312056d4da4c36cac8f13d0b1b086dbdbbc0e20eb",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/supervise.py": "e7514a0928687f836dcf295a2668b7becd920c7d926474acbc584512cc1489e6",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/bank.py": "cb171615f7ed3b63f4ea6e6bf7c61b109c4fe7b4e9108b16c0d3f9a1cb227c36",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/heads.py": "795cdfe87f08079cadf067dc9c58811f7bcdacf9d1ebf2dbcb6c019dd68d6799",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/evaluate.py": "110346b2974ee75e5a4578d2dbe6199a54c08a904ece46b3131dd0d3a47f4d07",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/control/common.py": "7eee3522f3df7f843b55f56d33adfc667e4eb855a53918d7d4b58ef926d7daa9",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/control/launch.py": "fc9a158fb1e3d91b72a6479a08abdff20864225062d6294371b93ee57ef792e8",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/control/supervise.py": "f25381ca3ecec4f5fa510b368314b3ccc9759826049563c4da6000608cf9a957",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/control/worker.py": "bb6e7d8026c3ab72a8f2b61406b265997d71cee77adc65aeada442f2048a3472",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/policy.py": "5635b93e0c9c9a245cbf723cdf257d688ce4f0025162a647354918ae52bd11a1",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/liveprefix.py": "a5eb3ad24d39b59ad5fdda98883b858b59516756e901f478aeaac3968ae1e36a",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/policy_v2.py": "da7baf199b685cb467edd7d5eedaada151798ec40bbc23e9edfaee8e36340dba",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/liveprefix_v2.py": "27c862ecaca9d991632a108f13398714ba15e8d2276090cd44d3b57fda9945fa",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/evaluate.py": "54fd8e1509d25ea5032731396ab5278c57eaee958d32d499a5ecd34359041e18",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/residual.py": "781db1659305f2e6cc020f96cf52266201fa9f2ecfe21adde18bf6f16127b7f0",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reward/utility.py": "4cffa8d876c84723326f035b825cafc520c4ad561d98e3851bfe38a5d3e1cd0f",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/common.py": "7eee3522f3df7f843b55f56d33adfc667e4eb855a53918d7d4b58ef926d7daa9",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/launch.py": "fc9a158fb1e3d91b72a6479a08abdff20864225062d6294371b93ee57ef792e8",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/supervise.py": "f25381ca3ecec4f5fa510b368314b3ccc9759826049563c4da6000608cf9a957",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/worker.py": "bb6e7d8026c3ab72a8f2b61406b265997d71cee77adc65aeada442f2048a3472"
+  },
+  "precision": "cuda-fp16",
+  "arrays": {
+    "C_scores": {
+      "path": "C_scores.npy",
+      "sha256": "d2149e751d910d955a4acb66b39bee65a55cfd39dc8ce296be0905a835f16b12",
+      "bytes": 1048704,
+      "dtype": "float32",
+      "shape": [
+        256,
+        1024
+      ]
+    },
+    "C_top10": {
+      "path": "C_top10.npy",
+      "sha256": "28be21355ef4315eb12507dde07342ae260156754f6d795442992af3b978ab69",
+      "bytes": 10368,
+      "dtype": "int32",
+      "shape": [
+        256,
+        10
+      ]
+    },
+    "RL-completion_scores": {
+      "path": "RL-completion_scores.npy",
+      "sha256": "e4d1123276bda5f67558c19f7857a681f62b929e6af7b9ce9677e0ba1cf9c1c5",
+      "bytes": 1048704,
+      "dtype": "float32",
+      "shape": [
+        256,
+        1024
+      ]
+    },
+    "RL-completion_top10": {
+      "path": "RL-completion_top10.npy",
+      "sha256": "c5678418bc51aeb2865c91a8dff20f3388247f055c0cf926148d77c7138ff685",
+      "bytes": 10368,
+      "dtype": "int32",
+      "shape": [
+        256,
+        10
+      ]
+    },
+    "RL-residual_scores": {
+      "path": "RL-residual_scores.npy",
+      "sha256": "cc83469b3a7756dc91c73e59a8023f18ab7c7e2abc229daf01be28869b8b06d7",
+      "bytes": 1048704,
+      "dtype": "float32",
+      "shape": [
+        256,
+        1024
+      ]
+    },
+    "RL-residual_top10": {
+      "path": "RL-residual_top10.npy",
+      "sha256": "c7b9284ff407e7685c95763cce3167cc0c84a41055d7f1ad1107253c9c587339",
+      "bytes": 10368,
+      "dtype": "int32",
+      "shape": [
+        256,
+        10
+      ]
+    },
+    "row_index": {
+      "path": "row_index.npy",
+      "sha256": "e5e7ffa015508e274c57876f13f15cd1c9e32094518309488f15ba2c40058d5f",
+      "bytes": 2176,
+      "dtype": "int64",
+      "shape": [
+        256
+      ]
+    },
+    "user_id": {
+      "path": "user_id.npy",
+      "sha256": "b06bfd020e74aec4ed8a3d66d56e1bbd4a96c3f55ee1b2e9e969326867fb0a75",
+      "bytes": 2176,
+      "dtype": "int64",
+      "shape": [
+        256
+      ]
+    },
+    "target_token": {
+      "path": "target_token.npy",
+      "sha256": "a592399ca3cc9d7c237a7514dcd822af8ff01f1297ec0fe6418146332ceccd90",
+      "bytes": 1152,
+      "dtype": "int32",
+      "shape": [
+        256
+      ]
+    },
+    "pool_ids": {
+      "path": "pool_ids.npy",
+      "sha256": "d50451c2875e2b9a05344cfa7c5957ca485ca950463ca08814567bc0650d199c",
+      "bytes": 1048704,
+      "dtype": "int32",
+      "shape": [
+        256,
+        1024
+      ]
+    },
+    "candidate_raw_ids": {
+      "path": "candidate_raw_ids.npy",
+      "sha256": "cf57cd9a7fe46aad6e6702286b7abea2874a03a1f1727fc6e5e9c4d90412d971",
+      "bytes": 2097280,
+      "dtype": "int64",
+      "shape": [
+        256,
+        1024
+      ]
+    },
+    "history_tokens": {
+      "path": "history_tokens.npy",
+      "sha256": "250777f46d6ef20c422aa74f7c9cad90c75331b710ececb932e1b8ab43adc7ca",
+      "bytes": 131200,
+      "dtype": "int64",
+      "shape": [
+        256,
+        64
+      ]
+    },
+    "candidate_sources": {
+      "path": "candidate_sources.npy",
+      "sha256": "4f8969aa14a28f6c724df4e3db74691e832264724428f8683d8f60d49f5dce76",
+      "bytes": 14680192,
+      "dtype": "float32",
+      "shape": [
+        256,
+        1024,
+        14
+      ]
+    },
+    "known_target": {
+      "path": "known_target.npy",
+      "sha256": "247ed8cca95595bd9491d953ab8c3923763b0021dbefca994b090f5b012bb048",
+      "bytes": 384,
+      "dtype": "bool",
+      "shape": [
+        256
+      ]
+    },
+    "candidate_coverage": {
+      "path": "candidate_coverage.npy",
+      "sha256": "07d2e50b9fa215d456f639ef0b8bbd7461adda9bc4f85dcab50766e85eeb6956",
+      "bytes": 384,
+      "dtype": "bool",
+      "shape": [
+        256
+      ]
+    },
+    "raw_reward": {
+      "path": "raw_reward.npy",
+      "sha256": "dc139745a2e253337c69db24ec47c9e6908d2fde5ecfccc1404d85edf566f978",
+      "bytes": 2097280,
+      "dtype": "float64",
+      "shape": [
+        256,
+        1024
+      ]
+    },
+    "utility_residual": {
+      "path": "utility_residual.npy",
+      "sha256": "cc055b773d44feed76d7452ba057100892db3f3e88a09d64b248f106da51ba62",
+      "bytes": 2097280,
+      "dtype": "float64",
+      "shape": [
+        256,
+        1024
+      ]
+    },
+    "utility_prior": {
+      "path": "utility_prior.npy",
+      "sha256": "9cdae45205c8140aded61c8f245d0eb7c4137b6aaa016006291b76535ddca26f",
+      "bytes": 2097280,
+      "dtype": "float64",
+      "shape": [
+        256,
+        1024
+      ]
+    },
+    "support": {
+      "path": "support.npy",
+      "sha256": "774543949f643b6fc02e729b16e06d9c519a454906d9e79a1bc2c38c3011d1f4",
+      "bytes": 262272,
+      "dtype": "bool",
+      "shape": [
+        256,
+        1024
+      ]
+    },
+    "fallback": {
+      "path": "fallback.npy",
+      "sha256": "ecbb2f8557dffb287ccfffa7f36865105c5b3d13fc143aa2d8562aafb43f515f",
+      "bytes": 262272,
+      "dtype": "bool",
+      "shape": [
+        256,
+        1024
+      ]
+    },
+    "strict7d_count": {
+      "path": "strict7d_count.npy",
+      "sha256": "fb2f2a527e11807c51cbde809b1032031bb80ecf5b66dd550b3e51c9d470fb44",
+      "bytes": 2097280,
+      "dtype": "float64",
+      "shape": [
+        256,
+        1024
+      ]
+    }
+  },
+  "metrics": {
+    "C": {
+      "rows": 256,
+      "known_targets": 248,
+      "unknown_target_misses": 8,
+      "offpool_known_misses": 32,
+      "candidate_coverage_count": 216,
+      "map10": 0.12278955853174603,
+      "ndcg10": 0.15004984767079585,
+      "recall10": 0.23828125
+    },
+    "RL-completion": {
+      "rows": 256,
+      "known_targets": 248,
+      "unknown_target_misses": 8,
+      "offpool_known_misses": 32,
+      "candidate_coverage_count": 216,
+      "map10": 0.11365327380952381,
+      "ndcg10": 0.14102941437209787,
+      "recall10": 0.23046875
+    },
+    "RL-residual": {
+      "rows": 256,
+      "known_targets": 248,
+      "unknown_target_misses": 8,
+      "offpool_known_misses": 32,
+      "candidate_coverage_count": 216,
+      "map10": 0.12147042410714287,
+      "ndcg10": 0.1497887150162604,
+      "recall10": 0.2421875
+    }
+  },
+  "diagnostics": {
+    "C": {
+      "rows": 256,
+      "map10": 0.12278955853174603,
+      "ndcg10": 0.15004984767079585,
+      "recall10": 0.23828125,
+      "expected_effective_reward": 4.2337883077322135e-18,
+      "supported_conditional_raw_reward": 0.4051129079150249,
+      "supported_probability_denominator": 248.671768617146,
+      "supported_top10_raw_reward": 0.41350328987617463,
+      "supported_top10_denominator": 2554,
+      "unsupported_mass": 0.028625903839273457,
+      "exact_KL": 0.0,
+      "entropy": 5.872029001865936,
+      "top1_max_share": 0.2890625,
+      "top10_HHI": 0.036282043457031246,
+      "effective_catalog": 27.56184340014636,
+      "states_without_support": 0,
+      "expected_effective_completion_utility": 4.2337883077322135e-18,
+      "expected_effective_residual_utility": 1.4973424925087894e-18,
+      "expected_supported_raw_RM_numerator_per_query": 0.39351618476900097,
+      "expected_supported_residual_numerator_per_query": -0.06477347113039925
+    },
+    "RL-completion": {
+      "rows": 256,
+      "map10": 0.11365327380952381,
+      "ndcg10": 0.14102941437209787,
+      "recall10": 0.23046875,
+      "expected_effective_reward": 0.029113097340336444,
+      "supported_conditional_raw_reward": 0.43501115088994186,
+      "supported_probability_denominator": 249.47910615664694,
+      "supported_top10_raw_reward": 0.4703615863230758,
+      "supported_top10_denominator": 2553,
+      "unsupported_mass": 0.025472241575597885,
+      "exact_KL": 0.026805727530462245,
+      "entropy": 5.791566896498253,
+      "top1_max_share": 0.34765625,
+      "top10_HHI": 0.03772216796875,
+      "effective_catalog": 26.5096110284124,
+      "states_without_support": 0,
+      "expected_effective_completion_utility": 0.029113097340336444,
+      "expected_effective_residual_utility": 0.0031273311190966194,
+      "expected_supported_raw_RM_numerator_per_query": 0.4239304417663944,
+      "expected_supported_residual_numerator_per_query": -0.06184845777633527
+    },
+    "RL-residual": {
+      "rows": 256,
+      "map10": 0.12147042410714287,
+      "ndcg10": 0.1497887150162604,
+      "recall10": 0.2421875,
+      "expected_effective_reward": 0.004751447404805972,
+      "supported_conditional_raw_reward": 0.4099877420359333,
+      "supported_probability_denominator": 249.25131021832368,
+      "supported_top10_raw_reward": 0.4140266054014536,
+      "supported_top10_denominator": 2554,
+      "unsupported_mass": 0.026362069459673124,
+      "exact_KL": 0.003963547302160973,
+      "entropy": 5.813885209619302,
+      "top1_max_share": 0.265625,
+      "top10_HHI": 0.03790802001953126,
+      "effective_catalog": 26.37964207797644,
+      "states_without_support": 0,
+      "expected_effective_completion_utility": 0.004751447404805972,
+      "expected_effective_residual_utility": 0.004330666769454499,
+      "expected_supported_raw_RM_numerator_per_query": 0.39917961670276747,
+      "expected_supported_residual_numerator_per_query": -0.060594452797154794
+    }
+  },
+  "cache": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-cache-r1/cache.json",
+    "sha256": "5baf5dae822a7fb812acb6344ac08c0a0f94a2e4af7adf24b1c53c4584096a82"
+  },
+  "reward": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/screen256-r1/reward.json",
+    "sha256": "a4bccf42b9f020e72a191c536df59dce5ac4e21b7e38aee4e21edccab5c05676"
+  },
+  "utility": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reward/residual-r1/screen/utility.json",
+    "sha256": "b3d4d9a000d953b207566d695066f6210155a345d683a58a1edf48e27765d709",
+    "metadata": {
+      "contract": "kion-derived-completion-utility-v1",
+      "state": "completed",
+      "cohort": "screen",
+      "formula": "r_RM(s,i)-m_fit(i)",
+      "coefficient": 1.0,
+      "range": [
+        -1,
+        1
+      ],
+      "files": {
+        "utility.npy": {
+          "path": "utility.npy",
+          "sha256": "cc055b773d44feed76d7452ba057100892db3f3e88a09d64b248f106da51ba62",
+          "bytes": 2097280,
+          "dtype": "float64",
+          "shape": [
+            256,
+            1024
+          ]
+        },
+        "prior.npy": {
+          "path": "prior.npy",
+          "sha256": "9cdae45205c8140aded61c8f245d0eb7c4137b6aaa016006291b76535ddca26f",
+          "bytes": 2097280,
+          "dtype": "float64",
+          "shape": [
+            256,
+            1024
+          ]
+        }
+      },
+      "cache": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-cache-r1/cache.json",
+        "sha256": "5baf5dae822a7fb812acb6344ac08c0a0f94a2e4af7adf24b1c53c4584096a82"
+      },
+      "parent_reward": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/screen256-r1/reward.json",
+        "sha256": "a4bccf42b9f020e72a191c536df59dce5ac4e21b7e38aee4e21edccab5c05676"
+      },
+      "support": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/screen256-r1/support.npy",
+        "sha256": "774543949f643b6fc02e729b16e06d9c519a454906d9e79a1bc2c38c3011d1f4"
+      },
+      "prior_archive": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/rm-r2/scorer/scorer.npz",
+        "sha256": "d5df55586a9df54b5e121d494a149764d956750ac3caaf2b4c1ada27a93243d4"
+      },
+      "prior_fields": [
+        "item_ids",
+        "counts",
+        "item_mean"
+      ],
+      "raw_native_mapping": "candidate_native_id == archive_item_index + 3, exact for every pair",
+      "counts_positive_equals_original_support": true,
+      "unsupported_utility": "storage sentinel 0; never observed label",
+      "preregistration_sha256": "78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c",
+      "diagnostics": {
+        "base_completion": {
+          "supported_min": 0.0,
+          "supported_max": 0.9216280579566956,
+          "supported_sd": 0.15370537340641022,
+          "advantage_min": -0.5134474613821864,
+          "advantage_max": 0.4375102532934318,
+          "advantage_sd": 0.1252059274057083,
+          "reference_weighted_advantage_rms": 0.13908639199218945
+        },
+        "derived_utility": {
+          "supported_min": -0.49780617407074224,
+          "supported_max": 0.40756892076978535,
+          "supported_sd": 0.11482928886857262,
+          "advantage_min": -0.44895490435930574,
+          "advantage_max": 0.3850176331966114,
+          "advantage_sd": 0.07268420988656202,
+          "reference_weighted_advantage_rms": 0.06963358413209729
+        },
+        "advantage_rms_ratio": 0.5006498704489196,
+        "active_states": 256,
+        "supported_pairs": 254360,
+        "prior_within_state_range_max": 0.6752120271445956,
+        "nondegenerate_prior": true,
+        "fraction_constant_within_state_priors": 0.0,
+        "changed_pairwise_preferences": 43483235,
+        "supported_unordered_pairs": 126238908,
+        "fraction_changed_pairwise_preferences": 0.34445192602584934,
+        "rms_definition": "sqrt(mean_active_states(sum_all_actions(p_C * centered_supported_utility^2))); unsupported advantage=0"
+      }
+    }
+  },
+  "selection_sha256": "e480bb6a662f6ec57f3a4fa5319542ee3deb4157350a9de005c6de4dfa7bcbdf",
+  "catalog_size": 15415,
+  "feature_schema_sha256": "71d90eee774d30db804d1ab32c4d82995d1320baf26aaf36443a6498fd85fc5d",
+  "original_C_parity": {
+    "score_tolerance_passed": true,
+    "scores_identical": true,
+    "top10_changed_rows": 0,
+    "changes_with_margin_above_tolerance": 0,
+    "basis": "immutable original screen cache C reference scores"
+  },
+  "legacy_screen_parity": {
+    "C": {
+      "passed": true,
+      "exact": true,
+      "fields": [
+        "rows",
+        "map10",
+        "ndcg10",
+        "recall10",
+        "expected_effective_reward",
+        "supported_conditional_raw_reward",
+        "supported_probability_denominator",
+        "supported_top10_raw_reward",
+        "supported_top10_denominator",
+        "unsupported_mass",
+        "exact_KL",
+        "entropy",
+        "top1_max_share",
+        "top10_HHI",
+        "effective_catalog",
+        "states_without_support"
+      ],
+      "source": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-0-r1.json",
+        "sha256": "e2f6bf09433aece8e6bdc55da0a43d3d04a65d767204dd9420d0a683a6f81a5a"
+      }
+    },
+    "RL-completion": {
+      "passed": true,
+      "exact": true,
+      "fields": [
+        "rows",
+        "map10",
+        "ndcg10",
+        "recall10",
+        "expected_effective_reward",
+        "supported_conditional_raw_reward",
+        "supported_probability_denominator",
+        "supported_top10_raw_reward",
+        "supported_top10_denominator",
+        "unsupported_mass",
+        "exact_KL",
+        "entropy",
+        "top1_max_share",
+        "top10_HHI",
+        "effective_catalog",
+        "states_without_support"
+      ],
+      "source": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-1000-r1.json",
+        "sha256": "cd5b7f1e1a93b711f860fb02e8ac89f05f86b0f60e3be371d83399ab9f05cff4"
+      }
+    }
+  },
+  "raw_feature_calls": 0,
+  "provider_opened": false,
+  "utility_support": "supported actions centered by C conditional mean; unsupported advantage=0; full1024 normalization",
+  "candidate_source_columns": [
+    "owner_gpt",
+    "owner_pop7d",
+    "owner_knn",
+    "nominated_current2048_gpt",
+    "nominated_current2048_pop7d",
+    "nominated_current2048_knn",
+    "capped_rank_over2049_gpt",
+    "capped_rank_over2049_pop7d",
+    "capped_rank_over2049_knn",
+    "missing_rank_gpt",
+    "missing_rank_pop7d",
+    "missing_rank_knn",
+    "current_detached_gpt_logit",
+    "log1p_strict7d_count"
+  ],
+  "actor_source_columns": [
+    "current_detached_gpt_logit",
+    "log1p_strict7d_count"
+  ]
+}

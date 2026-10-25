@@ -1,0 +1,74 @@
+{
+  "review_type": "independent actual utility-stage metadata and frozen evaluation-protocol audit",
+  "status": "PASS_UTILITY_STAGE_AND_EVALUATION_PROTOCOL",
+  "blocking_findings": [],
+  "bindings": [
+    {"path": "reward/residual-r1/prefit.json", "sha256": "f1431dd1092a5d7ef96e2ed89d4c2889067cd3558fa0f478f29eff73825c3d97", "actual_hash_verified": true},
+    {"path": "reward/residual-r1/train/utility.json", "sha256": "e888cb47586b8ea2a4e5323a1051401e949f602ec36e43d36254684e80a320a5", "actual_hash_verified": true},
+    {"path": "reward/residual-r1/screen/utility.json", "sha256": "b3d4d9a000d953b207566d695066f6210155a345d683a58a1edf48e27765d709", "actual_hash_verified": true},
+    {"path": "operations/utility-r1/receipt.json", "sha256": "dc529fd20e41b1e1646930e5277c421b74ad7cdd8c034ca4a3ddbfe66d935a1d", "actual_hash_verified": true},
+    {"path": "operations/utility-r1/stage-completion.json", "sha256": "21f526b9a9b5b825c87b6c39cbb4f4ddb796ad0956ad57f9314e1f2cee04350b", "actual_hash_verified": true},
+    {"path": "request-utility-r1.json", "sha256": "23b8c5317a8ece311cc2d0f5893a59ddd8cb7e748ae56e6853fc5b4cd9487b62", "actual_hash_verified": true},
+    {"path": "protocols/evaluation.json", "sha256": "ee0e1e06f060f27e4dd149a8c26c02827f9b1c9fb67a57d688d84e166fddfd25", "actual_hash_verified": true},
+    {"path": "protocols/preregistration.json", "sha256": "78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c", "actual_hash_verified": true}
+  ],
+  "path_base": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1",
+  "actual_operation_evidence": {
+    "operation": "utility-r1",
+    "state": "succeeded",
+    "exit_code": 0,
+    "cleanup_quiescent": true,
+    "elapsed_seconds": 4.358999999938533,
+    "receipt_request_sha_matches_actual_request": true,
+    "stage_completion_result_matches_prefit_metadata": true,
+    "optimizer_created": false,
+    "model_loaded": false,
+    "provider_opened": false,
+    "meaning": "A real data-only utility stage completed. This is not an RL fit, model-inference or provider acceptance."
+  },
+  "frozen_input_audit": {
+    "small_input_json_hashes_freshly_verified": {
+      "cohort_selection": "e480bb6a662f6ec57f3a4fa5319542ee3deb4157350a9de005c6de4dfa7bcbdf",
+      "train_cache": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+      "screen_cache": "5baf5dae822a7fb812acb6344ac08c0a0f94a2e4af7adf24b1c53c4584096a82",
+      "train_parent_reward": "e8047d12f8009bb422cc4956261a355dc10e05f42d73351ef76ccd5f7bc9ce05",
+      "screen_parent_reward": "a4bccf42b9f020e72a191c536df59dce5ac4e21b7e38aee4e21edccab5c05676"
+    },
+    "prior_archive_pin": "d5df55586a9df54b5e121d494a149764d956750ac3caaf2b4c1ada27a93243d4",
+    "cache_declared_original_C_pin": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+    "cache_contract": "Both completed caches declare512 train/256 val rows,1024 natural candidates,1068 raw features, source2 current_detached_gpt_logit/log1p_strict7d_count, CUDA-FP16, no target injection and no seen filter, same selection and C/GPT ancestor pins.",
+    "support_contract": "Utility manifests reference unchanged original support SHA, matching each parent reward manifest; parent support counts520101 train/254360 screen match prefit supported_pairs. Both original rewards have zero all-unsupported states, matching512/256 active states.",
+    "raw_mapping": "Admitted stage reports exact raw-ID join, candidate_native_id=archive_item_index+3 and counts>0 equality to original support. Inspected frozen utility source validates raw IDs before checking native offsets; it does not assume native offset alone establishes mapping.",
+    "prior_payload_verification_boundary": "Archive/model/array contents were not read by this reviewer. The native stage validates the exact archive pin and payload mapping; this audit checks its hash-bound small receipts and the source-validation path."
+  },
+  "scientific_utility_acceptance": {
+    "formula": "r_RM(s,i)-m_fit(i), supported pairs only; unsupported storage0 is not an observed label",
+    "derived_range": [-1,1],
+    "actual_supported_range_train": [-0.471558195860293,0.3907607132586872],
+    "actual_supported_range_screen": [-0.49780617407074224,0.40756892076978535],
+    "nondegenerate_prior": "PASS: active512/256, constant-within-state fraction0 in both cohorts, maximum within-state prior range0.6752120271445956; not a state-only baseline cancellation.",
+    "fraction_changed_pairwise_preferences_train": 0.33579005457276845,
+    "fraction_changed_pairwise_preferences_screen": 0.34445192602584934,
+    "pairwise_interpretation": "The saved diagnostic counts changed ordering including ties as defined by the frozen source; it is not an observed relevance gain.",
+    "reference_weighted_advantage_rms_train": {"completion":0.14472321444528893,"residual":0.07114268739524214,"ratio":0.49157757909071925},
+    "reference_weighted_advantage_rms_screen": {"completion":0.13908639199218945,"residual":0.06963358413209729,"ratio":0.5006498704489196},
+    "required_claim_limit": "Residual advantage RMS is approximately half the completion RMS. Same beta0.5 fixes coefficient units but does not match gradient strength or actual KL. Report scales and post-fit KL; utility shape and effective update magnitude are not separately identified by this contrast. No causal personalization/item-bias removal claim follows."
+  },
+  "evaluation_protocol_acceptance": {
+    "status": "PASS_DESIGN_ONLY",
+    "registered_before_utility_execution": true,
+    "cohorts": "screen256 and full4096 remain separate; identical arm pool, no target/seen modifications, unknown/offpool rows receive zero relevance while remaining denominator.",
+    "bootstrap": "Row-weighted original-cohort mean, user_id cluster unit,2000 draws,seed20261024,two-sided percentile95%; same sampled clusters and row multiplicities for all arms/deltas; separate bootstrap by cohort. This resolves the earlier prospective bootstrap-definition obligation.",
+    "bootstrap_execution_boundary": "Actual evaluator source, sampled draws,statistics and intervals are not certified here. If concentration intervals are reported, aggregate exposure/concentration must be recomputed within each cluster replicate; marginal row contributions do not suffice.",
+    "fixed_endpoint_and_utility": "Both RL arms fixed latest1000; original-C supported baseline frozen; derived utility remains separate from original completion proxy and screen rewards are not full4096 rewards."
+  },
+  "remaining_before_optimizer": [
+    "Actual trainer must bind these utility manifests and exact original C/source/input pins in its immutable request.",
+    "Actual all512 FP16 backward/update0/reference parity and finite-gradient gates must pass before optimizer creation, without source or threshold changes after outputs."
+  ],
+  "not_certified": [
+    "This reviewer executed no NumPy/Torch/ML/provider/GPU job and opened no NPY/NPZ/checkpoint/model payload.",
+    "No optimizer update,trained-head parameter delta,screen/full4096 result,bootstrap interval or five-step completeness is accepted by this receipt.",
+    "Original temporal/development/observational-reward limits remain unchanged. A real utility-stage success does not demonstrate online reward,relevance or retention improvement."
+  ]
+}

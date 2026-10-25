@@ -1,0 +1,170 @@
+{
+  "contract": "kion-native-guard-source-review-v1",
+  "reviewer": "/root/submit_native_guard/native_guard_review",
+  "reviewed_utc": "2026-10-25T07:29:14.9945930+00:00",
+  "status": "no_findings_in_frozen_source_scope",
+  "snapshot": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/control/source-snapshot.json",
+    "sha256": "767feed966c99078db63dae8e044dee6a1c352d1055167b9571295e447c6d8d0",
+    "freshness": "All nine scoped files match frozen snapshot immediately before receipt",
+    "file_count": 9
+  },
+  "findings": [],
+  "reviewed_files": [
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/control/common.py",
+      "sha256": "bda3cb370668d1264613aa17eb671789f07892d76cf3e746c9875a7a90eb6d26",
+      "bytes": 14335,
+      "current_matches_snapshot": true
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/control/launch.py",
+      "sha256": "fc9a158fb1e3d91b72a6479a08abdff20864225062d6294371b93ee57ef792e8",
+      "bytes": 1949,
+      "current_matches_snapshot": true
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/control/prepare_request.py",
+      "sha256": "27c11adbf2b7df00ff5ae65f6f04d91eb4857acc4e1ad4f2a50c52d57efb760d",
+      "bytes": 2599,
+      "current_matches_snapshot": true
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/control/supervise.py",
+      "sha256": "f25381ca3ecec4f5fa510b368314b3ccc9759826049563c4da6000608cf9a957",
+      "bytes": 8416,
+      "current_matches_snapshot": true
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/control/test_control.py",
+      "sha256": "0e3a821b564eef7181f40d6bea19053c12169c6d5bdabb8463859ae3fa460365",
+      "bytes": 16565,
+      "current_matches_snapshot": true
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/control/worker.py",
+      "sha256": "bb6e7d8026c3ab72a8f2b61406b265997d71cee77adc65aeada442f2048a3472",
+      "bytes": 4783,
+      "current_matches_snapshot": true
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/control/README.md",
+      "sha256": "fc2a029ece08b14d36d3126547a0edde371bb0d7f0f9238645636fcdc6733fff",
+      "bytes": 4822,
+      "current_matches_snapshot": true
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/reports/reproduction_stage.py",
+      "sha256": "0b7dab263291e4acc4e5b62f8e688c5dd11b3ccaec98a79f976c1f343d59e1ee",
+      "bytes": 6182,
+      "current_matches_snapshot": true
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/research/NATIVE_PLAN.md",
+      "sha256": "f111a3743d89c3a601e8613dfcf0f6f78880f480ce7903930be5d80553d56de5",
+      "bytes": 6016,
+      "current_matches_snapshot": true
+    }
+  ],
+  "preserved_f_lifecycle": [
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/control/launch.py",
+      "f_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/launch.py",
+      "sha256": "fc9a158fb1e3d91b72a6479a08abdff20864225062d6294371b93ee57ef792e8",
+      "byte_identical": true
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/control/supervise.py",
+      "f_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/supervise.py",
+      "sha256": "f25381ca3ecec4f5fa510b368314b3ccc9759826049563c4da6000608cf9a957",
+      "byte_identical": true
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/control/worker.py",
+      "f_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/worker.py",
+      "sha256": "bb6e7d8026c3ab72a8f2b61406b265997d71cee77adc65aeada442f2048a3472",
+      "byte_identical": true
+    }
+  ],
+  "context_only_files": [
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/reproduction/export_fixture.py",
+      "sha256": "411d912e5f6372029f6e1a47293420f1d276cb29e9fc2c655a59331e655e3c28",
+      "review_scope": "Interface/source context only; no author-scope approval or numerical execution"
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/reproduction/export_rm_fixture.py",
+      "sha256": "3c00b9bb3fbdbaf3c362385d10587ba341c0dc56ede61d5df46b3bd67f911967",
+      "review_scope": "Interface/source context only; no author-scope approval or numerical execution"
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/reproduction/kion_replay/cli.py",
+      "sha256": "031a9bf711c981f416bab96ad6c14afe7af9d9db7740a665ee23903968fc3d26",
+      "review_scope": "Interface/source context only; no author-scope approval or numerical execution"
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/reproduction/kion_replay/verify.py",
+      "sha256": "27f4217d91f9795f1bb9c78112dbf3088d4c2df2710eb44414741c37027dbaf6",
+      "review_scope": "Interface/source context only; no author-scope approval or numerical execution"
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/reproduction/kion_replay/rm.py",
+      "sha256": "dc9e2115b508c8d3b528e8eb6e07dcd00a36957156cdd9f5c6b7795d0824abf3",
+      "review_scope": "Interface/source context only; no author-scope approval or numerical execution"
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/bridge.py",
+      "sha256": "097aceb6edd8004cd6d3258955ede50073012918ce6759a73020fcd4e9daa6eb",
+      "review_scope": "Interface/source context only; no author-scope approval or numerical execution"
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_ready_runtime.py",
+      "sha256": "1e80ed9987dd6fe86e2aef846be7f7537fde001464e109cd305235829be71daa",
+      "review_scope": "Interface/source context only; no author-scope approval or numerical execution"
+    }
+  ],
+  "instruction_files": [
+    {
+      "path": "D:/personal-agent-system/AGENTS.md",
+      "sha256": "daef064fd01f06939629b0241e9bdb8d53b7f47258981c231fd9a7cb5ad0c08b"
+    },
+    {
+      "path": "D:/personal-agent-system/docs/windows.md",
+      "sha256": "f5d8a52fb97f678c4be852484fab78a7c0899806c2aabc3b330b64ecdf112678"
+    },
+    {
+      "path": "D:/personal-agent-system/.agents/skills/code-review/SKILL.md",
+      "sha256": "84f988125294bdc5eec794e06d49d9296b3a31a2ef1daff28a4332788dbb5a43"
+    },
+    {
+      "path": "D:/personal-agent-system/docs/agents/coordination.md",
+      "sha256": "0396d99b46adc00857f9b2f5623f8beb5e50acaed2aeb9acfed7d1b2dfa772fb"
+    },
+    {
+      "path": "D:/personal-agent-system/docs/agents/verification.md",
+      "sha256": "7840611c82c19d2175b0c41f438025fe70beb8aee0b738efae0c6627f94b5034"
+    }
+  ],
+  "verification": {
+    "command": ".\\pas.ps1 python -B -m unittest discover -s D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/control -p test_control.py -v",
+    "tests_passed": 20,
+    "tests_failed": 0,
+    "mode": "stdlib synthetic temporary fixtures only",
+    "inspected": "Exact integer-zero training/final-test counters; root campaign digest admission; aware future deadlines and per-action maxima; resource and ownership checks; conservative Python and metadata closure; extracted actor/RM call interfaces; failed actor oracle and RM parity evidence; inherited native cleanup logic",
+    "opened_model_or_array_payloads": false,
+    "imported_numpy_torch_or_models": false,
+    "launched_native_or_heavy_jobs": false,
+    "admitted_requests_or_changed_campaign": false
+  },
+  "resolved_review_concerns": [
+    "Extracted runtime-manifest.json and RM transitive freeze/serving metadata must be watched; final common.py requires these pins.",
+    "Selected fixture may live anywhere inside bundle; final common.py watches union of extracted reproduction and selected input trees, covered by outside-reproduction regression."
+  ],
+  "limitations": [
+    "This is a static review plus synthetic control checks, not native Job, resource, GPU, model, export, replay or parity acceptance.",
+    "Additional R/reproduction sources were moving and inspected solely for interface context; they remain unreviewed author scope and require their own freeze/review.",
+    "No actual request, root input digest receipt, payload bytes, final extracted bundle, campaign admission or cross-namespace global-job ownership was approved; those remain root-only operator gates.",
+    "Third-party numerical package dependency closure and cooperative file-read/output scope remain environment/code obligations, not an OS filesystem sandbox.",
+    "The 20-test suite exercises actor-oracle rejection with a fake; actual actor and RM numerical success/failure behavior was read from current source, not executed."
+  ]
+}

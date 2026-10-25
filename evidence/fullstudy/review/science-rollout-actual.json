@@ -1,0 +1,63 @@
+{
+  "review_type":"independent actual synthetic five-step rollout JSON structural/scientific audit",
+  "status":"PASS_ACTUAL_COMPLETE_192_TRAJECTORIES_960_STEPS",
+  "blocking_findings":[],
+  "path_base":"D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1",
+  "bindings":[
+    {"path":"policy/rollout-scientific3-r1.json","sha256":"67bc5e8ffedc5d2759e0f3b8e6d998a0887e94226ae4a13f5dd021db359137bf","actual_hash_verified":true},
+    {"path":"operations/rollout-scientific3-r1/receipt.json","sha256":"eb406dd020a46f05d6cd554573b8bf4eb6ef517a345977549b04e63ffe62a491","actual_hash_verified":true},
+    {"path":"operations/rollout-scientific3-r1/stage-completion.json","sha256":"20267ed3a215bdf7999f7a2aab67d4e78c8d9b0f42f6ff791922ea4dde2e6ada","actual_hash_verified":true},
+    {"path":"request-rollout-scientific3-r1.json","sha256":"165015d9c3ab605df77258d9f565e545cd58f21a0dba9b6c7768669a884646e4","actual_hash_verified":true},
+    {"path":"policy/rollout.py","sha256":"c4c8b59b33caf9823115d0889d24f5a29d675799e99c174eba91ec4b613b1ce9","actual_hash_verified":true}
+  ],
+  "actual_runtime":{
+    "state":"succeeded","exit_code":0,"cleanup_quiescent":true,"elapsed_seconds":336.2820000000065,
+    "completed_stage_result_equals_saved_rollout":true,
+    "five_step_training":false,
+    "synthetic_prefix_only":true,
+    "new_fit_authorized_by_this_receipt":false
+  },
+  "grid_acceptance":{
+    "positions":[253,2,30,246,204,158,96,50,128,244,255,36,12,109,171,236],
+    "arms":["C","RL-completion","RL-residual"],
+    "selection_modes":["greedy","categorical"],
+    "repeat_masks":["none","exclude-generated"],
+    "trajectory_count":192,
+    "step_count":960,
+    "RM_controls":16,
+    "independent_grid_check":"Exactly one trajectory for every16x3x2x2 tuple;no missing/duplicate tuples. Every trajectory has exactly5 saved step records and5 matching generated token/raw IDs. Same initial position and seed20261024+position match across arms/modes/masks.",
+    "selection_and_prereg_pins":"Frozen label-blind selection0a2c0f430250723c87449a7abf4552d5e5e42d1ffc51c9215d5f6eb6129e57a7 and prereg78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c freshly match. First3 predetermined cases are253,2,30;their later named presentation remains summary/report acceptance.",
+    "lineage":"Same accepted screen-cache,reward/residual utility manifest and actual scientific latest1000 heads as prior three-arm evaluations;original C retained as reference. No selected0 alias substitutes for trained arms."
+  },
+  "numerical_metadata_acceptance":{
+    "initial_C_cache_exact_count":192,
+    "initial_C_cache_nonexact_count":0,
+    "initial_C_cache_max_abs_error":0.0,
+    "later_steps_with_nonzero_q_drift":768,
+    "later_steps_with_nonzero_base_drift":768,
+    "C_KL_max_abs":0.0,
+    "frozen_tensor_versions_unchanged_all_trajectories":true,
+    "independent_return_arithmetic_max_error":0.0,
+    "unsupported_selected_steps":9,
+    "unmasked_repeat_steps":164,
+    "unmasked_step_denominator":480,
+    "exclude_generated_repeat_steps":0,
+    "exclude_generated_step_denominator":480,
+    "independently_checked":"Generated-repeat flags agree with accumulated generated tokens;masked uniqueness holds;selected residual equals selected RM minus frozen item prior;raw/residual/support/original-seen bindings remain identical whenever a context selects the same token across trajectories. Original-C completion/residual baselines are fixed per initial context. Gamma0.9 discounted neutral/raw/partial returns exactly match all step records. Unsupported selections have null raw/residual values andzero neutral contributions;complete raw/residual returns are null iff any selection is unsupported. Final prefix length is min(64,initial_length+5),startsBOS,and ends in all5 generated IDs. No structural/arithmetic discrepancy found."
+  },
+  "state_semantics":{
+    "dynamic":"Each generated item is appended to GPT conditioning;source regenerates q and full-vocabulary retrieval logits then gathers the same natural1024 pool,and updates source12. All768 later saved steps show actual drift from initial q/base.",
+    "producer_parity":"Original observed peer encoder batch and active producer slot are preserved;only active slot receives synthetic prefix. Head scoring preserves producer shape/slot. Initial cache scores/top10 areexact for every saved trajectory,not merely within AMP tolerance.",
+    "reference":"At each actor prefix,reference C is scored using the same prefix and mask. Across scientific policies,later prefixes can differ because chosen actions differ;matched initial contexts do not imply matched later state distributions.",
+    "fixed":"Natural pool,raw1068,user/observed history,clock,source13,RM prediction/support and frozen item prior remain observed-s0-fixed. Generated IDs do not acquire observed completion or dates. Frozen tensor flags remain true.",
+    "control":"16 separate static observed-s0 RM-greedy unique-top5 controls are present. They are not dynamically recomputed RL trajectories or logged policy outcomes."
+  },
+  "claims_and_limits":[
+    "This completes the registered synthetic five-step generation diagnostic;it is not5-step RL training,model-based rollout of real feedback,causal watchtime or retention evidence.",
+    "Repeated greedy recommendations without exclusion and their removal under an explicit mask are behavior under stated decoding rules,not an inferred improvement in satisfaction or long-term return.",
+    "Frozen-s0 RM returns are surrogate diagnostics. Unsupported null returns must retain their denominators;partial sums cannot be compared as full observed completion returns.",
+    "Only initial observed targets could support relevance;steps2-5 have no fabricated outcome labels.16 predetermined contexts and one categorical seed per context are descriptive,not population inference.",
+    "Named first3 cases and aggregate summary still require exact saved-output validation;this receipt does not certify titles or the final report.",
+    "Reviewer read source,JSON and file metadata only,with ordinary arithmetic over saved trajectory records. No arrays/checkpoint/NPZ/model payloads,NumPy/Torch/ML imports or provider/GPU jobs were used."
+  ]
+}

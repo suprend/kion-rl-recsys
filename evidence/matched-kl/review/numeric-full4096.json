@@ -1,0 +1,466 @@
+{
+  "contract": "kion-independent-csv-numeric-verification-v1",
+  "state": "completed",
+  "verified": true,
+  "stage": "full4096",
+  "rows": 4096,
+  "metric_denominator": 4096,
+  "candidate_width": 1024,
+  "verified_utc": "2026-10-25T06:27:07.925425+00:00",
+  "source": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/interpretation/verify.py",
+    "sha256": "07f8de6c8c132bbdeda25a9edfc643ff5186916db880c2a9eea8461d33a88369"
+  },
+  "inputs": {
+    "analysis": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/interpretation/full-r1/analysis.json",
+      "sha256": "1fbaae8af0a4ccc94544f2886b021d062bd14778c574d3f92dc2b3aaf261274f",
+      "bytes": 32847
+    },
+    "per_query": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/interpretation/full-r1/per-query.csv",
+      "sha256": "f66a1cb06e12b412158e5800275b85252c8cfd3f3eb0e3d201407742f6f85cb9",
+      "bytes": 610868
+    },
+    "evaluation_metadata": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/full-six-r1/evaluation.json",
+      "sha256": "cc7dd2372a5c80f49aed0d5374deff4cdda8aa739ce41531f5c13245fe760ba5",
+      "bytes": 41162
+    },
+    "matching_receipt": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/matching.json",
+      "sha256": "e45f26f9d682c71e2ee7b10b45a5e75861d572a3dd91d29547e501842eda154c",
+      "bytes": 2321
+    },
+    "train_cache_metadata": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/train-cache-r1/cache.json",
+      "sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+      "bytes": 6716
+    },
+    "train_reference_metadata": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/train-target-r1.json",
+      "sha256": "e51a6ca50350b93ce3c1925892c54acbff55dde01902eb47ec7876e7d9aa1c60",
+      "bytes": 11304
+    },
+    "six_arm_train_diagnostics": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/train-final-six-r1.json",
+      "sha256": "6e4299ca58ee0da5d40d31e42317cd14c55c96d95d372dbc1827f4d8b1d4e103",
+      "bytes": 34502
+    }
+  },
+  "arms": [
+    "C",
+    "completion-20261024",
+    "residual-20261024",
+    "completion-20261025",
+    "residual-20261025",
+    "completion-20261026",
+    "residual-20261026"
+  ],
+  "seeds": [
+    20261024,
+    20261025,
+    20261026
+  ],
+  "cohort": {
+    "rows": 4096,
+    "unique_users": 4035,
+    "unknown_target_misses": 122,
+    "offpool_known_misses": 616,
+    "candidate_coverage_count": 3358,
+    "shared_row_binding_sha256": "5bfa44e62dfb1cfc127c55bbc0cf686c984c852abf102bd39e43b7f2ca33c2bc"
+  },
+  "absolute_tolerance": 1e-12,
+  "independent_metric_recomputation": true,
+  "summaries": {
+    "C": {
+      "map10": 0.09686366489955357,
+      "ndcg10": 0.1239494230603261,
+      "recall10": 0.21240234375
+    },
+    "completion-20261024": {
+      "map10": 0.09438244047619047,
+      "ndcg10": 0.12055263362976344,
+      "recall10": 0.20556640625
+    },
+    "residual-20261024": {
+      "map10": 0.09615875728546627,
+      "ndcg10": 0.1229194542727992,
+      "recall10": 0.210205078125
+    },
+    "completion-20261025": {
+      "map10": 0.09444095672123015,
+      "ndcg10": 0.12065224568945596,
+      "recall10": 0.205810546875
+    },
+    "residual-20261025": {
+      "map10": 0.0965700179811508,
+      "ndcg10": 0.12345192395891995,
+      "recall10": 0.211181640625
+    },
+    "completion-20261026": {
+      "map10": 0.09428197467137897,
+      "ndcg10": 0.1204797239244607,
+      "recall10": 0.20556640625
+    },
+    "residual-20261026": {
+      "map10": 0.09605596633184524,
+      "ndcg10": 0.12279281191628305,
+      "recall10": 0.2099609375
+    }
+  },
+  "comparisons": {
+    "20261024/completion-minus-C": {
+      "map10": {
+        "difference": -0.002481224423363095,
+        "gains": 250,
+        "losses": 284,
+        "ties": 3562
+      },
+      "ndcg10": {
+        "difference": -0.0033967894305626583,
+        "gains": 250,
+        "losses": 284,
+        "ties": 3562
+      },
+      "recall10": {
+        "difference": -0.0068359375,
+        "gains": 43,
+        "losses": 71,
+        "ties": 3982
+      }
+    },
+    "20261024/residual-minus-C": {
+      "map10": {
+        "difference": -0.0007049076140873016,
+        "gains": 195,
+        "losses": 227,
+        "ties": 3674
+      },
+      "ndcg10": {
+        "difference": -0.0010299687875268936,
+        "gains": 195,
+        "losses": 227,
+        "ties": 3674
+      },
+      "recall10": {
+        "difference": -0.002197265625,
+        "gains": 30,
+        "losses": 39,
+        "ties": 4027
+      }
+    },
+    "20261024/residual-minus-completion": {
+      "map10": {
+        "difference": 0.0017763168092757937,
+        "gains": 311,
+        "losses": 288,
+        "ties": 3497
+      },
+      "ndcg10": {
+        "difference": 0.0023668206430357648,
+        "gains": 311,
+        "losses": 288,
+        "ties": 3497
+      },
+      "recall10": {
+        "difference": 0.004638671875,
+        "gains": 84,
+        "losses": 65,
+        "ties": 3947
+      }
+    },
+    "20261025/completion-minus-C": {
+      "map10": {
+        "difference": -0.002422708178323413,
+        "gains": 249,
+        "losses": 284,
+        "ties": 3563
+      },
+      "ndcg10": {
+        "difference": -0.0032971773708701455,
+        "gains": 249,
+        "losses": 284,
+        "ties": 3563
+      },
+      "recall10": {
+        "difference": -0.006591796875,
+        "gains": 43,
+        "losses": 70,
+        "ties": 3983
+      }
+    },
+    "20261025/residual-minus-C": {
+      "map10": {
+        "difference": -0.0002936469184027778,
+        "gains": 200,
+        "losses": 216,
+        "ties": 3680
+      },
+      "ndcg10": {
+        "difference": -0.0004974991014061407,
+        "gains": 200,
+        "losses": 216,
+        "ties": 3680
+      },
+      "recall10": {
+        "difference": -0.001220703125,
+        "gains": 31,
+        "losses": 36,
+        "ties": 4029
+      }
+    },
+    "20261025/residual-minus-completion": {
+      "map10": {
+        "difference": 0.002129061259920635,
+        "gains": 313,
+        "losses": 283,
+        "ties": 3500
+      },
+      "ndcg10": {
+        "difference": 0.002799678269464005,
+        "gains": 313,
+        "losses": 283,
+        "ties": 3500
+      },
+      "recall10": {
+        "difference": 0.00537109375,
+        "gains": 84,
+        "losses": 62,
+        "ties": 3950
+      }
+    },
+    "20261026/completion-minus-C": {
+      "map10": {
+        "difference": -0.002581690228174603,
+        "gains": 250,
+        "losses": 287,
+        "ties": 3559
+      },
+      "ndcg10": {
+        "difference": -0.003469699135865398,
+        "gains": 250,
+        "losses": 287,
+        "ties": 3559
+      },
+      "recall10": {
+        "difference": -0.0068359375,
+        "gains": 43,
+        "losses": 71,
+        "ties": 3982
+      }
+    },
+    "20261026/residual-minus-C": {
+      "map10": {
+        "difference": -0.0008076985677083334,
+        "gains": 193,
+        "losses": 222,
+        "ties": 3681
+      },
+      "ndcg10": {
+        "difference": -0.0011566111440430432,
+        "gains": 193,
+        "losses": 222,
+        "ties": 3681
+      },
+      "recall10": {
+        "difference": -0.00244140625,
+        "gains": 29,
+        "losses": 39,
+        "ties": 4028
+      }
+    },
+    "20261026/residual-minus-completion": {
+      "map10": {
+        "difference": 0.00177399166046627,
+        "gains": 313,
+        "losses": 291,
+        "ties": 3492
+      },
+      "ndcg10": {
+        "difference": 0.002313087991822355,
+        "gains": 313,
+        "losses": 291,
+        "ties": 3492
+      },
+      "recall10": {
+        "difference": 0.00439453125,
+        "gains": 83,
+        "losses": 65,
+        "ties": 3948
+      }
+    },
+    "three-seed-average/completion-minus-C": {
+      "map10": {
+        "difference": -0.002495207609953704,
+        "gains": 252,
+        "losses": 289,
+        "ties": 3555
+      },
+      "ndcg10": {
+        "difference": -0.0033878886457660673,
+        "gains": 252,
+        "losses": 289,
+        "ties": 3555
+      },
+      "recall10": {
+        "difference": -0.006754557291666667,
+        "gains": 43,
+        "losses": 71,
+        "ties": 3982
+      }
+    },
+    "three-seed-average/residual-minus-C": {
+      "map10": {
+        "difference": -0.0006020843667328043,
+        "gains": 203,
+        "losses": 229,
+        "ties": 3664
+      },
+      "ndcg10": {
+        "difference": -0.0008946930109920258,
+        "gains": 203,
+        "losses": 229,
+        "ties": 3664
+      },
+      "recall10": {
+        "difference": -0.001953125,
+        "gains": 31,
+        "losses": 40,
+        "ties": 4025
+      }
+    },
+    "three-seed-average/residual-minus-completion": {
+      "map10": {
+        "difference": 0.0018931232432208996,
+        "gains": 318,
+        "losses": 293,
+        "ties": 3485
+      },
+      "ndcg10": {
+        "difference": 0.002493195634774041,
+        "gains": 318,
+        "losses": 293,
+        "ties": 3485
+      },
+      "recall10": {
+        "difference": 0.004801432291666667,
+        "gains": 85,
+        "losses": 66,
+        "ties": 3945
+      }
+    }
+  },
+  "seed_spread": {
+    "completion-minus-C": {
+      "map10": {
+        "mean": -0.0024952076099537036,
+        "min": -0.002581690228174603,
+        "max": -0.002422708178323413,
+        "sample_std": 8.040814743632895e-05
+      },
+      "ndcg10": {
+        "mean": -0.0033878886457660673,
+        "min": -0.003469699135865398,
+        "max": -0.0032971773708701455,
+        "sample_std": 8.66046062675982e-05
+      },
+      "recall10": {
+        "mean": -0.006754557291666667,
+        "min": -0.0068359375,
+        "max": -0.006591796875,
+        "sample_std": 0.0001409546555638735
+      }
+    },
+    "residual-minus-C": {
+      "map10": {
+        "mean": -0.0006020843667328043,
+        "min": -0.0008076985677083334,
+        "max": -0.0002936469184027778,
+        "sample_std": 0.00027201422699159246
+      },
+      "ndcg10": {
+        "mean": -0.0008946930109920258,
+        "min": -0.0011566111440430432,
+        "max": -0.0004974991014061407,
+        "sample_std": 0.00034975966459138924
+      },
+      "recall10": {
+        "mean": -0.001953125,
+        "min": -0.00244140625,
+        "max": -0.001220703125,
+        "sample_std": 0.0006459353786778786
+      }
+    },
+    "residual-minus-completion": {
+      "map10": {
+        "mean": 0.0018931232432208994,
+        "min": 0.00177399166046627,
+        "max": 0.002129061259920635,
+        "sample_std": 0.00020433162352509249
+      },
+      "ndcg10": {
+        "mean": 0.002493195634774041,
+        "min": 0.002313087991822355,
+        "max": 0.002799678269464005,
+        "sample_std": 0.00026677800410918745
+      },
+      "recall10": {
+        "mean": 0.004801432291666667,
+        "min": 0.00439453125,
+        "max": 0.00537109375,
+        "sample_std": 0.0005082192381509114
+      }
+    }
+  },
+  "prospective_two_seed_mean": {
+    "completion-minus-C": {
+      "map10": -0.002502199203249008,
+      "ndcg10": -0.003383438253367772,
+      "recall10": -0.0067138671875
+    },
+    "residual-minus-C": {
+      "map10": -0.0005506727430555556,
+      "ndcg10": -0.0008270551227245919,
+      "recall10": -0.0018310546875
+    },
+    "residual-minus-completion": {
+      "map10": 0.0019515264601934527,
+      "ndcg10": 0.00255638313064318,
+      "recall10": 0.0048828125
+    }
+  },
+  "training_KL_matching": {
+    "train_KL_by_arm": {
+      "completion-20261024": 0.028141394929216676,
+      "residual-20261024": 0.025626846105626697,
+      "completion-20261025": 0.02857631484713826,
+      "residual-20261025": 0.02723862248082785,
+      "completion-20261026": 0.028560712775189928,
+      "residual-20261026": 0.026115598434196165
+    },
+    "train_KL_residual_over_completion_by_seed": {
+      "20261024": 0.9106459068601696,
+      "20261025": 0.9531887728188166,
+      "20261026": 0.9143888893726146
+    },
+    "train_KL_match_by_seed": {
+      "20261024": true,
+      "20261025": true,
+      "20261026": true
+    },
+    "all_three_train_KL_matches": true,
+    "target_train_KL": 0.028141394929216676,
+    "scope": "Scalar consistency and checkpoint/cache/reference metadata bindings; KL was not recomputed from policies."
+  },
+  "bootstrap_intervals_independently_resampled": false,
+  "bootstrap_interval_validation": "Finite ordered endpoints within [-1,1] and declared 2000-draw user-cluster provenance checked; point containment is not required.",
+  "claim_scope": "Independent arithmetic from the pinned per-query target ranks: seven-arm MAP/NDCG/Recall, nine seed contrasts, three equal-seed average contrasts, paired signs, fitted-seed spread, and prospective two-seed means. TRAIN KL scalar/flag consistency checked against six-arm pinned diagnostic metadata.",
+  "limitations": [
+    "Target ranks, row/user identities and masks are CSV input evidence; scoring, ranking, tie-breaking and bindings to arrays are not independently reproduced.",
+    "No arrays, checkpoint bytes, raw datasets, models, training, RM or final test were opened by this verifier.",
+    "Cache/reference/checkpoint pins are metadata bindings; array integrity and TRAIN KL values are not independently recomputed.",
+    "Conditional user-cluster confidence intervals are not independently resampled here; only endpoint structure and declared provenance are checked.",
+    "Three fitted seeds and the two prospective seeds are descriptive; this proof supplies no training-seed population interval or causal claim."
+  ]
+}

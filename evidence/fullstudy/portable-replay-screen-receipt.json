@@ -1,0 +1,35 @@
+{
+  "name": "replay-screen-r1",
+  "state": "succeeded",
+  "started_utc": "2026-10-24T22:33:07.508013+00:00",
+  "request_sha256": "b8f40c5458b2e9fb7a78f4dd6f983026a6307ccbafae31165a340bd466c3dae9",
+  "argv": [
+    "C:/Users/Михаил/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "-B",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/worker.py",
+    "--request",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/request-replay-screen-r1.json",
+    "--request-sha256",
+    "b8f40c5458b2e9fb7a78f4dd6f983026a6307ccbafae31165a340bd466c3dae9"
+  ],
+  "maximum_seconds": 900,
+  "deadline_utc": "2026-10-25T05:45:00+00:00",
+  "cap_gib": 4,
+  "reserve_gib": 2,
+  "cpu_affinity": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "worker_pid": 57508,
+  "exit_code": 0,
+  "initial_available_bytes": 16756649984,
+  "minimum_available_bytes": 16555331584,
+  "peak_rss_bytes": 225206272,
+  "peak_private_bytes": 340471808,
+  "cleanup_quiescent": true,
+  "idle_sleep_prevention_while_owned": true,
+  "finished_utc": "2026-10-24T22:33:17.082561+00:00",
+  "elapsed_seconds": 9.578000000095926
+}

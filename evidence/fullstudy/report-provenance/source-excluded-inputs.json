@@ -1,0 +1,607 @@
+{
+  "contract": "kion-excluded-inputs-v1",
+  "inputs": {
+    "${PROJECT}/artifacts/task2-kion/night-20261023-r1/sft-recovery/run-recovery-r1/worker/model/latest.pt": {
+      "sha256": "5e7101857c2dbe100fb4e1587c0369abc95c108303ed149123ee183f62aeac26",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/night-20261023-r1/sft-recovery/run-recovery-r1/worker/model/config.json": {
+      "sha256": "e3b4b1730895fceb1b7d4ea6357aea783c046f5e87cacd7d4ff933cf94d45d45",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-full-context64/metadata.json": {
+      "sha256": "f02acaa9a5e5532e79b060279ba8a5027f268f202132e85ebab97cd4912fbd11",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-full-context64/train.npz": {
+      "sha256": "bed53339345246fbd3cbad6d72017ed82451634431e48c6e9fd67a66581be4f8",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-full-context64/val.npz": {
+      "sha256": "4c8839b69a4abeff5e4eea3ffeea1d83715deea8775f4547f8f85c0e055bad99",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/manifest.json": {
+      "sha256": "382b410d564bb73eba268b5e2e49d092c25d2af4d1df677020ce46f546dc0cbf",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/user_id.npy": {
+      "sha256": "26d00139e72b998092ccf9bc6cf24a1bcb1e38a807fce38976609ad73fefc8a7",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/date.npy": {
+      "sha256": "2b236ebb5a4d3b5057a4f763c25f412d1cc0902a5610a9d2972a4f364af78c9f",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/all-agreed-20261020/completion-diagnostics/event-store-r1/full-r1/token.npy": {
+      "sha256": "23078cdedb0c6aea4da9356d4b0572fdaf14db7eb56fb0e2834b11e40677cf21",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/three-head-262k-20261024-r1/validation-selection.json": {
+      "sha256": "660100ad03709ed2b1ddb2a62c83c3b9e51de3fc22cabdadfde0735467aa3707",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/three-head-pilot-20261024-r1/cache/train/bank.json": {
+      "sha256": "a64decc0990a4644e878d3ab830ea81035d431ca6ff6d664aaff9a03d8c8cf36",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${BANK_CACHE_ROOT}/three-head-262k-20261024-r1/train/bank.json": {
+      "sha256": "7eb271a5c5c44f33c2b22dfe26ce120bbd7016aeeba67b6fef817ad3e183ff5a",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/three-head-262k-20261024-r1/heads/training.json": {
+      "sha256": "693ee6ae7df73af60f8b4fdaf0996a926c507219a89246a8d5a954d0d93941ad",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/three-head-262k-20261024-r1/heads/A/head.pt": {
+      "sha256": "509e4541e4063e11388fb8a4939a77e0f5d86c07f54127e2c807995756bd6188",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/three-head-262k-20261024-r1/heads/B/head.pt": {
+      "sha256": "fb5dd68fa305fa5838b1fda35c31315fada57bfc51687893cc1aa1742c646337",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/three-head-262k-20261024-r1/heads/C/head.pt": {
+      "sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/cohorts/selection-r1.json": {
+      "sha256": "e480bb6a662f6ec57f3a4fa5319542ee3deb4157350a9de005c6de4dfa7bcbdf",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/preregistration.json": {
+      "sha256": "025061343a0314691dfb6064063d7e18c74662ea62ab285ec423d374037538ac",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/policy/smoke-C-H1-r1.json": {
+      "sha256": "7c489f09db8790548c8850e845dcbaf378c3c7dc84fe4f222fede7cb0cdc0eb7",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/policy/train-cache-r1/cache.json": {
+      "sha256": "e76c365d1245355d5314e383ba53499800eb3c099fa0af7de106cced5fad15e5",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/policy/frontier-r1.json": {
+      "sha256": "73d1eacc7000398341c3bcfb761929be41c18e3f2c094d2467dbee7fc8184530",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/policy/frontier-decision-r1.json": {
+      "sha256": "c66af919d2d8a5558621e028ab42cd43f547eaef1a94fb85df325870e5f2850c",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/reward/train512-r1/reward.json": {
+      "sha256": "e8047d12f8009bb422cc4956261a355dc10e05f42d73351ef76ccd5f7bc9ce05",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/policy/parity-diagnosis-r1.json": {
+      "sha256": "d8264a1d3901d4c8bb63083adbd038f6a3607153c70a33948b1842907b41a25f",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/policy/parity-probe-r2.json": {
+      "sha256": "ded1c5089f0c6b83748bf36ff0de5f97d480f5bacee4358ccfb913ee90661d16",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/review/science-parity-repair-options-r1.json": {
+      "sha256": "c0fd0ef626e0a5d071a84d790737ae2ede55cc9b727544a67efd1a0b71820e81",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/policy/repair-proof-r1.json": {
+      "sha256": "dbdc6622bd620c15cbab77e2b12db4a241bb6e9577270fc0578b5da768d1e32b",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/three-head-262k-20261024-r1/evaluation/evaluation.json": {
+      "sha256": "ebc6cb8b8eb682298723aba8f1d24a3250c286b20e91c70f51e159e7ba000e56",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/policy/checkpoint-selection-r1.json": {
+      "sha256": "9983aada0c6909051384f34b80fdfa7e384767e92c600c81bdfcc91eb1b83ca6",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/training.json": {
+      "sha256": "cfdfc225be553305a3d6a8af7c5419227255b44827ccf7e3760a86b3e5dbf8bf",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-1000.pt": {
+      "sha256": "436d735d67fd861e6b925719b9e3597582ec405eed1b13ede3db3671e1ce37b7",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-0.pt": {
+      "sha256": "20a616aeecd9856b3d96ab8f17f3321373b9f6a7bd158ab125d705e4d6f595ab",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-cache-r1/cache.json": {
+      "sha256": "5baf5dae822a7fb812acb6344ac08c0a0f94a2e4af7adf24b1c53c4584096a82",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/local-pack-20261020/rm-eval-r1/manifest.json": {
+      "sha256": "992c7a8ce3cf45a0f20605dd60f9ac3a11cb51424d2180f9a4cef3f1a08d7b35",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/local-pack-20261020/freeze-rm-r2.json": {
+      "sha256": "c1ca863d628e67b0d64d0974fd31174463890babaf93913734374469290ebe07",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-basic-bundle-v1/features.npz": {
+      "sha256": "8b0972d95e1e66eda10d9a01090fbe86ca226a4b408cd760ff53523c9d96e513",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-basic-bundle-v1/manifest.json": {
+      "sha256": "95f4386dec36c1f4d285e87bc42b4e3753ef8c641a6440d53995cc9385a62daf",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/manifest.json": {
+      "sha256": "42d7532a5daea8af36198e0a4ba6ba3b134cd66e93dcfd75961913a14624144c",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/local-pack-20261020/rm-r2/scorer/manifest.json": {
+      "sha256": "dfc61f3ebfb9144be3cb86caf70050b72033d9234119145119dbfe90e0ee8507",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-all-local-20261020-r1/manifest.json": {
+      "sha256": "738e74698104b295ea1d5d1b8a986f75503978c241685bae26bd77c8f1bca0be",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/raw/kion/full/items.csv": {
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/raw/kion/full/users.csv": {
+      "sha256": "37b2945240628a3f215e1fb5f79b4cff386d8988b21fa61e5b135aef4541182c",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/raw/kion/full/interactions.csv": {
+      "sha256": "201dc9114eb309da9df6f5f227ada23a371d668edf64a32090fb613a75162ecf",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/local-pack-20261020/freeze-rm-r1.json": {
+      "sha256": "0d5bcfc3564e3ed930a2eb42bcf09d76a02225dc426c1f166456d28c146e1378",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/fit.numeric.npy": {
+      "sha256": "2c99aa0b1bf7a4fd5c2174c99f1b7010f8aa643621b3499fcbaada96be335748",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/fit.candidate_numeric.npy": {
+      "sha256": "284226f1788ab8732651944c9037cf1ffc3933da3bca62099f9be4e8ce9f06a8",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/fit.categorical.npy": {
+      "sha256": "d20e1b49c56c688df9227f9d07fb1148546d3764bee7a706e9c10492e3eecfb1",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/fit.observed.npy": {
+      "sha256": "46ce6da7b2f77258321b30c3e457fed03708eed353da2db6aaa1e67ed43de331",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/fit.reward.npy": {
+      "sha256": "e58a9963dbc28f093fb3152a64d546a46d328b747cd0a47e95f5c8838415f319",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/fit.user_id.npy": {
+      "sha256": "4f28075ec91b5314be68339ae8cec31d52d8910151e4d5c9ee1a65b1124be09f",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/fit.item_id.npy": {
+      "sha256": "0e28243646d752ca66cd3138a9bda8ad228cab6bffb310a4db91f97f853abade",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/fit.target_date.npy": {
+      "sha256": "2116761146381456fecdcbda300d0bb4ade3889c99a54c6dc02d2550fe89a2ea",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/fit.history_cutoff.npy": {
+      "sha256": "2116761146381456fecdcbda300d0bb4ade3889c99a54c6dc02d2550fe89a2ea",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/fit.history_max_date.npy": {
+      "sha256": "ca7937a559579661f6400e194ce284cba2697330a176976ebd23703064f17138",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/fit.history_length.npy": {
+      "sha256": "088b1df44348e61555776660c286d473b51f0979642a26917f8382236b982778",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/select.numeric.npy": {
+      "sha256": "8072c556f45ca30ae6e7835659f0ff13c7c97cb62a2df4363ec80fc310b94b37",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/select.candidate_numeric.npy": {
+      "sha256": "66a6b183ecfea2bfc083b97c4b21af4e02926c136fd2c393a97703139d0a4337",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/select.categorical.npy": {
+      "sha256": "29e0c23187062a908cb24baf54750de2d5672f686722b1a85a0d270879805df5",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/select.observed.npy": {
+      "sha256": "f9fde39131a33da20d13a1ad7b86260e923dba9b6433c614347b5e2e3ffd0949",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/select.reward.npy": {
+      "sha256": "b2a4d6f57ab3a08c420cc7018151d6e219352ecf355d805395306e484ce3c831",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/select.user_id.npy": {
+      "sha256": "062681e1227a590f03d179c72f9508602a4aeb03fca1bc6356f0c344c856d3b4",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/select.item_id.npy": {
+      "sha256": "118741d75a97631beb5a377b3b47349292d74672db8784ab66bb56c5e7ecedd5",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/select.target_date.npy": {
+      "sha256": "763fd28f8330605137fcf4ade9c815071bbe937102cf0c86e7decf5e1486e9a0",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/select.history_cutoff.npy": {
+      "sha256": "d3f24ba3227f2fe12032478e651aa46f5febee00aca4aa13e2632952f2481b95",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/select.history_max_date.npy": {
+      "sha256": "0c951f575169c4abd08811317ef7b16a75c492b2c3b8b4be96563876f8c7c0fb",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/select.history_length.npy": {
+      "sha256": "2b1e97eb5d2ac9e249aabf5d98ca6f422e994a5fc6e64e6d1e781cf88dae507d",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/calibration.numeric.npy": {
+      "sha256": "f60634db26786973749c7a1aa43a37620ce7e0221988f0ca94ee1993eace43f0",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/calibration.candidate_numeric.npy": {
+      "sha256": "5a85a7a867d85895f7d3b2c24f1c0f2bca9e2d50744fecf77d735d6f28796f36",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/calibration.categorical.npy": {
+      "sha256": "29e0c23187062a908cb24baf54750de2d5672f686722b1a85a0d270879805df5",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/calibration.observed.npy": {
+      "sha256": "f9fde39131a33da20d13a1ad7b86260e923dba9b6433c614347b5e2e3ffd0949",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/calibration.reward.npy": {
+      "sha256": "297a72691041cd92ce2e6dbaa2bfe4b1eb267d595eedde5f7a0823864ec0ba91",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/calibration.user_id.npy": {
+      "sha256": "f7795cf1eca1b5101cc78fab1a1a8ad82f54c9f632e924a484008a84a090c4bf",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/calibration.item_id.npy": {
+      "sha256": "b6334b59f697472559d3f0401b7f94f0a1c965e362ce919a0225f798c42c127a",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/calibration.target_date.npy": {
+      "sha256": "b65dc40a65a64fffd7dc5784cb35995f020c22bd29aafe5cf7cc9b4dde4c100d",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/calibration.history_cutoff.npy": {
+      "sha256": "d3f24ba3227f2fe12032478e651aa46f5febee00aca4aa13e2632952f2481b95",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/calibration.history_max_date.npy": {
+      "sha256": "86f3d1adfd4d154fba1b1567769b979612a2ca97ea6f56f152fec8f8237ea6df",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/calibration.history_length.npy": {
+      "sha256": "3c4f6f451f366acb25a5a549f8127f3f46c124a4bd65a4ef7289786c75900b97",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/catalog.npz": {
+      "sha256": "a3e16b919996e717edefaf0aa120565adba772f9106aac7223225e06909d63cd",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/fit.x.npy": {
+      "sha256": "40f590b80d58571fe94f016e737d5408b3b15cf95b3d37f6c1a955ddca13ff2c",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/fit.lengths.npy": {
+      "sha256": "3b67239719af89b0215273957bb0cbdeb46da2e06cd30043c0115922b5c33884",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/select.x.npy": {
+      "sha256": "18b3ab98c01d8df390809c54de801cde1110db56300e0bf55662a34e723f11fb",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/select.lengths.npy": {
+      "sha256": "d86c1314bacacd97e444a379e5b9ce08f94fb3a863fd60bc7238de50ad2683a3",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/calibration.x.npy": {
+      "sha256": "48660d57be692568d7a77eb92d7c4a19c87b88da76df274a04061a88e9abab9f",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/calibration.lengths.npy": {
+      "sha256": "25fb44811ecb2caff8e362a79ba33ae1e215f88d776f7cd50c628057bbfa2045",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/data/processed/kion-reward-local-20261020-r1/full_target_support.npz": {
+      "sha256": "a0271f7a216ff04fb5fb954d5f76b7eb113db4879e4df20e7c416d8bf7f7b446",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/local-pack-20261020/rm-r2/scorer/scorer.npz": {
+      "sha256": "d5df55586a9df54b5e121d494a149764d956750ac3caaf2b4c1ada27a93243d4",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/local-pack-20261020/rm-r2/scorer/model.cbm": {
+      "sha256": "b6ed4c6427129afcddec017e2f64d9c3fb59fb31fc300e5c9d074964a21ddd62",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/.venv/Lib/site-packages/catboost/__init__.py": {
+      "sha256": "723075ad1115fe9fa812a642c98f3fd4caef91ee2f6372057328e102158d3c31",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/.venv/Lib/site-packages/catboost/core.py": {
+      "sha256": "6bc0a210b7f62e3c1553682636a7ba2363ad0c71f6974a1030817e7d9754921e",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/.venv/Lib/site-packages/catboost/_catboost.pyd": {
+      "sha256": "1ee52d699651cb7fcab3810186ff6b581eceb6e575e0557bd0cafda5b2987164",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/.venv/Lib/site-packages/numpy/__init__.py": {
+      "sha256": "a6958cb364663b7acce81ccfd58eeb65a2b34d5376157f924777b97211a73be4",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/.venv/Lib/site-packages/numpy/_core/_multiarray_umath.cp312-win_amd64.pyd": {
+      "sha256": "9c10617e66e992b5ac6d9f78fe7cedd0011618e1c2f89d09a185bb63073e2c90",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/interpretation/request.json": {
+      "sha256": "7490886840e791a2332ffd174dc7eb413e7fd77cd367fa1bc3fb6a5232baa5d0",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "model/config.json": {
+      "sha256": "e3b4b1730895fceb1b7d4ea6357aea783c046f5e87cacd7d4ff933cf94d45d45",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "model/latest.pt": {
+      "sha256": "5e7101857c2dbe100fb4e1587c0369abc95c108303ed149123ee183f62aeac26",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "model/latest.json": {
+      "sha256": "56e910855f0fbc875b28a326c9d30edf02fdec6c2084416e34b995043e9d3796",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "model/selected.json": {
+      "sha256": "e4b14ecf42bc081142ff20c2636a5431fc54f7ed2b09f2015bad51e52de91c90",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "model/selected-epoch0001.pt": {
+      "sha256": "a4c91aa4c3e892322c58f5dff6142ce19f7d038d661c909ebfd043d35e9dd663",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "model/selected-epoch0001.json": {
+      "sha256": "0dd1fb8fcade2b80a6569a52beba70a3ad77fc4a3f830bc78f565753bb1b3782",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "model/selected-epoch0002.pt": {
+      "sha256": "5e7101857c2dbe100fb4e1587c0369abc95c108303ed149123ee183f62aeac26",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "model/selected-epoch0002.json": {
+      "sha256": "56e910855f0fbc875b28a326c9d30edf02fdec6c2084416e34b995043e9d3796",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/protocols/preregistration.json": {
+      "sha256": "78c1568c35349394032333696ffce758b9ec1b7aea47edb9eb7023368e7ba59c",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/reward/screen256-r1/reward.json": {
+      "sha256": "a4bccf42b9f020e72a191c536df59dce5ac4e21b7e38aee4e21edccab5c05676",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/reward/residual-r1/prefit.json": {
+      "sha256": "f1431dd1092a5d7ef96e2ed89d4c2889067cd3558fa0f478f29eff73825c3d97",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/reward/residual-r1/train/utility.json": {
+      "sha256": "e888cb47586b8ea2a4e5323a1051401e949f602ec36e43d36254684e80a320a5",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/reward/residual-r1/screen/utility.json": {
+      "sha256": "b3d4d9a000d953b207566d695066f6210155a345d683a58a1edf48e27765d709",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/protocols/evaluation.json": {
+      "sha256": "ee0e1e06f060f27e4dd149a8c26c02827f9b1c9fb67a57d688d84e166fddfd25",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/policy/residual-r1/head-1000.pt": {
+      "sha256": "29d20cd3d058b4ccac52d94f3ad946891f3839601fe935817f7c7b89f09b1ee3",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/policy/residual-r1/training.json": {
+      "sha256": "f275070714f6fd24c588bb3637b752697063cca8d422b01e7d827bc3d743cba6",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-0-r1.json": {
+      "sha256": "e2f6bf09433aece8e6bdc55da0a43d3d04a65d767204dd9420d0a683a6f81a5a",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-1000-r1.json": {
+      "sha256": "cd5b7f1e1a93b711f860fb02e8ac89f05f86b0f60e3be371d83399ab9f05cff4",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/policy/rollout-selection-r1.json": {
+      "sha256": "0a2c0f430250723c87449a7abf4552d5e5e42d1ffc51c9215d5f6eb6129e57a7",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/policy/screen-scientific3-r1/evaluation.json": {
+      "sha256": "3439f885120173eb2b2f93bcb092d4c03b43ccfd06a2b9d884ef7512bc1fe7c1",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-250-r1.json": {
+      "sha256": "0cd377ab660e50d838bd2a99d1a44a8fa37ae973adebcc592e3a2e9fcd1529be",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-20261024-r1/policy/screen-500-r1.json": {
+      "sha256": "98d01741222fcfe21fcec78f8ed800864966cb752638c9d75689a71e3492f45e",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/policy/full-scientific3-r1/evaluation.json": {
+      "sha256": "5884cf09a3ddcde6638aad7991ed6c99915847b74583d7705e8a70f4a135a086",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/policy/rollout-scientific3-r1.json": {
+      "sha256": "67bc5e8ffedc5d2759e0f3b8e6d998a0887e94226ae4a13f5dd021db359137bf",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/screen-analysis-r2/plot-data.json": {
+      "sha256": "8ad2461b5c9a247f867264561af47e70113a45e39b4980bea7f63a231a62935c",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/full-analysis-r1/plot-data.json": {
+      "sha256": "6957ab49a1a86a6d9d5081927cc0bc423e6ddc886cf80b57f2eac6ebb41f9a1c",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    },
+    "${PROJECT}/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/rollout-summary-r1/rollout-summary.json": {
+      "sha256": "5c2cfc841c643258716862dffc7885566d682dfa94f95cc4578324ac05dbecba",
+      "included": false,
+      "hash_evidence": "copied from pinned request; payload not reread during packaging"
+    }
+  },
+  "availability": "Excluded local payloads; obtain authorized KION data and rebuild derived inputs, or restore original local outputs.",
+  "fresh_payload_hashing": false
+}

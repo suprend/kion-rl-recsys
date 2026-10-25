@@ -1,0 +1,16 @@
+{
+  "state": "passed",
+  "scope": "Root actual ZIP CRC/148member readback+147manifest hashes, exact approved selection, report/visual receipt bindings and unchanged historical archive; no ML numerical replay.",
+  "verified_utc": "2026-10-25T06:41:17.343637+00:00",
+  "archive": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/delivery/build-r1/kion-task2-kl-seeds-20261025.zip",
+    "bytes": 6210324,
+    "sha256": "2d182621c468f7aadc8cfdbbac4e19a4f630096b81ed7fca73e94f462b1371b3"
+  },
+  "member_count": 148,
+  "payload_count": 146,
+  "manifest_records_excluding_self": 147,
+  "relative_markdown_links_closed": 34,
+  "source_selection_sha256": "801c0337ab63aead24b6fa1b13500d18b5d3ce0b4d7e55138f3ff897d8883c8b",
+  "numerical_replay_verified": false
+}

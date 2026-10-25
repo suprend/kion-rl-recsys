@@ -1,0 +1,61 @@
+{
+  "review_type":"independent actual screen256 analysis version2 metadata,precision and scientific arithmetic audit",
+  "status":"PASS_ACTUAL_SCREEN256_ANALYSIS_R2",
+  "blocking_findings":[],
+  "path_base":"D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1",
+  "bindings":[
+    {"path":"interpretation/screen-analysis-r2/analysis.json","sha256":"26c9485c4391e4d7d2b4eb587cfc960421f5aab9ed95c445807d6bf7a3907ebc","actual_hash_verified":true},
+    {"path":"interpretation/screen-analysis-r2/plot-data.json","sha256":"8ad2461b5c9a247f867264561af47e70113a45e39b4980bea7f63a231a62935c","actual_hash_verified":true},
+    {"path":"operations/screen-analysis-r2/receipt.json","sha256":"806cec07d2f092729275601441ca377e57e1dce45953ea47e496f8b93c8d7e01","actual_hash_verified":true},
+    {"path":"operations/screen-analysis-r2/stage-completion.json","sha256":"774ebcae6829585ce46fc234f0d0a1ab6c64eb10550bf436762ae855e379d7a3","actual_hash_verified":true},
+    {"path":"request-screen-analysis-r2.json","sha256":"eae634fa75fbb587adb042774ac7ba25f07908cf8133a7ef38af37cf68af0546","actual_hash_verified":true},
+    {"path":"interpretation/analyze_v2.py","sha256":"3343cfd806bd623c921a851a1434e80d83d1f85970391b14e6d361ff720fa593","actual_hash_verified":true}
+  ],
+  "execution_and_input_acceptance":{
+    "state":"succeeded","exit_code":0,"cleanup_quiescent":true,"elapsed_seconds":4.39000000001397,
+    "stage_result_equals_saved_analysis":true,
+    "cohort":"256 original screen queries from256 users;all original targets/pools/support retained. This is separate from full4096.",
+    "frozen_inputs":"Evaluation3439f885120173eb2b2f93bcb092d4c03b43ccfd06a2b9d884ef7512bc1fe7c1,evaluation protocol ee0e1e06f060f27e4dd149a8c26c02827f9b1c9fb67a57d688d84e166fddfd25 and original reward manifest a4bccf42b9f020e72a191c536df59dce5ac4e21b7e38aee4e21edccab5c05676 hashes freshly match result pins.",
+    "plot_data":"Saved plot-data summaries,comparisons and item decompositions match analysis.json exactly. Source omits only source descriptor and elapsed seconds,with no per-user identifiers in portable plot data.",
+    "prior_failed_attempt":"This accepts version2 successful analysis only. The prior failed screen-specific float32/float64 aggregate check remains a failed operation;no completed prior analysis or extra training is inferred."
+  },
+  "precision_repair_acceptance":{
+    "parent_reward_dtype":"float32",
+    "export_and_scientific_dtype":"float64",
+    "all_raw_export_values_roundtrip_float32":true,
+    "values_checked":262144,
+    "producer_check":"Frozen v2 source reconstructs only original supported_top10_raw_reward reduction with original float32 np.where/sum and identical top order;all other strict producer diagnostic checks remain. It also requires every exported raw RM value to equal its float32 roundtrip before completion.",
+    "producer_float32_means":{"C":0.41350328987617463,"RL-completion":0.4703615863230758,"RL-residual":0.4140266054014536},
+    "scientific_float64_means":{"C":0.4135032604870036,"RL-completion":0.470361580807005,"RL-residual":0.4140265857506931},
+    "maximum_absolute_reduction_difference":2.9389171041227513e-8,
+    "meaning":"Lossless storage widening followed by a different accumulation precision explains the earlier strict mismatch. Producer values and scientific float64 values are both explicitly retained;no label/reward transformation,clipping,metric reinterpretation or new fit was used to fix the check."
+  },
+  "independent_metadata_math":{
+    "all_nine_relevance_contrast_mean_differences_match":true,
+    "maximum_relevance_delta_subtraction_error":3.469446951953614e-17,
+    "gain_loss_tie_denominator":256,
+    "all_probability_and_top10_conditional_means_equal_numerator_over_own_denominator":true,
+    "maximum_conditional_identity_error":0.0,
+    "completion_equals_residual_plus_prior":"Checked centered utilities,probability numerators and top10 numerators for all3 arms;maximum floating sum difference2.28e-13 on aggregated numerators.",
+    "nine_item_contribution_decompositions":"For each3 arm-pairs x3 utilities,proxy difference equals sum_all_item_contributions,positive+negative totals and top20+remaining totals within3.47e-18. Native exact decomposition is consistent with the saved metadata.",
+    "bootstrap":"Same accepted method as full analysis:user-cluster multiplicities,paired9 columns,row-weighted sums/counts,2000 seed20261024,unadjusted percentile95%. Here all256 users occur once,so cluster count equals query count;no mixing with4035-user full cohort."
+  },
+  "substantive_screen_findings":{
+    "completion_arm_centered_completion_gain":0.029113097340336444,
+    "completion_arm_centered_prior_shift":0.025985766221239822,
+    "completion_arm_centered_residual_gain":0.0031273311190966194,
+    "completion_prior_component_fraction":0.8925799243365399,
+    "residual_arm_centered_completion_gain":0.004751447404805972,
+    "residual_arm_centered_prior_shift":0.00042078063535147525,
+    "residual_arm_centered_residual_gain":0.004330666769454499,
+    "interpretation":"About89.26% of completion arm centered completion-proxy increase is the exact centered-prior algebraic component;the residual arm has much smaller prior shift. This is an arithmetic decomposition of frozen model preferences,not a causal mechanism or proof of personalization. Positive item contribution can arise from reducing probability of a below-baseline item,not only increasing a high-reward item.",
+    "relevance_uncertainty":"All3 screen MAP pairwise intervals contain0;residual-C Recall interval starts at0 and is based on1 gain/0 losses/255 ties. Do not describe a screen relevance benefit as established.",
+    "utility_uncertainty":"The9 bootstrap columns cover relevance only. Utility and item-prior decomposition values are descriptive point quantities;no utility confidence intervals are accepted here."
+  },
+  "claim_limits":[
+    "Retain original-RM,residual and prior columns separately and retain arm-specific supported denominators. The centered algebraic decomposition is valid;naive subtraction of conditional means with different support masses is not the same estimand.",
+    "Scale ratio about0.5 and actual KL difference remain fixed-beta unequal-movement limits. No matched-KL superiority,causal personalization,online completion,retention or fresh-holdout claim follows.",
+    "Observed-H63 unseen,strict7d count and missing/unsupported fractions are bounded diagnostics,not lifetime novelty,full-catalog self-information or real exposure outcomes.",
+    "Only source,JSON and metadata arithmetic were used by reviewer;no arrays/checkpoints/NPZ/model payloads,NumPy/Torch/ML imports or native numerical jobs were run."
+  ]
+}

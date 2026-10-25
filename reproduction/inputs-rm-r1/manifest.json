@@ -1,0 +1,143 @@
+{
+  "contract": "kion-portable-rm-fixture-v1",
+  "state": "completed",
+  "arrays": {
+    "candidate_raw_ids": {
+      "path": "candidate_raw_ids.npy",
+      "sha256": "f994ec05a0edf55c27c1db0eb5addee0512e26b1e01d3c6f5e881ffb9502fd5f",
+      "bytes": 32896,
+      "dtype": "int64",
+      "shape": [
+        4,
+        1024
+      ]
+    },
+    "rm_context_numeric": {
+      "path": "rm_context_numeric.npy",
+      "sha256": "a2e75f6ca031a74a34a9b3573e3f92e5e290e441c43a9d493ceef6f25851124e",
+      "bytes": 33392,
+      "dtype": "float32",
+      "shape": [
+        4,
+        2079
+      ]
+    },
+    "rm_candidate_numeric": {
+      "path": "rm_candidate_numeric.npy",
+      "sha256": "5fad3c99fdcf4b75334cda438238412a279c98f8daefc31cb60c601269a8b0f6",
+      "bytes": 32899200,
+      "dtype": "float32",
+      "shape": [
+        4,
+        1024,
+        2008
+      ]
+    },
+    "rm_fit_counts": {
+      "path": "rm_fit_counts.npy",
+      "sha256": "d90a4ce304bd13e58a072c5cf89011517638f1192200eb75ccc61ac44c128cff",
+      "bytes": 32896,
+      "dtype": "int64",
+      "shape": [
+        4,
+        1024
+      ]
+    },
+    "rm_item_prior": {
+      "path": "rm_item_prior.npy",
+      "sha256": "541ab498ac9a9e21d1b866154196fd2cc40c14eaad7eccc60ae5c2ac89d74dbd",
+      "bytes": 32896,
+      "dtype": "float64",
+      "shape": [
+        4,
+        1024
+      ]
+    },
+    "rm_reference_reward": {
+      "path": "rm_reference_reward.npy",
+      "sha256": "a2063a4e94715fb7d0deb33137d2c53bdd706e30b9c019a1fd4638f9b87c5b88",
+      "bytes": 16512,
+      "dtype": "float32",
+      "shape": [
+        4,
+        1024
+      ]
+    },
+    "rm_reference_reward64": {
+      "path": "rm_reference_reward64.npy",
+      "sha256": "95067c9bdde44dade0f8ef830c573b29be50ee6938ad13255ec01dec4027d0ab",
+      "bytes": 32896,
+      "dtype": "float64",
+      "shape": [
+        4,
+        1024
+      ]
+    },
+    "rm_reference_support": {
+      "path": "rm_reference_support.npy",
+      "sha256": "c8f8314d560f2d803ab1a3890bdbacc00fe58bb3369adb7c05fca17a5c75b689",
+      "bytes": 4224,
+      "dtype": "bool",
+      "shape": [
+        4,
+        1024
+      ]
+    }
+  },
+  "weights": {
+    "RM": {
+      "path": "model.cbm",
+      "sha256": "b6ed4c6427129afcddec017e2f64d9c3fb59fb31fc300e5c9d074964a21ddd62",
+      "bytes": 163368
+    }
+  },
+  "rm": {
+    "scorer_signature": "ee14bc4d7375a4d6978a2e1f476cd795369b45ef4250501b2f5992767e9ed261",
+    "schema_signature": "7776a9d611b04ef8f3ef77fce0a67c1fb045f67142bf4b4bbde24cc469f9bda4",
+    "mapping_sha256": "b90df0d1fcce007008b62007e486bc1e9cb0b4ac89c97bb5107e84305e744db4",
+    "prior_archive_sha256": "d5df55586a9df54b5e121d494a149764d956750ac3caaf2b4c1ada27a93243d4",
+    "context_width": 2079,
+    "candidate_width": 2008,
+    "numeric_width": 4087,
+    "history": true,
+    "compatibility_pairs": [],
+    "categorical_rule": "item:{original_item_id}",
+    "row_positions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "calibration": {
+      "slope": 1.0148506983671792,
+      "intercept": -0.005568380749024937
+    },
+    "global_mean": 0.47802770002556966,
+    "exporter_source_sha256": "3c00b9bb3fbdbaf3c362385d10587ba341c0dc56ede61d5df46b3bd67f911967",
+    "bridge_source_sha256": "097aceb6edd8004cd6d3258955ede50073012918ce6759a73020fcd4e9daa6eb",
+    "source_cache_sha256": "5baf5dae822a7fb812acb6344ac08c0a0f94a2e4af7adf24b1c53c4584096a82",
+    "source_model_manifest_sha256": "dfc61f3ebfb9144be3cb86caf70050b72033d9234119145119dbfe90e0ee8507",
+    "feature_clock": "actual query origin; raw history strictly before origin; transforms fitted<2021-08-02",
+    "metadata_availability": "static_snapshot_unverified",
+    "reward_state": "fixed observed s0; no synthetic prefix append",
+    "prior_semantics": "serialized sampled-fit item shrinkage mean; alpha20; no refit",
+    "residual_semantics": "float64(float32(calibrated_reward))-float64(item_prior), unsupported0"
+  },
+  "parity": {
+    "historical_float32_exact": true,
+    "native_pair_max_abs": 0.0,
+    "candidate_singleton_batch_max_abs": 0.0
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "catboost": "1.2.10"
+  },
+  "timings_seconds": {
+    "provider_init": 122.481985899969,
+    "total": 129.41260370006785
+  },
+  "training_updates": 0,
+  "rm_fits": 0,
+  "public_source_user_ids_included": false
+}

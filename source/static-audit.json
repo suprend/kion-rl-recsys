@@ -1,0 +1,735 @@
+{
+  "contract": "kion-unified-source-static-audit-v1",
+  "state": "passed-preservation-and-static-checks",
+  "manifest_sha256": "8ea4eefae2900208c028bdb86493b950b328b048519ab5160ad069085784637a",
+  "files_checked": 284,
+  "bytes_checked": 6989216,
+  "python_files_parsed_and_compiled_without_execution": 257,
+  "source_payloads_imported": false,
+  "numerical_imports_jobs_models_datasets_network": false,
+  "matched_kl_dynamic_source_pin_closure": {
+    "request_metadata_files": [
+      {
+        "path": "request-analyze-full-r1.json",
+        "sha256": "98bd35b87e57e41e5f21147039170f5f1a162de9fc6ddda51a0685ae3d1179ed",
+        "source_pin_count": 134
+      },
+      {
+        "path": "request-analyze-screen-r1.json",
+        "sha256": "78ad749349c85596410c3e2aacf706b45a861f2136da267d53deea56905c8bba",
+        "source_pin_count": 134
+      },
+      {
+        "path": "request-completion-20261025.json",
+        "sha256": "a8b88cc6237f570f74d4260333a2872c6da21cfe5001a79a4c90274985941931",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-completion-20261026.json",
+        "sha256": "08bff9e2e011728f84c43cf26b26d3741107df7ce595b204138710a1f3c4b133",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-figures-r1.json",
+        "sha256": "5a62d5d5326be886af2149e047a509c8c0e58a499da26d1766ea7cdedb1d4e42",
+        "source_pin_count": 8
+      },
+      {
+        "path": "request-full-six-r1.json",
+        "sha256": "42d5ef03f877a4c355f5c23ce9bba78c4f4239a64c6773a596c329875e020c50",
+        "source_pin_count": 135
+      },
+      {
+        "path": "request-kl-pilot1.json",
+        "sha256": "ebfdd62416173c8d3c8303fbe8313f3b749dd1f6f23e4d8c27775037336f55c7",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-kl-pilot2.json",
+        "sha256": "e80bc5621c67caa88594150802b74939c4ca992b99d570caaf39885653c04779",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-pilot1.json",
+        "sha256": "bb3b6aa38e0d81c2d3bcfc2906c3b4ad22f29d6adadc055effa4123b868be8fb",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-pilot2.json",
+        "sha256": "fcb30871cc6154d230d91505f61e2b20c7fd5b27c0933528ac990f2ca5d391dc",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-reader-pdf-r1.json",
+        "sha256": "92cbb39760dd4aa590cf4c66d3482001b2741291db55e8a7a4bee7997ded8a14",
+        "source_pin_count": 7
+      },
+      {
+        "path": "request-residual-20261025.json",
+        "sha256": "0f881a7ad0a6b8fcb3c3ff2a748f5b1f7568b08aa329d92fc31b7a3291ebee58",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-residual-20261026.json",
+        "sha256": "85498b132ed3e85aaff8aad96d6214c7fde10a38fd30af8d70cee82afec8489c",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-screen-six-r1.json",
+        "sha256": "286bbf5fd5ab1879de363f948361473e25416405e51377c267da58fe065b9bfb",
+        "source_pin_count": 135
+      },
+      {
+        "path": "request-train-final-six-r1.json",
+        "sha256": "ff34ccb67219dcd84586f6aef8ccdaa3a96ffdaa05bb54b02442ed6ca6456daf",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-train-target-r1.json",
+        "sha256": "2b71c7485eb2f41e5e89dfc884548a60ecf65c15cd51dc6c689f12204c4ee22a",
+        "source_pin_count": 133
+      },
+      {
+        "path": "request-verify-full-r1.json",
+        "sha256": "2f48825c73594df74fdca2de0af42d0ab067245f013fb3711f9e36bd360a9cbf",
+        "source_pin_count": 7
+      },
+      {
+        "path": "request-verify-screen-r1.json",
+        "sha256": "a5e598e93de4be86e4b254960ab7a3858ed066aa163b0cfa3289a31c87eaa83e",
+        "source_pin_count": 7
+      }
+    ],
+    "request_count": 18,
+    "references": 1897,
+    "unique_sources": 139,
+    "missing": [],
+    "mismatched": [],
+    "scope": "Only18 explicitly selected small request JSON and preserved source hashes; no input_hashes payloads opened. Historical original source paths matched to new preserved files."
+  },
+  "external_import_roots_and_occurrences": {
+    "catboost": 9,
+    "matplotlib": 9,
+    "numpy": 138,
+    "psutil": 10,
+    "reportlab": 7,
+    "scipy": 3,
+    "scripts": 1,
+    "threadpoolctl": 1,
+    "torch": 88,
+    "transformers": 19
+  },
+  "local_namespace_note": "scripts is a namespace import in kion_people_dynamics_fast.py; kion_people_dynamics.py is preserved but its parent runtime package must be on sys.path. It is not a pip requirement.",
+  "machine_reference_occurrences": 148,
+  "machine_reference_file_count": 55,
+  "machine_reference_locations": [
+    {
+      "path": "fullstudy/code/personal-agent-system/scripts/portability.py",
+      "line": 531
+    },
+    {
+      "path": "fullstudy/code/recipes/excluded-inputs.json",
+      "line": 439
+    },
+    {
+      "path": "fullstudy/code/recipes/excluded-inputs.json",
+      "line": 444
+    },
+    {
+      "path": "fullstudy/code/recipes/excluded-inputs.json",
+      "line": 449
+    },
+    {
+      "path": "fullstudy/code/recipes/excluded-inputs.json",
+      "line": 454
+    },
+    {
+      "path": "fullstudy/code/recipes/excluded-inputs.json",
+      "line": 459
+    },
+    {
+      "path": "fullstudy/code/recipes/import-inventory.json",
+      "line": 5
+    },
+    {
+      "path": "fullstudy/code/recipes/import-inventory.json",
+      "line": 405
+    },
+    {
+      "path": "fullstudy/code/recipes/import-inventory.json",
+      "line": 527
+    },
+    {
+      "path": "fullstudy/code/recipes/import-inventory.json",
+      "line": 697
+    },
+    {
+      "path": "fullstudy/code/recipes/import-inventory.json",
+      "line": 700
+    },
+    {
+      "path": "fullstudy/code/recipes/import-inventory.json",
+      "line": 1020
+    },
+    {
+      "path": "fullstudy/code/recipes/import-inventory.json",
+      "line": 1540
+    },
+    {
+      "path": "fullstudy/code/recipes/import-inventory.json",
+      "line": 1677
+    },
+    {
+      "path": "fullstudy/code/recipes/import-inventory.json",
+      "line": 1743
+    },
+    {
+      "path": "fullstudy/code/recipes/import-inventory.json",
+      "line": 2098
+    },
+    {
+      "path": "fullstudy/code/recipes/import-inventory.json",
+      "line": 2125
+    },
+    {
+      "path": "fullstudy/code/recipes/import-inventory.json",
+      "line": 2136
+    },
+    {
+      "path": "fullstudy/code/recipes/import-inventory.json",
+      "line": 2155
+    },
+    {
+      "path": "fullstudy/code/recipes/import-inventory.json",
+      "line": 2191
+    },
+    {
+      "path": "fullstudy/code/recipes/import-inventory.json",
+      "line": 2348
+    },
+    {
+      "path": "fullstudy/code/recipes/import-inventory.json",
+      "line": 2364
+    },
+    {
+      "path": "fullstudy/code/recipes/import-inventory.json",
+      "line": 2606
+    },
+    {
+      "path": "fullstudy/code/recipes/path-map.template.json",
+      "line": 6
+    },
+    {
+      "path": "fullstudy/code/recipes/path-map.template.json",
+      "line": 12
+    },
+    {
+      "path": "fullstudy/code/recipes/path-map.template.json",
+      "line": 13
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/control/common.py",
+      "line": 13
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/control/common.py",
+      "line": 15
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/control/common.py",
+      "line": 16
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/control/launch.py",
+      "line": 10
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/interpretation/analyze_saved.py",
+      "line": 18
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/interpretation/analyze_saved.py",
+      "line": 160
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/test_policy_source.py",
+      "line": 25
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/bridge.py",
+      "line": 62
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/bridge.py",
+      "line": 101
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/bridge.py",
+      "line": 428
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/bridge.py",
+      "line": 448
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/test_bridge.py",
+      "line": 150
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/test_bridge.py",
+      "line": 151
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/test_bridge.py",
+      "line": 189
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/test_bridge.py",
+      "line": 227
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/reward/test_bridge.py",
+      "line": 257
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/README.md",
+      "line": 6
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/README.md",
+      "line": 9
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/README.md",
+      "line": 26
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/README.md",
+      "line": 39
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/README.md",
+      "line": 40
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/README.md",
+      "line": 119
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/common.py",
+      "line": 13
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/common.py",
+      "line": 15
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/common.py",
+      "line": 16
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/control/launch.py",
+      "line": 10
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/ANALYZE.md",
+      "line": 14
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/ANALYZE.md",
+      "line": 17
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/ANALYZE.md",
+      "line": 28
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/ANALYZE.md",
+      "line": 32
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/ANALYZE.md",
+      "line": 116
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/ANALYZE.md",
+      "line": 134
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/ANALYZE.md",
+      "line": 135
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/EVALUATE.md",
+      "line": 32
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/EVALUATE.md",
+      "line": 36
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/EVALUATE.md",
+      "line": 40
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/EVALUATE.md",
+      "line": 45
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/EVALUATE.md",
+      "line": 49
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/EVALUATE.md",
+      "line": 77
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/EVALUATE.md",
+      "line": 79
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/EVALUATE.md",
+      "line": 82
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/EVALUATE.md",
+      "line": 86
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/EVALUATE.md",
+      "line": 90
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/EVALUATE.md",
+      "line": 107
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/EVALUATE.md",
+      "line": 109
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/EVALUATE.md",
+      "line": 111
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/ROLLOUT.md",
+      "line": 70
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/ROLLOUT.md",
+      "line": 71
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_analysis_requests.py",
+      "line": 9
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_analysis_requests.py",
+      "line": 38
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_render_requests.py",
+      "line": 7
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_render_requests.py",
+      "line": 33
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_render_requests_v2.py",
+      "line": 7
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_render_requests_v2.py",
+      "line": 24
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_render_requests_v3.py",
+      "line": 7
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_render_requests_v3.py",
+      "line": 24
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/prepare_replay_requests.py",
+      "line": 13
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/protocols/evaluation.json",
+      "line": 5
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/protocols/preregistration.json",
+      "line": 48
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/protocols/preregistration.json",
+      "line": 55
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reward/UTILITY.md",
+      "line": 19
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reward/UTILITY.md",
+      "line": 29
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/candidate-baselines-20261023-r1/worker.py",
+      "line": 21
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/candidate-optim-20261022-r1/personal/personal_vector.py",
+      "line": 14
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/negative-worker-r2/benchmark.py",
+      "line": 19
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/negative-worker-r2/hooks.py",
+      "line": 8
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/deadline-20261022/negative-worker-r2/worker.py",
+      "line": 18
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/eda-script.py",
+      "line": 6
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/eda-script.py",
+      "line": 49
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/freeze-rm-r1.json",
+      "line": 3
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/freeze-rm-r1.json",
+      "line": 4
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/freeze-rm-r2.json",
+      "line": 3
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/freeze-rm-r2.json",
+      "line": 4
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/freeze-rm-r2.json",
+      "line": 5
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/freeze-rm-r2.json",
+      "line": 44
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/freeze-rm-r2.json",
+      "line": 51
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/run-rm-fit-r1.py",
+      "line": 12
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/local-pack-20261020/run-rm-fit-r1.py",
+      "line": 14
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/binding/build_pilot_r2.py",
+      "line": 15
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/binding/build_pilot_r2.py",
+      "line": 16
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/binding/build_pilot_r2.py",
+      "line": 17
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/execution/native_phase_guard.py",
+      "line": 23
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/execution/native_phase_guard.py",
+      "line": 37
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/full-execution/bind_full.py",
+      "line": 10
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/full-execution/native_phase_guard.py",
+      "line": 23
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/full-execution/native_phase_guard.py",
+      "line": 37
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/full-preparation/worker.py",
+      "line": 28
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/precompute-e1-20261022-r1/training/bind_full_e1.py",
+      "line": 23
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/quality-recovery-20261021/pair-probe-r1/probe.py",
+      "line": 14
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/quality-recovery-20261021/uniform-control-r1/control.py",
+      "line": 14
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/model/rl-native-resource-r1/guard.py",
+      "line": 26
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_ready_runtime.py",
+      "line": 7
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_ready_runtime.py",
+      "line": 8
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/provider/runtime-native-r5/scripts/kion_ready_runtime.py",
+      "line": 9
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/ready-pack-20261020/reward-data/load_psutil_runtime_r1.py",
+      "line": 7
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/bank.py",
+      "line": 22
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/bank.py",
+      "line": 35
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/smoke.py",
+      "line": 25
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/supervise.py",
+      "line": 14
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/supervise.py",
+      "line": 20
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/worker.py",
+      "line": 16
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/worker.py",
+      "line": 19
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/worker.py",
+      "line": 91
+    },
+    {
+      "path": "fullstudy/code/tlab-recsys-2026/artifacts/task2-kion/three-head-262k-20261024-r1/worker.py",
+      "line": 146
+    },
+    {
+      "path": "fullstudy/code/tools/build_snapshot.py",
+      "line": 52
+    },
+    {
+      "path": "fullstudy/code/tools/build_snapshot.py",
+      "line": 63
+    },
+    {
+      "path": "fullstudy/code/tools/build_snapshot.py",
+      "line": 66
+    },
+    {
+      "path": "fullstudy/code/tools/build_snapshot.py",
+      "line": 67
+    },
+    {
+      "path": "fullstudy/code/tools/build_snapshot.py",
+      "line": 68
+    },
+    {
+      "path": "fullstudy/code/tools/build_snapshot.py",
+      "line": 69
+    },
+    {
+      "path": "fullstudy/code/tools/build_snapshot.py",
+      "line": 202
+    },
+    {
+      "path": "fullstudy/code-manifest.json",
+      "line": 8
+    },
+    {
+      "path": "fullstudy/code-manifest.json",
+      "line": 21
+    },
+    {
+      "path": "fullstudy/code-manifest.json",
+      "line": 23
+    },
+    {
+      "path": "matched-kl/control/common.py",
+      "line": 13
+    },
+    {
+      "path": "matched-kl/control/common.py",
+      "line": 15
+    },
+    {
+      "path": "matched-kl/control/common.py",
+      "line": 16
+    },
+    {
+      "path": "matched-kl/control/launch.py",
+      "line": 10
+    },
+    {
+      "path": "matched-kl/post_requests.py",
+      "line": 13
+    },
+    {
+      "path": "matched-kl/post_requests.py",
+      "line": 46
+    },
+    {
+      "path": "matched-kl/reports/report-build.py",
+      "line": 86
+    },
+    {
+      "path": "matched-kl/selection-final-r1.json",
+      "line": 4
+    }
+  ],
+  "credential_shape_scan": {
+    "hits": [],
+    "result": "No credential-shaped literal matched selected patterns",
+    "limits": "Pattern scan is not proof of absence of all secrets/personal data. Original Windows username paths are intentionally preserved as provenance. No raw user histories or excluded numerical payloads were read."
+  },
+  "unresolved_portability_gaps": [
+    "Historical control/runtime bootstrap pins the original interpreter path/hash and PAS/ML sites.",
+    "Actor source uses C/D cache/data paths and the preparation route pins an E-drive SQLite store.",
+    "Reward bridge enforces a Windows cp312 native backend and a fresh separate process.",
+    "Matched-KL policy expects historical sibling roots; the preserved tree intentionally uses fullstudy and matched-kl namespaces.",
+    "Namespaced scripts import requires explicit provider path setup.",
+    "Threadpoolctl version is not established by the historical dependency inventory.",
+    "Pinned text encoder/tokenizer, model checkpoints, assembly manifests and large caches/arrays are excluded.",
+    "No clean-machine numerical integration or raw-data/full-training replay is established by this source check."
+  ],
+  "preserved_source_mutations": false
+}

@@ -1,0 +1,250 @@
+{
+  "contract": "kion-actual-packaged-replay-acceptance-v1",
+  "state": "passed",
+  "scope": "Actual current-machine packaged-source/compact-evidence replay only; no clean-machine model inference or full retraining claim.",
+  "bundle_manifest": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/code-manifest.json",
+    "sha256": "6b054627fdcfd2ee205df2e3871d8da47e6d3d7cbdf47a58897968182f2e4085",
+    "bytes": 109280
+  },
+  "code_member_count": 261,
+  "accepted_png_count": 13,
+  "all_13_png_byte_identical_to_visually_accepted_primary": true,
+  "visual_acceptance": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/review/visual-final.json",
+    "sha256": "38ad8452c6c75a881534ea36774ecad60173b38a3cd356822ce6da3d6bd5a967",
+    "bytes": 9622
+  },
+  "results": [
+    {
+      "mode": "screen",
+      "native_receipt": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/operations/replay-screen-r1/receipt.json",
+        "sha256": "481d83a992e1ddf8fa2e0c2624c5bb43fcaf191523edfedac58818b3a03b712f",
+        "bytes": 1151
+      },
+      "replay": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/screen/replay.json",
+        "sha256": "f25594a23065f617abf7d3ecf73f188aeba26e14a798853fbf5e110d3b684ac5",
+        "bytes": 5310
+      },
+      "versions": {
+        "numpy": "2.2.6",
+        "matplotlib": "3.11.2"
+      },
+      "png_pairs": [
+        {
+          "original": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures-v3/screen/01-checkpoint-tradeoff.png",
+            "sha256": "c045fd04b68d92114a033f6d1cda0688562fff6453963dcdbe58c12614ed7e59",
+            "bytes": 185386
+          },
+          "replay": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/screen/01-checkpoint-tradeoff.png",
+            "sha256": "c045fd04b68d92114a033f6d1cda0688562fff6453963dcdbe58c12614ed7e59",
+            "bytes": 185386
+          },
+          "byte_identical": true
+        },
+        {
+          "original": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures-v3/screen/02-matched-comparison.png",
+            "sha256": "c460020a24109bec657e573ff3226ecf7fdcfb1025cb175b87133554fe8def66",
+            "bytes": 201232
+          },
+          "replay": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/screen/02-matched-comparison.png",
+            "sha256": "c460020a24109bec657e573ff3226ecf7fdcfb1025cb175b87133554fe8def66",
+            "bytes": 201232
+          },
+          "byte_identical": true
+        },
+        {
+          "original": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures-v3/screen/03-paired-uncertainty.png",
+            "sha256": "00c254e33a7cff08bcbca3bb14af94b94e8c8ebd5d8c63c5b209084b631c898e",
+            "bytes": 143468
+          },
+          "replay": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/screen/03-paired-uncertainty.png",
+            "sha256": "00c254e33a7cff08bcbca3bb14af94b94e8c8ebd5d8c63c5b209084b631c898e",
+            "bytes": 143468
+          },
+          "byte_identical": true
+        },
+        {
+          "original": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures-v3/screen/04-exposure-distribution.png",
+            "sha256": "b83a9ab959379c4aa66932b2cbcf1b5e36de513731a731819f2b78cbe96ded1e",
+            "bytes": 331740
+          },
+          "replay": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/screen/04-exposure-distribution.png",
+            "sha256": "b83a9ab959379c4aa66932b2cbcf1b5e36de513731a731819f2b78cbe96ded1e",
+            "bytes": 331740
+          },
+          "byte_identical": true
+        },
+        {
+          "original": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures-v3/screen/05-target-ranks.png",
+            "sha256": "9e9b9a7e5a7f524eb21c38dc2a220064456224d7dc6b4a559fd69688dd891a4e",
+            "bytes": 152857
+          },
+          "replay": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/screen/05-target-ranks.png",
+            "sha256": "9e9b9a7e5a7f524eb21c38dc2a220064456224d7dc6b4a559fd69688dd891a4e",
+            "bytes": 152857
+          },
+          "byte_identical": true
+        },
+        {
+          "original": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures-v3/screen/06-screen-utilities-behavior.png",
+            "sha256": "1f407530ceb157bf0d1be3504fb20214130dcee2a62f23fca8b50635bbfb9ae4",
+            "bytes": 244433
+          },
+          "replay": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/screen/06-screen-utilities-behavior.png",
+            "sha256": "1f407530ceb157bf0d1be3504fb20214130dcee2a62f23fca8b50635bbfb9ae4",
+            "bytes": 244433
+          },
+          "byte_identical": true
+        },
+        {
+          "original": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures-v3/screen/07-item-contributions.png",
+            "sha256": "a376163abbc617abe920ca1007260b299c453444506a6bb226795ef3457e10a3",
+            "bytes": 342182
+          },
+          "replay": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/screen/07-item-contributions.png",
+            "sha256": "a376163abbc617abe920ca1007260b299c453444506a6bb226795ef3457e10a3",
+            "bytes": 342182
+          },
+          "byte_identical": true
+        }
+      ]
+    },
+    {
+      "mode": "full",
+      "native_receipt": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/operations/replay-full-r1/receipt.json",
+        "sha256": "4b3e9c8d94972745721e99f1e0ede8f6f82db6257c8689957f78cb9c0f21ed8e",
+        "bytes": 1148
+      },
+      "replay": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/full/replay.json",
+        "sha256": "77d2ba20b81814539374ff29436dd18cb4b4d26809b0019b29d61f16d1d327ed",
+        "bytes": 4320
+      },
+      "versions": {
+        "numpy": "2.2.6",
+        "matplotlib": "3.11.2"
+      },
+      "png_pairs": [
+        {
+          "original": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures-v3/full/02-matched-comparison.png",
+            "sha256": "0a63b4c12616ff1f9f57bf4b8100b2458de85ba4aadaa1bdf65c0c4f86ae3e94",
+            "bytes": 205458
+          },
+          "replay": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/full/02-matched-comparison.png",
+            "sha256": "0a63b4c12616ff1f9f57bf4b8100b2458de85ba4aadaa1bdf65c0c4f86ae3e94",
+            "bytes": 205458
+          },
+          "byte_identical": true
+        },
+        {
+          "original": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures-v3/full/03-paired-uncertainty.png",
+            "sha256": "706dae27f324f9fd0ad8f929580eb65b90edde118d02f9a3deff9a47a2f19014",
+            "bytes": 141710
+          },
+          "replay": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/full/03-paired-uncertainty.png",
+            "sha256": "706dae27f324f9fd0ad8f929580eb65b90edde118d02f9a3deff9a47a2f19014",
+            "bytes": 141710
+          },
+          "byte_identical": true
+        },
+        {
+          "original": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures-v3/full/04-exposure-distribution.png",
+            "sha256": "349b12c25cb4679dead55a14a1e91fb2935e1685c7935d79c7bb0bb4ed4b3c4d",
+            "bytes": 324647
+          },
+          "replay": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/full/04-exposure-distribution.png",
+            "sha256": "349b12c25cb4679dead55a14a1e91fb2935e1685c7935d79c7bb0bb4ed4b3c4d",
+            "bytes": 324647
+          },
+          "byte_identical": true
+        },
+        {
+          "original": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures-v3/full/05-target-ranks.png",
+            "sha256": "5147e592090718d3ca38381cf95937008eb575a26f683f1fe1d57d8a9b96802c",
+            "bytes": 163924
+          },
+          "replay": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/full/05-target-ranks.png",
+            "sha256": "5147e592090718d3ca38381cf95937008eb575a26f683f1fe1d57d8a9b96802c",
+            "bytes": 163924
+          },
+          "byte_identical": true
+        }
+      ]
+    },
+    {
+      "mode": "rollout",
+      "native_receipt": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/operations/replay-rollout-r1/receipt.json",
+        "sha256": "b9e8e52ca178266b5c421586bebd73d607095d111e65eba8382a97d5993677f8",
+        "bytes": 1153
+      },
+      "replay": {
+        "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/rollout/replay.json",
+        "sha256": "8e1a803a24077253c23fb8665e5774705e5001f95eddc7af915eb0543388434c",
+        "bytes": 3156
+      },
+      "versions": {
+        "numpy": "2.2.6",
+        "matplotlib": "3.11.2"
+      },
+      "png_pairs": [
+        {
+          "original": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures/rollout/08-five-step-panel.png",
+            "sha256": "189973f37121ee28145c0d0a56b5a6c8c49a51f4a7066910bb2763abae9fbc71",
+            "bytes": 449323
+          },
+          "replay": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/rollout/08-five-step-panel.png",
+            "sha256": "189973f37121ee28145c0d0a56b5a6c8c49a51f4a7066910bb2763abae9fbc71",
+            "bytes": 449323
+          },
+          "byte_identical": true
+        },
+        {
+          "original": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures/rollout/08b-five-step-behavior.png",
+            "sha256": "62aeda935a319cbeb6f506c2e8c0d42d4530bcd33cf2ceb13f4b6ffd7ad0ff90",
+            "bytes": 436687
+          },
+          "replay": {
+            "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/replay-figures/rollout/08b-five-step-behavior.png",
+            "sha256": "62aeda935a319cbeb6f506c2e8c0d42d4530bcd33cf2ceb13f4b6ffd7ad0ff90",
+            "bytes": 436687
+          },
+          "byte_identical": true
+        }
+      ]
+    }
+  ],
+  "supervised_updates": 0,
+  "new_rm_fits": 0,
+  "rl_updates": 0,
+  "final_test_reads": 0
+}

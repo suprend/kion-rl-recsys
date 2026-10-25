@@ -1,0 +1,79 @@
+{
+  "contract": "pdf-renderer-header-contrast-review-v1",
+  "reviewer": "/root/submit_pdf_builder/source_review",
+  "state": "passed-focused-source-and-synthetic-review",
+  "mode": "independent-read-only",
+  "previous_receipt": "review/pdf-renderer-source.json",
+  "scope": [
+    "reports/render_report.py",
+    "reports/test_render_report.py"
+  ],
+  "open_findings": [],
+  "repaired_issue": {
+    "severity": "P2",
+    "title": "Let table-header inline-code spans inherit the header text color",
+    "renderer_locations": [
+      {
+        "start": 360,
+        "end": 393
+      },
+      {
+        "start": 503,
+        "end": 507
+      }
+    ],
+    "test_location": {
+      "path": "reports/test_render_report.py",
+      "start": 165,
+      "end": 186
+    },
+    "cause": "The prior inline-code markup forced #40546A even inside white table headers on #234B65 backgrounds.",
+    "reviewed_change": "inline now has a default #40546A code_color and omits only the code-span color attribute when code_color is None. Both recursive inline calls propagate that setting. Only the table header path selects None; body cells retain the default.",
+    "test_evidence": "The regression builds a synthetic table and reparses the actual emitted header/body Paragraph markup and styles. Effective G_comp and nested-bold G_res header fragments are white; matching body fragments remain #40546A.",
+    "result": "Resolved within the focused source scope."
+  },
+  "minimality": {
+    "assessment": "The inspected changes affect inline-code color selection and its table-header call site plus one synthetic regression. No formula, scientific-data, plot, margin, table-width, font-size or pagination change is present in the reviewed paths.",
+    "verification_boundary": "Review compared current source with the prior source text reviewed in this session. A stored byte-for-byte historical source snapshot was not available; the recorded old and new hashes identify the two revisions."
+  },
+  "tests": {
+    "reportlab_version": "4.4.9",
+    "command": ".\\pas.ps1 python -B -c: add bundled ReportLab dependency path; unittest.defaultTestLoader.discover(reports, pattern=test_render_report.py); TextTestRunner(verbosity=2)",
+    "dependency_path": "C:/Users/Михаил/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/Lib/site-packages",
+    "exit_code": 0,
+    "discovered": 18,
+    "passed": 18,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0,
+    "synthetic_only": true,
+    "pdf_serialized": false,
+    "note": "The complete prior seventeen checks still pass together with the header/body effective-color regression. Temporary fixtures contain only synthetic inputs. No build on a fresh PDF output was invoked."
+  },
+  "freshness": {
+    "previous_reviewed_sha256": {
+      "reports/render_report.py": "a6f7a020becba2aec0b697accfae519c19765bad9cd7b7d5f60c646d91e880ed",
+      "reports/test_render_report.py": "fbd5626eb3089f75be7f6c0eb93396e3918814bb879bf7b14e1b6963b6944552"
+    },
+    "before_sha256": {
+      "reports/render_report.py": "dfbffc0e48cb11951038e714b7a577f165730255299fe3baf7f64d6016ef2c3c",
+      "reports/test_render_report.py": "78b4ad43f1acc322e056967a5923910f652e5b3e602c7b86af57977262d354ca"
+    },
+    "after_sha256": {
+      "reports/render_report.py": "dfbffc0e48cb11951038e714b7a577f165730255299fe3baf7f64d6016ef2c3c",
+      "reports/test_render_report.py": "78b4ad43f1acc322e056967a5923910f652e5b3e602c7b86af57977262d354ca"
+    },
+    "unchanged_layout_note_sha256": "3722a8ac1d28d4f592d9f8026ea7bc5a811cfb5b2d80ec1ef7feaa33d105b16a"
+  },
+  "scope_boundaries": {
+    "only_receipt_written": "review/pdf-renderer-header-contrast.json",
+    "reviewer_source_edits": false,
+    "report_markdown_or_image_edits": false,
+    "scientific_arrays_or_models_read": false,
+    "scientific_or_native_jobs": false,
+    "pdf_created_or_modified": false,
+    "network_or_paid_operations": false,
+    "actual_page_visual_review": false
+  },
+  "overall_assessment": "No supported open defect was found in this focused repair. Root must rebuild a fresh actual PDF and recheck the rendered table-header contrast and pages; this receipt does not establish actual PDF visual acceptance."
+}

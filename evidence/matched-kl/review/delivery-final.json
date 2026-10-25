@@ -1,0 +1,104 @@
+{
+  "contract": "independent-final-delivery-audit-v1",
+  "created_utc": "2026-10-25T06:42:59.527982+00:00",
+  "reviewer": "/root/kl_report_review",
+  "state": "passed",
+  "delivery_pass": true,
+  "findings": [],
+  "archive": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/delivery/build-r1/kion-task2-kl-seeds-20261025.zip",
+    "bytes": 6210324,
+    "sha256": "2d182621c468f7aadc8cfdbbac4e19a4f630096b81ed7fca73e94f462b1371b3",
+    "member_count": 148
+  },
+  "selection": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/delivery/selection-final-r1.json",
+    "sha256": "801c0337ab63aead24b6fa1b13500d18b5d3ce0b4d7e55138f3ff897d8883c8b",
+    "preapproval_sha256": "2cbf7dc54b0ad66feb2cc9afebedf57abdcfc7ede5141ce91aeda3d073a1c244",
+    "only_approval_fields_changed": true,
+    "payload_count": 146,
+    "payload_bytes": 8014022
+  },
+  "manifest": {
+    "member": "PACKAGE-MANIFEST.json",
+    "sha256": "baab583f04a193035cf86b8d009829fd69549088cd20ec8b5876327cb8b01d6e",
+    "listed_members_except_self": 147,
+    "exact_membership_pass": true,
+    "every_member_size_and_SHA256_pass": true,
+    "outer_CRC_pass": true
+  },
+  "history": {
+    "member": "historical/kion-task2-research-20261025.zip",
+    "sha256": "1fc9f26a3078465b430bcaa7da1454517577b532a0711234cf4dab154efc1a59",
+    "immutable_F_and_Z_pin_match": true,
+    "nested_members": 353,
+    "nested_CRC_pass": true,
+    "no_model_array_or_CSV_suffix_members": true
+  },
+  "required_materials": [
+    "fit-ledger.json",
+    "historical/kion-task2-research-20261025.zip",
+    "protocols/frozen-beta.json",
+    "protocols/matching.json",
+    "protocols/preregistration.json",
+    "reports/figures-r1/manifest.json",
+    "reports/figures-r1/train-kl-and-map.png",
+    "reports/figures-r1/train-kl-and-map.svg",
+    "reports/reader-r1.pdf",
+    "reports/reader.md",
+    "reports/report-build.py",
+    "reports/reproduce.md",
+    "reports/technical.md",
+    "review/numeric-full4096.json",
+    "review/numeric-screen.json",
+    "review/report-final.json",
+    "review/results-science.json",
+    "review/visual-final.json"
+  ],
+  "review_and_proof_bindings": {
+    "source_science_pass": true,
+    "visual_figure_and_all3PDFpages_pass": true,
+    "results_science_pass": true,
+    "numeric_full_and_screen_verified": true,
+    "numeric_bootstrap_independently_resampled": false,
+    "all18_operations_succeeded_and_quiescent": true,
+    "PDF_sha256": "c469c2323fb484484741db3eb87f8f732e7c1a8dc020b25e9b43c73a4f088282"
+  },
+  "source_helper_review": {
+    "member": "delivery/package.py",
+    "sha256": "0f4d22f4a0caf19fb73bd35a27c3e265f5b2861c89a2343b8492da21d53a93af",
+    "inspected_lines": [
+      "31-59 explicit required/optional member constants",
+      "94-138 member/source boundaries and payload pins",
+      "153-194 bounded operation/review-name derivation",
+      "325-337 exact frozen-current selection validation",
+      "340-396 exclusive fresh archive, manifest, CRC, all-member readback, source freshness and false numerical-replay receipt"
+    ],
+    "conclusion": "No supported defect found in the current helper allowlist/manifest/build checks; this audit independently verified actual output rather than relying on an absent optional prior review file."
+  },
+  "scope_and_privacy": {
+    "scope": "Level A compact evidence/report rebuild; unchanged historical support/code ZIP. Not portable numerical ML replay. Absolute request pins are provenance only.",
+    "no_new_models_arrays_raw_datasets_or_perquery_ID_payloads": true,
+    "only_followup_CSVs": "Two aggregate paired-metrics tables with fixed aggregate header, no user/item/target ID columns.",
+    "large_JSON_primitive_lists": "Request train_argv provenance vectors; no embedded user/item/target ID-list data found in preapproval scan.",
+    "historical_scope": "Nested unchanged support/code archive; its own historical scope is preserved.",
+    "relative_markdown_links_closed": 34,
+    "unresolved_relative_markdown_links": [],
+    "absolute_paths_and_PDF_file_URIs": "Explicit original-machine provenance/dependencies; PDF links may need rebuild after relocation.",
+    "numerical_replay_verified": false
+  },
+  "checks_executed": [
+    "Standard-library-only PAS python -B read-only inspection; no producer imports.",
+    "Verified root-approved selection differs from independently reviewed freeze only by state/root_review.",
+    "Read all148 ZIP members; checked duplicate/path safety, outer CRC, exact membership,147 manifest record sizes/SHA256, actual source hashes and archive freshness.",
+    "Verified nested historical SHA256 and all353 nested CRCs without unpacking or executing.",
+    "Checked included report/science/visual/numeric receipts, source/PDF/proof hashes and all18 successful/quiescent operation metadata.",
+    "Independently resolved34 relative Markdown links outside fenced code against actual ZIP membership."
+  ],
+  "limitations": [
+    "No model/array/raw-data payload was opened; no numerical replay, scoring/ranking, bootstrap resampling, rendering, producer job, child process from audit code, upload, publish or Git action was performed. Only the authorized PAS Python stdlib audit ran.",
+    "CRC/hash equality establishes archive integrity and binding, not scientific reproduction.",
+    "Relative Markdown link closure excludes anchors and code-path mentions; external references and absolute request paths remain explicitly documented dependencies.",
+    "This new postbuild audit is a sidecar receipt; it is intentionally not a member of the already frozen archive."
+  ]
+}

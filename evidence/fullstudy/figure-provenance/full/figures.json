@@ -1,0 +1,51 @@
+{
+  "contract": "kion-scientific3-figures-v1",
+  "state": "completed",
+  "stage": "full4096",
+  "rows": 4096,
+  "figures": [
+    {
+      "file": "02-matched-comparison",
+      "title": "Три политики на одних и тех же запросах",
+      "caption": "reused development4096; 4096 запросов, 4035 пользователей; natural1024. C и latest1000 двух RL; без seen-filter и target injection; unknown/off-pool включены в знаменатель. Фиксированный β, не matched-KL; исследовательский результат, не причинный эффект.",
+      "formats": [
+        "svg",
+        "png"
+      ]
+    },
+    {
+      "file": "03-paired-uncertainty",
+      "title": "Насколько устойчивы парные различия",
+      "caption": "reused development4096; 4096 запросов, 4035 пользователей; natural1024. C и latest1000 двух RL; без seen-filter и target injection; unknown/off-pool включены в знаменатель. Фиксированный β, не matched-KL; исследовательский результат, не причинный эффект. Bootstrap: 2000 общих resamples пользователей, seed20261024; query-weighted ratio; процентильные CI без поправки на множественные сравнения. Интервалы условны на единственные fitted checkpoints.",
+      "formats": [
+        "svg",
+        "png"
+      ]
+    },
+    {
+      "file": "04-exposure-distribution",
+      "title": "Как распределяется каталог рекомендаций",
+      "caption": "reused development4096; 4096 запросов, 4035 пользователей; natural1024. C и latest1000 двух RL; без seen-filter и target injection; unknown/off-pool включены в знаменатель. Фиксированный β, не matched-KL; исследовательский результат, не причинный эффект. Кривые слева сортируют фильмы отдельно в каждой политике; bars справа сопоставляют одинаковые raw IDs. Равный вес пользователей означает вес каждого его запроса 1 / число запросов пользователя.",
+      "formats": [
+        "svg",
+        "png"
+      ]
+    },
+    {
+      "file": "05-target-ranks",
+      "title": "Изменения рангов с полным знаменателем",
+      "caption": "reused development4096; 4096 запросов, 4035 пользователей; natural1024. C и latest1000 двух RL; без seen-filter и target injection; unknown/off-pool включены в знаменатель. Фиксированный β, не matched-KL; исследовательский результат, не причинный эффект. Unknown и off-pool показаны отдельно; ранги 11–1024 имеют нулевой RR@10, но сохраняют полный target rank.",
+      "formats": [
+        "svg",
+        "png"
+      ]
+    }
+  ],
+  "requires_visual_QA": true,
+  "source": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_results.py",
+    "sha256": "f6be0387a947dd33f065deae54fe98d14881e30271040389d743602afcd024f4"
+  },
+  "aggregate_canonical_sha256": "44d9f5e3d07855995e2c8f143d98be4eec827df517366472eb8362eb6b9c538b",
+  "matplotlib_version": "3.11.2"
+}

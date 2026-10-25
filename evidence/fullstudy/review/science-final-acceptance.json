@@ -1,0 +1,75 @@
+{
+  "review_type":"independent final bounded scientific-claims and actual Level-A delivery audit",
+  "status":"PASS_FINAL_SCIENCE_AND_CURRENT_MACHINE_LEVEL_A",
+  "blocking_findings":[],
+  "path_base":"D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1",
+  "bindings":[
+    {"path":"review/portable-replay-acceptance.json","sha256":"6e6944828ffa6b32d7db462e5ae5a5382fbc4f770a2fd46831cd7b9d73503d6d","actual_hash_verified":true},
+    {"path":"reports/code-manifest.json","sha256":"6b054627fdcfd2ee205df2e3871d8da47e6d3d7cbdf47a58897968182f2e4085","actual_hash_verified":true},
+    {"path":"review/visual-final.json","sha256":"38ad8452c6c75a881534ea36774ecad60173b38a3cd356822ce6da3d6bd5a967","actual_hash_verified":true},
+    {"path":"reports/README.md","sha256":"9d471eb6b8f5ad86ab0b14974323e4e951e6107609a74e5f66cb8167e77ee354","actual_hash_verified":true},
+    {"path":"reports/reproduce.md","sha256":"4af1b57f578c0a3305def5b3bf8ccd57e51ae66349d08a0177e04f02c94a3d3c","actual_hash_verified":true},
+    {"path":"reports/limitations.md","sha256":"eb9bf77056802f20a90254f1a9f08e4a143982ff762f5a1f4d1548ca6e60dfa7","actual_hash_verified":true},
+    {"path":"operations/replay-screen-r1/receipt.json","sha256":"481d83a992e1ddf8fa2e0c2624c5bb43fcaf191523edfedac58818b3a03b712f","actual_hash_verified":true},
+    {"path":"operations/replay-full-r1/receipt.json","sha256":"4b3e9c8d94972745721e99f1e0ede8f6f82db6257c8689957f78cb9c0f21ed8e","actual_hash_verified":true},
+    {"path":"operations/replay-rollout-r1/receipt.json","sha256":"b9e8e52ca178266b5c421586bebd73d607095d111e65eba8382a97d5993677f8","actual_hash_verified":true},
+    {"path":"reports/replay-figures/screen/replay.json","sha256":"f25594a23065f617abf7d3ecf73f188aeba26e14a798853fbf5e110d3b684ac5","actual_hash_verified":true},
+    {"path":"reports/replay-figures/full/replay.json","sha256":"77d2ba20b81814539374ff29436dd18cb4b4d26809b0019b29d61f16d1d327ed","actual_hash_verified":true},
+    {"path":"reports/replay-figures/rollout/replay.json","sha256":"8e1a803a24077253c23fb8665e5774705e5001f95eddc7af915eb0543388434c","actual_hash_verified":true}
+  ],
+  "independent_package_check":{
+    "members_hashed_and_size_checked":261,
+    "total_bytes":6553172,
+    "python_members":237,
+    "all_member_paths_unique_and_within_reports_code":true,
+    "all_actual_member_hashes_equal_manifest":true,
+    "manifest_totals_match":true,
+    "execution_boundary":"This reviewer independently read/hash-checked every packaged member but imported/executed none. Native replay workers separately ran the stdlib verifier,including237 Python syntax parses and the invented3-query arithmetic fixture.",
+    "worker_double_verification":"Inspected frozen replay harness verifies the entire package before render and again after render,requiring equal verifier results and unchanged own source/manifest/data. All3 completed worker results record261 verified files,6553172 bytes and237 parsed Python files. This is actual packaged-code verification,not model retraining."
+  },
+  "actual_level_A_acceptance":{
+    "screen":{"state":"succeeded","exit_code":0,"cleanup_quiescent":true,"elapsed_seconds":9.578000000095926,"PNG_count":7},
+    "full":{"state":"succeeded","exit_code":0,"cleanup_quiescent":true,"elapsed_seconds":7.484000000054948,"PNG_count":4},
+    "rollout":{"state":"succeeded","exit_code":0,"cleanup_quiescent":true,"elapsed_seconds":6.405999999959022,"PNG_count":2},
+    "versions":{"NumPy":"2.2.6","Matplotlib":"3.11.2"},
+    "bindings_checked":"All3 native receipts/request SHA/replay JSON pins,shared manifest,packaged renderers/dependencies/verifier,harness,compact aggregate inputs,available label maps and output figure indices freshly match actual files.7 reader-facing copied replay/native/acceptance evidence files also match exact originals.",
+    "primary_and_replay_PNG_pairs_independently_hashed":13,
+    "all_26_actual_PNG_hashes_match_pair_descriptors":true,
+    "all_13_replay_PNGs_byte_identical_to_primary":true,
+    "visual_binding":"All13 primary PNG hashes freshly match independent visual-final pass. That visual reviewer reopened4 changed final images and inherited9 by exact byte identity from prior personal inspection. This reviewer did not perform a new visual inspection;byte-identical replay PNGs inherit the accepted primary pixels.",
+    "no_SVG_byte_identity_claim":true,
+    "scope":"Actual reconstruction of accepted analytical figures from packaged source and compact saved screen/full/rollout aggregates on the current Windows machine. This is Level A. It does not recompute real user-level model predictions,load model weights,run a clean-machine inference environment,or repeat raw-data training. Other fonts/render libraries may change image bytes on another machine."
+  },
+  "final_master_scientific_claim_acceptance":{
+    "documents_read":"Current README scientific narrative was read from problem/data/model/RM/protocol through both utilities,full paired intervals,exposure,decomposition,rollout cases and retention/coverage. Updated reproduction status and limitation sections were read;their exact final hashes are bound above.",
+    "actual_experiments":"Report distinguishes old completed completion1000 and one additional actual residual1000 from original C;fixed latest1000 remains scientific endpoint and engineering selected0 remains separate. Frozen E2/RM and head-only H1 scope are explicit.",
+    "reward_semantics":"Completion,residual and frozen observed item prior are kept distinct. Residual support/raw-ID/nondegeneracy/scale evidence is actual and accepted. Linear proxy decomposition is algebraic,not causal mechanism or personalization proof;mean completion prior is distinguished from strict7d popularity.",
+    "scale_identification":"About0.5x residual advantage RMS and much smaller actual KL are explicitly reported. Fixed beta is not described as matched KL,matched update strength or an isolated test of item-bias removal.",
+    "cohorts_and_denominators":"Screen256 carries RM/utility/support/KL evidence;full4096 carries relevance/exposure. Same natural1024 arms retain unknown/offpool targets as zero contributions in the full denominator. Report does not relabel screen utilities as n4096.",
+    "uncertainty":"Paired query-weighted user-cluster2000,seed,percentile95%,common draws and unadjusted9-comparison scope are explicit. Completion-C MAP interval is correctly described as barely below0 on reused development;residual-C and residual-completion MAP intervals include0. No equivalence or robust superiority claim is made,and NDCG/Recall exploratory intervals are not generalized to MAP.",
+    "concentration":"Lower residual top1 peak is explicitly balanced against higher HHI and fewer unique items relative to C. No blanket diversity improvement or universal one-item collapse claim is made.",
+    "five_step":"Actual192 trajectories/960 steps and predefined first3 cases are distinguished from H1 training. Dynamic GPT prefix and fixed natural pool/RM/raw/user/history/clock s0 are explicit. Conditional KL uses C on the same actor prefix/mask. No-repeat uniqueness is mechanical;unsupported null returns and subset denominators are retained;no synthetic observed outcomes or population inference are invented.",
+    "long_term":"Retention discussion explains aggregate last-watch limitations,exposure/session logs,censoring/overlap and need for stronger online evidence. No new retention RM or causal outcome is claimed.",
+    "honest_failures_and_reproduction":"Failed first screen postprocess remains recorded;versioned precision repair is separate and does not rewrite full producer or train again. Old aborted full stage is not used as a result. Current README/reproduce/limitations now consistently accept local Level A while clearly leaving clean-machine B/C unexecuted.",
+    "overall":"Scientific conclusions and bounded completion/coverage claims are supported by the previously independently accepted actual stage receipts and current reader-facing artifacts. Negative RL relevance/tradeoff is a valid completed research result;positive gains are not required. No material unsupported result claim found."
+  },
+  "prior_actual_science_audits":[
+    "science-protocol.json",
+    "science-utility-actual.json",
+    "science-residual-training-actual.json",
+    "science-screen-actual.json",
+    "science-full-actual.json",
+    "science-full-analysis-actual.json",
+    "science-rollout-actual.json",
+    "science-screen-analysis-actual.json",
+    "science-rollout-summary-actual.json"
+  ],
+  "remaining_limits":[
+    "Level B frozen-model inference on a clean machine and Level C full training from raw were not executed and remain outside this acceptance. Missing weights/private raw/feature inputs are not supplied by compact evidence.",
+    "Historical E2/supervised/RM/EDA numbers are explicitly saved historical evidence in the report;this final bounded audit does not reopen their model/array/raw payloads or repeat their experiments.",
+    "No new literature investigation or independent revalidation of every historical external-source claim was performed in this final package audit;the report provides primary-source references and their reviewed scope.",
+    "One seed,reused development,observational calibrated RM,retrospective metadata and fixed-pool/frozen-s0 rollout limit causal,online,retention and generalization conclusions.",
+    "No model/array/NPZ/checkpoint load,NumPy/Torch import,render,bootstrap/training rerun,provider/GPU job,new experiment,publication or submission was performed by this reviewer. File hashes and compact arithmetic/metadata were checked read-only.",
+    "Acceptance is bound to the exact current document/package/result hashes above;scientific or source changes require a renewed affected-scope review."
+  ]
+}

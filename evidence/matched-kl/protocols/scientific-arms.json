@@ -1,0 +1,92 @@
+{
+  "completion-20261024": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/head-1000.pt",
+    "sha256": "436d735d67fd861e6b925719b9e3597582ec405eed1b13ede3db3671e1ce37b7",
+    "step": 1000,
+    "seed": 20261024,
+    "utility": "completion",
+    "training": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/rl-r2/training.json",
+      "sha256": "cfdfc225be553305a3d6a8af7c5419227255b44827ccf7e3760a86b3e5dbf8bf"
+    },
+    "seed_provenance": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/preregistration.json",
+      "sha256": "025061343a0314691dfb6064063d7e18c74662ea62ab285ec423d374037538ac"
+    }
+  },
+  "residual-20261024": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot2/head-1000.pt",
+    "sha256": "c64dccd1a28d9177611d6c383d1b27adb0565355f7cd67d1e3502b39f91cc4d8",
+    "step": 1000,
+    "seed": 20261024,
+    "utility": "residual",
+    "training": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/pilot2/training.json",
+      "sha256": "6971032b549fe11c15a085d679127fb8dd2a31e7c86d06018757bfa079bde000"
+    },
+    "loader_module": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/policy.py",
+      "sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5"
+    }
+  },
+  "completion-20261025": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261025/head-1000.pt",
+    "sha256": "8f079caae520b60fe8be65342f6a7deb927ae8ca742ac7ce829d086e261d41ba",
+    "step": 1000,
+    "seed": 20261025,
+    "utility": "completion",
+    "training": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261025/training.json",
+      "sha256": "be0bfe159c641d97f2018c34e1382757255fbb7c715f0a55d1fcaee00082e47e"
+    },
+    "loader_module": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/policy.py",
+      "sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5"
+    }
+  },
+  "residual-20261025": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261025/head-1000.pt",
+    "sha256": "aef66d2d7d10bb4e2431f1c495ea2f2d34125bc2045e5a89944457cbc07c0cb8",
+    "step": 1000,
+    "seed": 20261025,
+    "utility": "residual",
+    "training": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261025/training.json",
+      "sha256": "bbc1a290a6aede108544d7fa65f94cc253c52db0cf9fec94a21b967d45bbf4e8"
+    },
+    "loader_module": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/policy.py",
+      "sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5"
+    }
+  },
+  "completion-20261026": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261026/head-1000.pt",
+    "sha256": "2b323c60b672a19439adade769eea01f8eb535033de859cd248d911d09cba822",
+    "step": 1000,
+    "seed": 20261026,
+    "utility": "completion",
+    "training": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/completion-20261026/training.json",
+      "sha256": "1840b9516f1c11451f2583a4adf211fb11f4dea41686829506abdf7573056d28"
+    },
+    "loader_module": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/policy.py",
+      "sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5"
+    }
+  },
+  "residual-20261026": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261026/head-1000.pt",
+    "sha256": "1e3b26461b9fb6c6233c97ba72d791234d4c3f3f00c4a5546a934044621eca1b",
+    "step": 1000,
+    "seed": 20261026,
+    "utility": "residual",
+    "training": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/residual-20261026/training.json",
+      "sha256": "1aa61a1e8cb5adb30368911447eb21b17a2faa05fa114a5b60790dfc60ed04f9"
+    },
+    "loader_module": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/policy.py",
+      "sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5"
+    }
+  }
+}

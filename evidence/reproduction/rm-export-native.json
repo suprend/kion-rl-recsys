@@ -1,0 +1,35 @@
+{
+  "name": "export-rm-r2",
+  "state": "succeeded",
+  "started_utc": "2026-10-25T07:56:21.323460+00:00",
+  "request_sha256": "38ebb9f9064a2245860f13698c707c10a507d5f81f89dc10235e6fbad85f58a9",
+  "argv": [
+    "C:/Users/Михаил/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "-B",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/control/worker.py",
+    "--request",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/submission-20261025-r1/request-export-rm-r2.json",
+    "--request-sha256",
+    "38ebb9f9064a2245860f13698c707c10a507d5f81f89dc10235e6fbad85f58a9"
+  ],
+  "maximum_seconds": 480,
+  "deadline_utc": "2026-10-25T08:00:47.400159+00:00",
+  "cap_gib": 8,
+  "reserve_gib": 2,
+  "cpu_affinity": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "worker_pid": 180660,
+  "exit_code": 0,
+  "initial_available_bytes": 12528926720,
+  "minimum_available_bytes": 10973937664,
+  "peak_rss_bytes": 1801408512,
+  "peak_private_bytes": 1835814912,
+  "cleanup_quiescent": true,
+  "idle_sleep_prevention_while_owned": true,
+  "finished_utc": "2026-10-25T07:58:34.774397+00:00",
+  "elapsed_seconds": 133.4529999999795
+}

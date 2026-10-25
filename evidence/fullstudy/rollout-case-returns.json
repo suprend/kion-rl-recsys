@@ -1,0 +1,318 @@
+{
+  "contract": "kion-final25-first3-case-return-export-v1",
+  "source_summary": {
+    "path": "rollout-summary.json",
+    "sha256": "5c2cfc841c643258716862dffc7885566d682dfa94f95cc4578324ac05dbecba"
+  },
+  "source_rollout": {
+    "original_path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/rollout-scientific3-r1.json",
+    "sha256": "67bc5e8ffedc5d2759e0f3b8e6d998a0887e94226ae4a13f5dd021db359137bf",
+    "availability": "Excluded private-prefix payload; no raw histories or user IDs in this export"
+  },
+  "derivation": "First3 predeclared positions in summary request order; greedy/none slates copied from summary, gamma and existing return fields joined by exact position+arm+selection+mask from accepted source rollout; no model or return recomputation",
+  "gamma": 0.9,
+  "records": [
+    {
+      "case": "A",
+      "preselected_screen_position": 253,
+      "arm": "C",
+      "selection": "greedy",
+      "repeat_mask": "none",
+      "items": [
+        {
+          "raw_id": 10440,
+          "title": "Хрустальный"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        }
+      ],
+      "gamma": 0.9,
+      "fixed_completion_proxy_return": 1.758199925544858,
+      "fixed_neutral_proxy_return": 0.41070550742136724,
+      "fixed_neutral_residual_proxy_return": -0.07786142525253198
+    },
+    {
+      "case": "A",
+      "preselected_screen_position": 253,
+      "arm": "RL-completion",
+      "selection": "greedy",
+      "repeat_mask": "none",
+      "items": [
+        {
+          "raw_id": 10440,
+          "title": "Хрустальный"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        }
+      ],
+      "gamma": 0.9,
+      "fixed_completion_proxy_return": 1.758199925544858,
+      "fixed_neutral_proxy_return": 0.41070550742136724,
+      "fixed_neutral_residual_proxy_return": -0.07786142525253198
+    },
+    {
+      "case": "A",
+      "preselected_screen_position": 253,
+      "arm": "RL-residual",
+      "selection": "greedy",
+      "repeat_mask": "none",
+      "items": [
+        {
+          "raw_id": 10440,
+          "title": "Хрустальный"
+        },
+        {
+          "raw_id": 15297,
+          "title": "Клиника счастья"
+        },
+        {
+          "raw_id": 10440,
+          "title": "Хрустальный"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        }
+      ],
+      "gamma": 0.9,
+      "fixed_completion_proxy_return": 1.7017927829653026,
+      "fixed_neutral_proxy_return": 0.35429836484181176,
+      "fixed_neutral_residual_proxy_return": 0.016894484694543223
+    },
+    {
+      "case": "B",
+      "preselected_screen_position": 2,
+      "arm": "C",
+      "selection": "greedy",
+      "repeat_mask": "none",
+      "items": [
+        {
+          "raw_id": 10440,
+          "title": "Хрустальный"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        }
+      ],
+      "gamma": 0.9,
+      "fixed_completion_proxy_return": 2.438045651048422,
+      "fixed_neutral_proxy_return": 0.5275368945443804,
+      "fixed_neutral_residual_proxy_return": 0.07526918671314875
+    },
+    {
+      "case": "B",
+      "preselected_screen_position": 2,
+      "arm": "RL-completion",
+      "selection": "greedy",
+      "repeat_mask": "none",
+      "items": [
+        {
+          "raw_id": 10440,
+          "title": "Хрустальный"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        }
+      ],
+      "gamma": 0.9,
+      "fixed_completion_proxy_return": 2.438045651048422,
+      "fixed_neutral_proxy_return": 0.5275368945443804,
+      "fixed_neutral_residual_proxy_return": 0.07526918671314875
+    },
+    {
+      "case": "B",
+      "preselected_screen_position": 2,
+      "arm": "RL-residual",
+      "selection": "greedy",
+      "repeat_mask": "none",
+      "items": [
+        {
+          "raw_id": 10440,
+          "title": "Хрустальный"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        },
+        {
+          "raw_id": 9728,
+          "title": "Гнев человеческий"
+        }
+      ],
+      "gamma": 0.9,
+      "fixed_completion_proxy_return": 2.438045651048422,
+      "fixed_neutral_proxy_return": 0.5275368945443804,
+      "fixed_neutral_residual_proxy_return": 0.07526918671314875
+    },
+    {
+      "case": "C",
+      "preselected_screen_position": 30,
+      "arm": "C",
+      "selection": "greedy",
+      "repeat_mask": "none",
+      "items": [
+        {
+          "raw_id": 10440,
+          "title": "Хрустальный"
+        },
+        {
+          "raw_id": 15297,
+          "title": "Клиника счастья"
+        },
+        {
+          "raw_id": 10440,
+          "title": "Хрустальный"
+        },
+        {
+          "raw_id": 10440,
+          "title": "Хрустальный"
+        },
+        {
+          "raw_id": 12192,
+          "title": "Фемида видит"
+        }
+      ],
+      "gamma": 0.9,
+      "fixed_completion_proxy_return": 2.0457784116983415,
+      "fixed_neutral_proxy_return": 0.04838728682867438,
+      "fixed_neutral_residual_proxy_return": 0.19297454901279895
+    },
+    {
+      "case": "C",
+      "preselected_screen_position": 30,
+      "arm": "RL-completion",
+      "selection": "greedy",
+      "repeat_mask": "none",
+      "items": [
+        {
+          "raw_id": 10440,
+          "title": "Хрустальный"
+        },
+        {
+          "raw_id": 15297,
+          "title": "Клиника счастья"
+        },
+        {
+          "raw_id": 10440,
+          "title": "Хрустальный"
+        },
+        {
+          "raw_id": 13865,
+          "title": "Девятаев"
+        },
+        {
+          "raw_id": 13865,
+          "title": "Девятаев"
+        }
+      ],
+      "gamma": 0.9,
+      "fixed_completion_proxy_return": 2.543750601196289,
+      "fixed_neutral_proxy_return": 0.5463594763266221,
+      "fixed_neutral_residual_proxy_return": 0.14799701557160216
+    },
+    {
+      "case": "C",
+      "preselected_screen_position": 30,
+      "arm": "RL-residual",
+      "selection": "greedy",
+      "repeat_mask": "none",
+      "items": [
+        {
+          "raw_id": 10440,
+          "title": "Хрустальный"
+        },
+        {
+          "raw_id": 15297,
+          "title": "Клиника счастья"
+        },
+        {
+          "raw_id": 10440,
+          "title": "Хрустальный"
+        },
+        {
+          "raw_id": 10440,
+          "title": "Хрустальный"
+        },
+        {
+          "raw_id": 12192,
+          "title": "Фемида видит"
+        }
+      ],
+      "gamma": 0.9,
+      "fixed_completion_proxy_return": 2.0457784116983415,
+      "fixed_neutral_proxy_return": 0.04838728682867438,
+      "fixed_neutral_residual_proxy_return": 0.19297454901279895
+    }
+  ],
+  "limits": [
+    "n3 descriptive cases;not outcome-selected",
+    "return is discounted fixed-s0 proxy,not actual completion/watchtime",
+    "original users/prefixes excluded"
+  ]
+}

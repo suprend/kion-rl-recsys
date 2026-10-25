@@ -1,0 +1,68 @@
+{
+  "contract": "kion-portable-rm-replay-v1",
+  "states": 4,
+  "candidates_per_state": 1024,
+  "actual_model_prediction": true,
+  "training_updates": 0,
+  "rm_fits": 0,
+  "native_float64_max_abs": 0.0,
+  "historical_float32_exact": true,
+  "support_exact": true,
+  "supported_pairs": 3976,
+  "numpy": "2.5.4",
+  "catboost": "1.2.10",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "scorer_signature": "ee14bc4d7375a4d6978a2e1f476cd795369b45ef4250501b2f5992767e9ed261",
+  "outputs": {
+    "rm_reward64": {
+      "path": "rm_reward64.npy",
+      "sha256": "95067c9bdde44dade0f8ef830c573b29be50ee6938ad13255ec01dec4027d0ab",
+      "bytes": 32896,
+      "dtype": "float64",
+      "shape": [
+        4,
+        1024
+      ]
+    },
+    "rm_reward": {
+      "path": "rm_reward.npy",
+      "sha256": "a2063a4e94715fb7d0deb33137d2c53bdd706e30b9c019a1fd4638f9b87c5b88",
+      "bytes": 16512,
+      "dtype": "float32",
+      "shape": [
+        4,
+        1024
+      ]
+    },
+    "rm_support": {
+      "path": "rm_support.npy",
+      "sha256": "c8f8314d560f2d803ab1a3890bdbacc00fe58bb3369adb7c05fca17a5c75b689",
+      "bytes": 4224,
+      "dtype": "bool",
+      "shape": [
+        4,
+        1024
+      ]
+    },
+    "rm_prior": {
+      "path": "rm_prior.npy",
+      "sha256": "541ab498ac9a9e21d1b866154196fd2cc40c14eaad7eccc60ae5c2ac89d74dbd",
+      "bytes": 32896,
+      "dtype": "float64",
+      "shape": [
+        4,
+        1024
+      ]
+    },
+    "rm_utility": {
+      "path": "rm_utility.npy",
+      "sha256": "6ef073f2216cf9f6167795d2ed48d0a9f42eb41a47cba89d74bc125ce6026477",
+      "bytes": 32896,
+      "dtype": "float64",
+      "shape": [
+        4,
+        1024
+      ]
+    }
+  }
+}

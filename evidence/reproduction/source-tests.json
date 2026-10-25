@@ -1,0 +1,28 @@
+{
+  "state": "passed",
+  "created_utc": "2026-10-25T07:35:40.486875+00:00",
+  "scope": "Root reran actual stdlib synthetic source suites only; no arrays/models/inference/training.",
+  "suites": {
+    "control/test_control.py": 20,
+    "reproduction/test_export_fixture.py": 14,
+    "reproduction/kion_replay/test_core.py": 15,
+    "reproduction/test_rm_portability.py": 8
+  },
+  "total": 57,
+  "exit_codes": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "inputs": {
+    "control/common.py": "bda3cb370668d1264613aa17eb671789f07892d76cf3e746c9875a7a90eb6d26",
+    "reports/reproduction_stage.py": "0b7dab263291e4acc4e5b62f8e688c5dd11b3ccaec98a79f976c1f343d59e1ee",
+    "reproduction/export_fixture.py": "411d912e5f6372029f6e1a47293420f1d276cb29e9fc2c655a59331e655e3c28",
+    "reproduction/export_rm_fixture.py": "3c00b9bb3fbdbaf3c362385d10587ba341c0dc56ede61d5df46b3bd67f911967",
+    "reproduction/kion_replay/gpt.py": "596be64c5c8a7f7cdc779b8f0e10a94a9c59137f8ac8256c8f89e1e20e615a28",
+    "reproduction/kion_replay/cli.py": "031a9bf711c981f416bab96ad6c14afe7af9d9db7740a665ee23903968fc3d26",
+    "reproduction/kion_replay/rm.py": "dc9e2115b508c8d3b528e8eb6e07dcd00a36957156cdd9f5c6b7795d0824abf3"
+  },
+  "actual_ML_replay_pass": false
+}

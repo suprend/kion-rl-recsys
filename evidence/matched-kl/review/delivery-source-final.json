@@ -1,0 +1,46 @@
+{
+  "contract": "kion-delivery-source-final-review-v1",
+  "state": "passed",
+  "reviewer": "independent delivery_review subagent",
+  "reviewed_utc": "2026-10-25T06:40:24.624597+00:00",
+  "scope": "Focused static delivery source/gate review plus frozen selection source-pin and filename checks; not root approval or archive/numerical/PDF verification.",
+  "source_pins": [
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/delivery/package.py",
+      "bytes": 23818,
+      "sha256": "0f4d22f4a0caf19fb73bd35a27c3e265f5b2861c89a2343b8492da21d53a93af"
+    },
+    {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/delivery/DELIVERY.md",
+      "bytes": 7171,
+      "sha256": "9375af3113217c5f11dfea994e820122ffaabdbcb9a426cb3b122532f956ab0f"
+    }
+  ],
+  "selection": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/delivery/selection-final-r1.json",
+    "bytes": 30939,
+    "sha256": "2cbf7dc54b0ad66feb2cc9afebedf57abdcfc7ede5141ce91aeda3d073a1c244",
+    "state_observed": "frozen-awaiting-root-approval",
+    "member_count_observed": 146
+  },
+  "findings": [],
+  "checks": {
+    "source_hashes_match_previously_independently_reviewed_versions": true,
+    "frozen_selection_source_pins_match_current_bytes_and_hashes": true,
+    "required_optional_disjoint_and_selected_required_paths_present": true,
+    "results_science_optional_visual_final_required": true,
+    "selected_filenames_fit_bounded_allowlist_patterns": true,
+    "stdlib_only_imports_ast_checked": true,
+    "approval_gate_and_all_canonical_field_comparison": "Inspected statically; exact approval state/root_review required and all canonical fields except state compared against current selection.",
+    "fresh_zip_integrity_implementation": "Inspected statically: exclusive creation, fixed order/timestamps, CRC test, every-member full readback and SHA-256, source/selection stability rechecks.",
+    "historical_sha_constant_matches_required_pin": true,
+    "receipt_excluded_from_frozen_selection": true
+  },
+  "limitations": [
+    "Did not call validate_selection, check, draft, freeze or build; did not create or read a ZIP.",
+    "Did not reread or rehash the other selected payload files; root performed that separate check.",
+    "Did not perform numerical, model, raw-data or CSV reads, factory execution, historical binary verification, PDF rendering or visual QA.",
+    "Did not recompute Markdown-link closure or inspect numerical/visual receipt findings; selection metadata and root checks are separate evidence.",
+    "The observed selection awaits root approval. This receipt records static source review only."
+  ]
+}

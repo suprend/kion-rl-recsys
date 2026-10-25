@@ -1,0 +1,222 @@
+{
+  "contract": "kion-unified-submission-science-final-v1",
+  "state": "passed",
+  "reviewer": "submit_science_review",
+  "review_mode": "Independent read-only scientific claim/evidence review; author and numerical executor were different agents",
+  "created_utc": "2026-10-25T08:18:39.5976785+00:00",
+  "verdict": "No open actionable scientific or reproduction-claim findings in the exact reviewed bytes",
+  "scientific_ready_with_stated_limitations": true,
+  "reviewed_files": [
+    {
+      "path": "reports/REPORT.md",
+      "sha256": "b299b49e09ba574ec346750e4b62c3df06a74d9f03314197172d134e5ae82b21",
+      "bytes": 68067,
+      "lines": 434
+    },
+    {
+      "path": "reports/LIMITATIONS.md",
+      "sha256": "01202596bb0f7584cea95af16c6c65510d6345704a94cb55555d6146b9e5bc12",
+      "bytes": 18373,
+      "lines": 102
+    },
+    {
+      "path": "reproduction/README.md",
+      "sha256": "071530d377f35f809a7c49ffa6c5f2e5e98bd0c74e8f40adfdeaefbcce05fdd0",
+      "bytes": 18878,
+      "lines": 102
+    },
+    {
+      "path": "reproduction/HAND_IN.md",
+      "sha256": "92a37dbb895562e23c38fe92f4b613feafb9a81bc55a03795167ee7d7df179a0",
+      "bytes": 7641,
+      "lines": 54
+    },
+    {
+      "path": "reproduction/INPUTS.md",
+      "sha256": "4e47a8fd8492ec0abfc55a8f1d466997f6279ecdde0716d1be2d47cccf5abdcd",
+      "bytes": 11781,
+      "lines": 67
+    },
+    {
+      "path": "reproduction/ENVIRONMENTS.md",
+      "sha256": "d5392f1d8ecd90c162ab3089b7b6d9c79e81a5d2ab0fcbcd67551c142a9ff9fa",
+      "bytes": 7503,
+      "lines": 51
+    },
+    {
+      "path": "evidence/reproduction/INDEX.json",
+      "sha256": "0a478130fa43a8a8b4c1aa9e5480395683dbac0386fcf61166fb3b33d905d3c1",
+      "bytes": 3424,
+      "lines": 90
+    }
+  ],
+  "author_freeze": "REPORT b299b49e / LIMITATIONS 01202596; complete initial report read, focused final reproduction revision reread, all reviewed hashes freshly rechecked",
+  "active_findings": [],
+  "resolved_findings": [
+    {
+      "id": "S1",
+      "priority": "P2",
+      "original_location": "reports/REPORT.md:375",
+      "issue": "Anonymous fixture claim overstated removal of source user IDs",
+      "resolution": "REPORT:375/391 and LIMITATIONS:92 now disclose transformed histories/user vectors and no anonymity guarantee; actual actor receipt scope uses the same accurate wording",
+      "verified": true
+    },
+    {
+      "id": "S2",
+      "priority": "P2",
+      "original_location": "reproduction/README.md old step9",
+      "issue": "Five-step recipe could be read as a new six-head matched-KL rollout",
+      "resolution": "README:48/50/98 explicitly binds replay to original3 heads and original rollout only",
+      "verified": true
+    }
+  ],
+  "claim_checks": [
+    {
+      "claim": "Current completed studies",
+      "locations": [
+        "reports/REPORT.md:28",
+        "reports/REPORT.md:169",
+        "reports/REPORT.md:235"
+      ],
+      "finding": "Old same-beta residual beta0.5 is historical; train-KL followup completed; six new fits include2 pilots+4 prospective, final6 heads include reused completion24 and selected pilot2"
+    },
+    {
+      "claim": "Statistics and seed roles",
+      "locations": [
+        "reports/REPORT.md:256",
+        "reports/REPORT.md:258",
+        "reports/REPORT.md:274",
+        "reports/REPORT.md:278",
+        "reports/REPORT.md:289"
+      ],
+      "finding": "All3 mean TRAIN512 natural1024 forward-KL ratios pass [0.8,1.2]; calibration seed24 distinct from prospective25/26; mean3 MAP +0.001893 with conditional user CI [-0.000908,+0.004520]; no population seed superiority or causal isolation claimed"
+    },
+    {
+      "claim": "C comparison",
+      "locations": [
+        "reports/REPORT.md:112",
+        "reports/REPORT.md:114",
+        "reports/REPORT.md:304"
+      ],
+      "finding": "C is observed point-best on reused dev4096; local C-B paired evidence preserved; no generalization, popularity-only-baseline win or causal feature attribution inferred"
+    },
+    {
+      "claim": "Temporal and counterfactual limits",
+      "locations": [
+        "reports/REPORT.md:32",
+        "reports/REPORT.md:68",
+        "reports/REPORT.md:70",
+        "reports/REPORT.md:136",
+        "reports/REPORT.md:140"
+      ],
+      "finding": "Repeated development/test exposure, aggregated last-watch semantics, retrospective metadata and frozen-model chronology disclosed; RM support is familiarity, candidate proxy is not observed causal outcome"
+    },
+    {
+      "claim": "Reward semantics and H1",
+      "locations": [
+        "reports/REPORT.md:152",
+        "reports/REPORT.md:163",
+        "reports/REPORT.md:165",
+        "reports/REPORT.md:207"
+      ],
+      "finding": "Mean completion prior distinct from popularity, centered zero definitional; exact one-step head-only optimization disclosed; no PPO/full-GPT-unfreeze/multi-step-training claim"
+    },
+    {
+      "claim": "Original rollout scope",
+      "locations": [
+        "reports/REPORT.md:310",
+        "reports/REPORT.md:312",
+        "reports/REPORT.md:327",
+        "reports/REPORT.md:349"
+      ],
+      "finding": "192 trajectories/960 steps use16 starts and original3 single-seed beta0.5 arms, fixed pool/raw/clock/RM s0; synthetic append and mechanical uniqueness do not establish retention or new matched-head rollout"
+    },
+    {
+      "claim": "Actor numerical replay",
+      "locations": [
+        "reports/REPORT.md:383",
+        "reproduction/README.md:38",
+        "reproduction/README.md:45",
+        "reproduction/HAND_IN.md:29"
+      ],
+      "finding": "Actual frozen GPT B16 forward with4 retained slots x1024, originalC/completion24/old residual24; CUDAFP16 exact q/base/scores/top10 error0; 9.781s, exit0/quiescent, updates0; fresh minimal candidate extraction on existing Windows runtime"
+    },
+    {
+      "claim": "RM numerical replay",
+      "locations": [
+        "reports/REPORT.md:385",
+        "reproduction/README.md:40",
+        "reproduction/INPUTS.md:22"
+      ],
+      "finding": "Actual CBM/calibration on same4 contexts x1024 =4096 candidate pairs, distinct from4096 main evaluation queries; float64 maxerror0, float32/support exact,3976 supported;4.407s, exit0/quiescent, fits/updates0"
+    },
+    {
+      "claim": "Reproduction boundary",
+      "locations": [
+        "reports/REPORT.md:387",
+        "reports/LIMITATIONS.md:90",
+        "reproduction/README.md:50",
+        "reproduction/ENVIRONMENTS.md:41",
+        "reproduction/ENVIRONMENTS.md:49"
+      ],
+      "finding": "No target labels/new MAP or CI from fixture; no independent cached-features CLI, actor CPUFP32, new machine installation, final-full-archive numerical rerun, full-cohort inference, raw feature rebuild or retraining pass claimed. CPU oracle-none is descriptive only"
+    },
+    {
+      "claim": "Formal coverage/readiness",
+      "locations": [
+        "reports/REPORT.md:397",
+        "reports/REPORT.md:411"
+      ],
+      "finding": "Saved condition supports negative RL outcome and requested investigations; head-only sufficiency remains an explicit methodological interpretation. No new positive result, full GPT unfreeze or training required to make claims honest"
+    }
+  ],
+  "reproduction_evidence": {
+    "index_sha256": "0a478130fa43a8a8b4c1aa9e5480395683dbac0386fcf61166fb3b33d905d3c1",
+    "member_hashes_and_sizes_verified": 12,
+    "actor_summary_sha256": "e2b0b173f43b3d8c09094d8dcc721186e2d94fd7e2ea6363d51144bcb8f4a15e",
+    "actor_runtime_receipt_sha256": "0859582ae1d2c8badf4a30d21d65d6a3ccdde6c87f9c52ed90dbe96a5f53769a",
+    "rm_summary_sha256": "1fc306457c50b94c58b91a22eeacd3947ed380e79fb1351b0d794b787bcf5f43",
+    "rm_runtime_receipt_sha256": "5f24a985e2e0a09f9193cdb4ab6021af8b46868551ff1c12e3e09b8a2ca9d6fb",
+    "runtime_manifest_sha256": "ba79888e24957517991c338cef6cccc53ee7d4fa5dd4583051e626b930ab068d",
+    "actor_fixture_manifest_sha256": "e680dd145b2bfdc812107fb9a257bf16f6d1ef5a53c07845f7dc21838146a52c",
+    "rm_fixture_manifest_sha256": "7b3e7dbefde3a6d0e113c0340dbbfc425d223574a7c4cd13db7927fb29b30380"
+  },
+  "primary_source_proof": [
+    {
+      "path": "../../c-kl-seeds-20261025-r1/interpretation/analyze.py",
+      "sha256": "bf86630a71546e27f4d336f8cf08e5c729c4aeb6d1ab3aaf862b57805f58f84e",
+      "reviewed": "Actual all1024 ranking, one-target metrics, query-weighted user-cluster bootstrap and equal3 seed contrast construction; static only"
+    },
+    {
+      "path": "../../c-kl-seeds-20261025-r1/policy/policy.py",
+      "sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5",
+      "reviewed": "Original-C frozen reference, cached-input head-only exactH1 fit, seed-specific sampler and1000 scaler-checked updates; static only"
+    },
+    {
+      "path": "../../c-kl-seeds-20261025-r1/protocols/preregistration.json",
+      "sha256": "46f348e871f185efca1a734cd31e5234dba6346be545b690d32deb447e488ab4"
+    },
+    {
+      "path": "../../c-kl-seeds-20261025-r1/protocols/matching.json",
+      "sha256": "e45f26f9d682c71e2ee7b10b45a5e75861d572a3dd91d29547e501842eda154c"
+    }
+  ],
+  "executed_by_this_reviewer": {
+    "text_and_compact_metadata_reads": true,
+    "file_hash_and_size_checks": true,
+    "static_source_review": true,
+    "arrays_opened": false,
+    "models_opened": false,
+    "native_jobs": false,
+    "training": false,
+    "new_numerical_tests": false,
+    "inference_reexecuted": false,
+    "bootstrap_reexecuted": false
+  },
+  "limitations": [
+    "Review accepts consistency of actual outputs/receipts and claims, not an independent repeat of model inference or statistics.",
+    "PDF layout, archive closure/security, privacy/redistribution approval and final delivery extraction are separate reviews. No final ZIP acceptance is implied.",
+    "Historical authenticated task text was read via its saved source-condition receipt, not reopened by this reviewer.",
+    "Acceptance applies only to listed hashes; later relevant edits need focused re-review."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "contract": "root-actual-source-fixture-checks-v1",
+  "state": "passed",
+  "owner": "root",
+  "command_prefix": ".\\pas.ps1 python -B",
+  "total_test_methods": 69,
+  "runs": [
+    {"test": "policy/test_policy.py", "methods": 11, "exit_code": 0, "source": "policy/policy.py", "source_sha256": "cf6d6c29fa8c1d763109d53d1be68ade479c9a2a1c01767fc55030ba1d67e7e5"},
+    {"test": "policy/test_evaluate.py", "methods": 16, "exit_code": 0, "source": "policy/evaluate.py", "source_sha256": "334c7f7e3414d9682d6a657f43094c53bc99c8782db0b3599aadac9b6bafed8f"},
+    {"test": "interpretation/test_analyze.py", "methods": 13, "exit_code": 0, "source": "interpretation/analyze.py", "source_sha256": "bf86630a71546e27f4d336f8cf08e5c729c4aeb6d1ab3aaf862b57805f58f84e"},
+    {"test": "reports/test_figures.py", "methods": 21, "exit_code": 0, "source": "reports/figures.py", "source_sha256": "8c5bb340f2dd149523b2354e3f4f38a04241e4af7ac6e76a7caa42ca4cae3e84"},
+    {"test": "interpretation/test_verify.py", "methods": 8, "exit_code": 0, "source": "interpretation/verify.py", "source_sha256": "07f8de6c8c132bbdeda25a9edfc643ff5186916db880c2a9eea8461d33a88369"}
+  ],
+  "scope": "Actual root-run standard-library source/fake/synthetic fixture tests; no real model/array/numerical result acceptance is inferred. Actual native results and PDF/figure QA require separate receipts."
+}

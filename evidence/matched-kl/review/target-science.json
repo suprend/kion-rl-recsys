@@ -1,0 +1,66 @@
+{
+  "reviewer": "independent-method-skeptic",
+  "status": "pass",
+  "scope": "Read-only metadata/science check before first new fit. Read saved JSON and recomputed only the scalar registered beta formula with PowerShell Math.Sqrt. No arrays, numerical/model jobs or checkpoint loading. Numerical correctness beyond the saved probe metadata is not independently rerun.",
+  "reviewed_inputs": {
+    "preregistration": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/preregistration.json",
+      "sha256": "46F348E871F185EFCA1A734CD31E5234DBA6346BE545B690D32DEB447E488AB4"
+    },
+    "target": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/protocols/target.json",
+      "sha256": "8F159A0A0EFD27EBC42F16E7B87FE8E9066BEAE965403AF3BFCDB8B9BD5316D0"
+    },
+    "probe": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/policy/train-target-r1.json",
+      "sha256": "E51A6CA50350B93CE3C1925892C54ACBFF55DDE01902EB47EC7876E7D9AA1C60"
+    },
+    "operation_receipt": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-kl-seeds-20261025-r1/operations/train-target-r1/receipt.json",
+      "sha256": "2D2512C7B8282C778FD27FBCA4FF81AF3A05B3DEB6AF6747922A583674A944AE"
+    }
+  },
+  "checks": {
+    "target_provenance_hashes_match_current_files": true,
+    "preregistration_unchanged_since_science_review": true,
+    "probe_state_completed": true,
+    "probe_scope_evaluate_train512_rows512": true,
+    "KL_definition_matches_preregistration": true,
+    "target_is_historical_completion_seed24_step1000": true,
+    "old_residual_is_historical_residual_seed24_step1000": true,
+    "target_matches_probe_exactly": true,
+    "old_residual_matches_probe_exactly": true,
+    "target_finite_and_greater_than_1e_minus8": true,
+    "old_residual_finite_and_positive": true,
+    "both_historical_lineages_have_same_C_cache_reward_identity": true,
+    "original_C_exact_KL_zero_under_both_reward_views": true,
+    "reported_update0_actor_reference_exact": true,
+    "reported_update0_cached_scores_exact": true,
+    "reported_update0_top10_exact": true,
+    "reported_update0_max_abs_error_zero": true,
+    "no_optimizer_created_or_learning_updates": true,
+    "reported_provider_GPT_RM_closed": true,
+    "reported_final_test_reads_zero": true,
+    "reported_raw_feature_calls_zero": true,
+    "target_dev_selection_used_false": true,
+    "operation_succeeded_exit0_and_cleanup_quiescent": true
+  },
+  "scalar_formula": {
+    "rule": "clip(0.5*sqrt(K_old_residual/T),0.01,2.0)",
+    "T": 0.028141394929216676,
+    "K_old_residual": 0.004426349121092763,
+    "recorded_beta1": 0.19829877276516375,
+    "independently_recomputed_beta1": 0.19829877276516375,
+    "absolute_error": 0.0,
+    "clipping_active": false
+  },
+  "scope_interpretation": "The target is mean forward KL across all512 fixed training states and all1024 candidate actions at temperature1 relative to original C. It is not the old screen256 number, not dev MAP, and not full-catalogue KL. The support definition leaves unsupported advantage zero while retaining all1024 actions in normalization.",
+  "blocking_findings": [],
+  "remarks": [
+    "Saved parity evidence is exact at update0 for actor/reference, cached scores and top10. This review checks those declarations and internal metadata consistency; it does not independently recompute tensors.",
+    "The old lineage objects retain state=running while explicitly naming historical step1000 checkpoints. Their step1000 checkpoint identities, update counts and KL metrics are consistent with the registered selection; the lineage status string is not fresh execution evidence.",
+    "This target probe uses zero new optimization fits. The next permitted scientific condition is the registered first residual pilot: seed20261024, original-C start, beta0.19829877276516375, exactly1000 updates, with the existing root-only resource/deadline admission gates.",
+    "The beta formula remains a bounded train-only heuristic. A successful target measurement does not establish that the first pilot or prospective seed pairs will satisfy the registered[0.8,1.2] match tolerance."
+  ],
+  "conclusion": "No scientific metadata blocker to the first registered pilot was found. Target scope, recorded parity evidence, source linkage and beta1 calculation are consistent with the unchanged preregistration. Operational admission and implementation checks remain the root's responsibility."
+}

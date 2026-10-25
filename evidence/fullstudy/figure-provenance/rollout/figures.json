@@ -1,0 +1,149 @@
+{
+  "contract": "kion-rollout-figures-v1",
+  "state": "completed",
+  "stage": "rollout",
+  "rows": 16,
+  "rows_scope": "fixed initial contexts; not users",
+  "position_count": 16,
+  "trajectory_count": 192,
+  "steps": 5,
+  "seed": 20261024,
+  "figures": [
+    {
+      "file": "08-five-step-panel",
+      "title": "Пять рекомендаций: ожидаемый proxy и изменение политики",
+      "caption": "16 заранее выбранных контекстов, по одной categorical-траектории с seed=20261024+position; 192 траектории, 960 решений. Средние описывают только этот фиксированный grid, без популяционных интервалов. RM, raw1068, observed history и clock заморожены в s0; меняются GPT prefix и q/base/source12. Proxy = Eₚ[support·(u−E_C(s0)[u|support])], unsupported вклад равен 0; residual u=r_RM−m_fit. Это surrogate, не наблюдаемый досмотр или retention. KL сравнивает arm с C на ТОМ ЖЕ текущем prefix arm и с той же маской. Это не KL к распределению на независимо сгенерированной C-траектории. После первого шага prefixes разных arms могут различаться.",
+      "chart_type": "faceted-line",
+      "formats": [
+        "svg",
+        "png"
+      ],
+      "files": {
+        "svg": {
+          "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures/rollout/08-five-step-panel.svg",
+          "sha256": "e373b66e194c04da7cb11ef6d1e2db444b8215c3cd355441d7d6c0f128da31c0",
+          "bytes": 114106
+        },
+        "png": {
+          "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures/rollout/08-five-step-panel.png",
+          "sha256": "189973f37121ee28145c0d0a56b5a6c8c49a51f4a7066910bb2763abae9fbc71",
+          "bytes": 449323
+        }
+      },
+      "metrics": [
+        "expected_neutral_proxy",
+        "expected_neutral_residual_proxy",
+        "kl_nats"
+      ],
+      "facets": [
+        {
+          "selection": "greedy",
+          "repeat_mask": "none"
+        },
+        {
+          "selection": "greedy",
+          "repeat_mask": "exclude-generated"
+        },
+        {
+          "selection": "categorical",
+          "repeat_mask": "none"
+        },
+        {
+          "selection": "categorical",
+          "repeat_mask": "exclude-generated"
+        }
+      ],
+      "y_scales": "shared per metric across all mode/mask facets; no dual axes"
+    },
+    {
+      "file": "08b-five-step-behavior",
+      "title": "Пять рекомендаций: энтропия, история и повторы",
+      "caption": "16 заранее выбранных контекстов, по одной categorical-траектории с seed=20261024+position; 192 траектории, 960 решений. Средние описывают только этот фиксированный grid, без популяционных интервалов. H63 — доступный observed prefix перед генерацией, не вся история пользователя. Повтор — item, уже выбранный в этой synthetic-траектории; exclude-generated запрещает такие повторы. Новые observed outcomes и relevance labels для шагов 2–5 не создаются. RM, raw1068, observed history и clock заморожены в s0; меняются GPT prefix и q/base/source12. Proxy = Eₚ[support·(u−E_C(s0)[u|support])], unsupported вклад равен 0; residual u=r_RM−m_fit. Это surrogate, не наблюдаемый досмотр или retention.",
+      "chart_type": "faceted-line",
+      "formats": [
+        "svg",
+        "png"
+      ],
+      "files": {
+        "svg": {
+          "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures/rollout/08b-five-step-behavior.svg",
+          "sha256": "c96bd62e0374a1afc766dd9b2278678f9d9d8085a3c2202cfa478d2e2457aca2",
+          "bytes": 117631
+        },
+        "png": {
+          "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reports/figures/rollout/08b-five-step-behavior.png",
+          "sha256": "62aeda935a319cbeb6f506c2e8c0d42d4530bcd33cf2ceb13f4b6ffd7ad0ff90",
+          "bytes": 436687
+        }
+      },
+      "metrics": [
+        "entropy_nats",
+        "original_seen_fraction",
+        "generated_repeat_fraction"
+      ],
+      "facets": [
+        {
+          "selection": "greedy",
+          "repeat_mask": "none"
+        },
+        {
+          "selection": "greedy",
+          "repeat_mask": "exclude-generated"
+        },
+        {
+          "selection": "categorical",
+          "repeat_mask": "none"
+        },
+        {
+          "selection": "categorical",
+          "repeat_mask": "exclude-generated"
+        }
+      ],
+      "y_scales": "shared per metric across all mode/mask facets; no dual axes"
+    }
+  ],
+  "versions": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.2.6"
+  },
+  "requires_visual_QA": true,
+  "rendered_visual_QA": false,
+  "labels_used": false,
+  "input": {
+    "contract": "kion-final3-saved-liveprefix-summary-v1",
+    "canonical_sha256": "ecbd5d86e4db5b5a0c6766a082aad3a57700df5a4c63598833efec69475db4bc",
+    "rollout": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/rollout-scientific3-r1.json",
+      "sha256": "67bc5e8ffedc5d2759e0f3b8e6d998a0887e94226ae4a13f5dd021db359137bf",
+      "bytes": 2102115
+    },
+    "summary_source": {
+      "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/rollout_summary.py",
+      "sha256": "74a4148b078aa0495415b9d2698bf0c4d0e706f825458fcdcfb1b74ab31e9964"
+    },
+    "items_catalog": {
+      "path": "D:/tlab-recsys-2026/data/raw/kion/full/items.csv",
+      "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e",
+      "bytes": 31836561
+    },
+    "source_metadata": {
+      "contract": "kion-final3-liveprefix-grid-v1",
+      "cache_sha256": "5baf5dae822a7fb812acb6344ac08c0a0f94a2e4af7adf24b1c53c4584096a82",
+      "reward_sha256": "a4bccf42b9f020e72a191c536df59dce5ac4e21b7e38aee4e21edccab5c05676",
+      "utility_sha256": "b3d4d9a000d953b207566d695066f6210155a345d683a58a1edf48e27765d709",
+      "five_step_training": false,
+      "synthetic_prefix_only": true,
+      "RM_observed_s0_fixed": true
+    }
+  },
+  "source": {
+    "path": "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/plot_rollout.py",
+    "sha256": "7e5b32057f6eb45aedb8ae3784dcf8660b9f28bc94e7fc7fa95e8e1b14573255"
+  },
+  "metric_scope": {
+    "utilities": "RM, raw1068, observed history и clock заморожены в s0; меняются GPT prefix и q/base/source12. Proxy = Eₚ[support·(u−E_C(s0)[u|support])], unsupported вклад равен 0; residual u=r_RM−m_fit. Это surrogate, не наблюдаемый досмотр или retention.",
+    "KL": "KL сравнивает arm с C на ТОМ ЖЕ текущем prefix arm и с той же маской. Это не KL к распределению на независимо сгенерированной C-траектории. После первого шага prefixes разных arms могут различаться.",
+    "behavior": "H63 — доступный observed prefix перед генерацией, не вся история пользователя. Повтор — item, уже выбранный в этой synthetic-траектории; exclude-generated запрещает такие повторы. Новые observed outcomes и relevance labels для шагов 2–5 не создаются.",
+    "population": "16 заранее выбранных контекстов, по одной categorical-траектории с seed=20261024+position; 192 траектории, 960 решений. Средние описывают только этот фиксированный grid, без популяционных интервалов."
+  }
+}

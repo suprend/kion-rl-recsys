@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "review_kind": "bounded_final_scientific_prose_primary_source_conformance",
+  "checked_date": "2026-10-25",
+  "timezone": "Europe/Moscow",
+  "status": "finalPASS",
+  "blocking_findings": 0,
+  "open_findings": 0,
+  "final_freeze_bound": true,
+  "ownership": {
+    "written_file": "review/literature-final-review.json",
+    "master_report_owner": "final25_report",
+    "master_report_edited_by_reviewer": false
+  },
+  "reviewed_snapshot": {
+    "mode": "current_named_files_read_only",
+    "capture": "Initial complete prose review followed by the requested bounded final reread of affected method/citation, synthetic return, retention and conclusion phrases. No extra snapshot file was written because this review owns only its JSON output.",
+    "files": [
+      {
+        "path": "reports/README.md",
+        "sha256": "9d471eb6b8f5ad86ab0b14974323e4e951e6107609a74e5f66cb8167e77ee354",
+        "bytes": 87234,
+        "scope": "Final frozen README: affected method/citation, synthetic return, retention and conclusion phrases reread; initial complete prose review is recorded below."
+      },
+      {
+        "path": "reports/references.md",
+        "sha256": "1c38c4e117209cb264babf1f10a20af2cf983e82c3f7cb133a66e210ad3c9e94",
+        "scope": "Previously verified primary-source summaries and positioning"
+      },
+      {
+        "path": "../c-rl-20261024-r1/night-plan-20261025/source-check.md",
+        "sha256": "9fba33921f93e3e95ae88a6a0f5d624bb0728a9c671722048e6f145104b71a71",
+        "scope": "Authenticated formal-task summary and exact quoted conditions"
+      }
+    ],
+    "freshness_after_read": "Final README hash and size match the coordinator's declared freeze. References hash is unchanged from the primary-source audit. Final hash checked again after affected-text reread.",
+    "initial_complete_review_readme_sha256": "8ebb95f56c0270e5a7a1622dd3dea424f95ff4d86096510f602bb9b1551429c3",
+    "git_note": "Artifact files are ignored outputs; content hashes, not an empty git diff, identify this review."
+  },
+  "findings": [],
+  "resolved_findings": [
+    {
+      "id": "LFINAL-01",
+      "priority": "P3",
+      "axis": "primary_source_precision",
+      "title": "Различите логи logging policy и оценённые propensities",
+      "path": "reports/README.md",
+      "line": 424,
+      "status": "resolved_verified_in_final_freeze",
+      "final_line": 474,
+      "final_observed_text": "Offline оценка требует логов действий/показов logging policy, обоснованных propensity или behavior-policy оценок и достаточного overlap.",
+      "actual_text": "Offline оценка с propensity/overlap также требует реально зарегистрированной logging policy.",
+      "issue": "Фраза допускает прочтение, что точная behavior policy или её propensities обязательно должны быть зарегистрированы. В цитируемой session-level работе behavior policy оценивается отдельной моделью. Нужны реально наблюдённые logging events и обоснованные предпосылки оценки; нельзя приравнивать это к обязательной доступности исходных точных вероятностей.",
+      "suggested_text": "Offline оценка требует логов действий/показов logging policy, обоснованных propensity или behavior-policy оценок и достаточного overlap.",
+      "source": "https://arxiv.org/html/2607.02818v2",
+      "source_sections": ["2.1", "3.1 Behavior policy"],
+      "impact": "Небольшая методологическая неточность требований к будущей OPE; текущий отрицательный результат и вывод об ограничениях KION не затронуты.",
+      "new_experiment_required": false
+    },
+    {
+      "id": "LFINAL-02",
+      "priority": "P3",
+      "axis": "claim_scope",
+      "title": "Не исключайте популярность по разложению completion prior",
+      "path": "reports/README.md",
+      "line": 453,
+      "status": "resolved_verified_in_final_freeze",
+      "final_line": 527,
+      "final_observed_text": "Item-level арифметика связывает большую часть completion-proxy сдвига с mean-completion prior, который не тождествен популярности.",
+      "actual_text": "Item-level арифметика связывает большую часть completion-proxy сдвига с mean-completion prior, а не с популярностью.",
+      "issue": "Разложение использует mean-completion prior, но не выделяет и не исключает отдельный вклад популярности. Основной текст в строках 295-302 осторожнее: prior не тождествен popularity, а статистика strict7d_count является отдельным описанием. Финальное 'а не с популярностью' расширяет этот вывод без соответствующей идентификации механизма.",
+      "suggested_text": "Item-level арифметика связывает большую часть completion-proxy сдвига с mean-completion prior, который не тождествен популярности.",
+      "local_support": "reports/README.md:295-302",
+      "impact": "Убирает слишком широкое исключение альтернативного объяснения из итогового абзаца; арифметика и прочие выводы сохраняются.",
+      "new_experiment_required": false
+    }
+  ],
+  "checks": [
+    {
+      "id": "METHOD-H1",
+      "status": "pass_with_final_affected_reread",
+      "lines": [191, 210],
+      "result": "H1 назван one-step contextual policy optimization с точной суммой по fixed action pool и KL текущей policy к фиксированной supervised reference; head-only/frozen scope явен. Не заявлены PPO, backbone fine-tuning или multi-step training. Сопоставление с двумя рекомендованными статьями ограничено методологическим контекстом."
+    },
+    {
+      "id": "SYNTHETIC-TRANSITIONS",
+      "status": "pass_with_final_affected_reread",
+      "lines": [398, 466],
+      "result": "Append пересчитывает GPT-prefix в том же исходном pool, сохраняет observed RM state и не выдумывает feedback. Returns названы fixed-s0 surrogate; conditional KL отделён от trajectory KL. Пять inference-шагов прямо не приравниваются к пятишаговому RL fit или пользовательским сессиям."
+    },
+    {
+      "id": "NEGATIVE-RL-SCOPE",
+      "status": "pass_in_initial_complete_review_and_final_conclusion_reread",
+      "initial_snapshot_lines": [198, 354],
+      "final_conclusion_line": 527,
+      "result": "Screen256 и full4096 различены; RM reward не перенесён на full4096 без оценки. Reused development, conditional unadjusted intervals, seed и ограниченный масштаб названы. Отрицательный completion tradeoff не скрыт selected0; residual MAP superiority и equivalence не заявлены."
+    },
+    {
+      "id": "PRIMARY-CITATION-CONFORMANCE",
+      "status": "pass_with_final_affected_reread",
+      "lines": [38, 210, 258, 468],
+      "result": "KION aggregation citation поддерживает last-interaction semantics. Petrov/Macdonald поддерживает Next-K/PPO+value model positioning; Matveev поддерживает session-level off-policy и feedback-model contrast. Нет заявления о воспроизведении их методов. Learned-proxy conflict не объявлен доказанным causal reward hacking."
+    },
+    {
+      "id": "FORMAL-TASK-CONFORMANCE",
+      "status": "pass_for_prose_claim_boundaries",
+      "initial_snapshot_lines": [436, 451],
+      "final_conclusion_line": 527,
+      "result": "Текст допускает отрицательный RL результат, различает две reward utilities и не требует нового PPO, unfreezing, положительного MAP, нескольких seeds или multi-step training. Фактическое выполнение computations подтверждается другими аудитами, а не этой прозовой проверкой."
+    },
+    {
+      "id": "LONG-TERM-RETENTION",
+      "status": "pass_with_final_affected_reread",
+      "lines": [468, 484],
+      "result": "Return/retention предложены как будущие online outcomes с windows/censoring; публичная KION агрегация и отсутствие полного журнала визитов ограничивают вывод. Не заявлен observed retention, causal recommendation benefit или online gain."
+    }
+  ],
+  "verification": {
+    "browser_refresh": false,
+    "primary_basis": "Primary passages and metadata verified in the preceding literature audit; no concrete citation uncertainty required reopening web pages.",
+    "numerical_libraries_arrays_models_or_jobs": false,
+    "empirical_arithmetic_recomputed": false,
+    "execution_receipts_reaudited": false,
+    "new_fits_seeds_or_positive_MAP_requested": false,
+    "author_notified": true,
+    "independence": "Reviewer did not author the master README; reviewer authored references.md earlier, so bibliographic content itself is not a new independent acceptance pass."
+  },
+  "final_reread": {
+    "requested_scope": "Only affected return, citation and conclusion wording after final freeze",
+    "checked_lines": [195, 206, 208, 210, 258, 328, 404, 406, 412, 416, 418, 440, 442, 466, 470, 472, 474, 482, 484, 527],
+    "findings_resolved": ["LFINAL-01", "LFINAL-02"],
+    "new_findings": [],
+    "result": "Both P3 wording changes are present and precise. H1/PPO distinction, fixed-s0 synthetic returns, absence of observed user transitions/retention, reused-development scope and primary-source positioning remain correct.",
+    "acceptance_boundary": "PASS for scientific prose/source conformance at the bound README and references hashes. Numeric, runtime, packaging and visual acceptance remain owned by their separate audits."
+  },
+  "remaining": []
+}

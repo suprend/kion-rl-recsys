@@ -1,0 +1,279 @@
+{
+  "contract": "kion-portable-fixture-v1",
+  "state": "completed",
+  "rows": 4,
+  "candidate_width": 1024,
+  "raw_width": 1068,
+  "feature_schema_sha256": "71d90eee774d30db804d1ab32c4d82995d1320baf26aaf36443a6498fd85fc5d",
+  "source_columns": [
+    "current_detached_gpt_logit",
+    "log1p_strict7d_count"
+  ],
+  "precision": "cuda-fp16",
+  "head_batch_max": 16,
+  "candidate_chunk": 64,
+  "producer_layout": [
+    {
+      "size": 16,
+      "slot": 0
+    },
+    {
+      "size": 16,
+      "slot": 1
+    },
+    {
+      "size": 16,
+      "slot": 2
+    },
+    {
+      "size": 16,
+      "slot": 3
+    }
+  ],
+  "arrays": {
+    "encoded": {
+      "path": "encoded.npy",
+      "sha256": "4401a68dcf0eacbe4a5ac90832cf58490a4c37ae735b7e10432bd31dbd84859c",
+      "bytes": 4224,
+      "dtype": "float32",
+      "shape": [
+        4,
+        256
+      ]
+    },
+    "candidate_ids": {
+      "path": "candidate_ids.npy",
+      "sha256": "511bf501c6dbbc0165bfaaf4b9b55cbe962329b9c6fa19ec0aa7678555a4a3a5",
+      "bytes": 16512,
+      "dtype": "int32",
+      "shape": [
+        4,
+        1024
+      ]
+    },
+    "candidate_raw_ids": {
+      "path": "candidate_raw_ids.npy",
+      "sha256": "f994ec05a0edf55c27c1db0eb5addee0512e26b1e01d3c6f5e881ffb9502fd5f",
+      "bytes": 32896,
+      "dtype": "int64",
+      "shape": [
+        4,
+        1024
+      ]
+    },
+    "base_logits": {
+      "path": "base_logits.npy",
+      "sha256": "596e7939f85233c463b975922fddc84284cd42f3d4f69ea14c84aeae2121452e",
+      "bytes": 16512,
+      "dtype": "float32",
+      "shape": [
+        4,
+        1024
+      ]
+    },
+    "raw_features": {
+      "path": "raw_features.npy",
+      "sha256": "81033bbd8d23bd01d186d3083ca51b639599540fdad139b905fe572144bf0409",
+      "bytes": 17498240,
+      "dtype": "float32",
+      "shape": [
+        4,
+        1024,
+        1068
+      ]
+    },
+    "source_values": {
+      "path": "source_values.npy",
+      "sha256": "9c5cfc439732ea660965f947d7fa03e00f987caf96149724b691b1e457201a3b",
+      "bytes": 32896,
+      "dtype": "float32",
+      "shape": [
+        4,
+        1024,
+        2
+      ]
+    },
+    "item_table": {
+      "path": "item_table.npy",
+      "sha256": "13abf44751ec3a57faf15f30ab02110301714993acd75702350d5ca6a1a358f3",
+      "bytes": 15788160,
+      "dtype": "float32",
+      "shape": [
+        15418,
+        256
+      ]
+    },
+    "gpt_x": {
+      "path": "gpt_x.npy",
+      "sha256": "c944cdfa89fce677cfc4479811c0d1826ece4fc4e3e5537eb1fcc9a24fd89315",
+      "bytes": 8320,
+      "dtype": "int64",
+      "shape": [
+        16,
+        64
+      ]
+    },
+    "gpt_lengths": {
+      "path": "gpt_lengths.npy",
+      "sha256": "7cc75275ffb68a5a81b2d8dd4edc904b5c35ecf864f7cfc4afa0419360fbd1f9",
+      "bytes": 256,
+      "dtype": "int64",
+      "shape": [
+        16
+      ]
+    },
+    "gpt_user_features": {
+      "path": "gpt_user_features.npy",
+      "sha256": "a474265851e39dcc7d900a7214916104f228e06187f89dbd887aff8a87ef43b9",
+      "bytes": 208256,
+      "dtype": "float32",
+      "shape": [
+        16,
+        3252
+      ]
+    }
+  },
+  "weights": {
+    "C": {
+      "path": "weights/C.pt",
+      "sha256": "2dbe8f0b3de2af804aff6a82a18a6444dde2c5e77928c0f50858a858db72345d",
+      "bytes": 960601,
+      "format": "torch-state-dict-v1",
+      "source_checkpoint_sha256": "9c42a75a0c3092ceef3ee8f94b5a62b9b69808a81a42be4ed8b1c3acec277ea7",
+      "source_contract": "kion-three-head-262k-head-v1",
+      "step": null
+    },
+    "RL-completion": {
+      "path": "weights/RL-completion.pt",
+      "sha256": "3faf78f3495dcb0a557601d9cdccf8a5697cf7ad7b3e4d7b4740c7bbfee01f0f",
+      "bytes": 960601,
+      "format": "torch-state-dict-v1",
+      "source_checkpoint_sha256": "436d735d67fd861e6b925719b9e3597582ec405eed1b13ede3db3671e1ce37b7",
+      "source_contract": "kion-current-C1070-natural1024-H1-v1",
+      "step": 1000
+    },
+    "RL-residual": {
+      "path": "weights/RL-residual.pt",
+      "sha256": "0c6afdea70d8bb2a760866b698c296f482cad37ec78bde54e83b4249dc7623e1",
+      "bytes": 960601,
+      "format": "torch-state-dict-v1",
+      "source_checkpoint_sha256": "29d20cd3d058b4ccac52d94f3ad946891f3839601fe935817f7c7b89f09b1ee3",
+      "source_contract": "kion-current-C1070-residual-H1-v1",
+      "step": 1000
+    },
+    "GPT": {
+      "path": "weights/GPT.pt",
+      "sha256": "b952dc61f45dc09132db97c8b5d90975d044114237d64b6487b8770f04312c1e",
+      "bytes": 31837764,
+      "format": "torch-state-dict-v1",
+      "source_checkpoint_sha256": "5e7101857c2dbe100fb4e1587c0369abc95c108303ed149123ee183f62aeac26",
+      "source_contract": "kion-complete-gpt-v1",
+      "step": null
+    }
+  },
+  "expected": {
+    "C": {
+      "path": "oracle/C_scores.npy",
+      "sha256": "6fd2be266073a7332bb9b1586f1204ca16583c82e7c7449d59f449a4a87e358a",
+      "bytes": 16512,
+      "role": "validation-only",
+      "dtype": "float32",
+      "shape": [
+        4,
+        1024
+      ]
+    },
+    "RL-completion": {
+      "path": "oracle/RL-completion_scores.npy",
+      "sha256": "99c0760e187473ad0432731f1c4c1ba676e14aa69bfa289727377f71adaec1c2",
+      "bytes": 16512,
+      "role": "validation-only",
+      "dtype": "float32",
+      "shape": [
+        4,
+        1024
+      ]
+    },
+    "RL-residual": {
+      "path": "oracle/RL-residual_scores.npy",
+      "sha256": "648fc024845db6b0b941faa06e6fb076e16ed54b4af61ada37e3b8b49630bc75",
+      "bytes": 16512,
+      "role": "validation-only",
+      "dtype": "float32",
+      "shape": [
+        4,
+        1024
+      ]
+    }
+  },
+  "gpt": {
+    "config": {
+      "vocab_size": 15418,
+      "context_length": 64,
+      "hidden_size": 256,
+      "layers": 4,
+      "heads": 4,
+      "user_feature_dim": 3252
+    },
+    "producer_batch_size": 16,
+    "row_slots": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "trimmed_length": 23
+  },
+  "context_ids": [
+    "context-001",
+    "context-002",
+    "context-003",
+    "context-004"
+  ],
+  "no_target_injection": true,
+  "no_seen_filter": true,
+  "tie_break": "score-desc/rawID-asc",
+  "temperature": 1.0,
+  "target_labels_included": false,
+  "selection": "first4-frozen-screen-cache-positions-outcome-independent",
+  "parity": {
+    "mode": "exact",
+    "atol": 0.0,
+    "rtol": 0.0,
+    "top10_exact": true,
+    "historical_source_tolerance": {
+      "atol": 0.003,
+      "rtol": 0.001
+    }
+  },
+  "capabilities": {
+    "cached_representation_head_inference": true,
+    "GPT_encoder_inference": true,
+    "RM_inference": false,
+    "training": false
+  },
+  "privacy": {
+    "source_user_ids_included": false,
+    "source_histories_included": true,
+    "histories_representation": "full16-producer-peer-public-KION-model-token-prefixes; no source-user-ID mapping",
+    "derived_representations_can_retain_information": true,
+    "candidate_ids": "public-KION-catalog-token/raw-item-IDs"
+  },
+  "provenance": {
+    "cache_manifest_sha256": "5baf5dae822a7fb812acb6344ac08c0a0f94a2e4af7adf24b1c53c4584096a82",
+    "historical_oracle_manifest_sha256": "3439f885120173eb2b2f93bcb092d4c03b43ccfd06a2b9d884ef7512bc1fe7c1",
+    "logical_source": "frozen-screen256/natural1024",
+    "teacher_export_boundary": "one root-authorised local trusted legacy load; portable pure tensor runtime weights_only=True",
+    "reference_scores_role": "oracle-only; fresh inference must use head weights and inputs"
+  },
+  "limits": {
+    "planned_source_slice_bytes": 33604992,
+    "planned_working_bytes": 1524103837,
+    "hashed_source_bytes": 45924882,
+    "maximum_output_bytes": 134217728
+  },
+  "verification": {
+    "export_only": true,
+    "fresh_inference_executed": false
+  }
+}

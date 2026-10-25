@@ -1,0 +1,31 @@
+{
+  "kind": "source-only protocol proposal",
+  "created_date": "2026-10-25",
+  "external_primary_sources": [
+    {
+      "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "authors": "Rafailov et al.",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2305.18290",
+      "access": "web search primary abstract; no download",
+      "supports": "Standard reward-minus-forward-KL objective has a closed-form categorical optimum; local inverse-square pilot update is our second-order heuristic, not a guarantee in this head."
+    },
+    {
+      "title": "Deep Reinforcement Learning at the Edge of the Statistical Precipice",
+      "authors": "Agarwal et al.",
+      "year": 2021,
+      "version": "v4, 2022-01-05",
+      "url": "https://arxiv.org/abs/2108.13264",
+      "access": "web primary abstract, inspected 2026-10-25; no download",
+      "supports": "Small numbers of independent training runs imply statistical uncertainty; few-run point estimates alone may mislead. Exact bootstrap design here is inherited from local protocol."
+    }
+  ],
+  "local_primary_sources": [
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-20261024-r1/policy/policy_v2.py",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/policy/residual.py",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/protocols/preregistration.json",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/reward/utility.py",
+    "D:/tlab-recsys-2026/artifacts/task2-kion/c-rl-final-20261025-r1/interpretation/ANALYZE.md"
+  ],
+  "not_measured_by_this_agent": ["train KL target", "pilot KL", "final matched-KL result", "new relevance", "new seed variability"]
+}
