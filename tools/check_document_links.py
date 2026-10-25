@@ -105,7 +105,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("paths", nargs="*", help="Files/directories relative to --root; default reader-facing docs")
     parser.add_argument("--root", type=Path, default=ROOT)
-    parser.add_argument("--branch", default="codex/research-report", help="Expected GitHub link branch (default codex/research-report)")
+    parser.add_argument("--branch", default="0154a495704c461adebc281de68d63a652946ec1", help="Expected GitHub link revision (default pinned report sources)")
     args = parser.parse_args()
     root = args.root.resolve()
     if args.paths:
