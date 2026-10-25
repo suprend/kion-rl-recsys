@@ -22,9 +22,13 @@
     ".gitignore",
     "README.md",
     "REPRODUCING.md",
+    "REPORT.md",
+    "REPORT.pdf",
     "PROJECTION.md",
     "projection.json",
-    "verify_repository.py"
+    "verify_repository.py",
+    "make_report.py",
+    "test_make_report.py"
   ],
   "authored_file_note": "The finite exact-byte inventory covers copied payloads only. Newly authored repository documentation, this manifest, Git attributes/ignore rules and verifier are intentionally outside its checksum closure to avoid self-reference and mutable-document hash cycles.",
   "preservation": {

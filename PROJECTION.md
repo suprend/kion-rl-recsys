@@ -1,22 +1,26 @@
-# Source-only Git projection
+# Состав и границы репозитория
 
-This repository projects the frozen unified KION task 2 hand-in into a source/report/evidence checkout. It is separate from the full standalone ZIP. No scientific source, report, accepted figure, compact evidence file, or portable runtime source was rewritten.
+Корневые [REPORT.md](REPORT.md) и [REPORT.pdf](REPORT.pdf) содержат текущую читательскую редакцию отчёта. [README.md](README.md) помогает начать чтение, а [REPRODUCING.md](REPRODUCING.md) объясняет доступные проверки и условия воспроизведения. Эта редакция подготовлена по сохранённым результатам, без нового обучения и научных расчётов.
 
-The upstream package has 566 payload members (136,184,813 bytes). Its frozen manifest SHA-256 is `f242fb74c9e94d45923432507270222326574d533f8494cbb420ec30fde812db`; its final selection SHA-256 is `16ab7ae35e8145946779476706fa3b8f45a146a2ee85eabe962b5a0935fe1e18`.
+Текущий PDF собирается через [make_report.py](make_report.py), который использует сохранённый скрипт вёрстки и заменяет локальные ссылки на ссылки на файлы репозитория в GitHub. Для их открытия нужен доступ к репозиторию. Прежний скрипт вёрстки и архивный PDF при этом сохраняются.
 
-The [projection manifest](projection.json) lists 526 exact-byte copies (17,014,776 bytes), each with its relative path, size, SHA-256 and upstream source path. It also lists every excluded selected member with the original size/hash and a reason. The two copied aggregate paired-metrics CSVs contain 36 data rows each. The preserved source tree retains all 284 historical payloads plus its four explanatory/integrity files; the portable replay package retains all ten Python files and its runtime manifest.
+Прежние [reports/REPORT.md](reports/REPORT.md), [reports/REPORT.pdf](reports/REPORT.pdf) и [reports/LIMITATIONS.md](reports/LIMITATIONS.md) сохранены как технический архив. Вместе с исходниками, рисунками и доказательными материалами они входят в набор точных копий из предыдущей версии комплекта. Их байты не меняются при редактуре корневых документов.
 
-The 40 exclusions total 119,170,037 bytes:
+Отдельно распространяемый полный ZIP фиксирует предыдущую версию комплекта. Редакторское обновление репозитория не меняет и не пересобирает этот архив; новые корневые отчёты в него не добавлены. Состав Git-репозитория и состав полного ZIP различаются.
 
-- 26 numerical fixture or model-weight payloads (`.npy`, `.pt`, `.cbm`), 101,623,655 bytes. The actor and RM `manifest.json` descriptors are retained; they describe external fixture files and are insufficient for numerical replay by themselves.
-- 13 external data-provenance JSON payloads, 17,540,011 bytes. Only `reproduction/external-provenance/INDEX.json` is retained as metadata.
-- The 6,371-byte standalone hand-in root README, replaced by source-only repository documentation.
+## Что зафиксировано в реестре
 
-All local files outside the finite upstream package selection also remain outside this projection: live controls, logs, raw data, model/data caches, full user-level payloads, archives and secrets. Historical controls copied inside `source/` are preserved scientific code, not a live operation tree.
+[projection.json](projection.json) содержит конечный перечень 526 скопированных файлов. Для каждого указаны путь, размер, SHA-256 и путь в исходной поставке. Там же перечислены все исключённые файлы с исходными размерами, хешами и причинами исключения, а также идентификаторы замороженной поставки. Эти записи относятся к сохранённым материалам и не пересчитываются под новую редакцию текста.
 
-Twenty-two frozen text files contain CRLF bytes. Their explicit `-text` entries in [.gitattributes](.gitattributes) preserve the accepted hashes through Git; new text uses LF. Binary PNG and PDF payloads are also excluded from Git text normalization.
+Одиннадцать файлов, созданных для самого репозитория, перечислены отдельно в `authored_files_not_hashed`. Среди них находятся новые корневые отчёты, документация, обёртка сборки PDF с тестом, правила Git, реестр и проверяющий скрипт. Этот список состоит из точных имён и совпадает с `AUTHORED` в [verify_repository.py](verify_repository.py). Произвольные дополнительные файлы и шаблоны имён не разрешены. Контрольные суммы этих одиннадцати файлов не входят в реестр: это позволяет редактировать документацию без циклических хешей самого реестра и проверяющего скрипта.
 
-From the repository root with Python 3.12+, run the following read-only standard-library checks:
+В Git отсутствуют числовые тестовые наборы (`fixtures`), веса моделей и перечисленные внешние JSON с происхождением данных. Сохранённые `manifest.json` описывают необходимые наборы, но не заменяют их содержимое. Сырые данные, кеши, журналы, архивы и секреты вне замороженной выборки тоже не входят в эту проекцию. Исторические управляющие скрипты внутри `source/` сохранены как исходный код.
+
+[.gitattributes](.gitattributes) сохраняет исходные CRLF у явно перечисленных исторических текстов и отключает текстовую нормализацию для бинарных PNG и PDF. Новые текстовые документы используют LF.
+
+## Что проверяет код
+
+Из корня репозитория с Python 3.12+ доступны проверки, которые используют только стандартную библиотеку и не изменяют файлы:
 
 ```text
 python -B verify_repository.py
@@ -25,6 +29,8 @@ python -B source/fullstudy/code/tools/verify_bundle.py --report-root source/full
 python -B reproduction/kion_replay verify --bundle .
 ```
 
-The first command verifies exact copied hashes and finite source-only file closure, so it deliberately fails after local fixture payloads are restored. Its newly authored files, including this manifest and documentation, are enumerated without recursive/self-referential checksums. The remaining commands validate the historical source or runtime closure. They do not establish numerical parity, execute scientific producers, train models, or download data. The historical bundle checker additionally uses an invented tiny ranking fixture.
+Первая команда проверяет размеры и хеши скопированных файлов, отсутствие файлов с признаком `omitted` и полный состав дерева: только копии из реестра и конечный список `AUTHORED`, кроме служебного `.git`. Поэтому добавление локальных fixtures в это дерево приводит к отказу проверки. Содержимое файлов из `AUTHORED` не проверяется по хешам. Успех этой команды не подтверждает качество текста, вид PDF или совпадение PDF с Markdown.
 
-For separately obtained fixtures and the historical acceptance tiers, see [REPRODUCING.md](REPRODUCING.md). Frozen evidence records successful numerical checks performed for the earlier full hand-in on its original workstation; copying those receipts does not rerun them or establish clean-machine/full-cohort training reproducibility. Original absolute paths inside preserved text remain historical provenance.
+Остальные команды проверяют сохранённые исходники, синтаксис Python и состав переносимого пакета воспроизведения. Проверка исторического набора исходников также считает метрики на маленьком вымышленном примере ранжирования. Эти команды не запускают исходные научные расчёты, численное воспроизведение моделей, обучение или загрузку данных.
+
+Сохранённые протоколы (`receipts`) описывают успешные проверки предыдущей полной версии комплекта на исходной рабочей машине. Их наличие в репозитории не означает, что эти проверки выполнены заново, и не доказывает воспроизводимость полного обучения на чистой машине. Исторические абсолютные пути остаются сведениями о происхождении материалов; условия отдельного численного запуска описаны в [REPRODUCING.md](REPRODUCING.md).

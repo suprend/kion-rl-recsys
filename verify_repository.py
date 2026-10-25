@@ -14,7 +14,8 @@ from pathlib import Path, PurePosixPath
 
 AUTHORED = {
     ".gitattributes", ".gitignore", "README.md", "REPRODUCING.md",
-    "PROJECTION.md", "projection.json", "verify_repository.py",
+    "REPORT.md", "REPORT.pdf", "PROJECTION.md", "projection.json", "verify_repository.py",
+    "make_report.py", "test_make_report.py",
 }
 FORBIDDEN_SUFFIXES = {".npy", ".npz", ".pt", ".pth", ".cbm", ".bin", ".ckpt"}
 
